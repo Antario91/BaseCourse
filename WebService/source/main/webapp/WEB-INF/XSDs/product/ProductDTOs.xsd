@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:product="http://www.product.dtos.webService/"
+        targetNamespace="http://www.product.dtos.webService/"
+        elementFormDefault="qualified"
+>
+    <complexType name="ProductDTO">
+        <sequence>
+            <element name="productName" type="string" maxOccurs="1" minOccurs="1"/>
+            <element name="productUnits" type="string" maxOccurs="1" minOccurs="1"/>
+            <element name="productPrices" type="product:ProductPriceDTO" maxOccurs="unbounded" minOccurs="1"/>
+        </sequence>
+    </complexType>
+
+    <complexType name="UpdatedProductDTO">
+        <sequence>
+            <element name="productName" type="string" maxOccurs="1" minOccurs="1"/>
+            <element name="newProductName" type="string" maxOccurs="1" minOccurs="1"/>
+            <element name="newProductUnits" type="string" maxOccurs="1" minOccurs="1"/>
+            <element name="newProductPrices" type="product:ProductPriceDTO" maxOccurs="unbounded" minOccurs="1"/>
+        </sequence>
+    </complexType>
+
+    <complexType name="ProductPriceDTO">
+        <sequence>
+            <element name="price" type="long" maxOccurs="1" minOccurs="1"/>
+            <element name="startEffectDay" type="date" maxOccurs="1" minOccurs="1"/>
+            <element name="endEffectDay" type="date" maxOccurs="1" minOccurs="1"/>
+        </sequence>
+    </complexType>
+
+    <complexType name="ProductInOrderItemDTO">
+        <sequence>
+            <element name="productName" type="string" maxOccurs="1" minOccurs="1"/>
+            <element name="productUnits" type="string" maxOccurs="1" minOccurs="1"/>
+            <element name="price" type="long" maxOccurs="1" minOccurs="1"/>
+        </sequence>
+    </complexType>
+</schema>

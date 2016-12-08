@@ -33,8 +33,8 @@ public class Order extends Entity<Long, Long> {
         return orderItems;
     }
 
-    public void addOrderItem(OrderItem orderItem) {
-        orderItems.add(orderItem);
+    public void setOrderItems(List<OrderItem> orderItems) {
+        this.orderItems = orderItems;
     }
 
     public long getCustomerId() {

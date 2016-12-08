@@ -77,7 +77,7 @@
     </dependencies>
 
     <build>
-        <directory>../CompiledFiles/HibernateRepositoryImpl/</directory>
+        <directory>../CompiledFiles/WebService/</directory>
 
         <sourceDirectory> ${basedir}/source/main/java</sourceDirectory>
 
@@ -99,7 +99,7 @@
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>jaxb2-maven-plugin</artifactId>
-                    <version>1.6</version>
+                    <version>2.2</version>
                     <executions>
                         <execution>
                             <id>xjc</id>
@@ -109,8 +109,10 @@
                         </execution>
                     </executions>
                     <configuration>
-                        <schemaDirectory>${schemaDirectory}</schemaDirectory>
-                        <outputDirectory>${outputDirectory}</outputDirectory>
+                        <sources>
+                            <source>source/main/webapp/WEB-INF/XSDs</source>
+                        </sources>
+                        <outputDirectory>${basedir}/source/main/java</outputDirectory>
                         <clearOutputDir>false</clearOutputDir>
                     </configuration>
                 </plugin>

@@ -1,0 +1,4 @@
+persistence\customerRepository\CustomerRepo.class
+persistence\orderRepository\OrderRepo.class
+persistence\GenericRepo.class
+persistence\productRepository\ProductRepo.class

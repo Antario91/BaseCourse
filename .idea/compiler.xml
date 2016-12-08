@@ -46,25 +46,25 @@
         <module name="perhibernateRepositoryImpl" />
       </profile>
       <profile default="false" name="Annotation profile for PersistenceHibernateRepositoryImpl" enabled="true">
-        <sourceOutputDir name="../CompiledFiles/HibernateRepositoryImpl/generated-sources/annotations" />
-        <sourceTestOutputDir name="../CompiledFiles/HibernateRepositoryImpl/generated-test-sources/test-annotations" />
+        <sourceOutputDir name="../CompiledFiles/PersistenceHibernateRepositoryImpl/generated-sources/annotations" />
+        <sourceTestOutputDir name="../CompiledFiles/PersistenceHibernateRepositoryImpl/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="PersistenceHibernateRepositoryImpl" />
       </profile>
-      <profile default="false" name="Maven default annotation processors profile" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="Utils" />
-      </profile>
       <profile default="false" name="Annotation profile for WebService" enabled="true">
-        <sourceOutputDir name="../CompiledFiles/HibernateRepositoryImpl/generated-sources/annotations" />
-        <sourceTestOutputDir name="../CompiledFiles/HibernateRepositoryImpl/generated-test-sources/test-annotations" />
+        <sourceOutputDir name="../CompiledFiles/WebService/generated-sources/annotations" />
+        <sourceTestOutputDir name="../CompiledFiles/WebService/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="WebService" />
+      </profile>
+      <profile default="false" name="Annotation profile for Utils" enabled="true">
+        <sourceOutputDir name="../CompiledFiles/Utils/generated-sources/annotations" />
+        <sourceTestOutputDir name="../CompiledFiles/Utils/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="Utils" />
       </profile>
       <profile default="false" name="Annotation profile for basecourse" enabled="true">
         <sourceOutputDir name="../CompiledFiles/Domain/generated-sources/annotations" />
@@ -83,7 +83,7 @@
       <module name="Persistence" target="1.6" />
       <module name="PersistenceHibernateRepositoryImpl" target="1.6" />
       <module name="persistencehibernateRepositoryImpl" target="1.5" />
-      <module name="Utils" target="1.5" />
+      <module name="Utils" target="1.6" />
       <module name="WebService" target="1.6" />
     </bytecodeTargetLevel>
   </component>

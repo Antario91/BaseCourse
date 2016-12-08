@@ -1,0 +1,6 @@
+domain\product\Product.class
+domain\product\ProductPrice.class
+domain\customer\Customer.class
+domain\Entity.class
+domain\order\Order.class
+domain\order\OrderItem.class

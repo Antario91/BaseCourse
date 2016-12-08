@@ -45,7 +45,7 @@
     Change output directory and include source
     -->
     <build>
-        <directory>../CompiledFiles/HibernateRepositoryImpl/</directory>
+        <directory>../CompiledFiles/PersistenceHibernateRepositoryImpl/</directory>
 
         <sourceDirectory> ${basedir}/source/main/java</sourceDirectory>
 

@@ -3,15 +3,15 @@
         xmlns="http://www.w3.org/2001/XMLSchema"
         targetNamespace="http://www.orderRequestResponse.endpointRequestResponse.webService"
         elementFormDefault="qualified"
-        xmlns:CRUD="http://www.dto.service/"
+        xmlns:order="http://www.order.dtos.webService/"
 >
 
-    <import namespace="http://www.dto.service/" schemaLocation="DTO.xsd"/>
+    <import namespace="http://www.order.dtos.webService/" schemaLocation="OrderDTOs.xsd"/>
 
     <element name="CreateOrderRequest">
         <complexType>
             <sequence>
-                <element name="order" type="OrderDTOForCreation"/>
+                <element name="order" type="order:OrderDTOForCreation"/>
             </sequence>
         </complexType>
     </element>
@@ -24,25 +24,25 @@
             </sequence>
         </complexType>
     </element>
-    <element name="GetCustomerResponse">
+    <element name="GetOrderResponse">
         <complexType>
             <sequence>
-                <element name="order" type="OrderDTOForReception"/>
+                <element name="order" type="order:OrderDTOForReception"/>
             </sequence>
         </complexType>
     </element>
 
 
-    <element name="UpdateDBUserRequest">
+    <element name="UpdateOrderRequest">
         <complexType>
             <sequence>
-                <element name="updatedOrder" type="UpdatedOrderDTO"/>
+                <element name="updatedOrder" type="order:UpdatedOrderDTO"/>
             </sequence>
         </complexType>
     </element>
 
 
-    <element name="DeleteDBUserRequest">
+    <element name="DeleteOrderRequest">
         <complexType>
             <sequence>
                 <element name="orderBillingNumber" type="long"/>

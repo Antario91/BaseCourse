@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema
         xmlns="http://www.w3.org/2001/XMLSchema"
-        targetNamespace="http://www.customer.dto.webService/"
+        targetNamespace="http://www.customer.dtos.webService/"
         elementFormDefault="qualified"
 >
     <complexType name="CustomerDTO">
@@ -10,7 +10,7 @@
         </sequence>
     </complexType>
 
-    <complexType name="UpdateCustomerDTO">
+    <complexType name="UpdatedCustomerDTO">
         <sequence>
             <element name="name" type="string" maxOccurs="1" minOccurs="1"/>
             <element name="newName" type="string" maxOccurs="1" minOccurs="1"/>

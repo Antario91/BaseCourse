@@ -3,15 +3,15 @@
         xmlns="http://www.w3.org/2001/XMLSchema"
         targetNamespace="http://www.productRequestResponse.endpointRequestResponse.webService"
         elementFormDefault="qualified"
-        xmlns:CRUD="http://www.dto.service/"
+        xmlns:product="http://www.product.dtos.webService/"
 >
 
-    <import namespace="http://www.dto.service/" schemaLocation="DTO.xsd"/>
+    <import namespace="http://www.product.dtos.webService/" schemaLocation="ProductDTOs.xsd"/>
 
     <element name="CreateProductRequest">
         <complexType>
             <sequence>
-                <element name="product" type="ProductDTO"/>
+                <element name="product" type="product:ProductDTO"/>
             </sequence>
         </complexType>
     </element>
@@ -27,7 +27,7 @@
     <element name="GetProductResponse">
         <complexType>
             <sequence>
-                <element name="product" type="ProductDTO"/>
+                <element name="product" type="product:ProductDTO"/>
             </sequence>
         </complexType>
     </element>
@@ -36,13 +36,13 @@
     <element name="UpdateProductRequest">
         <complexType>
             <sequence>
-                <element name="updatedProduct" type="UpdatedProductDTO"/>
+                <element name="updatedProduct" type="product:UpdatedProductDTO"/>
             </sequence>
         </complexType>
     </element>
 
 
-    <element name="DeleteDBUserRequest">
+    <element name="DeleteProductRequest">
         <complexType>
             <sequence>
                 <element name="productName" type="string"/>
