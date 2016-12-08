@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.productRequestResponse.endpointRequestResponse.webService"
+        elementFormDefault="qualified"
+        xmlns:CRUD="http://www.dto.service/"
+>
+
+    <import namespace="http://www.dto.service/" schemaLocation="DTO.xsd"/>
+
+    <element name="CreateProductRequest">
+        <complexType>
+            <sequence>
+                <element name="product" type="ProductDTO"/>
+            </sequence>
+        </complexType>
+    </element>
+
+
+    <element name="GetProductRequest">
+        <complexType>
+            <sequence>
+                <element name="productName" type="string"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="GetProductResponse">
+        <complexType>
+            <sequence>
+                <element name="product" type="ProductDTO"/>
+            </sequence>
+        </complexType>
+    </element>
+
+
+    <element name="UpdateProductRequest">
+        <complexType>
+            <sequence>
+                <element name="updatedProduct" type="UpdatedProductDTO"/>
+            </sequence>
+        </complexType>
+    </element>
+
+
+    <element name="DeleteDBUserRequest">
+        <complexType>
+            <sequence>
+                <element name="productName" type="string"/>
+            </sequence>
+        </complexType>
+    </element>
+</schema>

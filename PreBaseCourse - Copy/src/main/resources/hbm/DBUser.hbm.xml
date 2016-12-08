@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="domain.DBUser" table="DBUSER">
+        <id name="userId" type="long">
+            <column name="USER_ID" precision="5" scale="0" />
+            <generator class="sequence" />
+        </id>
+        <property name="username" type="string">
+            <column name="USERNAME" length="20" not-null="true" unique="true"/>
+        </property>
+        <property name="createdBy" type="string">
+            <column name="CREATED_BY" length="20" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

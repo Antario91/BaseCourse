@@ -1,0 +1,19 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+    <bean id="exceptResolver" class="handlingException.FaultExceptionResolver">
+        <property name="faultCode" value="SERVER"/>
+        <property name="defaultFaultCode" value="SERVER"/>
+        <property name="exceptionMapping">
+            <map>
+           <!--     <entry key="org.springframework.dao.DataIntegrityViolationException" value="The User with this Name have already created"/> -->
+                <entry key="handlingException.UserAlreadyExistException" value="The User with this Name have already created"/>
+           <!--     <entry key="java.lang.NullPointerException" value="The User with this name doesn't exist"/> -->
+                <entry key="handlingException.UserDoesNotExistException" value="The User with this name doesn't exist"/>
+           <!--     <entry key="java.lang.IllegalArgumentException" value="Can't delete the User. The User with this name doesn't exist"/> -->
+            </map>
+        </property>
+    </bean>
+</beans>

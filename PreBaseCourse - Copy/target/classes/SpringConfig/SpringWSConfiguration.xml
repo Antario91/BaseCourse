@@ -1,0 +1,59 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:sws="http://www.springframework.org/schema/web-services"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+  http://www.springframework.org/schema/web-services http://www.springframework.org/schema/web-services/web-services-2.0.xsd
+  http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+    <import resource="DataSourceConfiguration.xml" />
+    <import resource="HibernateSessionFactoryConfiguration.xml" />
+    <import resource="TransactionConfiguration.xml" />
+
+    <import resource="RepoBeansConfiguration.xml" />
+
+    <import resource="EndpointBeansConfiguration.xml"/>
+
+    <import resource="SpringWSExceptionConfiguration.xml"/>
+
+
+
+    <context:component-scan base-package="domain, handlingException, persistence, service"/>
+
+    <sws:annotation-driven/>
+
+    <!-- Следующее определение необходимо для динамической генерации WSDL -->
+    <sws:dynamic-wsdl id="DBUser"
+                      portTypeName="CRUDDBUser"
+                      locationUri="/CRUDDBUser"
+                      targetNamespace="http://www.spring.ws/CRUD/WSDLDefenitions">
+        <sws:xsd location="/WEB-INF/XSDs/DTO.xsd"/>
+        <sws:xsd location="/WEB-INF/XSDs/CRUD_service_for_DBUser.xsd"/>
+        <!-- Схемы должны идти именно в таком порядке: сначала DTO.xsd, т.к. CRUD_service_for_DBUser импортирует DTO.
+         Если этого не сделать будет вылетать ошибка после деплоя приложения -->
+        <!-- Для того, чтобы определить в одной WSDL две и более схем XSD, надо в Maven добавить
+        зависимость <artifactId>xmlschema-core</artifactId> -->
+        <!-- Для того, чтобы обратиться к WSDL надо использовать id dynamic-wsdl и locationUri, в данном случае id="HelloService" и locationUri="/helloService".
+        Т.е. например, в данном случае http://host:port/[имя War файла или имя Application в сервере]/helloService/HelloService.wsdl -->
+        <!-- Элементы в схемах должны заканчиваться на суфикс Request или Response - это по стандарту. Для того, чтобы при автоматической генерации
+        WSDL Spring правильно составлял message в WSDL - Request - для input message, а Response - для output message.
+        А для того чтобы определить собственные суфиксы надо цитата "these can be changed by setting the requestSuffix
+        and responseSuffix attributes on <dynamic-wsdl />, respectively"-->
+    </sws:dynamic-wsdl>
+
+    <!-- Следующее определение Маршалера и анмаршалера. Но если не указывать этот Bean или даже удалить maven зависимость
+     Spring-oxm, то все-равно в WEB-INF/lib ложиться чуть другая версия Spring-oxm. Скорее всего она добавляется из-за наличия
+      maven зависимости Spring-ws -->
+    <bean id="marshallerUnmarshaller" class="org.springframework.oxm.jaxb.Jaxb2Marshaller">
+        <property name="packagesToScan">
+            <list>
+                <value>service.dto</value>
+                <value>service.endpointrequestresponse</value>
+            </list>
+        </property>
+    </bean>
+
+</beans>
+
+        <!-- Это контекст Spring. Имя ЭТОГО файла захардкодино. Оно состоит из [servlet name(определенное в web.xml)]-servlet.xml.
+            Т.е. Если в web.xml имя сервлета "echo", то имя ЭТОГО файла(контекста Spring) - echo-servlet.xml -->

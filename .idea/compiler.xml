@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Annotation profile for Persistence" enabled="true">
+        <sourceOutputDir name="../CompiledFiles/Persistence/generated-sources/annotations" />
+        <sourceTestOutputDir name="../CompiledFiles/Persistence/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="Persistence" />
+      </profile>
+      <profile default="false" name="Annotation profile for HibernateRepositoryImpl" enabled="true">
+        <sourceOutputDir name="../CompiledFiles/HibernateRepositoryImpl/generated-sources/annotations" />
+        <sourceTestOutputDir name="../CompiledFiles/HibernateRepositoryImpl/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="HibernateRepositoryImpl" />
+      </profile>
+      <profile default="false" name="Annotation profile for hibernateRepositoryImpl" enabled="true">
+        <sourceOutputDir name="../CompiledFiles/HibernateRepositoryImpl/generated-sources/annotations" />
+        <sourceTestOutputDir name="../CompiledFiles/HibernateRepositoryImpl/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="hibernateRepositoryImpl" />
+      </profile>
+      <profile default="false" name="Annotation profile for perhibernateRepositoryImpl" enabled="true">
+        <sourceOutputDir name="../CompiledFiles/HibernateRepositoryImpl/generated-sources/annotations" />
+        <sourceTestOutputDir name="../CompiledFiles/HibernateRepositoryImpl/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="perhibernateRepositoryImpl" />
+      </profile>
+      <profile default="false" name="Annotation profile for PersistenceHibernateRepositoryImpl" enabled="true">
+        <sourceOutputDir name="../CompiledFiles/HibernateRepositoryImpl/generated-sources/annotations" />
+        <sourceTestOutputDir name="../CompiledFiles/HibernateRepositoryImpl/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="PersistenceHibernateRepositoryImpl" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="Utils" />
+      </profile>
+      <profile default="false" name="Annotation profile for WebService" enabled="true">
+        <sourceOutputDir name="../CompiledFiles/HibernateRepositoryImpl/generated-sources/annotations" />
+        <sourceTestOutputDir name="../CompiledFiles/HibernateRepositoryImpl/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="WebService" />
+      </profile>
+      <profile default="false" name="Annotation profile for basecourse" enabled="true">
+        <sourceOutputDir name="../CompiledFiles/Domain/generated-sources/annotations" />
+        <sourceTestOutputDir name="../CompiledFiles/Domain/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="Domain" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="BaseCourse" target="1.5" />
+      <module name="Domain" target="1.6" />
+      <module name="hibernateRepositoryImpl" target="1.5" />
+      <module name="HibernateRepositoryImpl" target="1.5" />
+      <module name="perhibernateRepositoryImpl" target="1.5" />
+      <module name="Persistence" target="1.6" />
+      <module name="PersistenceHibernateRepositoryImpl" target="1.6" />
+      <module name="persistencehibernateRepositoryImpl" target="1.5" />
+      <module name="Utils" target="1.5" />
+      <module name="WebService" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

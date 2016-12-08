@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.endpointRequestResponse.service"
+        elementFormDefault="qualified"
+        xmlns:CRUD="http://www.dto.service/"
+>
+
+    <import namespace="http://www.dto.service/" schemaLocation="DTO.xsd"/>
+
+    <element name="CreateDBUserRequest">
+        <complexType>
+            <sequence>
+                <element name="DBUserDTO" type="CRUD:DBUserDTO"/>
+            </sequence>
+        </complexType>
+    </element>
+
+
+    <element name="GetDBUserRequest">
+        <complexType>
+            <sequence>
+                <element name="usernameOfDBUser" type="string"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="GetDBUserResponse">
+        <complexType>
+            <sequence>
+                <element name="DBUser" type="CRUD:DBUserDTO"/>
+            </sequence>
+        </complexType>
+    </element>
+
+    <element name="UpdateDBUserRequest">
+        <complexType>
+            <sequence>
+                <element name="DBUser" type="CRUD:UpdateDBUserDTO"/>
+            </sequence>
+        </complexType>
+    </element>
+
+    <element name="DeleteDBUserRequest">
+        <complexType>
+            <sequence>
+                <element name="DBUserName" type="string"/>
+            </sequence>
+        </complexType>
+    </element>
+</schema>
