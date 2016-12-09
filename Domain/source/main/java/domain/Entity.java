@@ -12,9 +12,9 @@ public abstract class Entity<T, V> {
     public T getId() {
         return id;
     }
-    public void setId(T id) {
-        this.id = id;
-    }
+//    public void setId(T id) {
+//        this.id = id;
+//    }
 
     public abstract V getBusinessKey();
 }

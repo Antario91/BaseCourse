@@ -1,6 +1,7 @@
 package persistence.productRepository;
 
 import domain.Entity;
+import domain.product.Product;
 import org.hibernate.SessionFactory;
 import persistence.GenericRepoImpl;
 import persistence.exceptions.EntityAlreadyExistException;
@@ -16,5 +17,11 @@ public class ProductRepoImpl extends GenericRepoImpl<Long, String> implements Pr
                             EntityDoesNotExistException entityDoesNotExistException,
                             SessionFactory sessionFactory){
         super(entityClass, businessKeyPropertyName, entityAlreadyExistException, entityDoesNotExistException, sessionFactory);
+    }
+
+    @Override
+    public Product getById(Long id) {
+        return (Product) getSessionFactory().getCurrentSession()
+                .get(getEntityClass(), id);
     }
 }

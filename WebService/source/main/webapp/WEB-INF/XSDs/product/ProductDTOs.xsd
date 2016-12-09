@@ -13,6 +13,14 @@
         </sequence>
     </complexType>
 
+    <complexType name="ProductDTOInOrder">
+        <sequence>
+            <element name="productName" type="string" maxOccurs="1" minOccurs="1"/>
+            <element name="productUnits" type="string" maxOccurs="1" minOccurs="1"/>
+            <element name="productPrice" type="long" maxOccurs="1" minOccurs="1"/>
+        </sequence>
+    </complexType>
+
     <complexType name="UpdatedProductDTO">
         <sequence>
             <element name="productName" type="string" maxOccurs="1" minOccurs="1"/>
@@ -27,14 +35,6 @@
             <element name="price" type="long" maxOccurs="1" minOccurs="1"/>
             <element name="startEffectDay" type="date" maxOccurs="1" minOccurs="1"/>
             <element name="endEffectDay" type="date" maxOccurs="1" minOccurs="1"/>
-        </sequence>
-    </complexType>
-
-    <complexType name="ProductInOrderItemDTO">
-        <sequence>
-            <element name="productName" type="string" maxOccurs="1" minOccurs="1"/>
-            <element name="productUnits" type="string" maxOccurs="1" minOccurs="1"/>
-            <element name="price" type="long" maxOccurs="1" minOccurs="1"/>
         </sequence>
     </complexType>
 </schema>

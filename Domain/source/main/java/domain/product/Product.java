@@ -2,18 +2,17 @@ package domain.product;
 
 import domain.Entity;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class Product extends Entity<Long, String> {
     private String name;
     private String units;
-    private Set<ProductPrice> productPrices;
+    private List<ProductPrice> productPrices;
 
     public Product(String name, String units) {
         this.name = name;
         this.units = units;
-        productPrices = new HashSet<ProductPrice>();
+        productPrices = new ArrayList<ProductPrice>();
     }
 
     public String getName() {
@@ -32,17 +31,52 @@ public class Product extends Entity<Long, String> {
         this.units = units;
     }
 
-    public Set<ProductPrice> getProductPrices() {
+    public List<ProductPrice> getProductPrices() {
         return productPrices;
     }
 
-    public void addProductPrice(ProductPrice productPrice) {
-        productPrices.add(productPrice);
+    public void setProductPrices(List<ProductPrice> productPrices) {
+        this.productPrices = productPrices;
+    }
+
+    public long getProductPrice(Date placingDate) {
+        long price = 0;
+        for (ProductPrice productPrice : productPrices) {
+            if (placingDate.after(productPrice.getStartEffectDay()) && placingDate.before(productPrice.getEndEffectDay())) {
+                price = productPrice.getPrice();
+            }
+        }
+        return price;
     }
 
     @Override
     public String getBusinessKey() {
         return null;
+    }
+
+    public boolean checkProduct() {
+        for (int i = 0; i < productPrices.size(); i++) {
+            for (int j = 0; j < productPrices.size(); j++) {
+                if (i == j) {
+                    continue;
+                }
+
+                if (
+                        (productPrices.get(i).getStartEffectDay()
+                                .after(productPrices.get(j).getStartEffectDay()) &&
+                                productPrices.get(i).getStartEffectDay()
+                                        .before(productPrices.get(j).getEndEffectDay())) ||
+
+                                (productPrices.get(i).getEndEffectDay()
+                                        .after(productPrices.get(j).getStartEffectDay()) &&
+                                        productPrices.get(i).getEndEffectDay()
+                                                .before(productPrices.get(j).getEndEffectDay()))
+                        ) {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 
     @Override

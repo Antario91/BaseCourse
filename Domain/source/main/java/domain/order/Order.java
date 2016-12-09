@@ -1,10 +1,12 @@
 package domain.order;
 
 import domain.Entity;
+import domain.product.Product;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
 
 public class Order extends Entity<Long, Long> {
     static private long generatorBillingNumber = 1000000;
@@ -44,6 +46,32 @@ public class Order extends Entity<Long, Long> {
     @Override
     public Long getBusinessKey() {
         return billingNumber;
+    }
+
+    public long getOrderPrice(Set<Product> orderProducts) {
+        long price = 0;
+        for (Product product : orderProducts) {
+            price += product.getProductPrice(placingDate);
+        }
+        return price;
+    }
+
+    public boolean checkOrder() {
+        long checkableProductId;
+
+        for (int i = 0; i < orderItems.size(); i++) {
+
+            checkableProductId = orderItems.get(i).getProductId();
+
+            if (i != orderItems.size() - 1)
+                for (int j = i + 1; j < orderItems.size(); j++) {
+                    if (checkableProductId == orderItems.get(j).getProductId()) {
+                        return false;
+                    }
+                }
+        }
+
+        return true;
     }
 
     @Override

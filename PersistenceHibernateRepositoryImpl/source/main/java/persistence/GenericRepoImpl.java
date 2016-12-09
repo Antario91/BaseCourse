@@ -12,7 +12,7 @@ import persistence.exceptions.EntityDoesNotExistException;
  * @param <V> type of Entity's business key
  */
 
-public class GenericRepoImpl<T, V> implements GenericRepo<T, V> {
+public abstract class GenericRepoImpl<T, V> implements GenericRepo<T, V> {
     private Class<Entity<T, V>> entityClass;
     private String businessKeyPropertyName;
     private EntityAlreadyExistException entityAlreadyExistException;
@@ -58,6 +58,8 @@ public class GenericRepoImpl<T, V> implements GenericRepo<T, V> {
         return entity;
     }
 
+    public abstract Entity<T, V> getById(T id);
+
     public void update (Entity<T, V> entity) {
         try{
             Entity<T, V> checkableEntity = getByBusinessKey(entity.getBusinessKey());
@@ -76,5 +78,13 @@ public class GenericRepoImpl<T, V> implements GenericRepo<T, V> {
     public void deleteByBusinessKey (V businessKeyValue) {
         sessionFactory.getCurrentSession()
                 .delete(getByBusinessKey(businessKeyValue));
+    }
+
+    public SessionFactory getSessionFactory () {
+        return sessionFactory;
+    }
+
+    public Class<Entity<T, V>> getEntityClass () {
+        return entityClass;
     }
 }

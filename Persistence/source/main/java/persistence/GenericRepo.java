@@ -12,6 +12,7 @@ import domain.Entity;
 public interface GenericRepo <T, V> {
     void add (Entity<T, V> entity);
     Entity<T, V> getByBusinessKey (V businessKeyValue);
+    Entity<T, V> getById (T id);
     void update (Entity<T, V> entity);
     void deleteByBusinessKey (V businessKeyValue);
 }

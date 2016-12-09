@@ -1,0 +1,62 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                            http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+    <bean id="CustomerRepo" class="persistence.customerRepository.CustomerRepoImpl" autowire="constructor">
+        <constructor-arg type="java.lang.Class">
+            <value>domain.customer.Customer</value>
+        </constructor-arg>
+
+        <constructor-arg type="java.lang.String">
+            <value>name</value>
+        </constructor-arg>
+
+        <constructor-arg type="persistence.exceptions.EntityAlreadyExistException">
+            <value>persistence.exceptions.customerExceptions.CustomerAlreadyExistException</value>
+        </constructor-arg>
+
+        <constructor-arg type="persistence.exceptions.EntityDoesNotExistException">
+            <value>persistence.exceptions.customerExceptions.CustomerDoesNotExistException</value>
+        </constructor-arg>
+    </bean>
+
+
+    <bean id="OrderRepo" class="persistence.orderRepository.OrderRepoImpl" autowire="constructor">
+        <constructor-arg type="java.lang.Class">
+            <value>domain.order.Order</value>
+        </constructor-arg>
+
+        <constructor-arg type="java.lang.String">
+            <value>billingNumber</value>
+        </constructor-arg>
+
+        <constructor-arg type="persistence.exceptions.EntityAlreadyExistException">
+            <value>persistence.exceptions.orderExceptions.OrderAlreadyExistException</value>
+        </constructor-arg>
+
+        <constructor-arg type="persistence.exceptions.EntityDoesNotExistException">
+            <value>persistence.exceptions.orderExceptions.OrderDoesNotExistException</value>
+        </constructor-arg>
+    </bean>
+
+
+    <bean id="ProductRepo" class="persistence.productRepository.ProductRepoImpl" autowire="constructor">
+        <constructor-arg type="java.lang.Class">
+            <value>domain.product.Product</value>
+        </constructor-arg>
+
+        <constructor-arg type="java.lang.String">
+            <value>name</value>
+        </constructor-arg>
+
+        <constructor-arg type="persistence.exceptions.EntityAlreadyExistException">
+            <value>persistence.exceptions.productExceptions.ProductAlreadyExistException</value>
+        </constructor-arg>
+
+        <constructor-arg type="persistence.exceptions.EntityDoesNotExistException">
+            <value>persistence.exceptions.productExceptions.ProductDoesNotExistException</value>
+        </constructor-arg>
+    </bean>
+
+</beans>

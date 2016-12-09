@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="domain.order.Order" table="ORDER">
+        <id name="id" type="long" column="ID" access="field">
+            <generator class="sequence"/>
+        </id>
+        <property name="billingNumber" type="long" access="field">
+            <column name="BILLING_NUMBER" not-null="true" unique="true"/>
+        </property>
+        <property name="placingDate" type="date" access="field">
+            <column name="PLACING_DATE" not-null="true" unique="false"/>
+        </property>
+        <property name="customerId" type="long" access="field">
+            <column name="CUSTOMER_ID" not-null="true" unique="false"/>
+        </property>
+        <list name="orderItems" table="ORDER_ITEMS" lazy="false" access="field">
+            <key column="id"/>
+            <list-index column="LIST_INDEX" base="0"/>
+            <composite-element class="domain.order.OrderItem">
+                <property name="quantity" type="long" access="field">
+                    <column name="QUANTITY" not-null="true" unique="false"/>
+                </property>
+                <property name="productId" type="long" access="field">
+                    <column name="PRODUCT_ID" not-null="true" unique="false"/>
+                </property>
+            </composite-element>
+        </list>
+    </class>
+</hibernate-mapping>
+

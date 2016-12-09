@@ -1,0 +1,22 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+    <bean id="exceptResolver" class="handlingException.FaultExceptionResolver">
+        <property name="faultCode" value="SERVER"/>
+        <property name="defaultFaultCode" value="SERVER"/>
+        <property name="exceptionMapping">
+            <map>
+                <entry key="persistence.exceptions.customerExceptions.CustomerAlreadyExistException" value="The Customer with this Name have already created"/>
+                <entry key="persistence.exceptions.customerExceptions.CustomerDoesNotExistException" value="The Customer with this Name doesn't exist"/>
+
+                <entry key="persistence.exceptions.orderExceptions.OrderAlreadyExistException" value="The Order with this BillingNumber have already created"/>
+                <entry key="persistence.exceptions.orderExceptions.OrderDoesNotExistException" value="The Order with this BillingNumber doesn't exist"/>
+
+                <entry key="persistence.exceptions.productExceptions.ProductAlreadyExistException" value="The Product with this Name have already created"/>
+                <entry key="persistence.exceptions.productExceptions.ProductDoesNotExistException" value="The Product with this Name doesn't exist"/>
+            </map>
+        </property>
+    </bean>
+</beans>

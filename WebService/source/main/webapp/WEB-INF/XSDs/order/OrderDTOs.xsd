@@ -12,7 +12,7 @@
     <complexType name="OrderDTOForCreation">
         <sequence>
             <element name="ordersCustomersName" type="string" maxOccurs="1" minOccurs="1"/>
-            <element name="orderItems" type="order:OrderItemDTO" maxOccurs="unbounded" minOccurs="1"/>
+            <element name="orderItems" type="order:OrderItemDTOForCreation" maxOccurs="unbounded" minOccurs="1"/>
         </sequence>
     </complexType>
 
@@ -21,20 +21,27 @@
             <element name="billingNumber" type="long" maxOccurs="1" minOccurs="1"/>
             <element name="placingDate" type="date" maxOccurs="1" minOccurs="1"/>
             <element name="ordersCustomersName" type="string" maxOccurs="1" minOccurs="1"/>
-            <element name="orderItems" type="order:OrderItemDTO" maxOccurs="unbounded" minOccurs="1"/>
+            <element name="orderItems" type="order:OrderItemDTOForReception" maxOccurs="unbounded" minOccurs="1"/>
         </sequence>
     </complexType>
 
     <complexType name="UpdatedOrderDTO">
         <sequence>
             <element name="billingNumberOfUpdatedOrder" type="long" maxOccurs="1" minOccurs="1"/>
-            <element name="newOrderItems" type="order:OrderItemDTO" maxOccurs="unbounded" minOccurs="1"/>
+            <element name="newOrderItems" type="order:OrderItemDTOForCreation" maxOccurs="unbounded" minOccurs="1"/>
         </sequence>
     </complexType>
 
-    <complexType name="OrderItemDTO">
+    <complexType name="OrderItemDTOForCreation">
         <sequence>
-            <element name="product" type="product:ProductInOrderItemDTO" maxOccurs="1" minOccurs="1"/>
+            <element name="productName" type="string" maxOccurs="1" minOccurs="1"/>
+            <element name="quantity" type="long" maxOccurs="1" minOccurs="1"/>
+        </sequence>
+    </complexType>
+
+    <complexType name="OrderItemDTOForReception">
+        <sequence>
+            <element name="product" type="product:ProductDTOInOrder" maxOccurs="1" minOccurs="1"/>
             <element name="quantity" type="long" maxOccurs="1" minOccurs="1"/>
         </sequence>
     </complexType>
