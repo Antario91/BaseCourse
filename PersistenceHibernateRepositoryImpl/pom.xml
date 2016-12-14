@@ -30,7 +30,7 @@
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>3.3.2.GA</version>
+            <version>4.2.7.Final</version>
         </dependency>
 
         <dependency>
@@ -48,6 +48,16 @@
         <directory>../CompiledFiles/PersistenceHibernateRepositoryImpl/</directory>
 
         <sourceDirectory> ${basedir}/source/main/java</sourceDirectory>
+
+        <resources>
+            <resource>
+                <directory>source/main/resources</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+        </resources>
 
         <plugins>
             <plugin>

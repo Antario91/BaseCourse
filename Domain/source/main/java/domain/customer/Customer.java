@@ -5,6 +5,8 @@ import domain.Entity;
 public class Customer extends Entity<Long, String> {
     private String name;
 
+    private Customer () {}
+
     public Customer(String name) {
         this.name = name;
     }
@@ -29,14 +31,13 @@ public class Customer extends Entity<Long, String> {
 
         Customer customer = (Customer) o;
 
-        if (getId() != customer.getId()) return false;
+        if ( getId().equals(customer.getId()) ) return false;
         return name.equals(customer.name);
-
     }
 
     @Override
     public int hashCode() {
-        int result = (int) (getId() ^ (getId() >>> 32));
+        int result = 31 + getId().hashCode();
         result = 31 * result + name.hashCode();
         return result;
     }

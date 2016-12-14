@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                            http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+    <bean id="CustomerAlreadyExistException" class="persistence.exceptions.customerExceptions.CustomerAlreadyExistException"/>
+    <bean id="CustomerDoesNotExistException" class="persistence.exceptions.customerExceptions.CustomerDoesNotExistException"/>
+
+    <bean id="OrderAlreadyExistException" class="persistence.exceptions.orderExceptions.OrderAlreadyExistException"/>
+    <bean id="OrderDoesNotExistException" class="persistence.exceptions.orderExceptions.OrderDoesNotExistException"/>
+
+    <bean id="ProductAlreadyExistException" class="persistence.exceptions.productExceptions.ProductAlreadyExistException"/>
+    <bean id="ProductDoesNotExistException" class="persistence.exceptions.productExceptions.ProductDoesNotExistException"/>
+
+</beans>

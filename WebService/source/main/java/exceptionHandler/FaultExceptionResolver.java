@@ -51,7 +51,7 @@ public class FaultExceptionResolver extends AbstractSoapFaultDefinitionException
 
     @Override
     protected void customizeFault(Object endpoint, Exception ex, SoapFault fault) {
-        if (!exceptionMapping.containsKey(ex.getClass().getName())) {
+        if ( !exceptionMapping.containsKey(ex.getClass().getName()) ) {
             StringWriter errors = new StringWriter();
             ex.printStackTrace(new PrintWriter(errors));
 

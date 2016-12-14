@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.customerRequestResponse.endpointRequestResponse.webService"
+        elementFormDefault="qualified"
+        xmlns:customer="http://www.customer.dtos.webService/"
+>
+
+    <import namespace="http://www.customer.dtos.webService/" schemaLocation="CustomerDTOs.xsd"/>
+
+    <element name="CreateCustomerRequest">
+        <complexType>
+            <sequence>
+                <element name="customer" type="customer:CustomerDTO"/>
+            </sequence>
+        </complexType>
+    </element>
+
+
+    <element name="GetCustomerRequest">
+        <complexType>
+            <sequence>
+                <element name="customerName" type="string"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="GetCustomerResponse">
+        <complexType>
+            <sequence>
+                <element name="customer" type="customer:CustomerDTO"/>
+            </sequence>
+        </complexType>
+    </element>
+
+
+    <element name="UpdateCustomerRequest">
+        <complexType>
+            <sequence>
+                <element name="updatedCustomer" type="customer:UpdatedCustomerDTO"/>
+            </sequence>
+        </complexType>
+    </element>
+
+
+    <element name="DeleteCustomerRequest">
+        <complexType>
+            <sequence>
+                <element name="customerName" type="string"/>
+            </sequence>
+        </complexType>
+    </element>
+</schema>

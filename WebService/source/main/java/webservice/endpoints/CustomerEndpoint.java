@@ -2,11 +2,14 @@ package webservice.endpoints;
 
 import domain.customer.Customer;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
 import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 import persistence.customerRepository.CustomerRepo;
+import persistence.exceptions.customerExceptions.CustomerAlreadyExistException;
 import webservice.dtos.customer.CustomerDTO;
 import webservice.dtos.customer.UpdatedCustomerDTO;
 import webservice.endpointrequestresponse.customerrequestresponse.*;
@@ -52,7 +55,11 @@ public class CustomerEndpoint {
 
         customer.setName(updatedCustomerDTO.getNewName());
 
-        customerRepo.update(customer);
+        try {
+            customerRepo.update(customer);
+        } catch (Exception ex){
+            throw new CustomerAlreadyExistException();
+        }
     }
 
     @PayloadRoot(localPart = "DeleteCustomerRequest", namespace = namespaceUri)

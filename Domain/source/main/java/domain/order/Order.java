@@ -6,18 +6,14 @@ import domain.product.Product;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.Set;
 
 public class Order extends Entity<Long, Long> {
-    static private long generatorBillingNumber = 1000000;
     private long billingNumber;
     private Date placingDate;
     private List<OrderItem> orderItems;
     private long customerId;
 
     public Order(long customerId) {
-        this.billingNumber = generatorBillingNumber;
-        generatorBillingNumber++;
         this.placingDate = new Date();
         orderItems = new ArrayList<OrderItem>();
         this.customerId = customerId;
@@ -48,7 +44,7 @@ public class Order extends Entity<Long, Long> {
         return billingNumber;
     }
 
-    public long getOrderPrice(Set<Product> orderProducts) {
+    public long getOrderPrice(List<Product> orderProducts) {
         long price = 0;
         for (Product product : orderProducts) {
             price += product.getProductPrice(placingDate);
@@ -81,7 +77,7 @@ public class Order extends Entity<Long, Long> {
 
         Order order = (Order) o;
 
-        if (getId() != order.getId()) return false;
+        if ( getId().equals(order.getId()) ) return false;
         if (billingNumber != order.billingNumber) return false;
         if (customerId != order.customerId) return false;
         if (!placingDate.equals(order.placingDate)) return false;
@@ -91,7 +87,7 @@ public class Order extends Entity<Long, Long> {
 
     @Override
     public int hashCode() {
-        int result = (int) (getId() ^ (getId() >>> 32));
+        int result = 31 + getId().hashCode();
         result = 31 * result + (int) (billingNumber ^ (billingNumber >>> 32));
         result = 31 * result + placingDate.hashCode();
         result = 31 * result + orderItems.hashCode();

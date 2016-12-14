@@ -6,9 +6,6 @@ import javax.xml.datatype.XMLGregorianCalendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-/**
- * Created by olgo on 22-Nov-16.
- */
 public class DateProducer {
     public static XMLGregorianCalendar produce(Date date) {
         XMLGregorianCalendar calendar = null;

@@ -1,10 +1,11 @@
 package webservice.endpoints;
 
-import domain.exceptions.ProductIsNotUnique;
+import domain.exceptions.ProductInOrderIsNotUniqueException;
 import domain.order.Order;
 import domain.order.OrderItem;
 import domain.product.Product;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
@@ -37,7 +38,8 @@ public class OrderEndpoint {
     }
 
     @PayloadRoot(localPart = "CreateOrderRequest", namespace = namespaceUri)
-    public void createOrder(@RequestPayload CreateOrderRequest request) {
+    @ResponsePayload
+    public CreateOrderResponse createOrder(@RequestPayload CreateOrderRequest request) {
         OrderDTOForCreation orderDTOForCreation = request.getOrder();
 
         long customerId = customerRepo.getByBusinessKey(orderDTOForCreation.getOrdersCustomersName())
@@ -56,15 +58,19 @@ public class OrderEndpoint {
         order.setOrderItems(orderItems);
 
         if (!order.checkOrder()){
-            throw new ProductIsNotUnique();
+            throw new ProductInOrderIsNotUniqueException();
         }
 
         orderRepo.add(order);
+
+        CreateOrderResponse response = new CreateOrderResponse();
+        response.setOrderPrice( order.getOrderPrice(orderRepo.getAllOrdersProducts(order)) );
+        return response;
     }
 
     @PayloadRoot(localPart = "GetOrderRequest", namespace = namespaceUri)
     @ResponsePayload
-    public GetOrderResponse getCustomer(@RequestPayload GetOrderRequest request) {
+    public GetOrderResponse getOrder(@RequestPayload GetOrderRequest request) {
         Order order = (Order) orderRepo.getByBusinessKey( request.getOrderBillingNumber() );
 
         OrderDTOForReception orderDTOForReception = new OrderDTOForReception();
@@ -74,6 +80,7 @@ public class OrderEndpoint {
                 customerRepo.getById(order.getCustomerId())
                 .getBusinessKey()
         );
+        orderDTOForReception.setOrderPrice( order.getOrderPrice(orderRepo.getAllOrdersProducts(order)) );
 
         for (OrderItem orderItem : order.getOrderItems()) {
             Product product = (Product) productRepo.getById( orderItem.getProductId() );
@@ -93,11 +100,12 @@ public class OrderEndpoint {
         GetOrderResponse response = new GetOrderResponse();
         response.setOrder(orderDTOForReception);
 
+
         return response;
     }
 
     @PayloadRoot(localPart = "UpdateOrderRequest", namespace = namespaceUri)
-    public void updateCustomer(@RequestPayload UpdateOrderRequest request) {
+    public void updateOrder(@RequestPayload UpdateOrderRequest request) {
         UpdatedOrderDTO updatedOrderDTO = request.getUpdatedOrder();
 
         Order order = (Order) orderRepo.getByBusinessKey(updatedOrderDTO.getBillingNumberOfUpdatedOrder());
@@ -114,14 +122,14 @@ public class OrderEndpoint {
         order.setOrderItems(orderItems);
 
         if (!order.checkOrder()){
-            throw new ProductIsNotUnique();
+            throw new ProductInOrderIsNotUniqueException();
         }
 
         orderRepo.update(order);
     }
 
     @PayloadRoot(localPart = "DeleteOrderRequest", namespace = namespaceUri)
-    public void deleteCustomer(@RequestPayload DeleteOrderRequest request) {
+    public void deleteOrder(@RequestPayload DeleteOrderRequest request) {
         orderRepo.deleteByBusinessKey(request.getOrderBillingNumber());
     }
 }

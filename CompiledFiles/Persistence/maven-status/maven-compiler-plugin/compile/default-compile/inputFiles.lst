@@ -1,4 +1,12 @@
+D:\BaseCourse\Persistence\source\main\java\persistence\exceptions\orderExceptions\OrderDoesNotExistException.java
+D:\BaseCourse\Persistence\source\main\java\persistence\exceptions\EntityDoesNotExistException.java
 D:\BaseCourse\Persistence\source\main\java\persistence\productRepository\ProductRepo.java
+D:\BaseCourse\Persistence\source\main\java\persistence\exceptions\customerExceptions\CustomerDoesNotExistException.java
+D:\BaseCourse\Persistence\source\main\java\persistence\exceptions\EntityAlreadyExistException.java
+D:\BaseCourse\Persistence\source\main\java\persistence\exceptions\customerExceptions\CustomerAlreadyExistException.java
 D:\BaseCourse\Persistence\source\main\java\persistence\orderRepository\OrderRepo.java
 D:\BaseCourse\Persistence\source\main\java\persistence\customerRepository\CustomerRepo.java
 D:\BaseCourse\Persistence\source\main\java\persistence\GenericRepo.java
+D:\BaseCourse\Persistence\source\main\java\persistence\exceptions\productExceptions\ProductDoesNotExistException.java
+D:\BaseCourse\Persistence\source\main\java\persistence\exceptions\productExceptions\ProductAlreadyExistException.java
+D:\BaseCourse\Persistence\source\main\java\persistence\exceptions\orderExceptions\OrderAlreadyExistException.java

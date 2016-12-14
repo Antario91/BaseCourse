@@ -5,9 +5,6 @@ import org.apache.log4j.FileAppender;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-/**
- * Created by olgo on 25-Nov-16.
- */
 public class NewFileOnRebootLog4jAppender extends FileAppender {
     public NewFileOnRebootLog4jAppender() {
     }

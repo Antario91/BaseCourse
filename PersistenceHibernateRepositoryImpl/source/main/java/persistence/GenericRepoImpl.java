@@ -1,10 +1,16 @@
 package persistence;
 
 import domain.Entity;
-import org.hibernate.SessionFactory;
-import org.hibernate.criterion.Restrictions;
+
+import org.hibernate.FlushMode;
 import persistence.exceptions.EntityAlreadyExistException;
 import persistence.exceptions.EntityDoesNotExistException;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Restrictions;
+
+import java.io.Serializable;
+
 
 /**
  *
@@ -12,7 +18,7 @@ import persistence.exceptions.EntityDoesNotExistException;
  * @param <V> type of Entity's business key
  */
 
-public abstract class GenericRepoImpl<T, V> implements GenericRepo<T, V> {
+public class GenericRepoImpl<T extends Serializable, V> implements GenericRepo<T, V> {
     private Class<Entity<T, V>> entityClass;
     private String businessKeyPropertyName;
     private EntityAlreadyExistException entityAlreadyExistException;
@@ -58,20 +64,26 @@ public abstract class GenericRepoImpl<T, V> implements GenericRepo<T, V> {
         return entity;
     }
 
-    public abstract Entity<T, V> getById(T id);
+
+    @SuppressWarnings("unchecked")
+    public Entity<T, V> getById(T id) {
+        return (Entity<T, V>) getSessionFactory().getCurrentSession()
+                .get(entityClass, id);
+    }
 
     public void update (Entity<T, V> entity) {
-        try{
-            Entity<T, V> checkableEntity = getByBusinessKey(entity.getBusinessKey());
-
-            if (!entity.getId().equals(checkableEntity.getId())){
-                throw entityAlreadyExistException;
-            } else {
-                sessionFactory.getCurrentSession().merge(entity);
-            }
-        } catch (EntityDoesNotExistException ex) {
-            sessionFactory.getCurrentSession().merge(entity);
-        }
+//        try{
+//            Entity<T, V> checkableEntity = getByBusinessKey(entity.getBusinessKey());
+//
+//            if ( !entity.getId().equals(checkableEntity.getId()) ){
+//                throw entityAlreadyExistException;
+//            } else {
+//                sessionFactory.getCurrentSession().merge(entity);
+//            }
+//        } catch (EntityDoesNotExistException ex) {
+//            sessionFactory.getCurrentSession().merge(entity);
+//        }
+        getSessionFactory().getCurrentSession().merge(entity);
 
     }
 

@@ -29,6 +29,16 @@
 
         <sourceDirectory> ${basedir}/source/main/java</sourceDirectory>
 
+        <resources>
+            <resource>
+                <directory>source/main/resources</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+        </resources>
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

@@ -86,7 +86,7 @@ public class Product extends Entity<Long, String> {
 
         Product product = (Product) o;
 
-        if (getId() != product.getId()) return false;
+        if ( getId().equals(product.getId()) ) return false;
         if (!name.equals(product.name)) return false;
         if (!units.equals(product.units)) return false;
         return productPrices.equals(product.productPrices);
@@ -95,7 +95,7 @@ public class Product extends Entity<Long, String> {
 
     @Override
     public int hashCode() {
-        int result = (int) (getId() ^ (getId() >>> 32));
+        int result = 31 + getId().hashCode();
         result = 31 * result + name.hashCode();
         result = 31 * result + units.hashCode();
         result = 31 * result + productPrices.hashCode();
