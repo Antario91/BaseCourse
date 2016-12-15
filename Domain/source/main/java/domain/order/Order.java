@@ -9,15 +9,15 @@ import java.util.Date;
 import java.util.List;
 
 public class Order extends Entity<Long, Long> {
-    private static long generator = 1000000;
-    private long billingNumber = generator++;
+    private long billingNumber;
     private Date placingDate;
     private List<OrderItem> orderItems;
     private long customerId;
 
     private Order () {}
 
-    public Order(long customerId) {
+    public Order(long customerId, long billingNumber) {
+        this.billingNumber = billingNumber;
         this.placingDate = new Date();
         orderItems = new ArrayList<OrderItem>();
         this.customerId = customerId;
@@ -67,16 +67,6 @@ public class Order extends Entity<Long, Long> {
     }
 
     public boolean checkOrder() {
-//        if (billingNumber == 0){
-//            throw new NullOrderBillingNumberException();
-//        }
-//        if (orderItems == null || orderItems.isEmpty()){
-//            throw new NullOrderItemsException();
-//        }
-//        for (OrderItem orderItem : orderItems){
-//            orderItem.checkOrderItem();
-//        }
-
         long checkableProductId;
 
         for (int i = 0; i < orderItems.size(); i++) {

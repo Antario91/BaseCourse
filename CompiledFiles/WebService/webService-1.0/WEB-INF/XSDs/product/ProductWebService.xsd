@@ -32,6 +32,18 @@
         </complexType>
     </element>
 
+    <element name="GetAllProductsRequest">
+        <complexType>
+            <sequence/>
+        </complexType>
+    </element>
+    <element name="GetAllProductsResponse">
+        <complexType>
+            <sequence>
+                <element name="product" type="product:ProductDTO" maxOccurs="unbounded" minOccurs="0"/>
+            </sequence>
+        </complexType>
+    </element>
 
     <element name="UpdateProductRequest">
         <complexType>

@@ -18,7 +18,7 @@ import java.util.List;
  * Created by olgo on 14-Dec-16.
  */
 public class OrderConverter {
-    public static Order orderDTOForCreationToOrder (OrderDTOForCreation orderDTOForCreation, CustomerRepo customerRepo, ProductRepo productRepo) {
+    public static Order orderDTOForCreationToOrder (OrderDTOForCreation orderDTOForCreation, CustomerRepo customerRepo, OrderRepo orderRepo, ProductRepo productRepo) {
         if (orderDTOForCreation != null && customerRepo != null && productRepo != null) {
             OrderValidator.checkOrderDTOForCreation(orderDTOForCreation);
 
@@ -33,7 +33,7 @@ public class OrderConverter {
                 );
             }
 
-            Order order = new Order(customerId);
+            Order order = new Order(customerId, orderRepo.getNextOrdersBillingNumber());
 
             order.setOrderItems(orderItems);
 

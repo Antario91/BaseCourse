@@ -10,4 +10,5 @@ import java.util.List;
 public interface OrderRepo extends GenericRepo<Long, Long> {
     List<Product> getAllOrdersProducts (Order order);
     List<Order> getAllCustomersOrders (Customer customer);
+    long getNextOrdersBillingNumber ();
 }

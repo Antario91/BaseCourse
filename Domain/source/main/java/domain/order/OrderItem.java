@@ -27,15 +27,6 @@ public class OrderItem {
         this.productId = productId;
     }
 
-//    public void checkOrderItem () {
-//        if (quantity == 0){
-//            throw new NullOrderItemQuantityException();
-//        }
-//        if (productId == 0){
-//            throw new NullOrderItemProductNameException();
-//        }
-//    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

@@ -1,3 +1,4 @@
+D:\BaseCourse\WebService\source\main\java\webservice\endpointrequestresponse\productrequestresponse\GetAllProductsResponse.java
 D:\BaseCourse\WebService\source\main\java\webservice\endpointrequestresponse\customerrequestresponse\ObjectFactory.java
 D:\BaseCourse\WebService\source\main\java\webservice\dtos\order\package-info.java
 D:\BaseCourse\WebService\source\main\java\webservice\dtos\order\UpdatedOrderDTO.java
@@ -6,6 +7,7 @@ D:\BaseCourse\WebService\source\main\java\webservice\endpointrequestresponse\ord
 D:\BaseCourse\WebService\source\main\java\webservice\exceptions\NullProductUnitsException.java
 D:\BaseCourse\WebService\source\main\java\webservice\dtos\product\ProductDTO.java
 D:\BaseCourse\WebService\source\main\java\webservice\validators\ProductValidator.java
+D:\BaseCourse\WebService\source\main\java\webservice\endpointrequestresponse\productrequestresponse\GetAllProductsRequest.java
 D:\BaseCourse\WebService\source\main\java\webservice\dtos\product\ProductDTOInOrder.java
 D:\BaseCourse\WebService\source\main\java\webservice\exceptions\NullOrderBillingNumberException.java
 D:\BaseCourse\WebService\source\main\java\webservice\dtos\product\ProductPriceDTO.java
@@ -36,6 +38,8 @@ D:\BaseCourse\WebService\source\main\java\webservice\dtos\order\ObjectFactory.ja
 D:\BaseCourse\WebService\source\main\java\webservice\dtos\order\OrderDTOForReception.java
 D:\BaseCourse\WebService\source\main\java\webservice\endpointrequestresponse\orderrequestresponse\ObjectFactory.java
 D:\BaseCourse\WebService\source\main\java\webservice\endpointrequestresponse\customerrequestresponse\UpdateCustomerRequest.java
+D:\BaseCourse\WebService\source\main\java\webservice\endpointrequestresponse\customerrequestresponse\GetAllCustomersRequest.java
+D:\BaseCourse\WebService\source\main\java\webservice\endpointrequestresponse\customerrequestresponse\GetAllCustomersResponse.java
 D:\BaseCourse\WebService\source\main\java\webservice\endpoints\OrderEndpoint.java
 D:\BaseCourse\WebService\source\main\java\webservice\exceptionHandler\FaultExceptionResolver.java
 D:\BaseCourse\WebService\source\main\java\webservice\endpointrequestresponse\customerrequestresponse\GetCustomerResponse.java

@@ -2,7 +2,6 @@ package persistence;
 
 import domain.Entity;
 
-import org.hibernate.FlushMode;
 import persistence.exceptions.EntityAlreadyExistException;
 import persistence.exceptions.EntityDoesNotExistException;
 
@@ -36,12 +35,6 @@ public class GenericRepoImpl<T extends Serializable, V> implements GenericRepo<T
 
     public void add (Entity<T, V> entity) {
         try {
-//            if (entity.getId() instanceof  Number)
-
-//            if (getByBusinessKey(businessKeyPropertyName, entity.getBusinessKey())
-//                    .getId()
-//                    .equals(comparisonCriterion)){
-
             getByBusinessKey(entity.getBusinessKey());
             throw entityAlreadyExistException;
 
@@ -52,6 +45,7 @@ public class GenericRepoImpl<T extends Serializable, V> implements GenericRepo<T
     }
 
     @SuppressWarnings("unchecked")
+    //TODO EntityExists() вместо exception
     public Entity<T, V> getByBusinessKey(V businessKeyValue) {
         Entity<T, V> entity = (Entity<T, V>) sessionFactory.getCurrentSession()
                 .createCriteria(entityClass)
@@ -72,19 +66,7 @@ public class GenericRepoImpl<T extends Serializable, V> implements GenericRepo<T
     }
 
     public void update (Entity<T, V> entity) {
-//        try{
-//            Entity<T, V> checkableEntity = getByBusinessKey(entity.getBusinessKey());
-//
-//            if ( !entity.getId().equals(checkableEntity.getId()) ){
-//                throw entityAlreadyExistException;
-//            } else {
-//                sessionFactory.getCurrentSession().merge(entity);
-//            }
-//        } catch (EntityDoesNotExistException ex) {
-//            sessionFactory.getCurrentSession().merge(entity);
-//        }
         getSessionFactory().getCurrentSession().merge(entity);
-
     }
 
     public void deleteByBusinessKey (V businessKeyValue) {
@@ -94,9 +76,5 @@ public class GenericRepoImpl<T extends Serializable, V> implements GenericRepo<T
 
     public SessionFactory getSessionFactory () {
         return sessionFactory;
-    }
-
-    public Class<Entity<T, V>> getEntityClass () {
-        return entityClass;
     }
 }

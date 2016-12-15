@@ -10,6 +10,8 @@ import persistence.productRepository.ProductRepo;
 import webservice.converters.ProductConverter;
 import webservice.endpointrequestresponse.productrequestresponse.*;
 
+import java.util.List;
+
 
 @Endpoint
 public class ProductEndpoint {
@@ -25,49 +27,12 @@ public class ProductEndpoint {
     @PayloadRoot(localPart = "CreateProductRequest", namespace = namespaceUri)
     @ResponsePayload
     public void createProduct(@RequestPayload CreateProductRequest request) {
-//        ProductDTO productDTO = request.getProduct();
-//
-//        Product product = new Product(productDTO.getProductName(), productDTO.getProductUnits());
-//
-//        List<ProductPrice> productPrices = new ArrayList<ProductPrice>();
-//
-//        List <ProductPriceDTO> productPricesDTO = productDTO.getProductPrices();
-//        for (ProductPriceDTO productPriceDTO : productPricesDTO){
-//            productPrices.add( new ProductPrice(productPriceDTO.getPrice(),
-//                    productPriceDTO.getStartEffectDay()
-//                            .toGregorianCalendar()
-//                            .getTime(),
-//                    productPriceDTO.getEndEffectDay()
-//                            .toGregorianCalendar()
-//                            .getTime()) );
-//        }
-//
-//        product.setProductPrices(productPrices);
-
         productRepo.add( ProductConverter.productDTOtoProduct(request.getProduct()) );
     }
 
     @PayloadRoot(localPart = "GetProductRequest", namespace = namespaceUri)
     @ResponsePayload
     public GetProductResponse getProduct(@RequestPayload GetProductRequest request) {
-//        Product product = (Product) productRepo.getByBusinessKey(request.getProductName());
-//
-//        ProductDTO productDTO = new ProductDTO();
-//        productDTO.setProductName(product.getName());
-//        productDTO.setProductUnits(product.getUnits());
-//
-//        List<ProductPrice> productPrices = product.getProductPrices();
-//
-//        for (ProductPrice productPrice : productPrices){
-//            ProductPriceDTO productPriceDTO = new ProductPriceDTO();
-//
-//            productPriceDTO.setPrice(productPrice.getPrice());
-//            productPriceDTO.setStartEffectDay( DateProducer.produce(productPrice.getStartEffectDay()) );
-//            productPriceDTO.setEndEffectDay( DateProducer.produce(productPrice.getEndEffectDay()) );
-//
-//            productDTO.getProductPrices().add(productPriceDTO);
-//        }
-//
         GetProductResponse response = new GetProductResponse();
         response.setProduct(
                 ProductConverter.productToProductDTO( (Product) productRepo.getByBusinessKey(request.getProductName()) )
@@ -76,30 +41,21 @@ public class ProductEndpoint {
         return response;
     }
 
+    //TODO add PAGINATION
+    @PayloadRoot(localPart = "GetAllProductsRequest", namespace = namespaceUri)
+    @ResponsePayload
+    public GetAllProductsResponse getAllProducts (@RequestPayload GetAllProductsRequest request) {
+        GetAllProductsResponse response = new GetAllProductsResponse();
+
+        for ( Product product : (List<Product>) productRepo.getAllProducts() ){
+            response.getProduct().add( ProductConverter.productToProductDTO(product) );
+        }
+
+        return response;
+    }
+
     @PayloadRoot(localPart = "UpdateProductRequest", namespace = namespaceUri)
     public void updateProduct(@RequestPayload UpdateProductRequest request) {
-//        UpdatedProductDTO updatedProductDTO = request.getUpdatedProduct();
-//
-//        Product product = (Product) productRepo.getByBusinessKey(updatedProductDTO.getProductName());
-//
-//        product.setName(updatedProductDTO.getNewProductName());
-//        product.setUnits(updatedProductDTO.getNewProductUnits());
-//
-//        List<ProductPrice> productPrices = new ArrayList<ProductPrice>();
-//
-//        List<ProductPriceDTO> productPriceDTOs = updatedProductDTO.getNewProductPrices();
-//        for (ProductPriceDTO productPriceDTO : productPriceDTOs){
-//            productPrices.add( new ProductPrice(productPriceDTO.getPrice(),
-//                    productPriceDTO.getStartEffectDay()
-//                            .toGregorianCalendar()
-//                            .getTime(),
-//                    productPriceDTO.getEndEffectDay()
-//                            .toGregorianCalendar()
-//                            .getTime()) );
-//        }
-//
-//        product.setProductPrices(productPrices);
-
         productRepo.update(
                 ProductConverter.updatedProductDTOtoProduct( request.getUpdatedProduct(), productRepo )
         );

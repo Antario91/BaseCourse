@@ -32,6 +32,18 @@
         </complexType>
     </element>
 
+    <element name="GetAllCustomersRequest">
+        <complexType>
+            <sequence/>
+        </complexType>
+    </element>
+    <element name="GetAllCustomersResponse">
+        <complexType>
+            <sequence>
+                <element name="customer" type="customer:CustomerDTO" maxOccurs="unbounded" minOccurs="0"/>
+            </sequence>
+        </complexType>
+    </element>
 
     <element name="UpdateCustomerRequest">
         <complexType>

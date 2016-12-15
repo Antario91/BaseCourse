@@ -4,7 +4,9 @@
 <hibernate-mapping>
     <class name="domain.product.Product" table="PRODUCT">
         <id name="id" type="long" column="ID" access="field">
-            <generator class="sequence"/>
+            <generator class="sequence">
+                <param name="sequence">product_id_sequence</param>
+            </generator>
         </id>
 
         <property name="name" type="string" access="field">
