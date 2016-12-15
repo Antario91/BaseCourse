@@ -1,6 +1,7 @@
 package domain.product;
 
 import domain.Entity;
+import domain.exceptions.DateIntersectionInProductPriceException;
 
 import java.util.*;
 
@@ -8,6 +9,8 @@ public class Product extends Entity<Long, String> {
     private String name;
     private String units;
     private List<ProductPrice> productPrices;
+
+    private Product () {}
 
     public Product(String name, String units) {
         this.name = name;
@@ -37,6 +40,9 @@ public class Product extends Entity<Long, String> {
 
     public void setProductPrices(List<ProductPrice> productPrices) {
         this.productPrices = productPrices;
+        if ( !checkProduct() ){
+            throw new DateIntersectionInProductPriceException();
+        }
     }
 
     public long getProductPrice(Date placingDate) {
@@ -51,7 +57,7 @@ public class Product extends Entity<Long, String> {
 
     @Override
     public String getBusinessKey() {
-        return null;
+        return name;
     }
 
     public boolean checkProduct() {
@@ -70,7 +76,18 @@ public class Product extends Entity<Long, String> {
                                 (productPrices.get(i).getEndEffectDay()
                                         .after(productPrices.get(j).getStartEffectDay()) &&
                                         productPrices.get(i).getEndEffectDay()
-                                                .before(productPrices.get(j).getEndEffectDay()))
+                                                .before(productPrices.get(j).getEndEffectDay())) ||
+
+                                productPrices.get(i).getStartEffectDay()
+                                        .equals(productPrices.get(j).getStartEffectDay()) ||
+                                productPrices.get(i).getStartEffectDay()
+                                        .equals(productPrices.get(j).getEndEffectDay()) ||
+
+                                productPrices.get(i).getEndEffectDay()
+                                        .equals(productPrices.get(j).getStartEffectDay()) ||
+                                productPrices.get(i).getEndEffectDay()
+                                        .equals(productPrices.get(j).getEndEffectDay())
+
                         ) {
                     return false;
                 }

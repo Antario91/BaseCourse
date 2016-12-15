@@ -1,6 +1,7 @@
 package domain.order;
 
 import domain.Entity;
+import domain.exceptions.ProductInOrderIsNotUniqueException;
 import domain.product.Product;
 
 import java.util.ArrayList;
@@ -8,10 +9,13 @@ import java.util.Date;
 import java.util.List;
 
 public class Order extends Entity<Long, Long> {
-    private long billingNumber;
+    private static long generator = 1000000;
+    private long billingNumber = generator++;
     private Date placingDate;
     private List<OrderItem> orderItems;
     private long customerId;
+
+    private Order () {}
 
     public Order(long customerId) {
         this.placingDate = new Date();
@@ -33,6 +37,9 @@ public class Order extends Entity<Long, Long> {
 
     public void setOrderItems(List<OrderItem> orderItems) {
         this.orderItems = orderItems;
+        if ( !checkOrder() ){
+            throw new ProductInOrderIsNotUniqueException();
+        }
     }
 
     public long getCustomerId() {
@@ -46,13 +53,30 @@ public class Order extends Entity<Long, Long> {
 
     public long getOrderPrice(List<Product> orderProducts) {
         long price = 0;
-        for (Product product : orderProducts) {
-            price += product.getProductPrice(placingDate);
+
+        for (OrderItem orderItem : orderItems){
+            for (Product product : orderProducts){
+                if (orderItem.getProductId() == product.getId()){
+                    price += product.getProductPrice(placingDate) * orderItem.getQuantity();
+                }
+            }
+
         }
+
         return price;
     }
 
     public boolean checkOrder() {
+//        if (billingNumber == 0){
+//            throw new NullOrderBillingNumberException();
+//        }
+//        if (orderItems == null || orderItems.isEmpty()){
+//            throw new NullOrderItemsException();
+//        }
+//        for (OrderItem orderItem : orderItems){
+//            orderItem.checkOrderItem();
+//        }
+
         long checkableProductId;
 
         for (int i = 0; i < orderItems.size(); i++) {

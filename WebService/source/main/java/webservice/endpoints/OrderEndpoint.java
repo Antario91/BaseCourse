@@ -1,5 +1,6 @@
 package webservice.endpoints;
 
+import domain.customer.Customer;
 import domain.exceptions.ProductInOrderIsNotUniqueException;
 import domain.order.Order;
 import domain.order.OrderItem;
@@ -14,6 +15,7 @@ import persistence.customerRepository.CustomerRepo;
 import persistence.orderRepository.OrderRepo;
 import persistence.productRepository.ProductRepo;
 import utils.XMLGregorianCalendarProducer.DateProducer;
+import webservice.converters.OrderConverter;
 import webservice.dtos.order.*;
 
 import webservice.dtos.product.ProductDTOInOrder;
@@ -40,26 +42,24 @@ public class OrderEndpoint {
     @PayloadRoot(localPart = "CreateOrderRequest", namespace = namespaceUri)
     @ResponsePayload
     public CreateOrderResponse createOrder(@RequestPayload CreateOrderRequest request) {
-        OrderDTOForCreation orderDTOForCreation = request.getOrder();
+//        OrderDTOForCreation orderDTOForCreation = request.getOrder();
+//
+//        long customerId = customerRepo.getByBusinessKey(orderDTOForCreation.getOrdersCustomersName())
+//                .getId();
+//
+//        List<OrderItem> orderItems = new ArrayList<OrderItem>();
+//        for (OrderItemDTOForCreation orderItemDTO : orderDTOForCreation.getOrderItems()) {
+//            orderItems.add(
+//                    new OrderItem(orderItemDTO.getQuantity(),
+//                            productRepo.getByBusinessKey(orderItemDTO.getProductName()).getId())
+//            );
+//        }
+//
+//        Order order = new Order(customerId);
+//
+//        order.setOrderItems(orderItems);
 
-        long customerId = customerRepo.getByBusinessKey(orderDTOForCreation.getOrdersCustomersName())
-                .getId();
-
-        List<OrderItem> orderItems = new ArrayList<OrderItem>();
-        for (OrderItemDTOForCreation orderItemDTO : orderDTOForCreation.getOrderItems()) {
-            orderItems.add(
-                    new OrderItem(orderItemDTO.getQuantity(),
-                            productRepo.getByBusinessKey(orderItemDTO.getProductName()).getId())
-            );
-        }
-
-        Order order = new Order(customerId);
-
-        order.setOrderItems(orderItems);
-
-        if (!order.checkOrder()){
-            throw new ProductInOrderIsNotUniqueException();
-        }
+        Order order = OrderConverter.orderDTOForCreationToOrder(request.getOrder(), customerRepo, productRepo);
 
         orderRepo.add(order);
 
@@ -71,65 +71,89 @@ public class OrderEndpoint {
     @PayloadRoot(localPart = "GetOrderRequest", namespace = namespaceUri)
     @ResponsePayload
     public GetOrderResponse getOrder(@RequestPayload GetOrderRequest request) {
-        Order order = (Order) orderRepo.getByBusinessKey( request.getOrderBillingNumber() );
-
-        OrderDTOForReception orderDTOForReception = new OrderDTOForReception();
-        orderDTOForReception.setBillingNumber(order.getBillingNumber());
-        orderDTOForReception.setPlacingDate( DateProducer.produce(order.getPlacingDate()) );
-        orderDTOForReception.setOrdersCustomersName(
-                customerRepo.getById(order.getCustomerId())
-                .getBusinessKey()
-        );
-        orderDTOForReception.setOrderPrice( order.getOrderPrice(orderRepo.getAllOrdersProducts(order)) );
-
-        for (OrderItem orderItem : order.getOrderItems()) {
-            Product product = (Product) productRepo.getById( orderItem.getProductId() );
-
-            ProductDTOInOrder productDTOInOrder = new ProductDTOInOrder();
-            productDTOInOrder.setProductName( product.getName() );
-            productDTOInOrder.setProductUnits( product.getUnits() );
-            productDTOInOrder.setProductPrice( product.getProductPrice(order.getPlacingDate()) );
-
-            OrderItemDTOForReception orderItemDTOForReception = new OrderItemDTOForReception();
-            orderItemDTOForReception.setQuantity(orderItem.getQuantity());
-            orderItemDTOForReception.setProduct( productDTOInOrder );
-
-            orderDTOForReception.getOrderItems().add(orderItemDTOForReception);
-        }
+//        Order order = (Order) orderRepo.getByBusinessKey( request.getOrderBillingNumber() );
+//
+//        OrderDTOForReception orderDTOForReception = new OrderDTOForReception();
+//        orderDTOForReception.setBillingNumber(order.getBillingNumber());
+//        orderDTOForReception.setPlacingDate( DateProducer.produce(order.getPlacingDate()) );
+//        orderDTOForReception.setOrdersCustomersName(
+//                customerRepo.getById(order.getCustomerId())
+//                .getBusinessKey()
+//        );
+//        orderDTOForReception.setOrderPrice( order.getOrderPrice(orderRepo.getAllOrdersProducts(order)) );
+//
+//        for (OrderItem orderItem : order.getOrderItems()) {
+//            Product product = (Product) productRepo.getById( orderItem.getProductId() );
+//
+//            ProductDTOInOrder productDTOInOrder = new ProductDTOInOrder();
+//            productDTOInOrder.setProductName( product.getName() );
+//            productDTOInOrder.setProductUnits( product.getUnits() );
+//            productDTOInOrder.setProductPrice( product.getProductPrice(order.getPlacingDate()) );
+//
+//            OrderItemDTOForReception orderItemDTOForReception = new OrderItemDTOForReception();
+//            orderItemDTOForReception.setQuantity(orderItem.getQuantity());
+//            orderItemDTOForReception.setProduct( productDTOInOrder );
+//
+//            orderDTOForReception.getOrderItems().add(orderItemDTOForReception);
+//        }
 
         GetOrderResponse response = new GetOrderResponse();
-        response.setOrder(orderDTOForReception);
+        response.setOrder(
+                OrderConverter.orderToOrderDTOForReception(
+                        (Order) orderRepo.getByBusinessKey( request.getOrderBillingNumber() ),
+                        customerRepo,
+                        orderRepo,
+                        productRepo
+                )
+        );
 
+
+        return response;
+    }
+
+    @PayloadRoot(localPart = "GetAllCustomersOrdersRequest", namespace = namespaceUri)
+    @ResponsePayload
+    public GetAllCustomersOrdersResponse getAllCustomersOrders (@RequestPayload GetAllCustomersOrdersRequest request){
+        List<Order> customersOrders = orderRepo.getAllCustomersOrders(
+                (Customer) customerRepo.getByBusinessKey( request.getCustomersName() )
+        );
+
+        GetAllCustomersOrdersResponse response = new GetAllCustomersOrdersResponse();
+
+        for (Order order : customersOrders){
+            response.getOrders()
+                    .add( OrderConverter.orderToOrderDTOForReception(order, customerRepo, orderRepo, productRepo) );
+        }
 
         return response;
     }
 
     @PayloadRoot(localPart = "UpdateOrderRequest", namespace = namespaceUri)
     public void updateOrder(@RequestPayload UpdateOrderRequest request) {
-        UpdatedOrderDTO updatedOrderDTO = request.getUpdatedOrder();
+//        UpdatedOrderDTO updatedOrderDTO = request.getUpdatedOrder();
+//
+//        Order order = (Order) orderRepo.getByBusinessKey(updatedOrderDTO.getBillingNumberOfUpdatedOrder());
+//
+//        List<OrderItem> orderItems = new ArrayList<OrderItem>();
+//
+//        for (OrderItemDTOForCreation orderItemDTOForCreation : updatedOrderDTO.getNewOrderItems()){
+//            orderItems.add(
+//                    new OrderItem(orderItemDTOForCreation.getQuantity(),
+//                            productRepo.getByBusinessKey(orderItemDTOForCreation.getProductName()).getId())
+//            );
+//        }
+//
+//        order.setOrderItems(orderItems);
 
-        Order order = (Order) orderRepo.getByBusinessKey(updatedOrderDTO.getBillingNumberOfUpdatedOrder());
-
-        List<OrderItem> orderItems = new ArrayList<OrderItem>();
-
-        for (OrderItemDTOForCreation orderItemDTOForCreation : updatedOrderDTO.getNewOrderItems()){
-            orderItems.add(
-                    new OrderItem(orderItemDTOForCreation.getQuantity(),
-                            productRepo.getByBusinessKey(orderItemDTOForCreation.getProductName()).getId())
-            );
-        }
-
-        order.setOrderItems(orderItems);
-
-        if (!order.checkOrder()){
-            throw new ProductInOrderIsNotUniqueException();
-        }
-
-        orderRepo.update(order);
+        orderRepo.update(
+                OrderConverter.updatedOrderDTOtoOrder(request.getUpdatedOrder(), orderRepo, productRepo)
+        );
     }
 
     @PayloadRoot(localPart = "DeleteOrderRequest", namespace = namespaceUri)
     public void deleteOrder(@RequestPayload DeleteOrderRequest request) {
         orderRepo.deleteByBusinessKey(request.getOrderBillingNumber());
     }
+
+
 }

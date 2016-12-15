@@ -83,6 +83,7 @@
       <module name="Persistence" target="1.6" />
       <module name="PersistenceHibernateRepositoryImpl" target="1.6" />
       <module name="persistencehibernateRepositoryImpl" target="1.5" />
+      <module name="Service" target="1.5" />
       <module name="Utils" target="1.6" />
       <module name="WebService" target="1.6" />
     </bytecodeTargetLevel>

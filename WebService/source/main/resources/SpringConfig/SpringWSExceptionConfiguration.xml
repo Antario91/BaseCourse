@@ -3,7 +3,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
 
-    <bean id="exceptResolver" class="exceptionHandler.FaultExceptionResolver">
+    <bean id="exceptResolver" class="webservice.exceptionHandler.FaultExceptionResolver">
         <constructor-arg index="0" value="SERVER"/>
         <constructor-arg index="1" value="SERVER"/>
         <constructor-arg index="2">
@@ -20,6 +20,18 @@
                 <entry key="domain.exceptions.ProductInOrderIsNotUniqueException" value="There are same products in Order items. Please, check an order"/>
 
                 <entry key="domain.exceptions.DateIntersectionInProductPriceException" value="Effect days of product prices intersect. Please, check the product"/>
+
+                <entry key="webservice.exceptions.NullCustomerNameException" value="Customer's name are not specified in request"/>
+                <entry key="webservice.exceptions.NullOrderBillingNumberException" value="Order's billing number are not specified in request"/>
+                <entry key="webservice.exceptions.NullOrderItemsException" value="Order's items are not specified in request"/>
+                <entry key="webservice.exceptions.NullPriceEndEffectDayException" value="Product price's end effect day are not specified in request"/>
+                <entry key="webservice.exceptions.NullPriceStartEffectDayException" value="Product price's start effect day are not specified in request"/>
+                <entry key="webservice.exceptions.NullProductNameException" value="Product's name are not specified in request"/>
+                <entry key="webservice.exceptions.NullProductPriceException" value="Product's price are not specified in request"/>
+                <entry key="webservice.exceptions.NullProductPricesException" value="Product's prices are not specified in request"/>
+                <entry key="webservice.exceptions.NullProductQuantityException" value="Produc's quantity are not specified in request"/>
+                <entry key="webservice.exceptions.NullProductUnitsException" value="Product's units are not specified in request"/>
+
             </map>
         </constructor-arg>
 
@@ -36,9 +48,9 @@
                 <!--<entry key="ProductAlreadyExistException" value="The Product with this Name have already created"/>-->
                 <!--<entry key="ProductDoesNotExistException" value="The Product with this Name doesn't exist"/>-->
 
-                <!--<entry key="domain.exceptions.ProductInOrderIsNotUniqueException" value="There are same products in Order items. Please, check an order"/>-->
+                <!--<entry key="domain.webservice.exceptions.ProductInOrderIsNotUniqueException" value="There are same products in Order items. Please, check an order"/>-->
 
-                <!--<entry key="domain.exceptions.DateIntersectionInProductPriceException" value="Effect days of product prices intersect. Please, check the product"/>-->
+                <!--<entry key="domain.webservice.exceptions.DateIntersectionInProductPriceException" value="Effect days of product prices intersect. Please, check the product"/>-->
             <!--</map>-->
         <!--</property>-->
     </bean>

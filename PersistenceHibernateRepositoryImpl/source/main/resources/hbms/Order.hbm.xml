@@ -2,12 +2,12 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-    <class name="domain.order.Order" table="ORDER">
+    <class name="domain.order.Order" table="ORDER_TABLES">
         <id name="id" type="long" column="ID" access="field">
             <generator class="sequence"/>
         </id>
 
-        <property name="billingNumber" type="long" access="field" generated="insert">
+        <property name="billingNumber" type="long" access="field">
             <column name="BILLING_NUMBER" not-null="true" unique="true"/>
         </property>
 

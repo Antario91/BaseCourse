@@ -4,6 +4,8 @@ public class OrderItem {
     private long quantity;
     private long productId;
 
+    private OrderItem () {}
+
     public OrderItem(long quantity, long productId) {
         this.quantity = quantity;
         this.productId = productId;
@@ -24,6 +26,15 @@ public class OrderItem {
     public void setProductId(long productId) {
         this.productId = productId;
     }
+
+//    public void checkOrderItem () {
+//        if (quantity == 0){
+//            throw new NullOrderItemQuantityException();
+//        }
+//        if (productId == 0){
+//            throw new NullOrderItemProductNameException();
+//        }
+//    }
 
     @Override
     public boolean equals(Object o) {

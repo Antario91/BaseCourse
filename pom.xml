@@ -14,8 +14,8 @@
         <module>Domain</module>
         <module>Persistence</module>
         <module>PersistenceHibernateRepositoryImpl</module>
-        <module>WebService</module>
         <module>Utils</module>
+        <module>WebService</module>
     </modules>
 
 </project>

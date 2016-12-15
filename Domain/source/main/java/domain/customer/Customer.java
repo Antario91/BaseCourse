@@ -24,6 +24,12 @@ public class Customer extends Entity<Long, String> {
         return name;
     }
 
+//    public void checkCustomer () {
+//        if ( name == null || name.isEmpty() ){
+//            throw new NullCustomerNameException();
+//        }
+//    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

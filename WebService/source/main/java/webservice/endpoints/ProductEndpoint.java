@@ -1,23 +1,14 @@
 package webservice.endpoints;
 
-import domain.exceptions.DateIntersectionInProductPriceException;
 import domain.product.Product;
-import domain.product.ProductPrice;
 import org.apache.log4j.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
 import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 import persistence.productRepository.ProductRepo;
-import utils.XMLGregorianCalendarProducer.DateProducer;
-import webservice.dtos.product.ProductDTO;
-import webservice.dtos.product.ProductPriceDTO;
-import webservice.dtos.product.UpdatedProductDTO;
+import webservice.converters.ProductConverter;
 import webservice.endpointrequestresponse.productrequestresponse.*;
-
-import java.util.ArrayList;
-import java.util.List;
 
 
 @Endpoint
@@ -34,88 +25,84 @@ public class ProductEndpoint {
     @PayloadRoot(localPart = "CreateProductRequest", namespace = namespaceUri)
     @ResponsePayload
     public void createProduct(@RequestPayload CreateProductRequest request) {
-        ProductDTO productDTO = request.getProduct();
+//        ProductDTO productDTO = request.getProduct();
+//
+//        Product product = new Product(productDTO.getProductName(), productDTO.getProductUnits());
+//
+//        List<ProductPrice> productPrices = new ArrayList<ProductPrice>();
+//
+//        List <ProductPriceDTO> productPricesDTO = productDTO.getProductPrices();
+//        for (ProductPriceDTO productPriceDTO : productPricesDTO){
+//            productPrices.add( new ProductPrice(productPriceDTO.getPrice(),
+//                    productPriceDTO.getStartEffectDay()
+//                            .toGregorianCalendar()
+//                            .getTime(),
+//                    productPriceDTO.getEndEffectDay()
+//                            .toGregorianCalendar()
+//                            .getTime()) );
+//        }
+//
+//        product.setProductPrices(productPrices);
 
-        Product product = new Product(productDTO.getProductName(), productDTO.getProductUnits());
-
-        List<ProductPrice> productPrices = new ArrayList<ProductPrice>();
-
-        List <ProductPriceDTO> productPricesDTO = productDTO.getProductPrices();
-        for (ProductPriceDTO productPriceDTO : productPricesDTO){
-            productPrices.add( new ProductPrice(productPriceDTO.getPrice(),
-                    productPriceDTO.getStartEffectDay()
-                            .toGregorianCalendar()
-                            .getTime(),
-                    productPriceDTO.getEndEffectDay()
-                            .toGregorianCalendar()
-                            .getTime()) );
-        }
-
-        product.setProductPrices(productPrices);
-
-        if (!product.checkProduct()){
-            throw new DateIntersectionInProductPriceException();
-        }
-
-        productRepo.add(product);
+        productRepo.add( ProductConverter.productDTOtoProduct(request.getProduct()) );
     }
 
     @PayloadRoot(localPart = "GetProductRequest", namespace = namespaceUri)
     @ResponsePayload
     public GetProductResponse getProduct(@RequestPayload GetProductRequest request) {
-        Product product = (Product) productRepo.getByBusinessKey(request.getProductName());
-
-        ProductDTO productDTO = new ProductDTO();
-        productDTO.setProductName(product.getName());
-        productDTO.setProductUnits(product.getUnits());
-
-        List<ProductPrice> productPrices = product.getProductPrices();
-
-        for (ProductPrice productPrice : productPrices){
-            ProductPriceDTO productPriceDTO = new ProductPriceDTO();
-
-            productPriceDTO.setPrice(productPrice.getPrice());
-            productPriceDTO.setStartEffectDay( DateProducer.produce(productPrice.getStartEffectDay()) );
-            productPriceDTO.setEndEffectDay( DateProducer.produce(productPrice.getEndEffectDay()) );
-
-            productDTO.getProductPrices().add(productPriceDTO);
-        }
-
+//        Product product = (Product) productRepo.getByBusinessKey(request.getProductName());
+//
+//        ProductDTO productDTO = new ProductDTO();
+//        productDTO.setProductName(product.getName());
+//        productDTO.setProductUnits(product.getUnits());
+//
+//        List<ProductPrice> productPrices = product.getProductPrices();
+//
+//        for (ProductPrice productPrice : productPrices){
+//            ProductPriceDTO productPriceDTO = new ProductPriceDTO();
+//
+//            productPriceDTO.setPrice(productPrice.getPrice());
+//            productPriceDTO.setStartEffectDay( DateProducer.produce(productPrice.getStartEffectDay()) );
+//            productPriceDTO.setEndEffectDay( DateProducer.produce(productPrice.getEndEffectDay()) );
+//
+//            productDTO.getProductPrices().add(productPriceDTO);
+//        }
+//
         GetProductResponse response = new GetProductResponse();
-        response.setProduct(productDTO);
+        response.setProduct(
+                ProductConverter.productToProductDTO( (Product) productRepo.getByBusinessKey(request.getProductName()) )
+        );
 
         return response;
     }
 
     @PayloadRoot(localPart = "UpdateProductRequest", namespace = namespaceUri)
     public void updateProduct(@RequestPayload UpdateProductRequest request) {
-        UpdatedProductDTO updatedProductDTO = request.getUpdatedProduct();
+//        UpdatedProductDTO updatedProductDTO = request.getUpdatedProduct();
+//
+//        Product product = (Product) productRepo.getByBusinessKey(updatedProductDTO.getProductName());
+//
+//        product.setName(updatedProductDTO.getNewProductName());
+//        product.setUnits(updatedProductDTO.getNewProductUnits());
+//
+//        List<ProductPrice> productPrices = new ArrayList<ProductPrice>();
+//
+//        List<ProductPriceDTO> productPriceDTOs = updatedProductDTO.getNewProductPrices();
+//        for (ProductPriceDTO productPriceDTO : productPriceDTOs){
+//            productPrices.add( new ProductPrice(productPriceDTO.getPrice(),
+//                    productPriceDTO.getStartEffectDay()
+//                            .toGregorianCalendar()
+//                            .getTime(),
+//                    productPriceDTO.getEndEffectDay()
+//                            .toGregorianCalendar()
+//                            .getTime()) );
+//        }
+//
+//        product.setProductPrices(productPrices);
 
-        Product product = (Product) productRepo.getByBusinessKey(updatedProductDTO.getProductName());
-
-        product.setName(updatedProductDTO.getNewProductName());
-        product.setUnits(updatedProductDTO.getNewProductUnits());
-
-        List<ProductPrice> productPrices = new ArrayList<ProductPrice>();
-
-        List<ProductPriceDTO> productPriceDTOs = updatedProductDTO.getNewProductPrices();
-        for (ProductPriceDTO productPriceDTO : productPriceDTOs){
-            productPrices.add( new ProductPrice(productPriceDTO.getPrice(),
-                    productPriceDTO.getStartEffectDay()
-                            .toGregorianCalendar()
-                            .getTime(),
-                    productPriceDTO.getEndEffectDay()
-                            .toGregorianCalendar()
-                            .getTime()) );
-        }
-
-        product.setProductPrices(productPrices);
-
-        if (!product.checkProduct()){
-            throw new DateIntersectionInProductPriceException();
-        }
-
-        productRepo.update(product);
+        productRepo.update(
+                ProductConverter.updatedProductDTOtoProduct( request.getUpdatedProduct(), productRepo )
+        );
     }
 
     @PayloadRoot(localPart = "DeleteProductRequest", namespace = namespaceUri)

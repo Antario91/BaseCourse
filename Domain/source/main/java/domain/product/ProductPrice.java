@@ -7,6 +7,8 @@ public class ProductPrice {
     private Date startEffectDay;
     private Date endEffectDay;
 
+    private ProductPrice () {}
+
     public ProductPrice(long price, Date startEffectDay, Date endEffectDay) {
         this.price = price;
         this.startEffectDay = startEffectDay;

@@ -1,6 +1,7 @@
 package persistence.orderRepository;
 
 import domain.Entity;
+import domain.customer.Customer;
 import domain.order.Order;
 import domain.product.Product;
 import persistence.GenericRepoImpl;
@@ -25,12 +26,18 @@ public class OrderRepoImpl extends GenericRepoImpl<Long, Long> implements OrderR
     @Override
     public List<Product> getAllOrdersProducts(Order order) {
         return (List<Product>) getSessionFactory().getCurrentSession()
-                .createQuery("FROM Product p LEFT JOIN Order.orderItems orderItem " +
-                        "ON p.id = orderItem.productId WHERE Order.id = :orderId")
+//                .createQuery("SELECT p FROM Product p, Order o INNER JOIN o.orderItems item WHERE o.id = :orderId AND p.id = item.productId")
+                .createQuery("SELECT p FROM Product p LEFT OUTER JOIN Order o WHERE o.id = :orderId AND p.id = o.orderItems.productId")
                 .setParameter("orderId", order.getId())
                 .list();
     }
-    /*return (List<Product>) getSessionFactory().getCurrentSession()
-                .createSQLQuery( "SELECT * FROM PRODUCT LEFT OUTER JOIN ORDER_ITEMS " +
-                                         "ON PRODUCT.id = ORDER_ITEMS.PRODUCT_ID WHERE ORDER_ITEMS.id = " + order.getId() ).list();*/
+
+    @SuppressWarnings("unchecked")
+    @Override
+    public List<Order> getAllCustomersOrders(Customer customer) {
+        return (List<Order>) getSessionFactory().getCurrentSession()
+                .createQuery("SELECT o FROM Order o WHERE o.customerId = :customerId")
+                .setParameter("customerId", customer.getId())
+                .list();
+    }
 }

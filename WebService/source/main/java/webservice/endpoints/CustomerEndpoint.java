@@ -10,6 +10,7 @@ import org.springframework.ws.server.endpoint.annotation.RequestPayload;
 import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 import persistence.customerRepository.CustomerRepo;
 import persistence.exceptions.customerExceptions.CustomerAlreadyExistException;
+import webservice.converters.CustomerConverter;
 import webservice.dtos.customer.CustomerDTO;
 import webservice.dtos.customer.UpdatedCustomerDTO;
 import webservice.endpointrequestresponse.customerrequestresponse.*;
@@ -27,20 +28,24 @@ public class CustomerEndpoint {
 
     @PayloadRoot(localPart = "CreateCustomerRequest", namespace = namespaceUri)
     public void createCustomer(@RequestPayload CreateCustomerRequest request) {
-        CustomerDTO customerDTO = request.getCustomer();
 
-        Customer customer = new Customer(customerDTO.getName());
+//        CustomerDTO customerDTO = request.getCustomer();
+//
+//        Customer customer = new Customer(customerDTO.getName());
 
-        customerRepo.add(customer);
+        customerRepo.add(CustomerConverter.customerDTOtoCustomer(request.getCustomer()));
     }
 
     @PayloadRoot(localPart = "GetCustomerRequest", namespace = namespaceUri)
     @ResponsePayload
     public GetCustomerResponse getCustomer(@RequestPayload GetCustomerRequest request) {
-        Customer customer = (Customer) customerRepo.getByBusinessKey(request.getCustomerName());
+//        Customer customer = (Customer) customerRepo.getByBusinessKey(request.getCustomerName());
+//
+//
+//        CustomerDTO customerDTO = new CustomerDTO();
+//        customerDTO.setName(customer.getName());
 
-        CustomerDTO customerDTO = new CustomerDTO();
-        customerDTO.setName(customer.getName());
+        CustomerDTO customerDTO = CustomerConverter.customerToCustomerDTO( (Customer) customerRepo.getByBusinessKey(request.getCustomerName()) );
 
         GetCustomerResponse response = new GetCustomerResponse();
         response.setCustomer(customerDTO);
@@ -49,17 +54,18 @@ public class CustomerEndpoint {
 
     @PayloadRoot(localPart = "UpdateCustomerRequest", namespace = namespaceUri)
     public void updateCustomer(@RequestPayload UpdateCustomerRequest request) {
-        UpdatedCustomerDTO updatedCustomerDTO = request.getUpdatedCustomer();
-
-        Customer customer = (Customer) customerRepo.getByBusinessKey(updatedCustomerDTO.getName());
-
-        customer.setName(updatedCustomerDTO.getNewName());
-
-        try {
-            customerRepo.update(customer);
-        } catch (Exception ex){
-            throw new CustomerAlreadyExistException();
-        }
+//        UpdatedCustomerDTO updatedCustomerDTO = request.getUpdatedCustomer();
+//
+//        Customer customer = (Customer) customerRepo.getByBusinessKey(updatedCustomerDTO.getName());
+//
+//        customer.setName(updatedCustomerDTO.getNewName());
+//
+//        try {
+//            customerRepo.update(customer);
+//        } catch (Exception ex){
+//            throw new CustomerAlreadyExistException();
+//        }
+        customerRepo.update( CustomerConverter.updatedCustomerDTOtoCustomer( request.getUpdatedCustomer(), customerRepo) );
     }
 
     @PayloadRoot(localPart = "DeleteCustomerRequest", namespace = namespaceUri)
