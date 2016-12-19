@@ -822,8 +822,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 15-Dec-2016 19:35 [DEBUG]: Creating instance of bean 'CustomerAlreadyExistException'
 15-Dec-2016 19:35 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 15-Dec-2016 19:35 [DEBUG]: Eagerly caching bean 'CustomerAlreadyExistException' to allow for resolving potential circular references
-15-Dec-2016 19:35 [TRACE]: Getting BeanInfo for class [persistence.exceptions.customerExceptions.CustomerAlreadyExistException]
-15-Dec-2016 19:35 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.customerExceptions.CustomerAlreadyExistException]
+15-Dec-2016 19:35 [TRACE]: Getting BeanInfo for class [domain.repositories.customerRepository.CustomerAlreadyExistException]
+15-Dec-2016 19:35 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.customerRepository.CustomerAlreadyExistException]
 15-Dec-2016 19:35 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 15-Dec-2016 19:35 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 15-Dec-2016 19:35 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -836,8 +836,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 15-Dec-2016 19:35 [DEBUG]: Creating instance of bean 'CustomerDoesNotExistException'
 15-Dec-2016 19:35 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 15-Dec-2016 19:35 [DEBUG]: Eagerly caching bean 'CustomerDoesNotExistException' to allow for resolving potential circular references
-15-Dec-2016 19:35 [TRACE]: Getting BeanInfo for class [persistence.exceptions.customerExceptions.CustomerDoesNotExistException]
-15-Dec-2016 19:35 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.customerExceptions.CustomerDoesNotExistException]
+15-Dec-2016 19:35 [TRACE]: Getting BeanInfo for class [domain.repositories.customerRepository.CustomerDoesNotExistException]
+15-Dec-2016 19:35 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.customerRepository.CustomerDoesNotExistException]
 15-Dec-2016 19:35 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 15-Dec-2016 19:35 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 15-Dec-2016 19:35 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -850,8 +850,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 15-Dec-2016 19:35 [DEBUG]: Creating instance of bean 'OrderAlreadyExistException'
 15-Dec-2016 19:35 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 15-Dec-2016 19:35 [DEBUG]: Eagerly caching bean 'OrderAlreadyExistException' to allow for resolving potential circular references
-15-Dec-2016 19:35 [TRACE]: Getting BeanInfo for class [persistence.exceptions.orderExceptions.OrderAlreadyExistException]
-15-Dec-2016 19:35 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.orderExceptions.OrderAlreadyExistException]
+15-Dec-2016 19:35 [TRACE]: Getting BeanInfo for class [domain.repositories.orderRepository.OrderAlreadyExistException]
+15-Dec-2016 19:35 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.orderRepository.OrderAlreadyExistException]
 15-Dec-2016 19:35 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 15-Dec-2016 19:35 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 15-Dec-2016 19:35 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -864,8 +864,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 15-Dec-2016 19:35 [DEBUG]: Creating instance of bean 'OrderDoesNotExistException'
 15-Dec-2016 19:35 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 15-Dec-2016 19:35 [DEBUG]: Eagerly caching bean 'OrderDoesNotExistException' to allow for resolving potential circular references
-15-Dec-2016 19:35 [TRACE]: Getting BeanInfo for class [persistence.exceptions.orderExceptions.OrderDoesNotExistException]
-15-Dec-2016 19:35 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.orderExceptions.OrderDoesNotExistException]
+15-Dec-2016 19:35 [TRACE]: Getting BeanInfo for class [domain.repositories.orderRepository.OrderDoesNotExistException]
+15-Dec-2016 19:35 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.orderRepository.OrderDoesNotExistException]
 15-Dec-2016 19:35 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 15-Dec-2016 19:35 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 15-Dec-2016 19:35 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -878,8 +878,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 15-Dec-2016 19:35 [DEBUG]: Creating instance of bean 'ProductAlreadyExistException'
 15-Dec-2016 19:35 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 15-Dec-2016 19:35 [DEBUG]: Eagerly caching bean 'ProductAlreadyExistException' to allow for resolving potential circular references
-15-Dec-2016 19:35 [TRACE]: Getting BeanInfo for class [persistence.exceptions.productExceptions.ProductAlreadyExistException]
-15-Dec-2016 19:35 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.productExceptions.ProductAlreadyExistException]
+15-Dec-2016 19:35 [TRACE]: Getting BeanInfo for class [domain.repositories.productRepository.ProductAlreadyExistException]
+15-Dec-2016 19:35 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.productRepository.ProductAlreadyExistException]
 15-Dec-2016 19:35 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 15-Dec-2016 19:35 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 15-Dec-2016 19:35 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -892,8 +892,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 15-Dec-2016 19:35 [DEBUG]: Creating instance of bean 'ProductDoesNotExistException'
 15-Dec-2016 19:35 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 15-Dec-2016 19:35 [DEBUG]: Eagerly caching bean 'ProductDoesNotExistException' to allow for resolving potential circular references
-15-Dec-2016 19:35 [TRACE]: Getting BeanInfo for class [persistence.exceptions.productExceptions.ProductDoesNotExistException]
-15-Dec-2016 19:35 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.productExceptions.ProductDoesNotExistException]
+15-Dec-2016 19:35 [TRACE]: Getting BeanInfo for class [domain.repositories.productRepository.ProductDoesNotExistException]
+15-Dec-2016 19:35 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.productRepository.ProductDoesNotExistException]
 15-Dec-2016 19:35 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 15-Dec-2016 19:35 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 15-Dec-2016 19:35 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -2148,3 +2148,315 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 ]
 15-Dec-2016 19:35 [DEBUG]: Successfully completed request
 15-Dec-2016 19:35 [TRACE]: Publishing event in WebApplicationContext for namespace 'spring-ws-servlet': ServletRequestHandledEvent: url=[/basecourse/product-web-service]; client=[10.98.1.14]; method=[POST]; servlet=[spring-ws]; session=[null]; user=[null]; time=[109ms]; status=[OK]
+16-Dec-2016 12:14 [TRACE]: Bound request context to thread: weblogic.servlet.internal.ServletRequestImpl@52ef070e[
+POST /basecourse/order-web-service HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: text/xml;charset=UTF-8
+SOAPAction: ""
+Content-Length: 360
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+]
+16-Dec-2016 12:14 [DEBUG]: Accepting incoming [org.springframework.ws.transport.http.HttpServletConnection@1b3c2970] at [http://pc-olgo.isd.dp.ua:7001/basecourse/order-web-service]
+16-Dec-2016 12:14 [TRACE]: Received request [<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://www.orderRequestResponse.endpointRequestResponse.webService">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ord:GetOrderRequest>
+         <ord:orderBillingNumber>1001</ord:orderBillingNumber>
+      </ord:GetOrderRequest>
+   </soapenv:Body>
+</soapenv:Envelope>]
+16-Dec-2016 12:14 [DEBUG]: Looking up endpoint for [{http://www.orderRequestResponse.endpointRequestResponse.webService}GetOrderRequest]
+16-Dec-2016 12:14 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@23290bfd] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetOrderResponse webservice.endpoints.OrderEndpoint.getOrder(webservice.endpointrequestresponse.orderrequestresponse.GetOrderRequest)]
+16-Dec-2016 12:14 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@67e7ac4c]
+16-Dec-2016 12:14 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@1ae0e6df] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetOrderRequest]
+16-Dec-2016 12:14 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@23554842] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetOrderRequest]
+16-Dec-2016 12:14 [TRACE]: Testing if argument resolver [org.springframework.ws.soap.server.endpoint.adapter.method.SoapMethodArgumentResolver@663f9185] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetOrderRequest]
+16-Dec-2016 12:14 [TRACE]: Testing if argument resolver [org.springframework.ws.soap.server.endpoint.adapter.method.SoapHeaderElementMethodArgumentResolver@576ae734] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetOrderRequest]
+16-Dec-2016 12:14 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.DomPayloadMethodProcessor@2b7133c2] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetOrderRequest]
+16-Dec-2016 12:14 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.SourcePayloadMethodProcessor@14fd1bd6] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetOrderRequest]
+16-Dec-2016 12:14 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@752e895d] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetOrderRequest]
+16-Dec-2016 12:14 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@423c74c5] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetOrderRequest]
+16-Dec-2016 12:14 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.orderrequestresponse.GetOrderRequest@342a926c]
+16-Dec-2016 12:14 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.GetOrderResponse webservice.endpoints.OrderEndpoint.getOrder(webservice.endpointrequestresponse.orderrequestresponse.GetOrderRequest)] with arguments [webservice.endpointrequestresponse.orderrequestresponse.GetOrderRequest@342a926c]
+16-Dec-2016 12:14 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
+16-Dec-2016 12:14 [DEBUG]: Creating new transaction with name [webservice.endpoints.OrderEndpoint.getOrder]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+16-Dec-2016 12:14 [TRACE]: Opened session at timestamp: 14818832456
+16-Dec-2016 12:14 [DEBUG]: Opened new Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])] for Hibernate transaction
+16-Dec-2016 12:14 [DEBUG]: Preparing JDBC Connection of Hibernate Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])]
+16-Dec-2016 12:14 [DEBUG]: Obtaining JDBC connection
+16-Dec-2016 12:14 [DEBUG]: Obtained JDBC connection
+16-Dec-2016 12:14 [DEBUG]: Setting JDBC Connection [jdbc:oracle:thin:@127.0.0.1:1521/orcl.isd.dp.ua, UserName=TESTHIBER, Oracle JDBC driver] read-only
+16-Dec-2016 12:14 [TRACE]: Setting flush mode to: MANUAL
+16-Dec-2016 12:14 [DEBUG]: begin
+16-Dec-2016 12:14 [DEBUG]: initial autocommit status: true
+16-Dec-2016 12:14 [DEBUG]: disabling autocommit
+16-Dec-2016 12:14 [DEBUG]: Exposing Hibernate transaction as JDBC transaction [jdbc:oracle:thin:@127.0.0.1:1521/orcl.isd.dp.ua, UserName=TESTHIBER, Oracle JDBC driver]
+16-Dec-2016 12:14 [TRACE]: Bound value [org.springframework.jdbc.datasource.ConnectionHolder@d0a26e9] for key [org.apache.commons.dbcp.BasicDataSource@cc65e23] to thread [[ACTIVE] ExecuteThread: '1' for queue: 'weblogic.kernel.Default (self-tuning)']
+16-Dec-2016 12:14 [TRACE]: Bound value [org.springframework.orm.hibernate4.SessionHolder@2bdc8330] for key [org.hibernate.internal.SessionFactoryImpl@18876924] to thread [[ACTIVE] ExecuteThread: '1' for queue: 'weblogic.kernel.Default (self-tuning)']
+16-Dec-2016 12:14 [TRACE]: Initializing transaction synchronization
+16-Dec-2016 12:14 [TRACE]: Getting transaction for [webservice.endpoints.OrderEndpoint.getOrder]
+16-Dec-2016 12:14 [TRACE]: Retrieved value [org.springframework.orm.hibernate4.SessionHolder@2bdc8330] for key [org.hibernate.internal.SessionFactoryImpl@18876924] bound to thread [[ACTIVE] ExecuteThread: '1' for queue: 'weblogic.kernel.Default (self-tuning)']
+16-Dec-2016 12:14 [DEBUG]: select this_.ID as ID1_2_0_, this_.BILLING_NUMBER as BILLING_2_2_0_, this_.PLACING_DATE as PLACING_3_2_0_, this_.CUSTOMER_ID as CUSTOMER4_2_0_ from testhiber.ORDER_TABLES this_ where this_.BILLING_NUMBER=?
+16-Dec-2016 12:14 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@61154744]
+16-Dec-2016 12:14 [TRACE]: Registering last query statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@61154744]
+16-Dec-2016 12:14 [TRACE]: binding parameter [1] as [BIGINT] - 1001
+16-Dec-2016 12:14 [TRACE]: Bound [2] parameters total
+16-Dec-2016 12:14 [TRACE]: Registering result set [org.apache.commons.dbcp.DelegatingResultSet@6a7ccfb8]
+16-Dec-2016 12:14 [TRACE]: Processing result set
+16-Dec-2016 12:14 [TRACE]: Done processing result set (0 rows)
+16-Dec-2016 12:14 [TRACE]: Total objects hydrated: 0
+16-Dec-2016 12:14 [TRACE]: Releasing statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@61154744]
+16-Dec-2016 12:14 [TRACE]: Closing result set [org.apache.commons.dbcp.DelegatingResultSet@6a7ccfb8]
+16-Dec-2016 12:14 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@61154744]
+16-Dec-2016 12:14 [TRACE]: Starting after statement execution processing [ON_CLOSE]
+16-Dec-2016 12:14 [TRACE]: Initializing non-lazy collections
+16-Dec-2016 12:14 [TRACE]: Completing transaction for [webservice.endpoints.OrderEndpoint.getOrder] after exception: domain.repositories.orderRepository.OrderDoesNotExistException
+16-Dec-2016 12:14 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.orderRepository.OrderDoesNotExistException
+16-Dec-2016 12:14 [TRACE]: Winning rollback rule is: null
+16-Dec-2016 12:14 [TRACE]: No relevant rollback rule found: applying default rules
+16-Dec-2016 12:14 [TRACE]: Triggering beforeCompletion synchronization
+16-Dec-2016 12:14 [DEBUG]: Initiating transaction rollback
+16-Dec-2016 12:14 [DEBUG]: Rolling back Hibernate transaction on Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])]
+16-Dec-2016 12:14 [DEBUG]: rolling back
+16-Dec-2016 12:14 [DEBUG]: rolled JDBC Connection
+16-Dec-2016 12:14 [DEBUG]: re-enabling autocommit
+16-Dec-2016 12:14 [TRACE]: after transaction completion
+16-Dec-2016 12:14 [TRACE]: after transaction completion
+16-Dec-2016 12:14 [TRACE]: Triggering afterCompletion synchronization
+16-Dec-2016 12:14 [TRACE]: Clearing transaction synchronization
+16-Dec-2016 12:14 [TRACE]: Removed value [org.springframework.orm.hibernate4.SessionHolder@2bdc8330] for key [org.hibernate.internal.SessionFactoryImpl@18876924] from thread [[ACTIVE] ExecuteThread: '1' for queue: 'weblogic.kernel.Default (self-tuning)']
+16-Dec-2016 12:14 [TRACE]: Removed value [org.springframework.jdbc.datasource.ConnectionHolder@d0a26e9] for key [org.apache.commons.dbcp.BasicDataSource@cc65e23] from thread [[ACTIVE] ExecuteThread: '1' for queue: 'weblogic.kernel.Default (self-tuning)']
+16-Dec-2016 12:14 [DEBUG]: Resetting read-only flag of JDBC Connection [jdbc:oracle:thin:@127.0.0.1:1521/orcl.isd.dp.ua, UserName=TESTHIBER, Oracle JDBC driver]
+16-Dec-2016 12:14 [DEBUG]: Closing Hibernate Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])] after transaction
+16-Dec-2016 12:14 [TRACE]: Closing session
+16-Dec-2016 12:14 [TRACE]: Closing JDBC container [org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl@28296fa6]
+16-Dec-2016 12:14 [TRACE]: Closing logical connection
+16-Dec-2016 12:14 [DEBUG]: Releasing JDBC connection
+16-Dec-2016 12:14 [DEBUG]: Released JDBC connection
+16-Dec-2016 12:14 [TRACE]: Logical connection closed
+16-Dec-2016 12:14 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
+16-Dec-2016 12:14 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetOrderResponse webservice.endpoints.OrderEndpoint.getOrder(webservice.endpointrequestresponse.orderrequestresponse.GetOrderRequest)]: domain.repositories.orderRepository.OrderDoesNotExistException
+16-Dec-2016 12:14 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
+16-Dec-2016 12:14 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetOrderResponse webservice.endpoints.OrderEndpoint.getOrder(webservice.endpointrequestresponse.orderrequestresponse.GetOrderRequest)]: domain.repositories.orderRepository.OrderDoesNotExistException
+16-Dec-2016 12:14 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
+domain.repositories.orderRepository.OrderDoesNotExistException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:148)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1070)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1022)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:229)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:762)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:658)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:624)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:672)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:543)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:484)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:241)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletInitAction.run(StubSecurityHelper.java:283)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.StubSecurityHelper.createServlet(StubSecurityHelper.java:64)
+	at weblogic.servlet.internal.StubLifecycleHelper.createOneInstance(StubLifecycleHelper.java:58)
+	at weblogic.servlet.internal.StubLifecycleHelper.<init>(StubLifecycleHelper.java:48)
+	at weblogic.servlet.internal.ServletStubImpl.prepareServlet(ServletStubImpl.java:539)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:243)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:183)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3717)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3681)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2277)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2183)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1454)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:209)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:178)
+16-Dec-2016 12:14 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><env:Fault xmlns:ns0="http://schemas.xmlsoap.org/soap/envelope/"><faultcode>ns0:Server</faultcode><faultstring xml:lang="en">The Order with this BillingNumber doesn't exist</faultstring></env:Fault></env:Body></env:Envelope>] for request [<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://www.orderRequestResponse.endpointRequestResponse.webService">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ord:GetOrderRequest>
+         <ord:orderBillingNumber>1001</ord:orderBillingNumber>
+      </ord:GetOrderRequest>
+   </soapenv:Body>
+</soapenv:Envelope>]
+16-Dec-2016 12:14 [TRACE]: Cleared thread-bound request context: weblogic.servlet.internal.ServletRequestImpl@52ef070e[
+POST /basecourse/order-web-service HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: text/xml;charset=UTF-8
+SOAPAction: ""
+Content-Length: 360
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+]
+16-Dec-2016 12:14 [DEBUG]: Successfully completed request
+16-Dec-2016 12:14 [TRACE]: Publishing event in WebApplicationContext for namespace 'spring-ws-servlet': ServletRequestHandledEvent: url=[/basecourse/order-web-service]; client=[10.98.1.14]; method=[POST]; servlet=[spring-ws]; session=[null]; user=[null]; time=[529ms]; status=[OK]
+16-Dec-2016 12:14 [TRACE]: Bound request context to thread: weblogic.servlet.internal.ServletRequestImpl@52ef070e[
+POST /basecourse/customer-web-service HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: text/xml;charset=UTF-8
+SOAPAction: ""
+Content-Length: 357
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+]
+16-Dec-2016 12:14 [DEBUG]: Accepting incoming [org.springframework.ws.transport.http.HttpServletConnection@3cf95f12] at [http://pc-olgo.isd.dp.ua:7001/basecourse/customer-web-service]
+16-Dec-2016 12:14 [TRACE]: Received request [<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://www.customerRequestResponse.endpointRequestResponse.webService">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <cus:GetCustomerRequest>
+         <cus:customerName>Vnya</cus:customerName>
+      </cus:GetCustomerRequest>
+   </soapenv:Body>
+</soapenv:Envelope>]
+16-Dec-2016 12:14 [DEBUG]: Looking up endpoint for [{http://www.customerRequestResponse.endpointRequestResponse.webService}GetCustomerRequest]
+16-Dec-2016 12:14 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@23290bfd] maps request to endpoint [public webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse webservice.endpoints.CustomerEndpoint.getCustomer(webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest)]
+16-Dec-2016 12:14 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@67e7ac4c]
+16-Dec-2016 12:14 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@1ae0e6df] supports [class webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest]
+16-Dec-2016 12:14 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@23554842] supports [class webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest]
+16-Dec-2016 12:14 [TRACE]: Testing if argument resolver [org.springframework.ws.soap.server.endpoint.adapter.method.SoapMethodArgumentResolver@663f9185] supports [class webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest]
+16-Dec-2016 12:14 [TRACE]: Testing if argument resolver [org.springframework.ws.soap.server.endpoint.adapter.method.SoapHeaderElementMethodArgumentResolver@576ae734] supports [class webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest]
+16-Dec-2016 12:14 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.DomPayloadMethodProcessor@2b7133c2] supports [class webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest]
+16-Dec-2016 12:14 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.SourcePayloadMethodProcessor@14fd1bd6] supports [class webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest]
+16-Dec-2016 12:14 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@752e895d] supports [class webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest]
+16-Dec-2016 12:14 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@423c74c5] supports [class webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest]
+16-Dec-2016 12:14 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest@1f32346c]
+16-Dec-2016 12:14 [TRACE]: Invoking [public webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse webservice.endpoints.CustomerEndpoint.getCustomer(webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest)] with arguments [webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest@1f32346c]
+16-Dec-2016 12:14 [DEBUG]: Returning cached instance of singleton bean 'customerEndpoint'
+16-Dec-2016 12:14 [DEBUG]: Creating new transaction with name [webservice.endpoints.CustomerEndpoint.getCustomer]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+16-Dec-2016 12:14 [TRACE]: Opened session at timestamp: 14818832528
+16-Dec-2016 12:14 [DEBUG]: Opened new Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])] for Hibernate transaction
+16-Dec-2016 12:14 [DEBUG]: Preparing JDBC Connection of Hibernate Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])]
+16-Dec-2016 12:14 [DEBUG]: Obtaining JDBC connection
+16-Dec-2016 12:14 [DEBUG]: Obtained JDBC connection
+16-Dec-2016 12:14 [DEBUG]: Setting JDBC Connection [jdbc:oracle:thin:@127.0.0.1:1521/orcl.isd.dp.ua, UserName=TESTHIBER, Oracle JDBC driver] read-only
+16-Dec-2016 12:14 [TRACE]: Setting flush mode to: MANUAL
+16-Dec-2016 12:14 [DEBUG]: begin
+16-Dec-2016 12:14 [DEBUG]: initial autocommit status: true
+16-Dec-2016 12:14 [DEBUG]: disabling autocommit
+16-Dec-2016 12:14 [DEBUG]: Exposing Hibernate transaction as JDBC transaction [jdbc:oracle:thin:@127.0.0.1:1521/orcl.isd.dp.ua, UserName=TESTHIBER, Oracle JDBC driver]
+16-Dec-2016 12:14 [TRACE]: Bound value [org.springframework.jdbc.datasource.ConnectionHolder@190fae74] for key [org.apache.commons.dbcp.BasicDataSource@cc65e23] to thread [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)']
+16-Dec-2016 12:14 [TRACE]: Bound value [org.springframework.orm.hibernate4.SessionHolder@54864e86] for key [org.hibernate.internal.SessionFactoryImpl@18876924] to thread [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)']
+16-Dec-2016 12:14 [TRACE]: Initializing transaction synchronization
+16-Dec-2016 12:14 [TRACE]: Getting transaction for [webservice.endpoints.CustomerEndpoint.getCustomer]
+16-Dec-2016 12:14 [TRACE]: Retrieved value [org.springframework.orm.hibernate4.SessionHolder@54864e86] for key [org.hibernate.internal.SessionFactoryImpl@18876924] bound to thread [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)']
+16-Dec-2016 12:14 [DEBUG]: select this_.ID as ID1_0_0_, this_.CUSTOMER_NAME as CUSTOMER2_0_0_ from testhiber.CUSTOMER this_ where this_.CUSTOMER_NAME=?
+16-Dec-2016 12:14 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@f5c896e]
+16-Dec-2016 12:14 [TRACE]: Registering last query statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@f5c896e]
+16-Dec-2016 12:14 [TRACE]: binding parameter [1] as [VARCHAR] - Vnya
+16-Dec-2016 12:14 [TRACE]: Bound [2] parameters total
+16-Dec-2016 12:14 [TRACE]: Registering result set [org.apache.commons.dbcp.DelegatingResultSet@e2dfa03]
+16-Dec-2016 12:14 [TRACE]: Processing result set
+16-Dec-2016 12:14 [TRACE]: Done processing result set (0 rows)
+16-Dec-2016 12:14 [TRACE]: Total objects hydrated: 0
+16-Dec-2016 12:14 [TRACE]: Releasing statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@f5c896e]
+16-Dec-2016 12:14 [TRACE]: Closing result set [org.apache.commons.dbcp.DelegatingResultSet@e2dfa03]
+16-Dec-2016 12:14 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@f5c896e]
+16-Dec-2016 12:14 [TRACE]: Starting after statement execution processing [ON_CLOSE]
+16-Dec-2016 12:14 [TRACE]: Initializing non-lazy collections
+16-Dec-2016 12:14 [TRACE]: Completing transaction for [webservice.endpoints.CustomerEndpoint.getCustomer] after exception: domain.repositories.customerRepository.CustomerDoesNotExistException
+16-Dec-2016 12:14 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.customerRepository.CustomerDoesNotExistException
+16-Dec-2016 12:14 [TRACE]: Winning rollback rule is: null
+16-Dec-2016 12:14 [TRACE]: No relevant rollback rule found: applying default rules
+16-Dec-2016 12:14 [TRACE]: Triggering beforeCompletion synchronization
+16-Dec-2016 12:14 [DEBUG]: Initiating transaction rollback
+16-Dec-2016 12:14 [DEBUG]: Rolling back Hibernate transaction on Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])]
+16-Dec-2016 12:14 [DEBUG]: rolling back
+16-Dec-2016 12:14 [DEBUG]: rolled JDBC Connection
+16-Dec-2016 12:14 [DEBUG]: re-enabling autocommit
+16-Dec-2016 12:14 [TRACE]: after transaction completion
+16-Dec-2016 12:14 [TRACE]: after transaction completion
+16-Dec-2016 12:14 [TRACE]: Triggering afterCompletion synchronization
+16-Dec-2016 12:14 [TRACE]: Clearing transaction synchronization
+16-Dec-2016 12:14 [TRACE]: Removed value [org.springframework.orm.hibernate4.SessionHolder@54864e86] for key [org.hibernate.internal.SessionFactoryImpl@18876924] from thread [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)']
+16-Dec-2016 12:14 [TRACE]: Removed value [org.springframework.jdbc.datasource.ConnectionHolder@190fae74] for key [org.apache.commons.dbcp.BasicDataSource@cc65e23] from thread [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)']
+16-Dec-2016 12:14 [DEBUG]: Resetting read-only flag of JDBC Connection [jdbc:oracle:thin:@127.0.0.1:1521/orcl.isd.dp.ua, UserName=TESTHIBER, Oracle JDBC driver]
+16-Dec-2016 12:14 [DEBUG]: Closing Hibernate Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])] after transaction
+16-Dec-2016 12:14 [TRACE]: Closing session
+16-Dec-2016 12:14 [TRACE]: Closing JDBC container [org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl@73e30c23]
+16-Dec-2016 12:14 [TRACE]: Closing logical connection
+16-Dec-2016 12:14 [DEBUG]: Releasing JDBC connection
+16-Dec-2016 12:14 [DEBUG]: Released JDBC connection
+16-Dec-2016 12:14 [TRACE]: Logical connection closed
+16-Dec-2016 12:14 [DEBUG]: Returning cached instance of singleton bean 'customerEndpoint'
+16-Dec-2016 12:14 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse webservice.endpoints.CustomerEndpoint.getCustomer(webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest)]: domain.repositories.customerRepository.CustomerDoesNotExistException
+16-Dec-2016 12:14 [DEBUG]: Returning cached instance of singleton bean 'customerEndpoint'
+16-Dec-2016 12:14 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse webservice.endpoints.CustomerEndpoint.getCustomer(webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest)]: domain.repositories.customerRepository.CustomerDoesNotExistException
+16-Dec-2016 12:14 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
+domain.repositories.customerRepository.CustomerDoesNotExistException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:148)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1070)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1022)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:229)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:762)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:658)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:624)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:672)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:543)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:484)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:241)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletInitAction.run(StubSecurityHelper.java:283)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.StubSecurityHelper.createServlet(StubSecurityHelper.java:64)
+	at weblogic.servlet.internal.StubLifecycleHelper.createOneInstance(StubLifecycleHelper.java:58)
+	at weblogic.servlet.internal.StubLifecycleHelper.<init>(StubLifecycleHelper.java:48)
+	at weblogic.servlet.internal.ServletStubImpl.prepareServlet(ServletStubImpl.java:539)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:243)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:183)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3717)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3681)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2277)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2183)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1454)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:209)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:178)
+16-Dec-2016 12:14 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><env:Fault xmlns:ns0="http://schemas.xmlsoap.org/soap/envelope/"><faultcode>ns0:Server</faultcode><faultstring xml:lang="en">The Customer with this Name doesn't exist</faultstring></env:Fault></env:Body></env:Envelope>] for request [<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://www.customerRequestResponse.endpointRequestResponse.webService">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <cus:GetCustomerRequest>
+         <cus:customerName>Vnya</cus:customerName>
+      </cus:GetCustomerRequest>
+   </soapenv:Body>
+</soapenv:Envelope>]
+16-Dec-2016 12:14 [TRACE]: Cleared thread-bound request context: weblogic.servlet.internal.ServletRequestImpl@52ef070e[
+POST /basecourse/customer-web-service HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: text/xml;charset=UTF-8
+SOAPAction: ""
+Content-Length: 357
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+]
+16-Dec-2016 12:14 [DEBUG]: Successfully completed request
+16-Dec-2016 12:14 [TRACE]: Publishing event in WebApplicationContext for namespace 'spring-ws-servlet': ServletRequestHandledEvent: url=[/basecourse/customer-web-service]; client=[10.98.1.14]; method=[POST]; servlet=[spring-ws]; session=[null]; user=[null]; time=[73ms]; status=[OK]

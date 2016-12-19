@@ -6,7 +6,7 @@ import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
 import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
-import persistence.customerRepository.CustomerRepo;
+import domain.repositories.customerRepository.CustomerRepo;
 import webservice.converters.CustomerConverter;
 import webservice.dtos.customer.CustomerDTO;
 import webservice.endpointrequestresponse.customerrequestresponse.*;

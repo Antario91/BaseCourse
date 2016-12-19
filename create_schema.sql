@@ -14,6 +14,8 @@ alter table testhiber.ORDER_TABLES add constraint UNIQUE_BILLING_NUMBER unique (
 
 alter table testhiber.PRODUCT add constraint UNIQUE_PRODUCT_NAME unique (PRODUCT_NAME);
 
+alter table testhiber.ORDER_ITEMS add constraint UNIQUE_ORDERS_ITEMS unique (ID, PRODUCT_ID);
+
 alter table testhiber.ORDER_ITEMS add constraint ORDER_ITEMS_FOREIGN_KEY foreign key (ID) references testhiber.ORDER_TABLES (ID);
 
 alter table testhiber.PRODUCT_PRICES add constraint PRODUCT_PRICES_FOREIGN_KEY foreign key (ID) references testhiber.PRODUCT (ID);

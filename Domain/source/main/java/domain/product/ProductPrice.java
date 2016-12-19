@@ -3,15 +3,19 @@ package domain.product;
 import java.util.Date;
 
 public class ProductPrice {
-    private long price;
-    private Date startEffectDay;
-    private Date endEffectDay;
+    private final long price;
+    private final Date endEffectDay;
 
-    private ProductPrice () {}
+    private ProductPrice () {
+        price = 0;
+        endEffectDay = null;
+    }
 
-    public ProductPrice(long price, Date startEffectDay, Date endEffectDay) {
+    public ProductPrice(long price, Date endEffectDay) {
+        if (price <= 0 || endEffectDay == null){
+            throw new IllegalArgumentException();
+        }
         this.price = price;
-        this.startEffectDay = startEffectDay;
         this.endEffectDay = endEffectDay;
     }
 
@@ -19,24 +23,8 @@ public class ProductPrice {
         return price;
     }
 
-    public void setPrice(long price) {
-        this.price = price;
-    }
-
-    public Date getStartEffectDay() {
-        return startEffectDay;
-    }
-
-    public void setStartEffectDay(Date startEffectDay) {
-        this.startEffectDay = startEffectDay;
-    }
-
     public Date getEndEffectDay() {
-        return endEffectDay;
-    }
-
-    public void setEndEffectDay(Date endEffectDay) {
-        this.endEffectDay = endEffectDay;
+        return new Date(endEffectDay.getTime());
     }
 
     @Override
@@ -47,7 +35,6 @@ public class ProductPrice {
         ProductPrice that = (ProductPrice) o;
 
         if (price != that.price) return false;
-        if (!startEffectDay.equals(that.startEffectDay)) return false;
         return endEffectDay.equals(that.endEffectDay);
 
     }
@@ -55,17 +42,7 @@ public class ProductPrice {
     @Override
     public int hashCode() {
         int result = (int) (price ^ (price >>> 32));
-        result = 31 * result + startEffectDay.hashCode();
         result = 31 * result + endEffectDay.hashCode();
         return result;
-    }
-
-    @Override
-    public String toString() {
-        return "ProductPrice{" +
-                "price=" + price +
-                ", startEffectDay=" + startEffectDay +
-                ", endEffectDay=" + endEffectDay +
-                '}';
     }
 }

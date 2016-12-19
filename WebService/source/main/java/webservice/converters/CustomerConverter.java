@@ -1,9 +1,9 @@
 package webservice.converters;
 
 import domain.customer.Customer;
-import persistence.customerRepository.CustomerRepo;
-import persistence.exceptions.customerExceptions.CustomerAlreadyExistException;
-import persistence.exceptions.customerExceptions.CustomerDoesNotExistException;
+import domain.repositories.customerRepository.CustomerRepo;
+import domain.repositories.customerRepository.CustomerAlreadyExistException;
+import domain.repositories.customerRepository.CustomerDoesNotExistException;
 import webservice.dtos.customer.CustomerDTO;
 import webservice.dtos.customer.UpdatedCustomerDTO;
 import webservice.validators.CustomerValidator;

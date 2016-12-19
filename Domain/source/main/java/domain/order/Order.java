@@ -1,25 +1,27 @@
 package domain.order;
 
 import domain.Entity;
-import domain.exceptions.ProductInOrderIsNotUniqueException;
-import domain.product.Product;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
-public class Order extends Entity<Long, Long> {
-    private long billingNumber;
-    private Date placingDate;
+public class Order extends Entity {
+    private final long billingNumber;
+    private final Date placingDate;
     private List<OrderItem> orderItems;
-    private long customerId;
+    private final long customerId;
 
-    private Order () {}
+    private Order() {
+        billingNumber = 0;
+        placingDate = null;
+        customerId = 0;
+    }
 
     public Order(long customerId, long billingNumber) {
+        if (customerId <= 0 || billingNumber <= 0) {
+            throw new IllegalArgumentException();
+        }
         this.billingNumber = billingNumber;
         this.placingDate = new Date();
-        orderItems = new ArrayList<OrderItem>();
         this.customerId = customerId;
     }
 
@@ -28,95 +30,36 @@ public class Order extends Entity<Long, Long> {
     }
 
     public Date getPlacingDate() {
-        return placingDate;
+        return new Date(placingDate.getTime());
     }
 
     public List<OrderItem> getOrderItems() {
-        return orderItems;
+        return new ArrayList<OrderItem>(orderItems);
     }
 
-    public void setOrderItems(List<OrderItem> orderItems) {
-        this.orderItems = orderItems;
-        if ( !checkOrder() ){
-            throw new ProductInOrderIsNotUniqueException();
+    public void setOrderItems(List<OrderItem> orderItems) throws ProductInOrderIsNotUniqueException {
+        if (orderItems == null) {
+            throw new IllegalArgumentException();
         }
+        isUniqueProductsInOrder(orderItems);
+        this.orderItems = orderItems;
     }
 
     public long getCustomerId() {
         return customerId;
     }
 
-    @Override
-    public Long getBusinessKey() {
-        return billingNumber;
-    }
+    private boolean isUniqueProductsInOrder(List<OrderItem> orderItems) throws ProductInOrderIsNotUniqueException {
+        Set<Long> productIds = new HashSet<Long>();
 
-    public long getOrderPrice(List<Product> orderProducts) {
-        long price = 0;
-
-        for (OrderItem orderItem : orderItems){
-            for (Product product : orderProducts){
-                if (orderItem.getProductId() == product.getId()){
-                    price += product.getProductPrice(placingDate) * orderItem.getQuantity();
-                }
+        for (OrderItem currentItem : orderItems) {
+            Long currentProductId = currentItem.getProductId();
+            if (productIds.contains(currentProductId)) {
+                throw new ProductInOrderIsNotUniqueException();
+            } else {
+                productIds.add(currentProductId);
             }
-
         }
-
-        return price;
-    }
-
-    public boolean checkOrder() {
-        long checkableProductId;
-
-        for (int i = 0; i < orderItems.size(); i++) {
-
-            checkableProductId = orderItems.get(i).getProductId();
-
-            if (i != orderItems.size() - 1)
-                for (int j = i + 1; j < orderItems.size(); j++) {
-                    if (checkableProductId == orderItems.get(j).getProductId()) {
-                        return false;
-                    }
-                }
-        }
-
         return true;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Order)) return false;
-
-        Order order = (Order) o;
-
-        if ( getId().equals(order.getId()) ) return false;
-        if (billingNumber != order.billingNumber) return false;
-        if (customerId != order.customerId) return false;
-        if (!placingDate.equals(order.placingDate)) return false;
-        return orderItems.equals(order.orderItems);
-
-    }
-
-    @Override
-    public int hashCode() {
-        int result = 31 + getId().hashCode();
-        result = 31 * result + (int) (billingNumber ^ (billingNumber >>> 32));
-        result = 31 * result + placingDate.hashCode();
-        result = 31 * result + orderItems.hashCode();
-        result = 31 * result + (int) (customerId ^ (customerId >>> 32));
-        return result;
-    }
-
-    @Override
-    public String toString() {
-        return "Order{" +
-                "id=" + getId() +
-                ", billingNumber=" + billingNumber +
-                ", placingDate=" + placingDate +
-                ", orderItems=" + orderItems +
-                ", customerId=" + customerId +
-                '}';
     }
 }

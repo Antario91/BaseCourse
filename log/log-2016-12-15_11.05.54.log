@@ -837,8 +837,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 15-Dec-2016 11:05 [DEBUG]: Creating instance of bean 'CustomerAlreadyExistException'
 15-Dec-2016 11:05 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 15-Dec-2016 11:05 [DEBUG]: Eagerly caching bean 'CustomerAlreadyExistException' to allow for resolving potential circular references
-15-Dec-2016 11:05 [TRACE]: Getting BeanInfo for class [persistence.exceptions.customerExceptions.CustomerAlreadyExistException]
-15-Dec-2016 11:05 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.customerExceptions.CustomerAlreadyExistException]
+15-Dec-2016 11:05 [TRACE]: Getting BeanInfo for class [domain.repositories.customerRepository.CustomerAlreadyExistException]
+15-Dec-2016 11:05 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.customerRepository.CustomerAlreadyExistException]
 15-Dec-2016 11:05 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 15-Dec-2016 11:05 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 15-Dec-2016 11:05 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -851,8 +851,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 15-Dec-2016 11:05 [DEBUG]: Creating instance of bean 'CustomerDoesNotExistException'
 15-Dec-2016 11:05 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 15-Dec-2016 11:05 [DEBUG]: Eagerly caching bean 'CustomerDoesNotExistException' to allow for resolving potential circular references
-15-Dec-2016 11:05 [TRACE]: Getting BeanInfo for class [persistence.exceptions.customerExceptions.CustomerDoesNotExistException]
-15-Dec-2016 11:05 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.customerExceptions.CustomerDoesNotExistException]
+15-Dec-2016 11:05 [TRACE]: Getting BeanInfo for class [domain.repositories.customerRepository.CustomerDoesNotExistException]
+15-Dec-2016 11:05 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.customerRepository.CustomerDoesNotExistException]
 15-Dec-2016 11:05 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 15-Dec-2016 11:05 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 15-Dec-2016 11:05 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -865,8 +865,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 15-Dec-2016 11:05 [DEBUG]: Creating instance of bean 'OrderAlreadyExistException'
 15-Dec-2016 11:05 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 15-Dec-2016 11:05 [DEBUG]: Eagerly caching bean 'OrderAlreadyExistException' to allow for resolving potential circular references
-15-Dec-2016 11:05 [TRACE]: Getting BeanInfo for class [persistence.exceptions.orderExceptions.OrderAlreadyExistException]
-15-Dec-2016 11:05 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.orderExceptions.OrderAlreadyExistException]
+15-Dec-2016 11:05 [TRACE]: Getting BeanInfo for class [domain.repositories.orderRepository.OrderAlreadyExistException]
+15-Dec-2016 11:05 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.orderRepository.OrderAlreadyExistException]
 15-Dec-2016 11:05 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 15-Dec-2016 11:05 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 15-Dec-2016 11:05 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -879,8 +879,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 15-Dec-2016 11:05 [DEBUG]: Creating instance of bean 'OrderDoesNotExistException'
 15-Dec-2016 11:05 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 15-Dec-2016 11:05 [DEBUG]: Eagerly caching bean 'OrderDoesNotExistException' to allow for resolving potential circular references
-15-Dec-2016 11:05 [TRACE]: Getting BeanInfo for class [persistence.exceptions.orderExceptions.OrderDoesNotExistException]
-15-Dec-2016 11:05 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.orderExceptions.OrderDoesNotExistException]
+15-Dec-2016 11:05 [TRACE]: Getting BeanInfo for class [domain.repositories.orderRepository.OrderDoesNotExistException]
+15-Dec-2016 11:05 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.orderRepository.OrderDoesNotExistException]
 15-Dec-2016 11:05 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 15-Dec-2016 11:05 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 15-Dec-2016 11:05 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -893,8 +893,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 15-Dec-2016 11:05 [DEBUG]: Creating instance of bean 'ProductAlreadyExistException'
 15-Dec-2016 11:05 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 15-Dec-2016 11:05 [DEBUG]: Eagerly caching bean 'ProductAlreadyExistException' to allow for resolving potential circular references
-15-Dec-2016 11:05 [TRACE]: Getting BeanInfo for class [persistence.exceptions.productExceptions.ProductAlreadyExistException]
-15-Dec-2016 11:05 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.productExceptions.ProductAlreadyExistException]
+15-Dec-2016 11:05 [TRACE]: Getting BeanInfo for class [domain.repositories.productRepository.ProductAlreadyExistException]
+15-Dec-2016 11:05 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.productRepository.ProductAlreadyExistException]
 15-Dec-2016 11:05 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 15-Dec-2016 11:05 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 15-Dec-2016 11:05 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -907,8 +907,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 15-Dec-2016 11:05 [DEBUG]: Creating instance of bean 'ProductDoesNotExistException'
 15-Dec-2016 11:05 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 15-Dec-2016 11:05 [DEBUG]: Eagerly caching bean 'ProductDoesNotExistException' to allow for resolving potential circular references
-15-Dec-2016 11:05 [TRACE]: Getting BeanInfo for class [persistence.exceptions.productExceptions.ProductDoesNotExistException]
-15-Dec-2016 11:05 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.productExceptions.ProductDoesNotExistException]
+15-Dec-2016 11:05 [TRACE]: Getting BeanInfo for class [domain.repositories.productRepository.ProductDoesNotExistException]
+15-Dec-2016 11:05 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.productRepository.ProductDoesNotExistException]
 15-Dec-2016 11:05 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 15-Dec-2016 11:05 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 15-Dec-2016 11:05 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -3675,8 +3675,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 15-Dec-2016 11:08 [TRACE]: Bound value [org.springframework.orm.hibernate4.SessionHolder@1c04fc63] for key [org.hibernate.internal.SessionFactoryImpl@d26626] to thread [[ACTIVE] ExecuteThread: '3' for queue: 'weblogic.kernel.Default (self-tuning)']
 15-Dec-2016 11:08 [TRACE]: Initializing transaction synchronization
 15-Dec-2016 11:08 [TRACE]: Getting transaction for [webservice.endpoints.ProductEndpoint.createProduct]
-15-Dec-2016 11:08 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.createProduct] after exception: domain.exceptions.DateIntersectionInProductPriceException
-15-Dec-2016 11:08 [TRACE]: Applying rules to determine whether transaction should rollback on domain.exceptions.DateIntersectionInProductPriceException
+15-Dec-2016 11:08 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.createProduct] after exception: domain.product.DateIntersectionInProductPriceException
+15-Dec-2016 11:08 [TRACE]: Applying rules to determine whether transaction should rollback on domain.product.DateIntersectionInProductPriceException
 15-Dec-2016 11:08 [TRACE]: Winning rollback rule is: null
 15-Dec-2016 11:08 [TRACE]: No relevant rollback rule found: applying default rules
 15-Dec-2016 11:08 [TRACE]: Triggering beforeCompletion synchronization
@@ -3699,11 +3699,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 15-Dec-2016 11:08 [DEBUG]: Released JDBC connection
 15-Dec-2016 11:08 [TRACE]: Logical connection closed
 15-Dec-2016 11:08 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-15-Dec-2016 11:08 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: domain.exceptions.DateIntersectionInProductPriceException
+15-Dec-2016 11:08 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: domain.product.DateIntersectionInProductPriceException
 15-Dec-2016 11:08 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-15-Dec-2016 11:08 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: domain.exceptions.DateIntersectionInProductPriceException
+15-Dec-2016 11:08 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: domain.product.DateIntersectionInProductPriceException
 15-Dec-2016 11:08 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-domain.exceptions.DateIntersectionInProductPriceException
+domain.product.DateIntersectionInProductPriceException
 	at domain.product.Product.setProductPrices(Product.java:44)
 	at webservice.converters.ProductConverter.productDTOtoProduct(ProductConverter.java:39)
 	at webservice.endpoints.ProductEndpoint.createProduct(ProductEndpoint.java:47)
@@ -3910,8 +3910,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 15-Dec-2016 11:09 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 15-Dec-2016 11:09 [DEBUG]: Done loading collection
 15-Dec-2016 11:09 [TRACE]: Collection initialized
-15-Dec-2016 11:09 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.createProduct] after exception: persistence.exceptions.productExceptions.ProductAlreadyExistException
-15-Dec-2016 11:09 [TRACE]: Applying rules to determine whether transaction should rollback on persistence.exceptions.productExceptions.ProductAlreadyExistException
+15-Dec-2016 11:09 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.createProduct] after exception: domain.repositories.productRepository.ProductAlreadyExistException
+15-Dec-2016 11:09 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.productRepository.ProductAlreadyExistException
 15-Dec-2016 11:09 [TRACE]: Winning rollback rule is: null
 15-Dec-2016 11:09 [TRACE]: No relevant rollback rule found: applying default rules
 15-Dec-2016 11:09 [TRACE]: Triggering beforeCompletion synchronization
@@ -3934,11 +3934,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 15-Dec-2016 11:09 [DEBUG]: Released JDBC connection
 15-Dec-2016 11:09 [TRACE]: Logical connection closed
 15-Dec-2016 11:09 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-15-Dec-2016 11:09 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: persistence.exceptions.productExceptions.ProductAlreadyExistException
+15-Dec-2016 11:09 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: domain.repositories.productRepository.ProductAlreadyExistException
 15-Dec-2016 11:09 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-15-Dec-2016 11:09 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: persistence.exceptions.productExceptions.ProductAlreadyExistException
+15-Dec-2016 11:09 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: domain.repositories.productRepository.ProductAlreadyExistException
 15-Dec-2016 11:09 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-persistence.exceptions.productExceptions.ProductAlreadyExistException
+domain.repositories.productRepository.ProductAlreadyExistException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)

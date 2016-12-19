@@ -838,8 +838,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 14-Dec-2016 19:05 [DEBUG]: Creating instance of bean 'CustomerAlreadyExistException'
 14-Dec-2016 19:05 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 14-Dec-2016 19:05 [DEBUG]: Eagerly caching bean 'CustomerAlreadyExistException' to allow for resolving potential circular references
-14-Dec-2016 19:05 [TRACE]: Getting BeanInfo for class [persistence.exceptions.customerExceptions.CustomerAlreadyExistException]
-14-Dec-2016 19:05 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.customerExceptions.CustomerAlreadyExistException]
+14-Dec-2016 19:05 [TRACE]: Getting BeanInfo for class [domain.repositories.customerRepository.CustomerAlreadyExistException]
+14-Dec-2016 19:05 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.customerRepository.CustomerAlreadyExistException]
 14-Dec-2016 19:05 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 14-Dec-2016 19:05 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 14-Dec-2016 19:05 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -852,8 +852,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 14-Dec-2016 19:05 [DEBUG]: Creating instance of bean 'CustomerDoesNotExistException'
 14-Dec-2016 19:05 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 14-Dec-2016 19:05 [DEBUG]: Eagerly caching bean 'CustomerDoesNotExistException' to allow for resolving potential circular references
-14-Dec-2016 19:05 [TRACE]: Getting BeanInfo for class [persistence.exceptions.customerExceptions.CustomerDoesNotExistException]
-14-Dec-2016 19:05 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.customerExceptions.CustomerDoesNotExistException]
+14-Dec-2016 19:05 [TRACE]: Getting BeanInfo for class [domain.repositories.customerRepository.CustomerDoesNotExistException]
+14-Dec-2016 19:05 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.customerRepository.CustomerDoesNotExistException]
 14-Dec-2016 19:05 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 14-Dec-2016 19:05 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 14-Dec-2016 19:05 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -866,8 +866,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 14-Dec-2016 19:05 [DEBUG]: Creating instance of bean 'OrderAlreadyExistException'
 14-Dec-2016 19:05 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 14-Dec-2016 19:05 [DEBUG]: Eagerly caching bean 'OrderAlreadyExistException' to allow for resolving potential circular references
-14-Dec-2016 19:05 [TRACE]: Getting BeanInfo for class [persistence.exceptions.orderExceptions.OrderAlreadyExistException]
-14-Dec-2016 19:05 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.orderExceptions.OrderAlreadyExistException]
+14-Dec-2016 19:05 [TRACE]: Getting BeanInfo for class [domain.repositories.orderRepository.OrderAlreadyExistException]
+14-Dec-2016 19:05 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.orderRepository.OrderAlreadyExistException]
 14-Dec-2016 19:05 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 14-Dec-2016 19:05 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 14-Dec-2016 19:05 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -880,8 +880,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 14-Dec-2016 19:05 [DEBUG]: Creating instance of bean 'OrderDoesNotExistException'
 14-Dec-2016 19:05 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 14-Dec-2016 19:05 [DEBUG]: Eagerly caching bean 'OrderDoesNotExistException' to allow for resolving potential circular references
-14-Dec-2016 19:05 [TRACE]: Getting BeanInfo for class [persistence.exceptions.orderExceptions.OrderDoesNotExistException]
-14-Dec-2016 19:05 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.orderExceptions.OrderDoesNotExistException]
+14-Dec-2016 19:05 [TRACE]: Getting BeanInfo for class [domain.repositories.orderRepository.OrderDoesNotExistException]
+14-Dec-2016 19:05 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.orderRepository.OrderDoesNotExistException]
 14-Dec-2016 19:05 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 14-Dec-2016 19:05 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 14-Dec-2016 19:05 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -894,8 +894,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 14-Dec-2016 19:05 [DEBUG]: Creating instance of bean 'ProductAlreadyExistException'
 14-Dec-2016 19:05 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 14-Dec-2016 19:05 [DEBUG]: Eagerly caching bean 'ProductAlreadyExistException' to allow for resolving potential circular references
-14-Dec-2016 19:05 [TRACE]: Getting BeanInfo for class [persistence.exceptions.productExceptions.ProductAlreadyExistException]
-14-Dec-2016 19:05 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.productExceptions.ProductAlreadyExistException]
+14-Dec-2016 19:05 [TRACE]: Getting BeanInfo for class [domain.repositories.productRepository.ProductAlreadyExistException]
+14-Dec-2016 19:05 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.productRepository.ProductAlreadyExistException]
 14-Dec-2016 19:05 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 14-Dec-2016 19:05 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 14-Dec-2016 19:05 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -908,8 +908,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 14-Dec-2016 19:05 [DEBUG]: Creating instance of bean 'ProductDoesNotExistException'
 14-Dec-2016 19:05 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 14-Dec-2016 19:05 [DEBUG]: Eagerly caching bean 'ProductDoesNotExistException' to allow for resolving potential circular references
-14-Dec-2016 19:05 [TRACE]: Getting BeanInfo for class [persistence.exceptions.productExceptions.ProductDoesNotExistException]
-14-Dec-2016 19:05 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.productExceptions.ProductDoesNotExistException]
+14-Dec-2016 19:05 [TRACE]: Getting BeanInfo for class [domain.repositories.productRepository.ProductDoesNotExistException]
+14-Dec-2016 19:05 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.productRepository.ProductDoesNotExistException]
 14-Dec-2016 19:05 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 14-Dec-2016 19:05 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 14-Dec-2016 19:05 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]

@@ -837,8 +837,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 15-Dec-2016 11:16 [DEBUG]: Creating instance of bean 'CustomerAlreadyExistException'
 15-Dec-2016 11:16 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 15-Dec-2016 11:16 [DEBUG]: Eagerly caching bean 'CustomerAlreadyExistException' to allow for resolving potential circular references
-15-Dec-2016 11:16 [TRACE]: Getting BeanInfo for class [persistence.exceptions.customerExceptions.CustomerAlreadyExistException]
-15-Dec-2016 11:16 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.customerExceptions.CustomerAlreadyExistException]
+15-Dec-2016 11:16 [TRACE]: Getting BeanInfo for class [domain.repositories.customerRepository.CustomerAlreadyExistException]
+15-Dec-2016 11:16 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.customerRepository.CustomerAlreadyExistException]
 15-Dec-2016 11:16 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 15-Dec-2016 11:16 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 15-Dec-2016 11:16 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -851,8 +851,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 15-Dec-2016 11:16 [DEBUG]: Creating instance of bean 'CustomerDoesNotExistException'
 15-Dec-2016 11:16 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 15-Dec-2016 11:16 [DEBUG]: Eagerly caching bean 'CustomerDoesNotExistException' to allow for resolving potential circular references
-15-Dec-2016 11:16 [TRACE]: Getting BeanInfo for class [persistence.exceptions.customerExceptions.CustomerDoesNotExistException]
-15-Dec-2016 11:16 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.customerExceptions.CustomerDoesNotExistException]
+15-Dec-2016 11:16 [TRACE]: Getting BeanInfo for class [domain.repositories.customerRepository.CustomerDoesNotExistException]
+15-Dec-2016 11:16 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.customerRepository.CustomerDoesNotExistException]
 15-Dec-2016 11:16 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 15-Dec-2016 11:16 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 15-Dec-2016 11:16 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -865,8 +865,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 15-Dec-2016 11:16 [DEBUG]: Creating instance of bean 'OrderAlreadyExistException'
 15-Dec-2016 11:16 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 15-Dec-2016 11:16 [DEBUG]: Eagerly caching bean 'OrderAlreadyExistException' to allow for resolving potential circular references
-15-Dec-2016 11:16 [TRACE]: Getting BeanInfo for class [persistence.exceptions.orderExceptions.OrderAlreadyExistException]
-15-Dec-2016 11:16 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.orderExceptions.OrderAlreadyExistException]
+15-Dec-2016 11:16 [TRACE]: Getting BeanInfo for class [domain.repositories.orderRepository.OrderAlreadyExistException]
+15-Dec-2016 11:16 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.orderRepository.OrderAlreadyExistException]
 15-Dec-2016 11:16 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 15-Dec-2016 11:16 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 15-Dec-2016 11:16 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -879,8 +879,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 15-Dec-2016 11:16 [DEBUG]: Creating instance of bean 'OrderDoesNotExistException'
 15-Dec-2016 11:16 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 15-Dec-2016 11:16 [DEBUG]: Eagerly caching bean 'OrderDoesNotExistException' to allow for resolving potential circular references
-15-Dec-2016 11:16 [TRACE]: Getting BeanInfo for class [persistence.exceptions.orderExceptions.OrderDoesNotExistException]
-15-Dec-2016 11:16 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.orderExceptions.OrderDoesNotExistException]
+15-Dec-2016 11:16 [TRACE]: Getting BeanInfo for class [domain.repositories.orderRepository.OrderDoesNotExistException]
+15-Dec-2016 11:16 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.orderRepository.OrderDoesNotExistException]
 15-Dec-2016 11:16 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 15-Dec-2016 11:16 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 15-Dec-2016 11:16 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -893,8 +893,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 15-Dec-2016 11:16 [DEBUG]: Creating instance of bean 'ProductAlreadyExistException'
 15-Dec-2016 11:16 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 15-Dec-2016 11:16 [DEBUG]: Eagerly caching bean 'ProductAlreadyExistException' to allow for resolving potential circular references
-15-Dec-2016 11:16 [TRACE]: Getting BeanInfo for class [persistence.exceptions.productExceptions.ProductAlreadyExistException]
-15-Dec-2016 11:16 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.productExceptions.ProductAlreadyExistException]
+15-Dec-2016 11:16 [TRACE]: Getting BeanInfo for class [domain.repositories.productRepository.ProductAlreadyExistException]
+15-Dec-2016 11:16 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.productRepository.ProductAlreadyExistException]
 15-Dec-2016 11:16 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 15-Dec-2016 11:16 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 15-Dec-2016 11:16 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -907,8 +907,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 15-Dec-2016 11:16 [DEBUG]: Creating instance of bean 'ProductDoesNotExistException'
 15-Dec-2016 11:16 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 15-Dec-2016 11:16 [DEBUG]: Eagerly caching bean 'ProductDoesNotExistException' to allow for resolving potential circular references
-15-Dec-2016 11:16 [TRACE]: Getting BeanInfo for class [persistence.exceptions.productExceptions.ProductDoesNotExistException]
-15-Dec-2016 11:16 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.productExceptions.ProductDoesNotExistException]
+15-Dec-2016 11:16 [TRACE]: Getting BeanInfo for class [domain.repositories.productRepository.ProductDoesNotExistException]
+15-Dec-2016 11:16 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.productRepository.ProductDoesNotExistException]
 15-Dec-2016 11:16 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 15-Dec-2016 11:16 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 15-Dec-2016 11:16 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -1700,8 +1700,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 15-Dec-2016 11:16 [TRACE]: Bound value [org.springframework.orm.hibernate4.SessionHolder@63c7d0f] for key [org.hibernate.internal.SessionFactoryImpl@34b57c75] to thread [[ACTIVE] ExecuteThread: '1' for queue: 'weblogic.kernel.Default (self-tuning)']
 15-Dec-2016 11:16 [TRACE]: Initializing transaction synchronization
 15-Dec-2016 11:16 [TRACE]: Getting transaction for [webservice.endpoints.ProductEndpoint.createProduct]
-15-Dec-2016 11:16 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.createProduct] after exception: domain.exceptions.DateIntersectionInProductPriceException
-15-Dec-2016 11:16 [TRACE]: Applying rules to determine whether transaction should rollback on domain.exceptions.DateIntersectionInProductPriceException
+15-Dec-2016 11:16 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.createProduct] after exception: domain.product.DateIntersectionInProductPriceException
+15-Dec-2016 11:16 [TRACE]: Applying rules to determine whether transaction should rollback on domain.product.DateIntersectionInProductPriceException
 15-Dec-2016 11:16 [TRACE]: Winning rollback rule is: null
 15-Dec-2016 11:16 [TRACE]: No relevant rollback rule found: applying default rules
 15-Dec-2016 11:16 [TRACE]: Triggering beforeCompletion synchronization
@@ -1724,11 +1724,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 15-Dec-2016 11:16 [DEBUG]: Released JDBC connection
 15-Dec-2016 11:16 [TRACE]: Logical connection closed
 15-Dec-2016 11:16 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-15-Dec-2016 11:16 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: domain.exceptions.DateIntersectionInProductPriceException
+15-Dec-2016 11:16 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: domain.product.DateIntersectionInProductPriceException
 15-Dec-2016 11:16 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-15-Dec-2016 11:16 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: domain.exceptions.DateIntersectionInProductPriceException
+15-Dec-2016 11:16 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: domain.product.DateIntersectionInProductPriceException
 15-Dec-2016 11:16 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-domain.exceptions.DateIntersectionInProductPriceException
+domain.product.DateIntersectionInProductPriceException
 	at domain.product.Product.setProductPrices(Product.java:44)
 	at webservice.converters.ProductConverter.productDTOtoProduct(ProductConverter.java:39)
 	at webservice.endpoints.ProductEndpoint.createProduct(ProductEndpoint.java:47)
@@ -1869,8 +1869,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 15-Dec-2016 11:17 [TRACE]: Bound value [org.springframework.orm.hibernate4.SessionHolder@44f330e0] for key [org.hibernate.internal.SessionFactoryImpl@34b57c75] to thread [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)']
 15-Dec-2016 11:17 [TRACE]: Initializing transaction synchronization
 15-Dec-2016 11:17 [TRACE]: Getting transaction for [webservice.endpoints.ProductEndpoint.createProduct]
-15-Dec-2016 11:17 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.createProduct] after exception: domain.exceptions.DateIntersectionInProductPriceException
-15-Dec-2016 11:17 [TRACE]: Applying rules to determine whether transaction should rollback on domain.exceptions.DateIntersectionInProductPriceException
+15-Dec-2016 11:17 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.createProduct] after exception: domain.product.DateIntersectionInProductPriceException
+15-Dec-2016 11:17 [TRACE]: Applying rules to determine whether transaction should rollback on domain.product.DateIntersectionInProductPriceException
 15-Dec-2016 11:17 [TRACE]: Winning rollback rule is: null
 15-Dec-2016 11:17 [TRACE]: No relevant rollback rule found: applying default rules
 15-Dec-2016 11:17 [TRACE]: Triggering beforeCompletion synchronization
@@ -1893,11 +1893,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 15-Dec-2016 11:17 [DEBUG]: Released JDBC connection
 15-Dec-2016 11:17 [TRACE]: Logical connection closed
 15-Dec-2016 11:17 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-15-Dec-2016 11:17 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: domain.exceptions.DateIntersectionInProductPriceException
+15-Dec-2016 11:17 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: domain.product.DateIntersectionInProductPriceException
 15-Dec-2016 11:17 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-15-Dec-2016 11:17 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: domain.exceptions.DateIntersectionInProductPriceException
+15-Dec-2016 11:17 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: domain.product.DateIntersectionInProductPriceException
 15-Dec-2016 11:17 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-domain.exceptions.DateIntersectionInProductPriceException
+domain.product.DateIntersectionInProductPriceException
 	at domain.product.Product.setProductPrices(Product.java:44)
 	at webservice.converters.ProductConverter.productDTOtoProduct(ProductConverter.java:39)
 	at webservice.endpoints.ProductEndpoint.createProduct(ProductEndpoint.java:47)
@@ -2038,8 +2038,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 15-Dec-2016 11:17 [TRACE]: Bound value [org.springframework.orm.hibernate4.SessionHolder@74840baa] for key [org.hibernate.internal.SessionFactoryImpl@34b57c75] to thread [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)']
 15-Dec-2016 11:17 [TRACE]: Initializing transaction synchronization
 15-Dec-2016 11:17 [TRACE]: Getting transaction for [webservice.endpoints.ProductEndpoint.createProduct]
-15-Dec-2016 11:17 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.createProduct] after exception: domain.exceptions.DateIntersectionInProductPriceException
-15-Dec-2016 11:17 [TRACE]: Applying rules to determine whether transaction should rollback on domain.exceptions.DateIntersectionInProductPriceException
+15-Dec-2016 11:17 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.createProduct] after exception: domain.product.DateIntersectionInProductPriceException
+15-Dec-2016 11:17 [TRACE]: Applying rules to determine whether transaction should rollback on domain.product.DateIntersectionInProductPriceException
 15-Dec-2016 11:17 [TRACE]: Winning rollback rule is: null
 15-Dec-2016 11:17 [TRACE]: No relevant rollback rule found: applying default rules
 15-Dec-2016 11:17 [TRACE]: Triggering beforeCompletion synchronization
@@ -2062,11 +2062,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 15-Dec-2016 11:17 [DEBUG]: Released JDBC connection
 15-Dec-2016 11:17 [TRACE]: Logical connection closed
 15-Dec-2016 11:17 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-15-Dec-2016 11:17 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: domain.exceptions.DateIntersectionInProductPriceException
+15-Dec-2016 11:17 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: domain.product.DateIntersectionInProductPriceException
 15-Dec-2016 11:17 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-15-Dec-2016 11:17 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: domain.exceptions.DateIntersectionInProductPriceException
+15-Dec-2016 11:17 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: domain.product.DateIntersectionInProductPriceException
 15-Dec-2016 11:17 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-domain.exceptions.DateIntersectionInProductPriceException
+domain.product.DateIntersectionInProductPriceException
 	at domain.product.Product.setProductPrices(Product.java:44)
 	at webservice.converters.ProductConverter.productDTOtoProduct(ProductConverter.java:39)
 	at webservice.endpoints.ProductEndpoint.createProduct(ProductEndpoint.java:47)
@@ -2207,8 +2207,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 15-Dec-2016 11:17 [TRACE]: Bound value [org.springframework.orm.hibernate4.SessionHolder@1997c1d8] for key [org.hibernate.internal.SessionFactoryImpl@34b57c75] to thread [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)']
 15-Dec-2016 11:17 [TRACE]: Initializing transaction synchronization
 15-Dec-2016 11:17 [TRACE]: Getting transaction for [webservice.endpoints.ProductEndpoint.createProduct]
-15-Dec-2016 11:17 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.createProduct] after exception: domain.exceptions.DateIntersectionInProductPriceException
-15-Dec-2016 11:17 [TRACE]: Applying rules to determine whether transaction should rollback on domain.exceptions.DateIntersectionInProductPriceException
+15-Dec-2016 11:17 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.createProduct] after exception: domain.product.DateIntersectionInProductPriceException
+15-Dec-2016 11:17 [TRACE]: Applying rules to determine whether transaction should rollback on domain.product.DateIntersectionInProductPriceException
 15-Dec-2016 11:17 [TRACE]: Winning rollback rule is: null
 15-Dec-2016 11:17 [TRACE]: No relevant rollback rule found: applying default rules
 15-Dec-2016 11:17 [TRACE]: Triggering beforeCompletion synchronization
@@ -2231,11 +2231,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 15-Dec-2016 11:17 [DEBUG]: Released JDBC connection
 15-Dec-2016 11:17 [TRACE]: Logical connection closed
 15-Dec-2016 11:17 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-15-Dec-2016 11:17 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: domain.exceptions.DateIntersectionInProductPriceException
+15-Dec-2016 11:17 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: domain.product.DateIntersectionInProductPriceException
 15-Dec-2016 11:17 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-15-Dec-2016 11:17 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: domain.exceptions.DateIntersectionInProductPriceException
+15-Dec-2016 11:17 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: domain.product.DateIntersectionInProductPriceException
 15-Dec-2016 11:17 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-domain.exceptions.DateIntersectionInProductPriceException
+domain.product.DateIntersectionInProductPriceException
 	at domain.product.Product.setProductPrices(Product.java:44)
 	at webservice.converters.ProductConverter.productDTOtoProduct(ProductConverter.java:39)
 	at webservice.endpoints.ProductEndpoint.createProduct(ProductEndpoint.java:47)
@@ -2376,8 +2376,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 15-Dec-2016 11:17 [TRACE]: Bound value [org.springframework.orm.hibernate4.SessionHolder@30b8f952] for key [org.hibernate.internal.SessionFactoryImpl@34b57c75] to thread [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)']
 15-Dec-2016 11:17 [TRACE]: Initializing transaction synchronization
 15-Dec-2016 11:17 [TRACE]: Getting transaction for [webservice.endpoints.ProductEndpoint.createProduct]
-15-Dec-2016 11:17 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.createProduct] after exception: domain.exceptions.DateIntersectionInProductPriceException
-15-Dec-2016 11:17 [TRACE]: Applying rules to determine whether transaction should rollback on domain.exceptions.DateIntersectionInProductPriceException
+15-Dec-2016 11:17 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.createProduct] after exception: domain.product.DateIntersectionInProductPriceException
+15-Dec-2016 11:17 [TRACE]: Applying rules to determine whether transaction should rollback on domain.product.DateIntersectionInProductPriceException
 15-Dec-2016 11:17 [TRACE]: Winning rollback rule is: null
 15-Dec-2016 11:17 [TRACE]: No relevant rollback rule found: applying default rules
 15-Dec-2016 11:17 [TRACE]: Triggering beforeCompletion synchronization
@@ -2400,11 +2400,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 15-Dec-2016 11:17 [DEBUG]: Released JDBC connection
 15-Dec-2016 11:17 [TRACE]: Logical connection closed
 15-Dec-2016 11:17 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-15-Dec-2016 11:17 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: domain.exceptions.DateIntersectionInProductPriceException
+15-Dec-2016 11:17 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: domain.product.DateIntersectionInProductPriceException
 15-Dec-2016 11:17 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-15-Dec-2016 11:17 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: domain.exceptions.DateIntersectionInProductPriceException
+15-Dec-2016 11:17 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: domain.product.DateIntersectionInProductPriceException
 15-Dec-2016 11:17 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-domain.exceptions.DateIntersectionInProductPriceException
+domain.product.DateIntersectionInProductPriceException
 	at domain.product.Product.setProductPrices(Product.java:44)
 	at webservice.converters.ProductConverter.productDTOtoProduct(ProductConverter.java:39)
 	at webservice.endpoints.ProductEndpoint.createProduct(ProductEndpoint.java:47)
@@ -2545,8 +2545,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 15-Dec-2016 11:17 [TRACE]: Bound value [org.springframework.orm.hibernate4.SessionHolder@73982201] for key [org.hibernate.internal.SessionFactoryImpl@34b57c75] to thread [[ACTIVE] ExecuteThread: '1' for queue: 'weblogic.kernel.Default (self-tuning)']
 15-Dec-2016 11:17 [TRACE]: Initializing transaction synchronization
 15-Dec-2016 11:17 [TRACE]: Getting transaction for [webservice.endpoints.ProductEndpoint.createProduct]
-15-Dec-2016 11:17 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.createProduct] after exception: domain.exceptions.DateIntersectionInProductPriceException
-15-Dec-2016 11:17 [TRACE]: Applying rules to determine whether transaction should rollback on domain.exceptions.DateIntersectionInProductPriceException
+15-Dec-2016 11:17 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.createProduct] after exception: domain.product.DateIntersectionInProductPriceException
+15-Dec-2016 11:17 [TRACE]: Applying rules to determine whether transaction should rollback on domain.product.DateIntersectionInProductPriceException
 15-Dec-2016 11:17 [TRACE]: Winning rollback rule is: null
 15-Dec-2016 11:17 [TRACE]: No relevant rollback rule found: applying default rules
 15-Dec-2016 11:17 [TRACE]: Triggering beforeCompletion synchronization
@@ -2569,11 +2569,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 15-Dec-2016 11:17 [DEBUG]: Released JDBC connection
 15-Dec-2016 11:17 [TRACE]: Logical connection closed
 15-Dec-2016 11:17 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-15-Dec-2016 11:17 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: domain.exceptions.DateIntersectionInProductPriceException
+15-Dec-2016 11:17 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: domain.product.DateIntersectionInProductPriceException
 15-Dec-2016 11:17 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-15-Dec-2016 11:17 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: domain.exceptions.DateIntersectionInProductPriceException
+15-Dec-2016 11:17 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: domain.product.DateIntersectionInProductPriceException
 15-Dec-2016 11:17 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-domain.exceptions.DateIntersectionInProductPriceException
+domain.product.DateIntersectionInProductPriceException
 	at domain.product.Product.setProductPrices(Product.java:44)
 	at webservice.converters.ProductConverter.productDTOtoProduct(ProductConverter.java:39)
 	at webservice.endpoints.ProductEndpoint.createProduct(ProductEndpoint.java:47)
@@ -2977,8 +2977,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 15-Dec-2016 11:17 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 15-Dec-2016 11:17 [DEBUG]: Done loading collection
 15-Dec-2016 11:17 [TRACE]: Collection initialized
-15-Dec-2016 11:17 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.createProduct] after exception: persistence.exceptions.productExceptions.ProductAlreadyExistException
-15-Dec-2016 11:17 [TRACE]: Applying rules to determine whether transaction should rollback on persistence.exceptions.productExceptions.ProductAlreadyExistException
+15-Dec-2016 11:17 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.createProduct] after exception: domain.repositories.productRepository.ProductAlreadyExistException
+15-Dec-2016 11:17 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.productRepository.ProductAlreadyExistException
 15-Dec-2016 11:17 [TRACE]: Winning rollback rule is: null
 15-Dec-2016 11:17 [TRACE]: No relevant rollback rule found: applying default rules
 15-Dec-2016 11:17 [TRACE]: Triggering beforeCompletion synchronization
@@ -3001,11 +3001,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 15-Dec-2016 11:17 [DEBUG]: Released JDBC connection
 15-Dec-2016 11:17 [TRACE]: Logical connection closed
 15-Dec-2016 11:17 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-15-Dec-2016 11:17 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: persistence.exceptions.productExceptions.ProductAlreadyExistException
+15-Dec-2016 11:17 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: domain.repositories.productRepository.ProductAlreadyExistException
 15-Dec-2016 11:17 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-15-Dec-2016 11:17 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: persistence.exceptions.productExceptions.ProductAlreadyExistException
+15-Dec-2016 11:17 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: domain.repositories.productRepository.ProductAlreadyExistException
 15-Dec-2016 11:17 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-persistence.exceptions.productExceptions.ProductAlreadyExistException
+domain.repositories.productRepository.ProductAlreadyExistException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
@@ -3337,8 +3337,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 15-Dec-2016 11:18 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@17d0fda9]
 15-Dec-2016 11:18 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 15-Dec-2016 11:18 [TRACE]: Initializing non-lazy collections
-15-Dec-2016 11:18 [TRACE]: Completing transaction for [webservice.endpoints.OrderEndpoint.createOrder] after exception: persistence.exceptions.customerExceptions.CustomerDoesNotExistException
-15-Dec-2016 11:18 [TRACE]: Applying rules to determine whether transaction should rollback on persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+15-Dec-2016 11:18 [TRACE]: Completing transaction for [webservice.endpoints.OrderEndpoint.createOrder] after exception: domain.repositories.customerRepository.CustomerDoesNotExistException
+15-Dec-2016 11:18 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.customerRepository.CustomerDoesNotExistException
 15-Dec-2016 11:18 [TRACE]: Winning rollback rule is: null
 15-Dec-2016 11:18 [TRACE]: No relevant rollback rule found: applying default rules
 15-Dec-2016 11:18 [TRACE]: Triggering beforeCompletion synchronization
@@ -3361,11 +3361,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 15-Dec-2016 11:18 [DEBUG]: Released JDBC connection
 15-Dec-2016 11:18 [TRACE]: Logical connection closed
 15-Dec-2016 11:18 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-15-Dec-2016 11:18 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+15-Dec-2016 11:18 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: domain.repositories.customerRepository.CustomerDoesNotExistException
 15-Dec-2016 11:18 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-15-Dec-2016 11:18 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+15-Dec-2016 11:18 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: domain.repositories.customerRepository.CustomerDoesNotExistException
 15-Dec-2016 11:18 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+domain.repositories.customerRepository.CustomerDoesNotExistException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
@@ -4843,8 +4843,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 15-Dec-2016 11:19 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@587bd049]
 15-Dec-2016 11:19 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 15-Dec-2016 11:19 [TRACE]: Initializing non-lazy collections
-15-Dec-2016 11:19 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.deleteProduct] after exception: persistence.exceptions.productExceptions.ProductDoesNotExistException
-15-Dec-2016 11:19 [TRACE]: Applying rules to determine whether transaction should rollback on persistence.exceptions.productExceptions.ProductDoesNotExistException
+15-Dec-2016 11:19 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.deleteProduct] after exception: domain.repositories.productRepository.ProductDoesNotExistException
+15-Dec-2016 11:19 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.productRepository.ProductDoesNotExistException
 15-Dec-2016 11:19 [TRACE]: Winning rollback rule is: null
 15-Dec-2016 11:19 [TRACE]: No relevant rollback rule found: applying default rules
 15-Dec-2016 11:19 [TRACE]: Triggering beforeCompletion synchronization
@@ -4867,11 +4867,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 15-Dec-2016 11:19 [DEBUG]: Released JDBC connection
 15-Dec-2016 11:19 [TRACE]: Logical connection closed
 15-Dec-2016 11:19 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-15-Dec-2016 11:19 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest)]: persistence.exceptions.productExceptions.ProductDoesNotExistException
+15-Dec-2016 11:19 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest)]: domain.repositories.productRepository.ProductDoesNotExistException
 15-Dec-2016 11:19 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-15-Dec-2016 11:19 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest)]: persistence.exceptions.productExceptions.ProductDoesNotExistException
+15-Dec-2016 11:19 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest)]: domain.repositories.productRepository.ProductDoesNotExistException
 15-Dec-2016 11:19 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-persistence.exceptions.productExceptions.ProductDoesNotExistException
+domain.repositories.productRepository.ProductDoesNotExistException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
@@ -7172,8 +7172,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 15-Dec-2016 11:20 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@19df98b9]
 15-Dec-2016 11:20 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 15-Dec-2016 11:20 [TRACE]: Initializing non-lazy collections
-15-Dec-2016 11:20 [TRACE]: Completing transaction for [webservice.endpoints.CustomerEndpoint.createCustomer] after exception: persistence.exceptions.customerExceptions.CustomerAlreadyExistException
-15-Dec-2016 11:20 [TRACE]: Applying rules to determine whether transaction should rollback on persistence.exceptions.customerExceptions.CustomerAlreadyExistException
+15-Dec-2016 11:20 [TRACE]: Completing transaction for [webservice.endpoints.CustomerEndpoint.createCustomer] after exception: domain.repositories.customerRepository.CustomerAlreadyExistException
+15-Dec-2016 11:20 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.customerRepository.CustomerAlreadyExistException
 15-Dec-2016 11:20 [TRACE]: Winning rollback rule is: null
 15-Dec-2016 11:20 [TRACE]: No relevant rollback rule found: applying default rules
 15-Dec-2016 11:20 [TRACE]: Triggering beforeCompletion synchronization
@@ -7196,11 +7196,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 15-Dec-2016 11:20 [DEBUG]: Released JDBC connection
 15-Dec-2016 11:20 [TRACE]: Logical connection closed
 15-Dec-2016 11:20 [DEBUG]: Returning cached instance of singleton bean 'customerEndpoint'
-15-Dec-2016 11:20 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.CustomerEndpoint.createCustomer(webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest)]: persistence.exceptions.customerExceptions.CustomerAlreadyExistException
+15-Dec-2016 11:20 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.CustomerEndpoint.createCustomer(webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest)]: domain.repositories.customerRepository.CustomerAlreadyExistException
 15-Dec-2016 11:20 [DEBUG]: Returning cached instance of singleton bean 'customerEndpoint'
-15-Dec-2016 11:20 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.CustomerEndpoint.createCustomer(webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest)]: persistence.exceptions.customerExceptions.CustomerAlreadyExistException
+15-Dec-2016 11:20 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.CustomerEndpoint.createCustomer(webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest)]: domain.repositories.customerRepository.CustomerAlreadyExistException
 15-Dec-2016 11:20 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-persistence.exceptions.customerExceptions.CustomerAlreadyExistException
+domain.repositories.customerRepository.CustomerAlreadyExistException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
@@ -11599,8 +11599,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 15-Dec-2016 11:26 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@1674b452]
 15-Dec-2016 11:26 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 15-Dec-2016 11:26 [TRACE]: Initializing non-lazy collections
-15-Dec-2016 11:26 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.getProduct] after exception: persistence.exceptions.productExceptions.ProductDoesNotExistException
-15-Dec-2016 11:26 [TRACE]: Applying rules to determine whether transaction should rollback on persistence.exceptions.productExceptions.ProductDoesNotExistException
+15-Dec-2016 11:26 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.getProduct] after exception: domain.repositories.productRepository.ProductDoesNotExistException
+15-Dec-2016 11:26 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.productRepository.ProductDoesNotExistException
 15-Dec-2016 11:26 [TRACE]: Winning rollback rule is: null
 15-Dec-2016 11:26 [TRACE]: No relevant rollback rule found: applying default rules
 15-Dec-2016 11:26 [TRACE]: Triggering beforeCompletion synchronization
@@ -11624,11 +11624,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 15-Dec-2016 11:26 [DEBUG]: Released JDBC connection
 15-Dec-2016 11:26 [TRACE]: Logical connection closed
 15-Dec-2016 11:26 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-15-Dec-2016 11:26 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest)]: persistence.exceptions.productExceptions.ProductDoesNotExistException
+15-Dec-2016 11:26 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest)]: domain.repositories.productRepository.ProductDoesNotExistException
 15-Dec-2016 11:26 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-15-Dec-2016 11:26 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest)]: persistence.exceptions.productExceptions.ProductDoesNotExistException
+15-Dec-2016 11:26 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest)]: domain.repositories.productRepository.ProductDoesNotExistException
 15-Dec-2016 11:26 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-persistence.exceptions.productExceptions.ProductDoesNotExistException
+domain.repositories.productRepository.ProductDoesNotExistException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)

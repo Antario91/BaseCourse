@@ -850,8 +850,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 14-Dec-2016 15:32 [DEBUG]: Creating instance of bean 'CustomerAlreadyExistException'
 14-Dec-2016 15:32 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 14-Dec-2016 15:32 [DEBUG]: Eagerly caching bean 'CustomerAlreadyExistException' to allow for resolving potential circular references
-14-Dec-2016 15:32 [TRACE]: Getting BeanInfo for class [persistence.exceptions.customerExceptions.CustomerAlreadyExistException]
-14-Dec-2016 15:32 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.customerExceptions.CustomerAlreadyExistException]
+14-Dec-2016 15:32 [TRACE]: Getting BeanInfo for class [domain.repositories.customerRepository.CustomerAlreadyExistException]
+14-Dec-2016 15:32 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.customerRepository.CustomerAlreadyExistException]
 14-Dec-2016 15:32 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 14-Dec-2016 15:32 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 14-Dec-2016 15:32 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -864,8 +864,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 14-Dec-2016 15:32 [DEBUG]: Creating instance of bean 'CustomerDoesNotExistException'
 14-Dec-2016 15:32 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 14-Dec-2016 15:32 [DEBUG]: Eagerly caching bean 'CustomerDoesNotExistException' to allow for resolving potential circular references
-14-Dec-2016 15:32 [TRACE]: Getting BeanInfo for class [persistence.exceptions.customerExceptions.CustomerDoesNotExistException]
-14-Dec-2016 15:32 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.customerExceptions.CustomerDoesNotExistException]
+14-Dec-2016 15:32 [TRACE]: Getting BeanInfo for class [domain.repositories.customerRepository.CustomerDoesNotExistException]
+14-Dec-2016 15:32 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.customerRepository.CustomerDoesNotExistException]
 14-Dec-2016 15:32 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 14-Dec-2016 15:32 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 14-Dec-2016 15:32 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -878,8 +878,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 14-Dec-2016 15:32 [DEBUG]: Creating instance of bean 'OrderAlreadyExistException'
 14-Dec-2016 15:32 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 14-Dec-2016 15:32 [DEBUG]: Eagerly caching bean 'OrderAlreadyExistException' to allow for resolving potential circular references
-14-Dec-2016 15:32 [TRACE]: Getting BeanInfo for class [persistence.exceptions.orderExceptions.OrderAlreadyExistException]
-14-Dec-2016 15:32 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.orderExceptions.OrderAlreadyExistException]
+14-Dec-2016 15:32 [TRACE]: Getting BeanInfo for class [domain.repositories.orderRepository.OrderAlreadyExistException]
+14-Dec-2016 15:32 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.orderRepository.OrderAlreadyExistException]
 14-Dec-2016 15:32 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 14-Dec-2016 15:32 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 14-Dec-2016 15:32 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -892,8 +892,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 14-Dec-2016 15:32 [DEBUG]: Creating instance of bean 'OrderDoesNotExistException'
 14-Dec-2016 15:32 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 14-Dec-2016 15:32 [DEBUG]: Eagerly caching bean 'OrderDoesNotExistException' to allow for resolving potential circular references
-14-Dec-2016 15:32 [TRACE]: Getting BeanInfo for class [persistence.exceptions.orderExceptions.OrderDoesNotExistException]
-14-Dec-2016 15:32 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.orderExceptions.OrderDoesNotExistException]
+14-Dec-2016 15:32 [TRACE]: Getting BeanInfo for class [domain.repositories.orderRepository.OrderDoesNotExistException]
+14-Dec-2016 15:32 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.orderRepository.OrderDoesNotExistException]
 14-Dec-2016 15:32 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 14-Dec-2016 15:32 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 14-Dec-2016 15:32 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -906,8 +906,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 14-Dec-2016 15:32 [DEBUG]: Creating instance of bean 'ProductAlreadyExistException'
 14-Dec-2016 15:32 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 14-Dec-2016 15:32 [DEBUG]: Eagerly caching bean 'ProductAlreadyExistException' to allow for resolving potential circular references
-14-Dec-2016 15:32 [TRACE]: Getting BeanInfo for class [persistence.exceptions.productExceptions.ProductAlreadyExistException]
-14-Dec-2016 15:32 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.productExceptions.ProductAlreadyExistException]
+14-Dec-2016 15:32 [TRACE]: Getting BeanInfo for class [domain.repositories.productRepository.ProductAlreadyExistException]
+14-Dec-2016 15:32 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.productRepository.ProductAlreadyExistException]
 14-Dec-2016 15:32 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 14-Dec-2016 15:32 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 14-Dec-2016 15:32 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -920,8 +920,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 14-Dec-2016 15:32 [DEBUG]: Creating instance of bean 'ProductDoesNotExistException'
 14-Dec-2016 15:32 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 14-Dec-2016 15:32 [DEBUG]: Eagerly caching bean 'ProductDoesNotExistException' to allow for resolving potential circular references
-14-Dec-2016 15:32 [TRACE]: Getting BeanInfo for class [persistence.exceptions.productExceptions.ProductDoesNotExistException]
-14-Dec-2016 15:32 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.productExceptions.ProductDoesNotExistException]
+14-Dec-2016 15:32 [TRACE]: Getting BeanInfo for class [domain.repositories.productRepository.ProductDoesNotExistException]
+14-Dec-2016 15:32 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.productRepository.ProductDoesNotExistException]
 14-Dec-2016 15:32 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 14-Dec-2016 15:32 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 14-Dec-2016 15:32 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -1912,8 +1912,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:32 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 14-Dec-2016 15:32 [DEBUG]: Done loading collection
 14-Dec-2016 15:32 [TRACE]: Collection initialized
-14-Dec-2016 15:32 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.createProduct] after exception: persistence.exceptions.productExceptions.ProductAlreadyExistException
-14-Dec-2016 15:32 [TRACE]: Applying rules to determine whether transaction should rollback on persistence.exceptions.productExceptions.ProductAlreadyExistException
+14-Dec-2016 15:32 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.createProduct] after exception: domain.repositories.productRepository.ProductAlreadyExistException
+14-Dec-2016 15:32 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.productRepository.ProductAlreadyExistException
 14-Dec-2016 15:32 [TRACE]: Winning rollback rule is: null
 14-Dec-2016 15:32 [TRACE]: No relevant rollback rule found: applying default rules
 14-Dec-2016 15:32 [TRACE]: Triggering beforeCompletion synchronization
@@ -1936,11 +1936,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:32 [DEBUG]: Released JDBC connection
 14-Dec-2016 15:32 [TRACE]: Logical connection closed
 14-Dec-2016 15:32 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-14-Dec-2016 15:32 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: persistence.exceptions.productExceptions.ProductAlreadyExistException
+14-Dec-2016 15:32 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: domain.repositories.productRepository.ProductAlreadyExistException
 14-Dec-2016 15:32 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-14-Dec-2016 15:32 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: persistence.exceptions.productExceptions.ProductAlreadyExistException
+14-Dec-2016 15:32 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest)]: domain.repositories.productRepository.ProductAlreadyExistException
 14-Dec-2016 15:32 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-persistence.exceptions.productExceptions.ProductAlreadyExistException
+domain.repositories.productRepository.ProductAlreadyExistException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
@@ -2076,8 +2076,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:33 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@27155f77]
 14-Dec-2016 15:33 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 14-Dec-2016 15:33 [TRACE]: Initializing non-lazy collections
-14-Dec-2016 15:33 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.getProduct] after exception: persistence.exceptions.productExceptions.ProductDoesNotExistException
-14-Dec-2016 15:33 [TRACE]: Applying rules to determine whether transaction should rollback on persistence.exceptions.productExceptions.ProductDoesNotExistException
+14-Dec-2016 15:33 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.getProduct] after exception: domain.repositories.productRepository.ProductDoesNotExistException
+14-Dec-2016 15:33 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.productRepository.ProductDoesNotExistException
 14-Dec-2016 15:33 [TRACE]: Winning rollback rule is: null
 14-Dec-2016 15:33 [TRACE]: No relevant rollback rule found: applying default rules
 14-Dec-2016 15:33 [TRACE]: Triggering beforeCompletion synchronization
@@ -2101,11 +2101,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:33 [DEBUG]: Released JDBC connection
 14-Dec-2016 15:33 [TRACE]: Logical connection closed
 14-Dec-2016 15:33 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-14-Dec-2016 15:33 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest)]: persistence.exceptions.productExceptions.ProductDoesNotExistException
+14-Dec-2016 15:33 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest)]: domain.repositories.productRepository.ProductDoesNotExistException
 14-Dec-2016 15:33 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-14-Dec-2016 15:33 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest)]: persistence.exceptions.productExceptions.ProductDoesNotExistException
+14-Dec-2016 15:33 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest)]: domain.repositories.productRepository.ProductDoesNotExistException
 14-Dec-2016 15:33 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-persistence.exceptions.productExceptions.ProductDoesNotExistException
+domain.repositories.productRepository.ProductDoesNotExistException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
@@ -2392,8 +2392,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:33 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@4c4c624]
 14-Dec-2016 15:33 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 14-Dec-2016 15:33 [TRACE]: Initializing non-lazy collections
-14-Dec-2016 15:33 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.deleteProduct] after exception: persistence.exceptions.productExceptions.ProductDoesNotExistException
-14-Dec-2016 15:33 [TRACE]: Applying rules to determine whether transaction should rollback on persistence.exceptions.productExceptions.ProductDoesNotExistException
+14-Dec-2016 15:33 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.deleteProduct] after exception: domain.repositories.productRepository.ProductDoesNotExistException
+14-Dec-2016 15:33 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.productRepository.ProductDoesNotExistException
 14-Dec-2016 15:33 [TRACE]: Winning rollback rule is: null
 14-Dec-2016 15:33 [TRACE]: No relevant rollback rule found: applying default rules
 14-Dec-2016 15:33 [TRACE]: Triggering beforeCompletion synchronization
@@ -2416,11 +2416,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:33 [DEBUG]: Released JDBC connection
 14-Dec-2016 15:33 [TRACE]: Logical connection closed
 14-Dec-2016 15:33 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-14-Dec-2016 15:33 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest)]: persistence.exceptions.productExceptions.ProductDoesNotExistException
+14-Dec-2016 15:33 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest)]: domain.repositories.productRepository.ProductDoesNotExistException
 14-Dec-2016 15:33 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-14-Dec-2016 15:33 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest)]: persistence.exceptions.productExceptions.ProductDoesNotExistException
+14-Dec-2016 15:33 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest)]: domain.repositories.productRepository.ProductDoesNotExistException
 14-Dec-2016 15:33 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-persistence.exceptions.productExceptions.ProductDoesNotExistException
+domain.repositories.productRepository.ProductDoesNotExistException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
@@ -2708,8 +2708,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:34 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@275b4336]
 14-Dec-2016 15:34 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 14-Dec-2016 15:34 [TRACE]: Initializing non-lazy collections
-14-Dec-2016 15:34 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.getProduct] after exception: persistence.exceptions.productExceptions.ProductDoesNotExistException
-14-Dec-2016 15:34 [TRACE]: Applying rules to determine whether transaction should rollback on persistence.exceptions.productExceptions.ProductDoesNotExistException
+14-Dec-2016 15:34 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.getProduct] after exception: domain.repositories.productRepository.ProductDoesNotExistException
+14-Dec-2016 15:34 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.productRepository.ProductDoesNotExistException
 14-Dec-2016 15:34 [TRACE]: Winning rollback rule is: null
 14-Dec-2016 15:34 [TRACE]: No relevant rollback rule found: applying default rules
 14-Dec-2016 15:34 [TRACE]: Triggering beforeCompletion synchronization
@@ -2733,11 +2733,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:34 [DEBUG]: Released JDBC connection
 14-Dec-2016 15:34 [TRACE]: Logical connection closed
 14-Dec-2016 15:34 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-14-Dec-2016 15:34 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest)]: persistence.exceptions.productExceptions.ProductDoesNotExistException
+14-Dec-2016 15:34 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest)]: domain.repositories.productRepository.ProductDoesNotExistException
 14-Dec-2016 15:34 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-14-Dec-2016 15:34 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest)]: persistence.exceptions.productExceptions.ProductDoesNotExistException
+14-Dec-2016 15:34 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest)]: domain.repositories.productRepository.ProductDoesNotExistException
 14-Dec-2016 15:34 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-persistence.exceptions.productExceptions.ProductDoesNotExistException
+domain.repositories.productRepository.ProductDoesNotExistException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
@@ -2864,8 +2864,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:35 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@5db5dc81]
 14-Dec-2016 15:35 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 14-Dec-2016 15:35 [TRACE]: Initializing non-lazy collections
-14-Dec-2016 15:35 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.getProduct] after exception: persistence.exceptions.productExceptions.ProductDoesNotExistException
-14-Dec-2016 15:35 [TRACE]: Applying rules to determine whether transaction should rollback on persistence.exceptions.productExceptions.ProductDoesNotExistException
+14-Dec-2016 15:35 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.getProduct] after exception: domain.repositories.productRepository.ProductDoesNotExistException
+14-Dec-2016 15:35 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.productRepository.ProductDoesNotExistException
 14-Dec-2016 15:35 [TRACE]: Winning rollback rule is: null
 14-Dec-2016 15:35 [TRACE]: No relevant rollback rule found: applying default rules
 14-Dec-2016 15:35 [TRACE]: Triggering beforeCompletion synchronization
@@ -2889,11 +2889,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:35 [DEBUG]: Released JDBC connection
 14-Dec-2016 15:35 [TRACE]: Logical connection closed
 14-Dec-2016 15:35 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-14-Dec-2016 15:35 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest)]: persistence.exceptions.productExceptions.ProductDoesNotExistException
+14-Dec-2016 15:35 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest)]: domain.repositories.productRepository.ProductDoesNotExistException
 14-Dec-2016 15:35 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-14-Dec-2016 15:35 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest)]: persistence.exceptions.productExceptions.ProductDoesNotExistException
+14-Dec-2016 15:35 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest)]: domain.repositories.productRepository.ProductDoesNotExistException
 14-Dec-2016 15:35 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-persistence.exceptions.productExceptions.ProductDoesNotExistException
+domain.repositories.productRepository.ProductDoesNotExistException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
@@ -3020,8 +3020,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:35 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@18607df6]
 14-Dec-2016 15:35 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 14-Dec-2016 15:35 [TRACE]: Initializing non-lazy collections
-14-Dec-2016 15:35 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.getProduct] after exception: persistence.exceptions.productExceptions.ProductDoesNotExistException
-14-Dec-2016 15:35 [TRACE]: Applying rules to determine whether transaction should rollback on persistence.exceptions.productExceptions.ProductDoesNotExistException
+14-Dec-2016 15:35 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.getProduct] after exception: domain.repositories.productRepository.ProductDoesNotExistException
+14-Dec-2016 15:35 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.productRepository.ProductDoesNotExistException
 14-Dec-2016 15:35 [TRACE]: Winning rollback rule is: null
 14-Dec-2016 15:35 [TRACE]: No relevant rollback rule found: applying default rules
 14-Dec-2016 15:35 [TRACE]: Triggering beforeCompletion synchronization
@@ -3045,11 +3045,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:35 [DEBUG]: Released JDBC connection
 14-Dec-2016 15:35 [TRACE]: Logical connection closed
 14-Dec-2016 15:35 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-14-Dec-2016 15:35 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest)]: persistence.exceptions.productExceptions.ProductDoesNotExistException
+14-Dec-2016 15:35 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest)]: domain.repositories.productRepository.ProductDoesNotExistException
 14-Dec-2016 15:35 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-14-Dec-2016 15:35 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest)]: persistence.exceptions.productExceptions.ProductDoesNotExistException
+14-Dec-2016 15:35 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest)]: domain.repositories.productRepository.ProductDoesNotExistException
 14-Dec-2016 15:35 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-persistence.exceptions.productExceptions.ProductDoesNotExistException
+domain.repositories.productRepository.ProductDoesNotExistException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
@@ -3724,8 +3724,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:36 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@efa3f90]
 14-Dec-2016 15:36 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 14-Dec-2016 15:36 [TRACE]: Initializing non-lazy collections
-14-Dec-2016 15:36 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.getProduct] after exception: persistence.exceptions.productExceptions.ProductDoesNotExistException
-14-Dec-2016 15:36 [TRACE]: Applying rules to determine whether transaction should rollback on persistence.exceptions.productExceptions.ProductDoesNotExistException
+14-Dec-2016 15:36 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.getProduct] after exception: domain.repositories.productRepository.ProductDoesNotExistException
+14-Dec-2016 15:36 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.productRepository.ProductDoesNotExistException
 14-Dec-2016 15:36 [TRACE]: Winning rollback rule is: null
 14-Dec-2016 15:36 [TRACE]: No relevant rollback rule found: applying default rules
 14-Dec-2016 15:36 [TRACE]: Triggering beforeCompletion synchronization
@@ -3749,11 +3749,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:36 [DEBUG]: Released JDBC connection
 14-Dec-2016 15:36 [TRACE]: Logical connection closed
 14-Dec-2016 15:36 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-14-Dec-2016 15:36 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest)]: persistence.exceptions.productExceptions.ProductDoesNotExistException
+14-Dec-2016 15:36 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest)]: domain.repositories.productRepository.ProductDoesNotExistException
 14-Dec-2016 15:36 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-14-Dec-2016 15:36 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest)]: persistence.exceptions.productExceptions.ProductDoesNotExistException
+14-Dec-2016 15:36 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest)]: domain.repositories.productRepository.ProductDoesNotExistException
 14-Dec-2016 15:36 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-persistence.exceptions.productExceptions.ProductDoesNotExistException
+domain.repositories.productRepository.ProductDoesNotExistException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
@@ -4072,8 +4072,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:37 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@760140e2]
 14-Dec-2016 15:37 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 14-Dec-2016 15:37 [TRACE]: Initializing non-lazy collections
-14-Dec-2016 15:37 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.updateProduct] after exception: persistence.exceptions.productExceptions.ProductDoesNotExistException
-14-Dec-2016 15:37 [TRACE]: Applying rules to determine whether transaction should rollback on persistence.exceptions.productExceptions.ProductDoesNotExistException
+14-Dec-2016 15:37 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.updateProduct] after exception: domain.repositories.productRepository.ProductDoesNotExistException
+14-Dec-2016 15:37 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.productRepository.ProductDoesNotExistException
 14-Dec-2016 15:37 [TRACE]: Winning rollback rule is: null
 14-Dec-2016 15:37 [TRACE]: No relevant rollback rule found: applying default rules
 14-Dec-2016 15:37 [TRACE]: Triggering beforeCompletion synchronization
@@ -4096,11 +4096,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:37 [DEBUG]: Released JDBC connection
 14-Dec-2016 15:37 [TRACE]: Logical connection closed
 14-Dec-2016 15:37 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-14-Dec-2016 15:37 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.updateProduct(webservice.endpointrequestresponse.productrequestresponse.UpdateProductRequest)]: persistence.exceptions.productExceptions.ProductDoesNotExistException
+14-Dec-2016 15:37 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.updateProduct(webservice.endpointrequestresponse.productrequestresponse.UpdateProductRequest)]: domain.repositories.productRepository.ProductDoesNotExistException
 14-Dec-2016 15:37 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-14-Dec-2016 15:37 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.updateProduct(webservice.endpointrequestresponse.productrequestresponse.UpdateProductRequest)]: persistence.exceptions.productExceptions.ProductDoesNotExistException
+14-Dec-2016 15:37 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.updateProduct(webservice.endpointrequestresponse.productrequestresponse.UpdateProductRequest)]: domain.repositories.productRepository.ProductDoesNotExistException
 14-Dec-2016 15:37 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-persistence.exceptions.productExceptions.ProductDoesNotExistException
+domain.repositories.productRepository.ProductDoesNotExistException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
@@ -4528,8 +4528,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:38 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@32e8f3eb]
 14-Dec-2016 15:38 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 14-Dec-2016 15:38 [TRACE]: Initializing non-lazy collections
-14-Dec-2016 15:38 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.deleteProduct] after exception: persistence.exceptions.productExceptions.ProductDoesNotExistException
-14-Dec-2016 15:38 [TRACE]: Applying rules to determine whether transaction should rollback on persistence.exceptions.productExceptions.ProductDoesNotExistException
+14-Dec-2016 15:38 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.deleteProduct] after exception: domain.repositories.productRepository.ProductDoesNotExistException
+14-Dec-2016 15:38 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.productRepository.ProductDoesNotExistException
 14-Dec-2016 15:38 [TRACE]: Winning rollback rule is: null
 14-Dec-2016 15:38 [TRACE]: No relevant rollback rule found: applying default rules
 14-Dec-2016 15:38 [TRACE]: Triggering beforeCompletion synchronization
@@ -4552,11 +4552,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:38 [DEBUG]: Released JDBC connection
 14-Dec-2016 15:38 [TRACE]: Logical connection closed
 14-Dec-2016 15:38 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-14-Dec-2016 15:38 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest)]: persistence.exceptions.productExceptions.ProductDoesNotExistException
+14-Dec-2016 15:38 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest)]: domain.repositories.productRepository.ProductDoesNotExistException
 14-Dec-2016 15:38 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-14-Dec-2016 15:38 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest)]: persistence.exceptions.productExceptions.ProductDoesNotExistException
+14-Dec-2016 15:38 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest)]: domain.repositories.productRepository.ProductDoesNotExistException
 14-Dec-2016 15:38 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-persistence.exceptions.productExceptions.ProductDoesNotExistException
+domain.repositories.productRepository.ProductDoesNotExistException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
@@ -5053,8 +5053,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:39 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@15d03fe9]
 14-Dec-2016 15:39 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 14-Dec-2016 15:39 [TRACE]: Initializing non-lazy collections
-14-Dec-2016 15:39 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.getProduct] after exception: persistence.exceptions.productExceptions.ProductDoesNotExistException
-14-Dec-2016 15:39 [TRACE]: Applying rules to determine whether transaction should rollback on persistence.exceptions.productExceptions.ProductDoesNotExistException
+14-Dec-2016 15:39 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.getProduct] after exception: domain.repositories.productRepository.ProductDoesNotExistException
+14-Dec-2016 15:39 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.productRepository.ProductDoesNotExistException
 14-Dec-2016 15:39 [TRACE]: Winning rollback rule is: null
 14-Dec-2016 15:39 [TRACE]: No relevant rollback rule found: applying default rules
 14-Dec-2016 15:39 [TRACE]: Triggering beforeCompletion synchronization
@@ -5078,11 +5078,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:39 [DEBUG]: Released JDBC connection
 14-Dec-2016 15:39 [TRACE]: Logical connection closed
 14-Dec-2016 15:39 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-14-Dec-2016 15:39 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest)]: persistence.exceptions.productExceptions.ProductDoesNotExistException
+14-Dec-2016 15:39 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest)]: domain.repositories.productRepository.ProductDoesNotExistException
 14-Dec-2016 15:39 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-14-Dec-2016 15:39 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest)]: persistence.exceptions.productExceptions.ProductDoesNotExistException
+14-Dec-2016 15:39 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest)]: domain.repositories.productRepository.ProductDoesNotExistException
 14-Dec-2016 15:39 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-persistence.exceptions.productExceptions.ProductDoesNotExistException
+domain.repositories.productRepository.ProductDoesNotExistException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
@@ -5476,8 +5476,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:44 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@25c9e2df]
 14-Dec-2016 15:44 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 14-Dec-2016 15:44 [TRACE]: Initializing non-lazy collections
-14-Dec-2016 15:44 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.updateProduct] after exception: persistence.exceptions.productExceptions.ProductDoesNotExistException
-14-Dec-2016 15:44 [TRACE]: Applying rules to determine whether transaction should rollback on persistence.exceptions.productExceptions.ProductDoesNotExistException
+14-Dec-2016 15:44 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.updateProduct] after exception: domain.repositories.productRepository.ProductDoesNotExistException
+14-Dec-2016 15:44 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.productRepository.ProductDoesNotExistException
 14-Dec-2016 15:44 [TRACE]: Winning rollback rule is: null
 14-Dec-2016 15:44 [TRACE]: No relevant rollback rule found: applying default rules
 14-Dec-2016 15:44 [TRACE]: Triggering beforeCompletion synchronization
@@ -5500,11 +5500,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:44 [DEBUG]: Released JDBC connection
 14-Dec-2016 15:44 [TRACE]: Logical connection closed
 14-Dec-2016 15:44 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-14-Dec-2016 15:44 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.updateProduct(webservice.endpointrequestresponse.productrequestresponse.UpdateProductRequest)]: persistence.exceptions.productExceptions.ProductDoesNotExistException
+14-Dec-2016 15:44 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.updateProduct(webservice.endpointrequestresponse.productrequestresponse.UpdateProductRequest)]: domain.repositories.productRepository.ProductDoesNotExistException
 14-Dec-2016 15:44 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-14-Dec-2016 15:44 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.updateProduct(webservice.endpointrequestresponse.productrequestresponse.UpdateProductRequest)]: persistence.exceptions.productExceptions.ProductDoesNotExistException
+14-Dec-2016 15:44 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.updateProduct(webservice.endpointrequestresponse.productrequestresponse.UpdateProductRequest)]: domain.repositories.productRepository.ProductDoesNotExistException
 14-Dec-2016 15:44 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-persistence.exceptions.productExceptions.ProductDoesNotExistException
+domain.repositories.productRepository.ProductDoesNotExistException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
@@ -5645,8 +5645,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:45 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@634fa707]
 14-Dec-2016 15:45 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 14-Dec-2016 15:45 [TRACE]: Initializing non-lazy collections
-14-Dec-2016 15:45 [TRACE]: Completing transaction for [webservice.endpoints.OrderEndpoint.createOrder] after exception: persistence.exceptions.customerExceptions.CustomerDoesNotExistException
-14-Dec-2016 15:45 [TRACE]: Applying rules to determine whether transaction should rollback on persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+14-Dec-2016 15:45 [TRACE]: Completing transaction for [webservice.endpoints.OrderEndpoint.createOrder] after exception: domain.repositories.customerRepository.CustomerDoesNotExistException
+14-Dec-2016 15:45 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.customerRepository.CustomerDoesNotExistException
 14-Dec-2016 15:45 [TRACE]: Winning rollback rule is: null
 14-Dec-2016 15:45 [TRACE]: No relevant rollback rule found: applying default rules
 14-Dec-2016 15:45 [TRACE]: Triggering beforeCompletion synchronization
@@ -5669,11 +5669,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:45 [DEBUG]: Released JDBC connection
 14-Dec-2016 15:45 [TRACE]: Logical connection closed
 14-Dec-2016 15:45 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-14-Dec-2016 15:45 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+14-Dec-2016 15:45 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: domain.repositories.customerRepository.CustomerDoesNotExistException
 14-Dec-2016 15:45 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-14-Dec-2016 15:45 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+14-Dec-2016 15:45 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: domain.repositories.customerRepository.CustomerDoesNotExistException
 14-Dec-2016 15:45 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+domain.repositories.customerRepository.CustomerDoesNotExistException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
@@ -5812,8 +5812,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:45 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@1a275a2e]
 14-Dec-2016 15:45 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 14-Dec-2016 15:45 [TRACE]: Initializing non-lazy collections
-14-Dec-2016 15:45 [TRACE]: Completing transaction for [webservice.endpoints.OrderEndpoint.createOrder] after exception: persistence.exceptions.customerExceptions.CustomerDoesNotExistException
-14-Dec-2016 15:45 [TRACE]: Applying rules to determine whether transaction should rollback on persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+14-Dec-2016 15:45 [TRACE]: Completing transaction for [webservice.endpoints.OrderEndpoint.createOrder] after exception: domain.repositories.customerRepository.CustomerDoesNotExistException
+14-Dec-2016 15:45 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.customerRepository.CustomerDoesNotExistException
 14-Dec-2016 15:45 [TRACE]: Winning rollback rule is: null
 14-Dec-2016 15:45 [TRACE]: No relevant rollback rule found: applying default rules
 14-Dec-2016 15:45 [TRACE]: Triggering beforeCompletion synchronization
@@ -5836,11 +5836,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:45 [DEBUG]: Released JDBC connection
 14-Dec-2016 15:45 [TRACE]: Logical connection closed
 14-Dec-2016 15:45 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-14-Dec-2016 15:45 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+14-Dec-2016 15:45 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: domain.repositories.customerRepository.CustomerDoesNotExistException
 14-Dec-2016 15:45 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-14-Dec-2016 15:45 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+14-Dec-2016 15:45 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: domain.repositories.customerRepository.CustomerDoesNotExistException
 14-Dec-2016 15:45 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+domain.repositories.customerRepository.CustomerDoesNotExistException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
@@ -5979,8 +5979,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:45 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@61e54ad]
 14-Dec-2016 15:45 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 14-Dec-2016 15:45 [TRACE]: Initializing non-lazy collections
-14-Dec-2016 15:45 [TRACE]: Completing transaction for [webservice.endpoints.OrderEndpoint.createOrder] after exception: persistence.exceptions.customerExceptions.CustomerDoesNotExistException
-14-Dec-2016 15:45 [TRACE]: Applying rules to determine whether transaction should rollback on persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+14-Dec-2016 15:45 [TRACE]: Completing transaction for [webservice.endpoints.OrderEndpoint.createOrder] after exception: domain.repositories.customerRepository.CustomerDoesNotExistException
+14-Dec-2016 15:45 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.customerRepository.CustomerDoesNotExistException
 14-Dec-2016 15:45 [TRACE]: Winning rollback rule is: null
 14-Dec-2016 15:45 [TRACE]: No relevant rollback rule found: applying default rules
 14-Dec-2016 15:45 [TRACE]: Triggering beforeCompletion synchronization
@@ -6003,11 +6003,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:45 [DEBUG]: Released JDBC connection
 14-Dec-2016 15:45 [TRACE]: Logical connection closed
 14-Dec-2016 15:45 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-14-Dec-2016 15:45 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+14-Dec-2016 15:45 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: domain.repositories.customerRepository.CustomerDoesNotExistException
 14-Dec-2016 15:45 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-14-Dec-2016 15:45 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+14-Dec-2016 15:45 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: domain.repositories.customerRepository.CustomerDoesNotExistException
 14-Dec-2016 15:45 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+domain.repositories.customerRepository.CustomerDoesNotExistException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
@@ -6146,8 +6146,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:45 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@3fa6c48]
 14-Dec-2016 15:45 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 14-Dec-2016 15:45 [TRACE]: Initializing non-lazy collections
-14-Dec-2016 15:45 [TRACE]: Completing transaction for [webservice.endpoints.OrderEndpoint.createOrder] after exception: persistence.exceptions.customerExceptions.CustomerDoesNotExistException
-14-Dec-2016 15:45 [TRACE]: Applying rules to determine whether transaction should rollback on persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+14-Dec-2016 15:45 [TRACE]: Completing transaction for [webservice.endpoints.OrderEndpoint.createOrder] after exception: domain.repositories.customerRepository.CustomerDoesNotExistException
+14-Dec-2016 15:45 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.customerRepository.CustomerDoesNotExistException
 14-Dec-2016 15:45 [TRACE]: Winning rollback rule is: null
 14-Dec-2016 15:45 [TRACE]: No relevant rollback rule found: applying default rules
 14-Dec-2016 15:45 [TRACE]: Triggering beforeCompletion synchronization
@@ -6170,11 +6170,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:45 [DEBUG]: Released JDBC connection
 14-Dec-2016 15:45 [TRACE]: Logical connection closed
 14-Dec-2016 15:45 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-14-Dec-2016 15:45 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+14-Dec-2016 15:45 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: domain.repositories.customerRepository.CustomerDoesNotExistException
 14-Dec-2016 15:45 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-14-Dec-2016 15:45 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+14-Dec-2016 15:45 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: domain.repositories.customerRepository.CustomerDoesNotExistException
 14-Dec-2016 15:45 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+domain.repositories.customerRepository.CustomerDoesNotExistException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
@@ -6313,8 +6313,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:48 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@7654996c]
 14-Dec-2016 15:48 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 14-Dec-2016 15:48 [TRACE]: Initializing non-lazy collections
-14-Dec-2016 15:48 [TRACE]: Completing transaction for [webservice.endpoints.OrderEndpoint.createOrder] after exception: persistence.exceptions.customerExceptions.CustomerDoesNotExistException
-14-Dec-2016 15:48 [TRACE]: Applying rules to determine whether transaction should rollback on persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+14-Dec-2016 15:48 [TRACE]: Completing transaction for [webservice.endpoints.OrderEndpoint.createOrder] after exception: domain.repositories.customerRepository.CustomerDoesNotExistException
+14-Dec-2016 15:48 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.customerRepository.CustomerDoesNotExistException
 14-Dec-2016 15:48 [TRACE]: Winning rollback rule is: null
 14-Dec-2016 15:48 [TRACE]: No relevant rollback rule found: applying default rules
 14-Dec-2016 15:48 [TRACE]: Triggering beforeCompletion synchronization
@@ -6337,11 +6337,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:48 [DEBUG]: Released JDBC connection
 14-Dec-2016 15:48 [TRACE]: Logical connection closed
 14-Dec-2016 15:48 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-14-Dec-2016 15:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+14-Dec-2016 15:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: domain.repositories.customerRepository.CustomerDoesNotExistException
 14-Dec-2016 15:48 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-14-Dec-2016 15:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+14-Dec-2016 15:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: domain.repositories.customerRepository.CustomerDoesNotExistException
 14-Dec-2016 15:48 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+domain.repositories.customerRepository.CustomerDoesNotExistException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
@@ -6480,8 +6480,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:48 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@3a34a2a5]
 14-Dec-2016 15:48 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 14-Dec-2016 15:48 [TRACE]: Initializing non-lazy collections
-14-Dec-2016 15:48 [TRACE]: Completing transaction for [webservice.endpoints.OrderEndpoint.createOrder] after exception: persistence.exceptions.customerExceptions.CustomerDoesNotExistException
-14-Dec-2016 15:48 [TRACE]: Applying rules to determine whether transaction should rollback on persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+14-Dec-2016 15:48 [TRACE]: Completing transaction for [webservice.endpoints.OrderEndpoint.createOrder] after exception: domain.repositories.customerRepository.CustomerDoesNotExistException
+14-Dec-2016 15:48 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.customerRepository.CustomerDoesNotExistException
 14-Dec-2016 15:48 [TRACE]: Winning rollback rule is: null
 14-Dec-2016 15:48 [TRACE]: No relevant rollback rule found: applying default rules
 14-Dec-2016 15:48 [TRACE]: Triggering beforeCompletion synchronization
@@ -6504,11 +6504,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:48 [DEBUG]: Released JDBC connection
 14-Dec-2016 15:48 [TRACE]: Logical connection closed
 14-Dec-2016 15:48 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-14-Dec-2016 15:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+14-Dec-2016 15:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: domain.repositories.customerRepository.CustomerDoesNotExistException
 14-Dec-2016 15:48 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-14-Dec-2016 15:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+14-Dec-2016 15:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: domain.repositories.customerRepository.CustomerDoesNotExistException
 14-Dec-2016 15:48 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+domain.repositories.customerRepository.CustomerDoesNotExistException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
@@ -6647,8 +6647,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:48 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@7552f6aa]
 14-Dec-2016 15:48 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 14-Dec-2016 15:48 [TRACE]: Initializing non-lazy collections
-14-Dec-2016 15:48 [TRACE]: Completing transaction for [webservice.endpoints.OrderEndpoint.createOrder] after exception: persistence.exceptions.customerExceptions.CustomerDoesNotExistException
-14-Dec-2016 15:48 [TRACE]: Applying rules to determine whether transaction should rollback on persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+14-Dec-2016 15:48 [TRACE]: Completing transaction for [webservice.endpoints.OrderEndpoint.createOrder] after exception: domain.repositories.customerRepository.CustomerDoesNotExistException
+14-Dec-2016 15:48 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.customerRepository.CustomerDoesNotExistException
 14-Dec-2016 15:48 [TRACE]: Winning rollback rule is: null
 14-Dec-2016 15:48 [TRACE]: No relevant rollback rule found: applying default rules
 14-Dec-2016 15:48 [TRACE]: Triggering beforeCompletion synchronization
@@ -6671,11 +6671,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:48 [DEBUG]: Released JDBC connection
 14-Dec-2016 15:48 [TRACE]: Logical connection closed
 14-Dec-2016 15:48 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-14-Dec-2016 15:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+14-Dec-2016 15:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: domain.repositories.customerRepository.CustomerDoesNotExistException
 14-Dec-2016 15:48 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-14-Dec-2016 15:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+14-Dec-2016 15:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: domain.repositories.customerRepository.CustomerDoesNotExistException
 14-Dec-2016 15:48 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+domain.repositories.customerRepository.CustomerDoesNotExistException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
@@ -6814,8 +6814,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:48 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@64b463fc]
 14-Dec-2016 15:48 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 14-Dec-2016 15:48 [TRACE]: Initializing non-lazy collections
-14-Dec-2016 15:48 [TRACE]: Completing transaction for [webservice.endpoints.OrderEndpoint.createOrder] after exception: persistence.exceptions.customerExceptions.CustomerDoesNotExistException
-14-Dec-2016 15:48 [TRACE]: Applying rules to determine whether transaction should rollback on persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+14-Dec-2016 15:48 [TRACE]: Completing transaction for [webservice.endpoints.OrderEndpoint.createOrder] after exception: domain.repositories.customerRepository.CustomerDoesNotExistException
+14-Dec-2016 15:48 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.customerRepository.CustomerDoesNotExistException
 14-Dec-2016 15:48 [TRACE]: Winning rollback rule is: null
 14-Dec-2016 15:48 [TRACE]: No relevant rollback rule found: applying default rules
 14-Dec-2016 15:48 [TRACE]: Triggering beforeCompletion synchronization
@@ -6838,11 +6838,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 14-Dec-2016 15:48 [DEBUG]: Released JDBC connection
 14-Dec-2016 15:48 [TRACE]: Logical connection closed
 14-Dec-2016 15:48 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-14-Dec-2016 15:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+14-Dec-2016 15:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: domain.repositories.customerRepository.CustomerDoesNotExistException
 14-Dec-2016 15:48 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-14-Dec-2016 15:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+14-Dec-2016 15:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest)]: domain.repositories.customerRepository.CustomerDoesNotExistException
 14-Dec-2016 15:48 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-persistence.exceptions.customerExceptions.CustomerDoesNotExistException
+domain.repositories.customerRepository.CustomerDoesNotExistException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)

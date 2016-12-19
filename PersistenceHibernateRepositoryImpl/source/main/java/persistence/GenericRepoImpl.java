@@ -2,29 +2,28 @@ package persistence;
 
 import domain.Entity;
 
-import persistence.exceptions.EntityAlreadyExistException;
-import persistence.exceptions.EntityDoesNotExistException;
+import domain.repositories.GenericRepo;
+import domain.repositories.EntityAlreadyExistException;
+import domain.repositories.EntityDoesNotExistException;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Restrictions;
 
-import java.io.Serializable;
-
 
 /**
  *
- * @param <T> type of Entity's id
  * @param <V> type of Entity's business key
+ *
  */
 
-public class GenericRepoImpl<T extends Serializable, V> implements GenericRepo<T, V> {
-    private Class<Entity<T, V>> entityClass;
+public abstract class GenericRepoImpl<V> implements GenericRepo<V> {
+    private Class<Entity> entityClass;
     private String businessKeyPropertyName;
     private EntityAlreadyExistException entityAlreadyExistException;
     private EntityDoesNotExistException entityDoesNotExistException;
     private SessionFactory sessionFactory;
 
-    public GenericRepoImpl(Class<Entity<T, V>> entityClass, String businessKeyPropertyName, EntityAlreadyExistException entityAlreadyExistException,
+    public GenericRepoImpl(Class<Entity> entityClass, String businessKeyPropertyName, EntityAlreadyExistException entityAlreadyExistException,
                            EntityDoesNotExistException entityDoesNotExistException, SessionFactory sessionFactory) {
         this.entityClass = entityClass;
         this.businessKeyPropertyName = businessKeyPropertyName;
@@ -33,45 +32,32 @@ public class GenericRepoImpl<T extends Serializable, V> implements GenericRepo<T
         this.sessionFactory = sessionFactory;
     }
 
-    public void add (Entity<T, V> entity) {
-        try {
-            getByBusinessKey(entity.getBusinessKey());
-            throw entityAlreadyExistException;
-
-        } catch (EntityDoesNotExistException ex){
-            sessionFactory.getCurrentSession()
-                    .save(entity);
-        }
-    }
-
     @SuppressWarnings("unchecked")
-    //TODO EntityExists() вместо exception
-    public Entity<T, V> getByBusinessKey(V businessKeyValue) {
-        Entity<T, V> entity = (Entity<T, V>) sessionFactory.getCurrentSession()
+    //TODO EntityExists() instead exception
+    //TODO добавить где был вызов этого метода EntityDoesNotExistException вместе с проверкой на NULL
+    public Entity get(V businessKeyValue) {
+        Entity entity = (Entity) sessionFactory.getCurrentSession()
                 .createCriteria(entityClass)
                 .add(Restrictions.eq(businessKeyPropertyName, businessKeyValue))
                 .uniqueResult();
 
-        if (entity == null) {
-            throw entityDoesNotExistException;
-        }
         return entity;
     }
 
 
     @SuppressWarnings("unchecked")
-    public Entity<T, V> getById(T id) {
-        return (Entity<T, V>) getSessionFactory().getCurrentSession()
+    public Entity getById(long id) {
+        return (Entity) getSessionFactory().getCurrentSession()
                 .get(entityClass, id);
     }
 
-    public void update (Entity<T, V> entity) {
+    public void update (Entity entity) {
         getSessionFactory().getCurrentSession().merge(entity);
     }
 
-    public void deleteByBusinessKey (V businessKeyValue) {
+    public void delete (V businessKeyValue) {
         sessionFactory.getCurrentSession()
-                .delete(getByBusinessKey(businessKeyValue));
+                .delete(get(businessKeyValue));
     }
 
     public SessionFactory getSessionFactory () {

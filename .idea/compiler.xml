@@ -17,13 +17,6 @@
       <profile default="true" name="Default" enabled="false">
         <processorPath useClasspath="true" />
       </profile>
-      <profile default="false" name="Annotation profile for Persistence" enabled="true">
-        <sourceOutputDir name="../CompiledFiles/Persistence/generated-sources/annotations" />
-        <sourceTestOutputDir name="../CompiledFiles/Persistence/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="Persistence" />
-      </profile>
       <profile default="false" name="Annotation profile for HibernateRepositoryImpl" enabled="true">
         <sourceOutputDir name="../CompiledFiles/HibernateRepositoryImpl/generated-sources/annotations" />
         <sourceTestOutputDir name="../CompiledFiles/HibernateRepositoryImpl/generated-test-sources/test-annotations" />

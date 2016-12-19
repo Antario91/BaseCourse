@@ -1,130 +1,108 @@
 package domain.product;
 
 import domain.Entity;
-import domain.exceptions.DateIntersectionInProductPriceException;
 
 import java.util.*;
 
-public class Product extends Entity<Long, String> {
-    private String name;
-    private String units;
+public class Product extends Entity {
+    private final String name;
+    private final String units;
     private List<ProductPrice> productPrices;
 
-    private Product () {}
+    private Product () {
+        name = null;
+        units = null;
+    }
 
     public Product(String name, String units) {
+        if (name == null || units == null){
+            throw new IllegalArgumentException();
+        }
         this.name = name;
         this.units = units;
-        productPrices = new ArrayList<ProductPrice>();
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getUnits() {
         return units;
     }
 
-    public void setUnits(String units) {
-        this.units = units;
-    }
-
     public List<ProductPrice> getProductPrices() {
-        return productPrices;
+        return new ArrayList<ProductPrice>(productPrices);
     }
 
-    public void setProductPrices(List<ProductPrice> productPrices) {
-        this.productPrices = productPrices;
-        if ( !checkProduct() ){
-            throw new DateIntersectionInProductPriceException();
+    public void setProductPrices(List<ProductPrice> productPrices) throws DateIntersectionInProductPriceException {
+        if (productPrices == null || productPrices.size() == 0) {
+            throw new IllegalArgumentException();
         }
+        isIntersectProductPricesEffectDays(productPrices);
+        this.productPrices = productPrices;
     }
 
     public long getProductPrice(Date placingDate) {
         long price = 0;
-        for (ProductPrice productPrice : productPrices) {
-            if (placingDate.after(productPrice.getStartEffectDay()) && placingDate.before(productPrice.getEndEffectDay())) {
-                price = productPrice.getPrice();
+        ProductPrice prevProductPrice;
+        ProductPrice nextProductPrice;
+
+        List <ProductPrice> checkableProductPrices = new ArrayList<ProductPrice>(productPrices);
+        Collections.sort(checkableProductPrices, getProductPricesComparator());
+
+        if (
+                placingDate.before(checkableProductPrices.get(0).getEndEffectDay())
+                ) {
+            price = checkableProductPrices.get(0).getPrice();
+        }
+
+        if (
+                placingDate.after(checkableProductPrices.get(checkableProductPrices.size()-1)
+                        .getEndEffectDay())
+                ) {
+            price = checkableProductPrices.get(checkableProductPrices.size()-1)
+                    .getPrice();
+        }
+
+        Iterator<ProductPrice> itr = checkableProductPrices.iterator();
+        while (itr.hasNext()){
+            prevProductPrice = itr.next();
+            nextProductPrice = itr.next();
+
+            if (
+                placingDate.after(prevProductPrice.getEndEffectDay()) &&
+                        placingDate.before(nextProductPrice.getEndEffectDay())
+                    ) {
+                price = nextProductPrice.getPrice();
             }
         }
+
         return price;
     }
 
-    @Override
-    public String getBusinessKey() {
-        return name;
-    }
-
-    public boolean checkProduct() {
-        for (int i = 0; i < productPrices.size(); i++) {
-            for (int j = 0; j < productPrices.size(); j++) {
-                if (i == j) {
-                    continue;
-                }
-
-                if (
-                        (productPrices.get(i).getStartEffectDay()
-                                .after(productPrices.get(j).getStartEffectDay()) &&
-                                productPrices.get(i).getStartEffectDay()
-                                        .before(productPrices.get(j).getEndEffectDay())) ||
-
-                                (productPrices.get(i).getEndEffectDay()
-                                        .after(productPrices.get(j).getStartEffectDay()) &&
-                                        productPrices.get(i).getEndEffectDay()
-                                                .before(productPrices.get(j).getEndEffectDay())) ||
-
-                                productPrices.get(i).getStartEffectDay()
-                                        .equals(productPrices.get(j).getStartEffectDay()) ||
-                                productPrices.get(i).getStartEffectDay()
-                                        .equals(productPrices.get(j).getEndEffectDay()) ||
-
-                                productPrices.get(i).getEndEffectDay()
-                                        .equals(productPrices.get(j).getStartEffectDay()) ||
-                                productPrices.get(i).getEndEffectDay()
-                                        .equals(productPrices.get(j).getEndEffectDay())
-
-                        ) {
-                    return false;
-                }
+    private boolean isIntersectProductPricesEffectDays (List<ProductPrice> productPrices) throws DateIntersectionInProductPriceException {
+        HashSet<Date> checkableDate = new HashSet<Date>();
+        for (ProductPrice productPrice : productPrices) {
+            if (checkableDate.contains(productPrice.getEndEffectDay())) {
+                throw new DateIntersectionInProductPriceException();
+            } else {
+                checkableDate.add(productPrice.getEndEffectDay());
             }
         }
         return true;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Product)) return false;
-
-        Product product = (Product) o;
-
-        if ( getId().equals(product.getId()) ) return false;
-        if (!name.equals(product.name)) return false;
-        if (!units.equals(product.units)) return false;
-        return productPrices.equals(product.productPrices);
-
-    }
-
-    @Override
-    public int hashCode() {
-        int result = 31 + getId().hashCode();
-        result = 31 * result + name.hashCode();
-        result = 31 * result + units.hashCode();
-        result = 31 * result + productPrices.hashCode();
-        return result;
-    }
-
-    @Override
-    public String toString() {
-        return "Product{" +
-                "id=" + getId() +
-                ", name='" + name + '\'' +
-                ", units='" + units + '\'' +
-                '}';
+    private Comparator<ProductPrice> getProductPricesComparator () {
+        return new Comparator<ProductPrice>() {
+            @Override
+            public int compare(ProductPrice o1, ProductPrice o2) {
+                if (o1.getEndEffectDay().before(o2.getEndEffectDay())){
+                    return -1;
+                } else if (o1.getEndEffectDay().after(o2.getEndEffectDay())){
+                    return 1;
+                }
+                return 0;
+            }
+        };
     }
 }

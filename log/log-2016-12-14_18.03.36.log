@@ -850,8 +850,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 14-Dec-2016 18:03 [DEBUG]: Creating instance of bean 'CustomerAlreadyExistException'
 14-Dec-2016 18:03 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 14-Dec-2016 18:03 [DEBUG]: Eagerly caching bean 'CustomerAlreadyExistException' to allow for resolving potential circular references
-14-Dec-2016 18:03 [TRACE]: Getting BeanInfo for class [persistence.exceptions.customerExceptions.CustomerAlreadyExistException]
-14-Dec-2016 18:03 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.customerExceptions.CustomerAlreadyExistException]
+14-Dec-2016 18:03 [TRACE]: Getting BeanInfo for class [domain.repositories.customerRepository.CustomerAlreadyExistException]
+14-Dec-2016 18:03 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.customerRepository.CustomerAlreadyExistException]
 14-Dec-2016 18:03 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 14-Dec-2016 18:03 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 14-Dec-2016 18:03 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -864,8 +864,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 14-Dec-2016 18:03 [DEBUG]: Creating instance of bean 'CustomerDoesNotExistException'
 14-Dec-2016 18:03 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 14-Dec-2016 18:03 [DEBUG]: Eagerly caching bean 'CustomerDoesNotExistException' to allow for resolving potential circular references
-14-Dec-2016 18:03 [TRACE]: Getting BeanInfo for class [persistence.exceptions.customerExceptions.CustomerDoesNotExistException]
-14-Dec-2016 18:03 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.customerExceptions.CustomerDoesNotExistException]
+14-Dec-2016 18:03 [TRACE]: Getting BeanInfo for class [domain.repositories.customerRepository.CustomerDoesNotExistException]
+14-Dec-2016 18:03 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.customerRepository.CustomerDoesNotExistException]
 14-Dec-2016 18:03 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 14-Dec-2016 18:03 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 14-Dec-2016 18:03 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -878,8 +878,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 14-Dec-2016 18:03 [DEBUG]: Creating instance of bean 'OrderAlreadyExistException'
 14-Dec-2016 18:03 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 14-Dec-2016 18:03 [DEBUG]: Eagerly caching bean 'OrderAlreadyExistException' to allow for resolving potential circular references
-14-Dec-2016 18:03 [TRACE]: Getting BeanInfo for class [persistence.exceptions.orderExceptions.OrderAlreadyExistException]
-14-Dec-2016 18:03 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.orderExceptions.OrderAlreadyExistException]
+14-Dec-2016 18:03 [TRACE]: Getting BeanInfo for class [domain.repositories.orderRepository.OrderAlreadyExistException]
+14-Dec-2016 18:03 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.orderRepository.OrderAlreadyExistException]
 14-Dec-2016 18:03 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 14-Dec-2016 18:03 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 14-Dec-2016 18:03 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -892,8 +892,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 14-Dec-2016 18:03 [DEBUG]: Creating instance of bean 'OrderDoesNotExistException'
 14-Dec-2016 18:03 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 14-Dec-2016 18:03 [DEBUG]: Eagerly caching bean 'OrderDoesNotExistException' to allow for resolving potential circular references
-14-Dec-2016 18:03 [TRACE]: Getting BeanInfo for class [persistence.exceptions.orderExceptions.OrderDoesNotExistException]
-14-Dec-2016 18:03 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.orderExceptions.OrderDoesNotExistException]
+14-Dec-2016 18:03 [TRACE]: Getting BeanInfo for class [domain.repositories.orderRepository.OrderDoesNotExistException]
+14-Dec-2016 18:03 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.orderRepository.OrderDoesNotExistException]
 14-Dec-2016 18:03 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 14-Dec-2016 18:03 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 14-Dec-2016 18:03 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -906,8 +906,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 14-Dec-2016 18:03 [DEBUG]: Creating instance of bean 'ProductAlreadyExistException'
 14-Dec-2016 18:03 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 14-Dec-2016 18:03 [DEBUG]: Eagerly caching bean 'ProductAlreadyExistException' to allow for resolving potential circular references
-14-Dec-2016 18:03 [TRACE]: Getting BeanInfo for class [persistence.exceptions.productExceptions.ProductAlreadyExistException]
-14-Dec-2016 18:03 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.productExceptions.ProductAlreadyExistException]
+14-Dec-2016 18:03 [TRACE]: Getting BeanInfo for class [domain.repositories.productRepository.ProductAlreadyExistException]
+14-Dec-2016 18:03 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.productRepository.ProductAlreadyExistException]
 14-Dec-2016 18:03 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 14-Dec-2016 18:03 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 14-Dec-2016 18:03 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -920,8 +920,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 14-Dec-2016 18:03 [DEBUG]: Creating instance of bean 'ProductDoesNotExistException'
 14-Dec-2016 18:03 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 14-Dec-2016 18:03 [DEBUG]: Eagerly caching bean 'ProductDoesNotExistException' to allow for resolving potential circular references
-14-Dec-2016 18:03 [TRACE]: Getting BeanInfo for class [persistence.exceptions.productExceptions.ProductDoesNotExistException]
-14-Dec-2016 18:03 [TRACE]: Caching PropertyDescriptors for class [persistence.exceptions.productExceptions.ProductDoesNotExistException]
+14-Dec-2016 18:03 [TRACE]: Getting BeanInfo for class [domain.repositories.productRepository.ProductDoesNotExistException]
+14-Dec-2016 18:03 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.productRepository.ProductDoesNotExistException]
 14-Dec-2016 18:03 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 14-Dec-2016 18:03 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 14-Dec-2016 18:03 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -985,9 +985,9 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 14-Dec-2016 18:03 [DEBUG]: Returning cached instance of singleton bean 'CustomerAlreadyExistException'
 14-Dec-2016 18:03 [DEBUG]: Returning cached instance of singleton bean 'OrderAlreadyExistException'
 14-Dec-2016 18:03 [DEBUG]: Returning cached instance of singleton bean 'ProductAlreadyExistException'
-14-Dec-2016 18:03 [TRACE]: Ignoring constructor [public persistence.customerRepository.CustomerRepoImpl(java.lang.Class,java.lang.String,persistence.exceptions.EntityAlreadyExistException,persistence.exceptions.EntityDoesNotExistException,org.hibernate.SessionFactory)] of bean 'CustomerRepo': org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'CustomerRepo' defined in class path resource [SpringConfig/RepoBeansConfiguration.xml]: Unsatisfied dependency expressed through constructor argument with index 2 of type [persistence.exceptions.EntityAlreadyExistException]: : No qualifying bean of type [persistence.exceptions.EntityAlreadyExistException] is defined: expected single matching bean but found 3: CustomerAlreadyExistException,OrderAlreadyExistException,ProductAlreadyExistException; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [persistence.exceptions.EntityAlreadyExistException] is defined: expected single matching bean but found 3: CustomerAlreadyExistException,OrderAlreadyExistException,ProductAlreadyExistException
+14-Dec-2016 18:03 [TRACE]: Ignoring constructor [public persistence.customerRepository.CustomerRepoImpl(java.lang.Class,java.lang.String,domain.repositories.EntityAlreadyExistException,domain.repositories.EntityDoesNotExistException,org.hibernate.SessionFactory)] of bean 'CustomerRepo': org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'CustomerRepo' defined in class path resource [SpringConfig/RepoBeansConfiguration.xml]: Unsatisfied dependency expressed through constructor argument with index 2 of type [domain.repositories.EntityAlreadyExistException]: : No qualifying bean of type [domain.repositories.EntityAlreadyExistException] is defined: expected single matching bean but found 3: CustomerAlreadyExistException,OrderAlreadyExistException,ProductAlreadyExistException; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [domain.repositories.EntityAlreadyExistException] is defined: expected single matching bean but found 3: CustomerAlreadyExistException,OrderAlreadyExistException,ProductAlreadyExistException
 14-Dec-2016 18:03 [WARN ]: Exception encountered during context initialization - cancelling refresh attempt
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'CustomerRepo' defined in class path resource [SpringConfig/RepoBeansConfiguration.xml]: Unsatisfied dependency expressed through constructor argument with index 2 of type [persistence.exceptions.EntityAlreadyExistException]: : No qualifying bean of type [persistence.exceptions.EntityAlreadyExistException] is defined: expected single matching bean but found 3: CustomerAlreadyExistException,OrderAlreadyExistException,ProductAlreadyExistException; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [persistence.exceptions.EntityAlreadyExistException] is defined: expected single matching bean but found 3: CustomerAlreadyExistException,OrderAlreadyExistException,ProductAlreadyExistException
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'CustomerRepo' defined in class path resource [SpringConfig/RepoBeansConfiguration.xml]: Unsatisfied dependency expressed through constructor argument with index 2 of type [domain.repositories.EntityAlreadyExistException]: : No qualifying bean of type [domain.repositories.EntityAlreadyExistException] is defined: expected single matching bean but found 3: CustomerAlreadyExistException,OrderAlreadyExistException,ProductAlreadyExistException; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [domain.repositories.EntityAlreadyExistException] is defined: expected single matching bean but found 3: CustomerAlreadyExistException,OrderAlreadyExistException,ProductAlreadyExistException
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:747)
 	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:185)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1115)
@@ -1026,7 +1026,7 @@ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating
 	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1454)
 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:209)
 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:178)
-Caused by: org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [persistence.exceptions.EntityAlreadyExistException] is defined: expected single matching bean but found 3: CustomerAlreadyExistException,OrderAlreadyExistException,ProductAlreadyExistException
+Caused by: org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [domain.repositories.EntityAlreadyExistException] is defined: expected single matching bean but found 3: CustomerAlreadyExistException,OrderAlreadyExistException,ProductAlreadyExistException
 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:974)
 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:862)
 	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:811)
@@ -1038,7 +1038,7 @@ Caused by: org.springframework.beans.factory.NoUniqueBeanDefinitionException: No
 14-Dec-2016 18:03 [DEBUG]: HHH000031: Closing
 14-Dec-2016 18:03 [TRACE]: Cleaning QueryPlan Cache
 14-Dec-2016 18:03 [ERROR]: Context initialization failed
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'CustomerRepo' defined in class path resource [SpringConfig/RepoBeansConfiguration.xml]: Unsatisfied dependency expressed through constructor argument with index 2 of type [persistence.exceptions.EntityAlreadyExistException]: : No qualifying bean of type [persistence.exceptions.EntityAlreadyExistException] is defined: expected single matching bean but found 3: CustomerAlreadyExistException,OrderAlreadyExistException,ProductAlreadyExistException; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [persistence.exceptions.EntityAlreadyExistException] is defined: expected single matching bean but found 3: CustomerAlreadyExistException,OrderAlreadyExistException,ProductAlreadyExistException
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'CustomerRepo' defined in class path resource [SpringConfig/RepoBeansConfiguration.xml]: Unsatisfied dependency expressed through constructor argument with index 2 of type [domain.repositories.EntityAlreadyExistException]: : No qualifying bean of type [domain.repositories.EntityAlreadyExistException] is defined: expected single matching bean but found 3: CustomerAlreadyExistException,OrderAlreadyExistException,ProductAlreadyExistException; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [domain.repositories.EntityAlreadyExistException] is defined: expected single matching bean but found 3: CustomerAlreadyExistException,OrderAlreadyExistException,ProductAlreadyExistException
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:747)
 	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:185)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1115)
@@ -1077,7 +1077,7 @@ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating
 	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1454)
 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:209)
 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:178)
-Caused by: org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [persistence.exceptions.EntityAlreadyExistException] is defined: expected single matching bean but found 3: CustomerAlreadyExistException,OrderAlreadyExistException,ProductAlreadyExistException
+Caused by: org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [domain.repositories.EntityAlreadyExistException] is defined: expected single matching bean but found 3: CustomerAlreadyExistException,OrderAlreadyExistException,ProductAlreadyExistException
 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:974)
 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:862)
 	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:811)

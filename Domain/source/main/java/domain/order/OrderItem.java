@@ -1,12 +1,18 @@
 package domain.order;
 
 public class OrderItem {
-    private long quantity;
-    private long productId;
+    private final long quantity;
+    private final long productId;
 
-    private OrderItem () {}
+    private OrderItem () {
+        quantity = 0;
+        productId = 0;
+    }
 
     public OrderItem(long quantity, long productId) {
+        if (quantity <= 0 || productId <= 0){
+            throw new IllegalArgumentException ();
+        }
         this.quantity = quantity;
         this.productId = productId;
     }
@@ -15,18 +21,11 @@ public class OrderItem {
         return quantity;
     }
 
-    public void setQuantity(long quantity) {
-        this.quantity = quantity;
-    }
-
     public long getProductId() {
         return productId;
     }
 
-    public void setProductId(long productId) {
-        this.productId = productId;
-    }
-
+    //TODO equals() и hashcode() всё-таки надо???
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

@@ -3,7 +3,7 @@ package webservice.converters;
 import domain.order.Order;
 import domain.order.OrderItem;
 import domain.product.Product;
-import persistence.customerRepository.CustomerRepo;
+import domain.repositories.customerRepository.CustomerRepo;
 import persistence.orderRepository.OrderRepo;
 import persistence.productRepository.ProductRepo;
 import utils.XMLGregorianCalendarProducer.DateProducer;
