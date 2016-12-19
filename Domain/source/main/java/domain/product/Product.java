@@ -49,39 +49,17 @@ public class Product extends Entity<String> {
 
     public long getProductPrice(Date placingDate) {
         long price = 0;
-        ProductPrice prevProductPrice;
-        ProductPrice nextProductPrice;
 
         List <ProductPrice> checkableProductPrices = new ArrayList<ProductPrice>(productPrices);
         Collections.sort(checkableProductPrices, getProductPricesComparator());
 
-        if (
-                placingDate.before(checkableProductPrices.get(0).getEndEffectDay())
-                ) {
-            price = checkableProductPrices.get(0).getPrice();
-            return price;
-        }
-
-        if (
-                placingDate.after(checkableProductPrices.get(checkableProductPrices.size()-1)
-                        .getEndEffectDay())
-                ) {
-            price = checkableProductPrices.get(checkableProductPrices.size()-1)
-                    .getPrice();
-            return price;
-        }
-
         Iterator<ProductPrice> itr = checkableProductPrices.iterator();
-        while (itr.hasNext()){
-            prevProductPrice = itr.next();
-            nextProductPrice = itr.next();
-
-            if (
-                placingDate.after(prevProductPrice.getEndEffectDay()) &&
-                        placingDate.before(nextProductPrice.getEndEffectDay())
-                    ) {
-                price = nextProductPrice.getPrice();
+        if (itr.hasNext()) {
+            ProductPrice currentPrice = itr.next();
+            while (placingDate.after(currentPrice.getEndEffectDay()) && itr.hasNext()) {
+                currentPrice = itr.next();
             }
+            price = currentPrice.getPrice();
         }
 
         return price;

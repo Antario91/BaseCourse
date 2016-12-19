@@ -24,7 +24,6 @@
     <complexType name="UpdatedProductDTO">
         <sequence>
             <element name="productName" type="string" maxOccurs="1" minOccurs="1"/>
-            <element name="newProductUnits" type="string" maxOccurs="1" minOccurs="1"/>
             <element name="newProductPrices" type="product:ProductPriceDTO" maxOccurs="unbounded" minOccurs="1"/>
         </sequence>
     </complexType>
@@ -32,7 +31,6 @@
     <complexType name="ProductPriceDTO">
         <sequence>
             <element name="price" type="long" maxOccurs="1" minOccurs="1"/>
-            <element name="startEffectDay" type="date" maxOccurs="1" minOccurs="1"/>
             <element name="endEffectDay" type="date" maxOccurs="1" minOccurs="1"/>
         </sequence>
     </complexType>

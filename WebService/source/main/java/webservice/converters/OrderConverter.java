@@ -1,11 +1,21 @@
 package webservice.converters;
 
+import domain.customer.Customer;
+
 import domain.order.Order;
 import domain.order.OrderItem;
+import domain.order.ProductInOrderIsNotUniqueException;
+
 import domain.product.Product;
+
+import domain.repositories.EntityDoesNotExistException;
+import domain.repositories.customerRepository.CustomerDoesNotExistException;
 import domain.repositories.customerRepository.CustomerRepo;
-import persistence.orderRepository.OrderRepo;
-import persistence.productRepository.ProductRepo;
+import domain.repositories.orderRepository.OrderDoesNotExistException;
+import domain.repositories.productRepository.ProductDoesNotExistException;
+import domain.service.OrderService;
+import domain.repositories.orderRepository.OrderRepo;
+import domain.repositories.productRepository.ProductRepo;
 import utils.XMLGregorianCalendarProducer.DateProducer;
 import webservice.dtos.order.*;
 import webservice.dtos.product.ProductDTOInOrder;
@@ -18,18 +28,26 @@ import java.util.List;
  * Created by olgo on 14-Dec-16.
  */
 public class OrderConverter {
-    public static Order orderDTOForCreationToOrder (OrderDTOForCreation orderDTOForCreation, CustomerRepo customerRepo, OrderRepo orderRepo, ProductRepo productRepo) {
+    public static Order orderDTOForCreationToOrder (OrderDTOForCreation orderDTOForCreation, CustomerRepo customerRepo, OrderRepo orderRepo, ProductRepo productRepo) throws ProductInOrderIsNotUniqueException, EntityDoesNotExistException {
         if (orderDTOForCreation != null && customerRepo != null && productRepo != null) {
             OrderValidator.checkOrderDTOForCreation(orderDTOForCreation);
 
-            long customerId = customerRepo.getByBusinessKey(orderDTOForCreation.getOrdersCustomersName())
-                    .getId();
+            Customer customer = (Customer) customerRepo.get(orderDTOForCreation.getOrdersCustomersName());
+            if (customer == null) {
+                throw new CustomerDoesNotExistException();
+            }
+            long customerId = customer.getId();
 
             List<OrderItem> orderItems = new ArrayList<OrderItem>();
+            Product product;
             for (OrderItemDTOForCreation orderItemDTO : orderDTOForCreation.getOrderItems()) {
+                product = (Product) productRepo.get(orderItemDTO.getProductName());
+                if (product == null) {
+                    throw new ProductDoesNotExistException();
+                }
                 orderItems.add(
                         new OrderItem(orderItemDTO.getQuantity(),
-                                productRepo.getByBusinessKey(orderItemDTO.getProductName()).getId())
+                                product.getId())
                 );
             }
 
@@ -44,16 +62,15 @@ public class OrderConverter {
     }
 
     public static OrderDTOForReception orderToOrderDTOForReception (Order order,
-                                                                    CustomerRepo customerRepo, OrderRepo orderRepo, ProductRepo productRepo) {
+                                                                    CustomerRepo customerRepo, OrderRepo orderRepo, ProductRepo productRepo, OrderService orderService) throws EntityDoesNotExistException {
         if (order != null && customerRepo != null && orderRepo != null && productRepo != null) {
             OrderDTOForReception orderDTOForReception = new OrderDTOForReception();
 
             orderDTOForReception.setBillingNumber(order.getBillingNumber());
-            orderDTOForReception.setPlacingDate(DateProducer.produce(order.getPlacingDate()));
-            orderDTOForReception.setOrderPrice(order.getOrderPrice(orderRepo.getAllOrdersProducts(order)));
+            orderDTOForReception.setPlacingDate( DateProducer.produce(order.getPlacingDate()) );
+            orderDTOForReception.setOrderPrice( orderService.getOrderPrice(order.getBillingNumber()) );
             orderDTOForReception.setOrdersCustomersName(
-                    customerRepo.getById(order.getCustomerId())
-                            .getBusinessKey()
+                    ( (Customer) customerRepo.getById(order.getCustomerId()) ).getBusinessKey()
             );
 
             for (OrderItem orderItem : order.getOrderItems()) {
@@ -76,18 +93,25 @@ public class OrderConverter {
         return null;
     }
 
-    public static Order updatedOrderDTOtoOrder (UpdatedOrderDTO updatedOrderDTO, OrderRepo orderRepo, ProductRepo productRepo) {
+    public static Order updatedOrderDTOtoOrder (UpdatedOrderDTO updatedOrderDTO, OrderRepo orderRepo, ProductRepo productRepo) throws ProductInOrderIsNotUniqueException, EntityDoesNotExistException {
         if (updatedOrderDTO != null && orderRepo != null && productRepo != null) {
             OrderValidator.checkUpdatedOrderDTO(updatedOrderDTO);
 
-            Order order = (Order) orderRepo.getByBusinessKey(updatedOrderDTO.getBillingNumberOfUpdatedOrder());
+            Order order = (Order) orderRepo.get(updatedOrderDTO.getBillingNumberOfUpdatedOrder());
+            if (order == null) {
+                throw new OrderDoesNotExistException();
+            }
 
             List<OrderItem> orderItems = new ArrayList<OrderItem>();
 
             for (OrderItemDTOForCreation orderItemDTOForCreation : updatedOrderDTO.getNewOrderItems()) {
+                Product product = (Product) productRepo.get(orderItemDTOForCreation.getProductName());
+                if (product == null) {
+                    throw new ProductDoesNotExistException();
+                }
+
                 orderItems.add(
-                        new OrderItem(orderItemDTOForCreation.getQuantity(),
-                                productRepo.getByBusinessKey(orderItemDTOForCreation.getProductName()).getId())
+                        new OrderItem(orderItemDTOForCreation.getQuantity(), product.getId())
                 );
             }
 

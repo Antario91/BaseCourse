@@ -24,7 +24,7 @@ public class OrderService {
 
         Order order = (Order) orderRepo.get(billingNumber);
 
-        List<Product> orderProducts = productRepo.getAllProducts();
+        List<Product> orderProducts = productRepo.getOrdersProducts(order.getOrderItems());
 
         for (OrderItem orderItem : order.getOrderItems()) {
             for (Product product : orderProducts) {

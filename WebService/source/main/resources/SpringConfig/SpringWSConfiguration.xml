@@ -12,6 +12,8 @@
 
     <import resource="DomainExceptionsBeans.xml"/>
 
+    <import resource="DomainServicesConfiguration.xml"/>
+
     <import resource="RepoBeansConfiguration.xml" />
 
     <import resource="EndpointBeansConfiguration.xml"/>

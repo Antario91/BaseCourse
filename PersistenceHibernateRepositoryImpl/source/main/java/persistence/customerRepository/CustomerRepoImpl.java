@@ -24,8 +24,9 @@ public class CustomerRepoImpl extends GenericRepoImpl<String> implements Custome
     @SuppressWarnings("unchecked")
     @Override
     public List<Customer> getAllCustomers() {
-        return (List<Customer>) getSessionFactory().getCurrentSession()
-                .createQuery("FROM Customer")
-                .list();
+       List<Customer> customers = (List<Customer>) getSessionFactory().getCurrentSession()
+               .createQuery("FROM Customer")
+               .list();
+        return customers;
     }
 }

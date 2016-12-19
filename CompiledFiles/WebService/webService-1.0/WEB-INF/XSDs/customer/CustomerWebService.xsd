@@ -45,14 +45,14 @@
         </complexType>
     </element>
 
-    <element name="UpdateCustomerRequest">
+<!--    <element name="UpdateCustomerRequest">
         <complexType>
             <sequence>
                 <element name="updatedCustomer" type="customer:UpdatedCustomerDTO"/>
             </sequence>
         </complexType>
     </element>
-
+-->
 
     <element name="DeleteCustomerRequest">
         <complexType>

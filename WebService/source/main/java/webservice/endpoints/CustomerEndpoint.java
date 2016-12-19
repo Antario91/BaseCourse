@@ -1,6 +1,9 @@
 package webservice.endpoints;
 
 import domain.customer.Customer;
+import domain.repositories.EntityAlreadyExistException;
+import domain.repositories.EntityDoesNotExistException;
+import domain.repositories.customerRepository.CustomerDoesNotExistException;
 import org.apache.log4j.Logger;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
@@ -25,14 +28,18 @@ public class CustomerEndpoint {
     }
 
     @PayloadRoot(localPart = "CreateCustomerRequest", namespace = namespaceUri)
-    public void createCustomer(@RequestPayload CreateCustomerRequest request) {
+    public void createCustomer(@RequestPayload CreateCustomerRequest request) throws EntityAlreadyExistException {
         customerRepo.add(CustomerConverter.customerDTOtoCustomer(request.getCustomer()));
     }
 
     @PayloadRoot(localPart = "GetCustomerRequest", namespace = namespaceUri)
     @ResponsePayload
-    public GetCustomerResponse getCustomer(@RequestPayload GetCustomerRequest request) {
-        CustomerDTO customerDTO = CustomerConverter.customerToCustomerDTO( (Customer) customerRepo.getByBusinessKey(request.getCustomerName()) );
+    public GetCustomerResponse getCustomer(@RequestPayload GetCustomerRequest request) throws EntityDoesNotExistException {
+        Customer customer = (Customer) customerRepo.get(request.getCustomerName());
+        if (customer == null){
+            throw new CustomerDoesNotExistException();
+        }
+        CustomerDTO customerDTO = CustomerConverter.customerToCustomerDTO(customer);
 
         GetCustomerResponse response = new GetCustomerResponse();
         response.setCustomer(customerDTO);
@@ -52,13 +59,13 @@ public class CustomerEndpoint {
         return response;
     }
 
-    @PayloadRoot(localPart = "UpdateCustomerRequest", namespace = namespaceUri)
-    public void updateCustomer(@RequestPayload UpdateCustomerRequest request) {
-        customerRepo.update( CustomerConverter.updatedCustomerDTOtoCustomer( request.getUpdatedCustomer(), customerRepo) );
-    }
+//    @PayloadRoot(localPart = "UpdateCustomerRequest", namespace = namespaceUri)
+//    public void updateCustomer(@RequestPayload UpdateCustomerRequest request) throws CustomerAlreadyExistException {
+//        customerRepo.update( CustomerConverter.updatedCustomerDTOtoCustomer( request.getUpdatedCustomer(), customerRepo) );
+//    }
 
     @PayloadRoot(localPart = "DeleteCustomerRequest", namespace = namespaceUri)
-    public void deleteCustomer(@RequestPayload DeleteCustomerRequest request) {
-        customerRepo.deleteByBusinessKey(request.getCustomerName());
+    public void deleteCustomer(@RequestPayload DeleteCustomerRequest request) throws EntityDoesNotExistException {
+        customerRepo.delete(request.getCustomerName());
     }
 }

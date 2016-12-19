@@ -29,10 +29,6 @@ public class ProductValidator {
                 throw new NullProductPriceException();
             }
 
-            if (productPriceDTO.getStartEffectDay() == null) {
-                throw new NullPriceStartEffectDayException();
-            }
-
             if (productPriceDTO.getEndEffectDay() == null) {
                 throw new NullPriceEndEffectDayException();
             }
@@ -47,11 +43,6 @@ public class ProductValidator {
             throw new NullProductNameException();
         }
 
-        if (updatedProductDTO.getNewProductUnits() == null ||
-                updatedProductDTO.getNewProductUnits().isEmpty()) {
-            throw new NullProductUnitsException();
-        }
-
         if (updatedProductDTO.getNewProductPrices() == null) {
             throw new NullProductPricesException();
         }
@@ -59,10 +50,6 @@ public class ProductValidator {
         for (ProductPriceDTO productPriceDTO : updatedProductDTO.getNewProductPrices()) {
             if (productPriceDTO.getPrice() == 0) {
                 throw new NullProductPriceException();
-            }
-
-            if (productPriceDTO.getStartEffectDay() == null) {
-                throw new NullPriceStartEffectDayException();
             }
 
             if (productPriceDTO.getEndEffectDay() == null) {

@@ -3,13 +3,13 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
                             http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
-    <bean id="CustomerAlreadyExistException" class="persistence.exceptions.customerExceptions.CustomerAlreadyExistException"/>
-    <bean id="CustomerDoesNotExistException" class="persistence.exceptions.customerExceptions.CustomerDoesNotExistException"/>
+    <bean id="CustomerAlreadyExistException" class="domain.repositories.customerRepository.CustomerAlreadyExistException"/>
+    <bean id="CustomerDoesNotExistException" class="domain.repositories.customerRepository.CustomerDoesNotExistException"/>
 
-    <bean id="OrderAlreadyExistException" class="persistence.exceptions.orderExceptions.OrderAlreadyExistException"/>
-    <bean id="OrderDoesNotExistException" class="persistence.exceptions.orderExceptions.OrderDoesNotExistException"/>
+    <bean id="OrderAlreadyExistException" class="domain.repositories.orderRepository.OrderAlreadyExistException"/>
+    <bean id="OrderDoesNotExistException" class="domain.repositories.orderRepository.OrderDoesNotExistException"/>
 
-    <bean id="ProductAlreadyExistException" class="persistence.exceptions.productExceptions.ProductAlreadyExistException"/>
-    <bean id="ProductDoesNotExistException" class="persistence.exceptions.productExceptions.ProductDoesNotExistException"/>
+    <bean id="ProductAlreadyExistException" class="domain.repositories.productRepository.ProductAlreadyExistException"/>
+    <bean id="ProductDoesNotExistException" class="domain.repositories.productRepository.ProductDoesNotExistException"/>
 
 </beans>

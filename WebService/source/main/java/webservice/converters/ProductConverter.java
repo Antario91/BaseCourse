@@ -1,9 +1,12 @@
 package webservice.converters;
 
 
+import domain.product.DateIntersectionInProductPriceException;
 import domain.product.Product;
 import domain.product.ProductPrice;
-import persistence.productRepository.ProductRepo;
+import domain.repositories.EntityDoesNotExistException;
+import domain.repositories.productRepository.ProductDoesNotExistException;
+import domain.repositories.productRepository.ProductRepo;
 import utils.XMLGregorianCalendarProducer.DateProducer;
 import webservice.dtos.product.ProductDTO;
 import webservice.dtos.product.ProductPriceDTO;
@@ -17,7 +20,7 @@ import java.util.List;
  * Created by olgo on 14-Dec-16.
  */
 public class ProductConverter {
-    public static Product productDTOtoProduct(ProductDTO productDTO) {
+    public static Product productDTOtoProduct(ProductDTO productDTO) throws DateIntersectionInProductPriceException {
         if (productDTO != null) {
             ProductValidator.checkProductDTO(productDTO);
 
@@ -27,13 +30,12 @@ public class ProductConverter {
 
             List<ProductPriceDTO> productPricesDTO = productDTO.getProductPrices();
             for (ProductPriceDTO productPriceDTO : productPricesDTO) {
-                productPrices.add(new ProductPrice(productPriceDTO.getPrice(),
-                        productPriceDTO.getStartEffectDay()
-                                .toGregorianCalendar()
-                                .getTime(),
+                productPrices.add(
+                        new ProductPrice(productPriceDTO.getPrice(),
                         productPriceDTO.getEndEffectDay()
                                 .toGregorianCalendar()
-                                .getTime()));
+                                .getTime())
+                );
             }
 
             product.setProductPrices(productPrices);
@@ -56,7 +58,6 @@ public class ProductConverter {
                 ProductPriceDTO productPriceDTO = new ProductPriceDTO();
 
                 productPriceDTO.setPrice(productPrice.getPrice());
-                productPriceDTO.setStartEffectDay(DateProducer.produce(productPrice.getStartEffectDay()));
                 productPriceDTO.setEndEffectDay(DateProducer.produce(productPrice.getEndEffectDay()));
 
                 productDTO.getProductPrices().add(productPriceDTO);
@@ -68,22 +69,20 @@ public class ProductConverter {
         return null;
     }
 
-    public static Product updatedProductDTOtoProduct (UpdatedProductDTO updatedProductDTO, ProductRepo productRepo){
+    public static Product updatedProductDTOtoProduct (UpdatedProductDTO updatedProductDTO, ProductRepo productRepo) throws DateIntersectionInProductPriceException, EntityDoesNotExistException {
         if (updatedProductDTO != null && productRepo != null) {
             ProductValidator.checkUpdatedProductDTO(updatedProductDTO);
 
-            Product product = (Product) productRepo.getByBusinessKey(updatedProductDTO.getProductName());
-
-            product.setUnits(updatedProductDTO.getNewProductUnits());
+            Product product = (Product) productRepo.get(updatedProductDTO.getProductName());
+            if (product == null) {
+                throw new ProductDoesNotExistException();
+            }
 
             List<ProductPrice> productPrices = new ArrayList<ProductPrice>();
 
             List<ProductPriceDTO> productPriceDTOs = updatedProductDTO.getNewProductPrices();
             for (ProductPriceDTO productPriceDTO : productPriceDTOs) {
                 productPrices.add(new ProductPrice(productPriceDTO.getPrice(),
-                        productPriceDTO.getStartEffectDay()
-                                .toGregorianCalendar()
-                                .getTime(),
                         productPriceDTO.getEndEffectDay()
                                 .toGregorianCalendar()
                                 .getTime()));

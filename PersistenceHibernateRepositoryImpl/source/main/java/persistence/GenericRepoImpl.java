@@ -60,7 +60,7 @@ public class GenericRepoImpl<V> implements GenericRepo<V> {
     @SuppressWarnings("unchecked")
     public void delete(V businessKeyValue) throws EntityDoesNotExistException {
         Entity<V> entity = (Entity<V>) get(businessKeyValue);
-        if (entity == null){
+        if (entity == null) {
             throw entityDoesNotExistException;
         }
 
