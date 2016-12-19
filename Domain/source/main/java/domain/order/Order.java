@@ -4,7 +4,7 @@ import domain.Entity;
 
 import java.util.*;
 
-public class Order extends Entity {
+public class Order extends Entity<Long> {
     private final long billingNumber;
     private final Date placingDate;
     private List<OrderItem> orderItems;
@@ -47,6 +47,11 @@ public class Order extends Entity {
 
     public long getCustomerId() {
         return customerId;
+    }
+
+    @Override
+    public Long getBusinessKey() {
+        return billingNumber;
     }
 
     private boolean isUniqueProductsInOrder(List<OrderItem> orderItems) throws ProductInOrderIsNotUniqueException {

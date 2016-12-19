@@ -13,7 +13,7 @@ import webservice.validators.CustomerValidator;
  */
 public class CustomerConverter {
 
-    public static Customer customerDTOtoCustomer (CustomerDTO customerDTO){
+    public static Customer customerDTOtoCustomer(CustomerDTO customerDTO) {
         if (customerDTO != null) {
             CustomerValidator.checkCustomerDTO(customerDTO);
 
@@ -22,7 +22,7 @@ public class CustomerConverter {
         return null;
     }
 
-    public static CustomerDTO customerToCustomerDTO (Customer customer){
+    public static CustomerDTO customerToCustomerDTO(Customer customer) {
         if (customer != null) {
             CustomerDTO customerDTO = new CustomerDTO();
             customerDTO.setName(customer.getName());
@@ -32,19 +32,16 @@ public class CustomerConverter {
         return null;
     }
 
-    public static Customer updatedCustomerDTOtoCustomer (UpdatedCustomerDTO updatedCustomerDTO, CustomerRepo customerRepo){
+    public static Customer updatedCustomerDTOtoCustomer(UpdatedCustomerDTO updatedCustomerDTO, CustomerRepo customerRepo) throws CustomerAlreadyExistException {
         if (updatedCustomerDTO != null && customerRepo != null) {
             CustomerValidator.checkUpdatedCustomerDTO(updatedCustomerDTO);
 
-            try {
-                if (customerRepo.getByBusinessKey(updatedCustomerDTO.getNewName()) instanceof Customer) {
-                    throw new CustomerAlreadyExistException();
-                }
-            } catch (CustomerDoesNotExistException ex) {
+            Customer checkableCustomer = (Customer) customerRepo.get(updatedCustomerDTO.getNewName());
+            if (checkableCustomer != null) {
+                throw new CustomerAlreadyExistException();
             }
 
-            Customer customer = new Customer( updatedCustomerDTO.getNewName() );
-            return customer;
+            return new Customer(updatedCustomerDTO.getNewName());
         }
         return null;
     }

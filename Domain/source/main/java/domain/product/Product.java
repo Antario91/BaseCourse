@@ -4,7 +4,7 @@ import domain.Entity;
 
 import java.util.*;
 
-public class Product extends Entity {
+public class Product extends Entity<String> {
     private final String name;
     private final String units;
     private List<ProductPrice> productPrices;
@@ -15,7 +15,7 @@ public class Product extends Entity {
     }
 
     public Product(String name, String units) {
-        if (name == null || units == null){
+        if (name == null || name.isEmpty() || units == null || units.isEmpty()){
             throw new IllegalArgumentException();
         }
         this.name = name;
@@ -35,11 +35,16 @@ public class Product extends Entity {
     }
 
     public void setProductPrices(List<ProductPrice> productPrices) throws DateIntersectionInProductPriceException {
-        if (productPrices == null || productPrices.size() == 0) {
+        if (productPrices == null) {
             throw new IllegalArgumentException();
         }
         isIntersectProductPricesEffectDays(productPrices);
         this.productPrices = productPrices;
+    }
+
+    @Override
+    public String getBusinessKey() {
+        return name;
     }
 
     public long getProductPrice(Date placingDate) {
@@ -54,6 +59,7 @@ public class Product extends Entity {
                 placingDate.before(checkableProductPrices.get(0).getEndEffectDay())
                 ) {
             price = checkableProductPrices.get(0).getPrice();
+            return price;
         }
 
         if (
@@ -62,6 +68,7 @@ public class Product extends Entity {
                 ) {
             price = checkableProductPrices.get(checkableProductPrices.size()-1)
                     .getPrice();
+            return price;
         }
 
         Iterator<ProductPrice> itr = checkableProductPrices.iterator();

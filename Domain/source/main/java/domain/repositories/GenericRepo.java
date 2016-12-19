@@ -10,9 +10,9 @@ import domain.Entity;
 
 //TODO Consider searchByCriteria()
 public interface GenericRepo <V> {
-    void add (Entity entity);
+    void add (Entity<V> entity) throws EntityAlreadyExistException;
     Entity get (V businessKeyValue);
     Entity getById (long id);
-    void update (Entity entity);
-    void delete (V businessKeyValue);
+    void update (Entity<V> entity);
+    void delete (V businessKeyValue) throws EntityDoesNotExistException;
 }

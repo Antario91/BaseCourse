@@ -2,7 +2,7 @@ package domain.customer;
 
 import domain.Entity;
 
-public class Customer extends Entity {
+public class Customer extends Entity<String> {
     private final String name;
 
     //Для того, чтобы name был final, в конструкторе присваивается null
@@ -11,13 +11,18 @@ public class Customer extends Entity {
     }
 
     public Customer(String name) {
-        if (name == null){
+        if (name == null || name.isEmpty()){
             throw new IllegalArgumentException();
         }
         this.name = name;
     }
 
     public String getName() {
+        return name;
+    }
+
+    @Override
+    public String getBusinessKey() {
         return name;
     }
 }
