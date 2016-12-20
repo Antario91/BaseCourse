@@ -1,57 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8de36aef-27dd-4f14-994b-c030d11e100d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-14_13.10.50.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-14_13.13.42.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-14_13.26.29.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-14_14.58.45.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-14_15.25.00.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-14_15.26.56.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-14_15.28.20.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-14_15.32.15.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-14_16.03.24.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-14_16.06.01.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-14_16.08.16.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-14_17.59.30.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-14_18.01.44.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-14_18.03.36.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-14_18.05.12.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-14_18.22.19.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-14_18.57.21.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-14_19.05.05.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-14_19.10.55.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-14_19.18.07.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-14_19.23.39.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-14_19.26.55.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-14_19.44.29.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-14_19.50.39.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-14_19.56.46.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-14_20.08.50.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-15_09.18.12.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-15_10.11.23.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-15_10.49.39.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-15_11.05.54.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-15_11.16.46.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-15_12.35.50.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-15_12.44.19.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-15_12.47.30.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-15_13.06.38.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-15_13.50.23.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-15_16.20.11.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-15_17.04.12.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-15_17.13.58.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-15_17.15.30.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-15_17.43.16.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-15_17.57.34.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-15_17.59.33.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-15_18.34.23.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-15_18.39.39.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-15_19.31.13.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/log-2016-12-15_19.33.27.log" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/create_schema_old.sql" afterPath="$PROJECT_DIR$/create_schema.sql" />
-    </list>
+    <list default="true" id="8de36aef-27dd-4f14-994b-c030d11e100d" name="Default" comment="" />
     <ignored path="BaseCourse.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
