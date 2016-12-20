@@ -20,6 +20,8 @@ import webservice.converters.OrderConverter;
 
 import webservice.endpointrequestresponse.orderrequestresponse.*;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.List;
 
 
@@ -48,7 +50,7 @@ public class OrderEndpoint {
 
         CreateOrderResponse response = new CreateOrderResponse();
 
-        response.setOrderPrice( orderService.getOrderPrice(order.getBillingNumber()) );
+        response.setOrderPrice( new BigDecimal( orderService.getOrderPrice(order.getBillingNumber()) ).setScale(2, RoundingMode.HALF_UP) );
 
         return response;
     }

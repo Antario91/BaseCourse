@@ -19,8 +19,8 @@ public class OrderService {
         this.productRepo = productRepo;
     }
 
-    public long getOrderPrice(long billingNumber) throws EntityDoesNotExistException {
-        long price = 0;
+    public double getOrderPrice(long billingNumber) throws EntityDoesNotExistException {
+        double price = 0;
 
         Order order = (Order) orderRepo.get(billingNumber);
 
@@ -29,7 +29,9 @@ public class OrderService {
         for (OrderItem orderItem : order.getOrderItems()) {
             for (Product product : orderProducts) {
                 if (orderItem.getProductId() == product.getId()) {
-                    price += product.getProductPrice(order.getPlacingDate()) * orderItem.getQuantity();
+                    double quantity = orderItem.getQuantity();
+                    double prodPrice = product.getProductPrice(order.getPlacingDate());
+                    price += prodPrice * quantity;
                 }
             }
         }

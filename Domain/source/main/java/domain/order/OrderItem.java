@@ -1,7 +1,7 @@
 package domain.order;
 
 public class OrderItem {
-    private final long quantity;
+    private final double quantity;
     private final long productId;
 
     private OrderItem () {
@@ -9,7 +9,7 @@ public class OrderItem {
         productId = 0;
     }
 
-    public OrderItem(long quantity, long productId) {
+    public OrderItem(double quantity, long productId) {
         if (quantity <= 0 || productId <= 0){
             throw new IllegalArgumentException ();
         }
@@ -17,7 +17,7 @@ public class OrderItem {
         this.productId = productId;
     }
 
-    public long getQuantity() {
+    public double getQuantity() {
         return quantity;
     }
 
@@ -40,7 +40,10 @@ public class OrderItem {
 
     @Override
     public int hashCode() {
-        int result = (int) (quantity ^ (quantity >>> 32));
+        int result;
+        long temp;
+        temp = Double.doubleToLongBits(quantity);
+        result = (int) (temp ^ (temp >>> 32));
         result = 31 * result + (int) (productId ^ (productId >>> 32));
         return result;
     }

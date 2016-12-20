@@ -21,7 +21,7 @@
             <key column="id"/>
             <list-index column="LIST_INDEX" base="0"/>
             <composite-element class="domain.product.ProductPrice">
-                <property name="price" type="long" access="field">
+                <property name="price" type="double" access="field">
                     <column name="PRODUCT_PRICE" not-null="true" unique="false"/>
                 </property>
                 <property name="endEffectDay" type="date" access="field">

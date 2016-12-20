@@ -25,7 +25,7 @@
             <key column="id"/>
             <list-index column="LIST_INDEX" base="0"/>
             <composite-element class="domain.order.OrderItem">
-                <property name="quantity" type="long" access="field">
+                <property name="quantity" type="double" access="field">
                     <column name="QUANTITY" not-null="true" unique="false"/>
                 </property>
                 <property name="productId" type="long" access="field">

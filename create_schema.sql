@@ -4,9 +4,9 @@ create table testhiber.ORDER_TABLES (ID number(19,0) not null, BILLING_NUMBER nu
 
 create table testhiber.PRODUCT (ID number(19,0) not null, PRODUCT_NAME varchar2(255 char) not null, PRODUCT_UNITS varchar2(255 char) not null, primary key (ID));
 
-create table testhiber.ORDER_ITEMS (ID number(19,0) not null, QUANTITY number(19,0) not null, PRODUCT_ID number(19,0) not null, LIST_INDEX number(10,0) not null, primary key (ID, LIST_INDEX));
+create table testhiber.ORDER_ITEMS (ID number(19,0) not null, QUANTITY number(19,2) not null, PRODUCT_ID number(19,0) not null, LIST_INDEX number(10,0) not null, primary key (ID, LIST_INDEX));
 
-create table testhiber.PRODUCT_PRICES (ID number(19,0) not null, PRODUCT_PRICE number(19,0) not null, PRODUCT_PRICE_END_EFFECT_DAY date not null, LIST_INDEX number(10,0) not null, primary key (ID, LIST_INDEX));
+create table testhiber.PRODUCT_PRICES (ID number(19,0) not null, PRODUCT_PRICE number(19,2) not null, PRODUCT_PRICE_END_EFFECT_DAY date not null, LIST_INDEX number(10,0) not null, primary key (ID, LIST_INDEX));
 
 alter table testhiber.CUSTOMER add constraint UNIQUE_CUSTOMER_NAME unique (CUSTOMER_NAME);
 
@@ -56,6 +56,12 @@ insert into testhiber.PRODUCT (ID, PRODUCT_NAME, PRODUCT_UNITS) values (2, 'Milk
 
 insert into testhiber.PRODUCT (ID, PRODUCT_NAME, PRODUCT_UNITS) values (3, 'Apples', 'kg');
 
+insert into testhiber.PRODUCT (ID, PRODUCT_NAME, PRODUCT_UNITS) values (4, 'Cake', 'kg');
+
+insert into testhiber.PRODUCT (ID, PRODUCT_NAME, PRODUCT_UNITS) values (5, 'Orange', 'kg');
+
+insert into testhiber.PRODUCT (ID, PRODUCT_NAME, PRODUCT_UNITS) values (6, 'Meat', 'kg');
+
 insert into testhiber.PRODUCT_PRICES (ID, PRODUCT_PRICE, PRODUCT_PRICE_END_EFFECT_DAY, LIST_INDEX) values (1, 10, TO_DATE('2013-12-31', 'yyyy/mm/dd'), 0);
 
 insert into testhiber.PRODUCT_PRICES (ID, PRODUCT_PRICE, PRODUCT_PRICE_END_EFFECT_DAY, LIST_INDEX) values (1, 15, TO_DATE('2014-12-31', 'yyyy/mm/dd'), 1);
@@ -69,6 +75,22 @@ insert into testhiber.PRODUCT_PRICES (ID, PRODUCT_PRICE, PRODUCT_PRICE_END_EFFEC
 insert into testhiber.PRODUCT_PRICES (ID, PRODUCT_PRICE, PRODUCT_PRICE_END_EFFECT_DAY, LIST_INDEX) values (2, 25, TO_DATE('2016-12-31', 'yyyy/mm/dd'), 1);
 
 insert into testhiber.PRODUCT_PRICES (ID, PRODUCT_PRICE, PRODUCT_PRICE_END_EFFECT_DAY, LIST_INDEX) values (3, 7, TO_DATE('2016-12-31', 'yyyy/mm/dd'), 0);
+
+insert into testhiber.PRODUCT_PRICES (ID, PRODUCT_PRICE, PRODUCT_PRICE_END_EFFECT_DAY, LIST_INDEX) values (4, 2, TO_DATE('2014-12-31', 'yyyy/mm/dd'), 0);
+
+insert into testhiber.PRODUCT_PRICES (ID, PRODUCT_PRICE, PRODUCT_PRICE_END_EFFECT_DAY, LIST_INDEX) values (4, 3, TO_DATE('2015-12-31', 'yyyy/mm/dd'), 1);
+
+insert into testhiber.PRODUCT_PRICES (ID, PRODUCT_PRICE, PRODUCT_PRICE_END_EFFECT_DAY, LIST_INDEX) values (4, 4, TO_DATE('2016-12-31', 'yyyy/mm/dd'), 2);
+
+insert into testhiber.PRODUCT_PRICES (ID, PRODUCT_PRICE, PRODUCT_PRICE_END_EFFECT_DAY, LIST_INDEX) values (5, 2, TO_DATE('2014-12-31', 'yyyy/mm/dd'), 0);
+
+insert into testhiber.PRODUCT_PRICES (ID, PRODUCT_PRICE, PRODUCT_PRICE_END_EFFECT_DAY, LIST_INDEX) values (5, 3, TO_DATE('2015-12-31', 'yyyy/mm/dd'), 1);
+
+insert into testhiber.PRODUCT_PRICES (ID, PRODUCT_PRICE, PRODUCT_PRICE_END_EFFECT_DAY, LIST_INDEX) values (5, 5, TO_DATE('2016-12-31', 'yyyy/mm/dd'), 2);
+
+insert into testhiber.PRODUCT_PRICES (ID, PRODUCT_PRICE, PRODUCT_PRICE_END_EFFECT_DAY, LIST_INDEX) values (5, 4, TO_DATE('2017-12-31', 'yyyy/mm/dd'), 3);
+
+insert into testhiber.PRODUCT_PRICES (ID, PRODUCT_PRICE, PRODUCT_PRICE_END_EFFECT_DAY, LIST_INDEX) values (6, 25, TO_DATE('2014-12-31', 'yyyy/mm/dd'), 0);
 
 insert into testhiber.ORDER_TABLES (ID, BILLING_NUMBER, PLACING_DATE, CUSTOMER_ID) values (1, 101, TO_DATE('2016-12-12', 'yyyy/mm/dd'), 1);
 

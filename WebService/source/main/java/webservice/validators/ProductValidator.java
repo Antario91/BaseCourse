@@ -5,6 +5,8 @@ import webservice.dtos.product.ProductPriceDTO;
 import webservice.dtos.product.UpdatedProductDTO;
 import webservice.exceptions.*;
 
+import java.math.BigDecimal;
+
 /**
  * Created by olgo on 14-Dec-16.
  */
@@ -25,7 +27,7 @@ public class ProductValidator {
         }
 
         for (ProductPriceDTO productPriceDTO : productDTO.getProductPrices()) {
-            if (productPriceDTO.getPrice() == 0) {
+            if (productPriceDTO.getPrice().compareTo(new BigDecimal(0)) == 0) {
                 throw new NullProductPriceException();
             }
 
@@ -48,7 +50,7 @@ public class ProductValidator {
         }
 
         for (ProductPriceDTO productPriceDTO : updatedProductDTO.getNewProductPrices()) {
-            if (productPriceDTO.getPrice() == 0) {
+            if (productPriceDTO.getPrice().compareTo(new BigDecimal(0)) == 0) {
                 throw new NullProductPriceException();
             }
 

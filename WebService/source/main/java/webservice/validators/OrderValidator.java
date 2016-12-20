@@ -26,7 +26,9 @@ public class OrderValidator {
                 throw new NullProductNameException();
             }
 
-            if (orderItemDTOForCreation.getQuantity() == 0) {
+            if (new Double(
+                    orderItemDTOForCreation.getQuantity().doubleValue()
+            ).compareTo(0.0) == 0 ) {
                 throw new NullProductQuantityException();
             }
         }
@@ -50,7 +52,9 @@ public class OrderValidator {
                 throw new NullProductNameException();
             }
 
-            if (orderItemDTOForCreation.getQuantity() == 0) {
+            if (new Double(
+                    orderItemDTOForCreation.getQuantity().doubleValue()
+            ).compareTo(0.0) == 0) {
                 throw new NullProductQuantityException();
             }
         }

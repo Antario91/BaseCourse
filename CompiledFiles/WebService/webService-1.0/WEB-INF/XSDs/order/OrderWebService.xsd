@@ -18,7 +18,7 @@
     <element name="CreateOrderResponse">
         <complexType>
             <sequence>
-                <element name="orderPrice" type="long"/>
+                <element name="orderPrice" type="decimal"/>
             </sequence>
         </complexType>
     </element>

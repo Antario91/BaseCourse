@@ -47,8 +47,8 @@ public class Product extends Entity<String> {
         return name;
     }
 
-    public long getProductPrice(Date placingDate) {
-        long price = 0;
+    public double getProductPrice(Date placingDate) {
+        double price = 0.0;
 
         List <ProductPrice> checkableProductPrices = new ArrayList<ProductPrice>(productPrices);
         Collections.sort(checkableProductPrices, getProductPricesComparator());

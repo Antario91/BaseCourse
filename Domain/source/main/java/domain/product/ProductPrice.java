@@ -3,7 +3,7 @@ package domain.product;
 import java.util.Date;
 
 public class ProductPrice {
-    private final long price;
+    private final double price;
     private final Date endEffectDay;
 
     private ProductPrice () {
@@ -11,7 +11,7 @@ public class ProductPrice {
         endEffectDay = null;
     }
 
-    public ProductPrice(long price, Date endEffectDay) {
+    public ProductPrice(double price, Date endEffectDay) {
         if (price <= 0 || endEffectDay == null){
             throw new IllegalArgumentException();
         }
@@ -19,7 +19,7 @@ public class ProductPrice {
         this.endEffectDay = endEffectDay;
     }
 
-    public long getPrice() {
+    public double getPrice() {
         return price;
     }
 
@@ -41,7 +41,10 @@ public class ProductPrice {
 
     @Override
     public int hashCode() {
-        int result = (int) (price ^ (price >>> 32));
+        int result;
+        long temp;
+        temp = Double.doubleToLongBits(price);
+        result = (int) (temp ^ (temp >>> 32));
         result = 31 * result + endEffectDay.hashCode();
         return result;
     }

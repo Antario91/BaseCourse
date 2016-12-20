@@ -21,6 +21,8 @@ import webservice.dtos.order.*;
 import webservice.dtos.product.ProductDTOInOrder;
 import webservice.validators.OrderValidator;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -46,7 +48,7 @@ public class OrderConverter {
                     throw new ProductDoesNotExistException();
                 }
                 orderItems.add(
-                        new OrderItem(orderItemDTO.getQuantity(),
+                        new OrderItem(orderItemDTO.getQuantity().doubleValue(),
                                 product.getId())
                 );
             }
@@ -68,7 +70,10 @@ public class OrderConverter {
 
             orderDTOForReception.setBillingNumber(order.getBillingNumber());
             orderDTOForReception.setPlacingDate( DateProducer.produce(order.getPlacingDate()) );
-            orderDTOForReception.setOrderPrice( orderService.getOrderPrice(order.getBillingNumber()) );
+            orderDTOForReception.setOrderPrice( new BigDecimal(
+                    orderService.getOrderPrice(order.getBillingNumber())
+                    ).setScale(2, RoundingMode.HALF_UP)
+            );
             orderDTOForReception.setOrdersCustomersName(
                     ( (Customer) customerRepo.getById(order.getCustomerId()) ).getBusinessKey()
             );
@@ -79,10 +84,16 @@ public class OrderConverter {
                 ProductDTOInOrder productDTOInOrder = new ProductDTOInOrder();
                 productDTOInOrder.setProductName(product.getName());
                 productDTOInOrder.setProductUnits(product.getUnits());
-                productDTOInOrder.setProductPrice(product.getProductPrice(order.getPlacingDate()));
+                productDTOInOrder.setProductPrice( new BigDecimal(
+                        product.getProductPrice(order.getPlacingDate())
+                ).setScale(2, RoundingMode.HALF_UP)
+                );
 
                 OrderItemDTOForReception orderItemDTOForReception = new OrderItemDTOForReception();
-                orderItemDTOForReception.setQuantity(orderItem.getQuantity());
+                orderItemDTOForReception.setQuantity( new BigDecimal(
+                        orderItem.getQuantity()
+                ).setScale(2, RoundingMode.HALF_UP)
+                );
                 orderItemDTOForReception.setProduct(productDTOInOrder);
 
                 orderDTOForReception.getOrderItems().add(orderItemDTOForReception);
@@ -111,7 +122,7 @@ public class OrderConverter {
                 }
 
                 orderItems.add(
-                        new OrderItem(orderItemDTOForCreation.getQuantity(), product.getId())
+                        new OrderItem(orderItemDTOForCreation.getQuantity().doubleValue(), product.getId())
                 );
             }
 

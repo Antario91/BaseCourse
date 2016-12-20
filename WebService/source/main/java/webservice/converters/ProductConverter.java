@@ -13,6 +13,8 @@ import webservice.dtos.product.ProductPriceDTO;
 import webservice.dtos.product.UpdatedProductDTO;
 import webservice.validators.ProductValidator;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,7 +33,7 @@ public class ProductConverter {
             List<ProductPriceDTO> productPricesDTO = productDTO.getProductPrices();
             for (ProductPriceDTO productPriceDTO : productPricesDTO) {
                 productPrices.add(
-                        new ProductPrice(productPriceDTO.getPrice(),
+                        new ProductPrice(productPriceDTO.getPrice().doubleValue(),
                         productPriceDTO.getEndEffectDay()
                                 .toGregorianCalendar()
                                 .getTime())
@@ -57,7 +59,10 @@ public class ProductConverter {
             for (ProductPrice productPrice : productPrices) {
                 ProductPriceDTO productPriceDTO = new ProductPriceDTO();
 
-                productPriceDTO.setPrice(productPrice.getPrice());
+                productPriceDTO.setPrice( new BigDecimal(
+                        productPrice.getPrice()
+                        ).setScale(2, RoundingMode.HALF_UP)
+                );
                 productPriceDTO.setEndEffectDay(DateProducer.produce(productPrice.getEndEffectDay()));
 
                 productDTO.getProductPrices().add(productPriceDTO);
@@ -82,7 +87,7 @@ public class ProductConverter {
 
             List<ProductPriceDTO> productPriceDTOs = updatedProductDTO.getNewProductPrices();
             for (ProductPriceDTO productPriceDTO : productPriceDTOs) {
-                productPrices.add(new ProductPrice(productPriceDTO.getPrice(),
+                productPrices.add(new ProductPrice(productPriceDTO.getPrice().doubleValue(),
                         productPriceDTO.getEndEffectDay()
                                 .toGregorianCalendar()
                                 .getTime()));
