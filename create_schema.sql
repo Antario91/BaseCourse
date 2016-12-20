@@ -44,72 +44,72 @@ CREATE SEQUENCE billing_number_generator
   INCREMENT BY 1
   CACHE 20;
   
-insert into testhiber.CUSTOMER (ID, CUSTOMER_NAME) values ('1', 'Vasya');
+insert into testhiber.CUSTOMER (ID, CUSTOMER_NAME) values (1, 'Vasya');
 
-insert into testhiber.CUSTOMER (ID, CUSTOMER_NAME) values ('2', 'Petya');
+insert into testhiber.CUSTOMER (ID, CUSTOMER_NAME) values (2, 'Petya');
 
-insert into testhiber.CUSTOMER (ID, CUSTOMER_NAME) values ('3', 'Vanya');
+insert into testhiber.CUSTOMER (ID, CUSTOMER_NAME) values (3, 'Vanya');
 
-insert into testhiber.PRODUCT (ID, PRODUCT_NAME, PRODUCT_UNITS) values ('1', 'Potato', 'kg');
+insert into testhiber.PRODUCT (ID, PRODUCT_NAME, PRODUCT_UNITS) values (1, 'Potato', 'kg');
 
-insert into testhiber.PRODUCT (ID, PRODUCT_NAME, PRODUCT_UNITS) values ('2', 'Milk', 'L');
+insert into testhiber.PRODUCT (ID, PRODUCT_NAME, PRODUCT_UNITS) values (2, 'Milk', 'L');
 
-insert into testhiber.PRODUCT (ID, PRODUCT_NAME, PRODUCT_UNITS) values ('3', 'Apples', 'kg');
+insert into testhiber.PRODUCT (ID, PRODUCT_NAME, PRODUCT_UNITS) values (3, 'Apples', 'kg');
 
-insert into testhiber.PRODUCT_PRICES (ID, PRODUCT_PRICE, PRODUCT_PRICE_END_EFFECT_DAY, LIST_INDEX) values ('1', '10', TO_DATE('2013-12-31', 'yyyy/mm/dd'), '0');
+insert into testhiber.PRODUCT_PRICES (ID, PRODUCT_PRICE, PRODUCT_PRICE_END_EFFECT_DAY, LIST_INDEX) values (1, 10, TO_DATE('2013-12-31', 'yyyy/mm/dd'), 0);
 
-insert into testhiber.PRODUCT_PRICES (ID, PRODUCT_PRICE, PRODUCT_PRICE_END_EFFECT_DAY, LIST_INDEX) values ('1', '15', TO_DATE('2014-12-31', 'yyyy/mm/dd'), '1');
+insert into testhiber.PRODUCT_PRICES (ID, PRODUCT_PRICE, PRODUCT_PRICE_END_EFFECT_DAY, LIST_INDEX) values (1, 15, TO_DATE('2014-12-31', 'yyyy/mm/dd'), 1);
 
-insert into testhiber.PRODUCT_PRICES (ID, PRODUCT_PRICE, PRODUCT_PRICE_END_EFFECT_DAY, LIST_INDEX) values ('1', '20', TO_DATE('2015-12-31', 'yyyy/mm/dd'), '2');
+insert into testhiber.PRODUCT_PRICES (ID, PRODUCT_PRICE, PRODUCT_PRICE_END_EFFECT_DAY, LIST_INDEX) values (1, 20, TO_DATE('2015-12-31', 'yyyy/mm/dd'), 2);
 
-insert into testhiber.PRODUCT_PRICES (ID, PRODUCT_PRICE, PRODUCT_PRICE_END_EFFECT_DAY, LIST_INDEX) values ('1', '25', TO_DATE('2016-12-31', 'yyyy/mm/dd'), '3');
+insert into testhiber.PRODUCT_PRICES (ID, PRODUCT_PRICE, PRODUCT_PRICE_END_EFFECT_DAY, LIST_INDEX) values (1, 25, TO_DATE('2016-12-31', 'yyyy/mm/dd'), 3);
 
-insert into testhiber.PRODUCT_PRICES (ID, PRODUCT_PRICE, PRODUCT_PRICE_END_EFFECT_DAY, LIST_INDEX) values ('2', '30', TO_DATE('2015-12-31', 'yyyy/mm/dd'), '0');
+insert into testhiber.PRODUCT_PRICES (ID, PRODUCT_PRICE, PRODUCT_PRICE_END_EFFECT_DAY, LIST_INDEX) values (2, 30, TO_DATE('2015-12-31', 'yyyy/mm/dd'), 0);
 
-insert into testhiber.PRODUCT_PRICES (ID, PRODUCT_PRICE, PRODUCT_PRICE_END_EFFECT_DAY, LIST_INDEX) values ('2', '25', TO_DATE('2016-12-31', 'yyyy/mm/dd'), '1');
+insert into testhiber.PRODUCT_PRICES (ID, PRODUCT_PRICE, PRODUCT_PRICE_END_EFFECT_DAY, LIST_INDEX) values (2, 25, TO_DATE('2016-12-31', 'yyyy/mm/dd'), 1);
 
-insert into testhiber.PRODUCT_PRICES (ID, PRODUCT_PRICE, PRODUCT_PRICE_END_EFFECT_DAY, LIST_INDEX) values ('3', '7', TO_DATE('2016-12-31', 'yyyy/mm/dd'), '0');
+insert into testhiber.PRODUCT_PRICES (ID, PRODUCT_PRICE, PRODUCT_PRICE_END_EFFECT_DAY, LIST_INDEX) values (3, 7, TO_DATE('2016-12-31', 'yyyy/mm/dd'), 0);
 
-insert into testhiber.ORDER_TABLES (ID, BILLING_NUMBER, PLACING_DATE, CUSTOMER_ID) values ('1', '101', TO_DATE('2016-12-12', 'yyyy/mm/dd'), '1');
+insert into testhiber.ORDER_TABLES (ID, BILLING_NUMBER, PLACING_DATE, CUSTOMER_ID) values (1, 101, TO_DATE('2016-12-12', 'yyyy/mm/dd'), 1);
 
-insert into testhiber.ORDER_TABLES (ID, BILLING_NUMBER, PLACING_DATE, CUSTOMER_ID) values ('2', '102', TO_DATE('2016-12-12', 'yyyy/mm/dd'), '1');
+insert into testhiber.ORDER_TABLES (ID, BILLING_NUMBER, PLACING_DATE, CUSTOMER_ID) values (2, 102, TO_DATE('2016-12-12', 'yyyy/mm/dd'), 1);
 
-insert into testhiber.ORDER_TABLES (ID, BILLING_NUMBER, PLACING_DATE, CUSTOMER_ID) values ('3', '103', TO_DATE('2016-12-13', 'yyyy/mm/dd'), '2');
+insert into testhiber.ORDER_TABLES (ID, BILLING_NUMBER, PLACING_DATE, CUSTOMER_ID) values (3, 103, TO_DATE('2016-12-13', 'yyyy/mm/dd'), 2);
 
-insert into testhiber.ORDER_TABLES (ID, BILLING_NUMBER, PLACING_DATE, CUSTOMER_ID) values ('4', '104', TO_DATE('2016-12-13', 'yyyy/mm/dd'), '2');
+insert into testhiber.ORDER_TABLES (ID, BILLING_NUMBER, PLACING_DATE, CUSTOMER_ID) values (4, 104, TO_DATE('2016-12-13', 'yyyy/mm/dd'), 2);
 
-insert into testhiber.ORDER_TABLES (ID, BILLING_NUMBER, PLACING_DATE, CUSTOMER_ID) values ('5', '105', TO_DATE('2016-12-14', 'yyyy/mm/dd'), '3');
+insert into testhiber.ORDER_TABLES (ID, BILLING_NUMBER, PLACING_DATE, CUSTOMER_ID) values (5, 105, TO_DATE('2016-12-14', 'yyyy/mm/dd'), 3);
 
-insert into testhiber.ORDER_TABLES (ID, BILLING_NUMBER, PLACING_DATE, CUSTOMER_ID) values ('6', '106', TO_DATE('2016-12-14', 'yyyy/mm/dd'), '3');
+insert into testhiber.ORDER_TABLES (ID, BILLING_NUMBER, PLACING_DATE, CUSTOMER_ID) values (6, 106, TO_DATE('2016-12-14', 'yyyy/mm/dd'), 3);
 
-insert into testhiber.ORDER_TABLES (ID, BILLING_NUMBER, PLACING_DATE, CUSTOMER_ID) values ('7', '107', TO_DATE('2016-12-14', 'yyyy/mm/dd'), '3');
+insert into testhiber.ORDER_TABLES (ID, BILLING_NUMBER, PLACING_DATE, CUSTOMER_ID) values (7, 107, TO_DATE('2016-12-14', 'yyyy/mm/dd'), 3);
 
-insert into testhiber.ORDER_ITEMS (ID, QUANTITY, PRODUCT_ID, LIST_INDEX) values ('1', '2', '1', '0');
+insert into testhiber.ORDER_ITEMS (ID, QUANTITY, PRODUCT_ID, LIST_INDEX) values (1, 2, 1, 0);
 
-insert into testhiber.ORDER_ITEMS (ID, QUANTITY, PRODUCT_ID, LIST_INDEX) values ('1', '5', '2', '1');
+insert into testhiber.ORDER_ITEMS (ID, QUANTITY, PRODUCT_ID, LIST_INDEX) values (1, 5, 2, 1);
 
-insert into testhiber.ORDER_ITEMS (ID, QUANTITY, PRODUCT_ID, LIST_INDEX) values ('1', '1', '3', '2');
+insert into testhiber.ORDER_ITEMS (ID, QUANTITY, PRODUCT_ID, LIST_INDEX) values (1, 1, 3, 2);
 
-insert into testhiber.ORDER_ITEMS (ID, QUANTITY, PRODUCT_ID, LIST_INDEX) values ('2', '2', '2', '0');
+insert into testhiber.ORDER_ITEMS (ID, QUANTITY, PRODUCT_ID, LIST_INDEX) values (2, 2, 2, 0);
 
-insert into testhiber.ORDER_ITEMS (ID, QUANTITY, PRODUCT_ID, LIST_INDEX) values ('2', '5', '1', '1');
+insert into testhiber.ORDER_ITEMS (ID, QUANTITY, PRODUCT_ID, LIST_INDEX) values (2, 5, 1, 1);
 
-insert into testhiber.ORDER_ITEMS (ID, QUANTITY, PRODUCT_ID, LIST_INDEX) values ('3', '1', '3', '0');
+insert into testhiber.ORDER_ITEMS (ID, QUANTITY, PRODUCT_ID, LIST_INDEX) values (3, 1, 3, 0);
 
-insert into testhiber.ORDER_ITEMS (ID, QUANTITY, PRODUCT_ID, LIST_INDEX) values ('3', '12', '2', '1');
+insert into testhiber.ORDER_ITEMS (ID, QUANTITY, PRODUCT_ID, LIST_INDEX) values (3, 12, 2, 1);
 
-insert into testhiber.ORDER_ITEMS (ID, QUANTITY, PRODUCT_ID, LIST_INDEX) values ('3', '5', '1', '2');
+insert into testhiber.ORDER_ITEMS (ID, QUANTITY, PRODUCT_ID, LIST_INDEX) values (3, 5, 1, 2);
 
-insert into testhiber.ORDER_ITEMS (ID, QUANTITY, PRODUCT_ID, LIST_INDEX) values ('4', '1', '3', '0');
+insert into testhiber.ORDER_ITEMS (ID, QUANTITY, PRODUCT_ID, LIST_INDEX) values (4, 1, 3, 0);
 
-insert into testhiber.ORDER_ITEMS (ID, QUANTITY, PRODUCT_ID, LIST_INDEX) values ('5', '7', '2', '0');
+insert into testhiber.ORDER_ITEMS (ID, QUANTITY, PRODUCT_ID, LIST_INDEX) values (5, 7, 2, 0);
 
-insert into testhiber.ORDER_ITEMS (ID, QUANTITY, PRODUCT_ID, LIST_INDEX) values ('5', '7', '1', '1');
+insert into testhiber.ORDER_ITEMS (ID, QUANTITY, PRODUCT_ID, LIST_INDEX) values (5, 7, 1, 1);
 
-insert into testhiber.ORDER_ITEMS (ID, QUANTITY, PRODUCT_ID, LIST_INDEX) values ('6', '7', '3', '0');
+insert into testhiber.ORDER_ITEMS (ID, QUANTITY, PRODUCT_ID, LIST_INDEX) values (6, 7, 3, 0);
 
-insert into testhiber.ORDER_ITEMS (ID, QUANTITY, PRODUCT_ID, LIST_INDEX) values ('7', '1', '3', '0');
+insert into testhiber.ORDER_ITEMS (ID, QUANTITY, PRODUCT_ID, LIST_INDEX) values (7, 1, 3, 0);
 
-insert into testhiber.ORDER_ITEMS (ID, QUANTITY, PRODUCT_ID, LIST_INDEX) values ('7', '2', '1', '1');
+insert into testhiber.ORDER_ITEMS (ID, QUANTITY, PRODUCT_ID, LIST_INDEX) values (7, 2, 1, 1);
 
-insert into testhiber.ORDER_ITEMS (ID, QUANTITY, PRODUCT_ID, LIST_INDEX) values ('7', '3', '2', '2');
+insert into testhiber.ORDER_ITEMS (ID, QUANTITY, PRODUCT_ID, LIST_INDEX) values (7, 3, 2, 2);
