@@ -8,14 +8,14 @@ import domain.order.ProductInOrderIsNotUniqueException;
 
 import domain.product.Product;
 
-import domain.repositories.EntityDoesNotExistException;
-import domain.repositories.customerRepository.CustomerDoesNotExistException;
-import domain.repositories.customerRepository.CustomerRepo;
-import domain.repositories.orderRepository.OrderDoesNotExistException;
-import domain.repositories.productRepository.ProductDoesNotExistException;
-import domain.service.OrderService;
-import domain.repositories.orderRepository.OrderRepo;
-import domain.repositories.productRepository.ProductRepo;
+import domain.EntityDoesNotExistException;
+import domain.customer.CustomerDoesNotExistException;
+import domain.customer.CustomerRepo;
+import domain.order.OrderDoesNotExistException;
+import domain.product.ProductDoesNotExistException;
+import domain.order.OrderService;
+import domain.order.OrderRepo;
+import domain.product.ProductRepo;
 import utils.XMLGregorianCalendarProducer.DateProducer;
 import webservice.dtos.order.*;
 import webservice.dtos.product.ProductDTOInOrder;

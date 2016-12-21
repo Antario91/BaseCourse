@@ -5,9 +5,9 @@ import domain.order.OrderItem;
 import domain.product.Product;
 import persistence.GenericRepoImpl;
 
-import domain.repositories.productRepository.ProductRepo;
-import domain.repositories.EntityAlreadyExistException;
-import domain.repositories.EntityDoesNotExistException;
+import domain.product.ProductRepo;
+import domain.EntityAlreadyExistException;
+import domain.EntityDoesNotExistException;
 
 import org.hibernate.SessionFactory;
 

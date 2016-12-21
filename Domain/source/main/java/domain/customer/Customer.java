@@ -2,27 +2,19 @@ package domain.customer;
 
 import domain.Entity;
 
-public class Customer extends Entity<String> {
+public class Customer extends Entity {
     private final String name;
 
-    //Для того, чтобы name был final, в конструкторе присваивается null
     private Customer () {
         name = null;
     }
 
-    public Customer(String name) {
-        if (name == null || name.isEmpty()){
-            throw new IllegalArgumentException();
-        }
+    public Customer(String name) throws NullCustomerNameException {
+        CustomerService.validateIncomingDataInConstructor(name);
         this.name = name;
     }
 
     public String getName() {
-        return name;
-    }
-
-    @Override
-    public String getBusinessKey() {
         return name;
     }
 }

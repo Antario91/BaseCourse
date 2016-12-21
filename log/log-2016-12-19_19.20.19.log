@@ -827,8 +827,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 19-Dec-2016 19:20 [DEBUG]: Creating instance of bean 'CustomerAlreadyExistException'
 19-Dec-2016 19:20 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 19-Dec-2016 19:20 [DEBUG]: Eagerly caching bean 'CustomerAlreadyExistException' to allow for resolving potential circular references
-19-Dec-2016 19:20 [TRACE]: Getting BeanInfo for class [domain.repositories.customerRepository.CustomerAlreadyExistException]
-19-Dec-2016 19:20 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.customerRepository.CustomerAlreadyExistException]
+19-Dec-2016 19:20 [TRACE]: Getting BeanInfo for class [domain.customer.CustomerAlreadyExistException]
+19-Dec-2016 19:20 [TRACE]: Caching PropertyDescriptors for class [domain.customer.CustomerAlreadyExistException]
 19-Dec-2016 19:20 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 19-Dec-2016 19:20 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 19-Dec-2016 19:20 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -841,8 +841,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 19-Dec-2016 19:20 [DEBUG]: Creating instance of bean 'CustomerDoesNotExistException'
 19-Dec-2016 19:20 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 19-Dec-2016 19:20 [DEBUG]: Eagerly caching bean 'CustomerDoesNotExistException' to allow for resolving potential circular references
-19-Dec-2016 19:20 [TRACE]: Getting BeanInfo for class [domain.repositories.customerRepository.CustomerDoesNotExistException]
-19-Dec-2016 19:20 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.customerRepository.CustomerDoesNotExistException]
+19-Dec-2016 19:20 [TRACE]: Getting BeanInfo for class [domain.customer.CustomerDoesNotExistException]
+19-Dec-2016 19:20 [TRACE]: Caching PropertyDescriptors for class [domain.customer.CustomerDoesNotExistException]
 19-Dec-2016 19:20 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 19-Dec-2016 19:20 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 19-Dec-2016 19:20 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -855,8 +855,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 19-Dec-2016 19:20 [DEBUG]: Creating instance of bean 'OrderAlreadyExistException'
 19-Dec-2016 19:20 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 19-Dec-2016 19:20 [DEBUG]: Eagerly caching bean 'OrderAlreadyExistException' to allow for resolving potential circular references
-19-Dec-2016 19:20 [TRACE]: Getting BeanInfo for class [domain.repositories.orderRepository.OrderAlreadyExistException]
-19-Dec-2016 19:20 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.orderRepository.OrderAlreadyExistException]
+19-Dec-2016 19:20 [TRACE]: Getting BeanInfo for class [domain.order.OrderAlreadyExistException]
+19-Dec-2016 19:20 [TRACE]: Caching PropertyDescriptors for class [domain.order.OrderAlreadyExistException]
 19-Dec-2016 19:20 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 19-Dec-2016 19:20 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 19-Dec-2016 19:20 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -869,8 +869,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 19-Dec-2016 19:20 [DEBUG]: Creating instance of bean 'OrderDoesNotExistException'
 19-Dec-2016 19:20 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 19-Dec-2016 19:20 [DEBUG]: Eagerly caching bean 'OrderDoesNotExistException' to allow for resolving potential circular references
-19-Dec-2016 19:20 [TRACE]: Getting BeanInfo for class [domain.repositories.orderRepository.OrderDoesNotExistException]
-19-Dec-2016 19:20 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.orderRepository.OrderDoesNotExistException]
+19-Dec-2016 19:20 [TRACE]: Getting BeanInfo for class [domain.order.OrderDoesNotExistException]
+19-Dec-2016 19:20 [TRACE]: Caching PropertyDescriptors for class [domain.order.OrderDoesNotExistException]
 19-Dec-2016 19:20 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 19-Dec-2016 19:20 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 19-Dec-2016 19:20 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -883,8 +883,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 19-Dec-2016 19:20 [DEBUG]: Creating instance of bean 'ProductAlreadyExistException'
 19-Dec-2016 19:20 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 19-Dec-2016 19:20 [DEBUG]: Eagerly caching bean 'ProductAlreadyExistException' to allow for resolving potential circular references
-19-Dec-2016 19:20 [TRACE]: Getting BeanInfo for class [domain.repositories.productRepository.ProductAlreadyExistException]
-19-Dec-2016 19:20 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.productRepository.ProductAlreadyExistException]
+19-Dec-2016 19:20 [TRACE]: Getting BeanInfo for class [domain.product.ProductAlreadyExistException]
+19-Dec-2016 19:20 [TRACE]: Caching PropertyDescriptors for class [domain.product.ProductAlreadyExistException]
 19-Dec-2016 19:20 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 19-Dec-2016 19:20 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 19-Dec-2016 19:20 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -897,8 +897,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 19-Dec-2016 19:20 [DEBUG]: Creating instance of bean 'ProductDoesNotExistException'
 19-Dec-2016 19:20 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 19-Dec-2016 19:20 [DEBUG]: Eagerly caching bean 'ProductDoesNotExistException' to allow for resolving potential circular references
-19-Dec-2016 19:20 [TRACE]: Getting BeanInfo for class [domain.repositories.productRepository.ProductDoesNotExistException]
-19-Dec-2016 19:20 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.productRepository.ProductDoesNotExistException]
+19-Dec-2016 19:20 [TRACE]: Getting BeanInfo for class [domain.product.ProductDoesNotExistException]
+19-Dec-2016 19:20 [TRACE]: Caching PropertyDescriptors for class [domain.product.ProductDoesNotExistException]
 19-Dec-2016 19:20 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 19-Dec-2016 19:20 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 19-Dec-2016 19:20 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -1000,8 +1000,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 19-Dec-2016 19:20 [DEBUG]: Autowiring by type from bean name 'OrderService' via constructor to bean named 'OrderRepo'
 19-Dec-2016 19:20 [DEBUG]: Autowiring by type from bean name 'OrderService' via constructor to bean named 'ProductRepo'
 19-Dec-2016 19:20 [DEBUG]: Eagerly caching bean 'OrderService' to allow for resolving potential circular references
-19-Dec-2016 19:20 [TRACE]: Getting BeanInfo for class [domain.service.OrderService]
-19-Dec-2016 19:20 [TRACE]: Caching PropertyDescriptors for class [domain.service.OrderService]
+19-Dec-2016 19:20 [TRACE]: Getting BeanInfo for class [domain.order.OrderService]
+19-Dec-2016 19:20 [TRACE]: Caching PropertyDescriptors for class [domain.order.OrderService]
 19-Dec-2016 19:20 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 19-Dec-2016 19:20 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 19-Dec-2016 19:20 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
@@ -1050,9 +1050,9 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 19-Dec-2016 19:20 [DEBUG]: Creating implicit proxy for bean 'customerEndpoint' with 0 common interceptors and 2 specific interceptors
 19-Dec-2016 19:20 [DEBUG]: Creating CGLIB proxy: target source is SingletonTargetSource for target object [webservice.endpoints.CustomerEndpoint@dfcb31d]
 19-Dec-2016 19:20 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.customerrequestresponse.GetAllCustomersResponse webservice.endpoints.CustomerEndpoint.getAllCustomers(webservice.endpointrequestresponse.customerrequestresponse.GetAllCustomersRequest)
-19-Dec-2016 19:20 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.CustomerEndpoint.createCustomer(webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest) throws domain.repositories.EntityAlreadyExistException
-19-Dec-2016 19:20 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse webservice.endpoints.CustomerEndpoint.getCustomer(webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest) throws domain.repositories.EntityDoesNotExistException
-19-Dec-2016 19:20 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.CustomerEndpoint.deleteCustomer(webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest) throws domain.repositories.EntityDoesNotExistException
+19-Dec-2016 19:20 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.CustomerEndpoint.createCustomer(webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest) throws domain.EntityAlreadyExistException
+19-Dec-2016 19:20 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse webservice.endpoints.CustomerEndpoint.getCustomer(webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest) throws domain.EntityDoesNotExistException
+19-Dec-2016 19:20 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.CustomerEndpoint.deleteCustomer(webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest) throws domain.EntityDoesNotExistException
 19-Dec-2016 19:20 [DEBUG]: Found finalize() method - using NO_OVERRIDE
 19-Dec-2016 19:20 [DEBUG]: Found 'equals' method: public boolean java.lang.Object.equals(java.lang.Object)
 19-Dec-2016 19:20 [DEBUG]: Unable to apply any optimisations to advised method: public java.lang.String java.lang.Object.toString()
@@ -1101,11 +1101,11 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 19-Dec-2016 19:20 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 19-Dec-2016 19:20 [DEBUG]: Creating implicit proxy for bean 'orderEndpoint' with 0 common interceptors and 2 specific interceptors
 19-Dec-2016 19:20 [DEBUG]: Creating CGLIB proxy: target source is SingletonTargetSource for target object [webservice.endpoints.OrderEndpoint@6f700912]
-19-Dec-2016 19:20 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.orderrequestresponse.GetOrderResponse webservice.endpoints.OrderEndpoint.getOrder(webservice.endpointrequestresponse.orderrequestresponse.GetOrderRequest) throws domain.repositories.EntityDoesNotExistException
-19-Dec-2016 19:20 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.repositories.EntityDoesNotExistException
-19-Dec-2016 19:20 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.repositories.EntityDoesNotExistException,domain.repositories.EntityAlreadyExistException
-19-Dec-2016 19:20 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.OrderEndpoint.updateOrder(webservice.endpointrequestresponse.orderrequestresponse.UpdateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.repositories.EntityDoesNotExistException
-19-Dec-2016 19:20 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.OrderEndpoint.deleteOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderRequest) throws domain.repositories.EntityDoesNotExistException
+19-Dec-2016 19:20 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.orderrequestresponse.GetOrderResponse webservice.endpoints.OrderEndpoint.getOrder(webservice.endpointrequestresponse.orderrequestresponse.GetOrderRequest) throws domain.EntityDoesNotExistException
+19-Dec-2016 19:20 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.EntityDoesNotExistException
+19-Dec-2016 19:20 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException
+19-Dec-2016 19:20 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.OrderEndpoint.updateOrder(webservice.endpointrequestresponse.orderrequestresponse.UpdateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException
+19-Dec-2016 19:20 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.OrderEndpoint.deleteOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderRequest) throws domain.EntityDoesNotExistException
 19-Dec-2016 19:20 [DEBUG]: Found finalize() method - using NO_OVERRIDE
 19-Dec-2016 19:20 [DEBUG]: Found 'equals' method: public boolean java.lang.Object.equals(java.lang.Object)
 19-Dec-2016 19:20 [DEBUG]: Unable to apply any optimisations to advised method: public java.lang.String java.lang.Object.toString()
@@ -1149,10 +1149,10 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 19-Dec-2016 19:20 [DEBUG]: Creating implicit proxy for bean 'productEndpoint' with 0 common interceptors and 2 specific interceptors
 19-Dec-2016 19:20 [DEBUG]: Creating CGLIB proxy: target source is SingletonTargetSource for target object [webservice.endpoints.ProductEndpoint@581cae22]
 19-Dec-2016 19:20 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.productrequestresponse.GetAllProductsResponse webservice.endpoints.ProductEndpoint.getAllProducts(webservice.endpointrequestresponse.productrequestresponse.GetAllProductsRequest)
-19-Dec-2016 19:20 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.repositories.EntityAlreadyExistException
-19-Dec-2016 19:20 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.repositories.EntityDoesNotExistException
-19-Dec-2016 19:20 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.ProductEndpoint.updateProduct(webservice.endpointrequestresponse.productrequestresponse.UpdateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.repositories.EntityDoesNotExistException
-19-Dec-2016 19:20 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest) throws domain.repositories.EntityDoesNotExistException
+19-Dec-2016 19:20 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.EntityAlreadyExistException
+19-Dec-2016 19:20 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.EntityDoesNotExistException
+19-Dec-2016 19:20 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.ProductEndpoint.updateProduct(webservice.endpointrequestresponse.productrequestresponse.UpdateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.EntityDoesNotExistException
+19-Dec-2016 19:20 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest) throws domain.EntityDoesNotExistException
 19-Dec-2016 19:20 [DEBUG]: Found finalize() method - using NO_OVERRIDE
 19-Dec-2016 19:20 [DEBUG]: Found 'equals' method: public boolean java.lang.Object.equals(java.lang.Object)
 19-Dec-2016 19:20 [DEBUG]: Unable to apply any optimisations to advised method: public java.lang.String java.lang.Object.toString()
@@ -1216,19 +1216,19 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 19-Dec-2016 19:20 [TRACE]: Found bean property 'order' of type [int]
 19-Dec-2016 19:20 [DEBUG]: Looking for endpoints in application context: WebApplicationContext for namespace 'spring-ws-servlet': startup date [Mon Dec 19 19:20:19 EET 2016]; root of context hierarchy
 19-Dec-2016 19:20 [DEBUG]: Mapped [{http://www.customerRequestResponse.endpointRequestResponse.webService}GetAllCustomersRequest] onto endpoint [public webservice.endpointrequestresponse.customerrequestresponse.GetAllCustomersResponse webservice.endpoints.CustomerEndpoint.getAllCustomers(webservice.endpointrequestresponse.customerrequestresponse.GetAllCustomersRequest)]
-19-Dec-2016 19:20 [DEBUG]: Mapped [{http://www.customerRequestResponse.endpointRequestResponse.webService}CreateCustomerRequest] onto endpoint [public void webservice.endpoints.CustomerEndpoint.createCustomer(webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest) throws domain.repositories.EntityAlreadyExistException]
-19-Dec-2016 19:20 [DEBUG]: Mapped [{http://www.customerRequestResponse.endpointRequestResponse.webService}GetCustomerRequest] onto endpoint [public webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse webservice.endpoints.CustomerEndpoint.getCustomer(webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest) throws domain.repositories.EntityDoesNotExistException]
-19-Dec-2016 19:20 [DEBUG]: Mapped [{http://www.customerRequestResponse.endpointRequestResponse.webService}DeleteCustomerRequest] onto endpoint [public void webservice.endpoints.CustomerEndpoint.deleteCustomer(webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest) throws domain.repositories.EntityDoesNotExistException]
-19-Dec-2016 19:20 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}GetOrderRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetOrderResponse webservice.endpoints.OrderEndpoint.getOrder(webservice.endpointrequestresponse.orderrequestresponse.GetOrderRequest) throws domain.repositories.EntityDoesNotExistException]
-19-Dec-2016 19:20 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}GetAllCustomersOrdersRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.repositories.EntityDoesNotExistException]
-19-Dec-2016 19:20 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}CreateOrderRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.repositories.EntityDoesNotExistException,domain.repositories.EntityAlreadyExistException]
-19-Dec-2016 19:20 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}UpdateOrderRequest] onto endpoint [public void webservice.endpoints.OrderEndpoint.updateOrder(webservice.endpointrequestresponse.orderrequestresponse.UpdateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.repositories.EntityDoesNotExistException]
-19-Dec-2016 19:20 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}DeleteOrderRequest] onto endpoint [public void webservice.endpoints.OrderEndpoint.deleteOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderRequest) throws domain.repositories.EntityDoesNotExistException]
+19-Dec-2016 19:20 [DEBUG]: Mapped [{http://www.customerRequestResponse.endpointRequestResponse.webService}CreateCustomerRequest] onto endpoint [public void webservice.endpoints.CustomerEndpoint.createCustomer(webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest) throws domain.EntityAlreadyExistException]
+19-Dec-2016 19:20 [DEBUG]: Mapped [{http://www.customerRequestResponse.endpointRequestResponse.webService}GetCustomerRequest] onto endpoint [public webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse webservice.endpoints.CustomerEndpoint.getCustomer(webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest) throws domain.EntityDoesNotExistException]
+19-Dec-2016 19:20 [DEBUG]: Mapped [{http://www.customerRequestResponse.endpointRequestResponse.webService}DeleteCustomerRequest] onto endpoint [public void webservice.endpoints.CustomerEndpoint.deleteCustomer(webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest) throws domain.EntityDoesNotExistException]
+19-Dec-2016 19:20 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}GetOrderRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetOrderResponse webservice.endpoints.OrderEndpoint.getOrder(webservice.endpointrequestresponse.orderrequestresponse.GetOrderRequest) throws domain.EntityDoesNotExistException]
+19-Dec-2016 19:20 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}GetAllCustomersOrdersRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.EntityDoesNotExistException]
+19-Dec-2016 19:20 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}CreateOrderRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException]
+19-Dec-2016 19:20 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}UpdateOrderRequest] onto endpoint [public void webservice.endpoints.OrderEndpoint.updateOrder(webservice.endpointrequestresponse.orderrequestresponse.UpdateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException]
+19-Dec-2016 19:20 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}DeleteOrderRequest] onto endpoint [public void webservice.endpoints.OrderEndpoint.deleteOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderRequest) throws domain.EntityDoesNotExistException]
 19-Dec-2016 19:20 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}GetAllProductsRequest] onto endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetAllProductsResponse webservice.endpoints.ProductEndpoint.getAllProducts(webservice.endpointrequestresponse.productrequestresponse.GetAllProductsRequest)]
-19-Dec-2016 19:20 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}CreateProductRequest] onto endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.repositories.EntityAlreadyExistException]
-19-Dec-2016 19:20 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}GetProductRequest] onto endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.repositories.EntityDoesNotExistException]
-19-Dec-2016 19:20 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}UpdateProductRequest] onto endpoint [public void webservice.endpoints.ProductEndpoint.updateProduct(webservice.endpointrequestresponse.productrequestresponse.UpdateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.repositories.EntityDoesNotExistException]
-19-Dec-2016 19:20 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}DeleteProductRequest] onto endpoint [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest) throws domain.repositories.EntityDoesNotExistException]
+19-Dec-2016 19:20 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}CreateProductRequest] onto endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.EntityAlreadyExistException]
+19-Dec-2016 19:20 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}GetProductRequest] onto endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.EntityDoesNotExistException]
+19-Dec-2016 19:20 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}UpdateProductRequest] onto endpoint [public void webservice.endpoints.ProductEndpoint.updateProduct(webservice.endpointrequestresponse.productrequestresponse.UpdateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.EntityDoesNotExistException]
+19-Dec-2016 19:20 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}DeleteProductRequest] onto endpoint [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest) throws domain.EntityDoesNotExistException]
 19-Dec-2016 19:20 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 19-Dec-2016 19:20 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 19-Dec-2016 19:20 [DEBUG]: Finished creating instance of bean 'org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping#0'
@@ -1671,7 +1671,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 19-Dec-2016 19:20 [DEBUG]: Looking up endpoint for [{http://www.orderRequestResponse.endpointRequestResponse.webService}GetAllCustomersOrdersRequest]
-19-Dec-2016 19:20 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@28a3aa00] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.repositories.EntityDoesNotExistException]
+19-Dec-2016 19:20 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@28a3aa00] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.EntityDoesNotExistException]
 19-Dec-2016 19:20 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@2386ca52]
 19-Dec-2016 19:20 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@664cdfb6] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest]
 19-Dec-2016 19:20 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@40f35a32] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest]
@@ -1682,7 +1682,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 19:20 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@2670f8a7] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest]
 19-Dec-2016 19:20 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@42d4afa8] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest]
 19-Dec-2016 19:20 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest@4fe52f78]
-19-Dec-2016 19:20 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.repositories.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest@4fe52f78]
+19-Dec-2016 19:20 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest@4fe52f78]
 19-Dec-2016 19:20 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
 19-Dec-2016 19:20 [DEBUG]: Creating new transaction with name [webservice.endpoints.OrderEndpoint.getAllCustomersOrders]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
 19-Dec-2016 19:20 [TRACE]: Opened session at timestamp: 14821680274
@@ -2180,12 +2180,12 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 19:20 [DEBUG]: Released JDBC connection
 19-Dec-2016 19:20 [TRACE]: Logical connection closed
 19-Dec-2016 19:20 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-19-Dec-2016 19:20 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.repositories.EntityDoesNotExistException]: java.lang.NullPointerException
+19-Dec-2016 19:20 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.EntityDoesNotExistException]: java.lang.NullPointerException
 19-Dec-2016 19:20 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-19-Dec-2016 19:20 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.repositories.EntityDoesNotExistException]: java.lang.NullPointerException
+19-Dec-2016 19:20 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.EntityDoesNotExistException]: java.lang.NullPointerException
 19-Dec-2016 19:20 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
 java.lang.NullPointerException
-	at domain.service.OrderService.getOrderPrice(OrderService.java:30)
+	at domain.order.OrderService.getOrderPrice(OrderService.java:30)
 	at webservice.converters.OrderConverter.orderToOrderDTOForReception(OrderConverter.java:71)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:90)
 	at webservice.endpoints.OrderEndpoint$$FastClassBySpringCGLIB$$e25b1466.invoke(<generated>)
@@ -2231,7 +2231,7 @@ java.lang.NullPointerException
 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:209)
 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:178)
 19-Dec-2016 19:20 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><env:Fault xmlns:ns0="http://schemas.xmlsoap.org/soap/envelope/"><faultcode>ns0:Server</faultcode><faultstring xml:lang="en">java.lang.NullPointerException</faultstring><detail><DESCRIPTION>java.lang.NullPointerException&#xD;
-	at domain.service.OrderService.getOrderPrice(OrderService.java:30)&#xD;
+	at domain.order.OrderService.getOrderPrice(OrderService.java:30)&#xD;
 	at webservice.converters.OrderConverter.orderToOrderDTOForReception(OrderConverter.java:71)&#xD;
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:90)&#xD;
 	at webservice.endpoints.OrderEndpoint$$FastClassBySpringCGLIB$$e25b1466.invoke(&lt;generated&gt;)&#xD;
@@ -2316,7 +2316,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 19-Dec-2016 19:20 [DEBUG]: Looking up endpoint for [{http://www.orderRequestResponse.endpointRequestResponse.webService}GetAllCustomersOrdersRequest]
-19-Dec-2016 19:20 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@28a3aa00] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.repositories.EntityDoesNotExistException]
+19-Dec-2016 19:20 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@28a3aa00] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.EntityDoesNotExistException]
 19-Dec-2016 19:20 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@2386ca52]
 19-Dec-2016 19:20 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@664cdfb6] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest]
 19-Dec-2016 19:20 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@40f35a32] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest]
@@ -2327,7 +2327,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 19:20 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@2670f8a7] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest]
 19-Dec-2016 19:20 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@42d4afa8] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest]
 19-Dec-2016 19:20 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest@d71b20d]
-19-Dec-2016 19:20 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.repositories.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest@d71b20d]
+19-Dec-2016 19:20 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest@d71b20d]
 19-Dec-2016 19:20 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
 19-Dec-2016 19:20 [DEBUG]: Creating new transaction with name [webservice.endpoints.OrderEndpoint.getAllCustomersOrders]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
 19-Dec-2016 19:20 [TRACE]: Opened session at timestamp: 14821680290
@@ -2769,12 +2769,12 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 19:20 [DEBUG]: Released JDBC connection
 19-Dec-2016 19:20 [TRACE]: Logical connection closed
 19-Dec-2016 19:20 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-19-Dec-2016 19:20 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.repositories.EntityDoesNotExistException]: java.lang.NullPointerException
+19-Dec-2016 19:20 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.EntityDoesNotExistException]: java.lang.NullPointerException
 19-Dec-2016 19:20 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-19-Dec-2016 19:20 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.repositories.EntityDoesNotExistException]: java.lang.NullPointerException
+19-Dec-2016 19:20 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.EntityDoesNotExistException]: java.lang.NullPointerException
 19-Dec-2016 19:20 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
 java.lang.NullPointerException
-	at domain.service.OrderService.getOrderPrice(OrderService.java:30)
+	at domain.order.OrderService.getOrderPrice(OrderService.java:30)
 	at webservice.converters.OrderConverter.orderToOrderDTOForReception(OrderConverter.java:71)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:90)
 	at webservice.endpoints.OrderEndpoint$$FastClassBySpringCGLIB$$e25b1466.invoke(<generated>)
@@ -2820,7 +2820,7 @@ java.lang.NullPointerException
 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:209)
 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:178)
 19-Dec-2016 19:20 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><env:Fault xmlns:ns0="http://schemas.xmlsoap.org/soap/envelope/"><faultcode>ns0:Server</faultcode><faultstring xml:lang="en">java.lang.NullPointerException</faultstring><detail><DESCRIPTION>java.lang.NullPointerException&#xD;
-	at domain.service.OrderService.getOrderPrice(OrderService.java:30)&#xD;
+	at domain.order.OrderService.getOrderPrice(OrderService.java:30)&#xD;
 	at webservice.converters.OrderConverter.orderToOrderDTOForReception(OrderConverter.java:71)&#xD;
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:90)&#xD;
 	at webservice.endpoints.OrderEndpoint$$FastClassBySpringCGLIB$$e25b1466.invoke(&lt;generated&gt;)&#xD;
@@ -2905,7 +2905,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 19-Dec-2016 19:21 [DEBUG]: Looking up endpoint for [{http://www.orderRequestResponse.endpointRequestResponse.webService}GetAllCustomersOrdersRequest]
-19-Dec-2016 19:21 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@28a3aa00] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.repositories.EntityDoesNotExistException]
+19-Dec-2016 19:21 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@28a3aa00] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.EntityDoesNotExistException]
 19-Dec-2016 19:21 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@2386ca52]
 19-Dec-2016 19:21 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@664cdfb6] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest]
 19-Dec-2016 19:21 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@40f35a32] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest]
@@ -2916,7 +2916,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 19:21 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@2670f8a7] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest]
 19-Dec-2016 19:21 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@42d4afa8] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest]
 19-Dec-2016 19:21 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest@42066ebf]
-19-Dec-2016 19:21 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.repositories.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest@42066ebf]
+19-Dec-2016 19:21 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest@42066ebf]
 19-Dec-2016 19:21 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
 19-Dec-2016 19:21 [DEBUG]: Creating new transaction with name [webservice.endpoints.OrderEndpoint.getAllCustomersOrders]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
 19-Dec-2016 19:21 [TRACE]: Opened session at timestamp: 14821680953
@@ -3358,12 +3358,12 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 19:23 [DEBUG]: Released JDBC connection
 19-Dec-2016 19:23 [TRACE]: Logical connection closed
 19-Dec-2016 19:23 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-19-Dec-2016 19:23 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.repositories.EntityDoesNotExistException]: java.lang.NullPointerException
+19-Dec-2016 19:23 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.EntityDoesNotExistException]: java.lang.NullPointerException
 19-Dec-2016 19:23 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-19-Dec-2016 19:23 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.repositories.EntityDoesNotExistException]: java.lang.NullPointerException
+19-Dec-2016 19:23 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.EntityDoesNotExistException]: java.lang.NullPointerException
 19-Dec-2016 19:23 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
 java.lang.NullPointerException
-	at domain.service.OrderService.getOrderPrice(OrderService.java:30)
+	at domain.order.OrderService.getOrderPrice(OrderService.java:30)
 	at webservice.converters.OrderConverter.orderToOrderDTOForReception(OrderConverter.java:71)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:90)
 	at webservice.endpoints.OrderEndpoint$$FastClassBySpringCGLIB$$e25b1466.invoke(<generated>)
@@ -3409,7 +3409,7 @@ java.lang.NullPointerException
 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:209)
 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:178)
 19-Dec-2016 19:23 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><env:Fault xmlns:ns0="http://schemas.xmlsoap.org/soap/envelope/"><faultcode>ns0:Server</faultcode><faultstring xml:lang="en">java.lang.NullPointerException</faultstring><detail><DESCRIPTION>java.lang.NullPointerException&#xD;
-	at domain.service.OrderService.getOrderPrice(OrderService.java:30)&#xD;
+	at domain.order.OrderService.getOrderPrice(OrderService.java:30)&#xD;
 	at webservice.converters.OrderConverter.orderToOrderDTOForReception(OrderConverter.java:71)&#xD;
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:90)&#xD;
 	at webservice.endpoints.OrderEndpoint$$FastClassBySpringCGLIB$$e25b1466.invoke(&lt;generated&gt;)&#xD;

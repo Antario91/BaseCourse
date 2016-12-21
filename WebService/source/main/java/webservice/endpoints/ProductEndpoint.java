@@ -2,15 +2,15 @@ package webservice.endpoints;
 
 import domain.product.DateIntersectionInProductPriceException;
 import domain.product.Product;
-import domain.repositories.EntityAlreadyExistException;
-import domain.repositories.EntityDoesNotExistException;
-import domain.repositories.productRepository.ProductDoesNotExistException;
+import domain.EntityAlreadyExistException;
+import domain.EntityDoesNotExistException;
+import domain.product.ProductDoesNotExistException;
 import org.apache.log4j.Logger;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
 import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
-import domain.repositories.productRepository.ProductRepo;
+import domain.product.ProductRepo;
 import webservice.converters.ProductConverter;
 import webservice.endpointrequestresponse.productrequestresponse.*;
 

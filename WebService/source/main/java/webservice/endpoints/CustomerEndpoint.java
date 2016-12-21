@@ -1,15 +1,15 @@
 package webservice.endpoints;
 
 import domain.customer.Customer;
-import domain.repositories.EntityAlreadyExistException;
-import domain.repositories.EntityDoesNotExistException;
-import domain.repositories.customerRepository.CustomerDoesNotExistException;
+import domain.EntityAlreadyExistException;
+import domain.EntityDoesNotExistException;
+import domain.customer.CustomerDoesNotExistException;
 import org.apache.log4j.Logger;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
 import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
-import domain.repositories.customerRepository.CustomerRepo;
+import domain.customer.CustomerRepo;
 import webservice.converters.CustomerConverter;
 import webservice.dtos.customer.CustomerDTO;
 import webservice.endpointrequestresponse.customerrequestresponse.*;

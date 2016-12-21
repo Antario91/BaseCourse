@@ -1,7 +1,7 @@
-package domain.repositories.customerRepository;
+package domain.customer;
 
 import domain.customer.Customer;
-import domain.repositories.GenericRepo;
+import domain.GenericRepo;
 
 import java.util.List;
 

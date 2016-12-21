@@ -2,11 +2,11 @@ package persistence.customerRepository;
 
 import domain.Entity;
 import domain.customer.Customer;
-import domain.repositories.customerRepository.CustomerRepo;
+import domain.customer.CustomerRepo;
 import persistence.GenericRepoImpl;
 
-import domain.repositories.EntityAlreadyExistException;
-import domain.repositories.EntityDoesNotExistException;
+import domain.EntityAlreadyExistException;
+import domain.EntityDoesNotExistException;
 
 import org.hibernate.SessionFactory;
 

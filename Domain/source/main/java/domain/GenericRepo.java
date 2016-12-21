@@ -1,6 +1,4 @@
-package domain.repositories;
-
-import domain.Entity;
+package domain;
 
 /**
  *

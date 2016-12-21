@@ -1,4 +1,4 @@
-package domain.repositories;
+package domain;
 
 public class EntityDoesNotExistException extends Exception {
 }

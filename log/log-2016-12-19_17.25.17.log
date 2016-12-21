@@ -827,8 +827,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 19-Dec-2016 17:25 [DEBUG]: Creating instance of bean 'CustomerAlreadyExistException'
 19-Dec-2016 17:25 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 19-Dec-2016 17:25 [DEBUG]: Eagerly caching bean 'CustomerAlreadyExistException' to allow for resolving potential circular references
-19-Dec-2016 17:25 [TRACE]: Getting BeanInfo for class [domain.repositories.customerRepository.CustomerAlreadyExistException]
-19-Dec-2016 17:25 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.customerRepository.CustomerAlreadyExistException]
+19-Dec-2016 17:25 [TRACE]: Getting BeanInfo for class [domain.customer.CustomerAlreadyExistException]
+19-Dec-2016 17:25 [TRACE]: Caching PropertyDescriptors for class [domain.customer.CustomerAlreadyExistException]
 19-Dec-2016 17:25 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 19-Dec-2016 17:25 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 19-Dec-2016 17:25 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -841,8 +841,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 19-Dec-2016 17:25 [DEBUG]: Creating instance of bean 'CustomerDoesNotExistException'
 19-Dec-2016 17:25 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 19-Dec-2016 17:25 [DEBUG]: Eagerly caching bean 'CustomerDoesNotExistException' to allow for resolving potential circular references
-19-Dec-2016 17:25 [TRACE]: Getting BeanInfo for class [domain.repositories.customerRepository.CustomerDoesNotExistException]
-19-Dec-2016 17:25 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.customerRepository.CustomerDoesNotExistException]
+19-Dec-2016 17:25 [TRACE]: Getting BeanInfo for class [domain.customer.CustomerDoesNotExistException]
+19-Dec-2016 17:25 [TRACE]: Caching PropertyDescriptors for class [domain.customer.CustomerDoesNotExistException]
 19-Dec-2016 17:25 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 19-Dec-2016 17:25 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 19-Dec-2016 17:25 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -855,8 +855,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 19-Dec-2016 17:25 [DEBUG]: Creating instance of bean 'OrderAlreadyExistException'
 19-Dec-2016 17:25 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 19-Dec-2016 17:25 [DEBUG]: Eagerly caching bean 'OrderAlreadyExistException' to allow for resolving potential circular references
-19-Dec-2016 17:25 [TRACE]: Getting BeanInfo for class [domain.repositories.orderRepository.OrderAlreadyExistException]
-19-Dec-2016 17:25 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.orderRepository.OrderAlreadyExistException]
+19-Dec-2016 17:25 [TRACE]: Getting BeanInfo for class [domain.order.OrderAlreadyExistException]
+19-Dec-2016 17:25 [TRACE]: Caching PropertyDescriptors for class [domain.order.OrderAlreadyExistException]
 19-Dec-2016 17:25 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 19-Dec-2016 17:25 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 19-Dec-2016 17:25 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -869,8 +869,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 19-Dec-2016 17:25 [DEBUG]: Creating instance of bean 'OrderDoesNotExistException'
 19-Dec-2016 17:25 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 19-Dec-2016 17:25 [DEBUG]: Eagerly caching bean 'OrderDoesNotExistException' to allow for resolving potential circular references
-19-Dec-2016 17:25 [TRACE]: Getting BeanInfo for class [domain.repositories.orderRepository.OrderDoesNotExistException]
-19-Dec-2016 17:25 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.orderRepository.OrderDoesNotExistException]
+19-Dec-2016 17:25 [TRACE]: Getting BeanInfo for class [domain.order.OrderDoesNotExistException]
+19-Dec-2016 17:25 [TRACE]: Caching PropertyDescriptors for class [domain.order.OrderDoesNotExistException]
 19-Dec-2016 17:25 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 19-Dec-2016 17:25 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 19-Dec-2016 17:25 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -883,8 +883,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 19-Dec-2016 17:25 [DEBUG]: Creating instance of bean 'ProductAlreadyExistException'
 19-Dec-2016 17:25 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 19-Dec-2016 17:25 [DEBUG]: Eagerly caching bean 'ProductAlreadyExistException' to allow for resolving potential circular references
-19-Dec-2016 17:25 [TRACE]: Getting BeanInfo for class [domain.repositories.productRepository.ProductAlreadyExistException]
-19-Dec-2016 17:25 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.productRepository.ProductAlreadyExistException]
+19-Dec-2016 17:25 [TRACE]: Getting BeanInfo for class [domain.product.ProductAlreadyExistException]
+19-Dec-2016 17:25 [TRACE]: Caching PropertyDescriptors for class [domain.product.ProductAlreadyExistException]
 19-Dec-2016 17:25 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 19-Dec-2016 17:25 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 19-Dec-2016 17:25 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -897,8 +897,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 19-Dec-2016 17:25 [DEBUG]: Creating instance of bean 'ProductDoesNotExistException'
 19-Dec-2016 17:25 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 19-Dec-2016 17:25 [DEBUG]: Eagerly caching bean 'ProductDoesNotExistException' to allow for resolving potential circular references
-19-Dec-2016 17:25 [TRACE]: Getting BeanInfo for class [domain.repositories.productRepository.ProductDoesNotExistException]
-19-Dec-2016 17:25 [TRACE]: Caching PropertyDescriptors for class [domain.repositories.productRepository.ProductDoesNotExistException]
+19-Dec-2016 17:25 [TRACE]: Getting BeanInfo for class [domain.product.ProductDoesNotExistException]
+19-Dec-2016 17:25 [TRACE]: Caching PropertyDescriptors for class [domain.product.ProductDoesNotExistException]
 19-Dec-2016 17:25 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 19-Dec-2016 17:25 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 19-Dec-2016 17:25 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -1000,8 +1000,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 19-Dec-2016 17:25 [DEBUG]: Autowiring by type from bean name 'OrderService' via constructor to bean named 'OrderRepo'
 19-Dec-2016 17:25 [DEBUG]: Autowiring by type from bean name 'OrderService' via constructor to bean named 'ProductRepo'
 19-Dec-2016 17:25 [DEBUG]: Eagerly caching bean 'OrderService' to allow for resolving potential circular references
-19-Dec-2016 17:25 [TRACE]: Getting BeanInfo for class [domain.service.OrderService]
-19-Dec-2016 17:25 [TRACE]: Caching PropertyDescriptors for class [domain.service.OrderService]
+19-Dec-2016 17:25 [TRACE]: Getting BeanInfo for class [domain.order.OrderService]
+19-Dec-2016 17:25 [TRACE]: Caching PropertyDescriptors for class [domain.order.OrderService]
 19-Dec-2016 17:25 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 19-Dec-2016 17:25 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 19-Dec-2016 17:25 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
@@ -1050,9 +1050,9 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 19-Dec-2016 17:25 [DEBUG]: Creating implicit proxy for bean 'customerEndpoint' with 0 common interceptors and 2 specific interceptors
 19-Dec-2016 17:25 [DEBUG]: Creating CGLIB proxy: target source is SingletonTargetSource for target object [webservice.endpoints.CustomerEndpoint@7ba75463]
 19-Dec-2016 17:25 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.customerrequestresponse.GetAllCustomersResponse webservice.endpoints.CustomerEndpoint.getAllCustomers(webservice.endpointrequestresponse.customerrequestresponse.GetAllCustomersRequest)
-19-Dec-2016 17:25 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.CustomerEndpoint.createCustomer(webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest) throws domain.repositories.EntityAlreadyExistException
-19-Dec-2016 17:25 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse webservice.endpoints.CustomerEndpoint.getCustomer(webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest) throws domain.repositories.EntityDoesNotExistException
-19-Dec-2016 17:25 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.CustomerEndpoint.deleteCustomer(webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest) throws domain.repositories.EntityDoesNotExistException
+19-Dec-2016 17:25 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.CustomerEndpoint.createCustomer(webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest) throws domain.EntityAlreadyExistException
+19-Dec-2016 17:25 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse webservice.endpoints.CustomerEndpoint.getCustomer(webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest) throws domain.EntityDoesNotExistException
+19-Dec-2016 17:25 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.CustomerEndpoint.deleteCustomer(webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest) throws domain.EntityDoesNotExistException
 19-Dec-2016 17:25 [DEBUG]: Found finalize() method - using NO_OVERRIDE
 19-Dec-2016 17:25 [DEBUG]: Found 'equals' method: public boolean java.lang.Object.equals(java.lang.Object)
 19-Dec-2016 17:25 [DEBUG]: Unable to apply any optimisations to advised method: public java.lang.String java.lang.Object.toString()
@@ -1101,11 +1101,11 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 19-Dec-2016 17:25 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 19-Dec-2016 17:25 [DEBUG]: Creating implicit proxy for bean 'orderEndpoint' with 0 common interceptors and 2 specific interceptors
 19-Dec-2016 17:25 [DEBUG]: Creating CGLIB proxy: target source is SingletonTargetSource for target object [webservice.endpoints.OrderEndpoint@1b132789]
-19-Dec-2016 17:25 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.orderrequestresponse.GetOrderResponse webservice.endpoints.OrderEndpoint.getOrder(webservice.endpointrequestresponse.orderrequestresponse.GetOrderRequest) throws domain.repositories.EntityDoesNotExistException
-19-Dec-2016 17:25 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.repositories.EntityDoesNotExistException
-19-Dec-2016 17:25 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.repositories.EntityDoesNotExistException,domain.repositories.EntityAlreadyExistException
-19-Dec-2016 17:25 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.OrderEndpoint.updateOrder(webservice.endpointrequestresponse.orderrequestresponse.UpdateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.repositories.EntityDoesNotExistException
-19-Dec-2016 17:25 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.OrderEndpoint.deleteOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderRequest) throws domain.repositories.EntityDoesNotExistException
+19-Dec-2016 17:25 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.orderrequestresponse.GetOrderResponse webservice.endpoints.OrderEndpoint.getOrder(webservice.endpointrequestresponse.orderrequestresponse.GetOrderRequest) throws domain.EntityDoesNotExistException
+19-Dec-2016 17:25 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.EntityDoesNotExistException
+19-Dec-2016 17:25 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException
+19-Dec-2016 17:25 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.OrderEndpoint.updateOrder(webservice.endpointrequestresponse.orderrequestresponse.UpdateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException
+19-Dec-2016 17:25 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.OrderEndpoint.deleteOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderRequest) throws domain.EntityDoesNotExistException
 19-Dec-2016 17:25 [DEBUG]: Found finalize() method - using NO_OVERRIDE
 19-Dec-2016 17:25 [DEBUG]: Found 'equals' method: public boolean java.lang.Object.equals(java.lang.Object)
 19-Dec-2016 17:25 [DEBUG]: Unable to apply any optimisations to advised method: public java.lang.String java.lang.Object.toString()
@@ -1149,10 +1149,10 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 19-Dec-2016 17:25 [DEBUG]: Creating implicit proxy for bean 'productEndpoint' with 0 common interceptors and 2 specific interceptors
 19-Dec-2016 17:25 [DEBUG]: Creating CGLIB proxy: target source is SingletonTargetSource for target object [webservice.endpoints.ProductEndpoint@15d9e55b]
 19-Dec-2016 17:25 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.productrequestresponse.GetAllProductsResponse webservice.endpoints.ProductEndpoint.getAllProducts(webservice.endpointrequestresponse.productrequestresponse.GetAllProductsRequest)
-19-Dec-2016 17:25 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.repositories.EntityAlreadyExistException
-19-Dec-2016 17:25 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.repositories.EntityDoesNotExistException
+19-Dec-2016 17:25 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.EntityAlreadyExistException
+19-Dec-2016 17:25 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.EntityDoesNotExistException
 19-Dec-2016 17:25 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.ProductEndpoint.updateProduct(webservice.endpointrequestresponse.productrequestresponse.UpdateProductRequest) throws domain.product.DateIntersectionInProductPriceException
-19-Dec-2016 17:25 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest) throws domain.repositories.EntityDoesNotExistException
+19-Dec-2016 17:25 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest) throws domain.EntityDoesNotExistException
 19-Dec-2016 17:25 [DEBUG]: Found finalize() method - using NO_OVERRIDE
 19-Dec-2016 17:25 [DEBUG]: Found 'equals' method: public boolean java.lang.Object.equals(java.lang.Object)
 19-Dec-2016 17:25 [DEBUG]: Unable to apply any optimisations to advised method: public java.lang.String java.lang.Object.toString()
@@ -1216,19 +1216,19 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 19-Dec-2016 17:25 [TRACE]: Found bean property 'order' of type [int]
 19-Dec-2016 17:25 [DEBUG]: Looking for endpoints in application context: WebApplicationContext for namespace 'spring-ws-servlet': startup date [Mon Dec 19 17:25:17 EET 2016]; root of context hierarchy
 19-Dec-2016 17:25 [DEBUG]: Mapped [{http://www.customerRequestResponse.endpointRequestResponse.webService}GetAllCustomersRequest] onto endpoint [public webservice.endpointrequestresponse.customerrequestresponse.GetAllCustomersResponse webservice.endpoints.CustomerEndpoint.getAllCustomers(webservice.endpointrequestresponse.customerrequestresponse.GetAllCustomersRequest)]
-19-Dec-2016 17:25 [DEBUG]: Mapped [{http://www.customerRequestResponse.endpointRequestResponse.webService}CreateCustomerRequest] onto endpoint [public void webservice.endpoints.CustomerEndpoint.createCustomer(webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest) throws domain.repositories.EntityAlreadyExistException]
-19-Dec-2016 17:25 [DEBUG]: Mapped [{http://www.customerRequestResponse.endpointRequestResponse.webService}GetCustomerRequest] onto endpoint [public webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse webservice.endpoints.CustomerEndpoint.getCustomer(webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest) throws domain.repositories.EntityDoesNotExistException]
-19-Dec-2016 17:25 [DEBUG]: Mapped [{http://www.customerRequestResponse.endpointRequestResponse.webService}DeleteCustomerRequest] onto endpoint [public void webservice.endpoints.CustomerEndpoint.deleteCustomer(webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest) throws domain.repositories.EntityDoesNotExistException]
-19-Dec-2016 17:25 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}GetOrderRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetOrderResponse webservice.endpoints.OrderEndpoint.getOrder(webservice.endpointrequestresponse.orderrequestresponse.GetOrderRequest) throws domain.repositories.EntityDoesNotExistException]
-19-Dec-2016 17:25 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}GetAllCustomersOrdersRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.repositories.EntityDoesNotExistException]
-19-Dec-2016 17:25 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}CreateOrderRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.repositories.EntityDoesNotExistException,domain.repositories.EntityAlreadyExistException]
-19-Dec-2016 17:25 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}UpdateOrderRequest] onto endpoint [public void webservice.endpoints.OrderEndpoint.updateOrder(webservice.endpointrequestresponse.orderrequestresponse.UpdateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.repositories.EntityDoesNotExistException]
-19-Dec-2016 17:25 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}DeleteOrderRequest] onto endpoint [public void webservice.endpoints.OrderEndpoint.deleteOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderRequest) throws domain.repositories.EntityDoesNotExistException]
+19-Dec-2016 17:25 [DEBUG]: Mapped [{http://www.customerRequestResponse.endpointRequestResponse.webService}CreateCustomerRequest] onto endpoint [public void webservice.endpoints.CustomerEndpoint.createCustomer(webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest) throws domain.EntityAlreadyExistException]
+19-Dec-2016 17:25 [DEBUG]: Mapped [{http://www.customerRequestResponse.endpointRequestResponse.webService}GetCustomerRequest] onto endpoint [public webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse webservice.endpoints.CustomerEndpoint.getCustomer(webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest) throws domain.EntityDoesNotExistException]
+19-Dec-2016 17:25 [DEBUG]: Mapped [{http://www.customerRequestResponse.endpointRequestResponse.webService}DeleteCustomerRequest] onto endpoint [public void webservice.endpoints.CustomerEndpoint.deleteCustomer(webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest) throws domain.EntityDoesNotExistException]
+19-Dec-2016 17:25 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}GetOrderRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetOrderResponse webservice.endpoints.OrderEndpoint.getOrder(webservice.endpointrequestresponse.orderrequestresponse.GetOrderRequest) throws domain.EntityDoesNotExistException]
+19-Dec-2016 17:25 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}GetAllCustomersOrdersRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.EntityDoesNotExistException]
+19-Dec-2016 17:25 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}CreateOrderRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException]
+19-Dec-2016 17:25 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}UpdateOrderRequest] onto endpoint [public void webservice.endpoints.OrderEndpoint.updateOrder(webservice.endpointrequestresponse.orderrequestresponse.UpdateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException]
+19-Dec-2016 17:25 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}DeleteOrderRequest] onto endpoint [public void webservice.endpoints.OrderEndpoint.deleteOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderRequest) throws domain.EntityDoesNotExistException]
 19-Dec-2016 17:25 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}GetAllProductsRequest] onto endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetAllProductsResponse webservice.endpoints.ProductEndpoint.getAllProducts(webservice.endpointrequestresponse.productrequestresponse.GetAllProductsRequest)]
-19-Dec-2016 17:25 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}CreateProductRequest] onto endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.repositories.EntityAlreadyExistException]
-19-Dec-2016 17:25 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}GetProductRequest] onto endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.repositories.EntityDoesNotExistException]
+19-Dec-2016 17:25 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}CreateProductRequest] onto endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.EntityAlreadyExistException]
+19-Dec-2016 17:25 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}GetProductRequest] onto endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.EntityDoesNotExistException]
 19-Dec-2016 17:25 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}UpdateProductRequest] onto endpoint [public void webservice.endpoints.ProductEndpoint.updateProduct(webservice.endpointrequestresponse.productrequestresponse.UpdateProductRequest) throws domain.product.DateIntersectionInProductPriceException]
-19-Dec-2016 17:25 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}DeleteProductRequest] onto endpoint [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest) throws domain.repositories.EntityDoesNotExistException]
+19-Dec-2016 17:25 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}DeleteProductRequest] onto endpoint [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest) throws domain.EntityDoesNotExistException]
 19-Dec-2016 17:25 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 19-Dec-2016 17:25 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 19-Dec-2016 17:25 [DEBUG]: Finished creating instance of bean 'org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping#0'
@@ -1838,7 +1838,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 19-Dec-2016 17:25 [DEBUG]: Looking up endpoint for [{http://www.customerRequestResponse.endpointRequestResponse.webService}GetCustomerRequest]
-19-Dec-2016 17:25 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse webservice.endpoints.CustomerEndpoint.getCustomer(webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest) throws domain.repositories.EntityDoesNotExistException]
+19-Dec-2016 17:25 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse webservice.endpoints.CustomerEndpoint.getCustomer(webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest) throws domain.EntityDoesNotExistException]
 19-Dec-2016 17:25 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@18e8d651]
 19-Dec-2016 17:25 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@5e4e6c9d] supports [class webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest]
 19-Dec-2016 17:25 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@6ebce7c9] supports [class webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest]
@@ -1849,7 +1849,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:25 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@7f02dfd9] supports [class webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest]
 19-Dec-2016 17:25 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@15b660b4] supports [class webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest]
 19-Dec-2016 17:25 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest@429805fd]
-19-Dec-2016 17:25 [TRACE]: Invoking [public webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse webservice.endpoints.CustomerEndpoint.getCustomer(webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest) throws domain.repositories.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest@429805fd]
+19-Dec-2016 17:25 [TRACE]: Invoking [public webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse webservice.endpoints.CustomerEndpoint.getCustomer(webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest) throws domain.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest@429805fd]
 19-Dec-2016 17:25 [DEBUG]: Returning cached instance of singleton bean 'customerEndpoint'
 19-Dec-2016 17:25 [DEBUG]: Creating new transaction with name [webservice.endpoints.CustomerEndpoint.getCustomer]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
 19-Dec-2016 17:25 [TRACE]: Opened session at timestamp: 14821611492
@@ -1882,8 +1882,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:25 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@7796bb71]
 19-Dec-2016 17:25 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 19-Dec-2016 17:25 [TRACE]: Initializing non-lazy collections
-19-Dec-2016 17:25 [TRACE]: Completing transaction for [webservice.endpoints.CustomerEndpoint.getCustomer] after exception: domain.repositories.customerRepository.CustomerDoesNotExistException
-19-Dec-2016 17:25 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.customerRepository.CustomerDoesNotExistException
+19-Dec-2016 17:25 [TRACE]: Completing transaction for [webservice.endpoints.CustomerEndpoint.getCustomer] after exception: domain.customer.CustomerDoesNotExistException
+19-Dec-2016 17:25 [TRACE]: Applying rules to determine whether transaction should rollback on domain.customer.CustomerDoesNotExistException
 19-Dec-2016 17:25 [TRACE]: Winning rollback rule is: null
 19-Dec-2016 17:25 [TRACE]: No relevant rollback rule found: applying default rules
 19-Dec-2016 17:25 [TRACE]: Triggering beforeCommit synchronization
@@ -1910,11 +1910,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:25 [DEBUG]: Released JDBC connection
 19-Dec-2016 17:25 [TRACE]: Logical connection closed
 19-Dec-2016 17:25 [DEBUG]: Returning cached instance of singleton bean 'customerEndpoint'
-19-Dec-2016 17:25 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse webservice.endpoints.CustomerEndpoint.getCustomer(webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest) throws domain.repositories.EntityDoesNotExistException]: domain.repositories.customerRepository.CustomerDoesNotExistException
+19-Dec-2016 17:25 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse webservice.endpoints.CustomerEndpoint.getCustomer(webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest) throws domain.EntityDoesNotExistException]: domain.customer.CustomerDoesNotExistException
 19-Dec-2016 17:25 [DEBUG]: Returning cached instance of singleton bean 'customerEndpoint'
-19-Dec-2016 17:25 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse webservice.endpoints.CustomerEndpoint.getCustomer(webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest) throws domain.repositories.EntityDoesNotExistException]: domain.repositories.customerRepository.CustomerDoesNotExistException
+19-Dec-2016 17:25 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse webservice.endpoints.CustomerEndpoint.getCustomer(webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest) throws domain.EntityDoesNotExistException]: domain.customer.CustomerDoesNotExistException
 19-Dec-2016 17:25 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-domain.repositories.customerRepository.CustomerDoesNotExistException
+domain.customer.CustomerDoesNotExistException
 	at webservice.endpoints.CustomerEndpoint.getCustomer(CustomerEndpoint.java:40)
 	at webservice.endpoints.CustomerEndpoint$$FastClassBySpringCGLIB$$f71d6b50.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
@@ -1998,7 +1998,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 19-Dec-2016 17:25 [DEBUG]: Looking up endpoint for [{http://www.customerRequestResponse.endpointRequestResponse.webService}GetCustomerRequest]
-19-Dec-2016 17:25 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse webservice.endpoints.CustomerEndpoint.getCustomer(webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest) throws domain.repositories.EntityDoesNotExistException]
+19-Dec-2016 17:25 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse webservice.endpoints.CustomerEndpoint.getCustomer(webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest) throws domain.EntityDoesNotExistException]
 19-Dec-2016 17:25 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@18e8d651]
 19-Dec-2016 17:25 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@5e4e6c9d] supports [class webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest]
 19-Dec-2016 17:25 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@6ebce7c9] supports [class webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest]
@@ -2009,7 +2009,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:25 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@7f02dfd9] supports [class webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest]
 19-Dec-2016 17:25 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@15b660b4] supports [class webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest]
 19-Dec-2016 17:25 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest@6bbb87b4]
-19-Dec-2016 17:25 [TRACE]: Invoking [public webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse webservice.endpoints.CustomerEndpoint.getCustomer(webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest) throws domain.repositories.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest@6bbb87b4]
+19-Dec-2016 17:25 [TRACE]: Invoking [public webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse webservice.endpoints.CustomerEndpoint.getCustomer(webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest) throws domain.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest@6bbb87b4]
 19-Dec-2016 17:25 [DEBUG]: Returning cached instance of singleton bean 'customerEndpoint'
 19-Dec-2016 17:25 [DEBUG]: Creating new transaction with name [webservice.endpoints.CustomerEndpoint.getCustomer]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
 19-Dec-2016 17:25 [TRACE]: Opened session at timestamp: 14821611545
@@ -2042,8 +2042,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:25 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@62ce0e70]
 19-Dec-2016 17:25 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 19-Dec-2016 17:25 [TRACE]: Initializing non-lazy collections
-19-Dec-2016 17:25 [TRACE]: Completing transaction for [webservice.endpoints.CustomerEndpoint.getCustomer] after exception: domain.repositories.customerRepository.CustomerDoesNotExistException
-19-Dec-2016 17:25 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.customerRepository.CustomerDoesNotExistException
+19-Dec-2016 17:25 [TRACE]: Completing transaction for [webservice.endpoints.CustomerEndpoint.getCustomer] after exception: domain.customer.CustomerDoesNotExistException
+19-Dec-2016 17:25 [TRACE]: Applying rules to determine whether transaction should rollback on domain.customer.CustomerDoesNotExistException
 19-Dec-2016 17:25 [TRACE]: Winning rollback rule is: null
 19-Dec-2016 17:25 [TRACE]: No relevant rollback rule found: applying default rules
 19-Dec-2016 17:25 [TRACE]: Triggering beforeCommit synchronization
@@ -2070,11 +2070,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:25 [DEBUG]: Released JDBC connection
 19-Dec-2016 17:25 [TRACE]: Logical connection closed
 19-Dec-2016 17:25 [DEBUG]: Returning cached instance of singleton bean 'customerEndpoint'
-19-Dec-2016 17:25 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse webservice.endpoints.CustomerEndpoint.getCustomer(webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest) throws domain.repositories.EntityDoesNotExistException]: domain.repositories.customerRepository.CustomerDoesNotExistException
+19-Dec-2016 17:25 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse webservice.endpoints.CustomerEndpoint.getCustomer(webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest) throws domain.EntityDoesNotExistException]: domain.customer.CustomerDoesNotExistException
 19-Dec-2016 17:25 [DEBUG]: Returning cached instance of singleton bean 'customerEndpoint'
-19-Dec-2016 17:25 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse webservice.endpoints.CustomerEndpoint.getCustomer(webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest) throws domain.repositories.EntityDoesNotExistException]: domain.repositories.customerRepository.CustomerDoesNotExistException
+19-Dec-2016 17:25 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse webservice.endpoints.CustomerEndpoint.getCustomer(webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest) throws domain.EntityDoesNotExistException]: domain.customer.CustomerDoesNotExistException
 19-Dec-2016 17:25 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-domain.repositories.customerRepository.CustomerDoesNotExistException
+domain.customer.CustomerDoesNotExistException
 	at webservice.endpoints.CustomerEndpoint.getCustomer(CustomerEndpoint.java:40)
 	at webservice.endpoints.CustomerEndpoint$$FastClassBySpringCGLIB$$f71d6b50.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
@@ -2158,7 +2158,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 19-Dec-2016 17:25 [DEBUG]: Looking up endpoint for [{http://www.customerRequestResponse.endpointRequestResponse.webService}GetCustomerRequest]
-19-Dec-2016 17:25 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse webservice.endpoints.CustomerEndpoint.getCustomer(webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest) throws domain.repositories.EntityDoesNotExistException]
+19-Dec-2016 17:25 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse webservice.endpoints.CustomerEndpoint.getCustomer(webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest) throws domain.EntityDoesNotExistException]
 19-Dec-2016 17:25 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@18e8d651]
 19-Dec-2016 17:25 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@5e4e6c9d] supports [class webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest]
 19-Dec-2016 17:25 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@6ebce7c9] supports [class webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest]
@@ -2169,7 +2169,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:25 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@7f02dfd9] supports [class webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest]
 19-Dec-2016 17:25 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@15b660b4] supports [class webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest]
 19-Dec-2016 17:25 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest@20fcbdaf]
-19-Dec-2016 17:25 [TRACE]: Invoking [public webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse webservice.endpoints.CustomerEndpoint.getCustomer(webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest) throws domain.repositories.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest@20fcbdaf]
+19-Dec-2016 17:25 [TRACE]: Invoking [public webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse webservice.endpoints.CustomerEndpoint.getCustomer(webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest) throws domain.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest@20fcbdaf]
 19-Dec-2016 17:25 [DEBUG]: Returning cached instance of singleton bean 'customerEndpoint'
 19-Dec-2016 17:25 [DEBUG]: Creating new transaction with name [webservice.endpoints.CustomerEndpoint.getCustomer]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
 19-Dec-2016 17:25 [TRACE]: Opened session at timestamp: 14821611593
@@ -2234,7 +2234,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:25 [DEBUG]: Releasing JDBC connection
 19-Dec-2016 17:25 [DEBUG]: Released JDBC connection
 19-Dec-2016 17:25 [TRACE]: Logical connection closed
-19-Dec-2016 17:25 [TRACE]: Method [public webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse webservice.endpoints.CustomerEndpoint.getCustomer(webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest) throws domain.repositories.EntityDoesNotExistException] returned [webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse@2b5f30d2]
+19-Dec-2016 17:25 [TRACE]: Method [public webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse webservice.endpoints.CustomerEndpoint.getCustomer(webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest) throws domain.EntityDoesNotExistException] returned [webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse@2b5f30d2]
 19-Dec-2016 17:25 [DEBUG]: Marshalling [webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse@2b5f30d2] to response payload
 19-Dec-2016 17:25 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><ns3:GetCustomerResponse xmlns:ns2="http://www.customer.dtos.webService/" xmlns:ns3="http://www.customerRequestResponse.endpointRequestResponse.webService"><ns3:customer><ns2:name>Vasya</ns2:name></ns3:customer></ns3:GetCustomerResponse></env:Body></env:Envelope>] for request [<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://www.customerRequestResponse.endpointRequestResponse.webService">
    <soapenv:Header/>
@@ -2276,7 +2276,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 19-Dec-2016 17:26 [DEBUG]: Looking up endpoint for [{http://www.customerRequestResponse.endpointRequestResponse.webService}DeleteCustomerRequest]
-19-Dec-2016 17:26 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public void webservice.endpoints.CustomerEndpoint.deleteCustomer(webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest) throws domain.repositories.EntityDoesNotExistException]
+19-Dec-2016 17:26 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public void webservice.endpoints.CustomerEndpoint.deleteCustomer(webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest) throws domain.EntityDoesNotExistException]
 19-Dec-2016 17:26 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@18e8d651]
 19-Dec-2016 17:26 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@5e4e6c9d] supports [class webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest]
 19-Dec-2016 17:26 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@6ebce7c9] supports [class webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest]
@@ -2287,7 +2287,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:26 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@7f02dfd9] supports [class webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest]
 19-Dec-2016 17:26 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@15b660b4] supports [class webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest]
 19-Dec-2016 17:26 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest@185c1d56]
-19-Dec-2016 17:26 [TRACE]: Invoking [public void webservice.endpoints.CustomerEndpoint.deleteCustomer(webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest) throws domain.repositories.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest@185c1d56]
+19-Dec-2016 17:26 [TRACE]: Invoking [public void webservice.endpoints.CustomerEndpoint.deleteCustomer(webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest) throws domain.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest@185c1d56]
 19-Dec-2016 17:26 [DEBUG]: Returning cached instance of singleton bean 'customerEndpoint'
 19-Dec-2016 17:26 [DEBUG]: Creating new transaction with name [webservice.endpoints.CustomerEndpoint.deleteCustomer]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 19-Dec-2016 17:26 [TRACE]: Opened session at timestamp: 14821611644
@@ -2318,8 +2318,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:26 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@157709f9]
 19-Dec-2016 17:26 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 19-Dec-2016 17:26 [TRACE]: Initializing non-lazy collections
-19-Dec-2016 17:26 [TRACE]: Completing transaction for [webservice.endpoints.CustomerEndpoint.deleteCustomer] after exception: domain.repositories.customerRepository.CustomerDoesNotExistException
-19-Dec-2016 17:26 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.customerRepository.CustomerDoesNotExistException
+19-Dec-2016 17:26 [TRACE]: Completing transaction for [webservice.endpoints.CustomerEndpoint.deleteCustomer] after exception: domain.customer.CustomerDoesNotExistException
+19-Dec-2016 17:26 [TRACE]: Applying rules to determine whether transaction should rollback on domain.customer.CustomerDoesNotExistException
 19-Dec-2016 17:26 [TRACE]: Winning rollback rule is: null
 19-Dec-2016 17:26 [TRACE]: No relevant rollback rule found: applying default rules
 19-Dec-2016 17:26 [TRACE]: Triggering beforeCommit synchronization
@@ -2346,11 +2346,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:26 [DEBUG]: Released JDBC connection
 19-Dec-2016 17:26 [TRACE]: Logical connection closed
 19-Dec-2016 17:26 [DEBUG]: Returning cached instance of singleton bean 'customerEndpoint'
-19-Dec-2016 17:26 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.CustomerEndpoint.deleteCustomer(webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest) throws domain.repositories.EntityDoesNotExistException]: domain.repositories.customerRepository.CustomerDoesNotExistException
+19-Dec-2016 17:26 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.CustomerEndpoint.deleteCustomer(webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest) throws domain.EntityDoesNotExistException]: domain.customer.CustomerDoesNotExistException
 19-Dec-2016 17:26 [DEBUG]: Returning cached instance of singleton bean 'customerEndpoint'
-19-Dec-2016 17:26 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.CustomerEndpoint.deleteCustomer(webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest) throws domain.repositories.EntityDoesNotExistException]: domain.repositories.customerRepository.CustomerDoesNotExistException
+19-Dec-2016 17:26 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.CustomerEndpoint.deleteCustomer(webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest) throws domain.EntityDoesNotExistException]: domain.customer.CustomerDoesNotExistException
 19-Dec-2016 17:26 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-domain.repositories.customerRepository.CustomerDoesNotExistException
+domain.customer.CustomerDoesNotExistException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
@@ -2433,7 +2433,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 19-Dec-2016 17:26 [DEBUG]: Looking up endpoint for [{http://www.customerRequestResponse.endpointRequestResponse.webService}DeleteCustomerRequest]
-19-Dec-2016 17:26 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public void webservice.endpoints.CustomerEndpoint.deleteCustomer(webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest) throws domain.repositories.EntityDoesNotExistException]
+19-Dec-2016 17:26 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public void webservice.endpoints.CustomerEndpoint.deleteCustomer(webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest) throws domain.EntityDoesNotExistException]
 19-Dec-2016 17:26 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@18e8d651]
 19-Dec-2016 17:26 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@5e4e6c9d] supports [class webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest]
 19-Dec-2016 17:26 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@6ebce7c9] supports [class webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest]
@@ -2444,7 +2444,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:26 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@7f02dfd9] supports [class webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest]
 19-Dec-2016 17:26 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@15b660b4] supports [class webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest]
 19-Dec-2016 17:26 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest@1ae49bbd]
-19-Dec-2016 17:26 [TRACE]: Invoking [public void webservice.endpoints.CustomerEndpoint.deleteCustomer(webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest) throws domain.repositories.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest@1ae49bbd]
+19-Dec-2016 17:26 [TRACE]: Invoking [public void webservice.endpoints.CustomerEndpoint.deleteCustomer(webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest) throws domain.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest@1ae49bbd]
 19-Dec-2016 17:26 [DEBUG]: Returning cached instance of singleton bean 'customerEndpoint'
 19-Dec-2016 17:26 [DEBUG]: Creating new transaction with name [webservice.endpoints.CustomerEndpoint.deleteCustomer]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 19-Dec-2016 17:26 [TRACE]: Opened session at timestamp: 14821611673
@@ -2475,8 +2475,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:26 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@1bc50966]
 19-Dec-2016 17:26 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 19-Dec-2016 17:26 [TRACE]: Initializing non-lazy collections
-19-Dec-2016 17:26 [TRACE]: Completing transaction for [webservice.endpoints.CustomerEndpoint.deleteCustomer] after exception: domain.repositories.customerRepository.CustomerDoesNotExistException
-19-Dec-2016 17:26 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.customerRepository.CustomerDoesNotExistException
+19-Dec-2016 17:26 [TRACE]: Completing transaction for [webservice.endpoints.CustomerEndpoint.deleteCustomer] after exception: domain.customer.CustomerDoesNotExistException
+19-Dec-2016 17:26 [TRACE]: Applying rules to determine whether transaction should rollback on domain.customer.CustomerDoesNotExistException
 19-Dec-2016 17:26 [TRACE]: Winning rollback rule is: null
 19-Dec-2016 17:26 [TRACE]: No relevant rollback rule found: applying default rules
 19-Dec-2016 17:26 [TRACE]: Triggering beforeCommit synchronization
@@ -2503,11 +2503,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:26 [DEBUG]: Released JDBC connection
 19-Dec-2016 17:26 [TRACE]: Logical connection closed
 19-Dec-2016 17:26 [DEBUG]: Returning cached instance of singleton bean 'customerEndpoint'
-19-Dec-2016 17:26 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.CustomerEndpoint.deleteCustomer(webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest) throws domain.repositories.EntityDoesNotExistException]: domain.repositories.customerRepository.CustomerDoesNotExistException
+19-Dec-2016 17:26 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.CustomerEndpoint.deleteCustomer(webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest) throws domain.EntityDoesNotExistException]: domain.customer.CustomerDoesNotExistException
 19-Dec-2016 17:26 [DEBUG]: Returning cached instance of singleton bean 'customerEndpoint'
-19-Dec-2016 17:26 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.CustomerEndpoint.deleteCustomer(webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest) throws domain.repositories.EntityDoesNotExistException]: domain.repositories.customerRepository.CustomerDoesNotExistException
+19-Dec-2016 17:26 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.CustomerEndpoint.deleteCustomer(webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest) throws domain.EntityDoesNotExistException]: domain.customer.CustomerDoesNotExistException
 19-Dec-2016 17:26 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-domain.repositories.customerRepository.CustomerDoesNotExistException
+domain.customer.CustomerDoesNotExistException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
@@ -2590,7 +2590,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 19-Dec-2016 17:26 [DEBUG]: Looking up endpoint for [{http://www.customerRequestResponse.endpointRequestResponse.webService}DeleteCustomerRequest]
-19-Dec-2016 17:26 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public void webservice.endpoints.CustomerEndpoint.deleteCustomer(webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest) throws domain.repositories.EntityDoesNotExistException]
+19-Dec-2016 17:26 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public void webservice.endpoints.CustomerEndpoint.deleteCustomer(webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest) throws domain.EntityDoesNotExistException]
 19-Dec-2016 17:26 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@18e8d651]
 19-Dec-2016 17:26 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@5e4e6c9d] supports [class webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest]
 19-Dec-2016 17:26 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@6ebce7c9] supports [class webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest]
@@ -2601,7 +2601,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:26 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@7f02dfd9] supports [class webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest]
 19-Dec-2016 17:26 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@15b660b4] supports [class webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest]
 19-Dec-2016 17:26 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest@189ee241]
-19-Dec-2016 17:26 [TRACE]: Invoking [public void webservice.endpoints.CustomerEndpoint.deleteCustomer(webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest) throws domain.repositories.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest@189ee241]
+19-Dec-2016 17:26 [TRACE]: Invoking [public void webservice.endpoints.CustomerEndpoint.deleteCustomer(webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest) throws domain.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest@189ee241]
 19-Dec-2016 17:26 [DEBUG]: Returning cached instance of singleton bean 'customerEndpoint'
 19-Dec-2016 17:26 [DEBUG]: Creating new transaction with name [webservice.endpoints.CustomerEndpoint.deleteCustomer]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 19-Dec-2016 17:26 [TRACE]: Opened session at timestamp: 14821611702
@@ -2695,7 +2695,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:26 [DEBUG]: Releasing JDBC connection
 19-Dec-2016 17:26 [DEBUG]: Released JDBC connection
 19-Dec-2016 17:26 [TRACE]: Logical connection closed
-19-Dec-2016 17:26 [TRACE]: Method [public void webservice.endpoints.CustomerEndpoint.deleteCustomer(webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest) throws domain.repositories.EntityDoesNotExistException] returned [null]
+19-Dec-2016 17:26 [TRACE]: Method [public void webservice.endpoints.CustomerEndpoint.deleteCustomer(webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest) throws domain.EntityDoesNotExistException] returned [null]
 19-Dec-2016 17:26 [DEBUG]: MessageDispatcher with name 'spring-ws' sends no response for request [SaajSoapMessage {http://www.customerRequestResponse.endpointRequestResponse.webService}DeleteCustomerRequest]
 19-Dec-2016 17:26 [TRACE]: Cleared thread-bound request context: weblogic.servlet.internal.ServletRequestImpl@10bc5628[
 POST /basecourse/customer-web-service HTTP/1.1
@@ -2856,7 +2856,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 19-Dec-2016 17:26 [DEBUG]: Looking up endpoint for [{http://www.customerRequestResponse.endpointRequestResponse.webService}CreateCustomerRequest]
-19-Dec-2016 17:26 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public void webservice.endpoints.CustomerEndpoint.createCustomer(webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest) throws domain.repositories.EntityAlreadyExistException]
+19-Dec-2016 17:26 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public void webservice.endpoints.CustomerEndpoint.createCustomer(webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest) throws domain.EntityAlreadyExistException]
 19-Dec-2016 17:26 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@18e8d651]
 19-Dec-2016 17:26 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@5e4e6c9d] supports [class webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest]
 19-Dec-2016 17:26 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@6ebce7c9] supports [class webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest]
@@ -2867,7 +2867,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:26 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@7f02dfd9] supports [class webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest]
 19-Dec-2016 17:26 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@15b660b4] supports [class webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest]
 19-Dec-2016 17:26 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest@1b7da759]
-19-Dec-2016 17:26 [TRACE]: Invoking [public void webservice.endpoints.CustomerEndpoint.createCustomer(webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest) throws domain.repositories.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest@1b7da759]
+19-Dec-2016 17:26 [TRACE]: Invoking [public void webservice.endpoints.CustomerEndpoint.createCustomer(webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest) throws domain.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest@1b7da759]
 19-Dec-2016 17:26 [DEBUG]: Returning cached instance of singleton bean 'customerEndpoint'
 19-Dec-2016 17:26 [DEBUG]: Creating new transaction with name [webservice.endpoints.CustomerEndpoint.createCustomer]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 19-Dec-2016 17:26 [TRACE]: Opened session at timestamp: 14821611890
@@ -2964,7 +2964,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:26 [DEBUG]: Releasing JDBC connection
 19-Dec-2016 17:26 [DEBUG]: Released JDBC connection
 19-Dec-2016 17:26 [TRACE]: Logical connection closed
-19-Dec-2016 17:26 [TRACE]: Method [public void webservice.endpoints.CustomerEndpoint.createCustomer(webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest) throws domain.repositories.EntityAlreadyExistException] returned [null]
+19-Dec-2016 17:26 [TRACE]: Method [public void webservice.endpoints.CustomerEndpoint.createCustomer(webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest) throws domain.EntityAlreadyExistException] returned [null]
 19-Dec-2016 17:26 [DEBUG]: MessageDispatcher with name 'spring-ws' sends no response for request [SaajSoapMessage {http://www.customerRequestResponse.endpointRequestResponse.webService}CreateCustomerRequest]
 19-Dec-2016 17:26 [TRACE]: Cleared thread-bound request context: weblogic.servlet.internal.ServletRequestImpl@10bc5628[
 POST /basecourse/customer-web-service HTTP/1.1
@@ -3133,7 +3133,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 19-Dec-2016 17:26 [DEBUG]: Looking up endpoint for [{http://www.customerRequestResponse.endpointRequestResponse.webService}CreateCustomerRequest]
-19-Dec-2016 17:26 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public void webservice.endpoints.CustomerEndpoint.createCustomer(webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest) throws domain.repositories.EntityAlreadyExistException]
+19-Dec-2016 17:26 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public void webservice.endpoints.CustomerEndpoint.createCustomer(webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest) throws domain.EntityAlreadyExistException]
 19-Dec-2016 17:26 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@18e8d651]
 19-Dec-2016 17:26 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@5e4e6c9d] supports [class webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest]
 19-Dec-2016 17:26 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@6ebce7c9] supports [class webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest]
@@ -3144,7 +3144,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:26 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@7f02dfd9] supports [class webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest]
 19-Dec-2016 17:26 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@15b660b4] supports [class webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest]
 19-Dec-2016 17:26 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest@367ee335]
-19-Dec-2016 17:26 [TRACE]: Invoking [public void webservice.endpoints.CustomerEndpoint.createCustomer(webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest) throws domain.repositories.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest@367ee335]
+19-Dec-2016 17:26 [TRACE]: Invoking [public void webservice.endpoints.CustomerEndpoint.createCustomer(webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest) throws domain.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest@367ee335]
 19-Dec-2016 17:26 [DEBUG]: Returning cached instance of singleton bean 'customerEndpoint'
 19-Dec-2016 17:26 [DEBUG]: Creating new transaction with name [webservice.endpoints.CustomerEndpoint.createCustomer]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 19-Dec-2016 17:26 [TRACE]: Opened session at timestamp: 14821612004
@@ -3183,8 +3183,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:26 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@4bc95033]
 19-Dec-2016 17:26 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 19-Dec-2016 17:26 [TRACE]: Initializing non-lazy collections
-19-Dec-2016 17:26 [TRACE]: Completing transaction for [webservice.endpoints.CustomerEndpoint.createCustomer] after exception: domain.repositories.customerRepository.CustomerAlreadyExistException
-19-Dec-2016 17:26 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.customerRepository.CustomerAlreadyExistException
+19-Dec-2016 17:26 [TRACE]: Completing transaction for [webservice.endpoints.CustomerEndpoint.createCustomer] after exception: domain.customer.CustomerAlreadyExistException
+19-Dec-2016 17:26 [TRACE]: Applying rules to determine whether transaction should rollback on domain.customer.CustomerAlreadyExistException
 19-Dec-2016 17:26 [TRACE]: Winning rollback rule is: null
 19-Dec-2016 17:26 [TRACE]: No relevant rollback rule found: applying default rules
 19-Dec-2016 17:26 [TRACE]: Triggering beforeCommit synchronization
@@ -3224,11 +3224,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:26 [DEBUG]: Released JDBC connection
 19-Dec-2016 17:26 [TRACE]: Logical connection closed
 19-Dec-2016 17:26 [DEBUG]: Returning cached instance of singleton bean 'customerEndpoint'
-19-Dec-2016 17:26 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.CustomerEndpoint.createCustomer(webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest) throws domain.repositories.EntityAlreadyExistException]: domain.repositories.customerRepository.CustomerAlreadyExistException
+19-Dec-2016 17:26 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.CustomerEndpoint.createCustomer(webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest) throws domain.EntityAlreadyExistException]: domain.customer.CustomerAlreadyExistException
 19-Dec-2016 17:26 [DEBUG]: Returning cached instance of singleton bean 'customerEndpoint'
-19-Dec-2016 17:26 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.CustomerEndpoint.createCustomer(webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest) throws domain.repositories.EntityAlreadyExistException]: domain.repositories.customerRepository.CustomerAlreadyExistException
+19-Dec-2016 17:26 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.CustomerEndpoint.createCustomer(webservice.endpointrequestresponse.customerrequestresponse.CreateCustomerRequest) throws domain.EntityAlreadyExistException]: domain.customer.CustomerAlreadyExistException
 19-Dec-2016 17:26 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-domain.repositories.customerRepository.CustomerAlreadyExistException
+domain.customer.CustomerAlreadyExistException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
@@ -8786,7 +8786,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 19-Dec-2016 17:46 [DEBUG]: Looking up endpoint for [{http://www.productRequestResponse.endpointRequestResponse.webService}CreateProductRequest]
-19-Dec-2016 17:46 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.repositories.EntityAlreadyExistException]
+19-Dec-2016 17:46 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.EntityAlreadyExistException]
 19-Dec-2016 17:46 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@18e8d651]
 19-Dec-2016 17:46 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@5e4e6c9d] supports [class webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest]
 19-Dec-2016 17:46 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@6ebce7c9] supports [class webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest]
@@ -8797,7 +8797,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:46 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@7f02dfd9] supports [class webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest]
 19-Dec-2016 17:46 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@15b660b4] supports [class webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest]
 19-Dec-2016 17:46 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest@11ad1594]
-19-Dec-2016 17:46 [TRACE]: Invoking [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.repositories.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest@11ad1594]
+19-Dec-2016 17:46 [TRACE]: Invoking [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest@11ad1594]
 19-Dec-2016 17:46 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
 19-Dec-2016 17:46 [DEBUG]: Creating new transaction with name [webservice.endpoints.ProductEndpoint.createProduct]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 19-Dec-2016 17:46 [TRACE]: Opened session at timestamp: 14821624109
@@ -8837,9 +8837,9 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:46 [DEBUG]: Released JDBC connection
 19-Dec-2016 17:46 [TRACE]: Logical connection closed
 19-Dec-2016 17:46 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-19-Dec-2016 17:46 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.repositories.EntityAlreadyExistException]: webservice.exceptions.NullPriceEndEffectDayException
+19-Dec-2016 17:46 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.EntityAlreadyExistException]: webservice.exceptions.NullPriceEndEffectDayException
 19-Dec-2016 17:46 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-19-Dec-2016 17:46 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.repositories.EntityAlreadyExistException]: webservice.exceptions.NullPriceEndEffectDayException
+19-Dec-2016 17:46 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.EntityAlreadyExistException]: webservice.exceptions.NullPriceEndEffectDayException
 19-Dec-2016 17:46 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
 webservice.exceptions.NullPriceEndEffectDayException
 	at webservice.validators.ProductValidator.checkProductDTO(ProductValidator.java:33)
@@ -8943,7 +8943,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 19-Dec-2016 17:47 [DEBUG]: Looking up endpoint for [{http://www.productRequestResponse.endpointRequestResponse.webService}CreateProductRequest]
-19-Dec-2016 17:47 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.repositories.EntityAlreadyExistException]
+19-Dec-2016 17:47 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.EntityAlreadyExistException]
 19-Dec-2016 17:47 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@18e8d651]
 19-Dec-2016 17:47 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@5e4e6c9d] supports [class webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest]
 19-Dec-2016 17:47 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@6ebce7c9] supports [class webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest]
@@ -8954,7 +8954,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:47 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@7f02dfd9] supports [class webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest]
 19-Dec-2016 17:47 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@15b660b4] supports [class webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest]
 19-Dec-2016 17:47 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest@2384b82e]
-19-Dec-2016 17:47 [TRACE]: Invoking [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.repositories.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest@2384b82e]
+19-Dec-2016 17:47 [TRACE]: Invoking [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest@2384b82e]
 19-Dec-2016 17:47 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
 19-Dec-2016 17:47 [DEBUG]: Creating new transaction with name [webservice.endpoints.ProductEndpoint.createProduct]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 19-Dec-2016 17:47 [TRACE]: Opened session at timestamp: 14821624232
@@ -9066,7 +9066,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:47 [DEBUG]: Releasing JDBC connection
 19-Dec-2016 17:47 [DEBUG]: Released JDBC connection
 19-Dec-2016 17:47 [TRACE]: Logical connection closed
-19-Dec-2016 17:47 [TRACE]: Method [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.repositories.EntityAlreadyExistException] returned [null]
+19-Dec-2016 17:47 [TRACE]: Method [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.EntityAlreadyExistException] returned [null]
 19-Dec-2016 17:47 [DEBUG]: MessageDispatcher with name 'spring-ws' sends no response for request [SaajSoapMessage {http://www.productRequestResponse.endpointRequestResponse.webService}CreateProductRequest]
 19-Dec-2016 17:47 [TRACE]: Cleared thread-bound request context: weblogic.servlet.internal.ServletRequestImpl@6d4d63ba[
 POST /basecourse/product-web-service HTTP/1.1
@@ -9117,7 +9117,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 19-Dec-2016 17:47 [DEBUG]: Looking up endpoint for [{http://www.productRequestResponse.endpointRequestResponse.webService}CreateProductRequest]
-19-Dec-2016 17:47 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.repositories.EntityAlreadyExistException]
+19-Dec-2016 17:47 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.EntityAlreadyExistException]
 19-Dec-2016 17:47 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@18e8d651]
 19-Dec-2016 17:47 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@5e4e6c9d] supports [class webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest]
 19-Dec-2016 17:47 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@6ebce7c9] supports [class webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest]
@@ -9128,7 +9128,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:47 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@7f02dfd9] supports [class webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest]
 19-Dec-2016 17:47 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@15b660b4] supports [class webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest]
 19-Dec-2016 17:47 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest@c10420b]
-19-Dec-2016 17:47 [TRACE]: Invoking [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.repositories.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest@c10420b]
+19-Dec-2016 17:47 [TRACE]: Invoking [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest@c10420b]
 19-Dec-2016 17:47 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
 19-Dec-2016 17:47 [DEBUG]: Creating new transaction with name [webservice.endpoints.ProductEndpoint.createProduct]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 19-Dec-2016 17:47 [TRACE]: Opened session at timestamp: 14821624571
@@ -9172,9 +9172,9 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:47 [DEBUG]: Released JDBC connection
 19-Dec-2016 17:47 [TRACE]: Logical connection closed
 19-Dec-2016 17:47 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-19-Dec-2016 17:47 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.repositories.EntityAlreadyExistException]: domain.product.DateIntersectionInProductPriceException
+19-Dec-2016 17:47 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.EntityAlreadyExistException]: domain.product.DateIntersectionInProductPriceException
 19-Dec-2016 17:47 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-19-Dec-2016 17:47 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.repositories.EntityAlreadyExistException]: domain.product.DateIntersectionInProductPriceException
+19-Dec-2016 17:47 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.EntityAlreadyExistException]: domain.product.DateIntersectionInProductPriceException
 19-Dec-2016 17:47 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
 domain.product.DateIntersectionInProductPriceException
 	at domain.product.Product.isIntersectProductPricesEffectDays(Product.java:72)
@@ -9297,7 +9297,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 19-Dec-2016 17:47 [DEBUG]: Looking up endpoint for [{http://www.productRequestResponse.endpointRequestResponse.webService}CreateProductRequest]
-19-Dec-2016 17:47 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.repositories.EntityAlreadyExistException]
+19-Dec-2016 17:47 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.EntityAlreadyExistException]
 19-Dec-2016 17:47 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@18e8d651]
 19-Dec-2016 17:47 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@5e4e6c9d] supports [class webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest]
 19-Dec-2016 17:47 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@6ebce7c9] supports [class webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest]
@@ -9308,7 +9308,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:47 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@7f02dfd9] supports [class webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest]
 19-Dec-2016 17:47 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@15b660b4] supports [class webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest]
 19-Dec-2016 17:47 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest@3f221c79]
-19-Dec-2016 17:47 [TRACE]: Invoking [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.repositories.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest@3f221c79]
+19-Dec-2016 17:47 [TRACE]: Invoking [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest@3f221c79]
 19-Dec-2016 17:47 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
 19-Dec-2016 17:47 [DEBUG]: Creating new transaction with name [webservice.endpoints.ProductEndpoint.createProduct]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 19-Dec-2016 17:47 [TRACE]: Opened session at timestamp: 14821624666
@@ -9438,7 +9438,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:47 [DEBUG]: Releasing JDBC connection
 19-Dec-2016 17:47 [DEBUG]: Released JDBC connection
 19-Dec-2016 17:47 [TRACE]: Logical connection closed
-19-Dec-2016 17:47 [TRACE]: Method [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.repositories.EntityAlreadyExistException] returned [null]
+19-Dec-2016 17:47 [TRACE]: Method [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.EntityAlreadyExistException] returned [null]
 19-Dec-2016 17:47 [DEBUG]: MessageDispatcher with name 'spring-ws' sends no response for request [SaajSoapMessage {http://www.productRequestResponse.endpointRequestResponse.webService}CreateProductRequest]
 19-Dec-2016 17:47 [TRACE]: Cleared thread-bound request context: weblogic.servlet.internal.ServletRequestImpl@5f4a1347[
 POST /basecourse/product-web-service HTTP/1.1
@@ -9472,7 +9472,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 19-Dec-2016 17:47 [DEBUG]: Looking up endpoint for [{http://www.productRequestResponse.endpointRequestResponse.webService}DeleteProductRequest]
-19-Dec-2016 17:47 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest) throws domain.repositories.EntityDoesNotExistException]
+19-Dec-2016 17:47 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest) throws domain.EntityDoesNotExistException]
 19-Dec-2016 17:47 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@18e8d651]
 19-Dec-2016 17:47 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@5e4e6c9d] supports [class webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest]
 19-Dec-2016 17:47 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@6ebce7c9] supports [class webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest]
@@ -9483,7 +9483,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:47 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@7f02dfd9] supports [class webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest]
 19-Dec-2016 17:47 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@15b660b4] supports [class webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest]
 19-Dec-2016 17:47 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest@62170848]
-19-Dec-2016 17:47 [TRACE]: Invoking [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest) throws domain.repositories.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest@62170848]
+19-Dec-2016 17:47 [TRACE]: Invoking [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest) throws domain.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest@62170848]
 19-Dec-2016 17:47 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
 19-Dec-2016 17:47 [DEBUG]: Creating new transaction with name [webservice.endpoints.ProductEndpoint.deleteProduct]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 19-Dec-2016 17:47 [TRACE]: Opened session at timestamp: 14821624719
@@ -9514,8 +9514,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:47 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@40fe975]
 19-Dec-2016 17:47 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 19-Dec-2016 17:47 [TRACE]: Initializing non-lazy collections
-19-Dec-2016 17:47 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.deleteProduct] after exception: domain.repositories.productRepository.ProductDoesNotExistException
-19-Dec-2016 17:47 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.productRepository.ProductDoesNotExistException
+19-Dec-2016 17:47 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.deleteProduct] after exception: domain.product.ProductDoesNotExistException
+19-Dec-2016 17:47 [TRACE]: Applying rules to determine whether transaction should rollback on domain.product.ProductDoesNotExistException
 19-Dec-2016 17:47 [TRACE]: Winning rollback rule is: null
 19-Dec-2016 17:47 [TRACE]: No relevant rollback rule found: applying default rules
 19-Dec-2016 17:47 [TRACE]: Triggering beforeCommit synchronization
@@ -9542,11 +9542,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:47 [DEBUG]: Released JDBC connection
 19-Dec-2016 17:47 [TRACE]: Logical connection closed
 19-Dec-2016 17:47 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-19-Dec-2016 17:47 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest) throws domain.repositories.EntityDoesNotExistException]: domain.repositories.productRepository.ProductDoesNotExistException
+19-Dec-2016 17:47 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest) throws domain.EntityDoesNotExistException]: domain.product.ProductDoesNotExistException
 19-Dec-2016 17:47 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-19-Dec-2016 17:47 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest) throws domain.repositories.EntityDoesNotExistException]: domain.repositories.productRepository.ProductDoesNotExistException
+19-Dec-2016 17:47 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest) throws domain.EntityDoesNotExistException]: domain.product.ProductDoesNotExistException
 19-Dec-2016 17:47 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-domain.repositories.productRepository.ProductDoesNotExistException
+domain.product.ProductDoesNotExistException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
@@ -9629,7 +9629,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 19-Dec-2016 17:48 [DEBUG]: Looking up endpoint for [{http://www.productRequestResponse.endpointRequestResponse.webService}DeleteProductRequest]
-19-Dec-2016 17:48 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest) throws domain.repositories.EntityDoesNotExistException]
+19-Dec-2016 17:48 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest) throws domain.EntityDoesNotExistException]
 19-Dec-2016 17:48 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@18e8d651]
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@5e4e6c9d] supports [class webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest]
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@6ebce7c9] supports [class webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest]
@@ -9640,7 +9640,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@7f02dfd9] supports [class webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest]
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@15b660b4] supports [class webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest]
 19-Dec-2016 17:48 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest@54c8158d]
-19-Dec-2016 17:48 [TRACE]: Invoking [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest) throws domain.repositories.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest@54c8158d]
+19-Dec-2016 17:48 [TRACE]: Invoking [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest) throws domain.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest@54c8158d]
 19-Dec-2016 17:48 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
 19-Dec-2016 17:48 [DEBUG]: Creating new transaction with name [webservice.endpoints.ProductEndpoint.deleteProduct]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 19-Dec-2016 17:48 [TRACE]: Opened session at timestamp: 14821624996
@@ -9806,7 +9806,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:48 [DEBUG]: Releasing JDBC connection
 19-Dec-2016 17:48 [DEBUG]: Released JDBC connection
 19-Dec-2016 17:48 [TRACE]: Logical connection closed
-19-Dec-2016 17:48 [TRACE]: Method [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest) throws domain.repositories.EntityDoesNotExistException] returned [null]
+19-Dec-2016 17:48 [TRACE]: Method [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest) throws domain.EntityDoesNotExistException] returned [null]
 19-Dec-2016 17:48 [DEBUG]: MessageDispatcher with name 'spring-ws' sends no response for request [SaajSoapMessage {http://www.productRequestResponse.endpointRequestResponse.webService}DeleteProductRequest]
 19-Dec-2016 17:48 [TRACE]: Cleared thread-bound request context: weblogic.servlet.internal.ServletRequestImpl@5f4a1347[
 POST /basecourse/product-web-service HTTP/1.1
@@ -9840,7 +9840,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 19-Dec-2016 17:48 [DEBUG]: Looking up endpoint for [{http://www.productRequestResponse.endpointRequestResponse.webService}DeleteProductRequest]
-19-Dec-2016 17:48 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest) throws domain.repositories.EntityDoesNotExistException]
+19-Dec-2016 17:48 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest) throws domain.EntityDoesNotExistException]
 19-Dec-2016 17:48 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@18e8d651]
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@5e4e6c9d] supports [class webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest]
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@6ebce7c9] supports [class webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest]
@@ -9851,7 +9851,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@7f02dfd9] supports [class webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest]
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@15b660b4] supports [class webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest]
 19-Dec-2016 17:48 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest@55f0ed72]
-19-Dec-2016 17:48 [TRACE]: Invoking [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest) throws domain.repositories.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest@55f0ed72]
+19-Dec-2016 17:48 [TRACE]: Invoking [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest) throws domain.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest@55f0ed72]
 19-Dec-2016 17:48 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
 19-Dec-2016 17:48 [DEBUG]: Creating new transaction with name [webservice.endpoints.ProductEndpoint.deleteProduct]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 19-Dec-2016 17:48 [TRACE]: Opened session at timestamp: 14821625002
@@ -9882,8 +9882,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:48 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@41ad0726]
 19-Dec-2016 17:48 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 19-Dec-2016 17:48 [TRACE]: Initializing non-lazy collections
-19-Dec-2016 17:48 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.deleteProduct] after exception: domain.repositories.productRepository.ProductDoesNotExistException
-19-Dec-2016 17:48 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.productRepository.ProductDoesNotExistException
+19-Dec-2016 17:48 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.deleteProduct] after exception: domain.product.ProductDoesNotExistException
+19-Dec-2016 17:48 [TRACE]: Applying rules to determine whether transaction should rollback on domain.product.ProductDoesNotExistException
 19-Dec-2016 17:48 [TRACE]: Winning rollback rule is: null
 19-Dec-2016 17:48 [TRACE]: No relevant rollback rule found: applying default rules
 19-Dec-2016 17:48 [TRACE]: Triggering beforeCommit synchronization
@@ -9910,11 +9910,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:48 [DEBUG]: Released JDBC connection
 19-Dec-2016 17:48 [TRACE]: Logical connection closed
 19-Dec-2016 17:48 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-19-Dec-2016 17:48 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest) throws domain.repositories.EntityDoesNotExistException]: domain.repositories.productRepository.ProductDoesNotExistException
+19-Dec-2016 17:48 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest) throws domain.EntityDoesNotExistException]: domain.product.ProductDoesNotExistException
 19-Dec-2016 17:48 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-19-Dec-2016 17:48 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest) throws domain.repositories.EntityDoesNotExistException]: domain.repositories.productRepository.ProductDoesNotExistException
+19-Dec-2016 17:48 [DEBUG]: Resolving exception from endpoint [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest) throws domain.EntityDoesNotExistException]: domain.product.ProductDoesNotExistException
 19-Dec-2016 17:48 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-domain.repositories.productRepository.ProductDoesNotExistException
+domain.product.ProductDoesNotExistException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
@@ -9997,7 +9997,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 19-Dec-2016 17:48 [DEBUG]: Looking up endpoint for [{http://www.productRequestResponse.endpointRequestResponse.webService}GetProductRequest]
-19-Dec-2016 17:48 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.repositories.EntityDoesNotExistException]
+19-Dec-2016 17:48 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.EntityDoesNotExistException]
 19-Dec-2016 17:48 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@18e8d651]
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@5e4e6c9d] supports [class webservice.endpointrequestresponse.productrequestresponse.GetProductRequest]
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@6ebce7c9] supports [class webservice.endpointrequestresponse.productrequestresponse.GetProductRequest]
@@ -10008,7 +10008,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@7f02dfd9] supports [class webservice.endpointrequestresponse.productrequestresponse.GetProductRequest]
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@15b660b4] supports [class webservice.endpointrequestresponse.productrequestresponse.GetProductRequest]
 19-Dec-2016 17:48 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.productrequestresponse.GetProductRequest@abb88b8]
-19-Dec-2016 17:48 [TRACE]: Invoking [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.repositories.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.productrequestresponse.GetProductRequest@abb88b8]
+19-Dec-2016 17:48 [TRACE]: Invoking [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.productrequestresponse.GetProductRequest@abb88b8]
 19-Dec-2016 17:48 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
 19-Dec-2016 17:48 [DEBUG]: Creating new transaction with name [webservice.endpoints.ProductEndpoint.getProduct]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
 19-Dec-2016 17:48 [TRACE]: Opened session at timestamp: 14821625134
@@ -10041,8 +10041,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:48 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@6c313657]
 19-Dec-2016 17:48 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 19-Dec-2016 17:48 [TRACE]: Initializing non-lazy collections
-19-Dec-2016 17:48 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.getProduct] after exception: domain.repositories.productRepository.ProductDoesNotExistException
-19-Dec-2016 17:48 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.productRepository.ProductDoesNotExistException
+19-Dec-2016 17:48 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.getProduct] after exception: domain.product.ProductDoesNotExistException
+19-Dec-2016 17:48 [TRACE]: Applying rules to determine whether transaction should rollback on domain.product.ProductDoesNotExistException
 19-Dec-2016 17:48 [TRACE]: Winning rollback rule is: null
 19-Dec-2016 17:48 [TRACE]: No relevant rollback rule found: applying default rules
 19-Dec-2016 17:48 [TRACE]: Triggering beforeCommit synchronization
@@ -10069,11 +10069,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:48 [DEBUG]: Released JDBC connection
 19-Dec-2016 17:48 [TRACE]: Logical connection closed
 19-Dec-2016 17:48 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-19-Dec-2016 17:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.repositories.EntityDoesNotExistException]: domain.repositories.productRepository.ProductDoesNotExistException
+19-Dec-2016 17:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.EntityDoesNotExistException]: domain.product.ProductDoesNotExistException
 19-Dec-2016 17:48 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-19-Dec-2016 17:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.repositories.EntityDoesNotExistException]: domain.repositories.productRepository.ProductDoesNotExistException
+19-Dec-2016 17:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.EntityDoesNotExistException]: domain.product.ProductDoesNotExistException
 19-Dec-2016 17:48 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-domain.repositories.productRepository.ProductDoesNotExistException
+domain.product.ProductDoesNotExistException
 	at webservice.endpoints.ProductEndpoint.getProduct(ProductEndpoint.java:42)
 	at webservice.endpoints.ProductEndpoint$$FastClassBySpringCGLIB$$12235c47.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
@@ -10157,7 +10157,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 19-Dec-2016 17:48 [DEBUG]: Looking up endpoint for [{http://www.productRequestResponse.endpointRequestResponse.webService}GetProductRequest]
-19-Dec-2016 17:48 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.repositories.EntityDoesNotExistException]
+19-Dec-2016 17:48 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.EntityDoesNotExistException]
 19-Dec-2016 17:48 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@18e8d651]
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@5e4e6c9d] supports [class webservice.endpointrequestresponse.productrequestresponse.GetProductRequest]
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@6ebce7c9] supports [class webservice.endpointrequestresponse.productrequestresponse.GetProductRequest]
@@ -10168,7 +10168,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@7f02dfd9] supports [class webservice.endpointrequestresponse.productrequestresponse.GetProductRequest]
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@15b660b4] supports [class webservice.endpointrequestresponse.productrequestresponse.GetProductRequest]
 19-Dec-2016 17:48 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.productrequestresponse.GetProductRequest@61c152c4]
-19-Dec-2016 17:48 [TRACE]: Invoking [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.repositories.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.productrequestresponse.GetProductRequest@61c152c4]
+19-Dec-2016 17:48 [TRACE]: Invoking [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.productrequestresponse.GetProductRequest@61c152c4]
 19-Dec-2016 17:48 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
 19-Dec-2016 17:48 [DEBUG]: Creating new transaction with name [webservice.endpoints.ProductEndpoint.getProduct]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
 19-Dec-2016 17:48 [TRACE]: Opened session at timestamp: 14821625156
@@ -10201,8 +10201,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:48 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@3302a252]
 19-Dec-2016 17:48 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 19-Dec-2016 17:48 [TRACE]: Initializing non-lazy collections
-19-Dec-2016 17:48 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.getProduct] after exception: domain.repositories.productRepository.ProductDoesNotExistException
-19-Dec-2016 17:48 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.productRepository.ProductDoesNotExistException
+19-Dec-2016 17:48 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.getProduct] after exception: domain.product.ProductDoesNotExistException
+19-Dec-2016 17:48 [TRACE]: Applying rules to determine whether transaction should rollback on domain.product.ProductDoesNotExistException
 19-Dec-2016 17:48 [TRACE]: Winning rollback rule is: null
 19-Dec-2016 17:48 [TRACE]: No relevant rollback rule found: applying default rules
 19-Dec-2016 17:48 [TRACE]: Triggering beforeCommit synchronization
@@ -10229,11 +10229,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:48 [DEBUG]: Released JDBC connection
 19-Dec-2016 17:48 [TRACE]: Logical connection closed
 19-Dec-2016 17:48 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-19-Dec-2016 17:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.repositories.EntityDoesNotExistException]: domain.repositories.productRepository.ProductDoesNotExistException
+19-Dec-2016 17:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.EntityDoesNotExistException]: domain.product.ProductDoesNotExistException
 19-Dec-2016 17:48 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-19-Dec-2016 17:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.repositories.EntityDoesNotExistException]: domain.repositories.productRepository.ProductDoesNotExistException
+19-Dec-2016 17:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.EntityDoesNotExistException]: domain.product.ProductDoesNotExistException
 19-Dec-2016 17:48 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-domain.repositories.productRepository.ProductDoesNotExistException
+domain.product.ProductDoesNotExistException
 	at webservice.endpoints.ProductEndpoint.getProduct(ProductEndpoint.java:42)
 	at webservice.endpoints.ProductEndpoint$$FastClassBySpringCGLIB$$12235c47.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
@@ -10317,7 +10317,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 19-Dec-2016 17:48 [DEBUG]: Looking up endpoint for [{http://www.productRequestResponse.endpointRequestResponse.webService}GetProductRequest]
-19-Dec-2016 17:48 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.repositories.EntityDoesNotExistException]
+19-Dec-2016 17:48 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.EntityDoesNotExistException]
 19-Dec-2016 17:48 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@18e8d651]
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@5e4e6c9d] supports [class webservice.endpointrequestresponse.productrequestresponse.GetProductRequest]
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@6ebce7c9] supports [class webservice.endpointrequestresponse.productrequestresponse.GetProductRequest]
@@ -10328,7 +10328,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@7f02dfd9] supports [class webservice.endpointrequestresponse.productrequestresponse.GetProductRequest]
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@15b660b4] supports [class webservice.endpointrequestresponse.productrequestresponse.GetProductRequest]
 19-Dec-2016 17:48 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.productrequestresponse.GetProductRequest@6d69d193]
-19-Dec-2016 17:48 [TRACE]: Invoking [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.repositories.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.productrequestresponse.GetProductRequest@6d69d193]
+19-Dec-2016 17:48 [TRACE]: Invoking [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.productrequestresponse.GetProductRequest@6d69d193]
 19-Dec-2016 17:48 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
 19-Dec-2016 17:48 [DEBUG]: Creating new transaction with name [webservice.endpoints.ProductEndpoint.getProduct]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
 19-Dec-2016 17:48 [TRACE]: Opened session at timestamp: 14821625298
@@ -10361,8 +10361,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:48 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@164cfb1d]
 19-Dec-2016 17:48 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 19-Dec-2016 17:48 [TRACE]: Initializing non-lazy collections
-19-Dec-2016 17:48 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.getProduct] after exception: domain.repositories.productRepository.ProductDoesNotExistException
-19-Dec-2016 17:48 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.productRepository.ProductDoesNotExistException
+19-Dec-2016 17:48 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.getProduct] after exception: domain.product.ProductDoesNotExistException
+19-Dec-2016 17:48 [TRACE]: Applying rules to determine whether transaction should rollback on domain.product.ProductDoesNotExistException
 19-Dec-2016 17:48 [TRACE]: Winning rollback rule is: null
 19-Dec-2016 17:48 [TRACE]: No relevant rollback rule found: applying default rules
 19-Dec-2016 17:48 [TRACE]: Triggering beforeCommit synchronization
@@ -10389,11 +10389,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:48 [DEBUG]: Released JDBC connection
 19-Dec-2016 17:48 [TRACE]: Logical connection closed
 19-Dec-2016 17:48 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-19-Dec-2016 17:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.repositories.EntityDoesNotExistException]: domain.repositories.productRepository.ProductDoesNotExistException
+19-Dec-2016 17:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.EntityDoesNotExistException]: domain.product.ProductDoesNotExistException
 19-Dec-2016 17:48 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-19-Dec-2016 17:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.repositories.EntityDoesNotExistException]: domain.repositories.productRepository.ProductDoesNotExistException
+19-Dec-2016 17:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.EntityDoesNotExistException]: domain.product.ProductDoesNotExistException
 19-Dec-2016 17:48 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-domain.repositories.productRepository.ProductDoesNotExistException
+domain.product.ProductDoesNotExistException
 	at webservice.endpoints.ProductEndpoint.getProduct(ProductEndpoint.java:42)
 	at webservice.endpoints.ProductEndpoint$$FastClassBySpringCGLIB$$12235c47.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
@@ -10477,7 +10477,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 19-Dec-2016 17:48 [DEBUG]: Looking up endpoint for [{http://www.productRequestResponse.endpointRequestResponse.webService}GetProductRequest]
-19-Dec-2016 17:48 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.repositories.EntityDoesNotExistException]
+19-Dec-2016 17:48 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.EntityDoesNotExistException]
 19-Dec-2016 17:48 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@18e8d651]
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@5e4e6c9d] supports [class webservice.endpointrequestresponse.productrequestresponse.GetProductRequest]
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@6ebce7c9] supports [class webservice.endpointrequestresponse.productrequestresponse.GetProductRequest]
@@ -10488,7 +10488,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@7f02dfd9] supports [class webservice.endpointrequestresponse.productrequestresponse.GetProductRequest]
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@15b660b4] supports [class webservice.endpointrequestresponse.productrequestresponse.GetProductRequest]
 19-Dec-2016 17:48 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.productrequestresponse.GetProductRequest@6c21fb84]
-19-Dec-2016 17:48 [TRACE]: Invoking [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.repositories.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.productrequestresponse.GetProductRequest@6c21fb84]
+19-Dec-2016 17:48 [TRACE]: Invoking [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.productrequestresponse.GetProductRequest@6c21fb84]
 19-Dec-2016 17:48 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
 19-Dec-2016 17:48 [DEBUG]: Creating new transaction with name [webservice.endpoints.ProductEndpoint.getProduct]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
 19-Dec-2016 17:48 [TRACE]: Opened session at timestamp: 14821625300
@@ -10521,8 +10521,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:48 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@4349cbf4]
 19-Dec-2016 17:48 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 19-Dec-2016 17:48 [TRACE]: Initializing non-lazy collections
-19-Dec-2016 17:48 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.getProduct] after exception: domain.repositories.productRepository.ProductDoesNotExistException
-19-Dec-2016 17:48 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.productRepository.ProductDoesNotExistException
+19-Dec-2016 17:48 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.getProduct] after exception: domain.product.ProductDoesNotExistException
+19-Dec-2016 17:48 [TRACE]: Applying rules to determine whether transaction should rollback on domain.product.ProductDoesNotExistException
 19-Dec-2016 17:48 [TRACE]: Winning rollback rule is: null
 19-Dec-2016 17:48 [TRACE]: No relevant rollback rule found: applying default rules
 19-Dec-2016 17:48 [TRACE]: Triggering beforeCommit synchronization
@@ -10549,11 +10549,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:48 [DEBUG]: Released JDBC connection
 19-Dec-2016 17:48 [TRACE]: Logical connection closed
 19-Dec-2016 17:48 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-19-Dec-2016 17:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.repositories.EntityDoesNotExistException]: domain.repositories.productRepository.ProductDoesNotExistException
+19-Dec-2016 17:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.EntityDoesNotExistException]: domain.product.ProductDoesNotExistException
 19-Dec-2016 17:48 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-19-Dec-2016 17:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.repositories.EntityDoesNotExistException]: domain.repositories.productRepository.ProductDoesNotExistException
+19-Dec-2016 17:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.EntityDoesNotExistException]: domain.product.ProductDoesNotExistException
 19-Dec-2016 17:48 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-domain.repositories.productRepository.ProductDoesNotExistException
+domain.product.ProductDoesNotExistException
 	at webservice.endpoints.ProductEndpoint.getProduct(ProductEndpoint.java:42)
 	at webservice.endpoints.ProductEndpoint$$FastClassBySpringCGLIB$$12235c47.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
@@ -10637,7 +10637,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 19-Dec-2016 17:48 [DEBUG]: Looking up endpoint for [{http://www.productRequestResponse.endpointRequestResponse.webService}GetProductRequest]
-19-Dec-2016 17:48 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.repositories.EntityDoesNotExistException]
+19-Dec-2016 17:48 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.EntityDoesNotExistException]
 19-Dec-2016 17:48 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@18e8d651]
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@5e4e6c9d] supports [class webservice.endpointrequestresponse.productrequestresponse.GetProductRequest]
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@6ebce7c9] supports [class webservice.endpointrequestresponse.productrequestresponse.GetProductRequest]
@@ -10648,7 +10648,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@7f02dfd9] supports [class webservice.endpointrequestresponse.productrequestresponse.GetProductRequest]
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@15b660b4] supports [class webservice.endpointrequestresponse.productrequestresponse.GetProductRequest]
 19-Dec-2016 17:48 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.productrequestresponse.GetProductRequest@1a0b8332]
-19-Dec-2016 17:48 [TRACE]: Invoking [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.repositories.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.productrequestresponse.GetProductRequest@1a0b8332]
+19-Dec-2016 17:48 [TRACE]: Invoking [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.productrequestresponse.GetProductRequest@1a0b8332]
 19-Dec-2016 17:48 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
 19-Dec-2016 17:48 [DEBUG]: Creating new transaction with name [webservice.endpoints.ProductEndpoint.getProduct]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
 19-Dec-2016 17:48 [TRACE]: Opened session at timestamp: 14821625302
@@ -10681,8 +10681,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:48 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@7255ec67]
 19-Dec-2016 17:48 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 19-Dec-2016 17:48 [TRACE]: Initializing non-lazy collections
-19-Dec-2016 17:48 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.getProduct] after exception: domain.repositories.productRepository.ProductDoesNotExistException
-19-Dec-2016 17:48 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.productRepository.ProductDoesNotExistException
+19-Dec-2016 17:48 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.getProduct] after exception: domain.product.ProductDoesNotExistException
+19-Dec-2016 17:48 [TRACE]: Applying rules to determine whether transaction should rollback on domain.product.ProductDoesNotExistException
 19-Dec-2016 17:48 [TRACE]: Winning rollback rule is: null
 19-Dec-2016 17:48 [TRACE]: No relevant rollback rule found: applying default rules
 19-Dec-2016 17:48 [TRACE]: Triggering beforeCommit synchronization
@@ -10709,11 +10709,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:48 [DEBUG]: Released JDBC connection
 19-Dec-2016 17:48 [TRACE]: Logical connection closed
 19-Dec-2016 17:48 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-19-Dec-2016 17:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.repositories.EntityDoesNotExistException]: domain.repositories.productRepository.ProductDoesNotExistException
+19-Dec-2016 17:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.EntityDoesNotExistException]: domain.product.ProductDoesNotExistException
 19-Dec-2016 17:48 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-19-Dec-2016 17:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.repositories.EntityDoesNotExistException]: domain.repositories.productRepository.ProductDoesNotExistException
+19-Dec-2016 17:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.EntityDoesNotExistException]: domain.product.ProductDoesNotExistException
 19-Dec-2016 17:48 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-domain.repositories.productRepository.ProductDoesNotExistException
+domain.product.ProductDoesNotExistException
 	at webservice.endpoints.ProductEndpoint.getProduct(ProductEndpoint.java:42)
 	at webservice.endpoints.ProductEndpoint$$FastClassBySpringCGLIB$$12235c47.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
@@ -10797,7 +10797,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 19-Dec-2016 17:48 [DEBUG]: Looking up endpoint for [{http://www.productRequestResponse.endpointRequestResponse.webService}GetProductRequest]
-19-Dec-2016 17:48 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.repositories.EntityDoesNotExistException]
+19-Dec-2016 17:48 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.EntityDoesNotExistException]
 19-Dec-2016 17:48 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@18e8d651]
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@5e4e6c9d] supports [class webservice.endpointrequestresponse.productrequestresponse.GetProductRequest]
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@6ebce7c9] supports [class webservice.endpointrequestresponse.productrequestresponse.GetProductRequest]
@@ -10808,7 +10808,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@7f02dfd9] supports [class webservice.endpointrequestresponse.productrequestresponse.GetProductRequest]
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@15b660b4] supports [class webservice.endpointrequestresponse.productrequestresponse.GetProductRequest]
 19-Dec-2016 17:48 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.productrequestresponse.GetProductRequest@78714462]
-19-Dec-2016 17:48 [TRACE]: Invoking [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.repositories.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.productrequestresponse.GetProductRequest@78714462]
+19-Dec-2016 17:48 [TRACE]: Invoking [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.productrequestresponse.GetProductRequest@78714462]
 19-Dec-2016 17:48 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
 19-Dec-2016 17:48 [DEBUG]: Creating new transaction with name [webservice.endpoints.ProductEndpoint.getProduct]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
 19-Dec-2016 17:48 [TRACE]: Opened session at timestamp: 14821625305
@@ -10841,8 +10841,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:48 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@56517ead]
 19-Dec-2016 17:48 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 19-Dec-2016 17:48 [TRACE]: Initializing non-lazy collections
-19-Dec-2016 17:48 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.getProduct] after exception: domain.repositories.productRepository.ProductDoesNotExistException
-19-Dec-2016 17:48 [TRACE]: Applying rules to determine whether transaction should rollback on domain.repositories.productRepository.ProductDoesNotExistException
+19-Dec-2016 17:48 [TRACE]: Completing transaction for [webservice.endpoints.ProductEndpoint.getProduct] after exception: domain.product.ProductDoesNotExistException
+19-Dec-2016 17:48 [TRACE]: Applying rules to determine whether transaction should rollback on domain.product.ProductDoesNotExistException
 19-Dec-2016 17:48 [TRACE]: Winning rollback rule is: null
 19-Dec-2016 17:48 [TRACE]: No relevant rollback rule found: applying default rules
 19-Dec-2016 17:48 [TRACE]: Triggering beforeCommit synchronization
@@ -10869,11 +10869,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:48 [DEBUG]: Released JDBC connection
 19-Dec-2016 17:48 [TRACE]: Logical connection closed
 19-Dec-2016 17:48 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-19-Dec-2016 17:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.repositories.EntityDoesNotExistException]: domain.repositories.productRepository.ProductDoesNotExistException
+19-Dec-2016 17:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.EntityDoesNotExistException]: domain.product.ProductDoesNotExistException
 19-Dec-2016 17:48 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
-19-Dec-2016 17:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.repositories.EntityDoesNotExistException]: domain.repositories.productRepository.ProductDoesNotExistException
+19-Dec-2016 17:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.EntityDoesNotExistException]: domain.product.ProductDoesNotExistException
 19-Dec-2016 17:48 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
-domain.repositories.productRepository.ProductDoesNotExistException
+domain.product.ProductDoesNotExistException
 	at webservice.endpoints.ProductEndpoint.getProduct(ProductEndpoint.java:42)
 	at webservice.endpoints.ProductEndpoint$$FastClassBySpringCGLIB$$12235c47.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
@@ -10974,7 +10974,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 19-Dec-2016 17:48 [DEBUG]: Looking up endpoint for [{http://www.productRequestResponse.endpointRequestResponse.webService}CreateProductRequest]
-19-Dec-2016 17:48 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.repositories.EntityAlreadyExistException]
+19-Dec-2016 17:48 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.EntityAlreadyExistException]
 19-Dec-2016 17:48 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@18e8d651]
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@5e4e6c9d] supports [class webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest]
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@6ebce7c9] supports [class webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest]
@@ -10985,7 +10985,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@7f02dfd9] supports [class webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest]
 19-Dec-2016 17:48 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@15b660b4] supports [class webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest]
 19-Dec-2016 17:48 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest@65616864]
-19-Dec-2016 17:48 [TRACE]: Invoking [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.repositories.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest@65616864]
+19-Dec-2016 17:48 [TRACE]: Invoking [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest@65616864]
 19-Dec-2016 17:48 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
 19-Dec-2016 17:48 [DEBUG]: Creating new transaction with name [webservice.endpoints.ProductEndpoint.createProduct]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 19-Dec-2016 17:48 [TRACE]: Opened session at timestamp: 14821625360
@@ -11115,7 +11115,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:48 [DEBUG]: Releasing JDBC connection
 19-Dec-2016 17:48 [DEBUG]: Released JDBC connection
 19-Dec-2016 17:48 [TRACE]: Logical connection closed
-19-Dec-2016 17:48 [TRACE]: Method [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.repositories.EntityAlreadyExistException] returned [null]
+19-Dec-2016 17:48 [TRACE]: Method [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.EntityAlreadyExistException] returned [null]
 19-Dec-2016 17:48 [DEBUG]: MessageDispatcher with name 'spring-ws' sends no response for request [SaajSoapMessage {http://www.productRequestResponse.endpointRequestResponse.webService}CreateProductRequest]
 19-Dec-2016 17:48 [TRACE]: Cleared thread-bound request context: weblogic.servlet.internal.ServletRequestImpl@5f4a1347[
 POST /basecourse/product-web-service HTTP/1.1
@@ -11149,7 +11149,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 19-Dec-2016 17:49 [DEBUG]: Looking up endpoint for [{http://www.orderRequestResponse.endpointRequestResponse.webService}GetAllCustomersOrdersRequest]
-19-Dec-2016 17:49 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.repositories.EntityDoesNotExistException]
+19-Dec-2016 17:49 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.EntityDoesNotExistException]
 19-Dec-2016 17:49 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@18e8d651]
 19-Dec-2016 17:49 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@5e4e6c9d] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest]
 19-Dec-2016 17:49 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@6ebce7c9] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest]
@@ -11160,7 +11160,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:49 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@7f02dfd9] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest]
 19-Dec-2016 17:49 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@15b660b4] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest]
 19-Dec-2016 17:49 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest@27b75165]
-19-Dec-2016 17:49 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.repositories.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest@27b75165]
+19-Dec-2016 17:49 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.EntityDoesNotExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest@27b75165]
 19-Dec-2016 17:49 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
 19-Dec-2016 17:49 [DEBUG]: Creating new transaction with name [webservice.endpoints.OrderEndpoint.getAllCustomersOrders]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
 19-Dec-2016 17:49 [TRACE]: Opened session at timestamp: 14821625411
@@ -11887,7 +11887,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:49 [DEBUG]: Releasing JDBC connection
 19-Dec-2016 17:49 [DEBUG]: Released JDBC connection
 19-Dec-2016 17:49 [TRACE]: Logical connection closed
-19-Dec-2016 17:49 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.repositories.EntityDoesNotExistException] returned [webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse@669393d0]
+19-Dec-2016 17:49 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.EntityDoesNotExistException] returned [webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse@669393d0]
 19-Dec-2016 17:49 [DEBUG]: Marshalling [webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse@669393d0] to response payload
 19-Dec-2016 17:49 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><ns4:GetAllCustomersOrdersResponse xmlns:ns2="http://www.order.dtos.webService/" xmlns:ns3="http://www.product.dtos.webService/" xmlns:ns4="http://www.orderRequestResponse.endpointRequestResponse.webService"><ns4:orders><ns2:billingNumber>101</ns2:billingNumber><ns2:placingDate>2016-12-12+02:00</ns2:placingDate><ns2:ordersCustomersName>Vasya</ns2:ordersCustomersName><ns2:orderItems><ns2:product><ns3:productName>Potato</ns3:productName><ns3:productUnits>kg</ns3:productUnits><ns3:productPrice>25</ns3:productPrice></ns2:product><ns2:quantity>2</ns2:quantity></ns2:orderItems><ns2:orderItems><ns2:product><ns3:productName>Milk</ns3:productName><ns3:productUnits>L</ns3:productUnits><ns3:productPrice>25</ns3:productPrice></ns2:product><ns2:quantity>5</ns2:quantity></ns2:orderItems><ns2:orderItems><ns2:product><ns3:productName>Apples</ns3:productName><ns3:productUnits>kg</ns3:productUnits><ns3:productPrice>7</ns3:productPrice></ns2:product><ns2:quantity>1</ns2:quantity></ns2:orderItems><ns2:orderPrice>182</ns2:orderPrice></ns4:orders><ns4:orders><ns2:billingNumber>102</ns2:billingNumber><ns2:placingDate>2016-12-12+02:00</ns2:placingDate><ns2:ordersCustomersName>Vasya</ns2:ordersCustomersName><ns2:orderItems><ns2:product><ns3:productName>Milk</ns3:productName><ns3:productUnits>L</ns3:productUnits><ns3:productPrice>25</ns3:productPrice></ns2:product><ns2:quantity>2</ns2:quantity></ns2:orderItems><ns2:orderItems><ns2:product><ns3:productName>Potato</ns3:productName><ns3:productUnits>kg</ns3:productUnits><ns3:productPrice>25</ns3:productPrice></ns2:product><ns2:quantity>5</ns2:quantity></ns2:orderItems><ns2:orderPrice>175</ns2:orderPrice></ns4:orders></ns4:GetAllCustomersOrdersResponse></env:Body></env:Envelope>] for request [<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://www.orderRequestResponse.endpointRequestResponse.webService">
    <soapenv:Header/>
@@ -11940,7 +11940,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 19-Dec-2016 17:49 [DEBUG]: Looking up endpoint for [{http://www.orderRequestResponse.endpointRequestResponse.webService}CreateOrderRequest]
-19-Dec-2016 17:49 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.repositories.EntityDoesNotExistException,domain.repositories.EntityAlreadyExistException]
+19-Dec-2016 17:49 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException]
 19-Dec-2016 17:49 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@18e8d651]
 19-Dec-2016 17:49 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@5e4e6c9d] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 19-Dec-2016 17:49 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@6ebce7c9] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
@@ -11951,7 +11951,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:49 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@7f02dfd9] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 19-Dec-2016 17:49 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@15b660b4] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 19-Dec-2016 17:49 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@73778c37]
-19-Dec-2016 17:49 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.repositories.EntityDoesNotExistException,domain.repositories.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@73778c37]
+19-Dec-2016 17:49 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@73778c37]
 19-Dec-2016 17:49 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
 19-Dec-2016 17:49 [DEBUG]: Creating new transaction with name [webservice.endpoints.OrderEndpoint.createOrder]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 19-Dec-2016 17:49 [TRACE]: Opened session at timestamp: 14821625504
@@ -12622,7 +12622,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:49 [DEBUG]: Releasing JDBC connection
 19-Dec-2016 17:49 [DEBUG]: Released JDBC connection
 19-Dec-2016 17:49 [TRACE]: Logical connection closed
-19-Dec-2016 17:49 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.repositories.EntityDoesNotExistException,domain.repositories.EntityAlreadyExistException] returned [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@3064a965]
+19-Dec-2016 17:49 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] returned [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@3064a965]
 19-Dec-2016 17:49 [DEBUG]: Marshalling [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@3064a965] to response payload
 19-Dec-2016 17:49 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><ns2:CreateOrderResponse xmlns:ns2="http://www.orderRequestResponse.endpointRequestResponse.webService"><ns2:orderPrice>850</ns2:orderPrice></ns2:CreateOrderResponse></env:Body></env:Envelope>] for request [<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://www.orderRequestResponse.endpointRequestResponse.webService" xmlns:ord1="http://www.order.dtos.webService/">
    <soapenv:Header/>
@@ -12686,7 +12686,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 19-Dec-2016 17:49 [DEBUG]: Looking up endpoint for [{http://www.orderRequestResponse.endpointRequestResponse.webService}CreateOrderRequest]
-19-Dec-2016 17:49 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.repositories.EntityDoesNotExistException,domain.repositories.EntityAlreadyExistException]
+19-Dec-2016 17:49 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException]
 19-Dec-2016 17:49 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@18e8d651]
 19-Dec-2016 17:49 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@5e4e6c9d] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 19-Dec-2016 17:49 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@6ebce7c9] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
@@ -12697,7 +12697,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:49 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@7f02dfd9] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 19-Dec-2016 17:49 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@15b660b4] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 19-Dec-2016 17:49 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@2407d8e4]
-19-Dec-2016 17:49 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.repositories.EntityDoesNotExistException,domain.repositories.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@2407d8e4]
+19-Dec-2016 17:49 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@2407d8e4]
 19-Dec-2016 17:49 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
 19-Dec-2016 17:49 [DEBUG]: Creating new transaction with name [webservice.endpoints.OrderEndpoint.createOrder]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 19-Dec-2016 17:49 [TRACE]: Opened session at timestamp: 14821625611
@@ -13367,7 +13367,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:49 [DEBUG]: Releasing JDBC connection
 19-Dec-2016 17:49 [DEBUG]: Released JDBC connection
 19-Dec-2016 17:49 [TRACE]: Logical connection closed
-19-Dec-2016 17:49 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.repositories.EntityDoesNotExistException,domain.repositories.EntityAlreadyExistException] returned [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@730cc503]
+19-Dec-2016 17:49 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] returned [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@730cc503]
 19-Dec-2016 17:49 [DEBUG]: Marshalling [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@730cc503] to response payload
 19-Dec-2016 17:49 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><ns2:CreateOrderResponse xmlns:ns2="http://www.orderRequestResponse.endpointRequestResponse.webService"><ns2:orderPrice>598</ns2:orderPrice></ns2:CreateOrderResponse></env:Body></env:Envelope>] for request [<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://www.orderRequestResponse.endpointRequestResponse.webService" xmlns:ord1="http://www.order.dtos.webService/">
    <soapenv:Header/>
@@ -13437,7 +13437,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 19-Dec-2016 17:49 [DEBUG]: Looking up endpoint for [{http://www.productRequestResponse.endpointRequestResponse.webService}CreateProductRequest]
-19-Dec-2016 17:49 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.repositories.EntityAlreadyExistException]
+19-Dec-2016 17:49 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.EntityAlreadyExistException]
 19-Dec-2016 17:49 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@18e8d651]
 19-Dec-2016 17:49 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@5e4e6c9d] supports [class webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest]
 19-Dec-2016 17:49 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@6ebce7c9] supports [class webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest]
@@ -13448,7 +13448,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:49 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@7f02dfd9] supports [class webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest]
 19-Dec-2016 17:49 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@15b660b4] supports [class webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest]
 19-Dec-2016 17:49 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest@12bfd4f6]
-19-Dec-2016 17:49 [TRACE]: Invoking [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.repositories.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest@12bfd4f6]
+19-Dec-2016 17:49 [TRACE]: Invoking [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest@12bfd4f6]
 19-Dec-2016 17:49 [DEBUG]: Returning cached instance of singleton bean 'productEndpoint'
 19-Dec-2016 17:49 [DEBUG]: Creating new transaction with name [webservice.endpoints.ProductEndpoint.createProduct]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 19-Dec-2016 17:49 [TRACE]: Opened session at timestamp: 14821625962
@@ -13578,7 +13578,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:49 [DEBUG]: Releasing JDBC connection
 19-Dec-2016 17:49 [DEBUG]: Released JDBC connection
 19-Dec-2016 17:49 [TRACE]: Logical connection closed
-19-Dec-2016 17:49 [TRACE]: Method [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.repositories.EntityAlreadyExistException] returned [null]
+19-Dec-2016 17:49 [TRACE]: Method [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.EntityAlreadyExistException] returned [null]
 19-Dec-2016 17:49 [DEBUG]: MessageDispatcher with name 'spring-ws' sends no response for request [SaajSoapMessage {http://www.productRequestResponse.endpointRequestResponse.webService}CreateProductRequest]
 19-Dec-2016 17:49 [TRACE]: Cleared thread-bound request context: weblogic.servlet.internal.ServletRequestImpl@20a05e2e[
 POST /basecourse/product-web-service HTTP/1.1
@@ -13623,7 +13623,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 19-Dec-2016 17:50 [DEBUG]: Looking up endpoint for [{http://www.orderRequestResponse.endpointRequestResponse.webService}CreateOrderRequest]
-19-Dec-2016 17:50 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.repositories.EntityDoesNotExistException,domain.repositories.EntityAlreadyExistException]
+19-Dec-2016 17:50 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@4abadda3] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException]
 19-Dec-2016 17:50 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@18e8d651]
 19-Dec-2016 17:50 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@5e4e6c9d] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 19-Dec-2016 17:50 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@6ebce7c9] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
@@ -13634,7 +13634,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:50 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@7f02dfd9] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 19-Dec-2016 17:50 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@15b660b4] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 19-Dec-2016 17:50 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@1f2c4f94]
-19-Dec-2016 17:50 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.repositories.EntityDoesNotExistException,domain.repositories.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@1f2c4f94]
+19-Dec-2016 17:50 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@1f2c4f94]
 19-Dec-2016 17:50 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
 19-Dec-2016 17:50 [DEBUG]: Creating new transaction with name [webservice.endpoints.OrderEndpoint.createOrder]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 19-Dec-2016 17:50 [TRACE]: Opened session at timestamp: 14821626010
@@ -13723,9 +13723,9 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 17:50 [DEBUG]: Released JDBC connection
 19-Dec-2016 17:50 [TRACE]: Logical connection closed
 19-Dec-2016 17:50 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-19-Dec-2016 17:50 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.repositories.EntityDoesNotExistException,domain.repositories.EntityAlreadyExistException]: java.lang.NullPointerException
+19-Dec-2016 17:50 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException]: java.lang.NullPointerException
 19-Dec-2016 17:50 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-19-Dec-2016 17:50 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.repositories.EntityDoesNotExistException,domain.repositories.EntityAlreadyExistException]: java.lang.NullPointerException
+19-Dec-2016 17:50 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException]: java.lang.NullPointerException
 19-Dec-2016 17:50 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
 java.lang.NullPointerException
 	at webservice.converters.OrderConverter.orderDTOForCreationToOrder(OrderConverter.java:44)

@@ -1,8 +1,8 @@
-package domain.repositories.productRepository;
+package domain.product;
 
 import domain.order.OrderItem;
 import domain.product.Product;
-import domain.repositories.GenericRepo;
+import domain.GenericRepo;
 
 import java.util.List;
 

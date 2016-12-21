@@ -12,11 +12,11 @@
             <value>name</value>
         </constructor-arg>
 
-        <constructor-arg type="domain.repositories.EntityAlreadyExistException">
+        <constructor-arg type="domain.EntityAlreadyExistException">
             <ref bean="CustomerAlreadyExistException"/>
         </constructor-arg>
 
-        <constructor-arg type="domain.repositories.EntityDoesNotExistException">
+        <constructor-arg type="domain.EntityDoesNotExistException">
             <ref bean="CustomerDoesNotExistException"/>
         </constructor-arg>
     </bean>
@@ -31,11 +31,11 @@
             <value>billingNumber</value>
         </constructor-arg>
 
-        <constructor-arg type="domain.repositories.EntityAlreadyExistException">
+        <constructor-arg type="domain.EntityAlreadyExistException">
             <ref bean="OrderAlreadyExistException"/>
         </constructor-arg>
 
-        <constructor-arg type="domain.repositories.EntityDoesNotExistException">
+        <constructor-arg type="domain.EntityDoesNotExistException">
             <ref bean="OrderDoesNotExistException"/>
         </constructor-arg>
     </bean>
@@ -50,11 +50,11 @@
             <value>name</value>
         </constructor-arg>
 
-        <constructor-arg type="domain.repositories.EntityAlreadyExistException">
+        <constructor-arg type="domain.EntityAlreadyExistException">
             <ref bean="ProductAlreadyExistException"/>
         </constructor-arg>
 
-        <constructor-arg type="domain.repositories.EntityDoesNotExistException">
+        <constructor-arg type="domain.EntityDoesNotExistException">
             <ref bean="ProductDoesNotExistException"/>
         </constructor-arg>
     </bean>

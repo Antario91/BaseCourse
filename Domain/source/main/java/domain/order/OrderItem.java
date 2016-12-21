@@ -2,15 +2,15 @@ package domain.order;
 
 public class OrderItem {
     private final double quantity;
-    private final long productId;
+    private final String productId;
 
     private OrderItem () {
         quantity = 0;
-        productId = 0;
+        productId = null;
     }
 
-    public OrderItem(double quantity, long productId) {
-        if (quantity <= 0 || productId <= 0){
+    public OrderItem(double quantity, String productId) {
+        if (quantity <= 0 || productId == null){
             throw new IllegalArgumentException ();
         }
         this.quantity = quantity;
@@ -21,7 +21,7 @@ public class OrderItem {
         return quantity;
     }
 
-    public long getProductId() {
+    public String getProductId() {
         return productId;
     }
 
@@ -44,7 +44,7 @@ public class OrderItem {
         long temp;
         temp = Double.doubleToLongBits(quantity);
         result = (int) (temp ^ (temp >>> 32));
-        result = 31 * result + (int) (productId ^ (productId >>> 32));
+        result = 31 * result + (productId != null ? productId.hashCode() : 0);
         return result;
     }
 }

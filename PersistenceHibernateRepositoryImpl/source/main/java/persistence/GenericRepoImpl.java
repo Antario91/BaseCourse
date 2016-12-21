@@ -2,12 +2,12 @@ package persistence;
 
 import domain.Entity;
 
-import domain.repositories.EntityAlreadyExistException;
-import domain.repositories.EntityDoesNotExistException;
+import domain.EntityAlreadyExistException;
+import domain.EntityDoesNotExistException;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Restrictions;
-import domain.repositories.GenericRepo;
+import domain.GenericRepo;
 
 /**
  * @param <V> type of Entity's business key

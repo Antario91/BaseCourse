@@ -3,12 +3,11 @@ package persistence.orderRepository;
 import domain.Entity;
 import domain.customer.Customer;
 import domain.order.Order;
-import domain.product.Product;
 import persistence.GenericRepoImpl;
-import domain.repositories.orderRepository.OrderRepo;
+import domain.order.OrderRepo;
 
-import domain.repositories.EntityAlreadyExistException;
-import domain.repositories.EntityDoesNotExistException;
+import domain.EntityAlreadyExistException;
+import domain.EntityDoesNotExistException;
 
 import org.hibernate.SessionFactory;
 

@@ -4,28 +4,30 @@ import domain.Entity;
 
 import java.util.*;
 
-public class Order extends Entity<Long> {
-    private final long billingNumber;
+public class Order extends Entity {
+    private final String billingNumber;
     private final Date placingDate;
     private List<OrderItem> orderItems;
-    private final long customerId;
+    private final String customerId;
 
     private Order() {
-        billingNumber = 0;
+        billingNumber = null;
         placingDate = null;
-        customerId = 0;
+        customerId = null;
     }
 
-    public Order(long customerId, long billingNumber) {
-        if (customerId <= 0 || billingNumber <= 0) {
-            throw new IllegalArgumentException();
-        }
-        this.billingNumber = billingNumber;
+    public Order(String customerId, OrderItem ... orderItems) throws NullCustomerIdException,
+            NullBillingNumberException,
+            NullOrderItemsException,
+            ProductInOrderIsNotUniqueException {
+        OrderService.validateIncomingDataInConstructor(customerId, orderItems);
+        this.orderItems = OrderService.ValidateAndFormOrderItems(orderItems);
+        this.billingNumber = UUID.randomUUID().toString();
         this.placingDate = new Date();
         this.customerId = customerId;
     }
 
-    public long getBillingNumber() {
+    public String getBillingNumber() {
         return billingNumber;
     }
 
@@ -37,34 +39,17 @@ public class Order extends Entity<Long> {
         return new ArrayList<OrderItem>(orderItems);
     }
 
-    public void setOrderItems(List<OrderItem> orderItems) throws ProductInOrderIsNotUniqueException {
-        if (orderItems == null) {
-            throw new IllegalArgumentException();
-        }
-        isUniqueProductsInOrder(orderItems);
-        this.orderItems = orderItems;
+    public void addOrderItems (OrderItem ... newOrderItems) throws NullNewOrderItemsException, ProductInOrderIsNotUniqueException {
+        OrderService.ValidateAndAddNewOrderItems(this.orderItems, newOrderItems);
     }
 
-    public long getCustomerId() {
+    public void deleteOrderItems () {
+        
+    }
+
+    public String getCustomerId() {
         return customerId;
     }
 
-    @Override
-    public Long getBusinessKey() {
-        return billingNumber;
-    }
 
-    private boolean isUniqueProductsInOrder(List<OrderItem> orderItems) throws ProductInOrderIsNotUniqueException {
-        Set<Long> productIds = new HashSet<Long>();
-
-        for (OrderItem currentItem : orderItems) {
-            Long currentProductId = currentItem.getProductId();
-            if (productIds.contains(currentProductId)) {
-                throw new ProductInOrderIsNotUniqueException();
-            } else {
-                productIds.add(currentProductId);
-            }
-        }
-        return true;
-    }
 }
