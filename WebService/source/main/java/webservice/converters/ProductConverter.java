@@ -4,7 +4,6 @@ package webservice.converters;
 import domain.product.exceptions.DateIntersectionInProductPriceException;
 import domain.product.Product;
 import domain.product.ProductPrice;
-import domain.EntityDoesNotExistException;
 import domain.product.exceptions.ProductDoesNotExistException;
 import domain.product.ProductRepo;
 import utils.XMLGregorianCalendarProducer.DateProducer;

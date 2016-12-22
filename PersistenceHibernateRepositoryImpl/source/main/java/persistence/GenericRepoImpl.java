@@ -2,9 +2,6 @@ package persistence;
 
 import domain.Entity;
 
-import domain.EntityAlreadyExistException;
-import domain.EntityDoesNotExistException;
-
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Restrictions;
 import domain.GenericRepo;

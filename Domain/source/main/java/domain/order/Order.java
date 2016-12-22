@@ -58,7 +58,7 @@ public class Order extends Entity {
         return customerId;
     }
 
-    public List<String> getOrdersProductsIds() throws NullOrderException {
+    public List<String> getOrdersProductsIds() {
         List<String> productIds = new ArrayList<String>();
         for (OrderItem item : orderItems) {
             productIds.add(item.getProductId());

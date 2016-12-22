@@ -6,8 +6,6 @@ import domain.product.Product;
 import persistence.GenericRepoImpl;
 
 import domain.product.ProductRepo;
-import domain.EntityAlreadyExistException;
-import domain.EntityDoesNotExistException;
 
 import org.hibernate.SessionFactory;
 

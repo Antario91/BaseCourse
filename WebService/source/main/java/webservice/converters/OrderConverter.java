@@ -8,7 +8,6 @@ import domain.order.exceptions.ProductInOrderIsNotUniqueException;
 
 import domain.product.Product;
 
-import domain.EntityDoesNotExistException;
 import domain.customer.exceptions.CustomerDoesNotExistException;
 import domain.customer.CustomerRepo;
 import domain.order.exceptions.OrderDoesNotExistException;

@@ -3,8 +3,6 @@ package webservice.endpoints;
 import domain.customer.Customer;
 import domain.order.Order;
 import domain.order.exceptions.ProductInOrderIsNotUniqueException;
-import domain.EntityAlreadyExistException;
-import domain.EntityDoesNotExistException;
 import domain.customer.exceptions.CustomerDoesNotExistException;
 import domain.order.exceptions.OrderDoesNotExistException;
 import domain.order.OrderService;

@@ -5,7 +5,7 @@ import domain.GenericRepo;
 
 import java.util.List;
 
-public interface OrderRepo extends GenericRepo<Long> {
+public interface OrderRepo extends GenericRepo<String> {
 //    Instead method below use getOrdersByCustomerId(String customerId)
 //    List<Order> getAllCustomersOrders (Customer customer);
 

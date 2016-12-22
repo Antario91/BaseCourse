@@ -2,8 +2,6 @@ package webservice.endpoints;
 
 import domain.product.exceptions.DateIntersectionInProductPriceException;
 import domain.product.Product;
-import domain.EntityAlreadyExistException;
-import domain.EntityDoesNotExistException;
 import domain.product.exceptions.ProductDoesNotExistException;
 import org.apache.log4j.Logger;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;

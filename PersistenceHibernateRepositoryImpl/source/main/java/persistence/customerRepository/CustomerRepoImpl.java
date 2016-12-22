@@ -5,9 +5,6 @@ import domain.customer.Customer;
 import domain.customer.CustomerRepo;
 import persistence.GenericRepoImpl;
 
-import domain.EntityAlreadyExistException;
-import domain.EntityDoesNotExistException;
-
 import org.hibernate.SessionFactory;
 
 import java.util.List;

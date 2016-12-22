@@ -35,7 +35,7 @@ public class Product extends Entity {
         return new ArrayList<ProductPrice>(productPrices);
     }
 
-    public void addProductPrices(ProductPrice ... newProductPrices) throws NullProductPricesException, NullNewProductPricesException, NotValidStartEffectDayException, DateIntersectionInProductPriceException {
+    public void addProductPrices(ProductPrice ... newProductPrices) throws NullProductPricesException, NotValidStartEffectDayException, DateIntersectionInProductPriceException {
         ProductService.validateNewProductPrices(newProductPrices);
         List<ProductPrice> temp = new ArrayList<ProductPrice>(productPrices);
         temp.addAll(Arrays.asList(newProductPrices));
@@ -43,7 +43,7 @@ public class Product extends Entity {
         productPrices.addAll(Arrays.asList(newProductPrices));
     }
 
-    public void deleteProductPrices(ProductPrice ... currentProductPrices) throws NullProductPricesException, NullCurrentProductPricesException {
+    public void deleteProductPrices(ProductPrice ... currentProductPrices) throws NullProductPricesException {
         ProductService.validateCurrentProductPrices(currentProductPrices);
         List<ProductPrice> tempPrices = Arrays.asList(currentProductPrices);
         productPrices.removeAll(tempPrices);

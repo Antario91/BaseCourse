@@ -8,8 +8,8 @@ package domain;
 
 //TODO Consider searchByCriteria()
 public interface GenericRepo <V> {
-    void add (Entity entity) throws EntityAlreadyExistException;
+    void add (Entity entity);
     Entity get (V id);
     void update (Entity entity);
-    void delete (V id) throws EntityDoesNotExistException;
+    void delete (Entity entity);
 }

@@ -6,9 +6,6 @@ import domain.order.Order;
 import persistence.GenericRepoImpl;
 import domain.order.OrderRepo;
 
-import domain.EntityAlreadyExistException;
-import domain.EntityDoesNotExistException;
-
 import org.hibernate.SessionFactory;
 
 import java.math.BigDecimal;
