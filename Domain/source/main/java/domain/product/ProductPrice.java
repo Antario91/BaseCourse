@@ -15,7 +15,7 @@ public class ProductPrice {
     }
 
     public ProductPrice(double price, Date startEffectDay) throws NullPriceException, NullStartEffectDayException {
-        ProductService.validateIncomingDataInProductPricesConstructor(price, startEffectDay);
+        ProductService.validateProductPricesConstructorsParams(price, startEffectDay);
         this.price = price;
         this.startEffectDay = startEffectDay;
     }

@@ -16,8 +16,9 @@ public class Product extends Entity {
     }
 
     public Product(String name, String units, ProductPrice ... productPrices) throws NullProductsNameException, NullUnitsException, NullProductPricesException, DateIntersectionInProductPriceException {
-        ProductService.validateIncomingDataInProductsConstructor(name, units, productPrices);
-        this.productPrices = ProductService.validateAndFormProductPrices(productPrices);
+        ProductService.validateProductsConstructorsParams(name, units, productPrices);
+        this.productPrices = Arrays.asList(productPrices);
+        isIntersectProductPricesEffectDays(this.productPrices);
         this.name = name;
         this.units = units;
     }
@@ -35,10 +36,66 @@ public class Product extends Entity {
     }
 
     public void addProductPrices(ProductPrice ... newProductPrices) throws NullProductPricesException, NullNewProductPricesException, NotValidStartEffectDayException, DateIntersectionInProductPriceException {
-        ProductService.validateAndAddNewProductPrices(this.productPrices, newProductPrices);
+        ProductService.validateNewProductPrices(newProductPrices);
+        List<ProductPrice> temp = new ArrayList<ProductPrice>(productPrices);
+        temp.addAll(Arrays.asList(newProductPrices));
+        isIntersectProductPricesEffectDays(temp);
+        productPrices.addAll(Arrays.asList(newProductPrices));
     }
 
     public void deleteProductPrices(ProductPrice ... currentProductPrices) throws NullProductPricesException, NullCurrentProductPricesException {
-        ProductService.validateAndDeleteCurrentProductPrices(this.productPrices, currentProductPrices);
+        ProductService.validateCurrentProductPrices(currentProductPrices);
+        List<ProductPrice> tempPrices = Arrays.asList(currentProductPrices);
+        productPrices.removeAll(tempPrices);
+    }
+
+    /**
+     * @see Product#getReverseProductPricesComparator  sort begining from latest day
+     */
+    public double getProductPrice(Date dateOfInterest) throws NoAvailableProductPriceException {
+        double price = 0.0;
+
+        List <ProductPrice> checkableProductPrices = new ArrayList<ProductPrice>(productPrices);
+        Collections.sort(checkableProductPrices, getReverseProductPricesComparator());
+
+        Iterator<ProductPrice> itr = checkableProductPrices.iterator();
+        if (itr.hasNext()) {
+            ProductPrice currentPrice = itr.next();
+            while (dateOfInterest.before(currentPrice.getStartEffectDay()) && itr.hasNext()) {
+                currentPrice = itr.next();
+                if (dateOfInterest.before(currentPrice.getStartEffectDay()) && !itr.hasNext()) {
+                    throw new NoAvailableProductPriceException();
+                }
+            }
+            price = currentPrice.getPrice();
+        }
+
+        return price;
+    }
+
+    private Comparator<ProductPrice> getReverseProductPricesComparator() {
+        return new Comparator<ProductPrice>() {
+            @Override
+            public int compare(ProductPrice o1, ProductPrice o2) {
+                if (o1.getStartEffectDay().before(o2.getStartEffectDay())) {
+                    return 1;
+                } else if (o1.getStartEffectDay().after(o2.getStartEffectDay())) {
+                    return -1;
+                }
+                return 0;
+            }
+        };
+    }
+
+    private boolean isIntersectProductPricesEffectDays(List<ProductPrice> productPrices) throws DateIntersectionInProductPriceException {
+        HashSet<Date> checkableDate = new HashSet<Date>();
+        for (ProductPrice productPrice : productPrices) {
+            if (checkableDate.contains(productPrice.getStartEffectDay())) {
+                throw new DateIntersectionInProductPriceException();
+            } else {
+                checkableDate.add(productPrice.getStartEffectDay());
+            }
+        }
+        return true;
     }
 }

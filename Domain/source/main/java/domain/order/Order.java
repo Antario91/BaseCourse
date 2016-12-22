@@ -40,16 +40,30 @@ public class Order extends Entity {
         return new ArrayList<OrderItem>(orderItems);
     }
 
-    public void addOrderItems (OrderItem ... newOrderItems) throws NullOrderItemsException, NullNewOrderItemsException, ProductInOrderIsNotUniqueException {
-        OrderService.validateAndAddNewOrderItems(this.orderItems, newOrderItems);
+    public void addOrderItems (OrderItem ... newOrderItems) throws NullOrderItemsException, ProductInOrderIsNotUniqueException {
+        OrderService.validateOrderItems(newOrderItems);
+        List<OrderItem> tempItems = new ArrayList<OrderItem>(orderItems);
+        tempItems.addAll(Arrays.asList(newOrderItems));
+        isUniqueProductsInOrder(tempItems);
+        orderItems.addAll(Arrays.asList(newOrderItems));
     }
 
-    public void deleteOrderItems(OrderItem ... currentOrderItems) throws NullOrderItemsException, NullCurrentOrderItemsException {
-        OrderService.validateAndDeleteCurrentOrderItems(this.orderItems, currentOrderItems);
+    public void deleteOrderItems(OrderItem ... currentOrderItems) throws NullOrderItemsException {
+        OrderService.validateOrderItems(currentOrderItems);
+        List<OrderItem> tempItems = Arrays.asList(currentOrderItems);
+        orderItems.removeAll(tempItems);
     }
 
     public String getCustomerId() {
         return customerId;
+    }
+
+    public List<String> getOrdersProductsIds() throws NullOrderException {
+        List<String> productIds = new ArrayList<String>();
+        for (OrderItem item : orderItems) {
+            productIds.add(item.getProductId());
+        }
+        return productIds;
     }
 
     private boolean isUniqueProductsInOrder(List<OrderItem> orderItems) throws ProductInOrderIsNotUniqueException {
