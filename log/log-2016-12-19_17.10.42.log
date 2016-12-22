@@ -573,7 +573,7 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 19-Dec-2016 17:10 [DEBUG]: Mapped collection key: id, index: LIST_INDEX, element: QUANTITY, PRODUCT_ID
 19-Dec-2016 17:10 [DEBUG]: Second pass for collection: domain.product.Product.productPrices
 19-Dec-2016 17:10 [DEBUG]: Mapped property: price -> PRODUCT_PRICE
-19-Dec-2016 17:10 [DEBUG]: Mapped property: endEffectDay -> PRODUCT_PRICE_END_EFFECT_DAY
+19-Dec-2016 17:10 [DEBUG]: Mapped property: startEffectDay -> PRODUCT_PRICE_END_EFFECT_DAY
 19-Dec-2016 17:10 [DEBUG]: Mapped collection key: id, index: LIST_INDEX, element: PRODUCT_PRICE, PRODUCT_PRICE_END_EFFECT_DAY
 19-Dec-2016 17:10 [DEBUG]: Processing native query and ResultSetMapping mappings
 19-Dec-2016 17:10 [DEBUG]: Processing association property references
@@ -827,8 +827,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 19-Dec-2016 17:11 [DEBUG]: Creating instance of bean 'CustomerAlreadyExistException'
 19-Dec-2016 17:11 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 19-Dec-2016 17:11 [DEBUG]: Eagerly caching bean 'CustomerAlreadyExistException' to allow for resolving potential circular references
-19-Dec-2016 17:11 [TRACE]: Getting BeanInfo for class [domain.customer.CustomerAlreadyExistException]
-19-Dec-2016 17:11 [TRACE]: Caching PropertyDescriptors for class [domain.customer.CustomerAlreadyExistException]
+19-Dec-2016 17:11 [TRACE]: Getting BeanInfo for class [domain.customer.exceptions.CustomerAlreadyExistException]
+19-Dec-2016 17:11 [TRACE]: Caching PropertyDescriptors for class [domain.customer.exceptions.CustomerAlreadyExistException]
 19-Dec-2016 17:11 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 19-Dec-2016 17:11 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 19-Dec-2016 17:11 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -841,8 +841,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 19-Dec-2016 17:11 [DEBUG]: Creating instance of bean 'CustomerDoesNotExistException'
 19-Dec-2016 17:11 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 19-Dec-2016 17:11 [DEBUG]: Eagerly caching bean 'CustomerDoesNotExistException' to allow for resolving potential circular references
-19-Dec-2016 17:11 [TRACE]: Getting BeanInfo for class [domain.customer.CustomerDoesNotExistException]
-19-Dec-2016 17:11 [TRACE]: Caching PropertyDescriptors for class [domain.customer.CustomerDoesNotExistException]
+19-Dec-2016 17:11 [TRACE]: Getting BeanInfo for class [domain.customer.exceptions.CustomerDoesNotExistException]
+19-Dec-2016 17:11 [TRACE]: Caching PropertyDescriptors for class [domain.customer.exceptions.CustomerDoesNotExistException]
 19-Dec-2016 17:11 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 19-Dec-2016 17:11 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 19-Dec-2016 17:11 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -855,8 +855,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 19-Dec-2016 17:11 [DEBUG]: Creating instance of bean 'OrderAlreadyExistException'
 19-Dec-2016 17:11 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 19-Dec-2016 17:11 [DEBUG]: Eagerly caching bean 'OrderAlreadyExistException' to allow for resolving potential circular references
-19-Dec-2016 17:11 [TRACE]: Getting BeanInfo for class [domain.order.OrderAlreadyExistException]
-19-Dec-2016 17:11 [TRACE]: Caching PropertyDescriptors for class [domain.order.OrderAlreadyExistException]
+19-Dec-2016 17:11 [TRACE]: Getting BeanInfo for class [domain.order.exceptions.OrderAlreadyExistException]
+19-Dec-2016 17:11 [TRACE]: Caching PropertyDescriptors for class [domain.order.exceptions.OrderAlreadyExistException]
 19-Dec-2016 17:11 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 19-Dec-2016 17:11 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 19-Dec-2016 17:11 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -869,8 +869,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 19-Dec-2016 17:11 [DEBUG]: Creating instance of bean 'OrderDoesNotExistException'
 19-Dec-2016 17:11 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 19-Dec-2016 17:11 [DEBUG]: Eagerly caching bean 'OrderDoesNotExistException' to allow for resolving potential circular references
-19-Dec-2016 17:11 [TRACE]: Getting BeanInfo for class [domain.order.OrderDoesNotExistException]
-19-Dec-2016 17:11 [TRACE]: Caching PropertyDescriptors for class [domain.order.OrderDoesNotExistException]
+19-Dec-2016 17:11 [TRACE]: Getting BeanInfo for class [domain.order.exceptions.OrderDoesNotExistException]
+19-Dec-2016 17:11 [TRACE]: Caching PropertyDescriptors for class [domain.order.exceptions.OrderDoesNotExistException]
 19-Dec-2016 17:11 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 19-Dec-2016 17:11 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 19-Dec-2016 17:11 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -883,8 +883,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 19-Dec-2016 17:11 [DEBUG]: Creating instance of bean 'ProductAlreadyExistException'
 19-Dec-2016 17:11 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 19-Dec-2016 17:11 [DEBUG]: Eagerly caching bean 'ProductAlreadyExistException' to allow for resolving potential circular references
-19-Dec-2016 17:11 [TRACE]: Getting BeanInfo for class [domain.product.ProductAlreadyExistException]
-19-Dec-2016 17:11 [TRACE]: Caching PropertyDescriptors for class [domain.product.ProductAlreadyExistException]
+19-Dec-2016 17:11 [TRACE]: Getting BeanInfo for class [domain.product.exceptions.ProductAlreadyExistException]
+19-Dec-2016 17:11 [TRACE]: Caching PropertyDescriptors for class [domain.product.exceptions.ProductAlreadyExistException]
 19-Dec-2016 17:11 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 19-Dec-2016 17:11 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 19-Dec-2016 17:11 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -897,8 +897,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 19-Dec-2016 17:11 [DEBUG]: Creating instance of bean 'ProductDoesNotExistException'
 19-Dec-2016 17:11 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 19-Dec-2016 17:11 [DEBUG]: Eagerly caching bean 'ProductDoesNotExistException' to allow for resolving potential circular references
-19-Dec-2016 17:11 [TRACE]: Getting BeanInfo for class [domain.product.ProductDoesNotExistException]
-19-Dec-2016 17:11 [TRACE]: Caching PropertyDescriptors for class [domain.product.ProductDoesNotExistException]
+19-Dec-2016 17:11 [TRACE]: Getting BeanInfo for class [domain.product.exceptions.ProductDoesNotExistException]
+19-Dec-2016 17:11 [TRACE]: Caching PropertyDescriptors for class [domain.product.exceptions.ProductDoesNotExistException]
 19-Dec-2016 17:11 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 19-Dec-2016 17:11 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 19-Dec-2016 17:11 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -1103,8 +1103,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 19-Dec-2016 17:11 [DEBUG]: Creating CGLIB proxy: target source is SingletonTargetSource for target object [webservice.endpoints.OrderEndpoint@794cd201]
 19-Dec-2016 17:11 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.orderrequestresponse.GetOrderResponse webservice.endpoints.OrderEndpoint.getOrder(webservice.endpointrequestresponse.orderrequestresponse.GetOrderRequest) throws domain.EntityDoesNotExistException
 19-Dec-2016 17:11 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.EntityDoesNotExistException
-19-Dec-2016 17:11 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException
-19-Dec-2016 17:11 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.OrderEndpoint.updateOrder(webservice.endpointrequestresponse.orderrequestresponse.UpdateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException
+19-Dec-2016 17:11 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException
+19-Dec-2016 17:11 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.OrderEndpoint.updateOrder(webservice.endpointrequestresponse.orderrequestresponse.UpdateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException
 19-Dec-2016 17:11 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.OrderEndpoint.deleteOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderRequest) throws domain.EntityDoesNotExistException
 19-Dec-2016 17:11 [DEBUG]: Found finalize() method - using NO_OVERRIDE
 19-Dec-2016 17:11 [DEBUG]: Found 'equals' method: public boolean java.lang.Object.equals(java.lang.Object)
@@ -1148,9 +1148,9 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 19-Dec-2016 17:11 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 19-Dec-2016 17:11 [DEBUG]: Creating implicit proxy for bean 'productEndpoint' with 0 common interceptors and 2 specific interceptors
 19-Dec-2016 17:11 [DEBUG]: Creating CGLIB proxy: target source is SingletonTargetSource for target object [webservice.endpoints.ProductEndpoint@55efbbd9]
-19-Dec-2016 17:11 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.EntityAlreadyExistException
+19-Dec-2016 17:11 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.exceptions.DateIntersectionInProductPriceException,domain.EntityAlreadyExistException
 19-Dec-2016 17:11 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.EntityDoesNotExistException
-19-Dec-2016 17:11 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.ProductEndpoint.updateProduct(webservice.endpointrequestresponse.productrequestresponse.UpdateProductRequest) throws domain.product.DateIntersectionInProductPriceException
+19-Dec-2016 17:11 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.ProductEndpoint.updateProduct(webservice.endpointrequestresponse.productrequestresponse.UpdateProductRequest) throws domain.product.exceptions.DateIntersectionInProductPriceException
 19-Dec-2016 17:11 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest) throws domain.EntityDoesNotExistException
 19-Dec-2016 17:11 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.productrequestresponse.GetAllProductsResponse webservice.endpoints.ProductEndpoint.getAllProducts(webservice.endpointrequestresponse.productrequestresponse.GetAllProductsRequest)
 19-Dec-2016 17:11 [DEBUG]: Found finalize() method - using NO_OVERRIDE
@@ -1221,12 +1221,12 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 19-Dec-2016 17:11 [DEBUG]: Mapped [{http://www.customerRequestResponse.endpointRequestResponse.webService}GetAllCustomersRequest] onto endpoint [public webservice.endpointrequestresponse.customerrequestresponse.GetAllCustomersResponse webservice.endpoints.CustomerEndpoint.getAllCustomers(webservice.endpointrequestresponse.customerrequestresponse.GetAllCustomersRequest)]
 19-Dec-2016 17:11 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}GetOrderRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetOrderResponse webservice.endpoints.OrderEndpoint.getOrder(webservice.endpointrequestresponse.orderrequestresponse.GetOrderRequest) throws domain.EntityDoesNotExistException]
 19-Dec-2016 17:11 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}GetAllCustomersOrdersRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.EntityDoesNotExistException]
-19-Dec-2016 17:11 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}CreateOrderRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException]
-19-Dec-2016 17:11 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}UpdateOrderRequest] onto endpoint [public void webservice.endpoints.OrderEndpoint.updateOrder(webservice.endpointrequestresponse.orderrequestresponse.UpdateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException]
+19-Dec-2016 17:11 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}CreateOrderRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException]
+19-Dec-2016 17:11 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}UpdateOrderRequest] onto endpoint [public void webservice.endpoints.OrderEndpoint.updateOrder(webservice.endpointrequestresponse.orderrequestresponse.UpdateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException]
 19-Dec-2016 17:11 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}DeleteOrderRequest] onto endpoint [public void webservice.endpoints.OrderEndpoint.deleteOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderRequest) throws domain.EntityDoesNotExistException]
-19-Dec-2016 17:11 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}CreateProductRequest] onto endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.EntityAlreadyExistException]
+19-Dec-2016 17:11 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}CreateProductRequest] onto endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.exceptions.DateIntersectionInProductPriceException,domain.EntityAlreadyExistException]
 19-Dec-2016 17:11 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}GetProductRequest] onto endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.EntityDoesNotExistException]
-19-Dec-2016 17:11 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}UpdateProductRequest] onto endpoint [public void webservice.endpoints.ProductEndpoint.updateProduct(webservice.endpointrequestresponse.productrequestresponse.UpdateProductRequest) throws domain.product.DateIntersectionInProductPriceException]
+19-Dec-2016 17:11 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}UpdateProductRequest] onto endpoint [public void webservice.endpoints.ProductEndpoint.updateProduct(webservice.endpointrequestresponse.productrequestresponse.UpdateProductRequest) throws domain.product.exceptions.DateIntersectionInProductPriceException]
 19-Dec-2016 17:11 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}DeleteProductRequest] onto endpoint [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest) throws domain.EntityDoesNotExistException]
 19-Dec-2016 17:11 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}GetAllProductsRequest] onto endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetAllProductsResponse webservice.endpoints.ProductEndpoint.getAllProducts(webservice.endpointrequestresponse.productrequestresponse.GetAllProductsRequest)]
 19-Dec-2016 17:11 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'

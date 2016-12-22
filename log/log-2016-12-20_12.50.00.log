@@ -573,7 +573,7 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 20-Dec-2016 12:50 [DEBUG]: Mapped collection key: id, index: LIST_INDEX, element: QUANTITY, PRODUCT_ID
 20-Dec-2016 12:50 [DEBUG]: Second pass for collection: domain.product.Product.productPrices
 20-Dec-2016 12:50 [DEBUG]: Mapped property: price -> PRODUCT_PRICE
-20-Dec-2016 12:50 [DEBUG]: Mapped property: endEffectDay -> PRODUCT_PRICE_END_EFFECT_DAY
+20-Dec-2016 12:50 [DEBUG]: Mapped property: startEffectDay -> PRODUCT_PRICE_END_EFFECT_DAY
 20-Dec-2016 12:50 [DEBUG]: Mapped collection key: id, index: LIST_INDEX, element: PRODUCT_PRICE, PRODUCT_PRICE_END_EFFECT_DAY
 20-Dec-2016 12:50 [DEBUG]: Processing native query and ResultSetMapping mappings
 20-Dec-2016 12:50 [DEBUG]: Processing association property references
@@ -827,8 +827,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 20-Dec-2016 12:50 [DEBUG]: Creating instance of bean 'CustomerAlreadyExistException'
 20-Dec-2016 12:50 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 20-Dec-2016 12:50 [DEBUG]: Eagerly caching bean 'CustomerAlreadyExistException' to allow for resolving potential circular references
-20-Dec-2016 12:50 [TRACE]: Getting BeanInfo for class [domain.customer.CustomerAlreadyExistException]
-20-Dec-2016 12:50 [TRACE]: Caching PropertyDescriptors for class [domain.customer.CustomerAlreadyExistException]
+20-Dec-2016 12:50 [TRACE]: Getting BeanInfo for class [domain.customer.exceptions.CustomerAlreadyExistException]
+20-Dec-2016 12:50 [TRACE]: Caching PropertyDescriptors for class [domain.customer.exceptions.CustomerAlreadyExistException]
 20-Dec-2016 12:50 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 20-Dec-2016 12:50 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 20-Dec-2016 12:50 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -841,8 +841,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 20-Dec-2016 12:50 [DEBUG]: Creating instance of bean 'CustomerDoesNotExistException'
 20-Dec-2016 12:50 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 20-Dec-2016 12:50 [DEBUG]: Eagerly caching bean 'CustomerDoesNotExistException' to allow for resolving potential circular references
-20-Dec-2016 12:50 [TRACE]: Getting BeanInfo for class [domain.customer.CustomerDoesNotExistException]
-20-Dec-2016 12:50 [TRACE]: Caching PropertyDescriptors for class [domain.customer.CustomerDoesNotExistException]
+20-Dec-2016 12:50 [TRACE]: Getting BeanInfo for class [domain.customer.exceptions.CustomerDoesNotExistException]
+20-Dec-2016 12:50 [TRACE]: Caching PropertyDescriptors for class [domain.customer.exceptions.CustomerDoesNotExistException]
 20-Dec-2016 12:50 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 20-Dec-2016 12:50 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 20-Dec-2016 12:50 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -855,8 +855,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 20-Dec-2016 12:50 [DEBUG]: Creating instance of bean 'OrderAlreadyExistException'
 20-Dec-2016 12:50 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 20-Dec-2016 12:50 [DEBUG]: Eagerly caching bean 'OrderAlreadyExistException' to allow for resolving potential circular references
-20-Dec-2016 12:50 [TRACE]: Getting BeanInfo for class [domain.order.OrderAlreadyExistException]
-20-Dec-2016 12:50 [TRACE]: Caching PropertyDescriptors for class [domain.order.OrderAlreadyExistException]
+20-Dec-2016 12:50 [TRACE]: Getting BeanInfo for class [domain.order.exceptions.OrderAlreadyExistException]
+20-Dec-2016 12:50 [TRACE]: Caching PropertyDescriptors for class [domain.order.exceptions.OrderAlreadyExistException]
 20-Dec-2016 12:50 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 20-Dec-2016 12:50 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 20-Dec-2016 12:50 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -869,8 +869,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 20-Dec-2016 12:50 [DEBUG]: Creating instance of bean 'OrderDoesNotExistException'
 20-Dec-2016 12:50 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 20-Dec-2016 12:50 [DEBUG]: Eagerly caching bean 'OrderDoesNotExistException' to allow for resolving potential circular references
-20-Dec-2016 12:50 [TRACE]: Getting BeanInfo for class [domain.order.OrderDoesNotExistException]
-20-Dec-2016 12:50 [TRACE]: Caching PropertyDescriptors for class [domain.order.OrderDoesNotExistException]
+20-Dec-2016 12:50 [TRACE]: Getting BeanInfo for class [domain.order.exceptions.OrderDoesNotExistException]
+20-Dec-2016 12:50 [TRACE]: Caching PropertyDescriptors for class [domain.order.exceptions.OrderDoesNotExistException]
 20-Dec-2016 12:50 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 20-Dec-2016 12:50 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 20-Dec-2016 12:50 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -883,8 +883,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 20-Dec-2016 12:50 [DEBUG]: Creating instance of bean 'ProductAlreadyExistException'
 20-Dec-2016 12:50 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 20-Dec-2016 12:50 [DEBUG]: Eagerly caching bean 'ProductAlreadyExistException' to allow for resolving potential circular references
-20-Dec-2016 12:50 [TRACE]: Getting BeanInfo for class [domain.product.ProductAlreadyExistException]
-20-Dec-2016 12:50 [TRACE]: Caching PropertyDescriptors for class [domain.product.ProductAlreadyExistException]
+20-Dec-2016 12:50 [TRACE]: Getting BeanInfo for class [domain.product.exceptions.ProductAlreadyExistException]
+20-Dec-2016 12:50 [TRACE]: Caching PropertyDescriptors for class [domain.product.exceptions.ProductAlreadyExistException]
 20-Dec-2016 12:50 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 20-Dec-2016 12:50 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 20-Dec-2016 12:50 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -897,8 +897,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 20-Dec-2016 12:50 [DEBUG]: Creating instance of bean 'ProductDoesNotExistException'
 20-Dec-2016 12:50 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 20-Dec-2016 12:50 [DEBUG]: Eagerly caching bean 'ProductDoesNotExistException' to allow for resolving potential circular references
-20-Dec-2016 12:50 [TRACE]: Getting BeanInfo for class [domain.product.ProductDoesNotExistException]
-20-Dec-2016 12:50 [TRACE]: Caching PropertyDescriptors for class [domain.product.ProductDoesNotExistException]
+20-Dec-2016 12:50 [TRACE]: Getting BeanInfo for class [domain.product.exceptions.ProductDoesNotExistException]
+20-Dec-2016 12:50 [TRACE]: Caching PropertyDescriptors for class [domain.product.exceptions.ProductDoesNotExistException]
 20-Dec-2016 12:50 [TRACE]: Found bean property 'cause' of type [java.lang.Throwable]
 20-Dec-2016 12:50 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 20-Dec-2016 12:50 [TRACE]: Found bean property 'localizedMessage' of type [java.lang.String]
@@ -1103,8 +1103,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 20-Dec-2016 12:50 [DEBUG]: Creating CGLIB proxy: target source is SingletonTargetSource for target object [webservice.endpoints.OrderEndpoint@6da706b0]
 20-Dec-2016 12:50 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.orderrequestresponse.GetOrderResponse webservice.endpoints.OrderEndpoint.getOrder(webservice.endpointrequestresponse.orderrequestresponse.GetOrderRequest) throws domain.EntityDoesNotExistException
 20-Dec-2016 12:50 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.EntityDoesNotExistException
-20-Dec-2016 12:50 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException
-20-Dec-2016 12:50 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.OrderEndpoint.updateOrder(webservice.endpointrequestresponse.orderrequestresponse.UpdateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException
+20-Dec-2016 12:50 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException
+20-Dec-2016 12:50 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.OrderEndpoint.updateOrder(webservice.endpointrequestresponse.orderrequestresponse.UpdateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException
 20-Dec-2016 12:50 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.OrderEndpoint.deleteOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderRequest) throws domain.EntityDoesNotExistException
 20-Dec-2016 12:50 [DEBUG]: Found finalize() method - using NO_OVERRIDE
 20-Dec-2016 12:50 [DEBUG]: Found 'equals' method: public boolean java.lang.Object.equals(java.lang.Object)
@@ -1149,9 +1149,9 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 20-Dec-2016 12:50 [DEBUG]: Creating implicit proxy for bean 'productEndpoint' with 0 common interceptors and 2 specific interceptors
 20-Dec-2016 12:50 [DEBUG]: Creating CGLIB proxy: target source is SingletonTargetSource for target object [webservice.endpoints.ProductEndpoint@70c7e52b]
 20-Dec-2016 12:50 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.productrequestresponse.GetAllProductsResponse webservice.endpoints.ProductEndpoint.getAllProducts(webservice.endpointrequestresponse.productrequestresponse.GetAllProductsRequest)
-20-Dec-2016 12:50 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.EntityAlreadyExistException
+20-Dec-2016 12:50 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.exceptions.DateIntersectionInProductPriceException,domain.EntityAlreadyExistException
 20-Dec-2016 12:50 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.EntityDoesNotExistException
-20-Dec-2016 12:50 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.ProductEndpoint.updateProduct(webservice.endpointrequestresponse.productrequestresponse.UpdateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.EntityDoesNotExistException
+20-Dec-2016 12:50 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.ProductEndpoint.updateProduct(webservice.endpointrequestresponse.productrequestresponse.UpdateProductRequest) throws domain.product.exceptions.DateIntersectionInProductPriceException,domain.EntityDoesNotExistException
 20-Dec-2016 12:50 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest) throws domain.EntityDoesNotExistException
 20-Dec-2016 12:50 [DEBUG]: Found finalize() method - using NO_OVERRIDE
 20-Dec-2016 12:50 [DEBUG]: Found 'equals' method: public boolean java.lang.Object.equals(java.lang.Object)
@@ -1221,13 +1221,13 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 20-Dec-2016 12:50 [DEBUG]: Mapped [{http://www.customerRequestResponse.endpointRequestResponse.webService}DeleteCustomerRequest] onto endpoint [public void webservice.endpoints.CustomerEndpoint.deleteCustomer(webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest) throws domain.EntityDoesNotExistException]
 20-Dec-2016 12:50 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}GetOrderRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetOrderResponse webservice.endpoints.OrderEndpoint.getOrder(webservice.endpointrequestresponse.orderrequestresponse.GetOrderRequest) throws domain.EntityDoesNotExistException]
 20-Dec-2016 12:50 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}GetAllCustomersOrdersRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.EntityDoesNotExistException]
-20-Dec-2016 12:50 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}CreateOrderRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException]
-20-Dec-2016 12:50 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}UpdateOrderRequest] onto endpoint [public void webservice.endpoints.OrderEndpoint.updateOrder(webservice.endpointrequestresponse.orderrequestresponse.UpdateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException]
+20-Dec-2016 12:50 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}CreateOrderRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException]
+20-Dec-2016 12:50 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}UpdateOrderRequest] onto endpoint [public void webservice.endpoints.OrderEndpoint.updateOrder(webservice.endpointrequestresponse.orderrequestresponse.UpdateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException]
 20-Dec-2016 12:50 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}DeleteOrderRequest] onto endpoint [public void webservice.endpoints.OrderEndpoint.deleteOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderRequest) throws domain.EntityDoesNotExistException]
 20-Dec-2016 12:50 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}GetAllProductsRequest] onto endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetAllProductsResponse webservice.endpoints.ProductEndpoint.getAllProducts(webservice.endpointrequestresponse.productrequestresponse.GetAllProductsRequest)]
-20-Dec-2016 12:50 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}CreateProductRequest] onto endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.EntityAlreadyExistException]
+20-Dec-2016 12:50 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}CreateProductRequest] onto endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.product.exceptions.DateIntersectionInProductPriceException,domain.EntityAlreadyExistException]
 20-Dec-2016 12:50 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}GetProductRequest] onto endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.EntityDoesNotExistException]
-20-Dec-2016 12:50 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}UpdateProductRequest] onto endpoint [public void webservice.endpoints.ProductEndpoint.updateProduct(webservice.endpointrequestresponse.productrequestresponse.UpdateProductRequest) throws domain.product.DateIntersectionInProductPriceException,domain.EntityDoesNotExistException]
+20-Dec-2016 12:50 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}UpdateProductRequest] onto endpoint [public void webservice.endpoints.ProductEndpoint.updateProduct(webservice.endpointrequestresponse.productrequestresponse.UpdateProductRequest) throws domain.product.exceptions.DateIntersectionInProductPriceException,domain.EntityDoesNotExistException]
 20-Dec-2016 12:50 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}DeleteProductRequest] onto endpoint [public void webservice.endpoints.ProductEndpoint.deleteProduct(webservice.endpointrequestresponse.productrequestresponse.DeleteProductRequest) throws domain.EntityDoesNotExistException]
 20-Dec-2016 12:50 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 20-Dec-2016 12:50 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
@@ -3018,7 +3018,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:50 [TRACE]: Logical connection closed
 20-Dec-2016 12:50 [TRACE]: Method [public webservice.endpointrequestresponse.productrequestresponse.GetAllProductsResponse webservice.endpoints.ProductEndpoint.getAllProducts(webservice.endpointrequestresponse.productrequestresponse.GetAllProductsRequest)] returned [webservice.endpointrequestresponse.productrequestresponse.GetAllProductsResponse@8a7b551]
 20-Dec-2016 12:50 [DEBUG]: Marshalling [webservice.endpointrequestresponse.productrequestresponse.GetAllProductsResponse@8a7b551] to response payload
-20-Dec-2016 12:50 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><ns3:GetAllProductsResponse xmlns:ns2="http://www.product.dtos.webService/" xmlns:ns3="http://www.productRequestResponse.endpointRequestResponse.webService"><ns3:product><ns2:productName>Potato</ns2:productName><ns2:productUnits>kg</ns2:productUnits><ns2:productPrices><ns2:price>10</ns2:price><ns2:endEffectDay>2013-12-31+02:00</ns2:endEffectDay></ns2:productPrices><ns2:productPrices><ns2:price>15</ns2:price><ns2:endEffectDay>2014-12-31+02:00</ns2:endEffectDay></ns2:productPrices><ns2:productPrices><ns2:price>20</ns2:price><ns2:endEffectDay>2015-12-31+02:00</ns2:endEffectDay></ns2:productPrices><ns2:productPrices><ns2:price>25</ns2:price><ns2:endEffectDay>2016-12-31+02:00</ns2:endEffectDay></ns2:productPrices></ns3:product><ns3:product><ns2:productName>Milk</ns2:productName><ns2:productUnits>L</ns2:productUnits><ns2:productPrices><ns2:price>30</ns2:price><ns2:endEffectDay>2015-12-31+02:00</ns2:endEffectDay></ns2:productPrices><ns2:productPrices><ns2:price>25</ns2:price><ns2:endEffectDay>2016-12-31+02:00</ns2:endEffectDay></ns2:productPrices></ns3:product><ns3:product><ns2:productName>Apples</ns2:productName><ns2:productUnits>kg</ns2:productUnits><ns2:productPrices><ns2:price>7</ns2:price><ns2:endEffectDay>2016-12-31+02:00</ns2:endEffectDay></ns2:productPrices></ns3:product><ns3:product><ns2:productName>Cake</ns2:productName><ns2:productUnits>kg</ns2:productUnits><ns2:productPrices><ns2:price>2</ns2:price><ns2:endEffectDay>2014-12-31+02:00</ns2:endEffectDay></ns2:productPrices><ns2:productPrices><ns2:price>3</ns2:price><ns2:endEffectDay>2015-12-31+02:00</ns2:endEffectDay></ns2:productPrices><ns2:productPrices><ns2:price>4</ns2:price><ns2:endEffectDay>2016-12-31+02:00</ns2:endEffectDay></ns2:productPrices></ns3:product><ns3:product><ns2:productName>Orange</ns2:productName><ns2:productUnits>kg</ns2:productUnits><ns2:productPrices><ns2:price>2</ns2:price><ns2:endEffectDay>2014-12-31+02:00</ns2:endEffectDay></ns2:productPrices><ns2:productPrices><ns2:price>3</ns2:price><ns2:endEffectDay>2015-12-31+02:00</ns2:endEffectDay></ns2:productPrices><ns2:productPrices><ns2:price>5</ns2:price><ns2:endEffectDay>2016-12-31+02:00</ns2:endEffectDay></ns2:productPrices><ns2:productPrices><ns2:price>4</ns2:price><ns2:endEffectDay>2017-12-31+02:00</ns2:endEffectDay></ns2:productPrices></ns3:product><ns3:product><ns2:productName>Meat</ns2:productName><ns2:productUnits>kg</ns2:productUnits><ns2:productPrices><ns2:price>25</ns2:price><ns2:endEffectDay>2014-12-31+02:00</ns2:endEffectDay></ns2:productPrices></ns3:product></ns3:GetAllProductsResponse></env:Body></env:Envelope>] for request [<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:prod="http://www.productRequestResponse.endpointRequestResponse.webService">
+20-Dec-2016 12:50 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><ns3:GetAllProductsResponse xmlns:ns2="http://www.product.dtos.webService/" xmlns:ns3="http://www.productRequestResponse.endpointRequestResponse.webService"><ns3:product><ns2:productName>Potato</ns2:productName><ns2:productUnits>kg</ns2:productUnits><ns2:productPrices><ns2:price>10</ns2:price><ns2:startEffectDay>2013-12-31+02:00</ns2:startEffectDay></ns2:productPrices><ns2:productPrices><ns2:price>15</ns2:price><ns2:startEffectDay>2014-12-31+02:00</ns2:startEffectDay></ns2:productPrices><ns2:productPrices><ns2:price>20</ns2:price><ns2:startEffectDay>2015-12-31+02:00</ns2:startEffectDay></ns2:productPrices><ns2:productPrices><ns2:price>25</ns2:price><ns2:startEffectDay>2016-12-31+02:00</ns2:startEffectDay></ns2:productPrices></ns3:product><ns3:product><ns2:productName>Milk</ns2:productName><ns2:productUnits>L</ns2:productUnits><ns2:productPrices><ns2:price>30</ns2:price><ns2:startEffectDay>2015-12-31+02:00</ns2:startEffectDay></ns2:productPrices><ns2:productPrices><ns2:price>25</ns2:price><ns2:startEffectDay>2016-12-31+02:00</ns2:startEffectDay></ns2:productPrices></ns3:product><ns3:product><ns2:productName>Apples</ns2:productName><ns2:productUnits>kg</ns2:productUnits><ns2:productPrices><ns2:price>7</ns2:price><ns2:startEffectDay>2016-12-31+02:00</ns2:startEffectDay></ns2:productPrices></ns3:product><ns3:product><ns2:productName>Cake</ns2:productName><ns2:productUnits>kg</ns2:productUnits><ns2:productPrices><ns2:price>2</ns2:price><ns2:startEffectDay>2014-12-31+02:00</ns2:startEffectDay></ns2:productPrices><ns2:productPrices><ns2:price>3</ns2:price><ns2:startEffectDay>2015-12-31+02:00</ns2:startEffectDay></ns2:productPrices><ns2:productPrices><ns2:price>4</ns2:price><ns2:startEffectDay>2016-12-31+02:00</ns2:startEffectDay></ns2:productPrices></ns3:product><ns3:product><ns2:productName>Orange</ns2:productName><ns2:productUnits>kg</ns2:productUnits><ns2:productPrices><ns2:price>2</ns2:price><ns2:startEffectDay>2014-12-31+02:00</ns2:startEffectDay></ns2:productPrices><ns2:productPrices><ns2:price>3</ns2:price><ns2:startEffectDay>2015-12-31+02:00</ns2:startEffectDay></ns2:productPrices><ns2:productPrices><ns2:price>5</ns2:price><ns2:startEffectDay>2016-12-31+02:00</ns2:startEffectDay></ns2:productPrices><ns2:productPrices><ns2:price>4</ns2:price><ns2:startEffectDay>2017-12-31+02:00</ns2:startEffectDay></ns2:productPrices></ns3:product><ns3:product><ns2:productName>Meat</ns2:productName><ns2:productUnits>kg</ns2:productUnits><ns2:productPrices><ns2:price>25</ns2:price><ns2:startEffectDay>2014-12-31+02:00</ns2:startEffectDay></ns2:productPrices></ns3:product></ns3:GetAllProductsResponse></env:Body></env:Envelope>] for request [<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:prod="http://www.productRequestResponse.endpointRequestResponse.webService">
    <soapenv:Header/>
    <soapenv:Body>
       <prod:GetAllProductsRequest/>
@@ -3067,7 +3067,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 20-Dec-2016 12:50 [DEBUG]: Looking up endpoint for [{http://www.orderRequestResponse.endpointRequestResponse.webService}CreateOrderRequest]
-20-Dec-2016 12:50 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@53744222] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException]
+20-Dec-2016 12:50 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@53744222] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException]
 20-Dec-2016 12:50 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@a36851f]
 20-Dec-2016 12:50 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@15dbb76] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 20-Dec-2016 12:50 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@30be40ad] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
@@ -3078,7 +3078,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:50 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@26e24c48] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 20-Dec-2016 12:50 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@52fe1ee9] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 20-Dec-2016 12:50 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@2533eb05]
-20-Dec-2016 12:50 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@2533eb05]
+20-Dec-2016 12:50 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@2533eb05]
 20-Dec-2016 12:50 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
 20-Dec-2016 12:50 [DEBUG]: Creating new transaction with name [webservice.endpoints.OrderEndpoint.createOrder]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 20-Dec-2016 12:50 [TRACE]: Opened session at timestamp: 14822310489
@@ -3205,7 +3205,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:50 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
 20-Dec-2016 12:50 [DEBUG]: Listing entities:
 20-Dec-2016 12:50 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:50 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:50 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
 20-Dec-2016 12:50 [TRACE]: Don't need to execute flush
 20-Dec-2016 12:50 [DEBUG]: select this_.ID as ID1_3_0_, this_.PRODUCT_NAME as PRODUCT_2_3_0_, this_.PRODUCT_UNITS as PRODUCT_3_3_0_ from testhiber.PRODUCT this_ where this_.PRODUCT_NAME=?
 20-Dec-2016 12:50 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@7921dcac]
@@ -3291,8 +3291,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:50 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 2 collections
 20-Dec-2016 12:50 [DEBUG]: Listing entities:
 20-Dec-2016 12:50 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:50 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
-20-Dec-2016 12:50 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:50 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:50 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:50 [TRACE]: Don't need to execute flush
 20-Dec-2016 12:50 [DEBUG]: SELECT billing_number_generator.NEXTVAL FROM dual
 20-Dec-2016 12:50 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@35e780a]
@@ -3322,8 +3322,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:50 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 2 collections
 20-Dec-2016 12:50 [DEBUG]: Listing entities:
 20-Dec-2016 12:50 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:50 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
-20-Dec-2016 12:50 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:50 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:50 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:50 [TRACE]: Don't need to execute flush
 20-Dec-2016 12:50 [DEBUG]: select this_.ID as ID1_2_0_, this_.BILLING_NUMBER as BILLING_2_2_0_, this_.PLACING_DATE as PLACING_3_2_0_, this_.CUSTOMER_ID as CUSTOMER4_2_0_ from testhiber.ORDER_TABLES this_ where this_.BILLING_NUMBER=?
 20-Dec-2016 12:50 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@4dcaef1c]
@@ -3372,8 +3372,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:50 [DEBUG]: Flushed: 1 (re)creations, 0 updates, 0 removals to 3 collections
 20-Dec-2016 12:50 [DEBUG]: Listing entities:
 20-Dec-2016 12:50 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:50 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
-20-Dec-2016 12:50 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:50 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:50 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:50 [DEBUG]: domain.order.Order{id=8, customerId=3, orderItems=[component[quantity,productId]{quantity=3.5, productId=6}, component[quantity,productId]{quantity=3.0, productId=3}], billingNumber=108, placingDate=Tue Dec 20 12:50:48 EET 2016}
 20-Dec-2016 12:50 [DEBUG]: Changes must be flushed to space: testhiber.ORDER_TABLES
 20-Dec-2016 12:50 [TRACE]: Need to execute flush
@@ -3460,8 +3460,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:50 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 3 collections
 20-Dec-2016 12:50 [DEBUG]: Listing entities:
 20-Dec-2016 12:50 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:50 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
-20-Dec-2016 12:50 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:50 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:50 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:50 [DEBUG]: domain.order.Order{id=8, customerId=3, orderItems=[component[quantity,productId]{quantity=3.5, productId=6}, component[quantity,productId]{quantity=3.0, productId=3}], billingNumber=108, placingDate=Tue Dec 20 12:50:48 EET 2016}
 20-Dec-2016 12:50 [TRACE]: Executing flush
 20-Dec-2016 12:50 [TRACE]: Starting after statement execution processing [ON_CLOSE]
@@ -3484,7 +3484,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:50 [DEBUG]: Releasing JDBC connection
 20-Dec-2016 12:50 [DEBUG]: Released JDBC connection
 20-Dec-2016 12:50 [TRACE]: Logical connection closed
-20-Dec-2016 12:50 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] returned [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@24cd3f3a]
+20-Dec-2016 12:50 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] returned [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@24cd3f3a]
 20-Dec-2016 12:50 [DEBUG]: Marshalling [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@24cd3f3a] to response payload
 20-Dec-2016 12:50 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><ns2:CreateOrderResponse xmlns:ns2="http://www.orderRequestResponse.endpointRequestResponse.webService"><ns2:orderPrice>108</ns2:orderPrice></ns2:CreateOrderResponse></env:Body></env:Envelope>] for request [<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://www.orderRequestResponse.endpointRequestResponse.webService" xmlns:ord1="http://www.order.dtos.webService/">
    <soapenv:Header/>
@@ -3548,7 +3548,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 20-Dec-2016 12:51 [DEBUG]: Looking up endpoint for [{http://www.orderRequestResponse.endpointRequestResponse.webService}CreateOrderRequest]
-20-Dec-2016 12:51 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@53744222] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException]
+20-Dec-2016 12:51 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@53744222] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException]
 20-Dec-2016 12:51 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@a36851f]
 20-Dec-2016 12:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@15dbb76] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 20-Dec-2016 12:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@30be40ad] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
@@ -3559,7 +3559,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@26e24c48] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 20-Dec-2016 12:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@52fe1ee9] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 20-Dec-2016 12:51 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@26ba4eb8]
-20-Dec-2016 12:51 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@26ba4eb8]
+20-Dec-2016 12:51 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@26ba4eb8]
 20-Dec-2016 12:51 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
 20-Dec-2016 12:51 [DEBUG]: Creating new transaction with name [webservice.endpoints.OrderEndpoint.createOrder]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 20-Dec-2016 12:51 [TRACE]: Opened session at timestamp: 14822310627
@@ -3686,7 +3686,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:51 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
 20-Dec-2016 12:51 [DEBUG]: Listing entities:
 20-Dec-2016 12:51 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
 20-Dec-2016 12:51 [TRACE]: Don't need to execute flush
 20-Dec-2016 12:51 [DEBUG]: select this_.ID as ID1_3_0_, this_.PRODUCT_NAME as PRODUCT_2_3_0_, this_.PRODUCT_UNITS as PRODUCT_3_3_0_ from testhiber.PRODUCT this_ where this_.PRODUCT_NAME=?
 20-Dec-2016 12:51 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@423afe2a]
@@ -3771,8 +3771,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:51 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 2 collections
 20-Dec-2016 12:51 [DEBUG]: Listing entities:
 20-Dec-2016 12:51 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
-20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:51 [TRACE]: Don't need to execute flush
 20-Dec-2016 12:51 [DEBUG]: SELECT billing_number_generator.NEXTVAL FROM dual
 20-Dec-2016 12:51 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@6dffcd26]
@@ -3802,8 +3802,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:51 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 2 collections
 20-Dec-2016 12:51 [DEBUG]: Listing entities:
 20-Dec-2016 12:51 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
-20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:51 [TRACE]: Don't need to execute flush
 20-Dec-2016 12:51 [DEBUG]: select this_.ID as ID1_2_0_, this_.BILLING_NUMBER as BILLING_2_2_0_, this_.PLACING_DATE as PLACING_3_2_0_, this_.CUSTOMER_ID as CUSTOMER4_2_0_ from testhiber.ORDER_TABLES this_ where this_.BILLING_NUMBER=?
 20-Dec-2016 12:51 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@54f21f54]
@@ -3852,9 +3852,9 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:51 [DEBUG]: Flushed: 1 (re)creations, 0 updates, 0 removals to 3 collections
 20-Dec-2016 12:51 [DEBUG]: Listing entities:
 20-Dec-2016 12:51 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
 20-Dec-2016 12:51 [DEBUG]: domain.order.Order{id=9, customerId=3, orderItems=[component[quantity,productId]{quantity=3.4, productId=6}, component[quantity,productId]{quantity=3.0, productId=3}], billingNumber=109, placingDate=Tue Dec 20 12:51:02 EET 2016}
-20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:51 [DEBUG]: Changes must be flushed to space: testhiber.ORDER_TABLES
 20-Dec-2016 12:51 [TRACE]: Need to execute flush
 20-Dec-2016 12:51 [TRACE]: Executing flush
@@ -3938,9 +3938,9 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:51 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 3 collections
 20-Dec-2016 12:51 [DEBUG]: Listing entities:
 20-Dec-2016 12:51 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
 20-Dec-2016 12:51 [DEBUG]: domain.order.Order{id=9, customerId=3, orderItems=[component[quantity,productId]{quantity=3.4, productId=6}, component[quantity,productId]{quantity=3.0, productId=3}], billingNumber=109, placingDate=Tue Dec 20 12:51:02 EET 2016}
-20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:51 [TRACE]: Executing flush
 20-Dec-2016 12:51 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 20-Dec-2016 12:51 [TRACE]: Post flush
@@ -3962,7 +3962,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:51 [DEBUG]: Releasing JDBC connection
 20-Dec-2016 12:51 [DEBUG]: Released JDBC connection
 20-Dec-2016 12:51 [TRACE]: Logical connection closed
-20-Dec-2016 12:51 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] returned [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@bdd6a16]
+20-Dec-2016 12:51 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] returned [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@bdd6a16]
 20-Dec-2016 12:51 [DEBUG]: Marshalling [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@bdd6a16] to response payload
 20-Dec-2016 12:51 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><ns2:CreateOrderResponse xmlns:ns2="http://www.orderRequestResponse.endpointRequestResponse.webService"><ns2:orderPrice>106</ns2:orderPrice></ns2:CreateOrderResponse></env:Body></env:Envelope>] for request [<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://www.orderRequestResponse.endpointRequestResponse.webService" xmlns:ord1="http://www.order.dtos.webService/">
    <soapenv:Header/>
@@ -4026,7 +4026,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 20-Dec-2016 12:51 [DEBUG]: Looking up endpoint for [{http://www.orderRequestResponse.endpointRequestResponse.webService}CreateOrderRequest]
-20-Dec-2016 12:51 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@53744222] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException]
+20-Dec-2016 12:51 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@53744222] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException]
 20-Dec-2016 12:51 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@a36851f]
 20-Dec-2016 12:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@15dbb76] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 20-Dec-2016 12:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@30be40ad] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
@@ -4037,7 +4037,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@26e24c48] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 20-Dec-2016 12:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@52fe1ee9] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 20-Dec-2016 12:51 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@656d639c]
-20-Dec-2016 12:51 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@656d639c]
+20-Dec-2016 12:51 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@656d639c]
 20-Dec-2016 12:51 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
 20-Dec-2016 12:51 [DEBUG]: Creating new transaction with name [webservice.endpoints.OrderEndpoint.createOrder]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 20-Dec-2016 12:51 [TRACE]: Opened session at timestamp: 14822310667
@@ -4164,7 +4164,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:51 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
 20-Dec-2016 12:51 [DEBUG]: Listing entities:
 20-Dec-2016 12:51 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
 20-Dec-2016 12:51 [TRACE]: Don't need to execute flush
 20-Dec-2016 12:51 [DEBUG]: select this_.ID as ID1_3_0_, this_.PRODUCT_NAME as PRODUCT_2_3_0_, this_.PRODUCT_UNITS as PRODUCT_3_3_0_ from testhiber.PRODUCT this_ where this_.PRODUCT_NAME=?
 20-Dec-2016 12:51 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@4d7456ab]
@@ -4249,8 +4249,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:51 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 2 collections
 20-Dec-2016 12:51 [DEBUG]: Listing entities:
 20-Dec-2016 12:51 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
-20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:51 [TRACE]: Don't need to execute flush
 20-Dec-2016 12:51 [DEBUG]: SELECT billing_number_generator.NEXTVAL FROM dual
 20-Dec-2016 12:51 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@5bef330a]
@@ -4280,8 +4280,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:51 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 2 collections
 20-Dec-2016 12:51 [DEBUG]: Listing entities:
 20-Dec-2016 12:51 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
-20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:51 [TRACE]: Don't need to execute flush
 20-Dec-2016 12:51 [DEBUG]: select this_.ID as ID1_2_0_, this_.BILLING_NUMBER as BILLING_2_2_0_, this_.PLACING_DATE as PLACING_3_2_0_, this_.CUSTOMER_ID as CUSTOMER4_2_0_ from testhiber.ORDER_TABLES this_ where this_.BILLING_NUMBER=?
 20-Dec-2016 12:51 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@25aa4de2]
@@ -4330,9 +4330,9 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:51 [DEBUG]: Flushed: 1 (re)creations, 0 updates, 0 removals to 3 collections
 20-Dec-2016 12:51 [DEBUG]: Listing entities:
 20-Dec-2016 12:51 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
 20-Dec-2016 12:51 [DEBUG]: domain.order.Order{id=10, customerId=3, orderItems=[component[quantity,productId]{quantity=3.0, productId=6}, component[quantity,productId]{quantity=3.0, productId=3}], billingNumber=110, placingDate=Tue Dec 20 12:51:06 EET 2016}
-20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:51 [DEBUG]: Changes must be flushed to space: testhiber.ORDER_TABLES
 20-Dec-2016 12:51 [TRACE]: Need to execute flush
 20-Dec-2016 12:51 [TRACE]: Executing flush
@@ -4416,9 +4416,9 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:51 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 3 collections
 20-Dec-2016 12:51 [DEBUG]: Listing entities:
 20-Dec-2016 12:51 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
 20-Dec-2016 12:51 [DEBUG]: domain.order.Order{id=10, customerId=3, orderItems=[component[quantity,productId]{quantity=3.0, productId=6}, component[quantity,productId]{quantity=3.0, productId=3}], billingNumber=110, placingDate=Tue Dec 20 12:51:06 EET 2016}
-20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:51 [TRACE]: Executing flush
 20-Dec-2016 12:51 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 20-Dec-2016 12:51 [TRACE]: Post flush
@@ -4440,7 +4440,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:51 [DEBUG]: Releasing JDBC connection
 20-Dec-2016 12:51 [DEBUG]: Released JDBC connection
 20-Dec-2016 12:51 [TRACE]: Logical connection closed
-20-Dec-2016 12:51 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] returned [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@559e7258]
+20-Dec-2016 12:51 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] returned [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@559e7258]
 20-Dec-2016 12:51 [DEBUG]: Marshalling [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@559e7258] to response payload
 20-Dec-2016 12:51 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><ns2:CreateOrderResponse xmlns:ns2="http://www.orderRequestResponse.endpointRequestResponse.webService"><ns2:orderPrice>96</ns2:orderPrice></ns2:CreateOrderResponse></env:Body></env:Envelope>] for request [<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://www.orderRequestResponse.endpointRequestResponse.webService" xmlns:ord1="http://www.order.dtos.webService/">
    <soapenv:Header/>
@@ -4504,7 +4504,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 20-Dec-2016 12:51 [DEBUG]: Looking up endpoint for [{http://www.orderRequestResponse.endpointRequestResponse.webService}CreateOrderRequest]
-20-Dec-2016 12:51 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@53744222] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException]
+20-Dec-2016 12:51 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@53744222] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException]
 20-Dec-2016 12:51 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@a36851f]
 20-Dec-2016 12:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@15dbb76] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 20-Dec-2016 12:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@30be40ad] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
@@ -4515,7 +4515,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@26e24c48] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 20-Dec-2016 12:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@52fe1ee9] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 20-Dec-2016 12:51 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@7921b0d8]
-20-Dec-2016 12:51 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@7921b0d8]
+20-Dec-2016 12:51 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@7921b0d8]
 20-Dec-2016 12:51 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
 20-Dec-2016 12:51 [DEBUG]: Creating new transaction with name [webservice.endpoints.OrderEndpoint.createOrder]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 20-Dec-2016 12:51 [TRACE]: Opened session at timestamp: 14822311100
@@ -4642,7 +4642,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:51 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
 20-Dec-2016 12:51 [DEBUG]: Listing entities:
 20-Dec-2016 12:51 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
 20-Dec-2016 12:51 [TRACE]: Don't need to execute flush
 20-Dec-2016 12:51 [DEBUG]: select this_.ID as ID1_3_0_, this_.PRODUCT_NAME as PRODUCT_2_3_0_, this_.PRODUCT_UNITS as PRODUCT_3_3_0_ from testhiber.PRODUCT this_ where this_.PRODUCT_NAME=?
 20-Dec-2016 12:51 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@2f731def]
@@ -4727,8 +4727,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:51 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 2 collections
 20-Dec-2016 12:51 [DEBUG]: Listing entities:
 20-Dec-2016 12:51 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
-20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:51 [TRACE]: Don't need to execute flush
 20-Dec-2016 12:51 [DEBUG]: SELECT billing_number_generator.NEXTVAL FROM dual
 20-Dec-2016 12:51 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@514659e6]
@@ -4758,8 +4758,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:51 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 2 collections
 20-Dec-2016 12:51 [DEBUG]: Listing entities:
 20-Dec-2016 12:51 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
-20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:51 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:51 [TRACE]: Don't need to execute flush
 20-Dec-2016 12:51 [DEBUG]: select this_.ID as ID1_2_0_, this_.BILLING_NUMBER as BILLING_2_2_0_, this_.PLACING_DATE as PLACING_3_2_0_, this_.CUSTOMER_ID as CUSTOMER4_2_0_ from testhiber.ORDER_TABLES this_ where this_.BILLING_NUMBER=?
 20-Dec-2016 12:51 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@69dc1fb7]
@@ -4809,8 +4809,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:52 [DEBUG]: Listing entities:
 20-Dec-2016 12:52 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
 20-Dec-2016 12:52 [DEBUG]: domain.order.Order{id=11, customerId=3, orderItems=[component[quantity,productId]{quantity=3.0, productId=6}, component[quantity,productId]{quantity=3.0, productId=3}], billingNumber=111, placingDate=Tue Dec 20 12:51:50 EET 2016}
-20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
-20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:52 [DEBUG]: Changes must be flushed to space: testhiber.ORDER_TABLES
 20-Dec-2016 12:52 [TRACE]: Need to execute flush
 20-Dec-2016 12:52 [TRACE]: Executing flush
@@ -4922,7 +4922,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:52 [TRACE]: Scheduling collection removes/(re)creates/updates
 20-Dec-2016 12:52 [DEBUG]: Looking up endpoint for [{http://www.orderRequestResponse.endpointRequestResponse.webService}CreateOrderRequest]
 20-Dec-2016 12:52 [DEBUG]: Flushed: 0 insertions, 0 updates, 0 deletions to 4 objects
-20-Dec-2016 12:52 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@53744222] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException]
+20-Dec-2016 12:52 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@53744222] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException]
 20-Dec-2016 12:52 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 3 collections
 20-Dec-2016 12:52 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@a36851f]
 20-Dec-2016 12:52 [DEBUG]: Listing entities:
@@ -4931,9 +4931,9 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:52 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@30be40ad] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 20-Dec-2016 12:52 [DEBUG]: domain.order.Order{id=11, customerId=3, orderItems=[component[quantity,productId]{quantity=3.0, productId=6}, component[quantity,productId]{quantity=3.0, productId=3}], billingNumber=111, placingDate=Tue Dec 20 12:51:50 EET 2016}
 20-Dec-2016 12:52 [TRACE]: Testing if argument resolver [org.springframework.ws.soap.server.endpoint.adapter.method.SoapMethodArgumentResolver@6ceadf59] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
-20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
 20-Dec-2016 12:52 [TRACE]: Testing if argument resolver [org.springframework.ws.soap.server.endpoint.adapter.method.SoapHeaderElementMethodArgumentResolver@2fed83ec] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
-20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:52 [TRACE]: Executing flush
 20-Dec-2016 12:52 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.DomPayloadMethodProcessor@12701389] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 20-Dec-2016 12:52 [TRACE]: Starting after statement execution processing [ON_CLOSE]
@@ -4958,11 +4958,11 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:52 [TRACE]: Closing logical connection
 20-Dec-2016 12:52 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@10983a61]
 20-Dec-2016 12:52 [DEBUG]: Releasing JDBC connection
-20-Dec-2016 12:52 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@10983a61]
+20-Dec-2016 12:52 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@10983a61]
 20-Dec-2016 12:52 [DEBUG]: Released JDBC connection
 20-Dec-2016 12:52 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
 20-Dec-2016 12:52 [TRACE]: Logical connection closed
-20-Dec-2016 12:52 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] returned [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@23a40e]
+20-Dec-2016 12:52 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] returned [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@23a40e]
 20-Dec-2016 12:52 [DEBUG]: Marshalling [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@23a40e] to response payload
 20-Dec-2016 12:52 [DEBUG]: Creating new transaction with name [webservice.endpoints.OrderEndpoint.createOrder]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 20-Dec-2016 12:52 [TRACE]: Opened session at timestamp: 14822311401
@@ -5149,7 +5149,7 @@ Caused by: javax.xml.soap.SOAPException: Error attempting to save SOAPPart. java
 20-Dec-2016 12:52 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
 20-Dec-2016 12:52 [DEBUG]: Listing entities:
 20-Dec-2016 12:52 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
 20-Dec-2016 12:52 [TRACE]: Don't need to execute flush
 20-Dec-2016 12:52 [DEBUG]: select this_.ID as ID1_3_0_, this_.PRODUCT_NAME as PRODUCT_2_3_0_, this_.PRODUCT_UNITS as PRODUCT_3_3_0_ from testhiber.PRODUCT this_ where this_.PRODUCT_NAME=?
 20-Dec-2016 12:52 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@5c8f7f73]
@@ -5234,8 +5234,8 @@ Caused by: javax.xml.soap.SOAPException: Error attempting to save SOAPPart. java
 20-Dec-2016 12:52 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 2 collections
 20-Dec-2016 12:52 [DEBUG]: Listing entities:
 20-Dec-2016 12:52 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
-20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:52 [TRACE]: Don't need to execute flush
 20-Dec-2016 12:52 [DEBUG]: SELECT billing_number_generator.NEXTVAL FROM dual
 20-Dec-2016 12:52 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@6d20ec1b]
@@ -5265,8 +5265,8 @@ Caused by: javax.xml.soap.SOAPException: Error attempting to save SOAPPart. java
 20-Dec-2016 12:52 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 2 collections
 20-Dec-2016 12:52 [DEBUG]: Listing entities:
 20-Dec-2016 12:52 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
-20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:52 [TRACE]: Don't need to execute flush
 20-Dec-2016 12:52 [DEBUG]: select this_.ID as ID1_2_0_, this_.BILLING_NUMBER as BILLING_2_2_0_, this_.PLACING_DATE as PLACING_3_2_0_, this_.CUSTOMER_ID as CUSTOMER4_2_0_ from testhiber.ORDER_TABLES this_ where this_.BILLING_NUMBER=?
 20-Dec-2016 12:52 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@594c9066]
@@ -5315,9 +5315,9 @@ Caused by: javax.xml.soap.SOAPException: Error attempting to save SOAPPart. java
 20-Dec-2016 12:52 [DEBUG]: Flushed: 1 (re)creations, 0 updates, 0 removals to 3 collections
 20-Dec-2016 12:52 [DEBUG]: Listing entities:
 20-Dec-2016 12:52 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
 20-Dec-2016 12:52 [DEBUG]: domain.order.Order{id=12, customerId=3, orderItems=[component[quantity,productId]{quantity=3.3, productId=6}, component[quantity,productId]{quantity=3.0, productId=3}], billingNumber=112, placingDate=Tue Dec 20 12:52:20 EET 2016}
-20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:52 [DEBUG]: Changes must be flushed to space: testhiber.ORDER_TABLES
 20-Dec-2016 12:52 [TRACE]: Need to execute flush
 20-Dec-2016 12:52 [TRACE]: Executing flush
@@ -5401,9 +5401,9 @@ Caused by: javax.xml.soap.SOAPException: Error attempting to save SOAPPart. java
 20-Dec-2016 12:52 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 3 collections
 20-Dec-2016 12:52 [DEBUG]: Listing entities:
 20-Dec-2016 12:52 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
 20-Dec-2016 12:52 [DEBUG]: domain.order.Order{id=12, customerId=3, orderItems=[component[quantity,productId]{quantity=3.3, productId=6}, component[quantity,productId]{quantity=3.0, productId=3}], billingNumber=112, placingDate=Tue Dec 20 12:52:20 EET 2016}
-20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:52 [TRACE]: Executing flush
 20-Dec-2016 12:52 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 20-Dec-2016 12:52 [TRACE]: Post flush
@@ -5425,7 +5425,7 @@ Caused by: javax.xml.soap.SOAPException: Error attempting to save SOAPPart. java
 20-Dec-2016 12:52 [DEBUG]: Releasing JDBC connection
 20-Dec-2016 12:52 [DEBUG]: Released JDBC connection
 20-Dec-2016 12:52 [TRACE]: Logical connection closed
-20-Dec-2016 12:52 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] returned [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@2bc4560a]
+20-Dec-2016 12:52 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] returned [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@2bc4560a]
 20-Dec-2016 12:52 [DEBUG]: Marshalling [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@2bc4560a] to response payload
 20-Dec-2016 12:52 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><ns2:CreateOrderResponse xmlns:ns2="http://www.orderRequestResponse.endpointRequestResponse.webService"><ns2:orderPrice>103</ns2:orderPrice></ns2:CreateOrderResponse></env:Body></env:Envelope>] for request [<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://www.orderRequestResponse.endpointRequestResponse.webService" xmlns:ord1="http://www.order.dtos.webService/">
    <soapenv:Header/>
@@ -5489,7 +5489,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 20-Dec-2016 12:52 [DEBUG]: Looking up endpoint for [{http://www.orderRequestResponse.endpointRequestResponse.webService}CreateOrderRequest]
-20-Dec-2016 12:52 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@53744222] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException]
+20-Dec-2016 12:52 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@53744222] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException]
 20-Dec-2016 12:52 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@a36851f]
 20-Dec-2016 12:52 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@15dbb76] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 20-Dec-2016 12:52 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@30be40ad] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
@@ -5500,7 +5500,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:52 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@26e24c48] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 20-Dec-2016 12:52 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@52fe1ee9] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 20-Dec-2016 12:52 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@6573b4ce]
-20-Dec-2016 12:52 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@6573b4ce]
+20-Dec-2016 12:52 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@6573b4ce]
 20-Dec-2016 12:52 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
 20-Dec-2016 12:52 [DEBUG]: Creating new transaction with name [webservice.endpoints.OrderEndpoint.createOrder]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 20-Dec-2016 12:52 [TRACE]: Opened session at timestamp: 14822311447
@@ -5627,7 +5627,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:52 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
 20-Dec-2016 12:52 [DEBUG]: Listing entities:
 20-Dec-2016 12:52 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
 20-Dec-2016 12:52 [TRACE]: Don't need to execute flush
 20-Dec-2016 12:52 [DEBUG]: select this_.ID as ID1_3_0_, this_.PRODUCT_NAME as PRODUCT_2_3_0_, this_.PRODUCT_UNITS as PRODUCT_3_3_0_ from testhiber.PRODUCT this_ where this_.PRODUCT_NAME=?
 20-Dec-2016 12:52 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@9921360]
@@ -5712,8 +5712,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:52 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 2 collections
 20-Dec-2016 12:52 [DEBUG]: Listing entities:
 20-Dec-2016 12:52 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
-20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:52 [TRACE]: Don't need to execute flush
 20-Dec-2016 12:52 [DEBUG]: SELECT billing_number_generator.NEXTVAL FROM dual
 20-Dec-2016 12:52 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@3cfcde5a]
@@ -5743,8 +5743,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:52 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 2 collections
 20-Dec-2016 12:52 [DEBUG]: Listing entities:
 20-Dec-2016 12:52 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
-20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:52 [TRACE]: Don't need to execute flush
 20-Dec-2016 12:52 [DEBUG]: select this_.ID as ID1_2_0_, this_.BILLING_NUMBER as BILLING_2_2_0_, this_.PLACING_DATE as PLACING_3_2_0_, this_.CUSTOMER_ID as CUSTOMER4_2_0_ from testhiber.ORDER_TABLES this_ where this_.BILLING_NUMBER=?
 20-Dec-2016 12:52 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@78281cee]
@@ -5794,8 +5794,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:52 [DEBUG]: Listing entities:
 20-Dec-2016 12:52 [DEBUG]: domain.order.Order{id=13, customerId=3, orderItems=[component[quantity,productId]{quantity=3.3, productId=6}, component[quantity,productId]{quantity=3.0, productId=3}], billingNumber=113, placingDate=Tue Dec 20 12:52:24 EET 2016}
 20-Dec-2016 12:52 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
-20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:52 [DEBUG]: Changes must be flushed to space: testhiber.ORDER_TABLES
 20-Dec-2016 12:52 [TRACE]: Need to execute flush
 20-Dec-2016 12:52 [TRACE]: Executing flush
@@ -5880,8 +5880,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:52 [DEBUG]: Listing entities:
 20-Dec-2016 12:52 [DEBUG]: domain.order.Order{id=13, customerId=3, orderItems=[component[quantity,productId]{quantity=3.3, productId=6}, component[quantity,productId]{quantity=3.0, productId=3}], billingNumber=113, placingDate=Tue Dec 20 12:52:24 EET 2016}
 20-Dec-2016 12:52 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
-20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:52 [TRACE]: Executing flush
 20-Dec-2016 12:52 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 20-Dec-2016 12:52 [TRACE]: Post flush
@@ -5903,7 +5903,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:52 [DEBUG]: Releasing JDBC connection
 20-Dec-2016 12:52 [DEBUG]: Released JDBC connection
 20-Dec-2016 12:52 [TRACE]: Logical connection closed
-20-Dec-2016 12:52 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] returned [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@5467b273]
+20-Dec-2016 12:52 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] returned [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@5467b273]
 20-Dec-2016 12:52 [DEBUG]: Marshalling [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@5467b273] to response payload
 20-Dec-2016 12:52 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><ns2:CreateOrderResponse xmlns:ns2="http://www.orderRequestResponse.endpointRequestResponse.webService"><ns2:orderPrice>103</ns2:orderPrice></ns2:CreateOrderResponse></env:Body></env:Envelope>] for request [<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://www.orderRequestResponse.endpointRequestResponse.webService" xmlns:ord1="http://www.order.dtos.webService/">
    <soapenv:Header/>
@@ -5967,7 +5967,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 20-Dec-2016 12:52 [DEBUG]: Looking up endpoint for [{http://www.orderRequestResponse.endpointRequestResponse.webService}CreateOrderRequest]
-20-Dec-2016 12:52 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@53744222] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException]
+20-Dec-2016 12:52 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@53744222] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException]
 20-Dec-2016 12:52 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@a36851f]
 20-Dec-2016 12:52 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@15dbb76] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 20-Dec-2016 12:52 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@30be40ad] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
@@ -5978,7 +5978,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:52 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@26e24c48] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 20-Dec-2016 12:52 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@52fe1ee9] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 20-Dec-2016 12:52 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@5b4946cd]
-20-Dec-2016 12:52 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@5b4946cd]
+20-Dec-2016 12:52 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@5b4946cd]
 20-Dec-2016 12:52 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
 20-Dec-2016 12:52 [DEBUG]: Creating new transaction with name [webservice.endpoints.OrderEndpoint.createOrder]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 20-Dec-2016 12:52 [TRACE]: Opened session at timestamp: 14822311759
@@ -6105,7 +6105,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:52 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
 20-Dec-2016 12:52 [DEBUG]: Listing entities:
 20-Dec-2016 12:52 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
 20-Dec-2016 12:52 [TRACE]: Don't need to execute flush
 20-Dec-2016 12:52 [DEBUG]: select this_.ID as ID1_3_0_, this_.PRODUCT_NAME as PRODUCT_2_3_0_, this_.PRODUCT_UNITS as PRODUCT_3_3_0_ from testhiber.PRODUCT this_ where this_.PRODUCT_NAME=?
 20-Dec-2016 12:52 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@7df92e01]
@@ -6190,8 +6190,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:52 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 2 collections
 20-Dec-2016 12:52 [DEBUG]: Listing entities:
 20-Dec-2016 12:52 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
-20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:52 [TRACE]: Don't need to execute flush
 20-Dec-2016 12:52 [DEBUG]: SELECT billing_number_generator.NEXTVAL FROM dual
 20-Dec-2016 12:52 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@12438289]
@@ -6221,8 +6221,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:52 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 2 collections
 20-Dec-2016 12:52 [DEBUG]: Listing entities:
 20-Dec-2016 12:52 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
-20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:52 [TRACE]: Don't need to execute flush
 20-Dec-2016 12:52 [DEBUG]: select this_.ID as ID1_2_0_, this_.BILLING_NUMBER as BILLING_2_2_0_, this_.PLACING_DATE as PLACING_3_2_0_, this_.CUSTOMER_ID as CUSTOMER4_2_0_ from testhiber.ORDER_TABLES this_ where this_.BILLING_NUMBER=?
 20-Dec-2016 12:52 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@14a98936]
@@ -6272,8 +6272,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:52 [DEBUG]: Listing entities:
 20-Dec-2016 12:52 [DEBUG]: domain.order.Order{id=14, customerId=3, orderItems=[component[quantity,productId]{quantity=3.3, productId=6}, component[quantity,productId]{quantity=3.0, productId=3}], billingNumber=114, placingDate=Tue Dec 20 12:52:55 EET 2016}
 20-Dec-2016 12:52 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
-20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:52 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:52 [DEBUG]: Changes must be flushed to space: testhiber.ORDER_TABLES
 20-Dec-2016 12:52 [TRACE]: Need to execute flush
 20-Dec-2016 12:52 [TRACE]: Executing flush
@@ -6358,8 +6358,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:53 [DEBUG]: Listing entities:
 20-Dec-2016 12:53 [DEBUG]: domain.order.Order{id=14, customerId=3, orderItems=[component[quantity,productId]{quantity=3.3, productId=6}, component[quantity,productId]{quantity=3.0, productId=3}], billingNumber=114, placingDate=Tue Dec 20 12:52:55 EET 2016}
 20-Dec-2016 12:53 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:53 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
-20-Dec-2016 12:53 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:53 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:53 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:53 [TRACE]: Executing flush
 20-Dec-2016 12:53 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 20-Dec-2016 12:53 [TRACE]: Post flush
@@ -6381,7 +6381,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:53 [DEBUG]: Releasing JDBC connection
 20-Dec-2016 12:53 [DEBUG]: Released JDBC connection
 20-Dec-2016 12:53 [TRACE]: Logical connection closed
-20-Dec-2016 12:53 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] returned [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@16c8b5a6]
+20-Dec-2016 12:53 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] returned [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@16c8b5a6]
 20-Dec-2016 12:53 [DEBUG]: Marshalling [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@16c8b5a6] to response payload
 20-Dec-2016 12:53 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><ns2:CreateOrderResponse xmlns:ns2="http://www.orderRequestResponse.endpointRequestResponse.webService"><ns2:orderPrice>103</ns2:orderPrice></ns2:CreateOrderResponse></env:Body></env:Envelope>] for request [<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://www.orderRequestResponse.endpointRequestResponse.webService" xmlns:ord1="http://www.order.dtos.webService/">
    <soapenv:Header/>
@@ -6445,7 +6445,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 20-Dec-2016 12:53 [DEBUG]: Looking up endpoint for [{http://www.orderRequestResponse.endpointRequestResponse.webService}CreateOrderRequest]
-20-Dec-2016 12:53 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@53744222] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException]
+20-Dec-2016 12:53 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@53744222] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException]
 20-Dec-2016 12:53 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@a36851f]
 20-Dec-2016 12:53 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@15dbb76] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 20-Dec-2016 12:53 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@30be40ad] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
@@ -6456,7 +6456,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:53 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@26e24c48] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 20-Dec-2016 12:53 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@52fe1ee9] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 20-Dec-2016 12:53 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@265e65c6]
-20-Dec-2016 12:53 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@265e65c6]
+20-Dec-2016 12:53 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@265e65c6]
 20-Dec-2016 12:53 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
 20-Dec-2016 12:53 [DEBUG]: Creating new transaction with name [webservice.endpoints.OrderEndpoint.createOrder]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 20-Dec-2016 12:53 [TRACE]: Opened session at timestamp: 14822312285
@@ -6583,7 +6583,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:53 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
 20-Dec-2016 12:53 [DEBUG]: Listing entities:
 20-Dec-2016 12:53 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:53 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:53 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
 20-Dec-2016 12:53 [TRACE]: Don't need to execute flush
 20-Dec-2016 12:53 [DEBUG]: select this_.ID as ID1_3_0_, this_.PRODUCT_NAME as PRODUCT_2_3_0_, this_.PRODUCT_UNITS as PRODUCT_3_3_0_ from testhiber.PRODUCT this_ where this_.PRODUCT_NAME=?
 20-Dec-2016 12:53 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@334fa57f]
@@ -6668,8 +6668,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:53 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 2 collections
 20-Dec-2016 12:53 [DEBUG]: Listing entities:
 20-Dec-2016 12:53 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:53 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
-20-Dec-2016 12:53 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:53 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:53 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:53 [TRACE]: Don't need to execute flush
 20-Dec-2016 12:53 [DEBUG]: SELECT billing_number_generator.NEXTVAL FROM dual
 20-Dec-2016 12:53 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@543388c4]
@@ -6699,8 +6699,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:53 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 2 collections
 20-Dec-2016 12:53 [DEBUG]: Listing entities:
 20-Dec-2016 12:53 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:53 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
-20-Dec-2016 12:53 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:53 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:53 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:53 [TRACE]: Don't need to execute flush
 20-Dec-2016 12:53 [DEBUG]: select this_.ID as ID1_2_0_, this_.BILLING_NUMBER as BILLING_2_2_0_, this_.PLACING_DATE as PLACING_3_2_0_, this_.CUSTOMER_ID as CUSTOMER4_2_0_ from testhiber.ORDER_TABLES this_ where this_.BILLING_NUMBER=?
 20-Dec-2016 12:53 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@7c101300]
@@ -6749,8 +6749,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:53 [DEBUG]: Flushed: 1 (re)creations, 0 updates, 0 removals to 3 collections
 20-Dec-2016 12:53 [DEBUG]: Listing entities:
 20-Dec-2016 12:53 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:53 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
-20-Dec-2016 12:53 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:53 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:53 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:53 [DEBUG]: domain.order.Order{id=15, customerId=3, orderItems=[component[quantity,productId]{quantity=3.3, productId=6}, component[quantity,productId]{quantity=3.0, productId=3}], billingNumber=115, placingDate=Tue Dec 20 12:53:48 EET 2016}
 20-Dec-2016 12:53 [DEBUG]: Changes must be flushed to space: testhiber.ORDER_TABLES
 20-Dec-2016 12:53 [TRACE]: Need to execute flush
@@ -6835,8 +6835,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:55 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 3 collections
 20-Dec-2016 12:55 [DEBUG]: Listing entities:
 20-Dec-2016 12:55 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:55 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
-20-Dec-2016 12:55 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:55 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:55 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:55 [DEBUG]: domain.order.Order{id=15, customerId=3, orderItems=[component[quantity,productId]{quantity=3.3, productId=6}, component[quantity,productId]{quantity=3.0, productId=3}], billingNumber=115, placingDate=Tue Dec 20 12:53:48 EET 2016}
 20-Dec-2016 12:55 [TRACE]: Executing flush
 20-Dec-2016 12:55 [TRACE]: Starting after statement execution processing [ON_CLOSE]
@@ -6859,7 +6859,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:55 [DEBUG]: Releasing JDBC connection
 20-Dec-2016 12:55 [DEBUG]: Released JDBC connection
 20-Dec-2016 12:55 [TRACE]: Logical connection closed
-20-Dec-2016 12:55 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] returned [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@89bbe8c]
+20-Dec-2016 12:55 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] returned [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@89bbe8c]
 20-Dec-2016 12:55 [DEBUG]: Marshalling [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@89bbe8c] to response payload
 20-Dec-2016 12:55 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><ns2:CreateOrderResponse xmlns:ns2="http://www.orderRequestResponse.endpointRequestResponse.webService"><ns2:orderPrice>103</ns2:orderPrice></ns2:CreateOrderResponse></env:Body></env:Envelope>] for request [<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://www.orderRequestResponse.endpointRequestResponse.webService" xmlns:ord1="http://www.order.dtos.webService/">
    <soapenv:Header/>
@@ -6952,7 +6952,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 20-Dec-2016 12:55 [DEBUG]: Looking up endpoint for [{http://www.orderRequestResponse.endpointRequestResponse.webService}CreateOrderRequest]
-20-Dec-2016 12:55 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@53744222] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException]
+20-Dec-2016 12:55 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@53744222] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException]
 20-Dec-2016 12:55 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@a36851f]
 20-Dec-2016 12:55 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@15dbb76] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 20-Dec-2016 12:55 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@30be40ad] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
@@ -6963,7 +6963,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:55 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@26e24c48] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 20-Dec-2016 12:55 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@52fe1ee9] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 20-Dec-2016 12:55 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@609548c3]
-20-Dec-2016 12:55 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@609548c3]
+20-Dec-2016 12:55 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@609548c3]
 20-Dec-2016 12:55 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
 20-Dec-2016 12:55 [DEBUG]: Creating new transaction with name [webservice.endpoints.OrderEndpoint.createOrder]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 20-Dec-2016 12:55 [TRACE]: Opened session at timestamp: 14822313493
@@ -7090,7 +7090,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:55 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
 20-Dec-2016 12:55 [DEBUG]: Listing entities:
 20-Dec-2016 12:55 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:55 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:55 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
 20-Dec-2016 12:55 [TRACE]: Don't need to execute flush
 20-Dec-2016 12:55 [DEBUG]: select this_.ID as ID1_3_0_, this_.PRODUCT_NAME as PRODUCT_2_3_0_, this_.PRODUCT_UNITS as PRODUCT_3_3_0_ from testhiber.PRODUCT this_ where this_.PRODUCT_NAME=?
 20-Dec-2016 12:55 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@7215aef2]
@@ -7175,8 +7175,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:55 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 2 collections
 20-Dec-2016 12:55 [DEBUG]: Listing entities:
 20-Dec-2016 12:55 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:55 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
-20-Dec-2016 12:55 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:55 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:55 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:55 [TRACE]: Don't need to execute flush
 20-Dec-2016 12:55 [DEBUG]: SELECT billing_number_generator.NEXTVAL FROM dual
 20-Dec-2016 12:55 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@c96cb5a]
@@ -7206,8 +7206,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:55 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 2 collections
 20-Dec-2016 12:55 [DEBUG]: Listing entities:
 20-Dec-2016 12:55 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:55 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
-20-Dec-2016 12:55 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:55 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:55 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:55 [TRACE]: Don't need to execute flush
 20-Dec-2016 12:55 [DEBUG]: select this_.ID as ID1_2_0_, this_.BILLING_NUMBER as BILLING_2_2_0_, this_.PLACING_DATE as PLACING_3_2_0_, this_.CUSTOMER_ID as CUSTOMER4_2_0_ from testhiber.ORDER_TABLES this_ where this_.BILLING_NUMBER=?
 20-Dec-2016 12:55 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@234c0064]
@@ -7256,8 +7256,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:55 [DEBUG]: Flushed: 1 (re)creations, 0 updates, 0 removals to 3 collections
 20-Dec-2016 12:55 [DEBUG]: Listing entities:
 20-Dec-2016 12:55 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:55 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
-20-Dec-2016 12:55 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:55 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:55 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:55 [DEBUG]: domain.order.Order{id=16, customerId=3, orderItems=[component[quantity,productId]{quantity=3.3, productId=6}, component[quantity,productId]{quantity=3.2, productId=3}], billingNumber=116, placingDate=Tue Dec 20 12:55:49 EET 2016}
 20-Dec-2016 12:55 [DEBUG]: Changes must be flushed to space: testhiber.ORDER_TABLES
 20-Dec-2016 12:55 [TRACE]: Need to execute flush
@@ -7342,8 +7342,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:55 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 3 collections
 20-Dec-2016 12:55 [DEBUG]: Listing entities:
 20-Dec-2016 12:55 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:55 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
-20-Dec-2016 12:55 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:55 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:55 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:55 [DEBUG]: domain.order.Order{id=16, customerId=3, orderItems=[component[quantity,productId]{quantity=3.3, productId=6}, component[quantity,productId]{quantity=3.2, productId=3}], billingNumber=116, placingDate=Tue Dec 20 12:55:49 EET 2016}
 20-Dec-2016 12:55 [TRACE]: Executing flush
 20-Dec-2016 12:55 [TRACE]: Starting after statement execution processing [ON_CLOSE]
@@ -7366,7 +7366,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:55 [DEBUG]: Releasing JDBC connection
 20-Dec-2016 12:55 [DEBUG]: Released JDBC connection
 20-Dec-2016 12:55 [TRACE]: Logical connection closed
-20-Dec-2016 12:55 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] returned [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@418dad71]
+20-Dec-2016 12:55 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] returned [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@418dad71]
 20-Dec-2016 12:55 [DEBUG]: Marshalling [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@418dad71] to response payload
 20-Dec-2016 12:55 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><ns2:CreateOrderResponse xmlns:ns2="http://www.orderRequestResponse.endpointRequestResponse.webService"><ns2:orderPrice>104</ns2:orderPrice></ns2:CreateOrderResponse></env:Body></env:Envelope>] for request [<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://www.orderRequestResponse.endpointRequestResponse.webService" xmlns:ord1="http://www.order.dtos.webService/">
    <soapenv:Header/>
@@ -7430,7 +7430,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 20-Dec-2016 12:56 [DEBUG]: Looking up endpoint for [{http://www.orderRequestResponse.endpointRequestResponse.webService}CreateOrderRequest]
-20-Dec-2016 12:56 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@53744222] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException]
+20-Dec-2016 12:56 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@53744222] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException]
 20-Dec-2016 12:56 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@a36851f]
 20-Dec-2016 12:56 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@15dbb76] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 20-Dec-2016 12:56 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@30be40ad] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
@@ -7441,7 +7441,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:56 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@26e24c48] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 20-Dec-2016 12:56 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@52fe1ee9] supports [class webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest]
 20-Dec-2016 12:56 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@68f7b23c]
-20-Dec-2016 12:56 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@68f7b23c]
+20-Dec-2016 12:56 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest@68f7b23c]
 20-Dec-2016 12:56 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
 20-Dec-2016 12:56 [DEBUG]: Creating new transaction with name [webservice.endpoints.OrderEndpoint.createOrder]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 20-Dec-2016 12:56 [TRACE]: Opened session at timestamp: 14822313943
@@ -7568,7 +7568,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:56 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
 20-Dec-2016 12:56 [DEBUG]: Listing entities:
 20-Dec-2016 12:56 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:56 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:56 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
 20-Dec-2016 12:56 [TRACE]: Don't need to execute flush
 20-Dec-2016 12:56 [DEBUG]: select this_.ID as ID1_3_0_, this_.PRODUCT_NAME as PRODUCT_2_3_0_, this_.PRODUCT_UNITS as PRODUCT_3_3_0_ from testhiber.PRODUCT this_ where this_.PRODUCT_NAME=?
 20-Dec-2016 12:56 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@5092eefe]
@@ -7653,8 +7653,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:56 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 2 collections
 20-Dec-2016 12:56 [DEBUG]: Listing entities:
 20-Dec-2016 12:56 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:56 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
-20-Dec-2016 12:56 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:56 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:56 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:56 [TRACE]: Don't need to execute flush
 20-Dec-2016 12:56 [DEBUG]: SELECT billing_number_generator.NEXTVAL FROM dual
 20-Dec-2016 12:56 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@7018f3c0]
@@ -7684,8 +7684,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:56 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 2 collections
 20-Dec-2016 12:56 [DEBUG]: Listing entities:
 20-Dec-2016 12:56 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:56 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
-20-Dec-2016 12:56 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:56 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:56 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:56 [TRACE]: Don't need to execute flush
 20-Dec-2016 12:56 [DEBUG]: select this_.ID as ID1_2_0_, this_.BILLING_NUMBER as BILLING_2_2_0_, this_.PLACING_DATE as PLACING_3_2_0_, this_.CUSTOMER_ID as CUSTOMER4_2_0_ from testhiber.ORDER_TABLES this_ where this_.BILLING_NUMBER=?
 20-Dec-2016 12:56 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@5bdf2f9c]
@@ -7734,9 +7734,9 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:56 [DEBUG]: Flushed: 1 (re)creations, 0 updates, 0 removals to 3 collections
 20-Dec-2016 12:56 [DEBUG]: Listing entities:
 20-Dec-2016 12:56 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:56 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:56 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
 20-Dec-2016 12:56 [DEBUG]: domain.order.Order{id=17, customerId=3, orderItems=[component[quantity,productId]{quantity=3.3, productId=6}, component[quantity,productId]{quantity=3.2, productId=3}], billingNumber=117, placingDate=Tue Dec 20 12:56:34 EET 2016}
-20-Dec-2016 12:56 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:56 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:56 [DEBUG]: Changes must be flushed to space: testhiber.ORDER_TABLES
 20-Dec-2016 12:56 [TRACE]: Need to execute flush
 20-Dec-2016 12:56 [TRACE]: Executing flush
@@ -7820,9 +7820,9 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:56 [DEBUG]: Flushed: 0 (re)creations, 0 updates, 0 removals to 3 collections
 20-Dec-2016 12:56 [DEBUG]: Listing entities:
 20-Dec-2016 12:56 [DEBUG]: domain.customer.Customer{id=3, name=Vanya}
-20-Dec-2016 12:56 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,endEffectDay]{price=25.0, endEffectDay=2014-12-31}], units=kg}
+20-Dec-2016 12:56 [DEBUG]: domain.product.Product{id=6, name=Meat, productPrices=[component[price,startEffectDay]{price=25.0, startEffectDay=2014-12-31}], units=kg}
 20-Dec-2016 12:56 [DEBUG]: domain.order.Order{id=17, customerId=3, orderItems=[component[quantity,productId]{quantity=3.3, productId=6}, component[quantity,productId]{quantity=3.2, productId=3}], billingNumber=117, placingDate=Tue Dec 20 12:56:34 EET 2016}
-20-Dec-2016 12:56 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,endEffectDay]{price=7.0, endEffectDay=2016-12-31}], units=kg}
+20-Dec-2016 12:56 [DEBUG]: domain.product.Product{id=3, name=Apples, productPrices=[component[price,startEffectDay]{price=7.0, startEffectDay=2016-12-31}], units=kg}
 20-Dec-2016 12:56 [TRACE]: Executing flush
 20-Dec-2016 12:56 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 20-Dec-2016 12:56 [TRACE]: Post flush
@@ -7844,7 +7844,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 20-Dec-2016 12:56 [DEBUG]: Releasing JDBC connection
 20-Dec-2016 12:56 [DEBUG]: Released JDBC connection
 20-Dec-2016 12:56 [TRACE]: Logical connection closed
-20-Dec-2016 12:56 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] returned [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@79b933a5]
+20-Dec-2016 12:56 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.EntityDoesNotExistException,domain.EntityAlreadyExistException] returned [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@79b933a5]
 20-Dec-2016 12:56 [DEBUG]: Marshalling [webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse@79b933a5] to response payload
 20-Dec-2016 12:56 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><ns2:CreateOrderResponse xmlns:ns2="http://www.orderRequestResponse.endpointRequestResponse.webService"><ns2:orderPrice>104</ns2:orderPrice></ns2:CreateOrderResponse></env:Body></env:Envelope>] for request [<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://www.orderRequestResponse.endpointRequestResponse.webService" xmlns:ord1="http://www.order.dtos.webService/">
    <soapenv:Header/>

@@ -2,15 +2,14 @@ package domain;
 
 /**
  *
- * @param <V> type of Entity's business key and search criterion
+ * @param <V> type of Entity's id
  *
  */
 
 //TODO Consider searchByCriteria()
 public interface GenericRepo <V> {
-    void add (Entity<V> entity) throws EntityAlreadyExistException;
-    Entity get (V businessKeyValue);
-    Entity getById (long id);
-    void update (Entity<V> entity);
-    void delete (V businessKeyValue) throws EntityDoesNotExistException;
+    void add (Entity entity) throws EntityAlreadyExistException;
+    Entity get (V id);
+    void update (Entity entity);
+    void delete (V id) throws EntityDoesNotExistException;
 }

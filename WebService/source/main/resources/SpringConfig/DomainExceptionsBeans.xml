@@ -3,13 +3,13 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
                             http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
-    <bean id="CustomerAlreadyExistException" class="domain.customer.CustomerAlreadyExistException"/>
-    <bean id="CustomerDoesNotExistException" class="domain.customer.CustomerDoesNotExistException"/>
+    <bean id="CustomerAlreadyExistException" class="domain.customer.exceptions.CustomerAlreadyExistException"/>
+    <bean id="CustomerDoesNotExistException" class="domain.customer.exceptions.CustomerDoesNotExistException"/>
 
-    <bean id="OrderAlreadyExistException" class="domain.order.OrderAlreadyExistException"/>
-    <bean id="OrderDoesNotExistException" class="domain.order.OrderDoesNotExistException"/>
+    <bean id="OrderAlreadyExistException" class="domain.order.exceptions.OrderAlreadyExistException"/>
+    <bean id="OrderDoesNotExistException" class="domain.order.exceptions.OrderDoesNotExistException"/>
 
-    <bean id="ProductAlreadyExistException" class="domain.product.ProductAlreadyExistException"/>
-    <bean id="ProductDoesNotExistException" class="domain.product.ProductDoesNotExistException"/>
+    <bean id="ProductAlreadyExistException" class="domain.product.exceptions.ProductAlreadyExistException"/>
+    <bean id="ProductDoesNotExistException" class="domain.product.exceptions.ProductDoesNotExistException"/>
 
 </beans>

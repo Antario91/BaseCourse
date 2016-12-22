@@ -4,15 +4,15 @@ import domain.customer.Customer;
 
 import domain.order.Order;
 import domain.order.OrderItem;
-import domain.order.ProductInOrderIsNotUniqueException;
+import domain.order.exceptions.ProductInOrderIsNotUniqueException;
 
 import domain.product.Product;
 
 import domain.EntityDoesNotExistException;
-import domain.customer.CustomerDoesNotExistException;
+import domain.customer.exceptions.CustomerDoesNotExistException;
 import domain.customer.CustomerRepo;
-import domain.order.OrderDoesNotExistException;
-import domain.product.ProductDoesNotExistException;
+import domain.order.exceptions.OrderDoesNotExistException;
+import domain.product.exceptions.ProductDoesNotExistException;
 import domain.order.OrderService;
 import domain.order.OrderRepo;
 import domain.product.ProductRepo;

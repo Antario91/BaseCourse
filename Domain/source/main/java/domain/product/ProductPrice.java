@@ -1,30 +1,31 @@
 package domain.product;
 
+import domain.product.exceptions.NullPriceException;
+import domain.product.exceptions.NullStartEffectDayException;
+
 import java.util.Date;
 
 public class ProductPrice {
     private final double price;
-    private final Date endEffectDay;
+    private final Date startEffectDay;
 
     private ProductPrice () {
         price = 0;
-        endEffectDay = null;
+        startEffectDay = null;
     }
 
-    public ProductPrice(double price, Date endEffectDay) {
-        if (price <= 0 || endEffectDay == null){
-            throw new IllegalArgumentException();
-        }
+    public ProductPrice(double price, Date startEffectDay) throws NullPriceException, NullStartEffectDayException {
+        ProductService.validateIncomingDataInProductPricesConstructor(price, startEffectDay);
         this.price = price;
-        this.endEffectDay = endEffectDay;
+        this.startEffectDay = startEffectDay;
     }
 
     public double getPrice() {
         return price;
     }
 
-    public Date getEndEffectDay() {
-        return new Date(endEffectDay.getTime());
+    public Date getStartEffectDay() {
+        return new Date(startEffectDay.getTime());
     }
 
     @Override
@@ -35,7 +36,7 @@ public class ProductPrice {
         ProductPrice that = (ProductPrice) o;
 
         if (price != that.price) return false;
-        return endEffectDay.equals(that.endEffectDay);
+        return startEffectDay.equals(that.startEffectDay);
 
     }
 
@@ -45,7 +46,7 @@ public class ProductPrice {
         long temp;
         temp = Double.doubleToLongBits(price);
         result = (int) (temp ^ (temp >>> 32));
-        result = 31 * result + endEffectDay.hashCode();
+        result = 31 * result + startEffectDay.hashCode();
         return result;
     }
 }

@@ -1,4 +1,4 @@
-package domain.product;
+package domain.product.exceptions;
 
 /**
  * Created by olgo on 12-Dec-16.

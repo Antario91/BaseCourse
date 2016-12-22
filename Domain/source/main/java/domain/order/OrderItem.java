@@ -1,5 +1,7 @@
 package domain.order;
 
+import domain.order.exceptions.*;
+
 public class OrderItem {
     private final double quantity;
     private final String productId;
@@ -9,10 +11,8 @@ public class OrderItem {
         productId = null;
     }
 
-    public OrderItem(double quantity, String productId) {
-        if (quantity <= 0 || productId == null){
-            throw new IllegalArgumentException ();
-        }
+    public OrderItem(double quantity, String productId) throws NullQuantityException, NullProductIdException {
+        OrderService.validateOrderItemConstructorsParams(quantity, productId);
         this.quantity = quantity;
         this.productId = productId;
     }
@@ -25,7 +25,6 @@ public class OrderItem {
         return productId;
     }
 
-    //TODO equals() и hashcode() всё-таки надо???
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -33,8 +32,8 @@ public class OrderItem {
 
         OrderItem orderItem = (OrderItem) o;
 
-        if (quantity != orderItem.quantity) return false;
-        return productId == orderItem.productId;
+        if (Double.compare(orderItem.quantity, quantity) != 0) return false;
+        return productId.equals(orderItem.productId);
 
     }
 

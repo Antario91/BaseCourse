@@ -3,7 +3,7 @@ package webservice.endpoints;
 import domain.customer.Customer;
 import domain.EntityAlreadyExistException;
 import domain.EntityDoesNotExistException;
-import domain.customer.CustomerDoesNotExistException;
+import domain.customer.exceptions.CustomerDoesNotExistException;
 import org.apache.log4j.Logger;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;

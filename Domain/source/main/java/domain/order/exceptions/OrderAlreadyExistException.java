@@ -1,4 +1,4 @@
-package domain.order;
+package domain.order.exceptions;
 
 import domain.EntityAlreadyExistException;
 

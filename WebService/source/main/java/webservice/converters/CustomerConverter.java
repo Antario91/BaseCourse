@@ -2,7 +2,7 @@ package webservice.converters;
 
 import domain.customer.Customer;
 import domain.customer.CustomerRepo;
-import domain.customer.CustomerAlreadyExistException;
+import domain.customer.exceptions.CustomerAlreadyExistException;
 import webservice.dtos.customer.CustomerDTO;
 import webservice.dtos.customer.UpdatedCustomerDTO;
 import webservice.validators.CustomerValidator;

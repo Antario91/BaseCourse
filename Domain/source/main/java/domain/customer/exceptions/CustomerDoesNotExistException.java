@@ -1,4 +1,4 @@
-package domain.customer;
+package domain.customer.exceptions;
 
 import domain.EntityDoesNotExistException;
 

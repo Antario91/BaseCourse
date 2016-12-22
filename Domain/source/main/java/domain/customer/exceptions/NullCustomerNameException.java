@@ -1,4 +1,4 @@
-package domain.customer;
+package domain.customer.exceptions;
 
 /**
  * Created by olgo on 20-Dec-16.

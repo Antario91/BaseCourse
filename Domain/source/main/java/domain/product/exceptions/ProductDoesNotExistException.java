@@ -1,4 +1,4 @@
-package domain.product;
+package domain.product.exceptions;
 
 import domain.EntityDoesNotExistException;
 

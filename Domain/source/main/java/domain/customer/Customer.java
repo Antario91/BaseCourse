@@ -1,6 +1,7 @@
 package domain.customer;
 
 import domain.Entity;
+import domain.customer.exceptions.*;
 
 public class Customer extends Entity {
     private final String name;
@@ -10,7 +11,7 @@ public class Customer extends Entity {
     }
 
     public Customer(String name) throws NullCustomerNameException {
-        CustomerService.validateIncomingDataInConstructor(name);
+        CustomerService.validateCustomersConstructorsParams(name);
         this.name = name;
     }
 

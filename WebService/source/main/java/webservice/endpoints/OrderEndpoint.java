@@ -2,11 +2,11 @@ package webservice.endpoints;
 
 import domain.customer.Customer;
 import domain.order.Order;
-import domain.order.ProductInOrderIsNotUniqueException;
+import domain.order.exceptions.ProductInOrderIsNotUniqueException;
 import domain.EntityAlreadyExistException;
 import domain.EntityDoesNotExistException;
-import domain.customer.CustomerDoesNotExistException;
-import domain.order.OrderDoesNotExistException;
+import domain.customer.exceptions.CustomerDoesNotExistException;
+import domain.order.exceptions.OrderDoesNotExistException;
 import domain.order.OrderService;
 import org.apache.log4j.Logger;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
@@ -83,6 +83,7 @@ public class OrderEndpoint {
         if (customer == null){
             throw new CustomerDoesNotExistException();
         }
+//        Вмсето getAllCustomersOrders(customer) использовать getOrdersByCustomerId(String customerId) из OrderRepo
         List<Order> customersOrders = orderRepo.getAllCustomersOrders(customer);
 
         GetAllCustomersOrdersResponse response = new GetAllCustomersOrdersResponse();

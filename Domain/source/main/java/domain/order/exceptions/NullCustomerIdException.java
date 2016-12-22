@@ -1,4 +1,4 @@
-package domain.order;
+package domain.order.exceptions;
 
 /**
  * Created by olgo on 20-Dec-16.

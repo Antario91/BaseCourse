@@ -1,11 +1,11 @@
 package webservice.converters;
 
 
-import domain.product.DateIntersectionInProductPriceException;
+import domain.product.exceptions.DateIntersectionInProductPriceException;
 import domain.product.Product;
 import domain.product.ProductPrice;
 import domain.EntityDoesNotExistException;
-import domain.product.ProductDoesNotExistException;
+import domain.product.exceptions.ProductDoesNotExistException;
 import domain.product.ProductRepo;
 import utils.XMLGregorianCalendarProducer.DateProducer;
 import webservice.dtos.product.ProductDTO;
@@ -63,7 +63,7 @@ public class ProductConverter {
                         productPrice.getPrice()
                         ).setScale(2, RoundingMode.HALF_UP)
                 );
-                productPriceDTO.setEndEffectDay(DateProducer.produce(productPrice.getEndEffectDay()));
+                productPriceDTO.setEndEffectDay(DateProducer.produce(productPrice.getStartEffectDay()));
 
                 productDTO.getProductPrices().add(productPriceDTO);
             }
