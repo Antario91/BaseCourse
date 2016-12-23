@@ -1,7 +1,7 @@
 package domain.customer;
 
+import domain.ParamIsNullException;
 import domain.Entity;
-import domain.customer.exceptions.*;
 
 public class Customer extends Entity {
     private final String name;
@@ -10,12 +10,18 @@ public class Customer extends Entity {
         name = null;
     }
 
-    public Customer(String name) throws NullCustomerNameException {
-        CustomerServiceImpl.validateCustomersConstructorsParams(name);
+    public Customer(String name) throws ParamIsNullException {
+        validateConstructorsParams(name);
         this.name = name;
     }
 
     public String getName() {
         return name;
+    }
+
+    private void validateConstructorsParams(String name) throws ParamIsNullException {
+        if (name == null || name.isEmpty()) {
+            throw new ParamIsNullException("name");
+        }
     }
 }

@@ -1000,8 +1000,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 20-Dec-2016 12:58 [DEBUG]: Autowiring by type from bean name 'OrderService' via constructor to bean named 'OrderRepo'
 20-Dec-2016 12:58 [DEBUG]: Autowiring by type from bean name 'OrderService' via constructor to bean named 'ProductRepo'
 20-Dec-2016 12:58 [DEBUG]: Eagerly caching bean 'OrderService' to allow for resolving potential circular references
-20-Dec-2016 12:58 [TRACE]: Getting BeanInfo for class [domain.order.OrderService]
-20-Dec-2016 12:58 [TRACE]: Caching PropertyDescriptors for class [domain.order.OrderService]
+20-Dec-2016 12:58 [TRACE]: Getting BeanInfo for class [domain.order.OrderServiceImpl]
+20-Dec-2016 12:58 [TRACE]: Caching PropertyDescriptors for class [domain.order.OrderServiceImpl]
 20-Dec-2016 12:58 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 20-Dec-2016 12:58 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 20-Dec-2016 12:58 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'

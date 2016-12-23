@@ -3,6 +3,6 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
                             http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
-    <bean id="OrderService" class="domain.order.OrderService" autowire="constructor"/>
+    <bean id="OrderService" class="domain.order.OrderServiceImpl" autowire="constructor"/>
 
 </beans>

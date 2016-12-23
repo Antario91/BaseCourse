@@ -1,7 +1,6 @@
 package domain.product;
 
-import domain.product.exceptions.NullPriceException;
-import domain.product.exceptions.NullStartEffectDayException;
+import domain.ParamIsNullException;
 
 import java.util.Date;
 
@@ -14,8 +13,8 @@ public class ProductPrice {
         startEffectDay = null;
     }
 
-    public ProductPrice(double price, Date startEffectDay) throws NullPriceException, NullStartEffectDayException {
-        ProductService.validateProductPricesConstructorsParams(price, startEffectDay);
+    public ProductPrice(double price, Date startEffectDay) throws ParamIsNullException {
+        validateConstructorsParams(price, startEffectDay);
         this.price = price;
         this.startEffectDay = startEffectDay;
     }
@@ -26,6 +25,15 @@ public class ProductPrice {
 
     public Date getStartEffectDay() {
         return new Date(startEffectDay.getTime());
+    }
+
+    static void validateConstructorsParams(double price, Date startEffectDay) throws ParamIsNullException {
+        if (price <= 0){
+            throw new ParamIsNullException("price");
+        }
+        if (startEffectDay == null) {
+            throw new ParamIsNullException("startEffectDay");
+        }
     }
 
     @Override

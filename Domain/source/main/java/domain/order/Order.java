@@ -1,6 +1,7 @@
 package domain.order;
 
 import domain.Entity;
+import domain.ParamIsNullException;
 import domain.order.exceptions.*;
 
 import java.util.*;
@@ -17,10 +18,8 @@ public class Order extends Entity {
         customerId = null;
     }
 
-    public Order(String customerId, OrderItem ... orderItems) throws NullCustomerIdException,
-            NullOrderItemsException,
-            ProductInOrderIsNotUniqueException {
-        OrderService.validateOrdersConstructorsParams(customerId, orderItems);
+    public Order(String customerId, OrderItem ... orderItems) throws ParamIsNullException, ProductInOrderIsNotUniqueException {
+        validateConstructorsParams(customerId, orderItems);
         this.orderItems = Arrays.asList(orderItems);
         isUniqueProductsInOrder(this.orderItems);
         this.billingNumber = UUID.randomUUID().toString();
@@ -40,16 +39,16 @@ public class Order extends Entity {
         return new ArrayList<OrderItem>(orderItems);
     }
 
-    public void addOrderItems (OrderItem ... newOrderItems) throws NullOrderItemsException, ProductInOrderIsNotUniqueException {
-        OrderService.validateOrderItems(newOrderItems);
+    public void addOrderItems (OrderItem ... newOrderItems) throws ParamIsNullException, ProductInOrderIsNotUniqueException {
+        validateParamOrderItems(newOrderItems);
         List<OrderItem> tempItems = new ArrayList<OrderItem>(orderItems);
         tempItems.addAll(Arrays.asList(newOrderItems));
         isUniqueProductsInOrder(tempItems);
         orderItems.addAll(Arrays.asList(newOrderItems));
     }
 
-    public void deleteOrderItems(OrderItem ... currentOrderItems) throws NullOrderItemsException {
-        OrderService.validateOrderItems(currentOrderItems);
+    public void deleteOrderItems(OrderItem ... currentOrderItems) throws ParamIsNullException {
+        validateParamOrderItems(currentOrderItems);
         List<OrderItem> tempItems = Arrays.asList(currentOrderItems);
         orderItems.removeAll(tempItems);
     }
@@ -78,5 +77,18 @@ public class Order extends Entity {
             }
         }
         return true;
+    }
+
+    private void validateConstructorsParams(String customerId, OrderItem... orderItems) throws ParamIsNullException {
+        if (customerId == null || customerId.isEmpty()) {
+            throw new ParamIsNullException("customerId");
+        }
+        validateParamOrderItems(orderItems);
+    }
+
+    private void validateParamOrderItems(OrderItem... orderItems) throws ParamIsNullException {
+        if (orderItems == null) {
+            throw new ParamIsNullException("orderItems");
+        }
     }
 }

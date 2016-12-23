@@ -4,6 +4,7 @@ import domain.customer.Customer;
 
 import domain.order.Order;
 import domain.order.OrderItem;
+import domain.order.OrderServiceImpl;
 import domain.order.exceptions.ProductInOrderIsNotUniqueException;
 
 import domain.product.Product;
@@ -12,7 +13,6 @@ import domain.customer.exceptions.CustomerDoesNotExistException;
 import domain.customer.CustomerRepo;
 import domain.order.exceptions.OrderDoesNotExistException;
 import domain.product.exceptions.ProductDoesNotExistException;
-import domain.order.OrderService;
 import domain.order.OrderRepo;
 import domain.product.ProductRepo;
 import utils.XMLGregorianCalendarProducer.DateProducer;
@@ -63,14 +63,14 @@ public class OrderConverter {
     }
 
     public static OrderDTOForReception orderToOrderDTOForReception (Order order,
-                                                                    CustomerRepo customerRepo, OrderRepo orderRepo, ProductRepo productRepo, OrderService orderService) throws EntityDoesNotExistException {
+                                                                    CustomerRepo customerRepo, OrderRepo orderRepo, ProductRepo productRepo, OrderServiceImpl orderServiceImpl) throws EntityDoesNotExistException {
         if (order != null && customerRepo != null && orderRepo != null && productRepo != null) {
             OrderDTOForReception orderDTOForReception = new OrderDTOForReception();
 
             orderDTOForReception.setBillingNumber(order.getBillingNumber());
             orderDTOForReception.setPlacingDate( DateProducer.produce(order.getPlacingDate()) );
             orderDTOForReception.setOrderPrice( new BigDecimal(
-                    orderService.getOrderPrice(order.getBillingNumber())
+                    orderServiceImpl.getOrderPrice(order.getBillingNumber())
                     ).setScale(2, RoundingMode.HALF_UP)
             );
             orderDTOForReception.setOrdersCustomersName(

@@ -1,6 +1,6 @@
 package domain.order;
 
-import domain.order.exceptions.*;
+import domain.ParamIsNullException;
 
 public class OrderItem {
     private final double quantity;
@@ -11,8 +11,8 @@ public class OrderItem {
         productId = null;
     }
 
-    public OrderItem(double quantity, String productId) throws NullQuantityException, NullProductIdException {
-        OrderService.validateOrderItemConstructorsParams(quantity, productId);
+    public OrderItem(double quantity, String productId) throws ParamIsNullException {
+        validateConstructorsParams(quantity, productId);
         this.quantity = quantity;
         this.productId = productId;
     }
@@ -23,6 +23,15 @@ public class OrderItem {
 
     public String getProductId() {
         return productId;
+    }
+
+    private void validateConstructorsParams(double quantity, String productId) throws ParamIsNullException {
+        if (quantity <= 0) {
+            throw new ParamIsNullException("quantity");
+        }
+        if (productId == null || productId.isEmpty()) {
+            throw new ParamIsNullException("productId");
+        }
     }
 
     @Override

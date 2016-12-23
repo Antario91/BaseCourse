@@ -1000,8 +1000,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 19-Dec-2016 19:20 [DEBUG]: Autowiring by type from bean name 'OrderService' via constructor to bean named 'OrderRepo'
 19-Dec-2016 19:20 [DEBUG]: Autowiring by type from bean name 'OrderService' via constructor to bean named 'ProductRepo'
 19-Dec-2016 19:20 [DEBUG]: Eagerly caching bean 'OrderService' to allow for resolving potential circular references
-19-Dec-2016 19:20 [TRACE]: Getting BeanInfo for class [domain.order.OrderService]
-19-Dec-2016 19:20 [TRACE]: Caching PropertyDescriptors for class [domain.order.OrderService]
+19-Dec-2016 19:20 [TRACE]: Getting BeanInfo for class [domain.order.OrderServiceImpl]
+19-Dec-2016 19:20 [TRACE]: Caching PropertyDescriptors for class [domain.order.OrderServiceImpl]
 19-Dec-2016 19:20 [TRACE]: Found bean property 'class' of type [java.lang.Class]
 19-Dec-2016 19:20 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
 19-Dec-2016 19:20 [DEBUG]: Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
@@ -2185,7 +2185,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 19:20 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.EntityDoesNotExistException]: java.lang.NullPointerException
 19-Dec-2016 19:20 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
 java.lang.NullPointerException
-	at domain.order.OrderService.getOrderPrice(OrderService.java:30)
+	at domain.order.OrderServiceImpl.getOrderPrice(OrderService.java:30)
 	at webservice.converters.OrderConverter.orderToOrderDTOForReception(OrderConverter.java:71)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:90)
 	at webservice.endpoints.OrderEndpoint$$FastClassBySpringCGLIB$$e25b1466.invoke(<generated>)
@@ -2231,7 +2231,7 @@ java.lang.NullPointerException
 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:209)
 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:178)
 19-Dec-2016 19:20 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><env:Fault xmlns:ns0="http://schemas.xmlsoap.org/soap/envelope/"><faultcode>ns0:Server</faultcode><faultstring xml:lang="en">java.lang.NullPointerException</faultstring><detail><DESCRIPTION>java.lang.NullPointerException&#xD;
-	at domain.order.OrderService.getOrderPrice(OrderService.java:30)&#xD;
+	at domain.order.OrderServiceImpl.getOrderPrice(OrderService.java:30)&#xD;
 	at webservice.converters.OrderConverter.orderToOrderDTOForReception(OrderConverter.java:71)&#xD;
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:90)&#xD;
 	at webservice.endpoints.OrderEndpoint$$FastClassBySpringCGLIB$$e25b1466.invoke(&lt;generated&gt;)&#xD;
@@ -2774,7 +2774,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 19:20 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.EntityDoesNotExistException]: java.lang.NullPointerException
 19-Dec-2016 19:20 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
 java.lang.NullPointerException
-	at domain.order.OrderService.getOrderPrice(OrderService.java:30)
+	at domain.order.OrderServiceImpl.getOrderPrice(OrderService.java:30)
 	at webservice.converters.OrderConverter.orderToOrderDTOForReception(OrderConverter.java:71)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:90)
 	at webservice.endpoints.OrderEndpoint$$FastClassBySpringCGLIB$$e25b1466.invoke(<generated>)
@@ -2820,7 +2820,7 @@ java.lang.NullPointerException
 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:209)
 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:178)
 19-Dec-2016 19:20 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><env:Fault xmlns:ns0="http://schemas.xmlsoap.org/soap/envelope/"><faultcode>ns0:Server</faultcode><faultstring xml:lang="en">java.lang.NullPointerException</faultstring><detail><DESCRIPTION>java.lang.NullPointerException&#xD;
-	at domain.order.OrderService.getOrderPrice(OrderService.java:30)&#xD;
+	at domain.order.OrderServiceImpl.getOrderPrice(OrderService.java:30)&#xD;
 	at webservice.converters.OrderConverter.orderToOrderDTOForReception(OrderConverter.java:71)&#xD;
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:90)&#xD;
 	at webservice.endpoints.OrderEndpoint$$FastClassBySpringCGLIB$$e25b1466.invoke(&lt;generated&gt;)&#xD;
@@ -3363,7 +3363,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 19-Dec-2016 19:23 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.EntityDoesNotExistException]: java.lang.NullPointerException
 19-Dec-2016 19:23 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
 java.lang.NullPointerException
-	at domain.order.OrderService.getOrderPrice(OrderService.java:30)
+	at domain.order.OrderServiceImpl.getOrderPrice(OrderService.java:30)
 	at webservice.converters.OrderConverter.orderToOrderDTOForReception(OrderConverter.java:71)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:90)
 	at webservice.endpoints.OrderEndpoint$$FastClassBySpringCGLIB$$e25b1466.invoke(<generated>)
@@ -3409,7 +3409,7 @@ java.lang.NullPointerException
 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:209)
 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:178)
 19-Dec-2016 19:23 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><env:Fault xmlns:ns0="http://schemas.xmlsoap.org/soap/envelope/"><faultcode>ns0:Server</faultcode><faultstring xml:lang="en">java.lang.NullPointerException</faultstring><detail><DESCRIPTION>java.lang.NullPointerException&#xD;
-	at domain.order.OrderService.getOrderPrice(OrderService.java:30)&#xD;
+	at domain.order.OrderServiceImpl.getOrderPrice(OrderService.java:30)&#xD;
 	at webservice.converters.OrderConverter.orderToOrderDTOForReception(OrderConverter.java:71)&#xD;
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:90)&#xD;
 	at webservice.endpoints.OrderEndpoint$$FastClassBySpringCGLIB$$e25b1466.invoke(&lt;generated&gt;)&#xD;

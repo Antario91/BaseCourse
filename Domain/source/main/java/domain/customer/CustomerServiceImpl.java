@@ -1,5 +1,6 @@
 package domain.customer;
 
+import domain.ParamIsNullException;
 import domain.customer.exceptions.*;
 
 import java.util.List;
@@ -8,34 +9,18 @@ import java.util.List;
  * Created by olgo on 20-Dec-16.
  */
 
-public class CustomerServiceImpl {
+public class CustomerServiceImpl implements CustomerService {
     private CustomerRepo customerRepo;
 
-    public CustomerServiceImpl(CustomerRepo customerRepo) throws NullCustomerRepoException {
+    public CustomerServiceImpl(CustomerRepo customerRepo) throws ParamIsNullException {
         if (customerRepo == null) {
-            throw new NullCustomerRepoException();
+            throw new ParamIsNullException("customerRepo");
         }
         this.customerRepo = customerRepo;
     }
 
-    static void validateCustomersConstructorsParams(String name) throws NullCustomerNameException {
-        validateParamName(name);
-    }
-
-    private static void validateParamName(String name) throws NullCustomerNameException {
-        if (name == null || name.isEmpty()) {
-            throw new NullCustomerNameException();
-        }
-    }
-
-    private void validateCustomersExistence(Customer customer) throws CustomerDoesNotExistException {
-        if (customer == null) {
-            throw new CustomerDoesNotExistException();
-        }
-    }
-
     //todo check if validation before get???
-    public void createCustomer(String name) throws CustomerAlreadyExistException, NullCustomerNameException {
+    public void createCustomer(String name) throws ParamIsNullException, CustomerAlreadyExistException {
         validateParamName(name);
         Customer customer = (Customer) customerRepo.get(name);
         if (customer != null) {
@@ -44,7 +29,7 @@ public class CustomerServiceImpl {
         customerRepo.add(new Customer(name));
     }
 
-    public Customer getCustomer(String name) throws CustomerDoesNotExistException, NullCustomerNameException {
+    public Customer getCustomer(String name) throws ParamIsNullException, CustomerDoesNotExistException {
         validateParamName(name);
         Customer customer = (Customer) customerRepo.get(name);
         validateCustomersExistence(customer);
@@ -55,10 +40,22 @@ public class CustomerServiceImpl {
         return customerRepo.getAllCustomers();
     }
 
-    public void deleteCustomer (String name) throws CustomerDoesNotExistException, NullCustomerNameException {
+    public void deleteCustomer (String name) throws ParamIsNullException, CustomerDoesNotExistException {
         validateParamName(name);
         Customer customer = (Customer) customerRepo.get(name);
         validateCustomersExistence(customer);
         customerRepo.delete(customer);
+    }
+
+    private void validateParamName(String name) throws ParamIsNullException {
+        if (name == null || name.isEmpty()) {
+            throw new ParamIsNullException("name");
+        }
+    }
+
+    private void validateCustomersExistence(Customer customer) throws CustomerDoesNotExistException {
+        if (customer == null) {
+            throw new CustomerDoesNotExistException();
+        }
     }
 }

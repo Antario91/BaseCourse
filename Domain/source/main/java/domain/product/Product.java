@@ -1,6 +1,7 @@
 package domain.product;
 
 import domain.Entity;
+import domain.ParamIsNullException;
 import domain.product.exceptions.*;
 
 import java.util.*;
@@ -10,13 +11,13 @@ public class Product extends Entity {
     private final String units;
     private List<ProductPrice> productPrices;
 
-    private Product () {
+    private Product() {
         name = null;
         units = null;
     }
 
-    public Product(String name, String units, ProductPrice ... productPrices) throws NullProductsNameException, NullUnitsException, NullProductPricesException, DateIntersectionInProductPriceException {
-        ProductService.validateProductsConstructorsParams(name, units, productPrices);
+    public Product(String name, String units, ProductPrice... productPrices) throws ParamIsNullException, DateIntersectionInProductPriceException {
+        validateConstructorsParams(name, units, productPrices);
         this.productPrices = Arrays.asList(productPrices);
         isIntersectProductPricesEffectDays(this.productPrices);
         this.name = name;
@@ -35,16 +36,16 @@ public class Product extends Entity {
         return new ArrayList<ProductPrice>(productPrices);
     }
 
-    public void addProductPrices(ProductPrice ... newProductPrices) throws NullProductPricesException, NotValidStartEffectDayException, DateIntersectionInProductPriceException {
-        ProductService.validateNewProductPrices(newProductPrices);
+    public void addProductPrices(ProductPrice... newProductPrices) throws ParamIsNullException, NotValidStartEffectDayException, DateIntersectionInProductPriceException {
+        validateNewProductPrices(newProductPrices);
         List<ProductPrice> temp = new ArrayList<ProductPrice>(productPrices);
         temp.addAll(Arrays.asList(newProductPrices));
         isIntersectProductPricesEffectDays(temp);
         productPrices.addAll(Arrays.asList(newProductPrices));
     }
 
-    public void deleteProductPrices(ProductPrice ... currentProductPrices) throws NullProductPricesException {
-        ProductService.validateCurrentProductPrices(currentProductPrices);
+    public void deleteProductPrices(ProductPrice... currentProductPrices) throws ParamIsNullException {
+        validateParamProductPrices(currentProductPrices);
         List<ProductPrice> tempPrices = Arrays.asList(currentProductPrices);
         productPrices.removeAll(tempPrices);
     }
@@ -55,7 +56,7 @@ public class Product extends Entity {
     public double getProductPrice(Date dateOfInterest) throws NoAvailableProductPriceException {
         double price = 0.0;
 
-        List <ProductPrice> checkableProductPrices = new ArrayList<ProductPrice>(productPrices);
+        List<ProductPrice> checkableProductPrices = new ArrayList<ProductPrice>(productPrices);
         Collections.sort(checkableProductPrices, getReverseProductPricesComparator());
 
         Iterator<ProductPrice> itr = checkableProductPrices.iterator();
@@ -97,5 +98,30 @@ public class Product extends Entity {
             }
         }
         return true;
+    }
+
+    private void validateConstructorsParams(String name, String units, ProductPrice... productPrices) throws ParamIsNullException {
+        if (name == null) {
+            throw new ParamIsNullException("name");
+        }
+        if (units == null) {
+            throw new ParamIsNullException("units");
+        }
+        validateParamProductPrices(productPrices);
+    }
+
+    private void validateNewProductPrices(ProductPrice... productPrices) throws ParamIsNullException, NotValidStartEffectDayException{
+        validateParamProductPrices(productPrices);
+        for (ProductPrice productPrice : productPrices) {
+            if (productPrice.getStartEffectDay().before(new Date())) {
+                throw new NotValidStartEffectDayException();
+            }
+        }
+    }
+
+    private void validateParamProductPrices(ProductPrice... productPrices) throws ParamIsNullException {
+        if (productPrices == null) {
+            throw new ParamIsNullException("productPrices");
+        }
     }
 }

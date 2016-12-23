@@ -2,10 +2,10 @@ package webservice.endpoints;
 
 import domain.customer.Customer;
 import domain.order.Order;
+import domain.order.OrderServiceImpl;
 import domain.order.exceptions.ProductInOrderIsNotUniqueException;
 import domain.customer.exceptions.CustomerDoesNotExistException;
 import domain.order.exceptions.OrderDoesNotExistException;
-import domain.order.OrderService;
 import org.apache.log4j.Logger;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
@@ -30,13 +30,13 @@ public class OrderEndpoint {
     private CustomerRepo customerRepo;
     private OrderRepo orderRepo;
     private ProductRepo productRepo;
-    private OrderService orderService;
+    private OrderServiceImpl orderServiceImpl;
 
-    public OrderEndpoint(CustomerRepo customerRepo, OrderRepo orderRepo, ProductRepo productRepo, OrderService orderService) {
+    public OrderEndpoint(CustomerRepo customerRepo, OrderRepo orderRepo, ProductRepo productRepo, OrderServiceImpl orderServiceImpl) {
         this.customerRepo = customerRepo;
         this.orderRepo = orderRepo;
         this.productRepo = productRepo;
-        this.orderService = orderService;
+        this.orderServiceImpl = orderServiceImpl;
     }
 
     @PayloadRoot(localPart = "CreateOrderRequest", namespace = namespaceUri)
@@ -48,7 +48,7 @@ public class OrderEndpoint {
 
         CreateOrderResponse response = new CreateOrderResponse();
 
-        response.setOrderPrice( new BigDecimal( orderService.getOrderPrice(order.getBillingNumber()) ).setScale(2, RoundingMode.HALF_UP) );
+        response.setOrderPrice( new BigDecimal( orderServiceImpl.getOrderPrice(order.getBillingNumber()) ).setScale(2, RoundingMode.HALF_UP) );
 
         return response;
     }
@@ -67,7 +67,7 @@ public class OrderEndpoint {
                         customerRepo,
                         orderRepo,
                         productRepo,
-                        orderService
+                        orderServiceImpl
                 )
         );
 
@@ -88,7 +88,7 @@ public class OrderEndpoint {
 
         for (Order order : customersOrders){
             response.getOrders()
-                    .add( OrderConverter.orderToOrderDTOForReception(order, customerRepo, orderRepo, productRepo, orderService) );
+                    .add( OrderConverter.orderToOrderDTOForReception(order, customerRepo, orderRepo, productRepo, orderServiceImpl) );
         }
 
         return response;
