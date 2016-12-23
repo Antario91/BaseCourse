@@ -2,10 +2,12 @@ package domain.order;
 
 import domain.customer.CustomerRepo;
 import domain.customer.exceptions.CustomerDoesNotExistException;
+import domain.customer.exceptions.NullCustomerRepoException;
 import domain.order.exceptions.*;
 import domain.product.Product;
 import domain.product.ProductRepo;
 import domain.product.exceptions.NoAvailableProductPriceException;
+import domain.product.exceptions.NullProductRepoException;
 
 import java.util.*;
 
@@ -14,7 +16,16 @@ public class OrderService {
     private OrderRepo orderRepo;
     private ProductRepo productRepo;
 
-    public OrderService(CustomerRepo customerRepo, OrderRepo orderRepo, ProductRepo productRepo) {
+    public OrderService(CustomerRepo customerRepo, OrderRepo orderRepo, ProductRepo productRepo) throws NullCustomerRepoException, NullOrderRepoException, NullProductRepoException {
+        if (customerRepo == null) {
+            throw new NullCustomerRepoException();
+        }
+        if (orderRepo == null) {
+            throw new NullOrderRepoException();
+        }
+        if (productRepo == null) {
+            throw new NullProductRepoException();
+        }
         this.customerRepo = customerRepo;
         this.orderRepo = orderRepo;
         this.productRepo = productRepo;

@@ -8,10 +8,10 @@ import java.util.List;
  * Created by olgo on 20-Dec-16.
  */
 
-public class CustomerService {
+public class CustomerServiceImpl {
     private CustomerRepo customerRepo;
 
-    public CustomerService(CustomerRepo customerRepo) throws NullCustomerRepoException {
+    public CustomerServiceImpl(CustomerRepo customerRepo) throws NullCustomerRepoException {
         if (customerRepo == null) {
             throw new NullCustomerRepoException();
         }
@@ -34,6 +34,7 @@ public class CustomerService {
         }
     }
 
+    //todo check if validation before get???
     public void createCustomer(String name) throws CustomerAlreadyExistException, NullCustomerNameException {
         validateParamName(name);
         Customer customer = (Customer) customerRepo.get(name);

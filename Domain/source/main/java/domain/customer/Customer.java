@@ -11,7 +11,7 @@ public class Customer extends Entity {
     }
 
     public Customer(String name) throws NullCustomerNameException {
-        CustomerService.validateCustomersConstructorsParams(name);
+        CustomerServiceImpl.validateCustomersConstructorsParams(name);
         this.name = name;
     }
 
