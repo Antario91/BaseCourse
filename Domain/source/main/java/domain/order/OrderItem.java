@@ -39,20 +39,14 @@ public class OrderItem {
         if (this == o) return true;
         if (!(o instanceof OrderItem)) return false;
 
-        OrderItem orderItem = (OrderItem) o;
+        OrderItem item = (OrderItem) o;
 
-        if (Double.compare(orderItem.quantity, quantity) != 0) return false;
-        return productId.equals(orderItem.productId);
+        return productId.equals(item.productId);
 
     }
 
     @Override
     public int hashCode() {
-        int result;
-        long temp;
-        temp = Double.doubleToLongBits(quantity);
-        result = (int) (temp ^ (temp >>> 32));
-        result = 31 * result + (productId != null ? productId.hashCode() : 0);
-        return result;
+        return productId.hashCode();
     }
 }

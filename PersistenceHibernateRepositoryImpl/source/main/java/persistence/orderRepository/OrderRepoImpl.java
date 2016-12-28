@@ -29,16 +29,4 @@ public class OrderRepoImpl extends GenericRepoImpl<String, Order> implements Ord
                 .list();
         return orders;
     }
-
-    @SuppressWarnings("unchecked")
-    @Override
-    public List<Order> getOrdersByProductId(String productId) {
-        if (productId == null) {
-            throw new NullIdException();
-        }
-        return (List<Order>) getSessionFactory().getCurrentSession()
-                .createQuery("SELECT o FROM Order o JOIN o.orderItems item WHERE item.productId = :productId")
-                .setParameter("productId", productId)
-                .list();
-    }
 }

@@ -99,33 +99,12 @@ public class OrderServiceImpl implements OrderService {
         orderRepo.update(order);
     }
 
-    public void deleteOrderItemsByProductId(String productId) throws ContractViolationException, OrderDoesNotExistException {
-        if (productId == null) {
-            throw new ContractViolationException("Parameter \"productId\" is NULL");
-        }
-        List<Order> orders = orderRepo.getOrdersByProductId(productId);
-        List<String> productIds = new ArrayList<String>();
-        productIds.add(productId);
-        for (Order order : orders) {
-            order.deleteOrderItems(productIds);
-            orderRepo.update(order);
-        }
-    }
-
     public void deleteOrder(String billingNumber) throws ContractViolationException, OrderDoesNotExistException {
         validateParamBillingNumber(billingNumber);
         Order order = (Order) orderRepo.get(billingNumber);
         validateOrdersExistence(order);
         deleteOrderItems(billingNumber, order.getOrdersProductsIds());
         orderRepo.delete(order);
-    }
-
-    public void deleteAllCutomersOrders(String customerId) throws ContractViolationException, CustomerDoesNotExistException, OrderDoesNotExistException {
-        validateParamCustomerId(customerId);
-        List<Order> customersOrders = getAllCustomersOrders(customerId);
-        for (Order order : customersOrders) {
-            deleteOrder(order.getBillingNumber());
-        }
     }
 
     private void validateParamCustomerId(String customerId) throws ContractViolationException {

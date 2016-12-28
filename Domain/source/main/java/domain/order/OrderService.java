@@ -27,10 +27,6 @@ public interface OrderService {
 
     void deleteOrderItems(String billingNumber, List<String> productIds) throws ContractViolationException, OrderDoesNotExistException;
 
-    void deleteOrderItemsByProductId(String productId) throws ContractViolationException, OrderDoesNotExistException;
-
     void deleteOrder(String billingNumber) throws ContractViolationException, OrderDoesNotExistException;
-
-    void deleteAllCutomersOrders(String customerId) throws ContractViolationException, CustomerDoesNotExistException, OrderDoesNotExistException;
 
 }

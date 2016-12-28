@@ -64,6 +64,7 @@ public class Order extends Entity {
         return customerId;
     }
 
+    //for getOrderPrice() and deleteOrderItems -> ServiceImpl
     public List<String> getOrdersProductsIds() {
         List<String> productIds = new ArrayList<String>();
         for (OrderItem item : orderItems) {

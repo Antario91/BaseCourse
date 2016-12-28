@@ -13,16 +13,11 @@ import java.util.List;
 
 public class CustomerServiceImpl implements CustomerService {
     private CustomerRepo customerRepo;
-    private OrderService orderService;
 
     public CustomerServiceImpl(CustomerRepo customerRepo, OrderService orderService) throws ContractViolationException {
         if (customerRepo == null) {
             throw new ContractViolationException("Parameter \"customerRepo\" is NULL");
         }
-        if (orderService == null) {
-            throw new ContractViolationException("Parameter \"orderService\" is NULL");
-        }
-        this.orderService = orderService;
         this.customerRepo = customerRepo;
     }
 
@@ -51,7 +46,6 @@ public class CustomerServiceImpl implements CustomerService {
         validateParamName(name);
         Customer customer = (Customer) customerRepo.get(name);
         validateCustomersExistence(customer);
-        orderService.deleteAllCutomersOrders(name);
         customerRepo.delete(customer);
     }
 

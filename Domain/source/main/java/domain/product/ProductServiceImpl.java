@@ -74,7 +74,6 @@ public class ProductServiceImpl implements ProductService {
         Product product = (Product) productRepo.get(productName);
         validateProductExistence(product);
         ProductPrice[] productPrices = new ProductPrice[product.getProductPrices().size()];
-        orderService.deleteOrderItemsByProductId(productName);
         deleteProductPrices(productName, product.getProductPrices().toArray(productPrices));
         productRepo.delete(product);
     }
