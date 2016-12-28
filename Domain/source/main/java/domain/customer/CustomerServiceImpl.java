@@ -1,7 +1,9 @@
 package domain.customer;
 
-import domain.ParamIsNullException;
+import domain.ContractViolationException;
 import domain.customer.exceptions.*;
+import domain.order.OrderService;
+import domain.order.exceptions.OrderDoesNotExistException;
 
 import java.util.List;
 
@@ -11,16 +13,21 @@ import java.util.List;
 
 public class CustomerServiceImpl implements CustomerService {
     private CustomerRepo customerRepo;
+    private OrderService orderService;
 
-    public CustomerServiceImpl(CustomerRepo customerRepo) throws ParamIsNullException {
+    public CustomerServiceImpl(CustomerRepo customerRepo, OrderService orderService) throws ContractViolationException {
         if (customerRepo == null) {
-            throw new ParamIsNullException("customerRepo");
+            throw new ContractViolationException("Parameter \"customerRepo\" is NULL");
         }
+        if (orderService == null) {
+            throw new ContractViolationException("Parameter \"orderService\" is NULL");
+        }
+        this.orderService = orderService;
         this.customerRepo = customerRepo;
     }
 
     //todo check if validation before get???
-    public void createCustomer(String name) throws ParamIsNullException, CustomerAlreadyExistException {
+    public void createCustomer(String name) throws ContractViolationException, CustomerAlreadyExistException {
         validateParamName(name);
         Customer customer = (Customer) customerRepo.get(name);
         if (customer != null) {
@@ -29,7 +36,7 @@ public class CustomerServiceImpl implements CustomerService {
         customerRepo.add(new Customer(name));
     }
 
-    public Customer getCustomer(String name) throws ParamIsNullException, CustomerDoesNotExistException {
+    public Customer getCustomer(String name) throws ContractViolationException, CustomerDoesNotExistException {
         validateParamName(name);
         Customer customer = (Customer) customerRepo.get(name);
         validateCustomersExistence(customer);
@@ -40,16 +47,17 @@ public class CustomerServiceImpl implements CustomerService {
         return customerRepo.getAllCustomers();
     }
 
-    public void deleteCustomer (String name) throws ParamIsNullException, CustomerDoesNotExistException {
+    public void deleteCustomer (String name) throws ContractViolationException, CustomerDoesNotExistException, OrderDoesNotExistException {
         validateParamName(name);
         Customer customer = (Customer) customerRepo.get(name);
         validateCustomersExistence(customer);
+        orderService.deleteAllCutomersOrders(name);
         customerRepo.delete(customer);
     }
 
-    private void validateParamName(String name) throws ParamIsNullException {
+    private void validateParamName(String name) throws ContractViolationException {
         if (name == null || name.isEmpty()) {
-            throw new ParamIsNullException("name");
+            throw new ContractViolationException("Parameter \"name\" is NULL");
         }
     }
 

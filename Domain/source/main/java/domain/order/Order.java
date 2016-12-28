@@ -1,7 +1,7 @@
 package domain.order;
 
 import domain.Entity;
-import domain.ParamIsNullException;
+import domain.ContractViolationException;
 import domain.order.exceptions.*;
 
 import java.util.*;
@@ -18,7 +18,7 @@ public class Order extends Entity {
         customerId = null;
     }
 
-    public Order(String customerId, OrderItem ... orderItems) throws ParamIsNullException, ProductInOrderIsNotUniqueException {
+    public Order(String customerId, OrderItem ... orderItems) throws ContractViolationException, ProductInOrderIsNotUniqueException {
         validateConstructorsParams(customerId, orderItems);
         this.orderItems = Arrays.asList(orderItems);
         isUniqueProductsInOrder(this.orderItems);
@@ -39,7 +39,7 @@ public class Order extends Entity {
         return new ArrayList<OrderItem>(orderItems);
     }
 
-    public void addOrderItems (OrderItem ... newOrderItems) throws ParamIsNullException, ProductInOrderIsNotUniqueException {
+    public void addOrderItems (OrderItem ... newOrderItems) throws ContractViolationException, ProductInOrderIsNotUniqueException {
         validateParamOrderItems(newOrderItems);
         List<OrderItem> tempItems = new ArrayList<OrderItem>(orderItems);
         tempItems.addAll(Arrays.asList(newOrderItems));
@@ -47,10 +47,17 @@ public class Order extends Entity {
         orderItems.addAll(Arrays.asList(newOrderItems));
     }
 
-    public void deleteOrderItems(OrderItem ... currentOrderItems) throws ParamIsNullException {
-        validateParamOrderItems(currentOrderItems);
-        List<OrderItem> tempItems = Arrays.asList(currentOrderItems);
-        orderItems.removeAll(tempItems);
+    public void deleteOrderItems(List<String> productIds) throws ContractViolationException {
+        if (productIds == null) {
+            throw new ContractViolationException("Parameter \"productId\" is NULL");
+        }
+        Map<String, OrderItem> itemsMap = new HashMap<String, OrderItem>();
+        for (OrderItem item : orderItems) {
+            itemsMap.put(item.getProductId(), item);
+        }
+        for (String productId : productIds) {
+            orderItems.remove(itemsMap.get(productId));
+        }
     }
 
     public String getCustomerId() {
@@ -79,16 +86,16 @@ public class Order extends Entity {
         return true;
     }
 
-    private void validateConstructorsParams(String customerId, OrderItem... orderItems) throws ParamIsNullException {
+    private void validateConstructorsParams(String customerId, OrderItem... orderItems) throws ContractViolationException {
         if (customerId == null || customerId.isEmpty()) {
-            throw new ParamIsNullException("customerId");
+            throw new ContractViolationException("Parameter \"customerId\" is NULL");
         }
         validateParamOrderItems(orderItems);
     }
 
-    private void validateParamOrderItems(OrderItem... orderItems) throws ParamIsNullException {
+    private void validateParamOrderItems(OrderItem... orderItems) throws ContractViolationException {
         if (orderItems == null) {
-            throw new ParamIsNullException("orderItems");
+            throw new ContractViolationException("Parameter \"orderItems\" is NULL");
         }
     }
 }

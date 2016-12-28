@@ -2,67 +2,60 @@ package persistence;
 
 import domain.Entity;
 
+import domain.NullEntityException;
+import domain.NullIdException;
+import org.hibernate.FlushMode;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Restrictions;
 import domain.GenericRepo;
 
 /**
  * @param <V> type of Entity's business key
+ * @param <T> type of Entity
  */
 
-public class GenericRepoImpl<V> implements GenericRepo<V> {
-    private Class<Entity<V>> entityClass;
+public class GenericRepoImpl<V, T> implements GenericRepo<V> {
+    private Class<T> entityClass;
     private String businessKeyPropertyName;
-    private EntityAlreadyExistException entityAlreadyExistException;
-    private EntityDoesNotExistException entityDoesNotExistException;
     private SessionFactory sessionFactory;
 
-    public GenericRepoImpl(Class<Entity<V>> entityClass, String businessKeyPropertyName, EntityAlreadyExistException entityAlreadyExistException,
-                           EntityDoesNotExistException entityDoesNotExistException, SessionFactory sessionFactory) {
+    public GenericRepoImpl(Class<T> entityClass, String businessKeyPropertyName, SessionFactory sessionFactory) {
         this.entityClass = entityClass;
         this.businessKeyPropertyName = businessKeyPropertyName;
-        this.entityAlreadyExistException = entityAlreadyExistException;
-        this.entityDoesNotExistException = entityDoesNotExistException;
         this.sessionFactory = sessionFactory;
     }
 
-    public void add(Entity<V> entity) throws EntityAlreadyExistException {
-        if (get(entity.getBusinessKey()) != null) {
-            throw entityAlreadyExistException;
+    public void add (Entity entity) throws NullEntityException {
+        if (entity == null){
+            throw new NullEntityException();
         }
-
-        sessionFactory.getCurrentSession()
-                .save(entity);
+        sessionFactory.getCurrentSession().save(entity);
     }
 
     @SuppressWarnings("unchecked")
-    //TODO добавить где был вызов этого метода EntityDoesNotExistException вместе с проверкой на NULL
-    public Entity get(V businessKeyValue) {
+    public Entity get (V id) throws NullIdException {
+        if (id == null) {
+            throw new NullIdException();
+        }
         return (Entity) sessionFactory.getCurrentSession()
                 .createCriteria(entityClass)
-                .add(Restrictions.eq(businessKeyPropertyName, businessKeyValue))
+                .add(Restrictions.eq(businessKeyPropertyName, id))
                 .uniqueResult();
     }
 
-    @SuppressWarnings("unchecked")
-    public Entity getById(long id) {
-        return (Entity) getSessionFactory().getCurrentSession()
-                .get(entityClass, id);
-    }
-
-    public void update(Entity entity) {
-        getSessionFactory().getCurrentSession().merge(entity);
-    }
-
-    @SuppressWarnings("unchecked")
-    public void delete(V businessKeyValue) throws EntityDoesNotExistException {
-        Entity<V> entity = (Entity<V>) get(businessKeyValue);
+    public void update (Entity entity) throws NullEntityException {
         if (entity == null) {
-            throw entityDoesNotExistException;
+            throw new NullEntityException();
         }
+        sessionFactory.getCurrentSession().merge(entity);
+    }
 
-        sessionFactory.getCurrentSession()
-                .delete(entity);
+    @SuppressWarnings("unchecked")
+    public void delete (Entity entity) throws NullEntityException {
+        if (entity == null) {
+            throw new NullEntityException();
+        }
+        sessionFactory.getCurrentSession().delete(entity);
     }
 
     public SessionFactory getSessionFactory() {

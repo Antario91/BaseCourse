@@ -18,7 +18,7 @@
 
     <complexType name="OrderDTOForReception">
         <sequence>
-            <element name="billingNumber" type="long" maxOccurs="1" minOccurs="1"/>
+            <element name="billingNumber" type="string" maxOccurs="1" minOccurs="1"/>
             <element name="placingDate" type="date" maxOccurs="1" minOccurs="1"/>
             <element name="ordersCustomersName" type="string" maxOccurs="1" minOccurs="1"/>
             <element name="orderItems" type="order:OrderItemDTOForReception" maxOccurs="unbounded" minOccurs="1"/>
@@ -28,7 +28,7 @@
 
     <complexType name="UpdatedOrderDTO">
         <sequence>
-            <element name="billingNumberOfUpdatedOrder" type="long" maxOccurs="1" minOccurs="1"/>
+            <element name="billingNumberOfUpdatedOrder" type="string" maxOccurs="1" minOccurs="1"/>
             <element name="newOrderItems" type="order:OrderItemDTOForCreation" maxOccurs="unbounded" minOccurs="1"/>
         </sequence>
     </complexType>

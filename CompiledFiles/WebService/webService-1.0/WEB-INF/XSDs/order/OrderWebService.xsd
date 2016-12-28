@@ -27,7 +27,7 @@
     <element name="GetOrderRequest">
         <complexType>
             <sequence>
-                <element name="orderBillingNumber" type="long"/>
+                <element name="orderBillingNumber" type="string"/>
             </sequence>
         </complexType>
     </element>
@@ -54,19 +54,42 @@
         </complexType>
     </element>
 
-    <element name="UpdateOrderRequest">
+    <element name="AddOrderItemsRequest">
         <complexType>
             <sequence>
-                <element name="updatedOrder" type="order:UpdatedOrderDTO"/>
+                <element name="ordersBillingNumber" type="string"/>
+                <element name="OrderItemDTOForCreation" type="order:OrderItemDTOForCreation" maxOccurs="unbounded" minOccurs="0"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="AddOrderItemsResponse">
+        <complexType>
+            <sequence>
+                <element name="order" type="order:OrderDTOForReception"/>
             </sequence>
         </complexType>
     </element>
 
+    <element name="DeleteOrderItemsRequest">
+        <complexType>
+            <sequence>
+                <element name="ordersBillingNumber" type="string"/>
+                <element name="ProductIds" type="string" maxOccurs="unbounded" minOccurs="0"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="DeleteOrderItemsResponse">
+        <complexType>
+            <sequence>
+                <element name="order" type="order:OrderDTOForReception"/>
+            </sequence>
+        </complexType>
+    </element>
 
     <element name="DeleteOrderRequest">
         <complexType>
             <sequence>
-                <element name="orderBillingNumber" type="long"/>
+                <element name="orderBillingNumber" type="string"/>
             </sequence>
         </complexType>
     </element>

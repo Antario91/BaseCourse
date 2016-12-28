@@ -1,8 +1,10 @@
 package persistence.productRepository;
 
 import domain.Entity;
+import domain.NullIdException;
 import domain.order.OrderItem;
 import domain.product.Product;
+import org.hibernate.criterion.Restrictions;
 import persistence.GenericRepoImpl;
 
 import domain.product.ProductRepo;
@@ -10,15 +12,14 @@ import domain.product.ProductRepo;
 import org.hibernate.SessionFactory;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
-public class ProductRepoImpl extends GenericRepoImpl<String> implements ProductRepo {
-    public ProductRepoImpl (Class<Entity<String>> entityClass,
+public class ProductRepoImpl extends GenericRepoImpl<String, Product> implements ProductRepo {
+    public ProductRepoImpl (Class<Product> entityClass,
                             String businessKeyPropertyName,
-                            EntityAlreadyExistException entityAlreadyExistException,
-                            EntityDoesNotExistException entityDoesNotExistException,
                             SessionFactory sessionFactory){
-        super(entityClass, businessKeyPropertyName, entityAlreadyExistException, entityDoesNotExistException, sessionFactory);
+        super(entityClass, businessKeyPropertyName, sessionFactory);
     }
 
     //TODO add PAGINATION
@@ -30,22 +31,31 @@ public class ProductRepoImpl extends GenericRepoImpl<String> implements ProductR
                 .list();
     }
 
+    @SuppressWarnings("unchecked")
     @Override
-    public List<Product> getOrdersProducts(List<OrderItem> orderItems) {
-        List<Product> products = new ArrayList<Product>();
-        for (OrderItem item : orderItems) {
-            products.add( (Product) getSessionFactory().getCurrentSession()
-                    .get(Product.class, item.getProductId()));
+    public List<Product> getProductsByIds(List<String> productId) {
+        if (productId == null) {
+            throw new NullIdException();
         }
-        return products;
+        StringBuilder builder = new StringBuilder();
+        Iterator<String> itr = productId.iterator();
+        builder.append("\'");
+        while (itr.hasNext()) {
+            String temp = itr.next();
+            if (temp != null) {
+                builder.append(temp);
+            }
+            if (itr.hasNext()) {
+                builder.append("\',\'");
+            } else {
+                builder.append("\'");
+            }
+        }
+
+        return getSessionFactory().getCurrentSession()
+                .createQuery("FROM Product WHERE name in (" + builder + ")")
+                .list();
     }
 
-//    @SuppressWarnings("unchecked")
-//    @Override
-//    public List<Product> getOrdersProducts(long billingNumber) {
-//        return (List<Product>) getSessionFactory().getCurrentSession()
-//                .createQuery("SELECT p FROM Product p WHERE p.id in (select item.productId FROM Order o JOIN o.orderItems item WHERE o.billingNumber = :billingNumber)")
-//                .setParameter("billingNumber", billingNumber)
-//                .list();
-//    }
+
 }

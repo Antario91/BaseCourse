@@ -45,13 +45,6 @@
         <processorPath useClasspath="true" />
         <module name="WebService" />
       </profile>
-      <profile default="false" name="Annotation profile for basecourse" enabled="true">
-        <sourceOutputDir name="../CompiledFiles/Utils/generated-sources/annotations" />
-        <sourceTestOutputDir name="../CompiledFiles/Utils/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="Utils" />
-      </profile>
       <profile default="false" name="Annotation profile for Domain" enabled="true">
         <sourceOutputDir name="../CompiledFiles/Domain/generated-sources/annotations" />
         <sourceTestOutputDir name="../CompiledFiles/Domain/generated-test-sources/test-annotations" />
@@ -65,6 +58,13 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="PersistenceHibernateRepositoryImpl" />
+      </profile>
+      <profile default="false" name="Annotation profile for basecourse" enabled="true">
+        <sourceOutputDir name="../CompiledFiles/Utils/generated-sources/annotations" />
+        <sourceTestOutputDir name="../CompiledFiles/Utils/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="Utils" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

@@ -3,13 +3,13 @@
         "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
     <class name="domain.order.Order" table="ORDER_TABLES">
-        <id name="id" type="long" column="ID" access="field">
+        <id name="surrogateID" type="long" column="ID" access="field">
             <generator class="sequence">
                 <param name="sequence">order_id_sequence</param>
             </generator>
         </id>
 
-        <property name="billingNumber" type="long" access="field">
+        <property name="billingNumber" type="string" access="field">
             <column name="BILLING_NUMBER" not-null="true" unique="true"/>
         </property>
 
@@ -17,7 +17,7 @@
             <column name="PLACING_DATE" not-null="true" unique="false"/>
         </property>
 
-        <property name="customerId" type="long" access="field">
+        <property name="customerId" type="string" access="field">
             <column name="CUSTOMER_ID" not-null="true" unique="false"/>
         </property>
 
@@ -28,7 +28,7 @@
                 <property name="quantity" type="double" access="field">
                     <column name="QUANTITY" not-null="true" unique="false"/>
                 </property>
-                <property name="productId" type="long" access="field">
+                <property name="productId" type="string" access="field">
                     <column name="PRODUCT_ID" not-null="true" unique="false"/>
                 </property>
             </composite-element>

@@ -3,7 +3,7 @@
         "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
     <class name="domain.customer.Customer" table="CUSTOMER">
-        <id name="id" type="long" column="ID" access="field">
+        <id name="surrogateID" type="long" column="ID" access="field">
             <generator class="sequence">
                 <param name="sequence">customer_id_sequence</param>
             </generator>

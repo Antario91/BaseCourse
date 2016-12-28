@@ -31,7 +31,7 @@
     <complexType name="ProductPriceDTO">
         <sequence>
             <element name="price" type="decimal" maxOccurs="1" minOccurs="1"/>
-            <element name="endEffectDay" type="date" maxOccurs="1" minOccurs="1"/>
+            <element name="startEffectDay" type="date" maxOccurs="1" minOccurs="1"/>
         </sequence>
     </complexType>
 </schema>

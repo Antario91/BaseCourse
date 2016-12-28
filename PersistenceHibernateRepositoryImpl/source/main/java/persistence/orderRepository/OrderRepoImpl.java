@@ -1,39 +1,44 @@
 package persistence.orderRepository;
 
-import domain.Entity;
-import domain.customer.Customer;
+import domain.NullIdException;
 import domain.order.Order;
+import org.hibernate.criterion.Restrictions;
 import persistence.GenericRepoImpl;
 import domain.order.OrderRepo;
 
 import org.hibernate.SessionFactory;
 
-import java.math.BigDecimal;
 import java.util.List;
 
-public class OrderRepoImpl extends GenericRepoImpl<Long> implements OrderRepo {
-    public OrderRepoImpl(Class<Entity<Long>> entityClass,
+public class OrderRepoImpl extends GenericRepoImpl<String, Order> implements OrderRepo {
+    public OrderRepoImpl(Class<Order> entityClass,
                          String businessKeyPropertyName,
-                         EntityAlreadyExistException entityAlreadyExistException,
-                         EntityDoesNotExistException entityDoesNotExistException,
                          SessionFactory sessionFactory) {
-        super(entityClass, businessKeyPropertyName, entityAlreadyExistException, entityDoesNotExistException, sessionFactory);
+        super(entityClass, businessKeyPropertyName, sessionFactory);
     }
 
     @SuppressWarnings("unchecked")
     @Override
-    public List<Order> getAllCustomersOrders(Customer customer) {
-        return (List<Order>) getSessionFactory().getCurrentSession()
-                .createQuery("SELECT o FROM Order o WHERE o.customerId = :customerId")
-                .setParameter("customerId", customer.getId())
+    public List<Order> getOrdersByCustomerId(String customerId) {
+        if (customerId == null) {
+            throw new NullIdException();
+        }
+        List<Order> orders = (List<Order>) getSessionFactory().getCurrentSession()
+                .createCriteria(Order.class)
+                .add(Restrictions.ilike("customerId", "%" + customerId + "%"))
                 .list();
+        return orders;
     }
 
+    @SuppressWarnings("unchecked")
     @Override
-    public long getNextOrdersBillingNumber() {
-        BigDecimal billingNumber = (BigDecimal) getSessionFactory().getCurrentSession()
-                .createSQLQuery("SELECT billing_number_generator.NEXTVAL FROM dual").uniqueResult();
-
-        return billingNumber.longValue();
+    public List<Order> getOrdersByProductId(String productId) {
+        if (productId == null) {
+            throw new NullIdException();
+        }
+        return (List<Order>) getSessionFactory().getCurrentSession()
+                .createQuery("SELECT o FROM Order o JOIN o.orderItems item WHERE item.productId = :productId")
+                .setParameter("productId", productId)
+                .list();
     }
 }

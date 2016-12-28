@@ -1,6 +1,6 @@
 package domain.order;
 
-import domain.ParamIsNullException;
+import domain.ContractViolationException;
 
 public class OrderItem {
     private final double quantity;
@@ -11,7 +11,7 @@ public class OrderItem {
         productId = null;
     }
 
-    public OrderItem(double quantity, String productId) throws ParamIsNullException {
+    public OrderItem(double quantity, String productId) throws ContractViolationException {
         validateConstructorsParams(quantity, productId);
         this.quantity = quantity;
         this.productId = productId;
@@ -25,12 +25,12 @@ public class OrderItem {
         return productId;
     }
 
-    private void validateConstructorsParams(double quantity, String productId) throws ParamIsNullException {
+    private void validateConstructorsParams(double quantity, String productId) throws ContractViolationException {
         if (quantity <= 0) {
-            throw new ParamIsNullException("quantity");
+            throw new ContractViolationException("Parameter \"quantity\" is NULL");
         }
         if (productId == null || productId.isEmpty()) {
-            throw new ParamIsNullException("productId");
+            throw new ContractViolationException("Parameter \"productId\" is NULL");
         }
     }
 

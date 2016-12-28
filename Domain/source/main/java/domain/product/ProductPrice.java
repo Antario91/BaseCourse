@@ -1,6 +1,6 @@
 package domain.product;
 
-import domain.ParamIsNullException;
+import domain.ContractViolationException;
 
 import java.util.Date;
 
@@ -13,7 +13,7 @@ public class ProductPrice {
         startEffectDay = null;
     }
 
-    public ProductPrice(double price, Date startEffectDay) throws ParamIsNullException {
+    public ProductPrice(double price, Date startEffectDay) throws ContractViolationException {
         validateConstructorsParams(price, startEffectDay);
         this.price = price;
         this.startEffectDay = startEffectDay;
@@ -27,12 +27,12 @@ public class ProductPrice {
         return new Date(startEffectDay.getTime());
     }
 
-    static void validateConstructorsParams(double price, Date startEffectDay) throws ParamIsNullException {
+    static void validateConstructorsParams(double price, Date startEffectDay) throws ContractViolationException {
         if (price <= 0){
-            throw new ParamIsNullException("price");
+            throw new ContractViolationException("Parameter \"price\" is NULL");
         }
         if (startEffectDay == null) {
-            throw new ParamIsNullException("startEffectDay");
+            throw new ContractViolationException("Parameter \"startEffectDay\" is NULL");
         }
     }
 

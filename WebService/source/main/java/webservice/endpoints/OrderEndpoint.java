@@ -1,108 +1,166 @@
 package webservice.endpoints;
 
-import domain.customer.Customer;
-import domain.order.Order;
-import domain.order.OrderServiceImpl;
+import domain.ContractViolationException;
+import domain.order.*;
 import domain.order.exceptions.ProductInOrderIsNotUniqueException;
 import domain.customer.exceptions.CustomerDoesNotExistException;
 import domain.order.exceptions.OrderDoesNotExistException;
+import domain.product.Product;
+import domain.product.ProductService;
+import domain.product.exceptions.NoAvailableProductPriceException;
+import domain.product.exceptions.ProductDoesNotExistException;
 import org.apache.log4j.Logger;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
 import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
-import domain.customer.CustomerRepo;
-import domain.order.OrderRepo;
-import domain.product.ProductRepo;
-import webservice.converters.OrderConverter;
+import utils.XMLGregorianCalendarProducer.DateProducer;
 
+import webservice.dtos.order.OrderDTOForReception;
+import webservice.dtos.order.OrderItemDTOForCreation;
+import webservice.dtos.order.OrderItemDTOForReception;
+import webservice.dtos.product.ProductDTOInOrder;
 import webservice.endpointrequestresponse.orderrequestresponse.*;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 
 @Endpoint
 public class OrderEndpoint {
     final static Logger logger = Logger.getLogger(OrderEndpoint.class);
     private static final String namespaceUri = "http://www.orderRequestResponse.endpointRequestResponse.webService";
-    private CustomerRepo customerRepo;
-    private OrderRepo orderRepo;
-    private ProductRepo productRepo;
-    private OrderServiceImpl orderServiceImpl;
+    private OrderService orderService;
+    private ProductService productService;
 
-    public OrderEndpoint(CustomerRepo customerRepo, OrderRepo orderRepo, ProductRepo productRepo, OrderServiceImpl orderServiceImpl) {
-        this.customerRepo = customerRepo;
-        this.orderRepo = orderRepo;
-        this.productRepo = productRepo;
-        this.orderServiceImpl = orderServiceImpl;
+    public OrderEndpoint(OrderService orderService, ProductService productService) {
+        this.orderService = orderService;
+        this.productService = productService;
     }
 
     @PayloadRoot(localPart = "CreateOrderRequest", namespace = namespaceUri)
     @ResponsePayload
-    public CreateOrderResponse createOrder(@RequestPayload CreateOrderRequest request) throws ProductInOrderIsNotUniqueException, EntityDoesNotExistException, EntityAlreadyExistException {
-        Order order = OrderConverter.orderDTOForCreationToOrder(request.getOrder(), customerRepo, orderRepo, productRepo);
+    public CreateOrderResponse createOrder(@RequestPayload CreateOrderRequest request) throws ContractViolationException, CustomerDoesNotExistException, ProductInOrderIsNotUniqueException, NoAvailableProductPriceException, ProductDoesNotExistException {
+        String customersName = request.getOrder().getOrdersCustomersName();
+        List<OrderItemDTOForCreation> orderItemDTOForCreations = request.getOrder().getOrderItems();
 
-        orderRepo.add(order);
+        OrderItem[] orderItems = new OrderItem[orderItemDTOForCreations.size()];
+
+        double orderPrice = orderService.createOrder(customersName,
+                convertToOrderItems(orderItemDTOForCreations).toArray(orderItems));
 
         CreateOrderResponse response = new CreateOrderResponse();
-
-        response.setOrderPrice( new BigDecimal( orderServiceImpl.getOrderPrice(order.getBillingNumber()) ).setScale(2, RoundingMode.HALF_UP) );
+        response.setOrderPrice( new BigDecimal(orderPrice).setScale(2, RoundingMode.HALF_UP) );
 
         return response;
     }
 
+
     @PayloadRoot(localPart = "GetOrderRequest", namespace = namespaceUri)
     @ResponsePayload
-    public GetOrderResponse getOrder(@RequestPayload GetOrderRequest request) throws EntityDoesNotExistException {
+    public GetOrderResponse getOrder(@RequestPayload GetOrderRequest request) throws OrderDoesNotExistException, ContractViolationException, NoAvailableProductPriceException, ProductDoesNotExistException {
+        Order order = orderService.getOrder(request.getOrderBillingNumber());
+
         GetOrderResponse response = new GetOrderResponse();
-        Order order = (Order) orderRepo.get(request.getOrderBillingNumber());
-        if (order == null) {
-            throw new OrderDoesNotExistException();
-        }
-        response.setOrder(
-                OrderConverter.orderToOrderDTOForReception(
-                        order,
-                        customerRepo,
-                        orderRepo,
-                        productRepo,
-                        orderServiceImpl
-                )
-        );
+
+        response.setOrder(convertToOrderDTOForReception(order));
 
         return response;
     }
 
     @PayloadRoot(localPart = "GetAllCustomersOrdersRequest", namespace = namespaceUri)
     @ResponsePayload
-    public GetAllCustomersOrdersResponse getAllCustomersOrders (@RequestPayload GetAllCustomersOrdersRequest request) throws EntityDoesNotExistException {
-        Customer customer = (Customer) customerRepo.get(request.getCustomersName());
-        if (customer == null){
-            throw new CustomerDoesNotExistException();
-        }
-//        Вмсето getAllCustomersOrders(customer) использовать getOrdersByCustomerId(String customerId) из OrderRepo
-        List<Order> customersOrders = orderRepo.getAllCustomersOrders(customer);
+    public GetAllCustomersOrdersResponse getAllCustomersOrders (@RequestPayload GetAllCustomersOrdersRequest request) throws ContractViolationException, NoAvailableProductPriceException, CustomerDoesNotExistException {
+        List<Order> customersOrders = orderService.getAllCustomersOrders(request.getCustomersName());
 
         GetAllCustomersOrdersResponse response = new GetAllCustomersOrdersResponse();
 
         for (Order order : customersOrders){
-            response.getOrders()
-                    .add( OrderConverter.orderToOrderDTOForReception(order, customerRepo, orderRepo, productRepo, orderServiceImpl) );
+            response.getOrders().add( convertToOrderDTOForReception(order) );
         }
 
         return response;
     }
 
-    @PayloadRoot(localPart = "UpdateOrderRequest", namespace = namespaceUri)
-    public void updateOrder(@RequestPayload UpdateOrderRequest request) throws ProductInOrderIsNotUniqueException, EntityDoesNotExistException {
-        orderRepo.update(
-                OrderConverter.updatedOrderDTOtoOrder(request.getUpdatedOrder(), orderRepo, productRepo)
-        );
+    @PayloadRoot(localPart = "AddOrderItemsRequest", namespace = namespaceUri)
+    @ResponsePayload
+    public AddOrderItemsResponse AddOrderItemsToOrder(@RequestPayload AddOrderItemsRequest request) throws ContractViolationException,
+            OrderDoesNotExistException, ProductInOrderIsNotUniqueException, NoAvailableProductPriceException, ProductDoesNotExistException {
+        OrderItem[] items = new OrderItem[request.getOrderItemDTOForCreation().size()];
+        orderService.addOrderItems(request.getOrdersBillingNumber(), convertToOrderItems(request.getOrderItemDTOForCreation()).toArray(items));
+
+        Order order = orderService.getOrder(request.getOrdersBillingNumber());
+        AddOrderItemsResponse response = new AddOrderItemsResponse();
+        response.setOrder(convertToOrderDTOForReception(order));
+        return response;
+    }
+
+    @PayloadRoot(localPart = "DeleteOrderItemsRequest", namespace = namespaceUri)
+    @ResponsePayload
+    public DeleteOrderItemsResponse DeleteOrderItemsFromOrder(@RequestPayload DeleteOrderItemsRequest request) throws ContractViolationException,
+            OrderDoesNotExistException, ProductInOrderIsNotUniqueException, NoAvailableProductPriceException {
+        orderService.deleteOrderItems(request.getOrdersBillingNumber(), request.getProductIds());
+
+        Order order = orderService.getOrder(request.getOrdersBillingNumber());
+        DeleteOrderItemsResponse response = new DeleteOrderItemsResponse();
+        response.setOrder(convertToOrderDTOForReception(order));
+        return response;
     }
 
     @PayloadRoot(localPart = "DeleteOrderRequest", namespace = namespaceUri)
-    public void deleteOrder(@RequestPayload DeleteOrderRequest request) throws EntityDoesNotExistException {
-        orderRepo.delete(request.getOrderBillingNumber());
+    public void deleteOrder(@RequestPayload DeleteOrderRequest request) throws ContractViolationException, OrderDoesNotExistException {
+        orderService.deleteOrder(request.getOrderBillingNumber());
+    }
+
+    private List<OrderItem> convertToOrderItems(List<OrderItemDTOForCreation> orderItemDTOForCreations) throws ContractViolationException {
+        List<OrderItem> orderItems = new ArrayList<OrderItem>();
+        for (OrderItemDTOForCreation tempItem : orderItemDTOForCreations) {
+            if (tempItem.getQuantity() == null) {
+                throw new ContractViolationException("Parameter \"quantity\" is illegal");
+            }
+            orderItems.add(
+                    new OrderItem(tempItem.getQuantity().doubleValue(), tempItem.getProductName())
+            );
+        }
+        return orderItems;
+    }
+
+    private OrderDTOForReception convertToOrderDTOForReception(Order order) throws ContractViolationException, NoAvailableProductPriceException {
+        OrderDTOForReception orderDTOForReception = new OrderDTOForReception();
+        orderDTOForReception.setOrdersCustomersName(order.getCustomerId());
+        orderDTOForReception.setPlacingDate(DateProducer.produce(order.getPlacingDate()));
+        orderDTOForReception.setBillingNumber(order.getBillingNumber());
+        orderDTOForReception.setOrderPrice(
+                new BigDecimal( orderService.getOrderPrice(order.getBillingNumber()) ).setScale(2, RoundingMode.HALF_UP)
+        );
+
+        List<Product> ordersProducts = productService.getProductsById(order.getOrdersProductsIds());
+
+        Map<String, Product> products = new HashMap<String, Product>();
+        for (Product tempProduct : ordersProducts) {
+            products.put(tempProduct.getName(), tempProduct);
+        }
+
+        for (OrderItem item : order.getOrderItems()) {
+            ProductDTOInOrder productDTOInOrder = new ProductDTOInOrder();
+            OrderItemDTOForReception orderItemDTOForReception = new OrderItemDTOForReception();
+            Product product = products.get(item.getProductId());
+
+            productDTOInOrder.setProductName(product.getName());
+            productDTOInOrder.setProductUnits(product.getUnits());
+            productDTOInOrder.setProductPrice(
+                    new BigDecimal( product.getProductPrice(order.getPlacingDate()) ).setScale(2, RoundingMode.HALF_UP));
+
+            orderItemDTOForReception.setQuantity( new BigDecimal(item.getQuantity()).setScale(2, RoundingMode.HALF_UP) );
+            orderItemDTOForReception.setProduct(productDTOInOrder);
+
+            orderDTOForReception.getOrderItems().add(orderItemDTOForReception);
+        }
+
+        return orderDTOForReception;
     }
 }

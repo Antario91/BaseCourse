@@ -11,7 +11,6 @@
                 <entry key="domain.customer.exceptions.CustomerAlreadyExistException" value="The Customer with this Name have already created"/>
                 <entry key="domain.customer.exceptions.CustomerDoesNotExistException" value="The Customer with this Name doesn't exist"/>
 
-                <entry key="domain.order.exceptions.OrderAlreadyExistException" value="The Order with this BillingNumber have already created"/>
                 <entry key="domain.order.exceptions.OrderDoesNotExistException" value="The Order with this BillingNumber doesn't exist"/>
 
                 <entry key="domain.product.exceptions.ProductAlreadyExistException" value="The Product with this Name have already created"/>
