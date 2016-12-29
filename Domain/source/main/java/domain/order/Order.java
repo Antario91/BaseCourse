@@ -1,7 +1,6 @@
 package domain.order;
 
 import domain.Entity;
-import domain.ContractViolationException;
 import domain.order.exceptions.*;
 
 import java.util.*;
@@ -18,10 +17,10 @@ public class Order extends Entity {
         customerId = null;
     }
 
-    public Order(String customerId, OrderItem ... orderItems) throws ContractViolationException, ProductInOrderIsNotUniqueException {
-        validateConstructorsParams(customerId, orderItems);
+    public Order(String customerId, OrderItem ... orderItems) throws ProductInOrderIsAlreadyOrderedException {
+        checkConstructorParametersForNull(customerId, orderItems);
         this.orderItems = Arrays.asList(orderItems);
-        isUniqueProductsInOrder(this.orderItems);
+        isUniqueProductsInOrder();
         this.billingNumber = UUID.randomUUID().toString();
         this.placingDate = new Date();
         this.customerId = customerId;
@@ -39,17 +38,15 @@ public class Order extends Entity {
         return new ArrayList<OrderItem>(orderItems);
     }
 
-    public void addOrderItems (OrderItem ... newOrderItems) throws ContractViolationException, ProductInOrderIsNotUniqueException {
-        validateParamOrderItems(newOrderItems);
-        List<OrderItem> tempItems = new ArrayList<OrderItem>(orderItems);
-        tempItems.addAll(Arrays.asList(newOrderItems));
-        isUniqueProductsInOrder(tempItems);
+    public void addOrderItems (OrderItem ... newOrderItems) throws ProductInOrderIsAlreadyOrderedException {
+        checkParamOrderItemsForNull(newOrderItems);
+        isUniqueProductsInOrder(Arrays.asList(newOrderItems));
         orderItems.addAll(Arrays.asList(newOrderItems));
     }
 
-    public void deleteOrderItems(List<String> productIds) throws ContractViolationException {
+    public void deleteOrderItems(List<String> productIds) {
         if (productIds == null) {
-            throw new ContractViolationException("Parameter \"productId\" is NULL");
+            throw new IllegalArgumentException("Parameter \"productId\" is NULL");
         }
         Map<String, OrderItem> itemsMap = new HashMap<String, OrderItem>();
         for (OrderItem item : orderItems) {
@@ -73,30 +70,37 @@ public class Order extends Entity {
         return productIds;
     }
 
-    private boolean isUniqueProductsInOrder(List<OrderItem> orderItems) throws ProductInOrderIsNotUniqueException {
-        Set<String> productIds = new HashSet<String>();
-
-        for (OrderItem currentItem : orderItems) {
-            String currentProductId = currentItem.getProductId();
-            if (productIds.contains(currentProductId)) {
-                throw new ProductInOrderIsNotUniqueException();
-            } else {
-                productIds.add(currentProductId);
+    private boolean isUniqueProductsInOrder(List<OrderItem> newOrderItems) throws ProductInOrderIsAlreadyOrderedException {
+        for (OrderItem currentItem : newOrderItems) {
+            if (this.orderItems.contains(currentItem)) {
+                throw new ProductInOrderIsAlreadyOrderedException();
             }
         }
         return true;
     }
 
-    private void validateConstructorsParams(String customerId, OrderItem... orderItems) throws ContractViolationException {
-        if (customerId == null || customerId.isEmpty()) {
-            throw new ContractViolationException("Parameter \"customerId\" is NULL");
+    private boolean isUniqueProductsInOrder() throws ProductInOrderIsAlreadyOrderedException {
+        Set<OrderItem> tempItems = new HashSet<OrderItem>();
+        for (OrderItem currentItem : orderItems) {
+            if (tempItems.contains(currentItem)) {
+                throw new ProductInOrderIsAlreadyOrderedException();
+            } else {
+                tempItems.add(currentItem);
+            }
         }
-        validateParamOrderItems(orderItems);
+        return true;
     }
 
-    private void validateParamOrderItems(OrderItem... orderItems) throws ContractViolationException {
+    private void checkConstructorParametersForNull(String customerId, OrderItem... orderItems) {
+        if (customerId == null || customerId.isEmpty()) {
+            throw new IllegalArgumentException("Parameter \"customerId\" is NULL");
+        }
+        checkParamOrderItemsForNull(orderItems);
+    }
+
+    private void checkParamOrderItemsForNull(OrderItem... orderItems) {
         if (orderItems == null) {
-            throw new ContractViolationException("Parameter \"orderItems\" is NULL");
+            throw new IllegalArgumentException("Parameter \"orderItems\" is NULL");
         }
     }
 }

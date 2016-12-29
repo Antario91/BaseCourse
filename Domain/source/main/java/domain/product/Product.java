@@ -1,7 +1,6 @@
 package domain.product;
 
 import domain.Entity;
-import domain.ContractViolationException;
 import domain.product.exceptions.*;
 
 import java.util.*;
@@ -16,10 +15,10 @@ public class Product extends Entity {
         units = null;
     }
 
-    public Product(String name, String units, ProductPrice... productPrices) throws ContractViolationException, DateIntersectionInProductPriceException {
-        validateConstructorsParams(name, units, productPrices);
+    public Product(String name, String units, ProductPrice... productPrices) throws DateIntersectionInProductPriceException {
+        checkConstructorParametersForNull(name, units, productPrices);
         this.productPrices = Arrays.asList(productPrices);
-        isIntersectProductPricesEffectDays(this.productPrices);
+        isIntersectProductPricesEffectDays();
         this.name = name;
         this.units = units;
     }
@@ -36,39 +35,37 @@ public class Product extends Entity {
         return new ArrayList<ProductPrice>(productPrices);
     }
 
-    public void addProductPrices(ProductPrice... newProductPrices) throws ContractViolationException, NotValidStartEffectDayException, DateIntersectionInProductPriceException {
-        validateNewProductPrices(newProductPrices);
-        List<ProductPrice> temp = new ArrayList<ProductPrice>(productPrices);
-        temp.addAll(Arrays.asList(newProductPrices));
-        isIntersectProductPricesEffectDays(temp);
+    public void addProductPrices(ProductPrice... newProductPrices) throws NotValidStartEffectDayException, DateIntersectionInProductPriceException {
+        checkParamProductPricesForNull(newProductPrices);
+        areNewProductPricesUpToToday(newProductPrices);
+        isIntersectProductPricesEffectDays(Arrays.asList(newProductPrices));
         productPrices.addAll(Arrays.asList(newProductPrices));
     }
 
-    public void deleteProductPrices(ProductPrice... currentProductPrices) throws ContractViolationException {
-        validateParamProductPrices(currentProductPrices);
-        List<ProductPrice> tempPrices = Arrays.asList(currentProductPrices);
-        productPrices.removeAll(tempPrices);
+    public void deleteProductPrices(ProductPrice... currentProductPrices) {
+        checkParamProductPricesForNull(currentProductPrices);
+        productPrices.removeAll(Arrays.asList(currentProductPrices));
     }
 
     /**
      * @see Product#getReverseProductPricesComparator  sort begining from latest day
      */
-    public double getProductPrice(Date dateOfInterest) throws NoAvailableProductPriceException {
+    public double getProductPrice(Date dateOfInterest) throws NotAvailableProductPriceException {
         double price = 0.0;
 
         List<ProductPrice> checkableProductPrices = new ArrayList<ProductPrice>(productPrices);
         Collections.sort(checkableProductPrices, getReverseProductPricesComparator());
 
-        Iterator<ProductPrice> itr = checkableProductPrices.iterator();
-        if (itr.hasNext()) {
-            ProductPrice currentPrice = itr.next();
-            while (dateOfInterest.before(currentPrice.getStartEffectDay()) && itr.hasNext()) {
-                currentPrice = itr.next();
-                if (dateOfInterest.before(currentPrice.getStartEffectDay()) && !itr.hasNext()) {
-                    throw new NoAvailableProductPriceException();
-                }
+        ProductPrice lastProductPrice = null;
+        for (ProductPrice currentPrice : checkableProductPrices) {
+            if ( dateOfInterest.after(currentPrice.getStartEffectDay()) ) {
+                price = currentPrice.getPrice();
             }
-            price = currentPrice.getPrice();
+            lastProductPrice = currentPrice;
+        }
+
+        if ( dateOfInterest.before(lastProductPrice.getStartEffectDay()) ) {
+            throw new NotAvailableProductPriceException();
         }
 
         return price;
@@ -88,7 +85,24 @@ public class Product extends Entity {
         };
     }
 
-    private boolean isIntersectProductPricesEffectDays(List<ProductPrice> productPrices) throws DateIntersectionInProductPriceException {
+    private boolean isIntersectProductPricesEffectDays(List<ProductPrice> newProductPrices) throws DateIntersectionInProductPriceException {
+        HashSet<Date> checkableDate = new HashSet<Date>();
+        for (ProductPrice currentPrice : this.productPrices) {
+            checkableDate.add(currentPrice.getStartEffectDay());
+        }
+
+        for (ProductPrice productPrice : newProductPrices) {
+            if (checkableDate.contains(productPrice.getStartEffectDay())) {
+                throw new DateIntersectionInProductPriceException();
+            } else {
+                checkableDate.add(productPrice.getStartEffectDay());
+            }
+        }
+
+        return false;
+    }
+
+    private boolean isIntersectProductPricesEffectDays() throws DateIntersectionInProductPriceException {
         HashSet<Date> checkableDate = new HashSet<Date>();
         for (ProductPrice productPrice : productPrices) {
             if (checkableDate.contains(productPrice.getStartEffectDay())) {
@@ -97,31 +111,32 @@ public class Product extends Entity {
                 checkableDate.add(productPrice.getStartEffectDay());
             }
         }
-        return true;
+        return false;
     }
 
-    private void validateConstructorsParams(String name, String units, ProductPrice... productPrices) throws ContractViolationException {
-        if (name == null) {
-            throw new ContractViolationException("Parameter \"name\" is NULL");
-        }
-        if (units == null) {
-            throw new ContractViolationException("Parameter \"units\" is NULL");
-        }
-        validateParamProductPrices(productPrices);
-    }
-
-    private void validateNewProductPrices(ProductPrice... productPrices) throws ContractViolationException, NotValidStartEffectDayException{
-        validateParamProductPrices(productPrices);
+    private boolean areNewProductPricesUpToToday(ProductPrice... productPrices) throws NotValidStartEffectDayException{
+        checkParamProductPricesForNull(productPrices);
         for (ProductPrice productPrice : productPrices) {
             if (productPrice.getStartEffectDay().before(new Date())) {
                 throw new NotValidStartEffectDayException();
             }
         }
+        return false;
     }
 
-    private void validateParamProductPrices(ProductPrice... productPrices) throws ContractViolationException {
+    private void checkConstructorParametersForNull(String name, String units, ProductPrice... productPrices) {
+        if (name == null) {
+            throw new IllegalArgumentException("Parameter \"name\" is NULL");
+        }
+        if (units == null) {
+            throw new IllegalArgumentException("Parameter \"units\" is NULL");
+        }
+        checkParamProductPricesForNull(productPrices);
+    }
+
+    private void checkParamProductPricesForNull(ProductPrice... productPrices) {
         if (productPrices == null) {
-            throw new ContractViolationException("Parameter \"productPrices\" is NULL");
+            throw new IllegalArgumentException("Parameter \"productPrices\" is NULL");
         }
     }
 }

@@ -2,12 +2,12 @@ package webservice.endpoints;
 
 import domain.ContractViolationException;
 import domain.order.*;
-import domain.order.exceptions.ProductInOrderIsNotUniqueException;
+import domain.order.exceptions.ProductInOrderIsAlreadyOrderedException;
 import domain.customer.exceptions.CustomerDoesNotExistException;
 import domain.order.exceptions.OrderDoesNotExistException;
 import domain.product.Product;
 import domain.product.ProductService;
-import domain.product.exceptions.NoAvailableProductPriceException;
+import domain.product.exceptions.NotAvailableProductPriceException;
 import domain.product.exceptions.ProductDoesNotExistException;
 import org.apache.log4j.Logger;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
@@ -44,7 +44,7 @@ public class OrderEndpoint {
 
     @PayloadRoot(localPart = "CreateOrderRequest", namespace = namespaceUri)
     @ResponsePayload
-    public CreateOrderResponse createOrder(@RequestPayload CreateOrderRequest request) throws ContractViolationException, CustomerDoesNotExistException, ProductInOrderIsNotUniqueException, NoAvailableProductPriceException, ProductDoesNotExistException {
+    public CreateOrderResponse createOrder(@RequestPayload CreateOrderRequest request) throws ContractViolationException, CustomerDoesNotExistException, ProductInOrderIsAlreadyOrderedException, NotAvailableProductPriceException, ProductDoesNotExistException {
         String customersName = request.getOrder().getOrdersCustomersName();
         List<OrderItemDTOForCreation> orderItemDTOForCreations = request.getOrder().getOrderItems();
 
@@ -62,7 +62,7 @@ public class OrderEndpoint {
 
     @PayloadRoot(localPart = "GetOrderRequest", namespace = namespaceUri)
     @ResponsePayload
-    public GetOrderResponse getOrder(@RequestPayload GetOrderRequest request) throws OrderDoesNotExistException, ContractViolationException, NoAvailableProductPriceException, ProductDoesNotExistException {
+    public GetOrderResponse getOrder(@RequestPayload GetOrderRequest request) throws OrderDoesNotExistException, ContractViolationException, NotAvailableProductPriceException, ProductDoesNotExistException {
         Order order = orderService.getOrder(request.getOrderBillingNumber());
 
         GetOrderResponse response = new GetOrderResponse();
@@ -74,8 +74,8 @@ public class OrderEndpoint {
 
     @PayloadRoot(localPart = "GetAllCustomersOrdersRequest", namespace = namespaceUri)
     @ResponsePayload
-    public GetAllCustomersOrdersResponse getAllCustomersOrders (@RequestPayload GetAllCustomersOrdersRequest request) throws ContractViolationException, NoAvailableProductPriceException, CustomerDoesNotExistException {
-        List<Order> customersOrders = orderService.getAllCustomersOrders(request.getCustomersName());
+    public GetAllCustomersOrdersResponse getAllCustomersOrders (@RequestPayload GetAllCustomersOrdersRequest request) throws ContractViolationException, NotAvailableProductPriceException, CustomerDoesNotExistException {
+        List<Order> customersOrders = orderService.getAllCustomerOrders(request.getCustomersName());
 
         GetAllCustomersOrdersResponse response = new GetAllCustomersOrdersResponse();
 
@@ -89,7 +89,7 @@ public class OrderEndpoint {
     @PayloadRoot(localPart = "AddOrderItemsRequest", namespace = namespaceUri)
     @ResponsePayload
     public AddOrderItemsResponse AddOrderItemsToOrder(@RequestPayload AddOrderItemsRequest request) throws ContractViolationException,
-            OrderDoesNotExistException, ProductInOrderIsNotUniqueException, NoAvailableProductPriceException, ProductDoesNotExistException {
+            OrderDoesNotExistException, ProductInOrderIsAlreadyOrderedException, NotAvailableProductPriceException, ProductDoesNotExistException {
         OrderItem[] items = new OrderItem[request.getOrderItemDTOForCreation().size()];
         orderService.addOrderItems(request.getOrdersBillingNumber(), convertToOrderItems(request.getOrderItemDTOForCreation()).toArray(items));
 
@@ -102,7 +102,7 @@ public class OrderEndpoint {
     @PayloadRoot(localPart = "DeleteOrderItemsRequest", namespace = namespaceUri)
     @ResponsePayload
     public DeleteOrderItemsResponse DeleteOrderItemsFromOrder(@RequestPayload DeleteOrderItemsRequest request) throws ContractViolationException,
-            OrderDoesNotExistException, ProductInOrderIsNotUniqueException, NoAvailableProductPriceException {
+            OrderDoesNotExistException, ProductInOrderIsAlreadyOrderedException, NotAvailableProductPriceException {
         orderService.deleteOrderItems(request.getOrdersBillingNumber(), request.getProductIds());
 
         Order order = orderService.getOrder(request.getOrdersBillingNumber());
@@ -129,7 +129,7 @@ public class OrderEndpoint {
         return orderItems;
     }
 
-    private OrderDTOForReception convertToOrderDTOForReception(Order order) throws ContractViolationException, NoAvailableProductPriceException {
+    private OrderDTOForReception convertToOrderDTOForReception(Order order) throws ContractViolationException, NotAvailableProductPriceException {
         OrderDTOForReception orderDTOForReception = new OrderDTOForReception();
         orderDTOForReception.setOrdersCustomersName(order.getCustomerId());
         orderDTOForReception.setPlacingDate(DateProducer.produce(order.getPlacingDate()));
@@ -138,7 +138,7 @@ public class OrderEndpoint {
                 new BigDecimal( orderService.getOrderPrice(order.getBillingNumber()) ).setScale(2, RoundingMode.HALF_UP)
         );
 
-        List<Product> ordersProducts = productService.getProductsById(order.getOrdersProductsIds());
+        List<Product> ordersProducts = productService.getProducts(order.getOrdersProductsIds());
 
         Map<String, Product> products = new HashMap<String, Product>();
         for (Product tempProduct : ordersProducts) {

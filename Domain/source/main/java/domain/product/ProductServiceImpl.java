@@ -1,30 +1,23 @@
 package domain.product;
 
-import domain.ContractViolationException;
-import domain.order.OrderService;
 import domain.order.exceptions.OrderDoesNotExistException;
 import domain.product.exceptions.*;
 
 import java.util.*;
 
 public class ProductServiceImpl implements ProductService {
-    private OrderService orderService;
     private ProductRepo productRepo;
 
-    public ProductServiceImpl(OrderService orderService, ProductRepo productRepo) throws ContractViolationException {
-        if (orderService == null) {
-            throw new ContractViolationException("Parameter \"orderService\" is NULL");
-        }
+    public ProductServiceImpl(ProductRepo productRepo) {
         if (productRepo == null) {
-            throw new ContractViolationException("Parameter \"productRepo\" is NULL");
+            throw new IllegalArgumentException("Parameter \"productRepo\" is NULL");
         }
-        this.orderService = orderService;
         this.productRepo = productRepo;
     }
 
-    public void createProduct(String name, String units, ProductPrice ... productPrices) throws ContractViolationException, ProductAlreadyExistException,
+    public void createProduct(String name, String units, ProductPrice ... productPrices) throws ProductAlreadyExistException,
             DateIntersectionInProductPriceException {
-        validateParamName(name);
+        checkParamNameForNull(name);
         Product product = (Product) productRepo.get(name);
         if (product != null) {
             throw new ProductAlreadyExistException();
@@ -33,10 +26,12 @@ public class ProductServiceImpl implements ProductService {
         productRepo.add(new Product(name, units, productPrices));
     }
 
-    public Product getProduct(String name) throws ContractViolationException, ProductDoesNotExistException {
-        validateParamName(name);
+    public Product getProduct(String name) throws ProductDoesNotExistException {
+        checkParamNameForNull(name);
         Product product = (Product) productRepo.get(name);
-        validateProductExistence(product);
+        if (product == null) {
+            throw new ProductDoesNotExistException();
+        }
         return product;
     }
 
@@ -45,48 +40,48 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public List<Product> getProductsById(List<String> productId) throws ContractViolationException {
+    public List<Product> getProducts(List<String> productId) {
         if (productId == null) {
-            throw new ContractViolationException("Parameter \"productId\" is NULL");
+            throw new IllegalArgumentException("Parameter \"productId\" is NULL");
         }
-        return productRepo.getProductsByIds(productId);
+        return productRepo.getProducts(productId);
     }
 
-    public void addProductPrices(String productName, ProductPrice ... productPrices) throws ContractViolationException, ProductDoesNotExistException,
+    public void addProductPrices(String productName, ProductPrice ... productPrices) throws ProductDoesNotExistException,
             DateIntersectionInProductPriceException, NotValidStartEffectDayException {
-        validateParamName(productName);
+        checkParamNameForNull(productName);
         Product product = (Product) productRepo.get(productName);
-        validateProductExistence(product);
+        if (product == null) {
+            throw new ProductDoesNotExistException();
+        }
         product.addProductPrices(productPrices);
         productRepo.update(product);
     }
 
-    public void deleteProductPrices(String productName, ProductPrice ... productPrices) throws ContractViolationException, ProductDoesNotExistException {
-        validateParamName(productName);
+    public void deleteProductPrices(String productName, ProductPrice ... productPrices) throws ProductDoesNotExistException {
+        checkParamNameForNull(productName);
         Product product = (Product) productRepo.get(productName);
-        validateProductExistence(product);
+        if (product == null) {
+            throw new ProductDoesNotExistException();
+        }
         product.deleteProductPrices(productPrices);
         productRepo.update(product);
     }
 
-    public void deleteProduct(String productName) throws ContractViolationException, ProductDoesNotExistException, OrderDoesNotExistException {
-        validateParamName(productName);
+    public void deleteProduct(String productName) throws ProductDoesNotExistException, OrderDoesNotExistException {
+        checkParamNameForNull(productName);
         Product product = (Product) productRepo.get(productName);
-        validateProductExistence(product);
+        if (product == null) {
+            throw new ProductDoesNotExistException();
+        }
         ProductPrice[] productPrices = new ProductPrice[product.getProductPrices().size()];
         deleteProductPrices(productName, product.getProductPrices().toArray(productPrices));
         productRepo.delete(product);
     }
 
-    private void validateParamName(String name) throws ContractViolationException {
+    private void checkParamNameForNull(String name) {
         if (name == null || name.isEmpty()) {
-            throw new ContractViolationException("Parameter \"name\" is NULL");
-        }
-    }
-
-    private void validateProductExistence(Product product) throws ProductDoesNotExistException {
-        if (product == null) {
-            throw new ProductDoesNotExistException();
+            throw new IllegalArgumentException("Parameter \"name\" is NULL");
         }
     }
 }

@@ -1125,12 +1125,12 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 27-Dec-2016 19:41 [DEBUG]: Mapped [{http://www.customerRequestResponse.endpointRequestResponse.webService}GetCustomerRequest] onto endpoint [public webservice.endpointrequestresponse.customerrequestresponse.GetCustomerResponse webservice.endpoints.CustomerEndpoint.getCustomer(webservice.endpointrequestresponse.customerrequestresponse.GetCustomerRequest) throws domain.customer.exceptions.CustomerDoesNotExistException,domain.ContractViolationException]
 27-Dec-2016 19:41 [DEBUG]: Mapped [{http://www.customerRequestResponse.endpointRequestResponse.webService}GetAllCustomersRequest] onto endpoint [public webservice.endpointrequestresponse.customerrequestresponse.GetAllCustomersResponse webservice.endpoints.CustomerEndpoint.getAllCustomers(webservice.endpointrequestresponse.customerrequestresponse.GetAllCustomersRequest)]
 27-Dec-2016 19:41 [DEBUG]: Mapped [{http://www.customerRequestResponse.endpointRequestResponse.webService}DeleteCustomerRequest] onto endpoint [public void webservice.endpoints.CustomerEndpoint.deleteCustomer(webservice.endpointrequestresponse.customerrequestresponse.DeleteCustomerRequest) throws domain.customer.exceptions.CustomerDoesNotExistException,domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException]
-27-Dec-2016 19:41 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}GetOrderRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetOrderResponse webservice.endpoints.OrderEndpoint.getOrder(webservice.endpointrequestresponse.orderrequestresponse.GetOrderRequest) throws domain.order.exceptions.OrderDoesNotExistException,domain.ContractViolationException,domain.product.exceptions.NoAvailableProductPriceException,domain.product.exceptions.ProductDoesNotExistException]
-27-Dec-2016 19:41 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}CreateOrderRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.ContractViolationException,domain.customer.exceptions.CustomerDoesNotExistException,domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.product.exceptions.NoAvailableProductPriceException,domain.product.exceptions.ProductDoesNotExistException]
-27-Dec-2016 19:41 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}GetAllCustomersOrdersRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.ContractViolationException,domain.product.exceptions.NoAvailableProductPriceException,domain.customer.exceptions.CustomerDoesNotExistException]
+27-Dec-2016 19:41 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}GetOrderRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetOrderResponse webservice.endpoints.OrderEndpoint.getOrder(webservice.endpointrequestresponse.orderrequestresponse.GetOrderRequest) throws domain.order.exceptions.OrderDoesNotExistException,domain.ContractViolationException,domain.product.exceptions.NotAvailableProductPriceException,domain.product.exceptions.ProductDoesNotExistException]
+27-Dec-2016 19:41 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}CreateOrderRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.ContractViolationException,domain.customer.exceptions.CustomerDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException,domain.product.exceptions.ProductDoesNotExistException]
+27-Dec-2016 19:41 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}GetAllCustomersOrdersRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.ContractViolationException,domain.product.exceptions.NotAvailableProductPriceException,domain.customer.exceptions.CustomerDoesNotExistException]
 27-Dec-2016 19:41 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}DeleteOrderRequest] onto endpoint [public void webservice.endpoints.OrderEndpoint.deleteOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException]
-27-Dec-2016 19:41 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}AddOrderItemsRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsResponse webservice.endpoints.OrderEndpoint.AddOrderItemsToOrder(webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.product.exceptions.NoAvailableProductPriceException,domain.product.exceptions.ProductDoesNotExistException]
-27-Dec-2016 19:41 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}DeleteOrderItemsRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsNotUniqueException,domain.product.exceptions.NoAvailableProductPriceException]
+27-Dec-2016 19:41 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}AddOrderItemsRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsResponse webservice.endpoints.OrderEndpoint.AddOrderItemsToOrder(webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException,domain.product.exceptions.ProductDoesNotExistException]
+27-Dec-2016 19:41 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}DeleteOrderItemsRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException]
 27-Dec-2016 19:41 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}CreateProductRequest] onto endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.ContractViolationException,domain.product.exceptions.ProductAlreadyExistException,domain.product.exceptions.DateIntersectionInProductPriceException]
 27-Dec-2016 19:41 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}GetProductRequest] onto endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.ContractViolationException,domain.product.exceptions.ProductDoesNotExistException]
 27-Dec-2016 19:41 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}GetAllProductsRequest] onto endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetAllProductsResponse webservice.endpoints.ProductEndpoint.getAllProducts(webservice.endpointrequestresponse.productrequestresponse.GetAllProductsRequest)]
@@ -1560,7 +1560,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 27-Dec-2016 19:41 [DEBUG]: Looking up endpoint for [{http://www.orderRequestResponse.endpointRequestResponse.webService}GetAllCustomersOrdersRequest]
-27-Dec-2016 19:41 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@21054100] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.ContractViolationException,domain.product.exceptions.NoAvailableProductPriceException,domain.customer.exceptions.CustomerDoesNotExistException]
+27-Dec-2016 19:41 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@21054100] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.ContractViolationException,domain.product.exceptions.NotAvailableProductPriceException,domain.customer.exceptions.CustomerDoesNotExistException]
 27-Dec-2016 19:41 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@25e1e86e]
 27-Dec-2016 19:41 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@1262a130] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest]
 27-Dec-2016 19:41 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@9445fbe] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest]
@@ -1571,7 +1571,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 19:41 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@35537843] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest]
 27-Dec-2016 19:41 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@7afc920e] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest]
 27-Dec-2016 19:41 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest@69edfb80]
-27-Dec-2016 19:41 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.ContractViolationException,domain.product.exceptions.NoAvailableProductPriceException,domain.customer.exceptions.CustomerDoesNotExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest@69edfb80]
+27-Dec-2016 19:41 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.ContractViolationException,domain.product.exceptions.NotAvailableProductPriceException,domain.customer.exceptions.CustomerDoesNotExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest@69edfb80]
 27-Dec-2016 19:41 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
 27-Dec-2016 19:41 [DEBUG]: Creating new transaction with name [domain.order.OrderServiceImpl.getAllCustomersOrders]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
 27-Dec-2016 19:41 [TRACE]: Opened session at timestamp: 14828604995
@@ -1900,7 +1900,7 @@ line 1:46: expecting ''', found '<EOF>'
 	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:221)
 	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:199)
 	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1784)
-	at persistence.productRepository.ProductRepoImpl.getProductsByIds(ProductRepoImpl.java:56)
+	at getProducts(ProductRepoImpl.java:56)
 	at domain.order.OrderServiceImpl.getOrderPrice(OrderServiceImpl.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -1974,9 +1974,9 @@ line 1:46: expecting ''', found '<EOF>'
 27-Dec-2016 19:41 [DEBUG]: Released JDBC connection
 27-Dec-2016 19:41 [TRACE]: Logical connection closed
 27-Dec-2016 19:41 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-27-Dec-2016 19:41 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.ContractViolationException,domain.product.exceptions.NoAvailableProductPriceException,domain.customer.exceptions.CustomerDoesNotExistException]: org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.Product WHERE name in (')]
+27-Dec-2016 19:41 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.ContractViolationException,domain.product.exceptions.NotAvailableProductPriceException,domain.customer.exceptions.CustomerDoesNotExistException]: org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.Product WHERE name in (')]
 27-Dec-2016 19:41 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-27-Dec-2016 19:41 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.ContractViolationException,domain.product.exceptions.NoAvailableProductPriceException,domain.customer.exceptions.CustomerDoesNotExistException]: org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.Product WHERE name in (')]
+27-Dec-2016 19:41 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.ContractViolationException,domain.product.exceptions.NotAvailableProductPriceException,domain.customer.exceptions.CustomerDoesNotExistException]: org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.Product WHERE name in (')]
 27-Dec-2016 19:41 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
 org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.Product WHERE name in (')]
 	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:225)
@@ -1987,7 +1987,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:221)
 	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:199)
 	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1784)
-	at persistence.productRepository.ProductRepoImpl.getProductsByIds(ProductRepoImpl.java:56)
+	at getProducts(ProductRepoImpl.java:56)
 	at domain.order.OrderServiceImpl.getOrderPrice(OrderServiceImpl.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -2045,7 +2045,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:221)&#xD;
 	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:199)&#xD;
 	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1784)&#xD;
-	at persistence.productRepository.ProductRepoImpl.getProductsByIds(ProductRepoImpl.java:56)&#xD;
+	at getProducts(ProductRepoImpl.java:56)&#xD;
 	at domain.order.OrderServiceImpl.getOrderPrice(OrderServiceImpl.java:41)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)&#xD;
@@ -2134,7 +2134,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 27-Dec-2016 19:42 [DEBUG]: Looking up endpoint for [{http://www.orderRequestResponse.endpointRequestResponse.webService}GetAllCustomersOrdersRequest]
-27-Dec-2016 19:42 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@21054100] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.ContractViolationException,domain.product.exceptions.NoAvailableProductPriceException,domain.customer.exceptions.CustomerDoesNotExistException]
+27-Dec-2016 19:42 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@21054100] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.ContractViolationException,domain.product.exceptions.NotAvailableProductPriceException,domain.customer.exceptions.CustomerDoesNotExistException]
 27-Dec-2016 19:42 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@25e1e86e]
 27-Dec-2016 19:42 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@1262a130] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest]
 27-Dec-2016 19:42 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@9445fbe] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest]
@@ -2145,7 +2145,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 19:42 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@35537843] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest]
 27-Dec-2016 19:42 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@7afc920e] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest]
 27-Dec-2016 19:42 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest@392cf455]
-27-Dec-2016 19:42 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.ContractViolationException,domain.product.exceptions.NoAvailableProductPriceException,domain.customer.exceptions.CustomerDoesNotExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest@392cf455]
+27-Dec-2016 19:42 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.ContractViolationException,domain.product.exceptions.NotAvailableProductPriceException,domain.customer.exceptions.CustomerDoesNotExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest@392cf455]
 27-Dec-2016 19:42 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
 27-Dec-2016 19:42 [DEBUG]: Creating new transaction with name [domain.order.OrderServiceImpl.getAllCustomersOrders]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
 27-Dec-2016 19:42 [TRACE]: Opened session at timestamp: 14828605267
@@ -2473,7 +2473,7 @@ line 1:46: expecting ''', found '<EOF>'
 	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:221)
 	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:199)
 	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1784)
-	at persistence.productRepository.ProductRepoImpl.getProductsByIds(ProductRepoImpl.java:56)
+	at getProducts(ProductRepoImpl.java:56)
 	at domain.order.OrderServiceImpl.getOrderPrice(OrderServiceImpl.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -2547,9 +2547,9 @@ line 1:46: expecting ''', found '<EOF>'
 27-Dec-2016 19:45 [DEBUG]: Released JDBC connection
 27-Dec-2016 19:45 [TRACE]: Logical connection closed
 27-Dec-2016 19:45 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-27-Dec-2016 19:45 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.ContractViolationException,domain.product.exceptions.NoAvailableProductPriceException,domain.customer.exceptions.CustomerDoesNotExistException]: org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.Product WHERE name in (')]
+27-Dec-2016 19:45 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.ContractViolationException,domain.product.exceptions.NotAvailableProductPriceException,domain.customer.exceptions.CustomerDoesNotExistException]: org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.Product WHERE name in (')]
 27-Dec-2016 19:45 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-27-Dec-2016 19:45 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.ContractViolationException,domain.product.exceptions.NoAvailableProductPriceException,domain.customer.exceptions.CustomerDoesNotExistException]: org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.Product WHERE name in (')]
+27-Dec-2016 19:45 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.ContractViolationException,domain.product.exceptions.NotAvailableProductPriceException,domain.customer.exceptions.CustomerDoesNotExistException]: org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.Product WHERE name in (')]
 27-Dec-2016 19:45 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
 org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.Product WHERE name in (')]
 	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:225)
@@ -2560,7 +2560,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:221)
 	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:199)
 	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1784)
-	at persistence.productRepository.ProductRepoImpl.getProductsByIds(ProductRepoImpl.java:56)
+	at getProducts(ProductRepoImpl.java:56)
 	at domain.order.OrderServiceImpl.getOrderPrice(OrderServiceImpl.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -2618,7 +2618,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:221)&#xD;
 	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:199)&#xD;
 	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1784)&#xD;
-	at persistence.productRepository.ProductRepoImpl.getProductsByIds(ProductRepoImpl.java:56)&#xD;
+	at getProducts(ProductRepoImpl.java:56)&#xD;
 	at domain.order.OrderServiceImpl.getOrderPrice(OrderServiceImpl.java:41)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)&#xD;
@@ -2736,7 +2736,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 27-Dec-2016 19:45 [DEBUG]: Looking up endpoint for [{http://www.orderRequestResponse.endpointRequestResponse.webService}GetAllCustomersOrdersRequest]
-27-Dec-2016 19:45 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@21054100] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.ContractViolationException,domain.product.exceptions.NoAvailableProductPriceException,domain.customer.exceptions.CustomerDoesNotExistException]
+27-Dec-2016 19:45 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@21054100] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.ContractViolationException,domain.product.exceptions.NotAvailableProductPriceException,domain.customer.exceptions.CustomerDoesNotExistException]
 27-Dec-2016 19:45 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@25e1e86e]
 27-Dec-2016 19:45 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@1262a130] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest]
 27-Dec-2016 19:45 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@9445fbe] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest]
@@ -2747,7 +2747,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 19:45 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@35537843] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest]
 27-Dec-2016 19:45 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@7afc920e] supports [class webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest]
 27-Dec-2016 19:45 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest@120c3ceb]
-27-Dec-2016 19:45 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.ContractViolationException,domain.product.exceptions.NoAvailableProductPriceException,domain.customer.exceptions.CustomerDoesNotExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest@120c3ceb]
+27-Dec-2016 19:45 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.ContractViolationException,domain.product.exceptions.NotAvailableProductPriceException,domain.customer.exceptions.CustomerDoesNotExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest@120c3ceb]
 27-Dec-2016 19:45 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
 27-Dec-2016 19:45 [DEBUG]: Creating new transaction with name [domain.order.OrderServiceImpl.getAllCustomersOrders]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
 27-Dec-2016 19:45 [TRACE]: Opened session at timestamp: 14828607209
@@ -3075,7 +3075,7 @@ line 1:46: expecting ''', found '<EOF>'
 	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:221)
 	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:199)
 	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1784)
-	at persistence.productRepository.ProductRepoImpl.getProductsByIds(ProductRepoImpl.java:56)
+	at getProducts(ProductRepoImpl.java:56)
 	at domain.order.OrderServiceImpl.getOrderPrice(OrderServiceImpl.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -3149,9 +3149,9 @@ line 1:46: expecting ''', found '<EOF>'
 28-Dec-2016 10:48 [DEBUG]: Released JDBC connection
 28-Dec-2016 10:48 [TRACE]: Logical connection closed
 28-Dec-2016 10:48 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-28-Dec-2016 10:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.ContractViolationException,domain.product.exceptions.NoAvailableProductPriceException,domain.customer.exceptions.CustomerDoesNotExistException]: org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.Product WHERE name in (')]
+28-Dec-2016 10:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.ContractViolationException,domain.product.exceptions.NotAvailableProductPriceException,domain.customer.exceptions.CustomerDoesNotExistException]: org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.Product WHERE name in (')]
 28-Dec-2016 10:48 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-28-Dec-2016 10:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.ContractViolationException,domain.product.exceptions.NoAvailableProductPriceException,domain.customer.exceptions.CustomerDoesNotExistException]: org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.Product WHERE name in (')]
+28-Dec-2016 10:48 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.ContractViolationException,domain.product.exceptions.NotAvailableProductPriceException,domain.customer.exceptions.CustomerDoesNotExistException]: org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.Product WHERE name in (')]
 28-Dec-2016 10:48 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
 org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.Product WHERE name in (')]
 	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:225)
@@ -3162,7 +3162,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:221)
 	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:199)
 	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1784)
-	at persistence.productRepository.ProductRepoImpl.getProductsByIds(ProductRepoImpl.java:56)
+	at getProducts(ProductRepoImpl.java:56)
 	at domain.order.OrderServiceImpl.getOrderPrice(OrderServiceImpl.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -3220,7 +3220,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:221)&#xD;
 	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:199)&#xD;
 	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1784)&#xD;
-	at persistence.productRepository.ProductRepoImpl.getProductsByIds(ProductRepoImpl.java:56)&#xD;
+	at getProducts(ProductRepoImpl.java:56)&#xD;
 	at domain.order.OrderServiceImpl.getOrderPrice(OrderServiceImpl.java:41)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)&#xD;

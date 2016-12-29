@@ -1,7 +1,5 @@
 package domain.order;
 
-import domain.ContractViolationException;
-
 public class OrderItem {
     private final double quantity;
     private final String productId;
@@ -11,8 +9,8 @@ public class OrderItem {
         productId = null;
     }
 
-    public OrderItem(double quantity, String productId) throws ContractViolationException {
-        validateConstructorsParams(quantity, productId);
+    public OrderItem(double quantity, String productId) {
+        checkConstructorParametersForNull(quantity, productId);
         this.quantity = quantity;
         this.productId = productId;
     }
@@ -25,12 +23,12 @@ public class OrderItem {
         return productId;
     }
 
-    private void validateConstructorsParams(double quantity, String productId) throws ContractViolationException {
+    private void checkConstructorParametersForNull(double quantity, String productId) {
         if (quantity <= 0) {
-            throw new ContractViolationException("Parameter \"quantity\" is NULL");
+            throw new IllegalArgumentException("Parameter \"quantity\" is NULL");
         }
         if (productId == null || productId.isEmpty()) {
-            throw new ContractViolationException("Parameter \"productId\" is NULL");
+            throw new IllegalArgumentException("Parameter \"productId\" is NULL");
         }
     }
 

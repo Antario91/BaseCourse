@@ -1,13 +1,12 @@
 package domain.order;
 
-import domain.ContractViolationException;
 import domain.customer.Customer;
 import domain.customer.CustomerRepo;
 import domain.customer.exceptions.CustomerDoesNotExistException;
 import domain.order.exceptions.*;
 import domain.product.Product;
 import domain.product.ProductRepo;
-import domain.product.exceptions.NoAvailableProductPriceException;
+import domain.product.exceptions.NotAvailableProductPriceException;
 import domain.product.exceptions.ProductDoesNotExistException;
 
 import java.util.*;
@@ -17,28 +16,28 @@ public class OrderServiceImpl implements OrderService {
     private OrderRepo orderRepo;
     private ProductRepo productRepo;
 
-    public OrderServiceImpl(CustomerRepo customerRepo, OrderRepo orderRepo, ProductRepo productRepo) throws ContractViolationException {
+    public OrderServiceImpl(CustomerRepo customerRepo, OrderRepo orderRepo, ProductRepo productRepo) {
         if (customerRepo == null) {
-            throw new ContractViolationException("Parameter \"customerRepo\" is NULL");
+            throw new IllegalArgumentException("Parameter \"customerRepo\" is NULL");
         }
         if (orderRepo == null) {
-            throw new ContractViolationException("Parameter \"orderRepo\" is NULL");
+            throw new IllegalArgumentException("Parameter \"orderRepo\" is NULL");
         }
         if (productRepo == null) {
-            throw new ContractViolationException("Parameter \"productRepo\" is NULL");
+            throw new IllegalArgumentException("Parameter \"productRepo\" is NULL");
         }
         this.customerRepo = customerRepo;
         this.orderRepo = orderRepo;
         this.productRepo = productRepo;
     }
 
-    public double getOrderPrice(String billingNumber) throws ContractViolationException, NoAvailableProductPriceException {
-        validateParamBillingNumber(billingNumber);
+    public double getOrderPrice(String billingNumber) throws NotAvailableProductPriceException {
+        checkParamBillingNumberForNull(billingNumber);
         double price = 0;
 
         Order order = (Order) orderRepo.get(billingNumber);
 
-        List<Product> orderProducts = productRepo.getProductsByIds(order.getOrdersProductsIds());
+        List<Product> orderProducts = productRepo.getProducts(order.getOrdersProductsIds());
         Map<String, Product> productMap = new HashMap<String, Product>();
         for (Product product : orderProducts) {
             productMap.put(product.getName(), product);
@@ -54,88 +53,86 @@ public class OrderServiceImpl implements OrderService {
         return price;
     }
 
-    public double createOrder(String customerId, OrderItem ... orderItems) throws ContractViolationException, CustomerDoesNotExistException,
-            ProductInOrderIsNotUniqueException, NoAvailableProductPriceException, ProductDoesNotExistException {
-        validateParamCustomerId(customerId);
-        validateProductsExistence(orderItems);
+    public void createOrder(String customerId, OrderItem ... orderItems) throws CustomerDoesNotExistException, ProductInOrderIsAlreadyOrderedException,
+            NotAvailableProductPriceException, ProductDoesNotExistException {
+        checkParamCustomerIdForNull(customerId);
         if (customerRepo.get(customerId) == null) {
             throw new CustomerDoesNotExistException();
         }
 
-        Order order = new Order(customerId, orderItems);
-        orderRepo.add(order);
-        return getOrderPrice(order.getBillingNumber());
-    }
-
-    public Order getOrder (String billingNumber) throws ContractViolationException, OrderDoesNotExistException {
-        validateParamBillingNumber(billingNumber);
-        Order order = (Order) orderRepo.get(billingNumber);
-        validateOrdersExistence(order);
-        return order;
-    }
-
-    public List<Order> getAllCustomersOrders(String customerId) throws ContractViolationException, CustomerDoesNotExistException {
-        validateParamCustomerId(customerId);
-        Customer customer = (Customer) customerRepo.get(customerId);
-        validateCustomerExistence(customer);
-        return orderRepo.getOrdersByCustomerId(customerId);
-    }
-
-    public void addOrderItems(String billingNumber, OrderItem ... orderItems) throws ContractViolationException, OrderDoesNotExistException,
-            ProductInOrderIsNotUniqueException, ProductDoesNotExistException {
-        validateParamBillingNumber(billingNumber);
-        validateProductsExistence(orderItems);
-        Order order = (Order) orderRepo.get(billingNumber);
-        validateOrdersExistence(order);
-        order.addOrderItems(orderItems);
-        orderRepo.update(order);
-    }
-
-    public void deleteOrderItems(String billingNumber, List<String> productIds) throws ContractViolationException, OrderDoesNotExistException {
-        validateParamBillingNumber(billingNumber);
-        Order order = (Order) orderRepo.get(billingNumber);
-        validateOrdersExistence(order);
-        order.deleteOrderItems(productIds);
-        orderRepo.update(order);
-    }
-
-    public void deleteOrder(String billingNumber) throws ContractViolationException, OrderDoesNotExistException {
-        validateParamBillingNumber(billingNumber);
-        Order order = (Order) orderRepo.get(billingNumber);
-        validateOrdersExistence(order);
-        deleteOrderItems(billingNumber, order.getOrdersProductsIds());
-        orderRepo.delete(order);
-    }
-
-    private void validateParamCustomerId(String customerId) throws ContractViolationException {
-        if (customerId == null || customerId.isEmpty()) {
-            throw new ContractViolationException("Parameter \"customerId\" is NULL");
-        }
-    }
-
-    private void validateParamBillingNumber(String billingNumber) throws ContractViolationException {
-        if (billingNumber == null || billingNumber.isEmpty()) {
-            throw new ContractViolationException("Parameter \"billingNumber\" is NULL");
-        }
-    }
-
-    private void validateCustomerExistence(Customer customer) throws CustomerDoesNotExistException {
-        if (customer == null) {
-            throw new CustomerDoesNotExistException();
-        }
-    }
-
-    private void validateOrdersExistence(Order order) throws OrderDoesNotExistException {
-        if (order == null) {
-            throw new OrderDoesNotExistException();
-        }
-    }
-
-    private void validateProductsExistence(OrderItem ... orderItems) throws ProductDoesNotExistException {
         for (OrderItem item : orderItems) {
             if (productRepo.get(item.getProductId()) == null) {
                 throw new ProductDoesNotExistException();
             }
+        }
+
+        Order order = new Order(customerId, orderItems);
+        orderRepo.add(order);
+    }
+
+    public Order getOrder (String billingNumber) throws OrderDoesNotExistException {
+        checkParamBillingNumberForNull(billingNumber);
+        Order order = (Order) orderRepo.get(billingNumber);
+        if (order == null) {
+            throw new OrderDoesNotExistException();
+        }
+        return order;
+    }
+
+    public List<Order> getAllCustomerOrders(String customerId) throws CustomerDoesNotExistException {
+        checkParamCustomerIdForNull(customerId);
+        Customer customer = (Customer) customerRepo.get(customerId);
+        if (customer == null) {
+            throw new CustomerDoesNotExistException();
+        }
+        return orderRepo.getOrdersByCustomerId(customerId);
+    }
+
+    public void addOrderItems(String billingNumber, OrderItem ... orderItems) throws OrderDoesNotExistException, ProductInOrderIsAlreadyOrderedException,
+            ProductDoesNotExistException {
+        checkParamBillingNumberForNull(billingNumber);
+        for (OrderItem item : orderItems) {
+            if (productRepo.get(item.getProductId()) == null) {
+                throw new ProductDoesNotExistException();
+            }
+        }
+        Order order = (Order) orderRepo.get(billingNumber);
+        if (order == null) {
+            throw new OrderDoesNotExistException();
+        }
+        order.addOrderItems(orderItems);
+        orderRepo.update(order);
+    }
+
+    public void deleteOrderItems(String billingNumber, List<String> productIds) throws OrderDoesNotExistException {
+        checkParamBillingNumberForNull(billingNumber);
+        Order order = (Order) orderRepo.get(billingNumber);
+        if (order == null) {
+            throw new OrderDoesNotExistException();
+        }
+        order.deleteOrderItems(productIds);
+        orderRepo.update(order);
+    }
+
+    public void deleteOrder(String billingNumber) throws OrderDoesNotExistException {
+        checkParamBillingNumberForNull(billingNumber);
+        Order order = (Order) orderRepo.get(billingNumber);
+        if (order == null) {
+            throw new OrderDoesNotExistException();
+        }
+        deleteOrderItems(billingNumber, order.getOrdersProductsIds());
+        orderRepo.delete(order);
+    }
+
+    private void checkParamCustomerIdForNull(String customerId) {
+        if (customerId == null || customerId.isEmpty()) {
+            throw new IllegalArgumentException("Parameter \"customerId\" is NULL");
+        }
+    }
+
+    private void checkParamBillingNumberForNull(String billingNumber) {
+        if (billingNumber == null || billingNumber.isEmpty()) {
+            throw new IllegalArgumentException("Parameter \"billingNumber\" is NULL");
         }
     }
 }

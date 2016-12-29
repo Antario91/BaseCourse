@@ -10,8 +10,8 @@ public class Customer extends Entity {
         name = null;
     }
 
-    public Customer(String name) throws ContractViolationException {
-        validateConstructorsParams(name);
+    public Customer(String name) {
+        checkConstructorParameterForNull(name);
         this.name = name;
     }
 
@@ -19,9 +19,9 @@ public class Customer extends Entity {
         return name;
     }
 
-    private void validateConstructorsParams(String name) throws ContractViolationException {
+    private void checkConstructorParameterForNull(String name) {
         if (name == null || name.isEmpty()) {
-            throw new ContractViolationException("Parameter \"name\" is NULL");
+            throw new IllegalArgumentException("Parameter \"name\" is NULL");
         }
     }
 }

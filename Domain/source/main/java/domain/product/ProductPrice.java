@@ -13,8 +13,8 @@ public class ProductPrice {
         startEffectDay = null;
     }
 
-    public ProductPrice(double price, Date startEffectDay) throws ContractViolationException {
-        validateConstructorsParams(price, startEffectDay);
+    public ProductPrice(double price, Date startEffectDay) {
+        checkConstructorParametersForNull(price, startEffectDay);
         this.price = price;
         this.startEffectDay = startEffectDay;
     }
@@ -27,12 +27,12 @@ public class ProductPrice {
         return new Date(startEffectDay.getTime());
     }
 
-    static void validateConstructorsParams(double price, Date startEffectDay) throws ContractViolationException {
+    private void checkConstructorParametersForNull(double price, Date startEffectDay) {
         if (price <= 0){
-            throw new ContractViolationException("Parameter \"price\" is NULL");
+            throw new IllegalArgumentException("Parameter \"price\" is NULL");
         }
         if (startEffectDay == null) {
-            throw new ContractViolationException("Parameter \"startEffectDay\" is NULL");
+            throw new IllegalArgumentException("Parameter \"startEffectDay\" is NULL");
         }
     }
 

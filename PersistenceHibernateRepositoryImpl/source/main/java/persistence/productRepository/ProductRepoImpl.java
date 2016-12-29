@@ -33,7 +33,7 @@ public class ProductRepoImpl extends GenericRepoImpl<String, Product> implements
 
     @SuppressWarnings("unchecked")
     @Override
-    public List<Product> getProductsByIds(List<String> productId) {
+    public List<Product> getProducts(List<String> productId) {
         if (productId == null) {
             throw new NullIdException();
         }

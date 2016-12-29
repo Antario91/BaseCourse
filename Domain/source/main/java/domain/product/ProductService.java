@@ -20,7 +20,7 @@ public interface ProductService {
 
     List<Product> getAllProducts();
 
-    List<Product> getProductsById(List<String> productId) throws ContractViolationException;
+    List<Product> getProducts(List<String> productId) throws ContractViolationException;
 
     void addProductPrices(String productName, ProductPrice ... productPrices) throws ContractViolationException, ProductDoesNotExistException,
             DateIntersectionInProductPriceException, NotValidStartEffectDayException;

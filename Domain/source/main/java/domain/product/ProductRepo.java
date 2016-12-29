@@ -8,5 +8,5 @@ import java.util.List;
 public interface ProductRepo extends GenericRepo<String> {
     //TODO add PAGINATION
     List<Product> getAllProducts ();
-    List<Product> getProductsByIds (List<String> productId) throws NullIdException;
+    List<Product> getProducts(List<String> productId) throws NullIdException;
 }

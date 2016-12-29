@@ -14,25 +14,26 @@ import java.util.List;
 public class CustomerServiceImpl implements CustomerService {
     private CustomerRepo customerRepo;
 
-    public CustomerServiceImpl(CustomerRepo customerRepo, OrderService orderService) throws ContractViolationException {
+    public CustomerServiceImpl(CustomerRepo customerRepo) {
         if (customerRepo == null) {
-            throw new ContractViolationException("Parameter \"customerRepo\" is NULL");
+            throw new IllegalArgumentException("Parameter \"customerRepo\" is NULL");
         }
         this.customerRepo = customerRepo;
     }
 
     //todo check if validation before get???
-    public void createCustomer(String name) throws ContractViolationException, CustomerAlreadyExistException {
-        validateParamName(name);
+    public void createCustomer(String name) throws CustomerAlreadyExistException {
+        checkParamNameForNull(name);
         Customer customer = (Customer) customerRepo.get(name);
         if (customer != null) {
             throw new CustomerAlreadyExistException();
         }
+
         customerRepo.add(new Customer(name));
     }
 
-    public Customer getCustomer(String name) throws ContractViolationException, CustomerDoesNotExistException {
-        validateParamName(name);
+    public Customer getCustomer(String name) throws CustomerDoesNotExistException {
+        checkParamNameForNull(name);
         Customer customer = (Customer) customerRepo.get(name);
         validateCustomersExistence(customer);
         return customer;
@@ -42,16 +43,16 @@ public class CustomerServiceImpl implements CustomerService {
         return customerRepo.getAllCustomers();
     }
 
-    public void deleteCustomer (String name) throws ContractViolationException, CustomerDoesNotExistException, OrderDoesNotExistException {
-        validateParamName(name);
+    public void deleteCustomer (String name) throws CustomerDoesNotExistException {
+        checkParamNameForNull(name);
         Customer customer = (Customer) customerRepo.get(name);
         validateCustomersExistence(customer);
         customerRepo.delete(customer);
     }
 
-    private void validateParamName(String name) throws ContractViolationException {
+    private void checkParamNameForNull(String name) {
         if (name == null || name.isEmpty()) {
-            throw new ContractViolationException("Parameter \"name\" is NULL");
+            throw new IllegalArgumentException("Parameter \"name\" is NULL");
         }
     }
 
