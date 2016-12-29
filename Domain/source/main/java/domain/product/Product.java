@@ -25,8 +25,10 @@ public class Product extends Entity {
         if (productPrices == null) {
             throw new IllegalArgumentException("Parameter \"productPrices\" is NULL");
         }
+        if ( isIntersectProductPricesEffectDays(Arrays.asList(productPrices)) ) {
+            throw new DateIntersectionInProductPriceException();
+        }
         this.productPrices = Arrays.asList(productPrices);
-        isIntersectProductPricesEffectDays();
         this.name = name;
         this.units = units;
     }
@@ -47,8 +49,12 @@ public class Product extends Entity {
         if (productPrices == null) {
             throw new IllegalArgumentException("Parameter \"productPrices\" is NULL");
         }
-        areNewProductPricesUpToToday(newProductPrices);
-        isIntersectProductPricesEffectDays(Arrays.asList(newProductPrices));
+        if (areNewProductPricesUpToToday(newProductPrices)) {
+            throw new NotValidStartEffectDayException();
+        }
+        if ( isIntersectProductPricesEffectDays(Arrays.asList(newProductPrices)) ) {
+            throw new DateIntersectionInProductPriceException();
+        }
         productPrices.addAll(Arrays.asList(newProductPrices));
     }
 
@@ -68,16 +74,16 @@ public class Product extends Entity {
         List<ProductPrice> checkableProductPrices = new ArrayList<ProductPrice>(productPrices);
         Collections.sort(checkableProductPrices, getReverseProductPricesComparator());
 
-        ProductPrice lastProductPrice = null;
-        for (ProductPrice currentPrice : checkableProductPrices) {
+        Iterator<ProductPrice> itr = checkableProductPrices.iterator();
+        while (itr.hasNext()) {
+            ProductPrice currentPrice = itr.next();
             if ( dateOfInterest.after(currentPrice.getStartEffectDay()) ) {
                 price = currentPrice.getPrice();
+                break;
             }
-            lastProductPrice = currentPrice;
-        }
-
-        if ( dateOfInterest.before(lastProductPrice.getStartEffectDay()) ) {
-            throw new NotAvailableProductPriceException();
+            if ( dateOfInterest.before(currentPrice.getStartEffectDay()) && !itr.hasNext() ) {
+                throw new NotAvailableProductPriceException();
+            }
         }
 
         return price;
@@ -99,13 +105,16 @@ public class Product extends Entity {
 
     private boolean isIntersectProductPricesEffectDays(List<ProductPrice> newProductPrices) throws DateIntersectionInProductPriceException {
         HashSet<Date> checkableDate = new HashSet<Date>();
-        for (ProductPrice currentPrice : this.productPrices) {
-            checkableDate.add(currentPrice.getStartEffectDay());
+
+        if (this.productPrices != null) {
+            for (ProductPrice currentPrice : this.productPrices) {
+                checkableDate.add(currentPrice.getStartEffectDay());
+            }
         }
 
         for (ProductPrice productPrice : newProductPrices) {
             if (checkableDate.contains(productPrice.getStartEffectDay())) {
-                throw new DateIntersectionInProductPriceException();
+                return true;
             } else {
                 checkableDate.add(productPrice.getStartEffectDay());
             }
@@ -114,22 +123,10 @@ public class Product extends Entity {
         return false;
     }
 
-    private boolean isIntersectProductPricesEffectDays() throws DateIntersectionInProductPriceException {
-        HashSet<Date> checkableDate = new HashSet<Date>();
-        for (ProductPrice productPrice : productPrices) {
-            if (checkableDate.contains(productPrice.getStartEffectDay())) {
-                throw new DateIntersectionInProductPriceException();
-            } else {
-                checkableDate.add(productPrice.getStartEffectDay());
-            }
-        }
-        return false;
-    }
-
-    private boolean areNewProductPricesUpToToday(ProductPrice... productPrices) throws NotValidStartEffectDayException{
+    private boolean areNewProductPricesUpToToday(ProductPrice... productPrices) throws NotValidStartEffectDayException {
         for (ProductPrice productPrice : productPrices) {
             if (productPrice.getStartEffectDay().before(new Date())) {
-                throw new NotValidStartEffectDayException();
+                return true;
             }
         }
         return false;

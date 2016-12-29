@@ -2,9 +2,6 @@ package persistence;
 
 import domain.Entity;
 
-import domain.NullEntityException;
-import domain.NullIdException;
-import org.hibernate.FlushMode;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Restrictions;
 import domain.GenericRepo;
@@ -25,17 +22,17 @@ public class GenericRepoImpl<V, T> implements GenericRepo<V> {
         this.sessionFactory = sessionFactory;
     }
 
-    public void add (Entity entity) throws NullEntityException {
+    public void add (Entity entity) {
         if (entity == null){
-            throw new NullEntityException();
+            throw new IllegalArgumentException("Parameter \"entity\" is NULL");
         }
         sessionFactory.getCurrentSession().save(entity);
     }
 
     @SuppressWarnings("unchecked")
-    public Entity get (V id) throws NullIdException {
+    public Entity get (V id) {
         if (id == null) {
-            throw new NullIdException();
+            throw new IllegalArgumentException("Parameter \"id\" is NULL");
         }
         return (Entity) sessionFactory.getCurrentSession()
                 .createCriteria(entityClass)
@@ -43,17 +40,17 @@ public class GenericRepoImpl<V, T> implements GenericRepo<V> {
                 .uniqueResult();
     }
 
-    public void update (Entity entity) throws NullEntityException {
+    public void update (Entity entity) {
         if (entity == null) {
-            throw new NullEntityException();
+            throw new IllegalArgumentException("Parameter \"entity\" is NULL");
         }
         sessionFactory.getCurrentSession().merge(entity);
     }
 
     @SuppressWarnings("unchecked")
-    public void delete (Entity entity) throws NullEntityException {
+    public void delete (Entity entity) {
         if (entity == null) {
-            throw new NullEntityException();
+            throw new IllegalArgumentException("Parameter \"entity\" is NULL");
         }
         sessionFactory.getCurrentSession().delete(entity);
     }

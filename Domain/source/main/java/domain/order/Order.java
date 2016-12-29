@@ -24,8 +24,10 @@ public class Order extends Entity {
         if (orderItems == null) {
             throw new IllegalArgumentException("Parameter \"orderItems\" is NULL");
         }
+        if ( !isUniqueProductsInOrder(Arrays.asList(orderItems)) ) {
+            throw new ProductInOrderIsAlreadyOrderedException();
+        }
         this.orderItems = Arrays.asList(orderItems);
-        isUniqueProductsInOrder();
         this.billingNumber = UUID.randomUUID().toString();
         this.placingDate = new Date();
         this.customerId = customerId;
@@ -47,7 +49,9 @@ public class Order extends Entity {
         if (orderItems == null) {
             throw new IllegalArgumentException("Parameter \"orderItems\" is NULL");
         }
-        isUniqueProductsInOrder(Arrays.asList(newOrderItems));
+        if ( !isUniqueProductsInOrder(Arrays.asList(newOrderItems)) ) {
+            throw new ProductInOrderIsAlreadyOrderedException();
+        }
         orderItems.addAll(Arrays.asList(newOrderItems));
     }
 
@@ -80,19 +84,7 @@ public class Order extends Entity {
     private boolean isUniqueProductsInOrder(List<OrderItem> newOrderItems) throws ProductInOrderIsAlreadyOrderedException {
         for (OrderItem currentItem : newOrderItems) {
             if (this.orderItems.contains(currentItem)) {
-                throw new ProductInOrderIsAlreadyOrderedException();
-            }
-        }
-        return true;
-    }
-
-    private boolean isUniqueProductsInOrder() throws ProductInOrderIsAlreadyOrderedException {
-        Set<OrderItem> tempItems = new HashSet<OrderItem>();
-        for (OrderItem currentItem : orderItems) {
-            if (tempItems.contains(currentItem)) {
-                throw new ProductInOrderIsAlreadyOrderedException();
-            } else {
-                tempItems.add(currentItem);
+                return false;
             }
         }
         return true;

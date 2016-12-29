@@ -25,13 +25,13 @@ public class CustomerEndpoint {
     }
 
     @PayloadRoot(localPart = "CreateCustomerRequest", namespace = namespaceUri)
-    public void createCustomer(@RequestPayload CreateCustomerRequest request) throws ContractViolationException, CustomerAlreadyExistException {
+    public void createCustomer(@RequestPayload CreateCustomerRequest request) throws CustomerAlreadyExistException {
         customerService.createCustomer(request.getCustomer().getName());
     }
 
     @PayloadRoot(localPart = "GetCustomerRequest", namespace = namespaceUri)
     @ResponsePayload
-    public GetCustomerResponse getCustomer(@RequestPayload GetCustomerRequest request) throws CustomerDoesNotExistException, ContractViolationException {
+    public GetCustomerResponse getCustomer(@RequestPayload GetCustomerRequest request) throws CustomerDoesNotExistException {
         Customer customer = customerService.getCustomer(request.getCustomerName());
 
         GetCustomerResponse response = new GetCustomerResponse();
@@ -53,7 +53,7 @@ public class CustomerEndpoint {
     }
 
     @PayloadRoot(localPart = "DeleteCustomerRequest", namespace = namespaceUri)
-    public void deleteCustomer(@RequestPayload DeleteCustomerRequest request) throws CustomerDoesNotExistException, ContractViolationException, OrderDoesNotExistException {
+    public void deleteCustomer(@RequestPayload DeleteCustomerRequest request) throws CustomerDoesNotExistException, OrderDoesNotExistException {
         customerService.deleteCustomer(request.getCustomerName());
     }
 

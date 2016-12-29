@@ -8,8 +8,9 @@ package domain;
 
 //TODO Consider searchByCriteria()
 public interface GenericRepo <V> {
-    void add (Entity entity) throws NullEntityException;
-    Entity get (V id) throws NullIdException;
-    void update (Entity entity) throws NullEntityException;
-    void delete (Entity entity) throws NullEntityException;
+    void add (Entity entity);
+    Entity get (V id);
+    void update (Entity entity);
+    void delete (Entity entity);
 }
+//throws IllegalArgumentException

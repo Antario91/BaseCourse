@@ -53,26 +53,12 @@
             </sequence>
         </complexType>
     </element>
-    <element name="AddProductPricesResponse">
-        <complexType>
-            <sequence>
-                <element name="product" type="product:ProductDTO"/>
-            </sequence>
-        </complexType>
-    </element>
 
     <element name="DeleteProductPricesRequest">
         <complexType>
             <sequence>
                 <element name="productName" type="string"/>
                 <element name="productPrices" type="product:ProductPriceDTO" maxOccurs="unbounded" minOccurs="1"/>
-            </sequence>
-        </complexType>
-    </element>
-    <element name="DeleteProductPricesResponse">
-        <complexType>
-            <sequence>
-                <element name="product" type="product:ProductDTO"/>
             </sequence>
         </complexType>
     </element>

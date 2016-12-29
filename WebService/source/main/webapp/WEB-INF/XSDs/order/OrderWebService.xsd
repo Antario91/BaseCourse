@@ -15,14 +15,6 @@
             </sequence>
         </complexType>
     </element>
-    <element name="CreateOrderResponse">
-        <complexType>
-            <sequence>
-                <element name="orderPrice" type="decimal"/>
-            </sequence>
-        </complexType>
-    </element>
-
 
     <element name="GetOrderRequest">
         <complexType>
@@ -62,26 +54,12 @@
             </sequence>
         </complexType>
     </element>
-    <element name="AddOrderItemsResponse">
-        <complexType>
-            <sequence>
-                <element name="order" type="order:OrderDTOForReception"/>
-            </sequence>
-        </complexType>
-    </element>
 
     <element name="DeleteOrderItemsRequest">
         <complexType>
             <sequence>
                 <element name="ordersBillingNumber" type="string"/>
                 <element name="ProductIds" type="string" maxOccurs="unbounded" minOccurs="0"/>
-            </sequence>
-        </complexType>
-    </element>
-    <element name="DeleteOrderItemsResponse">
-        <complexType>
-            <sequence>
-                <element name="order" type="order:OrderDTOForReception"/>
             </sequence>
         </complexType>
     </element>

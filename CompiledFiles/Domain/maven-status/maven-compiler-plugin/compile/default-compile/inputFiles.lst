@@ -2,14 +2,13 @@ D:\BaseCourse\Domain\source\main\java\domain\product\exceptions\ProductAlreadyEx
 D:\BaseCourse\Domain\source\main\java\domain\GenericRepo.java
 D:\BaseCourse\Domain\source\main\java\domain\product\exceptions\NotValidStartEffectDayException.java
 D:\BaseCourse\Domain\source\main\java\domain\product\ProductService.java
-D:\BaseCourse\Domain\source\main\java\domain\ContractViolationException.java
 D:\BaseCourse\Domain\source\main\java\domain\customer\exceptions\CustomerDoesNotExistException.java
 D:\BaseCourse\Domain\source\main\java\domain\product\exceptions\DateIntersectionInProductPriceException.java
 D:\BaseCourse\Domain\source\main\java\domain\customer\Customer.java
+D:\BaseCourse\Domain\source\main\java\domain\product\exceptions\NotAvailableProductPriceException.java
 D:\BaseCourse\Domain\source\main\java\domain\product\Product.java
 D:\BaseCourse\Domain\source\main\java\domain\product\ProductPrice.java
 D:\BaseCourse\Domain\source\main\java\domain\product\ProductRepo.java
-D:\BaseCourse\Domain\source\main\java\domain\NullEntityException.java
 D:\BaseCourse\Domain\source\main\java\domain\product\ProductServiceImpl.java
 D:\BaseCourse\Domain\source\main\java\domain\order\OrderItem.java
 D:\BaseCourse\Domain\source\main\java\domain\order\OrderRepo.java
@@ -21,8 +20,6 @@ D:\BaseCourse\Domain\source\main\java\domain\order\OrderService.java
 D:\BaseCourse\Domain\source\main\java\domain\order\Order.java
 D:\BaseCourse\Domain\source\main\java\domain\order\exceptions\OrderDoesNotExistException.java
 D:\BaseCourse\Domain\source\main\java\domain\product\exceptions\ProductDoesNotExistException.java
-D:\BaseCourse\Domain\source\main\java\domain\NullIdException.java
+D:\BaseCourse\Domain\source\main\java\domain\order\exceptions\ProductInOrderIsAlreadyOrderedException.java
 D:\BaseCourse\Domain\source\main\java\domain\customer\CustomerServiceImpl.java
-D:\BaseCourse\Domain\source\main\java\domain\order\exceptions\ProductInOrderIsNotUniqueException.java
-D:\BaseCourse\Domain\source\main\java\domain\product\exceptions\NoAvailableProductPriceException.java
 D:\BaseCourse\Domain\source\main\java\domain\customer\exceptions\CustomerAlreadyExistException.java

@@ -16,20 +16,13 @@
                 <entry key="domain.product.exceptions.ProductAlreadyExistException" value="The Product with this Name have already created"/>
                 <entry key="domain.product.exceptions.ProductDoesNotExistException" value="The Product with this Name doesn't exist"/>
 
-                <entry key="domain.order.exceptions.ProductInOrderIsNotUniqueException" value="There are same products in Order items. Please, check an order"/>
+                <entry key="domain.order.exceptions.ProductInOrderIsAlreadyOrderedException" value="There are same products in Order items. Please, check an order"/>
 
                 <entry key="domain.product.exceptions.DateIntersectionInProductPriceException" value="Effect days of product prices intersect. Please, check the product"/>
 
-                <entry key="webservice.exceptions.NullCustomerNameException" value="Customer's name are not specified in request"/>
-                <entry key="webservice.exceptions.NullOrderBillingNumberException" value="Order's billing number are not specified in request"/>
-                <entry key="webservice.exceptions.NullOrderItemsException" value="Order's items are not specified in request"/>
-                <entry key="webservice.exceptions.NullPriceEndEffectDayException" value="Product price's end effect day are not specified in request"/>
-                <entry key="webservice.exceptions.NullPriceStartEffectDayException" value="Product price's start effect day are not specified in request"/>
-                <entry key="webservice.exceptions.NullProductNameException" value="Product's name are not specified in request"/>
-                <entry key="webservice.exceptions.NullProductPriceException" value="Product's price are not specified in request"/>
-                <entry key="webservice.exceptions.NullProductPricesException" value="Product's prices are not specified in request"/>
-                <entry key="webservice.exceptions.NullProductQuantityException" value="Produc's quantity are not specified in request"/>
-                <entry key="webservice.exceptions.NullProductUnitsException" value="Product's units are not specified in request"/>
+                <entry key="domain.product.exceptions.NotAvailableProductPriceException" value="Sorry, there are no valid product price"/>
+
+                <entry key="domain.product.exceptions.NotValidStartEffectDayException" value="Some effect day of price is not valid"/>
             </map>
         </constructor-arg>
     </bean>

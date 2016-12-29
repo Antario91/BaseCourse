@@ -1105,8 +1105,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 27-Dec-2016 13:51 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.ContractViolationException,domain.customer.exceptions.CustomerDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException,domain.product.exceptions.ProductDoesNotExistException
 27-Dec-2016 13:51 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.ContractViolationException,domain.product.exceptions.NotAvailableProductPriceException,domain.customer.exceptions.CustomerDoesNotExistException
 27-Dec-2016 13:51 [DEBUG]: Unable to apply any optimisations to advised method: public void webservice.endpoints.OrderEndpoint.deleteOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException
-27-Dec-2016 13:51 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsResponse webservice.endpoints.OrderEndpoint.AddOrderItemsToOrder(webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException,domain.product.exceptions.ProductDoesNotExistException
-27-Dec-2016 13:51 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException
+27-Dec-2016 13:51 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsResponse AddOrderItems(webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException,domain.product.exceptions.ProductDoesNotExistException
+27-Dec-2016 13:51 [DEBUG]: Unable to apply any optimisations to advised method: public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse DeleteOrderItems(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException
 27-Dec-2016 13:51 [DEBUG]: Found finalize() method - using NO_OVERRIDE
 27-Dec-2016 13:51 [DEBUG]: Found 'equals' method: public boolean java.lang.Object.equals(java.lang.Object)
 27-Dec-2016 13:51 [DEBUG]: Unable to apply any optimisations to advised method: public java.lang.String java.lang.Object.toString()
@@ -1225,8 +1225,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 27-Dec-2016 13:51 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}CreateOrderRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.ContractViolationException,domain.customer.exceptions.CustomerDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException,domain.product.exceptions.ProductDoesNotExistException]
 27-Dec-2016 13:51 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}GetAllCustomersOrdersRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.ContractViolationException,domain.product.exceptions.NotAvailableProductPriceException,domain.customer.exceptions.CustomerDoesNotExistException]
 27-Dec-2016 13:51 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}DeleteOrderRequest] onto endpoint [public void webservice.endpoints.OrderEndpoint.deleteOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException]
-27-Dec-2016 13:51 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}AddOrderItemsRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsResponse webservice.endpoints.OrderEndpoint.AddOrderItemsToOrder(webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException,domain.product.exceptions.ProductDoesNotExistException]
-27-Dec-2016 13:51 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}DeleteOrderItemsRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException]
+27-Dec-2016 13:51 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}AddOrderItemsRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsResponse AddOrderItems(webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException,domain.product.exceptions.ProductDoesNotExistException]
+27-Dec-2016 13:51 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}DeleteOrderItemsRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse DeleteOrderItems(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException]
 27-Dec-2016 13:51 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}CreateProductRequest] onto endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.ContractViolationException,domain.product.exceptions.ProductAlreadyExistException,domain.product.exceptions.DateIntersectionInProductPriceException]
 27-Dec-2016 13:51 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}GetProductRequest] onto endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.ContractViolationException,domain.product.exceptions.ProductDoesNotExistException]
 27-Dec-2016 13:51 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}GetAllProductsRequest] onto endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetAllProductsResponse webservice.endpoints.ProductEndpoint.getAllProducts(webservice.endpointrequestresponse.productrequestresponse.GetAllProductsRequest)]
@@ -2988,7 +2988,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 27-Dec-2016 13:51 [DEBUG]: Looking up endpoint for [{http://www.orderRequestResponse.endpointRequestResponse.webService}DeleteOrderItemsRequest]
-27-Dec-2016 13:51 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@71f36557] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException]
+27-Dec-2016 13:51 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@71f36557] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse DeleteOrderItems(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException]
 27-Dec-2016 13:51 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@47709a50]
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@31a31ed4] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@4c3d09c1] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
@@ -2999,9 +2999,9 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@d4de433] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@74c0d717] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
 27-Dec-2016 13:51 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest@6563a5e]
-27-Dec-2016 13:51 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest@6563a5e]
+27-Dec-2016 13:51 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse DeleteOrderItems(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest@6563a5e]
 27-Dec-2016 13:51 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-27-Dec-2016 13:51 [DEBUG]: Creating new transaction with name [webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+27-Dec-2016 13:51 [DEBUG]: Creating new transaction with name [DeleteOrderItems]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 27-Dec-2016 13:51 [TRACE]: Opened session at timestamp: 14828394877
 27-Dec-2016 13:51 [DEBUG]: Opened new Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])] for Hibernate transaction
 27-Dec-2016 13:51 [DEBUG]: Preparing JDBC Connection of Hibernate Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])]
@@ -3014,8 +3014,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [TRACE]: Bound value [org.springframework.jdbc.datasource.ConnectionHolder@7cd081da] for key [org.apache.commons.dbcp.BasicDataSource@486188f7] to thread [[ACTIVE] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)']
 27-Dec-2016 13:51 [TRACE]: Bound value [org.springframework.orm.hibernate4.SessionHolder@7a5c9887] for key [org.hibernate.internal.SessionFactoryImpl@6353cbec] to thread [[ACTIVE] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)']
 27-Dec-2016 13:51 [TRACE]: Initializing transaction synchronization
-27-Dec-2016 13:51 [TRACE]: Getting transaction for [webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder]
-27-Dec-2016 13:51 [TRACE]: Completing transaction for [webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder] after exception: domain.ContractViolationException: Parameter "billingNumber" is NULL
+27-Dec-2016 13:51 [TRACE]: Getting transaction for [DeleteOrderItems]
+27-Dec-2016 13:51 [TRACE]: Completing transaction for [DeleteOrderItems] after exception: domain.ContractViolationException: Parameter "billingNumber" is NULL
 27-Dec-2016 13:51 [TRACE]: Applying rules to determine whether transaction should rollback on domain.ContractViolationException: Parameter "billingNumber" is NULL
 27-Dec-2016 13:51 [TRACE]: Winning rollback rule is: null
 27-Dec-2016 13:51 [TRACE]: No relevant rollback rule found: applying default rules
@@ -3043,14 +3043,14 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [DEBUG]: Released JDBC connection
 27-Dec-2016 13:51 [TRACE]: Logical connection closed
 27-Dec-2016 13:51 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-27-Dec-2016 13:51 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException]: domain.ContractViolationException: Parameter "billingNumber" is NULL
+27-Dec-2016 13:51 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse DeleteOrderItems(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException]: domain.ContractViolationException: Parameter "billingNumber" is NULL
 27-Dec-2016 13:51 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-27-Dec-2016 13:51 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException]: domain.ContractViolationException: Parameter "billingNumber" is NULL
+27-Dec-2016 13:51 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse DeleteOrderItems(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException]: domain.ContractViolationException: Parameter "billingNumber" is NULL
 27-Dec-2016 13:51 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
 domain.ContractViolationException: Parameter "billingNumber" is NULL
 	at checkParamBillingNumberForNull(OrderServiceImpl.java:117)
 	at domain.order.OrderServiceImpl.deleteOrderItems(OrderServiceImpl.java:95)
-	at webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(OrderEndpoint.java:106)
+	at DeleteOrderItems(OrderEndpoint.java:106)
 	at webservice.endpoints.OrderEndpoint$$FastClassBySpringCGLIB$$e25b1466.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:708)
@@ -3096,7 +3096,7 @@ domain.ContractViolationException: Parameter "billingNumber" is NULL
 27-Dec-2016 13:51 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><env:Fault xmlns:ns0="http://schemas.xmlsoap.org/soap/envelope/"><faultcode>ns0:Server</faultcode><faultstring xml:lang="en">Parameter "billingNumber" is NULL</faultstring><detail><DESCRIPTION>domain.ContractViolationException: Parameter "billingNumber" is NULL&#xD;
 	at checkParamBillingNumberForNull(OrderServiceImpl.java:117)&#xD;
 	at domain.order.OrderServiceImpl.deleteOrderItems(OrderServiceImpl.java:95)&#xD;
-	at webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(OrderEndpoint.java:106)&#xD;
+	at DeleteOrderItems(OrderEndpoint.java:106)&#xD;
 	at webservice.endpoints.OrderEndpoint$$FastClassBySpringCGLIB$$e25b1466.invoke(&lt;generated&gt;)&#xD;
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)&#xD;
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:708)&#xD;
@@ -3185,7 +3185,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 27-Dec-2016 13:51 [DEBUG]: Looking up endpoint for [{http://www.orderRequestResponse.endpointRequestResponse.webService}DeleteOrderItemsRequest]
-27-Dec-2016 13:51 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@71f36557] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException]
+27-Dec-2016 13:51 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@71f36557] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse DeleteOrderItems(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException]
 27-Dec-2016 13:51 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@47709a50]
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@31a31ed4] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@4c3d09c1] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
@@ -3196,9 +3196,9 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@d4de433] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@74c0d717] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
 27-Dec-2016 13:51 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest@6fa1c68]
-27-Dec-2016 13:51 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest@6fa1c68]
+27-Dec-2016 13:51 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse DeleteOrderItems(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest@6fa1c68]
 27-Dec-2016 13:51 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-27-Dec-2016 13:51 [DEBUG]: Creating new transaction with name [webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+27-Dec-2016 13:51 [DEBUG]: Creating new transaction with name [DeleteOrderItems]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 27-Dec-2016 13:51 [TRACE]: Opened session at timestamp: 14828394928
 27-Dec-2016 13:51 [DEBUG]: Opened new Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])] for Hibernate transaction
 27-Dec-2016 13:51 [DEBUG]: Preparing JDBC Connection of Hibernate Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])]
@@ -3211,7 +3211,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [TRACE]: Bound value [org.springframework.jdbc.datasource.ConnectionHolder@e5ef36c] for key [org.apache.commons.dbcp.BasicDataSource@486188f7] to thread [[ACTIVE] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)']
 27-Dec-2016 13:51 [TRACE]: Bound value [org.springframework.orm.hibernate4.SessionHolder@7bbf3ed2] for key [org.hibernate.internal.SessionFactoryImpl@6353cbec] to thread [[ACTIVE] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)']
 27-Dec-2016 13:51 [TRACE]: Initializing transaction synchronization
-27-Dec-2016 13:51 [TRACE]: Getting transaction for [webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder]
+27-Dec-2016 13:51 [TRACE]: Getting transaction for [DeleteOrderItems]
 27-Dec-2016 13:51 [TRACE]: Retrieved value [org.springframework.orm.hibernate4.SessionHolder@7bbf3ed2] for key [org.hibernate.internal.SessionFactoryImpl@6353cbec] bound to thread [[ACTIVE] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)']
 27-Dec-2016 13:51 [DEBUG]: select this_.ID as ID1_2_0_, this_.BILLING_NUMBER as BILLING_2_2_0_, this_.PLACING_DATE as PLACING_3_2_0_, this_.CUSTOMER_ID as CUSTOMER4_2_0_ from testhiber.ORDER_TABLES this_ where this_.BILLING_NUMBER=?
 27-Dec-2016 13:51 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@68f059a6]
@@ -3227,7 +3227,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@68f059a6]
 27-Dec-2016 13:51 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 27-Dec-2016 13:51 [TRACE]: Initializing non-lazy collections
-27-Dec-2016 13:51 [TRACE]: Completing transaction for [webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder] after exception: domain.order.exceptions.OrderDoesNotExistException
+27-Dec-2016 13:51 [TRACE]: Completing transaction for [DeleteOrderItems] after exception: domain.order.exceptions.OrderDoesNotExistException
 27-Dec-2016 13:51 [TRACE]: Applying rules to determine whether transaction should rollback on domain.order.exceptions.OrderDoesNotExistException
 27-Dec-2016 13:51 [TRACE]: Winning rollback rule is: null
 27-Dec-2016 13:51 [TRACE]: No relevant rollback rule found: applying default rules
@@ -3255,14 +3255,14 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [DEBUG]: Released JDBC connection
 27-Dec-2016 13:51 [TRACE]: Logical connection closed
 27-Dec-2016 13:51 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-27-Dec-2016 13:51 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException]: domain.order.exceptions.OrderDoesNotExistException
+27-Dec-2016 13:51 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse DeleteOrderItems(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException]: domain.order.exceptions.OrderDoesNotExistException
 27-Dec-2016 13:51 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-27-Dec-2016 13:51 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException]: domain.order.exceptions.OrderDoesNotExistException
+27-Dec-2016 13:51 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse DeleteOrderItems(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException]: domain.order.exceptions.OrderDoesNotExistException
 27-Dec-2016 13:51 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
 domain.order.exceptions.OrderDoesNotExistException
 	at domain.order.OrderServiceImpl.validateOrdersExistence(OrderServiceImpl.java:129)
 	at domain.order.OrderServiceImpl.deleteOrderItems(OrderServiceImpl.java:97)
-	at webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(OrderEndpoint.java:106)
+	at DeleteOrderItems(OrderEndpoint.java:106)
 	at webservice.endpoints.OrderEndpoint$$FastClassBySpringCGLIB$$e25b1466.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:708)
@@ -3351,7 +3351,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 27-Dec-2016 13:51 [DEBUG]: Looking up endpoint for [{http://www.orderRequestResponse.endpointRequestResponse.webService}DeleteOrderItemsRequest]
-27-Dec-2016 13:51 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@71f36557] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException]
+27-Dec-2016 13:51 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@71f36557] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse DeleteOrderItems(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException]
 27-Dec-2016 13:51 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@47709a50]
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@31a31ed4] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@4c3d09c1] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
@@ -3362,9 +3362,9 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@d4de433] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@74c0d717] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
 27-Dec-2016 13:51 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest@5b38ac3]
-27-Dec-2016 13:51 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest@5b38ac3]
+27-Dec-2016 13:51 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse DeleteOrderItems(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest@5b38ac3]
 27-Dec-2016 13:51 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-27-Dec-2016 13:51 [DEBUG]: Creating new transaction with name [webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+27-Dec-2016 13:51 [DEBUG]: Creating new transaction with name [DeleteOrderItems]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 27-Dec-2016 13:51 [TRACE]: Opened session at timestamp: 14828394974
 27-Dec-2016 13:51 [DEBUG]: Opened new Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])] for Hibernate transaction
 27-Dec-2016 13:51 [DEBUG]: Preparing JDBC Connection of Hibernate Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])]
@@ -3377,7 +3377,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [TRACE]: Bound value [org.springframework.jdbc.datasource.ConnectionHolder@4e5b0b21] for key [org.apache.commons.dbcp.BasicDataSource@486188f7] to thread [[ACTIVE] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)']
 27-Dec-2016 13:51 [TRACE]: Bound value [org.springframework.orm.hibernate4.SessionHolder@3b37cbb7] for key [org.hibernate.internal.SessionFactoryImpl@6353cbec] to thread [[ACTIVE] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)']
 27-Dec-2016 13:51 [TRACE]: Initializing transaction synchronization
-27-Dec-2016 13:51 [TRACE]: Getting transaction for [webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder]
+27-Dec-2016 13:51 [TRACE]: Getting transaction for [DeleteOrderItems]
 27-Dec-2016 13:51 [TRACE]: Retrieved value [org.springframework.orm.hibernate4.SessionHolder@3b37cbb7] for key [org.hibernate.internal.SessionFactoryImpl@6353cbec] bound to thread [[ACTIVE] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)']
 27-Dec-2016 13:51 [DEBUG]: select this_.ID as ID1_2_0_, this_.BILLING_NUMBER as BILLING_2_2_0_, this_.PLACING_DATE as PLACING_3_2_0_, this_.CUSTOMER_ID as CUSTOMER4_2_0_ from testhiber.ORDER_TABLES this_ where this_.BILLING_NUMBER=?
 27-Dec-2016 13:51 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@1bba74a5]
@@ -3808,7 +3808,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@7104d9cd]
 27-Dec-2016 13:51 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 27-Dec-2016 13:51 [TRACE]: Initializing non-lazy collections
-27-Dec-2016 13:51 [TRACE]: Completing transaction for [webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder]
+27-Dec-2016 13:51 [TRACE]: Completing transaction for [DeleteOrderItems]
 27-Dec-2016 13:51 [TRACE]: Triggering beforeCommit synchronization
 27-Dec-2016 13:51 [TRACE]: Triggering beforeCompletion synchronization
 27-Dec-2016 13:51 [DEBUG]: Initiating transaction commit
@@ -3876,7 +3876,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [DEBUG]: Releasing JDBC connection
 27-Dec-2016 13:51 [DEBUG]: Released JDBC connection
 27-Dec-2016 13:51 [TRACE]: Logical connection closed
-27-Dec-2016 13:51 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] returned [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse@76babe26]
+27-Dec-2016 13:51 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse DeleteOrderItems(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] returned [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse@76babe26]
 27-Dec-2016 13:51 [DEBUG]: Marshalling [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse@76babe26] to response payload
 27-Dec-2016 13:51 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><ns4:DeleteOrderItemsResponse xmlns:ns2="http://www.order.dtos.webService/" xmlns:ns3="http://www.product.dtos.webService/" xmlns:ns4="http://www.orderRequestResponse.endpointRequestResponse.webService"><ns4:order><ns2:billingNumber>dd6ea6d5-18f4-4d13-b6d8-d7527d109de7</ns2:billingNumber><ns2:placingDate>2016-12-27+02:00</ns2:placingDate><ns2:ordersCustomersName>Vasya</ns2:ordersCustomersName><ns2:orderItems><ns2:product><ns3:productName>Potato</ns3:productName><ns3:productUnits>kg</ns3:productUnits><ns3:productPrice>20.00</ns3:productPrice></ns2:product><ns2:quantity>12.00</ns2:quantity></ns2:orderItems><ns2:orderItems><ns2:product><ns3:productName>Meat</ns3:productName><ns3:productUnits>kg</ns3:productUnits><ns3:productPrice>25.00</ns3:productPrice></ns2:product><ns2:quantity>2.00</ns2:quantity></ns2:orderItems><ns2:orderPrice>290.00</ns2:orderPrice></ns4:order></ns4:DeleteOrderItemsResponse></env:Body></env:Envelope>] for request [<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://www.orderRequestResponse.endpointRequestResponse.webService">
    <soapenv:Header/>
@@ -3924,7 +3924,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 27-Dec-2016 13:51 [DEBUG]: Looking up endpoint for [{http://www.orderRequestResponse.endpointRequestResponse.webService}DeleteOrderItemsRequest]
-27-Dec-2016 13:51 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@71f36557] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException]
+27-Dec-2016 13:51 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@71f36557] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse DeleteOrderItems(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException]
 27-Dec-2016 13:51 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@47709a50]
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@31a31ed4] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@4c3d09c1] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
@@ -3935,9 +3935,9 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@d4de433] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@74c0d717] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
 27-Dec-2016 13:51 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest@54a59188]
-27-Dec-2016 13:51 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest@54a59188]
+27-Dec-2016 13:51 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse DeleteOrderItems(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest@54a59188]
 27-Dec-2016 13:51 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-27-Dec-2016 13:51 [DEBUG]: Creating new transaction with name [webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+27-Dec-2016 13:51 [DEBUG]: Creating new transaction with name [DeleteOrderItems]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 27-Dec-2016 13:51 [TRACE]: Opened session at timestamp: 14828395037
 27-Dec-2016 13:51 [DEBUG]: Opened new Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])] for Hibernate transaction
 27-Dec-2016 13:51 [DEBUG]: Preparing JDBC Connection of Hibernate Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])]
@@ -3950,7 +3950,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [TRACE]: Bound value [org.springframework.jdbc.datasource.ConnectionHolder@41f5a322] for key [org.apache.commons.dbcp.BasicDataSource@486188f7] to thread [[ACTIVE] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)']
 27-Dec-2016 13:51 [TRACE]: Bound value [org.springframework.orm.hibernate4.SessionHolder@65a92f02] for key [org.hibernate.internal.SessionFactoryImpl@6353cbec] to thread [[ACTIVE] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)']
 27-Dec-2016 13:51 [TRACE]: Initializing transaction synchronization
-27-Dec-2016 13:51 [TRACE]: Getting transaction for [webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder]
+27-Dec-2016 13:51 [TRACE]: Getting transaction for [DeleteOrderItems]
 27-Dec-2016 13:51 [TRACE]: Retrieved value [org.springframework.orm.hibernate4.SessionHolder@65a92f02] for key [org.hibernate.internal.SessionFactoryImpl@6353cbec] bound to thread [[ACTIVE] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)']
 27-Dec-2016 13:51 [DEBUG]: select this_.ID as ID1_2_0_, this_.BILLING_NUMBER as BILLING_2_2_0_, this_.PLACING_DATE as PLACING_3_2_0_, this_.CUSTOMER_ID as CUSTOMER4_2_0_ from testhiber.ORDER_TABLES this_ where this_.BILLING_NUMBER=?
 27-Dec-2016 13:51 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@7f3cf51c]
@@ -4303,7 +4303,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@4734b9b9]
 27-Dec-2016 13:51 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 27-Dec-2016 13:51 [TRACE]: Initializing non-lazy collections
-27-Dec-2016 13:51 [TRACE]: Completing transaction for [webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder]
+27-Dec-2016 13:51 [TRACE]: Completing transaction for [DeleteOrderItems]
 27-Dec-2016 13:51 [TRACE]: Triggering beforeCommit synchronization
 27-Dec-2016 13:51 [TRACE]: Triggering beforeCompletion synchronization
 27-Dec-2016 13:51 [DEBUG]: Initiating transaction commit
@@ -4345,7 +4345,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [DEBUG]: Releasing JDBC connection
 27-Dec-2016 13:51 [DEBUG]: Released JDBC connection
 27-Dec-2016 13:51 [TRACE]: Logical connection closed
-27-Dec-2016 13:51 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] returned [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse@1d0bfd5]
+27-Dec-2016 13:51 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse DeleteOrderItems(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] returned [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse@1d0bfd5]
 27-Dec-2016 13:51 [DEBUG]: Marshalling [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse@1d0bfd5] to response payload
 27-Dec-2016 13:51 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><ns4:DeleteOrderItemsResponse xmlns:ns2="http://www.order.dtos.webService/" xmlns:ns3="http://www.product.dtos.webService/" xmlns:ns4="http://www.orderRequestResponse.endpointRequestResponse.webService"><ns4:order><ns2:billingNumber>dd6ea6d5-18f4-4d13-b6d8-d7527d109de7</ns2:billingNumber><ns2:placingDate>2016-12-27+02:00</ns2:placingDate><ns2:ordersCustomersName>Vasya</ns2:ordersCustomersName><ns2:orderItems><ns2:product><ns3:productName>Potato</ns3:productName><ns3:productUnits>kg</ns3:productUnits><ns3:productPrice>20.00</ns3:productPrice></ns2:product><ns2:quantity>12.00</ns2:quantity></ns2:orderItems><ns2:orderItems><ns2:product><ns3:productName>Meat</ns3:productName><ns3:productUnits>kg</ns3:productUnits><ns3:productPrice>25.00</ns3:productPrice></ns2:product><ns2:quantity>2.00</ns2:quantity></ns2:orderItems><ns2:orderPrice>290.00</ns2:orderPrice></ns4:order></ns4:DeleteOrderItemsResponse></env:Body></env:Envelope>] for request [<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://www.orderRequestResponse.endpointRequestResponse.webService">
    <soapenv:Header/>
@@ -4393,7 +4393,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 27-Dec-2016 13:51 [DEBUG]: Looking up endpoint for [{http://www.orderRequestResponse.endpointRequestResponse.webService}DeleteOrderItemsRequest]
-27-Dec-2016 13:51 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@71f36557] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException]
+27-Dec-2016 13:51 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@71f36557] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse DeleteOrderItems(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException]
 27-Dec-2016 13:51 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@47709a50]
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@31a31ed4] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@4c3d09c1] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
@@ -4404,9 +4404,9 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@d4de433] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@74c0d717] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
 27-Dec-2016 13:51 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest@fc8dee4]
-27-Dec-2016 13:51 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest@fc8dee4]
+27-Dec-2016 13:51 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse DeleteOrderItems(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest@fc8dee4]
 27-Dec-2016 13:51 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-27-Dec-2016 13:51 [DEBUG]: Creating new transaction with name [webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+27-Dec-2016 13:51 [DEBUG]: Creating new transaction with name [DeleteOrderItems]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 27-Dec-2016 13:51 [TRACE]: Opened session at timestamp: 14828395063
 27-Dec-2016 13:51 [DEBUG]: Opened new Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])] for Hibernate transaction
 27-Dec-2016 13:51 [DEBUG]: Preparing JDBC Connection of Hibernate Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])]
@@ -4419,7 +4419,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [TRACE]: Bound value [org.springframework.jdbc.datasource.ConnectionHolder@4ca152d4] for key [org.apache.commons.dbcp.BasicDataSource@486188f7] to thread [[ACTIVE] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)']
 27-Dec-2016 13:51 [TRACE]: Bound value [org.springframework.orm.hibernate4.SessionHolder@73450399] for key [org.hibernate.internal.SessionFactoryImpl@6353cbec] to thread [[ACTIVE] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)']
 27-Dec-2016 13:51 [TRACE]: Initializing transaction synchronization
-27-Dec-2016 13:51 [TRACE]: Getting transaction for [webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder]
+27-Dec-2016 13:51 [TRACE]: Getting transaction for [DeleteOrderItems]
 27-Dec-2016 13:51 [TRACE]: Retrieved value [org.springframework.orm.hibernate4.SessionHolder@73450399] for key [org.hibernate.internal.SessionFactoryImpl@6353cbec] bound to thread [[ACTIVE] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)']
 27-Dec-2016 13:51 [DEBUG]: select this_.ID as ID1_2_0_, this_.BILLING_NUMBER as BILLING_2_2_0_, this_.PLACING_DATE as PLACING_3_2_0_, this_.CUSTOMER_ID as CUSTOMER4_2_0_ from testhiber.ORDER_TABLES this_ where this_.BILLING_NUMBER=?
 27-Dec-2016 13:51 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@5d6303b7]
@@ -4772,7 +4772,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@70b7b4ac]
 27-Dec-2016 13:51 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 27-Dec-2016 13:51 [TRACE]: Initializing non-lazy collections
-27-Dec-2016 13:51 [TRACE]: Completing transaction for [webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder]
+27-Dec-2016 13:51 [TRACE]: Completing transaction for [DeleteOrderItems]
 27-Dec-2016 13:51 [TRACE]: Triggering beforeCommit synchronization
 27-Dec-2016 13:51 [TRACE]: Triggering beforeCompletion synchronization
 27-Dec-2016 13:51 [DEBUG]: Initiating transaction commit
@@ -4814,7 +4814,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [DEBUG]: Releasing JDBC connection
 27-Dec-2016 13:51 [DEBUG]: Released JDBC connection
 27-Dec-2016 13:51 [TRACE]: Logical connection closed
-27-Dec-2016 13:51 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] returned [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse@3ea6092]
+27-Dec-2016 13:51 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse DeleteOrderItems(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] returned [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse@3ea6092]
 27-Dec-2016 13:51 [DEBUG]: Marshalling [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse@3ea6092] to response payload
 27-Dec-2016 13:51 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><ns4:DeleteOrderItemsResponse xmlns:ns2="http://www.order.dtos.webService/" xmlns:ns3="http://www.product.dtos.webService/" xmlns:ns4="http://www.orderRequestResponse.endpointRequestResponse.webService"><ns4:order><ns2:billingNumber>dd6ea6d5-18f4-4d13-b6d8-d7527d109de7</ns2:billingNumber><ns2:placingDate>2016-12-27+02:00</ns2:placingDate><ns2:ordersCustomersName>Vasya</ns2:ordersCustomersName><ns2:orderItems><ns2:product><ns3:productName>Potato</ns3:productName><ns3:productUnits>kg</ns3:productUnits><ns3:productPrice>20.00</ns3:productPrice></ns2:product><ns2:quantity>12.00</ns2:quantity></ns2:orderItems><ns2:orderItems><ns2:product><ns3:productName>Meat</ns3:productName><ns3:productUnits>kg</ns3:productUnits><ns3:productPrice>25.00</ns3:productPrice></ns2:product><ns2:quantity>2.00</ns2:quantity></ns2:orderItems><ns2:orderPrice>290.00</ns2:orderPrice></ns4:order></ns4:DeleteOrderItemsResponse></env:Body></env:Envelope>] for request [<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://www.orderRequestResponse.endpointRequestResponse.webService">
    <soapenv:Header/>
@@ -4862,7 +4862,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 27-Dec-2016 13:51 [DEBUG]: Looking up endpoint for [{http://www.orderRequestResponse.endpointRequestResponse.webService}DeleteOrderItemsRequest]
-27-Dec-2016 13:51 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@71f36557] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException]
+27-Dec-2016 13:51 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@71f36557] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse DeleteOrderItems(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException]
 27-Dec-2016 13:51 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@47709a50]
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@31a31ed4] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@4c3d09c1] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
@@ -4873,9 +4873,9 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@d4de433] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@74c0d717] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
 27-Dec-2016 13:51 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest@16323e1f]
-27-Dec-2016 13:51 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest@16323e1f]
+27-Dec-2016 13:51 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse DeleteOrderItems(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest@16323e1f]
 27-Dec-2016 13:51 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-27-Dec-2016 13:51 [DEBUG]: Creating new transaction with name [webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+27-Dec-2016 13:51 [DEBUG]: Creating new transaction with name [DeleteOrderItems]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 27-Dec-2016 13:51 [TRACE]: Opened session at timestamp: 14828395072
 27-Dec-2016 13:51 [DEBUG]: Opened new Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])] for Hibernate transaction
 27-Dec-2016 13:51 [DEBUG]: Preparing JDBC Connection of Hibernate Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])]
@@ -4888,7 +4888,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [TRACE]: Bound value [org.springframework.jdbc.datasource.ConnectionHolder@3c8c709b] for key [org.apache.commons.dbcp.BasicDataSource@486188f7] to thread [[ACTIVE] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)']
 27-Dec-2016 13:51 [TRACE]: Bound value [org.springframework.orm.hibernate4.SessionHolder@2834ef2b] for key [org.hibernate.internal.SessionFactoryImpl@6353cbec] to thread [[ACTIVE] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)']
 27-Dec-2016 13:51 [TRACE]: Initializing transaction synchronization
-27-Dec-2016 13:51 [TRACE]: Getting transaction for [webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder]
+27-Dec-2016 13:51 [TRACE]: Getting transaction for [DeleteOrderItems]
 27-Dec-2016 13:51 [TRACE]: Retrieved value [org.springframework.orm.hibernate4.SessionHolder@2834ef2b] for key [org.hibernate.internal.SessionFactoryImpl@6353cbec] bound to thread [[ACTIVE] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)']
 27-Dec-2016 13:51 [DEBUG]: select this_.ID as ID1_2_0_, this_.BILLING_NUMBER as BILLING_2_2_0_, this_.PLACING_DATE as PLACING_3_2_0_, this_.CUSTOMER_ID as CUSTOMER4_2_0_ from testhiber.ORDER_TABLES this_ where this_.BILLING_NUMBER=?
 27-Dec-2016 13:51 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@7b40ce63]
@@ -5241,7 +5241,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@17009c0c]
 27-Dec-2016 13:51 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 27-Dec-2016 13:51 [TRACE]: Initializing non-lazy collections
-27-Dec-2016 13:51 [TRACE]: Completing transaction for [webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder]
+27-Dec-2016 13:51 [TRACE]: Completing transaction for [DeleteOrderItems]
 27-Dec-2016 13:51 [TRACE]: Triggering beforeCommit synchronization
 27-Dec-2016 13:51 [TRACE]: Triggering beforeCompletion synchronization
 27-Dec-2016 13:51 [DEBUG]: Initiating transaction commit
@@ -5283,7 +5283,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [DEBUG]: Releasing JDBC connection
 27-Dec-2016 13:51 [DEBUG]: Released JDBC connection
 27-Dec-2016 13:51 [TRACE]: Logical connection closed
-27-Dec-2016 13:51 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] returned [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse@651cd24]
+27-Dec-2016 13:51 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse DeleteOrderItems(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] returned [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse@651cd24]
 27-Dec-2016 13:51 [DEBUG]: Marshalling [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse@651cd24] to response payload
 27-Dec-2016 13:51 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><ns4:DeleteOrderItemsResponse xmlns:ns2="http://www.order.dtos.webService/" xmlns:ns3="http://www.product.dtos.webService/" xmlns:ns4="http://www.orderRequestResponse.endpointRequestResponse.webService"><ns4:order><ns2:billingNumber>dd6ea6d5-18f4-4d13-b6d8-d7527d109de7</ns2:billingNumber><ns2:placingDate>2016-12-27+02:00</ns2:placingDate><ns2:ordersCustomersName>Vasya</ns2:ordersCustomersName><ns2:orderItems><ns2:product><ns3:productName>Potato</ns3:productName><ns3:productUnits>kg</ns3:productUnits><ns3:productPrice>20.00</ns3:productPrice></ns2:product><ns2:quantity>12.00</ns2:quantity></ns2:orderItems><ns2:orderItems><ns2:product><ns3:productName>Meat</ns3:productName><ns3:productUnits>kg</ns3:productUnits><ns3:productPrice>25.00</ns3:productPrice></ns2:product><ns2:quantity>2.00</ns2:quantity></ns2:orderItems><ns2:orderPrice>290.00</ns2:orderPrice></ns4:order></ns4:DeleteOrderItemsResponse></env:Body></env:Envelope>] for request [<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://www.orderRequestResponse.endpointRequestResponse.webService">
    <soapenv:Header/>
@@ -5331,7 +5331,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 27-Dec-2016 13:51 [DEBUG]: Looking up endpoint for [{http://www.orderRequestResponse.endpointRequestResponse.webService}DeleteOrderItemsRequest]
-27-Dec-2016 13:51 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@71f36557] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException]
+27-Dec-2016 13:51 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@71f36557] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse DeleteOrderItems(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException]
 27-Dec-2016 13:51 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@47709a50]
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@31a31ed4] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@4c3d09c1] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
@@ -5342,9 +5342,9 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@d4de433] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@74c0d717] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
 27-Dec-2016 13:51 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest@ecf2a3d]
-27-Dec-2016 13:51 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest@ecf2a3d]
+27-Dec-2016 13:51 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse DeleteOrderItems(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest@ecf2a3d]
 27-Dec-2016 13:51 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-27-Dec-2016 13:51 [DEBUG]: Creating new transaction with name [webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+27-Dec-2016 13:51 [DEBUG]: Creating new transaction with name [DeleteOrderItems]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 27-Dec-2016 13:51 [TRACE]: Opened session at timestamp: 14828395078
 27-Dec-2016 13:51 [DEBUG]: Opened new Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])] for Hibernate transaction
 27-Dec-2016 13:51 [DEBUG]: Preparing JDBC Connection of Hibernate Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])]
@@ -5357,7 +5357,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [TRACE]: Bound value [org.springframework.jdbc.datasource.ConnectionHolder@42de1263] for key [org.apache.commons.dbcp.BasicDataSource@486188f7] to thread [[ACTIVE] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)']
 27-Dec-2016 13:51 [TRACE]: Bound value [org.springframework.orm.hibernate4.SessionHolder@18943e1] for key [org.hibernate.internal.SessionFactoryImpl@6353cbec] to thread [[ACTIVE] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)']
 27-Dec-2016 13:51 [TRACE]: Initializing transaction synchronization
-27-Dec-2016 13:51 [TRACE]: Getting transaction for [webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder]
+27-Dec-2016 13:51 [TRACE]: Getting transaction for [DeleteOrderItems]
 27-Dec-2016 13:51 [TRACE]: Retrieved value [org.springframework.orm.hibernate4.SessionHolder@18943e1] for key [org.hibernate.internal.SessionFactoryImpl@6353cbec] bound to thread [[ACTIVE] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)']
 27-Dec-2016 13:51 [DEBUG]: select this_.ID as ID1_2_0_, this_.BILLING_NUMBER as BILLING_2_2_0_, this_.PLACING_DATE as PLACING_3_2_0_, this_.CUSTOMER_ID as CUSTOMER4_2_0_ from testhiber.ORDER_TABLES this_ where this_.BILLING_NUMBER=?
 27-Dec-2016 13:51 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@59e39b7f]
@@ -5710,7 +5710,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@48947cf7]
 27-Dec-2016 13:51 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 27-Dec-2016 13:51 [TRACE]: Initializing non-lazy collections
-27-Dec-2016 13:51 [TRACE]: Completing transaction for [webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder]
+27-Dec-2016 13:51 [TRACE]: Completing transaction for [DeleteOrderItems]
 27-Dec-2016 13:51 [TRACE]: Triggering beforeCommit synchronization
 27-Dec-2016 13:51 [TRACE]: Triggering beforeCompletion synchronization
 27-Dec-2016 13:51 [DEBUG]: Initiating transaction commit
@@ -5752,7 +5752,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [DEBUG]: Releasing JDBC connection
 27-Dec-2016 13:51 [DEBUG]: Released JDBC connection
 27-Dec-2016 13:51 [TRACE]: Logical connection closed
-27-Dec-2016 13:51 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] returned [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse@753c6565]
+27-Dec-2016 13:51 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse DeleteOrderItems(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] returned [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse@753c6565]
 27-Dec-2016 13:51 [DEBUG]: Marshalling [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse@753c6565] to response payload
 27-Dec-2016 13:51 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><ns4:DeleteOrderItemsResponse xmlns:ns2="http://www.order.dtos.webService/" xmlns:ns3="http://www.product.dtos.webService/" xmlns:ns4="http://www.orderRequestResponse.endpointRequestResponse.webService"><ns4:order><ns2:billingNumber>dd6ea6d5-18f4-4d13-b6d8-d7527d109de7</ns2:billingNumber><ns2:placingDate>2016-12-27+02:00</ns2:placingDate><ns2:ordersCustomersName>Vasya</ns2:ordersCustomersName><ns2:orderItems><ns2:product><ns3:productName>Potato</ns3:productName><ns3:productUnits>kg</ns3:productUnits><ns3:productPrice>20.00</ns3:productPrice></ns2:product><ns2:quantity>12.00</ns2:quantity></ns2:orderItems><ns2:orderItems><ns2:product><ns3:productName>Meat</ns3:productName><ns3:productUnits>kg</ns3:productUnits><ns3:productPrice>25.00</ns3:productPrice></ns2:product><ns2:quantity>2.00</ns2:quantity></ns2:orderItems><ns2:orderPrice>290.00</ns2:orderPrice></ns4:order></ns4:DeleteOrderItemsResponse></env:Body></env:Envelope>] for request [<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://www.orderRequestResponse.endpointRequestResponse.webService">
    <soapenv:Header/>
@@ -5800,7 +5800,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 27-Dec-2016 13:51 [DEBUG]: Looking up endpoint for [{http://www.orderRequestResponse.endpointRequestResponse.webService}DeleteOrderItemsRequest]
-27-Dec-2016 13:51 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@71f36557] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException]
+27-Dec-2016 13:51 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@71f36557] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse DeleteOrderItems(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException]
 27-Dec-2016 13:51 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@47709a50]
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@31a31ed4] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@4c3d09c1] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
@@ -5811,9 +5811,9 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@d4de433] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@74c0d717] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
 27-Dec-2016 13:51 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest@49b07f29]
-27-Dec-2016 13:51 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest@49b07f29]
+27-Dec-2016 13:51 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse DeleteOrderItems(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest@49b07f29]
 27-Dec-2016 13:51 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-27-Dec-2016 13:51 [DEBUG]: Creating new transaction with name [webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+27-Dec-2016 13:51 [DEBUG]: Creating new transaction with name [DeleteOrderItems]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 27-Dec-2016 13:51 [TRACE]: Opened session at timestamp: 14828395082
 27-Dec-2016 13:51 [DEBUG]: Opened new Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])] for Hibernate transaction
 27-Dec-2016 13:51 [DEBUG]: Preparing JDBC Connection of Hibernate Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])]
@@ -5826,7 +5826,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [TRACE]: Bound value [org.springframework.jdbc.datasource.ConnectionHolder@626c828a] for key [org.apache.commons.dbcp.BasicDataSource@486188f7] to thread [[ACTIVE] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)']
 27-Dec-2016 13:51 [TRACE]: Bound value [org.springframework.orm.hibernate4.SessionHolder@41ee6481] for key [org.hibernate.internal.SessionFactoryImpl@6353cbec] to thread [[ACTIVE] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)']
 27-Dec-2016 13:51 [TRACE]: Initializing transaction synchronization
-27-Dec-2016 13:51 [TRACE]: Getting transaction for [webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder]
+27-Dec-2016 13:51 [TRACE]: Getting transaction for [DeleteOrderItems]
 27-Dec-2016 13:51 [TRACE]: Retrieved value [org.springframework.orm.hibernate4.SessionHolder@41ee6481] for key [org.hibernate.internal.SessionFactoryImpl@6353cbec] bound to thread [[ACTIVE] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)']
 27-Dec-2016 13:51 [DEBUG]: select this_.ID as ID1_2_0_, this_.BILLING_NUMBER as BILLING_2_2_0_, this_.PLACING_DATE as PLACING_3_2_0_, this_.CUSTOMER_ID as CUSTOMER4_2_0_ from testhiber.ORDER_TABLES this_ where this_.BILLING_NUMBER=?
 27-Dec-2016 13:51 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@30b3fced]
@@ -6179,7 +6179,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@6922d4e1]
 27-Dec-2016 13:51 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 27-Dec-2016 13:51 [TRACE]: Initializing non-lazy collections
-27-Dec-2016 13:51 [TRACE]: Completing transaction for [webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder]
+27-Dec-2016 13:51 [TRACE]: Completing transaction for [DeleteOrderItems]
 27-Dec-2016 13:51 [TRACE]: Triggering beforeCommit synchronization
 27-Dec-2016 13:51 [TRACE]: Triggering beforeCompletion synchronization
 27-Dec-2016 13:51 [DEBUG]: Initiating transaction commit
@@ -6221,7 +6221,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [DEBUG]: Releasing JDBC connection
 27-Dec-2016 13:51 [DEBUG]: Released JDBC connection
 27-Dec-2016 13:51 [TRACE]: Logical connection closed
-27-Dec-2016 13:51 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] returned [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse@61d59c27]
+27-Dec-2016 13:51 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse DeleteOrderItems(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] returned [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse@61d59c27]
 27-Dec-2016 13:51 [DEBUG]: Marshalling [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse@61d59c27] to response payload
 27-Dec-2016 13:51 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><ns4:DeleteOrderItemsResponse xmlns:ns2="http://www.order.dtos.webService/" xmlns:ns3="http://www.product.dtos.webService/" xmlns:ns4="http://www.orderRequestResponse.endpointRequestResponse.webService"><ns4:order><ns2:billingNumber>dd6ea6d5-18f4-4d13-b6d8-d7527d109de7</ns2:billingNumber><ns2:placingDate>2016-12-27+02:00</ns2:placingDate><ns2:ordersCustomersName>Vasya</ns2:ordersCustomersName><ns2:orderItems><ns2:product><ns3:productName>Potato</ns3:productName><ns3:productUnits>kg</ns3:productUnits><ns3:productPrice>20.00</ns3:productPrice></ns2:product><ns2:quantity>12.00</ns2:quantity></ns2:orderItems><ns2:orderItems><ns2:product><ns3:productName>Meat</ns3:productName><ns3:productUnits>kg</ns3:productUnits><ns3:productPrice>25.00</ns3:productPrice></ns2:product><ns2:quantity>2.00</ns2:quantity></ns2:orderItems><ns2:orderPrice>290.00</ns2:orderPrice></ns4:order></ns4:DeleteOrderItemsResponse></env:Body></env:Envelope>] for request [<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://www.orderRequestResponse.endpointRequestResponse.webService">
    <soapenv:Header/>
@@ -6269,7 +6269,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 27-Dec-2016 13:51 [DEBUG]: Looking up endpoint for [{http://www.orderRequestResponse.endpointRequestResponse.webService}DeleteOrderItemsRequest]
-27-Dec-2016 13:51 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@71f36557] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException]
+27-Dec-2016 13:51 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@71f36557] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse DeleteOrderItems(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException]
 27-Dec-2016 13:51 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@47709a50]
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@31a31ed4] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@4c3d09c1] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
@@ -6280,9 +6280,9 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@d4de433] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@74c0d717] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
 27-Dec-2016 13:51 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest@436a5c0]
-27-Dec-2016 13:51 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest@436a5c0]
+27-Dec-2016 13:51 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse DeleteOrderItems(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest@436a5c0]
 27-Dec-2016 13:51 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-27-Dec-2016 13:51 [DEBUG]: Creating new transaction with name [webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+27-Dec-2016 13:51 [DEBUG]: Creating new transaction with name [DeleteOrderItems]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 27-Dec-2016 13:51 [TRACE]: Opened session at timestamp: 14828395102
 27-Dec-2016 13:51 [DEBUG]: Opened new Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])] for Hibernate transaction
 27-Dec-2016 13:51 [DEBUG]: Preparing JDBC Connection of Hibernate Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])]
@@ -6295,7 +6295,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [TRACE]: Bound value [org.springframework.jdbc.datasource.ConnectionHolder@1fbbe269] for key [org.apache.commons.dbcp.BasicDataSource@486188f7] to thread [[ACTIVE] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)']
 27-Dec-2016 13:51 [TRACE]: Bound value [org.springframework.orm.hibernate4.SessionHolder@680d6bc5] for key [org.hibernate.internal.SessionFactoryImpl@6353cbec] to thread [[ACTIVE] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)']
 27-Dec-2016 13:51 [TRACE]: Initializing transaction synchronization
-27-Dec-2016 13:51 [TRACE]: Getting transaction for [webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder]
+27-Dec-2016 13:51 [TRACE]: Getting transaction for [DeleteOrderItems]
 27-Dec-2016 13:51 [TRACE]: Retrieved value [org.springframework.orm.hibernate4.SessionHolder@680d6bc5] for key [org.hibernate.internal.SessionFactoryImpl@6353cbec] bound to thread [[ACTIVE] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)']
 27-Dec-2016 13:51 [DEBUG]: select this_.ID as ID1_2_0_, this_.BILLING_NUMBER as BILLING_2_2_0_, this_.PLACING_DATE as PLACING_3_2_0_, this_.CUSTOMER_ID as CUSTOMER4_2_0_ from testhiber.ORDER_TABLES this_ where this_.BILLING_NUMBER=?
 27-Dec-2016 13:51 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@736aea47]
@@ -6648,7 +6648,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@2d2bac1a]
 27-Dec-2016 13:51 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 27-Dec-2016 13:51 [TRACE]: Initializing non-lazy collections
-27-Dec-2016 13:51 [TRACE]: Completing transaction for [webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder]
+27-Dec-2016 13:51 [TRACE]: Completing transaction for [DeleteOrderItems]
 27-Dec-2016 13:51 [TRACE]: Triggering beforeCommit synchronization
 27-Dec-2016 13:51 [TRACE]: Triggering beforeCompletion synchronization
 27-Dec-2016 13:51 [DEBUG]: Initiating transaction commit
@@ -6690,7 +6690,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [DEBUG]: Releasing JDBC connection
 27-Dec-2016 13:51 [DEBUG]: Released JDBC connection
 27-Dec-2016 13:51 [TRACE]: Logical connection closed
-27-Dec-2016 13:51 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] returned [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse@a5dec8d]
+27-Dec-2016 13:51 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse DeleteOrderItems(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] returned [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse@a5dec8d]
 27-Dec-2016 13:51 [DEBUG]: Marshalling [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse@a5dec8d] to response payload
 27-Dec-2016 13:51 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><ns4:DeleteOrderItemsResponse xmlns:ns2="http://www.order.dtos.webService/" xmlns:ns3="http://www.product.dtos.webService/" xmlns:ns4="http://www.orderRequestResponse.endpointRequestResponse.webService"><ns4:order><ns2:billingNumber>dd6ea6d5-18f4-4d13-b6d8-d7527d109de7</ns2:billingNumber><ns2:placingDate>2016-12-27+02:00</ns2:placingDate><ns2:ordersCustomersName>Vasya</ns2:ordersCustomersName><ns2:orderItems><ns2:product><ns3:productName>Potato</ns3:productName><ns3:productUnits>kg</ns3:productUnits><ns3:productPrice>20.00</ns3:productPrice></ns2:product><ns2:quantity>12.00</ns2:quantity></ns2:orderItems><ns2:orderItems><ns2:product><ns3:productName>Meat</ns3:productName><ns3:productUnits>kg</ns3:productUnits><ns3:productPrice>25.00</ns3:productPrice></ns2:product><ns2:quantity>2.00</ns2:quantity></ns2:orderItems><ns2:orderPrice>290.00</ns2:orderPrice></ns4:order></ns4:DeleteOrderItemsResponse></env:Body></env:Envelope>] for request [<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://www.orderRequestResponse.endpointRequestResponse.webService">
    <soapenv:Header/>
@@ -6738,7 +6738,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 27-Dec-2016 13:51 [DEBUG]: Looking up endpoint for [{http://www.orderRequestResponse.endpointRequestResponse.webService}DeleteOrderItemsRequest]
-27-Dec-2016 13:51 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@71f36557] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException]
+27-Dec-2016 13:51 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@71f36557] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse DeleteOrderItems(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException]
 27-Dec-2016 13:51 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@47709a50]
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@31a31ed4] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@4c3d09c1] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
@@ -6749,9 +6749,9 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@d4de433] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
 27-Dec-2016 13:51 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@74c0d717] supports [class webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest]
 27-Dec-2016 13:51 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest@45b3a74b]
-27-Dec-2016 13:51 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest@45b3a74b]
+27-Dec-2016 13:51 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse DeleteOrderItems(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest@45b3a74b]
 27-Dec-2016 13:51 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-27-Dec-2016 13:51 [DEBUG]: Creating new transaction with name [webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+27-Dec-2016 13:51 [DEBUG]: Creating new transaction with name [DeleteOrderItems]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 27-Dec-2016 13:51 [TRACE]: Opened session at timestamp: 14828395131
 27-Dec-2016 13:51 [DEBUG]: Opened new Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])] for Hibernate transaction
 27-Dec-2016 13:51 [DEBUG]: Preparing JDBC Connection of Hibernate Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])]
@@ -6764,7 +6764,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [TRACE]: Bound value [org.springframework.jdbc.datasource.ConnectionHolder@15ac50ad] for key [org.apache.commons.dbcp.BasicDataSource@486188f7] to thread [[ACTIVE] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)']
 27-Dec-2016 13:51 [TRACE]: Bound value [org.springframework.orm.hibernate4.SessionHolder@63e498f8] for key [org.hibernate.internal.SessionFactoryImpl@6353cbec] to thread [[ACTIVE] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)']
 27-Dec-2016 13:51 [TRACE]: Initializing transaction synchronization
-27-Dec-2016 13:51 [TRACE]: Getting transaction for [webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder]
+27-Dec-2016 13:51 [TRACE]: Getting transaction for [DeleteOrderItems]
 27-Dec-2016 13:51 [TRACE]: Retrieved value [org.springframework.orm.hibernate4.SessionHolder@63e498f8] for key [org.hibernate.internal.SessionFactoryImpl@6353cbec] bound to thread [[ACTIVE] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)']
 27-Dec-2016 13:51 [DEBUG]: select this_.ID as ID1_2_0_, this_.BILLING_NUMBER as BILLING_2_2_0_, this_.PLACING_DATE as PLACING_3_2_0_, this_.CUSTOMER_ID as CUSTOMER4_2_0_ from testhiber.ORDER_TABLES this_ where this_.BILLING_NUMBER=?
 27-Dec-2016 13:51 [TRACE]: Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@414ff4c6]
@@ -7117,7 +7117,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [TRACE]: Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@251b8a96]
 27-Dec-2016 13:51 [TRACE]: Starting after statement execution processing [ON_CLOSE]
 27-Dec-2016 13:51 [TRACE]: Initializing non-lazy collections
-27-Dec-2016 13:51 [TRACE]: Completing transaction for [webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder]
+27-Dec-2016 13:51 [TRACE]: Completing transaction for [DeleteOrderItems]
 27-Dec-2016 13:51 [TRACE]: Triggering beforeCommit synchronization
 27-Dec-2016 13:51 [TRACE]: Triggering beforeCompletion synchronization
 27-Dec-2016 13:51 [DEBUG]: Initiating transaction commit
@@ -7159,7 +7159,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:51 [DEBUG]: Releasing JDBC connection
 27-Dec-2016 13:51 [DEBUG]: Released JDBC connection
 27-Dec-2016 13:51 [TRACE]: Logical connection closed
-27-Dec-2016 13:51 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] returned [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse@62b92892]
+27-Dec-2016 13:51 [TRACE]: Method [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse DeleteOrderItems(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException] returned [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse@62b92892]
 27-Dec-2016 13:51 [DEBUG]: Marshalling [webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse@62b92892] to response payload
 27-Dec-2016 13:51 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><ns4:DeleteOrderItemsResponse xmlns:ns2="http://www.order.dtos.webService/" xmlns:ns3="http://www.product.dtos.webService/" xmlns:ns4="http://www.orderRequestResponse.endpointRequestResponse.webService"><ns4:order><ns2:billingNumber>dd6ea6d5-18f4-4d13-b6d8-d7527d109de7</ns2:billingNumber><ns2:placingDate>2016-12-27+02:00</ns2:placingDate><ns2:ordersCustomersName>Vasya</ns2:ordersCustomersName><ns2:orderItems><ns2:product><ns3:productName>Potato</ns3:productName><ns3:productUnits>kg</ns3:productUnits><ns3:productPrice>20.00</ns3:productPrice></ns2:product><ns2:quantity>12.00</ns2:quantity></ns2:orderItems><ns2:orderItems><ns2:product><ns3:productName>Meat</ns3:productName><ns3:productUnits>kg</ns3:productUnits><ns3:productPrice>25.00</ns3:productPrice></ns2:product><ns2:quantity>2.00</ns2:quantity></ns2:orderItems><ns2:orderPrice>290.00</ns2:orderPrice></ns4:order></ns4:DeleteOrderItemsResponse></env:Body></env:Envelope>] for request [<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://www.orderRequestResponse.endpointRequestResponse.webService">
    <soapenv:Header/>
@@ -9246,7 +9246,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 domain.ContractViolationException: Parameter "productId" is NULL
 	at checkConstructorParametersForNull(OrderItem.java:33)
 	at domain.order.OrderItem.<init>(OrderItem.java:15)
-	at webservice.endpoints.OrderEndpoint.convertToOrderItems(OrderEndpoint.java:123)
+	at convertOrderItems(OrderEndpoint.java:123)
 	at webservice.endpoints.OrderEndpoint.createOrder(OrderEndpoint.java:54)
 	at webservice.endpoints.OrderEndpoint$$FastClassBySpringCGLIB$$e25b1466.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
@@ -9293,7 +9293,7 @@ domain.ContractViolationException: Parameter "productId" is NULL
 27-Dec-2016 13:52 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><env:Fault xmlns:ns0="http://schemas.xmlsoap.org/soap/envelope/"><faultcode>ns0:Server</faultcode><faultstring xml:lang="en">Parameter "productId" is NULL</faultstring><detail><DESCRIPTION>domain.ContractViolationException: Parameter "productId" is NULL&#xD;
 	at checkConstructorParametersForNull(OrderItem.java:33)&#xD;
 	at domain.order.OrderItem.&lt;init&gt;(OrderItem.java:15)&#xD;
-	at webservice.endpoints.OrderEndpoint.convertToOrderItems(OrderEndpoint.java:123)&#xD;
+	at convertOrderItems(OrderEndpoint.java:123)&#xD;
 	at webservice.endpoints.OrderEndpoint.createOrder(OrderEndpoint.java:54)&#xD;
 	at webservice.endpoints.OrderEndpoint$$FastClassBySpringCGLIB$$e25b1466.invoke(&lt;generated&gt;)&#xD;
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)&#xD;
@@ -9455,7 +9455,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:52 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.ContractViolationException,domain.customer.exceptions.CustomerDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException,domain.product.exceptions.ProductDoesNotExistException]: java.lang.NullPointerException
 27-Dec-2016 13:52 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
 java.lang.NullPointerException
-	at webservice.endpoints.OrderEndpoint.convertToOrderItems(OrderEndpoint.java:123)
+	at convertOrderItems(OrderEndpoint.java:123)
 	at webservice.endpoints.OrderEndpoint.createOrder(OrderEndpoint.java:54)
 	at webservice.endpoints.OrderEndpoint$$FastClassBySpringCGLIB$$e25b1466.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
@@ -9500,7 +9500,7 @@ java.lang.NullPointerException
 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:209)
 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:178)
 27-Dec-2016 13:52 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><env:Fault xmlns:ns0="http://schemas.xmlsoap.org/soap/envelope/"><faultcode>ns0:Server</faultcode><faultstring xml:lang="en">java.lang.NullPointerException</faultstring><detail><DESCRIPTION>java.lang.NullPointerException&#xD;
-	at webservice.endpoints.OrderEndpoint.convertToOrderItems(OrderEndpoint.java:123)&#xD;
+	at convertOrderItems(OrderEndpoint.java:123)&#xD;
 	at webservice.endpoints.OrderEndpoint.createOrder(OrderEndpoint.java:54)&#xD;
 	at webservice.endpoints.OrderEndpoint$$FastClassBySpringCGLIB$$e25b1466.invoke(&lt;generated&gt;)&#xD;
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)&#xD;
@@ -9604,7 +9604,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
    </soapenv:Body>
 </soapenv:Envelope>]
 27-Dec-2016 13:53 [DEBUG]: Looking up endpoint for [{http://www.orderRequestResponse.endpointRequestResponse.webService}AddOrderItemsRequest]
-27-Dec-2016 13:53 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@71f36557] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsResponse webservice.endpoints.OrderEndpoint.AddOrderItemsToOrder(webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException,domain.product.exceptions.ProductDoesNotExistException]
+27-Dec-2016 13:53 [DEBUG]: Endpoint mapping [org.springframework.ws.server.endpoint.mapping.PayloadRootAnnotationMethodEndpointMapping@71f36557] maps request to endpoint [public webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsResponse AddOrderItems(webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException,domain.product.exceptions.ProductDoesNotExistException]
 27-Dec-2016 13:53 [DEBUG]: Testing endpoint adapter [org.springframework.ws.server.endpoint.adapter.DefaultMethodEndpointAdapter@47709a50]
 27-Dec-2016 13:53 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.MessageContextMethodArgumentResolver@31a31ed4] supports [class webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsRequest]
 27-Dec-2016 13:53 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.XPathParamMethodArgumentResolver@4c3d09c1] supports [class webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsRequest]
@@ -9615,9 +9615,9 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:53 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.dom.Dom4jPayloadMethodProcessor@d4de433] supports [class webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsRequest]
 27-Dec-2016 13:53 [TRACE]: Testing if argument resolver [org.springframework.ws.server.endpoint.adapter.method.jaxb.XmlRootElementPayloadMethodProcessor@74c0d717] supports [class webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsRequest]
 27-Dec-2016 13:53 [DEBUG]: Unmarshalled payload request to [webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsRequest@5bc0d138]
-27-Dec-2016 13:53 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsResponse webservice.endpoints.OrderEndpoint.AddOrderItemsToOrder(webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException,domain.product.exceptions.ProductDoesNotExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsRequest@5bc0d138]
+27-Dec-2016 13:53 [TRACE]: Invoking [public webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsResponse AddOrderItems(webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException,domain.product.exceptions.ProductDoesNotExistException] with arguments [webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsRequest@5bc0d138]
 27-Dec-2016 13:53 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-27-Dec-2016 13:53 [DEBUG]: Creating new transaction with name [webservice.endpoints.OrderEndpoint.AddOrderItemsToOrder]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+27-Dec-2016 13:53 [DEBUG]: Creating new transaction with name [AddOrderItems]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
 27-Dec-2016 13:53 [TRACE]: Opened session at timestamp: 14828395861
 27-Dec-2016 13:53 [DEBUG]: Opened new Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])] for Hibernate transaction
 27-Dec-2016 13:53 [DEBUG]: Preparing JDBC Connection of Hibernate Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])]
@@ -9630,8 +9630,8 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:53 [TRACE]: Bound value [org.springframework.jdbc.datasource.ConnectionHolder@4fe7e297] for key [org.apache.commons.dbcp.BasicDataSource@486188f7] to thread [[ACTIVE] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)']
 27-Dec-2016 13:53 [TRACE]: Bound value [org.springframework.orm.hibernate4.SessionHolder@cd507d] for key [org.hibernate.internal.SessionFactoryImpl@6353cbec] to thread [[ACTIVE] ExecuteThread: '5' for queue: 'weblogic.kernel.Default (self-tuning)']
 27-Dec-2016 13:53 [TRACE]: Initializing transaction synchronization
-27-Dec-2016 13:53 [TRACE]: Getting transaction for [webservice.endpoints.OrderEndpoint.AddOrderItemsToOrder]
-27-Dec-2016 13:53 [TRACE]: Completing transaction for [webservice.endpoints.OrderEndpoint.AddOrderItemsToOrder] after exception: java.lang.NullPointerException
+27-Dec-2016 13:53 [TRACE]: Getting transaction for [AddOrderItems]
+27-Dec-2016 13:53 [TRACE]: Completing transaction for [AddOrderItems] after exception: java.lang.NullPointerException
 27-Dec-2016 13:53 [TRACE]: Applying rules to determine whether transaction should rollback on java.lang.NullPointerException
 27-Dec-2016 13:53 [TRACE]: Winning rollback rule is: null
 27-Dec-2016 13:53 [TRACE]: No relevant rollback rule found: applying default rules
@@ -9655,13 +9655,13 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:53 [DEBUG]: Released JDBC connection
 27-Dec-2016 13:53 [TRACE]: Logical connection closed
 27-Dec-2016 13:53 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-27-Dec-2016 13:53 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsResponse webservice.endpoints.OrderEndpoint.AddOrderItemsToOrder(webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException,domain.product.exceptions.ProductDoesNotExistException]: java.lang.NullPointerException
+27-Dec-2016 13:53 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsResponse AddOrderItems(webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException,domain.product.exceptions.ProductDoesNotExistException]: java.lang.NullPointerException
 27-Dec-2016 13:53 [DEBUG]: Returning cached instance of singleton bean 'orderEndpoint'
-27-Dec-2016 13:53 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsResponse webservice.endpoints.OrderEndpoint.AddOrderItemsToOrder(webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException,domain.product.exceptions.ProductDoesNotExistException]: java.lang.NullPointerException
+27-Dec-2016 13:53 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsResponse AddOrderItems(webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException,domain.product.exceptions.ProductDoesNotExistException]: java.lang.NullPointerException
 27-Dec-2016 13:53 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
 java.lang.NullPointerException
-	at webservice.endpoints.OrderEndpoint.convertToOrderItems(OrderEndpoint.java:123)
-	at webservice.endpoints.OrderEndpoint.AddOrderItemsToOrder(OrderEndpoint.java:94)
+	at convertOrderItems(OrderEndpoint.java:123)
+	at AddOrderItems(OrderEndpoint.java:94)
 	at webservice.endpoints.OrderEndpoint$$FastClassBySpringCGLIB$$e25b1466.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:708)
@@ -9705,8 +9705,8 @@ java.lang.NullPointerException
 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:209)
 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:178)
 27-Dec-2016 13:53 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><env:Fault xmlns:ns0="http://schemas.xmlsoap.org/soap/envelope/"><faultcode>ns0:Server</faultcode><faultstring xml:lang="en">java.lang.NullPointerException</faultstring><detail><DESCRIPTION>java.lang.NullPointerException&#xD;
-	at webservice.endpoints.OrderEndpoint.convertToOrderItems(OrderEndpoint.java:123)&#xD;
-	at webservice.endpoints.OrderEndpoint.AddOrderItemsToOrder(OrderEndpoint.java:94)&#xD;
+	at convertOrderItems(OrderEndpoint.java:123)&#xD;
+	at AddOrderItems(OrderEndpoint.java:94)&#xD;
 	at webservice.endpoints.OrderEndpoint$$FastClassBySpringCGLIB$$e25b1466.invoke(&lt;generated&gt;)&#xD;
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)&#xD;
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:708)&#xD;
@@ -9865,7 +9865,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 27-Dec-2016 13:57 [DEBUG]: Resolving exception from endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.ContractViolationException,domain.customer.exceptions.CustomerDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException,domain.product.exceptions.ProductDoesNotExistException]: java.lang.NullPointerException
 27-Dec-2016 13:57 [DEBUG]: Endpoint invocation resulted in exception - responding with Fault
 java.lang.NullPointerException
-	at webservice.endpoints.OrderEndpoint.convertToOrderItems(OrderEndpoint.java:123)
+	at convertOrderItems(OrderEndpoint.java:123)
 	at webservice.endpoints.OrderEndpoint.createOrder(OrderEndpoint.java:54)
 	at webservice.endpoints.OrderEndpoint$$FastClassBySpringCGLIB$$e25b1466.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
@@ -9910,7 +9910,7 @@ java.lang.NullPointerException
 	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:209)
 	at weblogic.work.ExecuteThread.run(ExecuteThread.java:178)
 27-Dec-2016 13:57 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><env:Fault xmlns:ns0="http://schemas.xmlsoap.org/soap/envelope/"><faultcode>ns0:Server</faultcode><faultstring xml:lang="en">java.lang.NullPointerException</faultstring><detail><DESCRIPTION>java.lang.NullPointerException&#xD;
-	at webservice.endpoints.OrderEndpoint.convertToOrderItems(OrderEndpoint.java:123)&#xD;
+	at convertOrderItems(OrderEndpoint.java:123)&#xD;
 	at webservice.endpoints.OrderEndpoint.createOrder(OrderEndpoint.java:54)&#xD;
 	at webservice.endpoints.OrderEndpoint$$FastClassBySpringCGLIB$$e25b1466.invoke(&lt;generated&gt;)&#xD;
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)&#xD;
@@ -10078,7 +10078,7 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 domain.ContractViolationException: Parameter "productId" is NULL
 	at checkConstructorParametersForNull(OrderItem.java:33)
 	at domain.order.OrderItem.<init>(OrderItem.java:15)
-	at webservice.endpoints.OrderEndpoint.convertToOrderItems(OrderEndpoint.java:123)
+	at convertOrderItems(OrderEndpoint.java:123)
 	at webservice.endpoints.OrderEndpoint.createOrder(OrderEndpoint.java:54)
 	at webservice.endpoints.OrderEndpoint$$FastClassBySpringCGLIB$$e25b1466.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
@@ -10125,7 +10125,7 @@ domain.ContractViolationException: Parameter "productId" is NULL
 27-Dec-2016 13:57 [TRACE]: Sent response [<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Header/><env:Body><env:Fault xmlns:ns0="http://schemas.xmlsoap.org/soap/envelope/"><faultcode>ns0:Server</faultcode><faultstring xml:lang="en">Parameter "productId" is NULL</faultstring><detail><DESCRIPTION>domain.ContractViolationException: Parameter "productId" is NULL&#xD;
 	at checkConstructorParametersForNull(OrderItem.java:33)&#xD;
 	at domain.order.OrderItem.&lt;init&gt;(OrderItem.java:15)&#xD;
-	at webservice.endpoints.OrderEndpoint.convertToOrderItems(OrderEndpoint.java:123)&#xD;
+	at convertOrderItems(OrderEndpoint.java:123)&#xD;
 	at webservice.endpoints.OrderEndpoint.createOrder(OrderEndpoint.java:54)&#xD;
 	at webservice.endpoints.OrderEndpoint$$FastClassBySpringCGLIB$$e25b1466.invoke(&lt;generated&gt;)&#xD;
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)&#xD;

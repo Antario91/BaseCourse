@@ -37,8 +37,8 @@ public class ProductPrice {
 
         ProductPrice that = (ProductPrice) o;
 
-        if (price != that.price) return false;
-        return startEffectDay.equals(that.startEffectDay);
+        return price != that.price
+                && startEffectDay.equals(that.startEffectDay);
 
     }
 

@@ -1129,8 +1129,8 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 27-Dec-2016 19:21 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}CreateOrderRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.CreateOrderResponse webservice.endpoints.OrderEndpoint.createOrder(webservice.endpointrequestresponse.orderrequestresponse.CreateOrderRequest) throws domain.ContractViolationException,domain.customer.exceptions.CustomerDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException,domain.product.exceptions.ProductDoesNotExistException]
 27-Dec-2016 19:21 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}GetAllCustomersOrdersRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersResponse webservice.endpoints.OrderEndpoint.getAllCustomersOrders(webservice.endpointrequestresponse.orderrequestresponse.GetAllCustomersOrdersRequest) throws domain.ContractViolationException,domain.product.exceptions.NotAvailableProductPriceException,domain.customer.exceptions.CustomerDoesNotExistException]
 27-Dec-2016 19:21 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}DeleteOrderRequest] onto endpoint [public void webservice.endpoints.OrderEndpoint.deleteOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException]
-27-Dec-2016 19:21 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}AddOrderItemsRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsResponse webservice.endpoints.OrderEndpoint.AddOrderItemsToOrder(webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException,domain.product.exceptions.ProductDoesNotExistException]
-27-Dec-2016 19:21 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}DeleteOrderItemsRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse webservice.endpoints.OrderEndpoint.DeleteOrderItemsFromOrder(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException]
+27-Dec-2016 19:21 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}AddOrderItemsRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsResponse AddOrderItems(webservice.endpointrequestresponse.orderrequestresponse.AddOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException,domain.product.exceptions.ProductDoesNotExistException]
+27-Dec-2016 19:21 [DEBUG]: Mapped [{http://www.orderRequestResponse.endpointRequestResponse.webService}DeleteOrderItemsRequest] onto endpoint [public webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsResponse DeleteOrderItems(webservice.endpointrequestresponse.orderrequestresponse.DeleteOrderItemsRequest) throws domain.ContractViolationException,domain.order.exceptions.OrderDoesNotExistException,domain.order.exceptions.ProductInOrderIsAlreadyOrderedException,domain.product.exceptions.NotAvailableProductPriceException]
 27-Dec-2016 19:21 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}CreateProductRequest] onto endpoint [public void webservice.endpoints.ProductEndpoint.createProduct(webservice.endpointrequestresponse.productrequestresponse.CreateProductRequest) throws domain.ContractViolationException,domain.product.exceptions.ProductAlreadyExistException,domain.product.exceptions.DateIntersectionInProductPriceException]
 27-Dec-2016 19:21 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}GetProductRequest] onto endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetProductResponse webservice.endpoints.ProductEndpoint.getProduct(webservice.endpointrequestresponse.productrequestresponse.GetProductRequest) throws domain.ContractViolationException,domain.product.exceptions.ProductDoesNotExistException]
 27-Dec-2016 19:21 [DEBUG]: Mapped [{http://www.productRequestResponse.endpointRequestResponse.webService}GetAllProductsRequest] onto endpoint [public webservice.endpointrequestresponse.productrequestresponse.GetAllProductsResponse webservice.endpoints.ProductEndpoint.getAllProducts(webservice.endpointrequestresponse.productrequestresponse.GetAllProductsRequest)]
@@ -5732,7 +5732,7 @@ line 1:46: expecting ''', found '<EOF>'
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)
+	at convertOrder(OrderEndpoint.java:138)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -5819,7 +5819,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)
+	at convertOrder(OrderEndpoint.java:138)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -5877,7 +5877,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)&#xD;
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)&#xD;
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)&#xD;
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)&#xD;
+	at convertOrder(OrderEndpoint.java:138)&#xD;
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)&#xD;
@@ -7808,7 +7808,7 @@ line 1:46: expecting ''', found '<EOF>'
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)
+	at convertOrder(OrderEndpoint.java:138)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -7895,7 +7895,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)
+	at convertOrder(OrderEndpoint.java:138)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -7953,7 +7953,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)&#xD;
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)&#xD;
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)&#xD;
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)&#xD;
+	at convertOrder(OrderEndpoint.java:138)&#xD;
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)&#xD;
@@ -8381,7 +8381,7 @@ line 1:46: expecting ''', found '<EOF>'
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)
+	at convertOrder(OrderEndpoint.java:138)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -8468,7 +8468,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)
+	at convertOrder(OrderEndpoint.java:138)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -8526,7 +8526,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)&#xD;
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)&#xD;
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)&#xD;
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)&#xD;
+	at convertOrder(OrderEndpoint.java:138)&#xD;
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)&#xD;
@@ -8954,7 +8954,7 @@ line 1:46: expecting ''', found '<EOF>'
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)
+	at convertOrder(OrderEndpoint.java:138)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -9041,7 +9041,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)
+	at convertOrder(OrderEndpoint.java:138)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -9099,7 +9099,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)&#xD;
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)&#xD;
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)&#xD;
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)&#xD;
+	at convertOrder(OrderEndpoint.java:138)&#xD;
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)&#xD;
@@ -9527,7 +9527,7 @@ line 1:46: expecting ''', found '<EOF>'
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)
+	at convertOrder(OrderEndpoint.java:138)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -9614,7 +9614,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)
+	at convertOrder(OrderEndpoint.java:138)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -9672,7 +9672,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)&#xD;
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)&#xD;
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)&#xD;
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)&#xD;
+	at convertOrder(OrderEndpoint.java:138)&#xD;
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)&#xD;
@@ -10100,7 +10100,7 @@ line 1:46: expecting ''', found '<EOF>'
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)
+	at convertOrder(OrderEndpoint.java:138)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -10187,7 +10187,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)
+	at convertOrder(OrderEndpoint.java:138)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -10245,7 +10245,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)&#xD;
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)&#xD;
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)&#xD;
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)&#xD;
+	at convertOrder(OrderEndpoint.java:138)&#xD;
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)&#xD;
@@ -10673,7 +10673,7 @@ line 1:46: expecting ''', found '<EOF>'
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)
+	at convertOrder(OrderEndpoint.java:138)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -10760,7 +10760,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)
+	at convertOrder(OrderEndpoint.java:138)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -10818,7 +10818,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)&#xD;
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)&#xD;
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)&#xD;
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)&#xD;
+	at convertOrder(OrderEndpoint.java:138)&#xD;
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)&#xD;
@@ -11246,7 +11246,7 @@ line 1:46: expecting ''', found '<EOF>'
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)
+	at convertOrder(OrderEndpoint.java:138)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -11333,7 +11333,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)
+	at convertOrder(OrderEndpoint.java:138)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -11391,7 +11391,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)&#xD;
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)&#xD;
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)&#xD;
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)&#xD;
+	at convertOrder(OrderEndpoint.java:138)&#xD;
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)&#xD;
@@ -11819,7 +11819,7 @@ line 1:46: expecting ''', found '<EOF>'
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)
+	at convertOrder(OrderEndpoint.java:138)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -11906,7 +11906,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)
+	at convertOrder(OrderEndpoint.java:138)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -11964,7 +11964,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)&#xD;
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)&#xD;
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)&#xD;
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)&#xD;
+	at convertOrder(OrderEndpoint.java:138)&#xD;
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)&#xD;
@@ -12392,7 +12392,7 @@ line 1:46: expecting ''', found '<EOF>'
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)
+	at convertOrder(OrderEndpoint.java:138)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -12479,7 +12479,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)
+	at convertOrder(OrderEndpoint.java:138)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -12537,7 +12537,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)&#xD;
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)&#xD;
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)&#xD;
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)&#xD;
+	at convertOrder(OrderEndpoint.java:138)&#xD;
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)&#xD;
@@ -12965,7 +12965,7 @@ line 1:46: expecting ''', found '<EOF>'
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)
+	at convertOrder(OrderEndpoint.java:138)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -13052,7 +13052,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)
+	at convertOrder(OrderEndpoint.java:138)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -13110,7 +13110,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)&#xD;
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)&#xD;
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)&#xD;
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)&#xD;
+	at convertOrder(OrderEndpoint.java:138)&#xD;
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)&#xD;
@@ -13538,7 +13538,7 @@ line 1:46: expecting ''', found '<EOF>'
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)
+	at convertOrder(OrderEndpoint.java:138)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -13625,7 +13625,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)
+	at convertOrder(OrderEndpoint.java:138)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -13683,7 +13683,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)&#xD;
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)&#xD;
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)&#xD;
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)&#xD;
+	at convertOrder(OrderEndpoint.java:138)&#xD;
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)&#xD;
@@ -14111,7 +14111,7 @@ line 1:46: expecting ''', found '<EOF>'
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)
+	at convertOrder(OrderEndpoint.java:138)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -14198,7 +14198,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)
+	at convertOrder(OrderEndpoint.java:138)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -14256,7 +14256,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)&#xD;
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)&#xD;
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)&#xD;
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)&#xD;
+	at convertOrder(OrderEndpoint.java:138)&#xD;
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)&#xD;
@@ -14683,7 +14683,7 @@ line 1:46: expecting ''', found '<EOF>'
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)
+	at convertOrder(OrderEndpoint.java:138)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -14769,7 +14769,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)
+	at convertOrder(OrderEndpoint.java:138)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -14826,7 +14826,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)&#xD;
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)&#xD;
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)&#xD;
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)&#xD;
+	at convertOrder(OrderEndpoint.java:138)&#xD;
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)&#xD;
@@ -15253,7 +15253,7 @@ line 1:46: expecting ''', found '<EOF>'
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)
+	at convertOrder(OrderEndpoint.java:138)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -15339,7 +15339,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)
+	at convertOrder(OrderEndpoint.java:138)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
@@ -15396,7 +15396,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)&#xD;
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)&#xD;
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)&#xD;
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)&#xD;
+	at convertOrder(OrderEndpoint.java:138)&#xD;
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xD;
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)&#xD;
@@ -15823,7 +15823,7 @@ line 1:46: expecting ''', found '<EOF>'
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)
+	at convertOrder(OrderEndpoint.java:138)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)
 	at sun.reflect.GeneratedMethodAccessor55.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
@@ -15908,7 +15908,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)
+	at convertOrder(OrderEndpoint.java:138)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)
 	at sun.reflect.GeneratedMethodAccessor55.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
@@ -15964,7 +15964,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)&#xD;
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)&#xD;
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)&#xD;
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)&#xD;
+	at convertOrder(OrderEndpoint.java:138)&#xD;
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)&#xD;
 	at sun.reflect.GeneratedMethodAccessor55.invoke(Unknown Source)&#xD;
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)&#xD;
@@ -16390,7 +16390,7 @@ line 1:46: expecting ''', found '<EOF>'
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)
+	at convertOrder(OrderEndpoint.java:138)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)
 	at sun.reflect.GeneratedMethodAccessor55.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
@@ -16475,7 +16475,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)
+	at convertOrder(OrderEndpoint.java:138)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)
 	at sun.reflect.GeneratedMethodAccessor55.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
@@ -16531,7 +16531,7 @@ org.hibernate.QueryException: expecting ''', found '<EOF>' [FROM domain.product.
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)&#xD;
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)&#xD;
 	at com.sun.proxy.$Proxy97.getOrderPrice(Unknown Source)&#xD;
-	at webservice.endpoints.OrderEndpoint.convertToOrderDTOForReception(OrderEndpoint.java:138)&#xD;
+	at convertOrder(OrderEndpoint.java:138)&#xD;
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:83)&#xD;
 	at sun.reflect.GeneratedMethodAccessor55.invoke(Unknown Source)&#xD;
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)&#xD;

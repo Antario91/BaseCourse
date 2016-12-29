@@ -18,7 +18,6 @@ public class CustomerServiceImpl implements CustomerService {
         this.customerRepo = customerRepo;
     }
 
-    //todo check if validation before get???
     public void createCustomer(String name) throws CustomerAlreadyExistException {
         if (name == null || name.isEmpty()) {
             throw new IllegalArgumentException("Parameter \"name\" is NULL");

@@ -1,6 +1,5 @@
 domain\customer\exceptions\CustomerDoesNotExistException.class
 domain\product\exceptions\DateIntersectionInProductPriceException.class
-domain\NullEntityException.class
 domain\customer\CustomerServiceImpl.class
 domain\order\OrderItem.class
 domain\product\ProductServiceImpl.class
@@ -17,13 +16,11 @@ domain\order\OrderServiceImpl.class
 domain\order\Order.class
 domain\Entity.class
 domain\product\exceptions\ProductDoesNotExistException.class
+domain\product\exceptions\NotAvailableProductPriceException.class
 domain\order\exceptions\OrderDoesNotExistException.class
 domain\customer\Customer.class
 domain\order\OrderRepo.class
 domain\product\Product.class
 domain\product\Product$1.class
-domain\ContractViolationException.class
 domain\customer\CustomerService.class
-domain\NullIdException.class
-domain\order\exceptions\ProductInOrderIsNotUniqueException.class
-domain\product\exceptions\NoAvailableProductPriceException.class
+domain\order\exceptions\ProductInOrderIsAlreadyOrderedException.class

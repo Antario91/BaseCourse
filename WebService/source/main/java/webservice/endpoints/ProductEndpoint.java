@@ -37,23 +37,23 @@ public class ProductEndpoint {
 
     @PayloadRoot(localPart = "CreateProductRequest", namespace = namespaceUri)
     @ResponsePayload
-    public void createProduct(@RequestPayload CreateProductRequest request) throws ContractViolationException, ProductAlreadyExistException,
+    public void createProduct(@RequestPayload CreateProductRequest request) throws ProductAlreadyExistException,
             DateIntersectionInProductPriceException {
         ProductPrice[] productPrices = new ProductPrice[ request.getProduct().getProductPrices().size() ];
         productService.createProduct(
                 request.getProduct().getProductName(),
                 request.getProduct().getProductUnits(),
-                convertToProductPrices(request.getProduct().getProductPrices()).toArray(productPrices)
+                convertProductPrices(request.getProduct().getProductPrices()).toArray(productPrices)
         );
     }
 
     @PayloadRoot(localPart = "GetProductRequest", namespace = namespaceUri)
     @ResponsePayload
-    public GetProductResponse getProduct(@RequestPayload GetProductRequest request) throws ContractViolationException, ProductDoesNotExistException {
+    public GetProductResponse getProduct(@RequestPayload GetProductRequest request) throws ProductDoesNotExistException {
         Product product = productService.getProduct(request.getProductName());
 
         GetProductResponse response = new GetProductResponse();
-        response.setProduct(convertToProductDTO(product));
+        response.setProduct(convertProduct(product));
 
         return response;
     }
@@ -67,52 +67,38 @@ public class ProductEndpoint {
         GetAllProductsResponse response = new GetAllProductsResponse();
 
         for ( Product product : products ){
-            response.getProduct().add( convertToProductDTO(product) );
+            response.getProduct().add( convertProduct(product) );
         }
 
         return response;
     }
 
     @PayloadRoot(localPart = "AddProductPricesRequest", namespace = namespaceUri)
-    @ResponsePayload
-    public AddProductPricesResponse addProductPricesToProduct(@RequestPayload AddProductPricesRequest request) throws ContractViolationException,
-            NotValidStartEffectDayException, ProductDoesNotExistException, DateIntersectionInProductPriceException {
+    public void addProductPricesToProduct(@RequestPayload AddProductPricesRequest request) throws NotValidStartEffectDayException,
+            ProductDoesNotExistException, DateIntersectionInProductPriceException {
         ProductPrice[] productPrices = new ProductPrice[request.getProductPrices().size()];
         productService.addProductPrices(
                 request.getProductName(),
-                convertToProductPrices(request.getProductPrices()).toArray(productPrices)
+                convertProductPrices(request.getProductPrices()).toArray(productPrices)
         );
-
-        AddProductPricesResponse response = new AddProductPricesResponse();
-        response.setProduct(
-                convertToProductDTO( productService.getProduct(request.getProductName()) )
-        );
-        return response;
     }
 
     @PayloadRoot(localPart = "DeleteProductPricesRequest", namespace = namespaceUri)
-    @ResponsePayload
-    public DeleteProductPricesResponse deleteProductPricesFromProduct(@RequestPayload DeleteProductPricesRequest request) throws ContractViolationException,
-            NotValidStartEffectDayException, ProductDoesNotExistException, DateIntersectionInProductPriceException {
+    public void deleteProductPricesFromProduct(@RequestPayload DeleteProductPricesRequest request)
+            throws NotValidStartEffectDayException, ProductDoesNotExistException, DateIntersectionInProductPriceException {
         ProductPrice[] productPrices = new ProductPrice[request.getProductPrices().size()];
         productService.deleteProductPrices(
                 request.getProductName(),
-                convertToProductPrices(request.getProductPrices()).toArray(productPrices)
+                convertProductPrices(request.getProductPrices()).toArray(productPrices)
         );
-
-        DeleteProductPricesResponse response = new DeleteProductPricesResponse();
-        response.setProduct(
-                convertToProductDTO( productService.getProduct(request.getProductName()) )
-        );
-        return response;
     }
 
     @PayloadRoot(localPart = "DeleteProductRequest", namespace = namespaceUri)
-    public void deleteProduct(@RequestPayload DeleteProductRequest request) throws ContractViolationException, ProductDoesNotExistException, OrderDoesNotExistException {
+    public void deleteProduct(@RequestPayload DeleteProductRequest request) throws ProductDoesNotExistException, OrderDoesNotExistException {
         productService.deleteProduct(request.getProductName());
     }
 
-    private List<ProductPrice> convertToProductPrices(List<ProductPriceDTO> productPriceDTOs) throws ContractViolationException {
+    private List<ProductPrice> convertProductPrices(List<ProductPriceDTO> productPriceDTOs) {
         List<ProductPrice> productPrices = new ArrayList<ProductPrice>();
         for (ProductPriceDTO tempPrice : productPriceDTOs) {
             productPrices.add(
@@ -123,7 +109,7 @@ public class ProductEndpoint {
         return productPrices;
     }
 
-    private ProductDTO convertToProductDTO(Product product) {
+    private ProductDTO convertProduct(Product product) {
         ProductDTO productDTO = new ProductDTO();
         productDTO.setProductName(product.getName());
         productDTO.setProductUnits(product.getUnits());

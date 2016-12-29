@@ -1,17 +1,12 @@
 package persistence.productRepository;
 
-import domain.Entity;
-import domain.NullIdException;
-import domain.order.OrderItem;
 import domain.product.Product;
-import org.hibernate.criterion.Restrictions;
 import persistence.GenericRepoImpl;
 
 import domain.product.ProductRepo;
 
 import org.hibernate.SessionFactory;
 
-import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
@@ -35,7 +30,7 @@ public class ProductRepoImpl extends GenericRepoImpl<String, Product> implements
     @Override
     public List<Product> getProducts(List<String> productId) {
         if (productId == null) {
-            throw new NullIdException();
+            throw new IllegalArgumentException("Parameter \"productId\" is NULL");
         }
         StringBuilder builder = new StringBuilder();
         Iterator<String> itr = productId.iterator();

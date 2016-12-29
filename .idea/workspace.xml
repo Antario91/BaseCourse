@@ -2,25 +2,205 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8de36aef-27dd-4f14-994b-c030d11e100d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Domain/source/main/java/domain/ContractViolationException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompiledFiles/Domain/classes/domain/ContractViolationException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompiledFiles/Domain/classes/domain/NullEntityException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompiledFiles/Domain/classes/domain/NullIdException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompiledFiles/Domain/classes/domain/order/exceptions/ProductInOrderIsNotUniqueException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompiledFiles/Domain/classes/domain/product/exceptions/NoAvailableProductPriceException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/classes/SpringConfig/DomainExceptionsBeans.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/classes/webservice/exceptions/NullCustomerNameException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/classes/webservice/exceptions/NullOrderBillingNumberException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/classes/webservice/exceptions/NullOrderItemsException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/classes/webservice/exceptions/NullPriceEndEffectDayException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/classes/webservice/exceptions/NullPriceStartEffectDayException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/classes/webservice/exceptions/NullProductNameException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/classes/webservice/exceptions/NullProductPriceException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/classes/webservice/exceptions/NullProductPricesException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/classes/webservice/exceptions/NullProductQuantityException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/classes/webservice/exceptions/NullProductUnitsException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/classes/webservice/validators/CustomerValidator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/classes/webservice/validators/OrderValidator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/classes/webservice/validators/ProductValidator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/classes/SpringConfig/DomainExceptionsBeans.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/classes/webservice/exceptions/NullCustomerNameException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/classes/webservice/exceptions/NullOrderBillingNumberException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/classes/webservice/exceptions/NullOrderItemsException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/classes/webservice/exceptions/NullPriceEndEffectDayException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/classes/webservice/exceptions/NullPriceStartEffectDayException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/classes/webservice/exceptions/NullProductNameException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/classes/webservice/exceptions/NullProductPriceException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/classes/webservice/exceptions/NullProductPricesException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/classes/webservice/exceptions/NullProductQuantityException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/classes/webservice/exceptions/NullProductUnitsException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/classes/webservice/validators/CustomerValidator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/classes/webservice/validators/OrderValidator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/classes/webservice/validators/ProductValidator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Domain/source/main/java/domain/NullEntityException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Domain/source/main/java/domain/NullIdException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/exceptions/NullCustomerNameException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/exceptions/NullOrderBillingNumberException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/exceptions/NullOrderItemsException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/exceptions/NullPriceEndEffectDayException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/exceptions/NullPriceStartEffectDayException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/exceptions/NullProductNameException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/exceptions/NullProductPriceException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/exceptions/NullProductPricesException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/exceptions/NullProductQuantityException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/exceptions/NullProductUnitsException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/validators/CustomerValidator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/validators/OrderValidator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/validators/ProductValidator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebService/source/main/resources/SpringConfig/DomainExceptionsBeans.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/Domain/classes/domain/GenericRepo.class" afterPath="$PROJECT_DIR$/CompiledFiles/Domain/classes/domain/GenericRepo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/Domain/classes/domain/customer/Customer.class" afterPath="$PROJECT_DIR$/CompiledFiles/Domain/classes/domain/customer/Customer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/Domain/classes/domain/customer/CustomerService.class" afterPath="$PROJECT_DIR$/CompiledFiles/Domain/classes/domain/customer/CustomerService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/Domain/classes/domain/customer/CustomerServiceImpl.class" afterPath="$PROJECT_DIR$/CompiledFiles/Domain/classes/domain/customer/CustomerServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/Domain/classes/domain/order/Order.class" afterPath="$PROJECT_DIR$/CompiledFiles/Domain/classes/domain/order/Order.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/Domain/classes/domain/order/OrderItem.class" afterPath="$PROJECT_DIR$/CompiledFiles/Domain/classes/domain/order/OrderItem.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/Domain/classes/domain/order/OrderRepo.class" afterPath="$PROJECT_DIR$/CompiledFiles/Domain/classes/domain/order/OrderRepo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/Domain/classes/domain/order/OrderService.class" afterPath="$PROJECT_DIR$/CompiledFiles/Domain/classes/domain/order/OrderService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/Domain/classes/domain/order/OrderServiceImpl.class" afterPath="$PROJECT_DIR$/CompiledFiles/Domain/classes/domain/order/OrderServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/Domain/classes/domain/product/Product$1.class" afterPath="$PROJECT_DIR$/CompiledFiles/Domain/classes/domain/product/Product$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/Domain/classes/domain/product/Product.class" afterPath="$PROJECT_DIR$/CompiledFiles/Domain/classes/domain/product/Product.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/Domain/classes/domain/product/ProductPrice.class" afterPath="$PROJECT_DIR$/CompiledFiles/Domain/classes/domain/product/ProductPrice.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/Domain/classes/domain/product/ProductRepo.class" afterPath="$PROJECT_DIR$/CompiledFiles/Domain/classes/domain/product/ProductRepo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/Domain/classes/domain/product/ProductService.class" afterPath="$PROJECT_DIR$/CompiledFiles/Domain/classes/domain/product/ProductService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/Domain/classes/domain/product/ProductServiceImpl.class" afterPath="$PROJECT_DIR$/CompiledFiles/Domain/classes/domain/product/ProductServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/Domain/domain-1.0-sources.jar" afterPath="$PROJECT_DIR$/CompiledFiles/Domain/domain-1.0-sources.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/Domain/domain-1.0.jar" afterPath="$PROJECT_DIR$/CompiledFiles/Domain/domain-1.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/PersistenceHibernateRepositoryImpl/classes/persistence/GenericRepoImpl.class" afterPath="$PROJECT_DIR$/CompiledFiles/PersistenceHibernateRepositoryImpl/classes/persistence/GenericRepoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/PersistenceHibernateRepositoryImpl/classes/persistence/orderRepository/OrderRepoImpl.class" afterPath="$PROJECT_DIR$/CompiledFiles/PersistenceHibernateRepositoryImpl/classes/persistence/orderRepository/OrderRepoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/PersistenceHibernateRepositoryImpl/classes/persistence/productRepository/ProductRepoImpl.class" afterPath="$PROJECT_DIR$/CompiledFiles/PersistenceHibernateRepositoryImpl/classes/persistence/productRepository/ProductRepoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/PersistenceHibernateRepositoryImpl/persistenceHibernateRepositoryImpl-1.0-sources.jar" afterPath="$PROJECT_DIR$/CompiledFiles/PersistenceHibernateRepositoryImpl/persistenceHibernateRepositoryImpl-1.0-sources.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/PersistenceHibernateRepositoryImpl/persistenceHibernateRepositoryImpl-1.0.jar" afterPath="$PROJECT_DIR$/CompiledFiles/PersistenceHibernateRepositoryImpl/persistenceHibernateRepositoryImpl-1.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/Utils/utils-1.0-sources.jar" afterPath="$PROJECT_DIR$/CompiledFiles/Utils/utils-1.0-sources.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/Utils/utils-1.0.jar" afterPath="$PROJECT_DIR$/CompiledFiles/Utils/utils-1.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/basecourse.war" afterPath="$PROJECT_DIR$/CompiledFiles/WebService/basecourse.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/classes/webservice/endpointrequestresponse/orderrequestresponse/ObjectFactory.class" afterPath="$PROJECT_DIR$/CompiledFiles/WebService/classes/webservice/endpointrequestresponse/orderrequestresponse/ObjectFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/classes/webservice/endpointrequestresponse/productrequestresponse/ObjectFactory.class" afterPath="$PROJECT_DIR$/CompiledFiles/WebService/classes/webservice/endpointrequestresponse/productrequestresponse/ObjectFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/classes/webservice/endpoints/CustomerEndpoint.class" afterPath="$PROJECT_DIR$/CompiledFiles/WebService/classes/webservice/endpoints/CustomerEndpoint.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/classes/webservice/endpoints/OrderEndpoint.class" afterPath="$PROJECT_DIR$/CompiledFiles/WebService/classes/webservice/endpoints/OrderEndpoint.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/classes/webservice/endpoints/ProductEndpoint.class" afterPath="$PROJECT_DIR$/CompiledFiles/WebService/classes/webservice/endpoints/ProductEndpoint.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/classes/webservice/endpointrequestresponse/orderrequestresponse/ObjectFactory.class" afterPath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/classes/webservice/endpointrequestresponse/orderrequestresponse/ObjectFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/classes/webservice/endpointrequestresponse/productrequestresponse/ObjectFactory.class" afterPath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/classes/webservice/endpointrequestresponse/productrequestresponse/ObjectFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/classes/webservice/endpoints/CustomerEndpoint.class" afterPath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/classes/webservice/endpoints/CustomerEndpoint.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/classes/webservice/endpoints/OrderEndpoint.class" afterPath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/classes/webservice/endpoints/OrderEndpoint.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/classes/webservice/endpoints/ProductEndpoint.class" afterPath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/classes/webservice/endpoints/ProductEndpoint.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/lib/domain-1.0.jar" afterPath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/lib/domain-1.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/lib/persistenceHibernateRepositoryImpl-1.0.jar" afterPath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/lib/persistenceHibernateRepositoryImpl-1.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/lib/utils-1.0.jar" afterPath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/lib/utils-1.0.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Domain/source/main/java/domain/customer/Customer.java" afterPath="$PROJECT_DIR$/Domain/source/main/java/domain/customer/Customer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Domain/source/main/java/domain/customer/CustomerService.java" afterPath="$PROJECT_DIR$/Domain/source/main/java/domain/customer/CustomerService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/Domain/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/CompiledFiles/Domain/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/Domain/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/CompiledFiles/Domain/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/Domain/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/CompiledFiles/Domain/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/PersistenceHibernateRepositoryImpl/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/CompiledFiles/PersistenceHibernateRepositoryImpl/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/Utils/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/CompiledFiles/Utils/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/classes/SpringConfig/SpringWSConfiguration.xml" afterPath="$PROJECT_DIR$/CompiledFiles/WebService/classes/SpringConfig/SpringWSConfiguration.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/classes/SpringConfig/SpringWSExceptionConfiguration.xml" afterPath="$PROJECT_DIR$/CompiledFiles/WebService/classes/SpringConfig/SpringWSExceptionConfiguration.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/CompiledFiles/WebService/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/CompiledFiles/WebService/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/CompiledFiles/WebService/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/XSDs/order/OrderWebService.xsd" afterPath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/XSDs/order/OrderWebService.xsd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/XSDs/product/ProductWebService.xsd" afterPath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/XSDs/product/ProductWebService.xsd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/classes/SpringConfig/SpringWSConfiguration.xml" afterPath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/classes/SpringConfig/SpringWSConfiguration.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/classes/SpringConfig/SpringWSExceptionConfiguration.xml" afterPath="$PROJECT_DIR$/CompiledFiles/WebService/webService-1.0/WEB-INF/classes/SpringConfig/SpringWSExceptionConfiguration.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Domain/source/main/java/domain/GenericRepo.java" afterPath="$PROJECT_DIR$/Domain/source/main/java/domain/GenericRepo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Domain/source/main/java/domain/customer/CustomerRepo.java" afterPath="$PROJECT_DIR$/Domain/source/main/java/domain/customer/CustomerRepo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Domain/source/main/java/domain/customer/CustomerServiceImpl.java" afterPath="$PROJECT_DIR$/Domain/source/main/java/domain/customer/CustomerServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Domain/source/main/java/domain/order/Order.java" afterPath="$PROJECT_DIR$/Domain/source/main/java/domain/order/Order.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Domain/source/main/java/domain/order/OrderItem.java" afterPath="$PROJECT_DIR$/Domain/source/main/java/domain/order/OrderItem.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Domain/source/main/java/domain/order/OrderRepo.java" afterPath="$PROJECT_DIR$/Domain/source/main/java/domain/order/OrderRepo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Domain/source/main/java/domain/order/OrderServiceImpl.java" afterPath="$PROJECT_DIR$/Domain/source/main/java/domain/order/OrderServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Domain/source/main/java/domain/product/Product.java" afterPath="$PROJECT_DIR$/Domain/source/main/java/domain/product/Product.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Domain/source/main/java/domain/product/ProductPrice.java" afterPath="$PROJECT_DIR$/Domain/source/main/java/domain/product/ProductPrice.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Domain/source/main/java/domain/product/ProductService.java" afterPath="$PROJECT_DIR$/Domain/source/main/java/domain/product/ProductService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Domain/source/main/java/domain/product/ProductServiceImpl.java" afterPath="$PROJECT_DIR$/Domain/source/main/java/domain/product/ProductServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Domain/source/main/java/domain/product/ProductRepo.java" afterPath="$PROJECT_DIR$/Domain/source/main/java/domain/product/ProductRepo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PersistenceHibernateRepositoryImpl/source/main/java/persistence/GenericRepoImpl.java" afterPath="$PROJECT_DIR$/PersistenceHibernateRepositoryImpl/source/main/java/persistence/GenericRepoImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PersistenceHibernateRepositoryImpl/source/main/java/persistence/orderRepository/OrderRepoImpl.java" afterPath="$PROJECT_DIR$/PersistenceHibernateRepositoryImpl/source/main/java/persistence/orderRepository/OrderRepoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PersistenceHibernateRepositoryImpl/source/main/java/persistence/productRepository/ProductRepoImpl.java" afterPath="$PROJECT_DIR$/PersistenceHibernateRepositoryImpl/source/main/java/persistence/productRepository/ProductRepoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/customer/CustomerDTO.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/customer/CustomerDTO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/customer/ObjectFactory.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/customer/ObjectFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/customer/UpdatedCustomerDTO.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/customer/UpdatedCustomerDTO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/customer/package-info.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/customer/package-info.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/order/ObjectFactory.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/order/ObjectFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/order/OrderDTOForCreation.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/order/OrderDTOForCreation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/order/OrderDTOForReception.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/order/OrderDTOForReception.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/order/OrderItemDTOForCreation.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/order/OrderItemDTOForCreation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/order/OrderItemDTOForReception.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/order/OrderItemDTOForReception.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/order/UpdatedOrderDTO.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/order/UpdatedOrderDTO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/order/package-info.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/order/package-info.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/product/ObjectFactory.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/product/ObjectFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/product/ProductDTO.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/product/ProductDTO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/product/ProductDTOInOrder.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/product/ProductDTOInOrder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/product/ProductPriceDTO.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/product/ProductPriceDTO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/product/UpdatedProductDTO.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/product/UpdatedProductDTO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/product/package-info.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/product/package-info.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/customerrequestresponse/CreateCustomerRequest.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/customerrequestresponse/CreateCustomerRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/customerrequestresponse/DeleteCustomerRequest.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/customerrequestresponse/DeleteCustomerRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/customerrequestresponse/GetAllCustomersRequest.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/customerrequestresponse/GetAllCustomersRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/customerrequestresponse/GetAllCustomersResponse.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/customerrequestresponse/GetAllCustomersResponse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/customerrequestresponse/GetCustomerRequest.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/customerrequestresponse/GetCustomerRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/customerrequestresponse/GetCustomerResponse.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/customerrequestresponse/GetCustomerResponse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/customerrequestresponse/ObjectFactory.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/customerrequestresponse/ObjectFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/customerrequestresponse/package-info.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/customerrequestresponse/package-info.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/orderrequestresponse/AddOrderItemsRequest.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/orderrequestresponse/AddOrderItemsRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/orderrequestresponse/CreateOrderRequest.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/orderrequestresponse/CreateOrderRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/orderrequestresponse/DeleteOrderItemsRequest.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/orderrequestresponse/DeleteOrderItemsRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/orderrequestresponse/DeleteOrderRequest.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/orderrequestresponse/DeleteOrderRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/orderrequestresponse/GetAllCustomersOrdersRequest.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/orderrequestresponse/GetAllCustomersOrdersRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/orderrequestresponse/GetAllCustomersOrdersResponse.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/orderrequestresponse/GetAllCustomersOrdersResponse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/orderrequestresponse/GetOrderRequest.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/orderrequestresponse/GetOrderRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/orderrequestresponse/GetOrderResponse.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/orderrequestresponse/GetOrderResponse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/orderrequestresponse/ObjectFactory.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/orderrequestresponse/ObjectFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/orderrequestresponse/package-info.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/orderrequestresponse/package-info.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/productrequestresponse/AddProductPricesRequest.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/productrequestresponse/AddProductPricesRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/productrequestresponse/CreateProductRequest.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/productrequestresponse/CreateProductRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/productrequestresponse/DeleteProductPricesRequest.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/productrequestresponse/DeleteProductPricesRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/productrequestresponse/DeleteProductRequest.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/productrequestresponse/DeleteProductRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/productrequestresponse/GetAllProductsRequest.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/productrequestresponse/GetAllProductsRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/productrequestresponse/GetAllProductsResponse.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/productrequestresponse/GetAllProductsResponse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/productrequestresponse/GetProductRequest.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/productrequestresponse/GetProductRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/productrequestresponse/GetProductResponse.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/productrequestresponse/GetProductResponse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/productrequestresponse/ObjectFactory.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/productrequestresponse/ObjectFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/productrequestresponse/package-info.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/productrequestresponse/package-info.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpoints/CustomerEndpoint.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpoints/CustomerEndpoint.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpoints/OrderEndpoint.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpoints/OrderEndpoint.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpoints/ProductEndpoint.java" afterPath="$PROJECT_DIR$/WebService/source/main/java/webservice/endpoints/ProductEndpoint.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/resources/SpringConfig/SpringWSConfiguration.xml" afterPath="$PROJECT_DIR$/WebService/source/main/resources/SpringConfig/SpringWSConfiguration.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/resources/SpringConfig/SpringWSExceptionConfiguration.xml" afterPath="$PROJECT_DIR$/WebService/source/main/resources/SpringConfig/SpringWSExceptionConfiguration.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/webapp/WEB-INF/XSDs/order/OrderWebService.xsd" afterPath="$PROJECT_DIR$/WebService/source/main/webapp/WEB-INF/XSDs/order/OrderWebService.xsd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebService/source/main/webapp/WEB-INF/XSDs/product/ProductWebService.xsd" afterPath="$PROJECT_DIR$/WebService/source/main/webapp/WEB-INF/XSDs/product/ProductWebService.xsd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log-2016-12-26_18.26.08.log" afterPath="$PROJECT_DIR$/log/log-2016-12-26_18.26.08.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log-2016-12-26_18.34.14.log" afterPath="$PROJECT_DIR$/log/log-2016-12-26_18.34.14.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log-2016-12-26_18.37.41.log" afterPath="$PROJECT_DIR$/log/log-2016-12-26_18.37.41.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log-2016-12-26_18.41.55.log" afterPath="$PROJECT_DIR$/log/log-2016-12-26_18.41.55.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log-2016-12-26_18.46.02.log" afterPath="$PROJECT_DIR$/log/log-2016-12-26_18.46.02.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log-2016-12-26_18.51.25.log" afterPath="$PROJECT_DIR$/log/log-2016-12-26_18.51.25.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log-2016-12-26_18.55.32.log" afterPath="$PROJECT_DIR$/log/log-2016-12-26_18.55.32.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log-2016-12-26_18.57.53.log" afterPath="$PROJECT_DIR$/log/log-2016-12-26_18.57.53.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log-2016-12-26_19.15.06.log" afterPath="$PROJECT_DIR$/log/log-2016-12-26_19.15.06.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log-2016-12-26_19.25.28.log" afterPath="$PROJECT_DIR$/log/log-2016-12-26_19.25.28.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log-2016-12-26_19.33.17.log" afterPath="$PROJECT_DIR$/log/log-2016-12-26_19.33.17.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log-2016-12-26_19.39.30.log" afterPath="$PROJECT_DIR$/log/log-2016-12-26_19.39.30.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log-2016-12-26_19.40.59.log" afterPath="$PROJECT_DIR$/log/log-2016-12-26_19.40.59.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log-2016-12-27_11.31.16.log" afterPath="$PROJECT_DIR$/log/log-2016-12-27_11.31.16.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log-2016-12-27_13.36.12.log" afterPath="$PROJECT_DIR$/log/log-2016-12-27_13.36.12.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log-2016-12-27_13.50.59.log" afterPath="$PROJECT_DIR$/log/log-2016-12-27_13.50.59.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log-2016-12-27_14.00.44.log" afterPath="$PROJECT_DIR$/log/log-2016-12-27_14.00.44.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log-2016-12-27_16.01.35.log" afterPath="$PROJECT_DIR$/log/log-2016-12-27_16.01.35.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log-2016-12-27_16.06.50.log" afterPath="$PROJECT_DIR$/log/log-2016-12-27_16.06.50.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log-2016-12-27_16.23.57.log" afterPath="$PROJECT_DIR$/log/log-2016-12-27_16.23.57.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log-2016-12-27_16.57.53.log" afterPath="$PROJECT_DIR$/log/log-2016-12-27_16.57.53.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log-2016-12-27_17.10.35.log" afterPath="$PROJECT_DIR$/log/log-2016-12-27_17.10.35.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log-2016-12-27_17.41.19.log" afterPath="$PROJECT_DIR$/log/log-2016-12-27_17.41.19.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log-2016-12-27_18.24.15.log" afterPath="$PROJECT_DIR$/log/log-2016-12-27_18.24.15.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log-2016-12-27_18.26.09.log" afterPath="$PROJECT_DIR$/log/log-2016-12-27_18.26.09.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log-2016-12-27_18.39.41.log" afterPath="$PROJECT_DIR$/log/log-2016-12-27_18.39.41.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log-2016-12-27_18.43.06.log" afterPath="$PROJECT_DIR$/log/log-2016-12-27_18.43.06.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log-2016-12-27_18.47.08.log" afterPath="$PROJECT_DIR$/log/log-2016-12-27_18.47.08.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log-2016-12-27_18.50.35.log" afterPath="$PROJECT_DIR$/log/log-2016-12-27_18.50.35.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log-2016-12-27_18.54.16.log" afterPath="$PROJECT_DIR$/log/log-2016-12-27_18.54.16.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log-2016-12-27_19.17.02.log" afterPath="$PROJECT_DIR$/log/log-2016-12-27_19.17.02.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log-2016-12-27_19.21.00.log" afterPath="$PROJECT_DIR$/log/log-2016-12-27_19.21.00.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log-2016-12-27_19.41.35.log" afterPath="$PROJECT_DIR$/log/log-2016-12-27_19.41.35.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log-2016-12-28_11.47.11.log" afterPath="$PROJECT_DIR$/log/log-2016-12-28_11.47.11.log" />
     </list>
     <ignored path="BaseCourse.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,7 +238,30 @@
     <favorites_list name="BaseCourse" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="SpringWSExceptionConfiguration.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebService/source/main/resources/SpringConfig/SpringWSExceptionConfiguration.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="87" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="87" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Product.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Domain/source/main/java/domain/product/Product.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="295">
+              <caret line="82" column="13" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -84,14 +287,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Domain/source/main/java/domain/customer/exceptions/CustomerAlreadyExistException.java" />
-        <option value="$PROJECT_DIR$/Domain/source/main/java/domain/order/exceptions/OrderDoesNotExistException.java" />
-        <option value="$PROJECT_DIR$/Domain/source/main/java/domain/order/exceptions/OrderAlreadyExistException.java" />
         <option value="$PROJECT_DIR$/Domain/source/main/java/domain/order/exceptions/NullOrderRepoException.java" />
         <option value="$PROJECT_DIR$/Domain/source/main/java/domain/product/exceptions/NullProductRepoException.java" />
         <option value="$PROJECT_DIR$/Domain/source/main/java/domain/NullIdException.java" />
         <option value="$PROJECT_DIR$/Domain/source/main/java/domain/NullEntityException.java" />
-        <option value="$PROJECT_DIR$/Domain/source/main/java/domain/GenericRepo.java" />
         <option value="$PROJECT_DIR$/Domain/source/main/java/domain/customer/exceptions/CustomerService.java" />
         <option value="$PROJECT_DIR$/Domain/source/main/java/domain/ConstraintViolationException.java" />
         <option value="$PROJECT_DIR$/Domain/source/main/java/domain/ParamIsNullException.java" />
@@ -99,7 +298,6 @@
         <option value="$PROJECT_DIR$/WebService/source/main/webapp/WEB-INF/XSDs/order/OrderDTOs.xsd" />
         <option value="$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/order/OrderDTOForReception.java" />
         <option value="$PROJECT_DIR$/PersistenceHibernateRepositoryImpl/source/main/java/persistence/customerRepository/CustomerRepoImpl.java" />
-        <option value="$PROJECT_DIR$/WebService/source/main/webapp/WEB-INF/XSDs/product/ProductWebService.xsd" />
         <option value="$PROJECT_DIR$/WebService/source/main/java/webservice/converters/CustomerConverter.java" />
         <option value="$PROJECT_DIR$/WebService/source/main/java/webservice/converters/OrderConverter.java" />
         <option value="$PROJECT_DIR$/WebService/source/main/java/webservice/validators/OrderValidator.java" />
@@ -109,32 +307,37 @@
         <option value="$PROJECT_DIR$/WebService/source/main/resources/SpringConfig/DomainExceptionsBeans.xml" />
         <option value="$PROJECT_DIR$/WebService/source/main/resources/SpringConfig/DomainServicesConfiguration.xml" />
         <option value="$PROJECT_DIR$/WebService/source/main/resources/SpringConfig/RepoBeansConfiguration.xml" />
-        <option value="$PROJECT_DIR$/WebService/source/main/resources/SpringConfig/SpringWSExceptionConfiguration.xml" />
         <option value="$PROJECT_DIR$/Domain/source/main/java/domain/ContractViolationException.java" />
         <option value="$PROJECT_DIR$/PersistenceHibernateRepositoryImpl/source/main/resources/hbms/Order.hbm.xml" />
         <option value="$PROJECT_DIR$/PersistenceHibernateRepositoryImpl/pom.xml" />
-        <option value="$PROJECT_DIR$/WebService/source/main/webapp/WEB-INF/XSDs/order/OrderWebService.xsd" />
-        <option value="$PROJECT_DIR$/WebService/source/main/java/webservice/endpoints/OrderEndpoint.java" />
-        <option value="$PROJECT_DIR$/WebService/source/main/java/webservice/endpoints/CustomerEndpoint.java" />
         <option value="$PROJECT_DIR$/WebService/source/main/resources/SpringConfig/TransactionConfiguration.xml" />
-        <option value="$PROJECT_DIR$/PersistenceHibernateRepositoryImpl/source/main/java/persistence/GenericRepoImpl.java" />
-        <option value="$PROJECT_DIR$/WebService/source/main/java/webservice/endpoints/ProductEndpoint.java" />
-        <option value="$PROJECT_DIR$/PersistenceHibernateRepositoryImpl/source/main/java/persistence/productRepository/ProductRepoImpl.java" />
-        <option value="$PROJECT_DIR$/PersistenceHibernateRepositoryImpl/source/main/java/persistence/orderRepository/OrderRepoImpl.java" />
         <option value="$PROJECT_DIR$/Domain/source/main/java/domain/Entity.java" />
         <option value="$PROJECT_DIR$/Domain/source/main/java/domain/order/OrderService.java" />
-        <option value="$PROJECT_DIR$/Domain/source/main/java/domain/product/ProductRepo.java" />
         <option value="$PROJECT_DIR$/Domain/source/main/java/domain/customer/CustomerService.java" />
         <option value="$PROJECT_DIR$/Domain/source/main/java/domain/product/ProductService.java" />
-        <option value="$PROJECT_DIR$/Domain/source/main/java/domain/customer/CustomerServiceImpl.java" />
         <option value="$PROJECT_DIR$/Domain/source/main/java/domain/order/OrderServiceImpl.java" />
         <option value="$PROJECT_DIR$/Domain/source/main/java/domain/product/ProductServiceImpl.java" />
-        <option value="$PROJECT_DIR$/Domain/source/main/java/domain/order/Order.java" />
-        <option value="$PROJECT_DIR$/Domain/source/main/java/domain/product/Product.java" />
         <option value="$PROJECT_DIR$/Domain/source/main/java/domain/order/OrderItem.java" />
-        <option value="$PROJECT_DIR$/Domain/source/main/java/domain/product/ProductPrice.java" />
         <option value="$PROJECT_DIR$/Domain/source/main/java/domain/customer/Customer.java" />
+        <option value="$PROJECT_DIR$/Domain/source/main/java/domain/product/ProductPrice.java" />
+        <option value="$PROJECT_DIR$/Domain/source/main/java/domain/order/Order.java" />
+        <option value="$PROJECT_DIR$/Domain/source/main/java/domain/GenericRepo.java" />
         <option value="$PROJECT_DIR$/Domain/source/main/java/domain/order/OrderRepo.java" />
+        <option value="$PROJECT_DIR$/Domain/source/main/java/domain/product/ProductRepo.java" />
+        <option value="$PROJECT_DIR$/PersistenceHibernateRepositoryImpl/source/main/java/persistence/GenericRepoImpl.java" />
+        <option value="$PROJECT_DIR$/PersistenceHibernateRepositoryImpl/source/main/java/persistence/orderRepository/OrderRepoImpl.java" />
+        <option value="$PROJECT_DIR$/PersistenceHibernateRepositoryImpl/source/main/java/persistence/productRepository/ProductRepoImpl.java" />
+        <option value="$PROJECT_DIR$/WebService/source/main/java/webservice/validators/CustomerValidator.java" />
+        <option value="$PROJECT_DIR$/WebService/source/main/java/webservice/endpoints/CustomerEndpoint.java" />
+        <option value="$PROJECT_DIR$/WebService/source/main/webapp/WEB-INF/XSDs/order/OrderWebService.xsd" />
+        <option value="$PROJECT_DIR$/WebService/source/main/webapp/WEB-INF/XSDs/product/ProductWebService.xsd" />
+        <option value="$PROJECT_DIR$/WebService/source/main/java/webservice/endpoints/OrderEndpoint.java" />
+        <option value="$PROJECT_DIR$/WebService/source/main/java/webservice/endpoints/ProductEndpoint.java" />
+        <option value="$PROJECT_DIR$/WebService/source/main/resources/SpringConfig/SpringWSExceptionConfiguration.xml" />
+        <option value="$PROJECT_DIR$/Domain/source/main/java/domain/customer/CustomerRepo.java" />
+        <option value="$PROJECT_DIR$/Domain/source/main/java/domain/customer/CustomerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/WebService/source/main/resources/SpringConfig/SpringWSConfiguration.xml" />
+        <option value="$PROJECT_DIR$/Domain/source/main/java/domain/product/Product.java" />
       </list>
     </option>
   </component>
@@ -263,6 +466,104 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BaseCourse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BaseCourse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="XSDs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BaseCourse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BaseCourse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BaseCourse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BaseCourse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpringConfig" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -291,40 +592,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="webservice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BaseCourse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BaseCourse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebService" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="source" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webservice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="endpoints" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -848,7 +1115,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="944" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -857,11 +1124,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43312103" sideWeight="0.502445" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32823962" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32611465" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32611465" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46369427" sideWeight="0.49755502" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2775061" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2775061" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3732484" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24633251" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -906,10 +1173,24 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Domain/source/main/java/domain/product/Product.java</url>
+          <line>83</line>
+          <properties />
+          <option name="timeStamp" value="339" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Domain/source/main/java/domain/product/Product.java</url>
+          <line>84</line>
+          <properties />
+          <option name="timeStamp" value="340" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="333" />
+      <option name="time" value="341" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Remote">
@@ -922,135 +1203,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/WebService/source/main/resources/SpringConfig/DomainServicesConfiguration.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="96" selection-start-line="7" selection-start-column="96" selection-end-line="7" selection-end-column="96" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebService/source/main/resources/SpringConfig/EndpointBeansConfiguration.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="65" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebService/source/main/resources/SpringConfig/HibernateSessionFactoryConfiguration.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebService/source/main/resources/SpringConfig/RepoBeansConfiguration.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/orderrequestresponse/GetAllCustomersOrdersRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.2.7.Final/hibernate-core-4.2.7.Final-sources.jar!/org/hibernate/criterion/Restrictions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="139" column="44" selection-start-line="139" selection-start-column="44" selection-end-line="139" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PersistenceHibernateRepositoryImpl/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebService/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="82" column="7" selection-start-line="82" selection-start-column="7" selection-end-line="86" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/util/Iterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="69" column="6" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/util/Set.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="342" column="12" selection-start-line="342" selection-start-column="12" selection-end-line="342" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebService/source/main/webapp/WEB-INF/XSDs/order/OrderWebService.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebService/source/main/webapp/WEB-INF/XSDs/product/ProductWebService.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="63" column="36" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebService/source/main/java/webservice/endpointrequestresponse/orderrequestresponse/DeleteOrderItemsRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="98" column="24" selection-start-line="98" selection-start-column="24" selection-end-line="98" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebService/source/main/resources/SpringConfig/SpringWSExceptionConfiguration.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PersistenceHibernateRepositoryImpl/source/main/resources/hbms/Product.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="57" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebService/source/main/resources/SpringConfig/TransactionConfiguration.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="87" selection-start-line="27" selection-start-column="80" selection-end-line="27" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PersistenceHibernateRepositoryImpl/source/main/resources/hbms/Customer.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PersistenceHibernateRepositoryImpl/source/main/resources/hbms/Order.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="62" selection-start-line="28" selection-start-column="62" selection-end-line="28" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.2.7.Final/hibernate-core-4.2.7.Final-sources.jar!/org/hibernate/Session.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="358">
@@ -1065,80 +1217,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebService/source/main/resources/SpringConfig/SpringWSConfiguration.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="41" column="62" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Domain/source/main/java/domain/product/exceptions/NotValidStartEffectDayException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PersistenceHibernateRepositoryImpl/source/main/java/persistence/orderRepository/OrderRepoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PersistenceHibernateRepositoryImpl/source/main/java/persistence/customerRepository/CustomerRepoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PersistenceHibernateRepositoryImpl/source/main/java/persistence/productRepository/ProductRepoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="37" column="40" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebService/source/main/java/webservice/validators/CustomerValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebService/source/main/java/webservice/endpoints/CustomerEndpoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebService/source/main/java/webservice/endpoints/OrderEndpoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1581">
-          <caret line="131" column="144" selection-start-line="131" selection-start-column="144" selection-end-line="131" selection-end-column="144" />
-          <folding>
-            <element signature="method#convertToOrderItems#0;class#OrderEndpoint#0" expanded="false" />
-            <element signature="method#convertToOrderDTOForReception#0;class#OrderEndpoint#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebService/source/main/java/webservice/endpoints/ProductEndpoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1496">
-          <caret line="112" column="24" selection-start-line="112" selection-start-column="24" selection-end-line="112" selection-end-column="24" />
-          <folding>
-            <element signature="method#convertToProductDTO#0;class#ProductEndpoint#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="473">
@@ -1147,14 +1225,6 @@
             <element signature="e#5748#5749#0" expanded="false" />
             <element signature="e#5784#5785#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Domain/source/main/java/domain/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1173,51 +1243,174 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PersistenceHibernateRepositoryImpl/source/main/java/persistence/GenericRepoImpl.java">
+    <entry file="file://$PROJECT_DIR$/Domain/source/main/java/domain/ContractViolationException.java" />
+    <entry file="file://$PROJECT_DIR$/Domain/source/main/java/domain/NullIdException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Domain/source/main/java/domain/ContractViolationException.java" />
-    <entry file="file://$PROJECT_DIR$/Domain/source/main/java/domain/GenericRepo.java">
+    <entry file="file://$PROJECT_DIR$/WebService/source/main/java/webservice/dtos/customer/CustomerDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="45" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="58" />
+        <state relative-caret-position="459">
+          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Domain/source/main/java/domain/NullEntityException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Domain/source/main/java/domain/product/ProductServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="83" column="25" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Domain/source/main/java/domain/order/OrderServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="138" column="5" selection-start-line="138" selection-start-column="5" selection-end-line="138" selection-end-column="5" />
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Domain/source/main/java/domain/product/Product.java">
+    <entry file="file://$PROJECT_DIR$/PersistenceHibernateRepositoryImpl/source/main/java/persistence/productRepository/ProductRepoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="102" column="64" selection-start-line="102" selection-start-column="64" selection-end-line="102" selection-end-column="64" />
+        <state relative-caret-position="663">
+          <caret line="47" column="9" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PersistenceHibernateRepositoryImpl/source/main/java/persistence/customerRepository/CustomerRepoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PersistenceHibernateRepositoryImpl/source/main/java/persistence/orderRepository/OrderRepoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="88" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebService/source/main/java/webservice/exceptions/NullOrderBillingNumberException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebService/source/main/java/webservice/exceptions/NullProductNameException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebService/source/main/java/webservice/exceptions/NullCustomerNameException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebService/source/main/java/webservice/validators/CustomerValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebService/source/main/java/webservice/validators/OrderValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-289">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebService/source/main/java/webservice/validators/ProductValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebService/source/main/java/webservice/exceptionHandler/FaultExceptionResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebService/source/main/java/webservice/endpoints/ProductEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="92" column="10" selection-start-line="92" selection-start-column="10" selection-end-line="92" selection-end-column="10" />
+          <folding>
+            <element signature="method#convertProductPrices#0;class#ProductEndpoint#0" expanded="false" />
+            <element signature="method#convertProduct#0;class#ProductEndpoint#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/source/main/java/domain/product/exceptions/NotValidStartEffectDayException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebService/source/main/java/webservice/endpoints/OrderEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="101" column="31" selection-start-line="101" selection-start-column="31" selection-end-line="101" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebService/source/main/webapp/WEB-INF/XSDs/order/OrderWebService.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="57" column="30" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebService/source/main/webapp/WEB-INF/XSDs/product/ProductWebService.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="63" column="14" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebService/source/main/java/webservice/endpoints/CustomerEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="55" column="29" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/source/main/java/domain/customer/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/source/main/java/domain/customer/CustomerRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1226,53 +1419,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Domain/source/main/java/domain/customer/CustomerService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Domain/source/main/java/domain/customer/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding>
-            <element signature="e#404#405#0" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Domain/source/main/java/domain/product/ProductPrice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        <state relative-caret-position="136">
+          <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Domain/source/main/java/domain/customer/CustomerServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="49" column="37" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Domain/source/main/java/domain/order/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+        <state relative-caret-position="187">
+          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
           <folding>
-            <element signature="e#1902#1921#0" expanded="true" />
-            <element signature="e#3025#3036#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Domain/source/main/java/domain/order/OrderItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="442">
           <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
           <folding>
             <element signature="e#706#707#0" expanded="true" />
@@ -1284,15 +1449,7 @@
     <entry file="file://$PROJECT_DIR$/Domain/source/main/java/domain/order/OrderRepo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Domain/source/main/java/domain/customer/CustomerRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
           <folding />
         </state>
       </provider>
@@ -1305,6 +1462,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/source/main/java/domain/order/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1513">
+          <caret line="98" column="26" selection-start-line="98" selection-start-column="26" selection-end-line="98" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/source/main/java/domain/order/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="83" column="43" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="43" />
+          <folding>
+            <element signature="e#2095#2114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/source/main/java/domain/product/ProductRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/source/main/java/domain/product/ProductPrice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="723">
+          <caret line="48" column="33" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Domain/source/main/java/domain/product/ProductService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -1313,11 +1504,119 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Domain/source/main/java/domain/product/ProductRepo.java">
+    <entry file="file://$PROJECT_DIR$/Domain/source/main/java/domain/product/ProductServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        <state relative-caret-position="493">
+          <caret line="83" column="25" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/source/main/java/domain/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/source/main/java/domain/GenericRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PersistenceHibernateRepositoryImpl/source/main/java/persistence/GenericRepoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="50" column="19" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebService/source/main/resources/SpringConfig/DataSourceConfiguration.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebService/source/main/resources/SpringConfig/DomainExceptionsBeans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="43" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebService/source/main/resources/SpringConfig/EndpointBeansConfiguration.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebService/source/main/resources/SpringConfig/DomainServicesConfiguration.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="69" selection-start-line="5" selection-start-column="69" selection-end-line="5" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebService/source/main/resources/SpringConfig/RepoBeansConfiguration.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebService/source/main/resources/SpringConfig/HibernateSessionFactoryConfiguration.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebService/source/main/resources/SpringConfig/TransactionConfiguration.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebService/source/main/resources/SpringConfig/SpringWSConfiguration.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebService/source/main/resources/SpringConfig/SpringWSExceptionConfiguration.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="87" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/source/main/java/domain/product/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="82" column="13" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1373,7 +1672,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Domain</last-edited>
+          <last-edited>WebService</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -1,6 +1,5 @@
 package persistence.orderRepository;
 
-import domain.NullIdException;
 import domain.order.Order;
 import org.hibernate.criterion.Restrictions;
 import persistence.GenericRepoImpl;
@@ -21,7 +20,7 @@ public class OrderRepoImpl extends GenericRepoImpl<String, Order> implements Ord
     @Override
     public List<Order> getOrders(String orderCustomerId) {
         if (orderCustomerId == null) {
-            throw new NullIdException();
+            throw new IllegalArgumentException("Parameter \"orderCustomerId\" is NULL");
         }
         List<Order> orders = (List<Order>) getSessionFactory().getCurrentSession()
                 .createCriteria(Order.class)

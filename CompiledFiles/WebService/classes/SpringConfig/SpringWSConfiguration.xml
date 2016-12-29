@@ -10,8 +10,6 @@
     <import resource="HibernateSessionFactoryConfiguration.xml" />
     <import resource="TransactionConfiguration.xml" />
 
-    <import resource="DomainExceptionsBeans.xml"/>
-
     <import resource="DomainServicesConfiguration.xml"/>
 
     <import resource="RepoBeansConfiguration.xml" />
