@@ -91,6 +91,14 @@ public class Order extends Entity {
             return true;
         }
 
-        Set
+        Set<OrderItem> tempItems = new HashSet<OrderItem>();
+        for (OrderItem currentItem : orderItems) {
+            if (tempItems.contains(currentItem)) {
+                throw new ProductInOrderIsAlreadyOrderedException();
+            } else {
+                tempItems.add(currentItem);
+            }
+        }
+        return true;
     }
 }

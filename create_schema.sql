@@ -32,7 +32,7 @@ CREATE SEQUENCE order_id_sequence
   
 CREATE SEQUENCE product_id_sequence
   MINVALUE 1
-  START WITH 4
+  START WITH 7
   INCREMENT BY 1
   CACHE 20;
 

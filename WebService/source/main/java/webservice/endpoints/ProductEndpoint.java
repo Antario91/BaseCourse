@@ -73,7 +73,7 @@ public class ProductEndpoint {
     }
 
     @PayloadRoot(localPart = "AddProductPricesRequest", namespace = namespaceUri)
-    public void addProductPricesToProduct(@RequestPayload AddProductPricesRequest request) throws NotValidStartEffectDayException,
+    public void addProductPrices(@RequestPayload AddProductPricesRequest request) throws NotValidStartEffectDayException,
             ProductDoesNotExistException, DateIntersectionInProductPriceException {
         ProductPrice[] productPrices = new ProductPrice[request.getProductPrices().size()];
         productService.addProductPrices(
@@ -83,7 +83,7 @@ public class ProductEndpoint {
     }
 
     @PayloadRoot(localPart = "DeleteProductPricesRequest", namespace = namespaceUri)
-    public void deleteProductPricesFromProduct(@RequestPayload DeleteProductPricesRequest request)
+    public void deleteProductPrices(@RequestPayload DeleteProductPricesRequest request)
             throws NotValidStartEffectDayException, ProductDoesNotExistException, DateIntersectionInProductPriceException {
         ProductPrice[] productPrices = new ProductPrice[request.getProductPrices().size()];
         productService.deleteProductPrices(
