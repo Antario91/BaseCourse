@@ -1,9 +1,6 @@
 package domain.customer;
 
-import domain.ContractViolationException;
 import domain.customer.exceptions.*;
-import domain.order.OrderService;
-import domain.order.exceptions.OrderDoesNotExistException;
 
 import java.util.List;
 
@@ -23,7 +20,9 @@ public class CustomerServiceImpl implements CustomerService {
 
     //todo check if validation before get???
     public void createCustomer(String name) throws CustomerAlreadyExistException {
-        checkParamNameForNull(name);
+        if (name == null || name.isEmpty()) {
+            throw new IllegalArgumentException("Parameter \"name\" is NULL");
+        }
         Customer customer = (Customer) customerRepo.get(name);
         if (customer != null) {
             throw new CustomerAlreadyExistException();
@@ -33,9 +32,14 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     public Customer getCustomer(String name) throws CustomerDoesNotExistException {
-        checkParamNameForNull(name);
+        if (name == null || name.isEmpty()) {
+            throw new IllegalArgumentException("Parameter \"name\" is NULL");
+        }
         Customer customer = (Customer) customerRepo.get(name);
-        validateCustomersExistence(customer);
+        if (customer == null) {
+            throw new CustomerDoesNotExistException();
+        }
+
         return customer;
     }
 
@@ -44,21 +48,14 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     public void deleteCustomer (String name) throws CustomerDoesNotExistException {
-        checkParamNameForNull(name);
-        Customer customer = (Customer) customerRepo.get(name);
-        validateCustomersExistence(customer);
-        customerRepo.delete(customer);
-    }
-
-    private void checkParamNameForNull(String name) {
         if (name == null || name.isEmpty()) {
             throw new IllegalArgumentException("Parameter \"name\" is NULL");
         }
-    }
-
-    private void validateCustomersExistence(Customer customer) throws CustomerDoesNotExistException {
+        Customer customer = (Customer) customerRepo.get(name);
         if (customer == null) {
             throw new CustomerDoesNotExistException();
         }
+
+        customerRepo.delete(customer);
     }
 }

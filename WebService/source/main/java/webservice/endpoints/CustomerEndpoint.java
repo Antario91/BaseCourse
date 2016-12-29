@@ -1,6 +1,5 @@
 package webservice.endpoints;
 
-import domain.ContractViolationException;
 import domain.customer.Customer;
 import domain.customer.CustomerService;
 import domain.customer.exceptions.CustomerAlreadyExistException;

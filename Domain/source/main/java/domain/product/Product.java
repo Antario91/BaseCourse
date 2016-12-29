@@ -16,7 +16,15 @@ public class Product extends Entity {
     }
 
     public Product(String name, String units, ProductPrice... productPrices) throws DateIntersectionInProductPriceException {
-        checkConstructorParametersForNull(name, units, productPrices);
+        if (name == null) {
+            throw new IllegalArgumentException("Parameter \"name\" is NULL");
+        }
+        if (units == null) {
+            throw new IllegalArgumentException("Parameter \"units\" is NULL");
+        }
+        if (productPrices == null) {
+            throw new IllegalArgumentException("Parameter \"productPrices\" is NULL");
+        }
         this.productPrices = Arrays.asList(productPrices);
         isIntersectProductPricesEffectDays();
         this.name = name;
@@ -36,14 +44,18 @@ public class Product extends Entity {
     }
 
     public void addProductPrices(ProductPrice... newProductPrices) throws NotValidStartEffectDayException, DateIntersectionInProductPriceException {
-        checkParamProductPricesForNull(newProductPrices);
+        if (productPrices == null) {
+            throw new IllegalArgumentException("Parameter \"productPrices\" is NULL");
+        }
         areNewProductPricesUpToToday(newProductPrices);
         isIntersectProductPricesEffectDays(Arrays.asList(newProductPrices));
         productPrices.addAll(Arrays.asList(newProductPrices));
     }
 
     public void deleteProductPrices(ProductPrice... currentProductPrices) {
-        checkParamProductPricesForNull(currentProductPrices);
+        if (productPrices == null) {
+            throw new IllegalArgumentException("Parameter \"productPrices\" is NULL");
+        }
         productPrices.removeAll(Arrays.asList(currentProductPrices));
     }
 
@@ -115,28 +127,11 @@ public class Product extends Entity {
     }
 
     private boolean areNewProductPricesUpToToday(ProductPrice... productPrices) throws NotValidStartEffectDayException{
-        checkParamProductPricesForNull(productPrices);
         for (ProductPrice productPrice : productPrices) {
             if (productPrice.getStartEffectDay().before(new Date())) {
                 throw new NotValidStartEffectDayException();
             }
         }
         return false;
-    }
-
-    private void checkConstructorParametersForNull(String name, String units, ProductPrice... productPrices) {
-        if (name == null) {
-            throw new IllegalArgumentException("Parameter \"name\" is NULL");
-        }
-        if (units == null) {
-            throw new IllegalArgumentException("Parameter \"units\" is NULL");
-        }
-        checkParamProductPricesForNull(productPrices);
-    }
-
-    private void checkParamProductPricesForNull(ProductPrice... productPrices) {
-        if (productPrices == null) {
-            throw new IllegalArgumentException("Parameter \"productPrices\" is NULL");
-        }
     }
 }

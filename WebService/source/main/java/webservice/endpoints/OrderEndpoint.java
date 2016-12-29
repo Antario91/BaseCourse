@@ -1,6 +1,5 @@
 package webservice.endpoints;
 
-import domain.ContractViolationException;
 import domain.order.*;
 import domain.order.exceptions.ProductInOrderIsAlreadyOrderedException;
 import domain.customer.exceptions.CustomerDoesNotExistException;

@@ -1750,7 +1750,7 @@ java.sql.SQLSyntaxErrorException: ORA-01722: invalid number
 	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:124)
 	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1668)
 	at org.hibernate.internal.CriteriaImpl.list(CriteriaImpl.java:374)
-	at persistence.orderRepository.OrderRepoImpl.getOrdersByCustomerId(OrderRepoImpl.java:32)
+	at getOrders(OrderRepoImpl.java:32)
 	at domain.order.OrderServiceImpl.getAllCustomersOrders(OrderServiceImpl.java:76)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:78)
 	at webservice.endpoints.OrderEndpoint$$FastClassBySpringCGLIB$$e25b1466.invoke(<generated>)
@@ -1846,7 +1846,7 @@ org.hibernate.exception.SQLGrammarException: could not extract ResultSet
 	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:124)
 	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1668)
 	at org.hibernate.internal.CriteriaImpl.list(CriteriaImpl.java:374)
-	at persistence.orderRepository.OrderRepoImpl.getOrdersByCustomerId(OrderRepoImpl.java:32)
+	at getOrders(OrderRepoImpl.java:32)
 	at domain.order.OrderServiceImpl.getAllCustomersOrders(OrderServiceImpl.java:76)
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:78)
 	at webservice.endpoints.OrderEndpoint$$FastClassBySpringCGLIB$$e25b1466.invoke(<generated>)
@@ -1928,7 +1928,7 @@ Caused by: java.sql.SQLSyntaxErrorException: ORA-01722: invalid number
 	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:124)&#xD;
 	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1668)&#xD;
 	at org.hibernate.internal.CriteriaImpl.list(CriteriaImpl.java:374)&#xD;
-	at persistence.orderRepository.OrderRepoImpl.getOrdersByCustomerId(OrderRepoImpl.java:32)&#xD;
+	at getOrders(OrderRepoImpl.java:32)&#xD;
 	at domain.order.OrderServiceImpl.getAllCustomersOrders(OrderServiceImpl.java:76)&#xD;
 	at webservice.endpoints.OrderEndpoint.getAllCustomersOrders(OrderEndpoint.java:78)&#xD;
 	at webservice.endpoints.OrderEndpoint$$FastClassBySpringCGLIB$$e25b1466.invoke(&lt;generated&gt;)&#xD;

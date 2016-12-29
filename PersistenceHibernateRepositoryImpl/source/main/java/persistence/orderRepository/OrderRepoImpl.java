@@ -19,13 +19,13 @@ public class OrderRepoImpl extends GenericRepoImpl<String, Order> implements Ord
 
     @SuppressWarnings("unchecked")
     @Override
-    public List<Order> getOrdersByCustomerId(String customerId) {
-        if (customerId == null) {
+    public List<Order> getOrders(String orderCustomerId) {
+        if (orderCustomerId == null) {
             throw new NullIdException();
         }
         List<Order> orders = (List<Order>) getSessionFactory().getCurrentSession()
                 .createCriteria(Order.class)
-                .add(Restrictions.ilike("customerId", "%" + customerId + "%"))
+                .add(Restrictions.ilike("customerId", "%" + orderCustomerId + "%"))
                 .list();
         return orders;
     }

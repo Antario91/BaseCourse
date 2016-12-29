@@ -18,7 +18,12 @@ public class Order extends Entity {
     }
 
     public Order(String customerId, OrderItem ... orderItems) throws ProductInOrderIsAlreadyOrderedException {
-        checkConstructorParametersForNull(customerId, orderItems);
+        if (customerId == null || customerId.isEmpty()) {
+            throw new IllegalArgumentException("Parameter \"customerId\" is NULL");
+        }
+        if (orderItems == null) {
+            throw new IllegalArgumentException("Parameter \"orderItems\" is NULL");
+        }
         this.orderItems = Arrays.asList(orderItems);
         isUniqueProductsInOrder();
         this.billingNumber = UUID.randomUUID().toString();
@@ -39,7 +44,9 @@ public class Order extends Entity {
     }
 
     public void addOrderItems (OrderItem ... newOrderItems) throws ProductInOrderIsAlreadyOrderedException {
-        checkParamOrderItemsForNull(newOrderItems);
+        if (orderItems == null) {
+            throw new IllegalArgumentException("Parameter \"orderItems\" is NULL");
+        }
         isUniqueProductsInOrder(Arrays.asList(newOrderItems));
         orderItems.addAll(Arrays.asList(newOrderItems));
     }
@@ -89,18 +96,5 @@ public class Order extends Entity {
             }
         }
         return true;
-    }
-
-    private void checkConstructorParametersForNull(String customerId, OrderItem... orderItems) {
-        if (customerId == null || customerId.isEmpty()) {
-            throw new IllegalArgumentException("Parameter \"customerId\" is NULL");
-        }
-        checkParamOrderItemsForNull(orderItems);
-    }
-
-    private void checkParamOrderItemsForNull(OrderItem... orderItems) {
-        if (orderItems == null) {
-            throw new IllegalArgumentException("Parameter \"orderItems\" is NULL");
-        }
     }
 }

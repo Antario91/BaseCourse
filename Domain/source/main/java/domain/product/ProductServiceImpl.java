@@ -17,7 +17,9 @@ public class ProductServiceImpl implements ProductService {
 
     public void createProduct(String name, String units, ProductPrice ... productPrices) throws ProductAlreadyExistException,
             DateIntersectionInProductPriceException {
-        checkParamNameForNull(name);
+        if (name == null || name.isEmpty()) {
+            throw new IllegalArgumentException("Parameter \"name\" is NULL");
+        }
         Product product = (Product) productRepo.get(name);
         if (product != null) {
             throw new ProductAlreadyExistException();
@@ -27,7 +29,9 @@ public class ProductServiceImpl implements ProductService {
     }
 
     public Product getProduct(String name) throws ProductDoesNotExistException {
-        checkParamNameForNull(name);
+        if (name == null || name.isEmpty()) {
+            throw new IllegalArgumentException("Parameter \"name\" is NULL");
+        }
         Product product = (Product) productRepo.get(name);
         if (product == null) {
             throw new ProductDoesNotExistException();
@@ -49,7 +53,9 @@ public class ProductServiceImpl implements ProductService {
 
     public void addProductPrices(String productName, ProductPrice ... productPrices) throws ProductDoesNotExistException,
             DateIntersectionInProductPriceException, NotValidStartEffectDayException {
-        checkParamNameForNull(productName);
+        if (productName == null || productName.isEmpty()) {
+            throw new IllegalArgumentException("Parameter \"name\" is NULL");
+        }
         Product product = (Product) productRepo.get(productName);
         if (product == null) {
             throw new ProductDoesNotExistException();
@@ -59,7 +65,9 @@ public class ProductServiceImpl implements ProductService {
     }
 
     public void deleteProductPrices(String productName, ProductPrice ... productPrices) throws ProductDoesNotExistException {
-        checkParamNameForNull(productName);
+        if (productName == null || productName.isEmpty()) {
+            throw new IllegalArgumentException("Parameter \"name\" is NULL");
+        }
         Product product = (Product) productRepo.get(productName);
         if (product == null) {
             throw new ProductDoesNotExistException();
@@ -69,7 +77,9 @@ public class ProductServiceImpl implements ProductService {
     }
 
     public void deleteProduct(String productName) throws ProductDoesNotExistException, OrderDoesNotExistException {
-        checkParamNameForNull(productName);
+        if (productName == null || productName.isEmpty()) {
+            throw new IllegalArgumentException("Parameter \"name\" is NULL");
+        }
         Product product = (Product) productRepo.get(productName);
         if (product == null) {
             throw new ProductDoesNotExistException();
@@ -77,11 +87,5 @@ public class ProductServiceImpl implements ProductService {
         ProductPrice[] productPrices = new ProductPrice[product.getProductPrices().size()];
         deleteProductPrices(productName, product.getProductPrices().toArray(productPrices));
         productRepo.delete(product);
-    }
-
-    private void checkParamNameForNull(String name) {
-        if (name == null || name.isEmpty()) {
-            throw new IllegalArgumentException("Parameter \"name\" is NULL");
-        }
     }
 }

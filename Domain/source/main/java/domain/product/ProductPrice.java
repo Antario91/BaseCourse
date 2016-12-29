@@ -1,7 +1,5 @@
 package domain.product;
 
-import domain.ContractViolationException;
-
 import java.util.Date;
 
 public class ProductPrice {
@@ -14,7 +12,12 @@ public class ProductPrice {
     }
 
     public ProductPrice(double price, Date startEffectDay) {
-        checkConstructorParametersForNull(price, startEffectDay);
+        if (price <= 0){
+            throw new IllegalArgumentException("Parameter \"price\" is NULL");
+        }
+        if (startEffectDay == null) {
+            throw new IllegalArgumentException("Parameter \"startEffectDay\" is NULL");
+        }
         this.price = price;
         this.startEffectDay = startEffectDay;
     }
@@ -25,15 +28,6 @@ public class ProductPrice {
 
     public Date getStartEffectDay() {
         return new Date(startEffectDay.getTime());
-    }
-
-    private void checkConstructorParametersForNull(double price, Date startEffectDay) {
-        if (price <= 0){
-            throw new IllegalArgumentException("Parameter \"price\" is NULL");
-        }
-        if (startEffectDay == null) {
-            throw new IllegalArgumentException("Parameter \"startEffectDay\" is NULL");
-        }
     }
 
     @Override

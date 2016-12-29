@@ -10,7 +10,12 @@ public class OrderItem {
     }
 
     public OrderItem(double quantity, String productId) {
-        checkConstructorParametersForNull(quantity, productId);
+        if (quantity <= 0) {
+            throw new IllegalArgumentException("Parameter \"quantity\" is NULL");
+        }
+        if (productId == null || productId.isEmpty()) {
+            throw new IllegalArgumentException("Parameter \"productId\" is NULL");
+        }
         this.quantity = quantity;
         this.productId = productId;
     }
@@ -21,15 +26,6 @@ public class OrderItem {
 
     public String getProductId() {
         return productId;
-    }
-
-    private void checkConstructorParametersForNull(double quantity, String productId) {
-        if (quantity <= 0) {
-            throw new IllegalArgumentException("Parameter \"quantity\" is NULL");
-        }
-        if (productId == null || productId.isEmpty()) {
-            throw new IllegalArgumentException("Parameter \"productId\" is NULL");
-        }
     }
 
     @Override

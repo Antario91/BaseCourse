@@ -32,7 +32,9 @@ public class OrderServiceImpl implements OrderService {
     }
 
     public double getOrderPrice(String billingNumber) throws NotAvailableProductPriceException {
-        checkParamBillingNumberForNull(billingNumber);
+        if (billingNumber == null || billingNumber.isEmpty()) {
+            throw new IllegalArgumentException("Parameter \"billingNumber\" is NULL");
+        }
         double price = 0;
 
         Order order = (Order) orderRepo.get(billingNumber);
@@ -55,7 +57,9 @@ public class OrderServiceImpl implements OrderService {
 
     public void createOrder(String customerId, OrderItem ... orderItems) throws CustomerDoesNotExistException, ProductInOrderIsAlreadyOrderedException,
             NotAvailableProductPriceException, ProductDoesNotExistException {
-        checkParamCustomerIdForNull(customerId);
+        if (customerId == null || customerId.isEmpty()) {
+            throw new IllegalArgumentException("Parameter \"customerId\" is NULL");
+        }
         if (customerRepo.get(customerId) == null) {
             throw new CustomerDoesNotExistException();
         }
@@ -71,7 +75,9 @@ public class OrderServiceImpl implements OrderService {
     }
 
     public Order getOrder (String billingNumber) throws OrderDoesNotExistException {
-        checkParamBillingNumberForNull(billingNumber);
+        if (billingNumber == null || billingNumber.isEmpty()) {
+            throw new IllegalArgumentException("Parameter \"billingNumber\" is NULL");
+        }
         Order order = (Order) orderRepo.get(billingNumber);
         if (order == null) {
             throw new OrderDoesNotExistException();
@@ -80,17 +86,21 @@ public class OrderServiceImpl implements OrderService {
     }
 
     public List<Order> getAllCustomerOrders(String customerId) throws CustomerDoesNotExistException {
-        checkParamCustomerIdForNull(customerId);
+        if (customerId == null || customerId.isEmpty()) {
+            throw new IllegalArgumentException("Parameter \"customerId\" is NULL");
+        }
         Customer customer = (Customer) customerRepo.get(customerId);
         if (customer == null) {
             throw new CustomerDoesNotExistException();
         }
-        return orderRepo.getOrdersByCustomerId(customerId);
+        return orderRepo.getOrders(customerId);
     }
 
     public void addOrderItems(String billingNumber, OrderItem ... orderItems) throws OrderDoesNotExistException, ProductInOrderIsAlreadyOrderedException,
             ProductDoesNotExistException {
-        checkParamBillingNumberForNull(billingNumber);
+        if (billingNumber == null || billingNumber.isEmpty()) {
+            throw new IllegalArgumentException("Parameter \"billingNumber\" is NULL");
+        }
         for (OrderItem item : orderItems) {
             if (productRepo.get(item.getProductId()) == null) {
                 throw new ProductDoesNotExistException();
@@ -105,7 +115,9 @@ public class OrderServiceImpl implements OrderService {
     }
 
     public void deleteOrderItems(String billingNumber, List<String> productIds) throws OrderDoesNotExistException {
-        checkParamBillingNumberForNull(billingNumber);
+        if (billingNumber == null || billingNumber.isEmpty()) {
+            throw new IllegalArgumentException("Parameter \"billingNumber\" is NULL");
+        }
         Order order = (Order) orderRepo.get(billingNumber);
         if (order == null) {
             throw new OrderDoesNotExistException();
@@ -115,24 +127,14 @@ public class OrderServiceImpl implements OrderService {
     }
 
     public void deleteOrder(String billingNumber) throws OrderDoesNotExistException {
-        checkParamBillingNumberForNull(billingNumber);
+        if (billingNumber == null || billingNumber.isEmpty()) {
+            throw new IllegalArgumentException("Parameter \"billingNumber\" is NULL");
+        }
         Order order = (Order) orderRepo.get(billingNumber);
         if (order == null) {
             throw new OrderDoesNotExistException();
         }
         deleteOrderItems(billingNumber, order.getOrdersProductsIds());
         orderRepo.delete(order);
-    }
-
-    private void checkParamCustomerIdForNull(String customerId) {
-        if (customerId == null || customerId.isEmpty()) {
-            throw new IllegalArgumentException("Parameter \"customerId\" is NULL");
-        }
-    }
-
-    private void checkParamBillingNumberForNull(String billingNumber) {
-        if (billingNumber == null || billingNumber.isEmpty()) {
-            throw new IllegalArgumentException("Parameter \"billingNumber\" is NULL");
-        }
     }
 }
