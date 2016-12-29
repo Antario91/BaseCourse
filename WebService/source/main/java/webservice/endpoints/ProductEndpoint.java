@@ -36,7 +36,6 @@ public class ProductEndpoint {
     }
 
     @PayloadRoot(localPart = "CreateProductRequest", namespace = namespaceUri)
-    @ResponsePayload
     public void createProduct(@RequestPayload CreateProductRequest request) throws ProductAlreadyExistException,
             DateIntersectionInProductPriceException {
         ProductPrice[] productPrices = new ProductPrice[ request.getProduct().getProductPrices().size() ];

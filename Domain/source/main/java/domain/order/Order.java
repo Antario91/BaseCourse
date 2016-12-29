@@ -81,12 +81,16 @@ public class Order extends Entity {
         return productIds;
     }
 
-    private boolean isUniqueProductsInOrder(List<OrderItem> newOrderItems) throws ProductInOrderIsAlreadyOrderedException {
-        for (OrderItem currentItem : newOrderItems) {
-            if (this.orderItems.contains(currentItem)) {
-                return false;
+    private boolean isUniqueProductsInOrder(List<OrderItem> orderItems) throws ProductInOrderIsAlreadyOrderedException {
+        if (this.orderItems != null) {
+            for (OrderItem currentItem : orderItems) {
+                if (this.orderItems.contains(currentItem)) {
+                    return false;
+                }
             }
+            return true;
         }
-        return true;
+
+        Set
     }
 }

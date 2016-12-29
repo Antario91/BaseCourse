@@ -75,15 +75,15 @@ public class Product extends Entity {
         Collections.sort(checkableProductPrices, getReverseProductPricesComparator());
 
         Iterator<ProductPrice> itr = checkableProductPrices.iterator();
-        while (itr.hasNext()) {
+        if (itr.hasNext()) {
             ProductPrice currentPrice = itr.next();
-            if ( dateOfInterest.after(currentPrice.getStartEffectDay()) ) {
-                price = currentPrice.getPrice();
-                break;
+            while (dateOfInterest.before(currentPrice.getStartEffectDay()) && itr.hasNext()) {
+                currentPrice = itr.next();
+                if (dateOfInterest.before(currentPrice.getStartEffectDay()) && !itr.hasNext()) {
+                    throw new NotAvailableProductPriceException();
+                }
             }
-            if ( dateOfInterest.before(currentPrice.getStartEffectDay()) && !itr.hasNext() ) {
-                throw new NotAvailableProductPriceException();
-            }
+            price = currentPrice.getPrice();
         }
 
         return price;

@@ -55,6 +55,7 @@ public class OrderEndpoint {
 
 
     @PayloadRoot(localPart = "GetOrderRequest", namespace = namespaceUri)
+    @ResponsePayload
     public GetOrderResponse getOrder(@RequestPayload GetOrderRequest request) throws OrderDoesNotExistException, NotAvailableProductPriceException {
         Order order = orderService.getOrder(request.getOrderBillingNumber());
 
@@ -88,7 +89,6 @@ public class OrderEndpoint {
     }
 
     @PayloadRoot(localPart = "DeleteOrderItemsRequest", namespace = namespaceUri)
-    @ResponsePayload
     public void DeleteOrderItems(@RequestPayload DeleteOrderItemsRequest request) throws OrderDoesNotExistException,
             NotAvailableProductPriceException {
         orderService.deleteOrderItems(request.getOrdersBillingNumber(), request.getProductIds());
