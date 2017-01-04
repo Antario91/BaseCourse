@@ -15,7 +15,7 @@ public class Product extends Entity {
         units = null;
     }
 
-    public Product(String name, String units, ProductPrice... productPrices) throws DateIntersectionInProductPriceException {
+    public Product(String name, String units, List<ProductPrice> productPrices) throws DateIntersectionInProductPriceException {
         if (name == null) {
             throw new IllegalArgumentException("Parameter \"name\" is NULL");
         }
@@ -25,10 +25,10 @@ public class Product extends Entity {
         if (productPrices == null) {
             throw new IllegalArgumentException("Parameter \"productPrices\" is NULL");
         }
-        if ( isIntersectProductPricesEffectDays(Arrays.asList(productPrices)) ) {
+        if (isIntersectProductPricesEffectDays(productPrices)) {
             throw new DateIntersectionInProductPriceException();
         }
-        this.productPrices = Arrays.asList(productPrices);
+        this.productPrices = productPrices;
         this.name = name;
         this.units = units;
     }
@@ -45,20 +45,20 @@ public class Product extends Entity {
         return new ArrayList<ProductPrice>(productPrices);
     }
 
-    public void addProductPrices(ProductPrice... newProductPrices) throws NotValidStartEffectDayException, DateIntersectionInProductPriceException {
+    public void addProductPrices(List<ProductPrice> newProductPrices) throws NotValidStartEffectDayException, DateIntersectionInProductPriceException {
         if (productPrices == null) {
             throw new IllegalArgumentException("Parameter \"productPrices\" is NULL");
         }
         if (areNewProductPricesUpToToday(newProductPrices)) {
             throw new NotValidStartEffectDayException();
         }
-        if ( isIntersectProductPricesEffectDays(Arrays.asList(newProductPrices)) ) {
+        if (isIntersectProductPricesEffectDays(newProductPrices)) {
             throw new DateIntersectionInProductPriceException();
         }
-        productPrices.addAll(Arrays.asList(newProductPrices));
+        productPrices.addAll(newProductPrices);
     }
 
-    public void deleteProductPrices(ProductPrice... currentProductPrices) {
+    public void deleteProductPrices(List<ProductPrice> currentProductPrices) {
         if (productPrices == null) {
             throw new IllegalArgumentException("Parameter \"productPrices\" is NULL");
         }
@@ -77,7 +77,7 @@ public class Product extends Entity {
         Iterator<ProductPrice> itr = checkableProductPrices.iterator();
         if (itr.hasNext()) {
             ProductPrice currentPrice = itr.next();
-            while (dateOfInterest.before(currentPrice.getStartEffectDay()) && itr.hasNext()) {
+            while (dateOfInterest.before(currentPrice.getStartEffectDay()) && !dateOfInterest.equals(currentPrice.getStartEffectDay()) && itr.hasNext()) {
                 currentPrice = itr.next();
                 if (dateOfInterest.before(currentPrice.getStartEffectDay()) && !itr.hasNext()) {
                     throw new NotAvailableProductPriceException();
@@ -123,7 +123,7 @@ public class Product extends Entity {
         return false;
     }
 
-    private boolean areNewProductPricesUpToToday(ProductPrice... productPrices) throws NotValidStartEffectDayException {
+    private boolean areNewProductPricesUpToToday(List<ProductPrice> productPrices) throws NotValidStartEffectDayException {
         for (ProductPrice productPrice : productPrices) {
             if (productPrice.getStartEffectDay().before(new Date())) {
                 return true;

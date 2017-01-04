@@ -17,17 +17,17 @@ public class Order extends Entity {
         customerId = null;
     }
 
-    public Order(String customerId, OrderItem ... orderItems) throws ProductInOrderIsAlreadyOrderedException {
+    public Order(String customerId, List<OrderItem> orderItems) throws ProductInOrderIsAlreadyOrderedException {
         if (customerId == null || customerId.isEmpty()) {
             throw new IllegalArgumentException("Parameter \"customerId\" is NULL");
         }
         if (orderItems == null) {
             throw new IllegalArgumentException("Parameter \"orderItems\" is NULL");
         }
-        if ( !isUniqueProductsInOrder(Arrays.asList(orderItems)) ) {
+        if (!isUniqueProductsInOrder(orderItems)) {
             throw new ProductInOrderIsAlreadyOrderedException();
         }
-        this.orderItems = Arrays.asList(orderItems);
+        this.orderItems = orderItems;
         this.billingNumber = UUID.randomUUID().toString();
         this.placingDate = new Date();
         this.customerId = customerId;
@@ -45,14 +45,14 @@ public class Order extends Entity {
         return new ArrayList<OrderItem>(orderItems);
     }
 
-    public void addOrderItems (OrderItem ... newOrderItems) throws ProductInOrderIsAlreadyOrderedException {
+    public void addOrderItems (List<OrderItem> newOrderItems) throws ProductInOrderIsAlreadyOrderedException {
         if (orderItems == null) {
             throw new IllegalArgumentException("Parameter \"orderItems\" is NULL");
         }
-        if ( !isUniqueProductsInOrder(Arrays.asList(newOrderItems)) ) {
+        if (!isUniqueProductsInOrder(newOrderItems)) {
             throw new ProductInOrderIsAlreadyOrderedException();
         }
-        orderItems.addAll(Arrays.asList(newOrderItems));
+        orderItems.addAll(newOrderItems);
     }
 
     public void deleteOrderItems(List<String> productIds) {

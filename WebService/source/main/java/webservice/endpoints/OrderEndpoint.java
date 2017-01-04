@@ -47,10 +47,7 @@ public class OrderEndpoint {
         String customersName = request.getOrder().getOrdersCustomersName();
         List<OrderItemDTOForCreation> orderItemDTOForCreations = request.getOrder().getOrderItems();
 
-        OrderItem[] orderItems = new OrderItem[orderItemDTOForCreations.size()];
-
-        orderService.createOrder(customersName,
-                convertOrderItems(orderItemDTOForCreations).toArray(orderItems));
+        orderService.createOrder(customersName, convertOrderItems(orderItemDTOForCreations));
     }
 
 
@@ -84,8 +81,8 @@ public class OrderEndpoint {
     @PayloadRoot(localPart = "AddOrderItemsRequest", namespace = namespaceUri)
     public void AddOrderItems(@RequestPayload AddOrderItemsRequest request) throws ProductInOrderIsAlreadyOrderedException,
             ProductDoesNotExistException, OrderDoesNotExistException, NotAvailableProductPriceException {
-        OrderItem[] items = new OrderItem[request.getOrderItemDTOForCreation().size()];
-        orderService.addOrderItems(request.getOrdersBillingNumber(), convertOrderItems(request.getOrderItemDTOForCreation()).toArray(items));
+
+        orderService.addOrderItems(request.getOrdersBillingNumber(), convertOrderItems(request.getOrderItemDTOForCreation()));
     }
 
     @PayloadRoot(localPart = "DeleteOrderItemsRequest", namespace = namespaceUri)

@@ -35,7 +35,7 @@ public class CustomerEndpoint {
         Customer customer = customerService.getCustomer(request.getCustomerName());
 
         GetCustomerResponse response = new GetCustomerResponse();
-        response.setCustomer(convertToCustomerDTO(customer));
+        response.setCustomer(convertCustomer(customer));
         return response;
     }
 
@@ -46,7 +46,7 @@ public class CustomerEndpoint {
         GetAllCustomersResponse response = new GetAllCustomersResponse();
 
         for ( Customer customer : customerService.getAllCustomers() ) {
-            response.getCustomer().add( convertToCustomerDTO(customer) );
+            response.getCustomer().add( convertCustomer(customer) );
         }
 
         return response;
@@ -57,7 +57,7 @@ public class CustomerEndpoint {
         customerService.deleteCustomer(request.getCustomerName());
     }
 
-    private CustomerDTO convertToCustomerDTO(Customer customer) {
+    private CustomerDTO convertCustomer(Customer customer) {
         CustomerDTO customerDTO = new CustomerDTO();
         customerDTO.setName(customer.getName());
         return customerDTO;

@@ -15,7 +15,7 @@ public class ProductServiceImpl implements ProductService {
         this.productRepo = productRepo;
     }
 
-    public void createProduct(String name, String units, ProductPrice ... productPrices) throws ProductAlreadyExistException,
+    public void createProduct(String name, String units, List<ProductPrice> productPrices) throws ProductAlreadyExistException,
             DateIntersectionInProductPriceException {
         if (name == null || name.isEmpty()) {
             throw new IllegalArgumentException("Parameter \"name\" is NULL");
@@ -51,7 +51,7 @@ public class ProductServiceImpl implements ProductService {
         return productRepo.getProducts(productId);
     }
 
-    public void addProductPrices(String productName, ProductPrice ... productPrices) throws ProductDoesNotExistException,
+    public void addProductPrices(String productName, List<ProductPrice> productPrices) throws ProductDoesNotExistException,
             DateIntersectionInProductPriceException, NotValidStartEffectDayException {
         if (productName == null || productName.isEmpty()) {
             throw new IllegalArgumentException("Parameter \"name\" is NULL");
@@ -64,7 +64,7 @@ public class ProductServiceImpl implements ProductService {
         productRepo.update(product);
     }
 
-    public void deleteProductPrices(String productName, ProductPrice ... productPrices) throws ProductDoesNotExistException {
+    public void deleteProductPrices(String productName, List<ProductPrice> productPrices) throws ProductDoesNotExistException {
         if (productName == null || productName.isEmpty()) {
             throw new IllegalArgumentException("Parameter \"name\" is NULL");
         }
@@ -84,8 +84,7 @@ public class ProductServiceImpl implements ProductService {
         if (product == null) {
             throw new ProductDoesNotExistException();
         }
-        ProductPrice[] productPrices = new ProductPrice[product.getProductPrices().size()];
-        deleteProductPrices(productName, product.getProductPrices().toArray(productPrices));
+        deleteProductPrices(productName, product.getProductPrices());
         productRepo.delete(product);
     }
 }

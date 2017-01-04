@@ -55,7 +55,7 @@ public class OrderServiceImpl implements OrderService {
         return price;
     }
 
-    public void createOrder(String customerId, OrderItem ... orderItems) throws CustomerDoesNotExistException, ProductInOrderIsAlreadyOrderedException,
+    public void createOrder(String customerId, List<OrderItem> orderItems) throws CustomerDoesNotExistException, ProductInOrderIsAlreadyOrderedException,
             NotAvailableProductPriceException, ProductDoesNotExistException {
         if (customerId == null || customerId.isEmpty()) {
             throw new IllegalArgumentException("Parameter \"customerId\" is NULL");
@@ -96,7 +96,7 @@ public class OrderServiceImpl implements OrderService {
         return orderRepo.getOrders(customerId);
     }
 
-    public void addOrderItems(String billingNumber, OrderItem ... orderItems) throws OrderDoesNotExistException, ProductInOrderIsAlreadyOrderedException,
+    public void addOrderItems(String billingNumber, List<OrderItem> orderItems) throws OrderDoesNotExistException, ProductInOrderIsAlreadyOrderedException,
             ProductDoesNotExistException {
         if (billingNumber == null || billingNumber.isEmpty()) {
             throw new IllegalArgumentException("Parameter \"billingNumber\" is NULL");

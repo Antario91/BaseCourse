@@ -38,11 +38,11 @@ public class ProductEndpoint {
     @PayloadRoot(localPart = "CreateProductRequest", namespace = namespaceUri)
     public void createProduct(@RequestPayload CreateProductRequest request) throws ProductAlreadyExistException,
             DateIntersectionInProductPriceException {
-        ProductPrice[] productPrices = new ProductPrice[ request.getProduct().getProductPrices().size() ];
+
         productService.createProduct(
                 request.getProduct().getProductName(),
                 request.getProduct().getProductUnits(),
-                convertProductPrices(request.getProduct().getProductPrices()).toArray(productPrices)
+                convertProductPrices(request.getProduct().getProductPrices())
         );
     }
 
@@ -75,20 +75,20 @@ public class ProductEndpoint {
     @PayloadRoot(localPart = "AddProductPricesRequest", namespace = namespaceUri)
     public void addProductPrices(@RequestPayload AddProductPricesRequest request) throws NotValidStartEffectDayException,
             ProductDoesNotExistException, DateIntersectionInProductPriceException {
-        ProductPrice[] productPrices = new ProductPrice[request.getProductPrices().size()];
+
         productService.addProductPrices(
                 request.getProductName(),
-                convertProductPrices(request.getProductPrices()).toArray(productPrices)
+                convertProductPrices(request.getProductPrices())
         );
     }
 
     @PayloadRoot(localPart = "DeleteProductPricesRequest", namespace = namespaceUri)
     public void deleteProductPrices(@RequestPayload DeleteProductPricesRequest request)
             throws NotValidStartEffectDayException, ProductDoesNotExistException, DateIntersectionInProductPriceException {
-        ProductPrice[] productPrices = new ProductPrice[request.getProductPrices().size()];
+
         productService.deleteProductPrices(
                 request.getProductName(),
-                convertProductPrices(request.getProductPrices()).toArray(productPrices)
+                convertProductPrices(request.getProductPrices())
         );
     }
 

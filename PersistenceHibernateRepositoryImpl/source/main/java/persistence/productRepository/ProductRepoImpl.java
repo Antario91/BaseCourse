@@ -33,18 +33,23 @@ public class ProductRepoImpl extends GenericRepoImpl<String, Product> implements
             throw new IllegalArgumentException("Parameter \"productId\" is NULL");
         }
         StringBuilder builder = new StringBuilder();
-        Iterator<String> itr = productId.iterator();
-        builder.append("\'");
-        while (itr.hasNext()) {
-            String temp = itr.next();
-            if (temp != null) {
-                builder.append(temp);
-            }
-            if (itr.hasNext()) {
-                builder.append("\',\'");
-            } else {
+
+        if (productId.size() != 0) {
+            Iterator<String> itr = productId.iterator();
+            while (itr.hasNext()) {
                 builder.append("\'");
+                String temp = itr.next();
+                if (temp != null) {
+                    builder.append(temp);
+                }
+                if (itr.hasNext()) {
+                    builder.append("\',");
+                } else {
+                    builder.append("\'");
+                }
             }
+        } else {
+            builder.append("\'\'");
         }
 
         return getSessionFactory().getCurrentSession()

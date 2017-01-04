@@ -14,14 +14,14 @@ import java.util.List;
 public interface OrderService {
     double getOrderPrice(String billingNumber) throws NotAvailableProductPriceException;
 
-    void createOrder(String customerId, OrderItem ... orderItems) throws CustomerDoesNotExistException,
+    void createOrder(String customerId, List<OrderItem> orderItems) throws CustomerDoesNotExistException,
             ProductInOrderIsAlreadyOrderedException, NotAvailableProductPriceException, ProductDoesNotExistException;
 
     Order getOrder (String billingNumber) throws OrderDoesNotExistException;
 
     List<Order> getAllCustomerOrders(String customerId) throws CustomerDoesNotExistException;
 
-    void addOrderItems(String billingNumber, OrderItem ... orderItems) throws OrderDoesNotExistException,
+    void addOrderItems(String billingNumber, List<OrderItem> orderItems) throws OrderDoesNotExistException,
             ProductInOrderIsAlreadyOrderedException, ProductDoesNotExistException;
 
     void deleteOrderItems(String billingNumber, List<String> productIds) throws OrderDoesNotExistException;
